@@ -27,3 +27,6 @@ the private authoring source.
 - GitHub Pages serves this site from the `main` branch
 - Custom domain: `flairmi.com`
 - `.nojekyll` is included so static assets are served without Jekyll processing
+- GA4 loader lives in `assets/js/ga4.js`
+- Contact form handling lives in `assets/js/contact-form.js`
+- Public contact email: `mohammedali.page@gmail.com`
