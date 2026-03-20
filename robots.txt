@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://flairmi.com/sitemap.xml
