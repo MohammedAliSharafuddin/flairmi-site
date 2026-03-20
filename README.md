@@ -2,8 +2,8 @@
 
 Public deployment repository for Flair Marketing Intelligence, FlairMI.
 
-Live domain:
-<https://flairmi.com/>
+Current live URL:
+<https://mohammedalisharafuddin.github.io/flairmi-site/>
 
 ## Purpose
 
@@ -25,5 +25,8 @@ the private authoring source.
 ## Deployment Notes
 
 - GitHub Pages serves this site from the `main` branch
-- Custom domain: `flairmi.com`
+- Intended custom domain: `flairmi.com`
 - `.nojekyll` is included so static assets are served without Jekyll processing
+
+At the moment, `flairmi.com` is still attached to an older GitHub Pages
+deployment and must be released before this repository can claim it.
