@@ -10,8 +10,8 @@ Live site:
 This repository contains the published static site for FlairMI, including:
 
 - homepage and about page
-- blog posts
-- survey, stats, and writer sections
+- products, tools, methods, press, teaching, and labs sections
+- blog posts and legacy continuity routes
 - site assets and Quarto-generated files
 
 ## Source and Deployment Model
@@ -21,6 +21,9 @@ This repository contains the published static site for FlairMI, including:
 
 The public repository exists to keep deployment and domain serving separate from
 the private authoring source.
+
+Do not treat this repo as a second source of truth. Edit content in `flairmi`,
+render there, and then sync the generated `_site/` output into this repo.
 
 ## Deployment Notes
 

@@ -11,7 +11,7 @@
 <meta name="keywords" content="confidence interval, margin of error, binomial proportion, ecommerce, A/B testing">
 <meta name="description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
 
-<title>Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate - Flair Marketing Intelligence (FlairMI)</title>
+<title>Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate – Flair Marketing Intelligence (FlairMI)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,6 +95,9 @@ div.csl-indent {
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Flair Marketing Intelligence","url":"https://flairmi.com"}
 </script>
+<meta name="robots" content="index,follow">
+<script defer="" src="../../assets/js/ga4.js"></script>
+<script defer="" src="../../assets/js/contact-form.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
@@ -395,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}\n\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Standard confidence interval calculation\np_hat <- 0.22\nn <- 600\n\n# Compute\nse  <- sqrt(p_hat * (1 - p_hat) / n)\nz   <- qnorm(0.975)\nmoe <- z * se\nci  <- p_hat + c(-1, 1) * moe\n\n# Quality checks\nsucc <- n * p_hat\nfail <- n * (1 - p_hat)\nrule_ok <- succ >= 10 && fail >= 10","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"ci-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"results_table <- data.frame(\n  Metric = c(\"Sample proportion (p̂)\", \"Standard error\", \"Margin of error\",\n             \"95% CI lower\", \"95% CI upper\", \"Successes\", \"Failures\",\n             \"Validity check\"),\n  Value  = c(sprintf(\"%.3f\", p_hat),\n             sprintf(\"%.4f\", se),\n             sprintf(\"%.4f (±%.1f%%)\", moe, moe*100),\n             sprintf(\"%.3f (%.1f%%)\", ci[1], ci[1]*100),\n             sprintf(\"%.3f (%.1f%%)\", ci[2], ci[2]*100),\n             as.character(round(succ)),\n             as.character(round(fail)),\n             ifelse(rule_ok, \"Passed (n·p̂ ≥ 10 and n·(1−p̂) ≥ 10)\", \"Warning\")),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Confidence interval calculation results\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Ensure local vars\np_hat <- get0(\"p_hat\", ifnotfound = 0.22)\nn     <- get0(\"n\",     ifnotfound = 600)\n\nkpi1 <- 0.19; kpi2 <- 0.26\nz  <- qnorm(0.975)\nse <- sqrt(p_hat * (1 - p_hat) / n)\nmoe <- z * se\nci_lower <- p_hat - moe\nci_upper <- p_hat + moe\n\nop <- par(mar = c(5, 4.5, 3.5, 2), xaxs = \"i\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nplot(NA, xlim = c(0.15, 0.30), ylim = c(0, 1), yaxt = \"n\",\n     xlab = \"Add-to-cart proportion\", ylab = \"\",\n     main = \"95% Confidence Interval with KPI Benchmarks\",\n     cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\nrect(ci_lower, 0, ci_upper, 1, col = rgb(0.2, 0.6, 1, 0.12), border = NA)\nsegments(ci_lower, 0.5, ci_upper, 0.5, lwd = 6, col = \"#2C3E50\", lend = 2)\npoints(p_hat, 0.5, pch = 21, cex = 2.1, bg = \"#2C3E50\", col = \"white\", lwd = 2)\n\nkpi1_met <- (ci_lower <= kpi1 && kpi1 <= ci_upper)\nkpi2_met <- (ci_lower <= kpi2 && kpi2 <= ci_upper)\nkpi1_col <- if (kpi1_met) \"#27AE60\" else \"#E74C3C\"\nkpi2_col <- if (kpi2_met) \"#27AE60\" else \"#E74C3C\"\n\nabline(v = kpi1, lty = 2, lwd = 2, col = kpi1_col)\ntext(kpi1, 0.88, sprintf(\"Baseline KPI (%.0f%%)\", 100 * kpi1), pos = 4, cex = 0.95, col = kpi1_col, font = 2)\n\nabline(v = kpi2, lty = 2, lwd = 2, col = kpi2_col)\ntext(kpi2, 0.20, sprintf(\"Stretch KPI (%.0f%%)\", 100 * kpi2), pos = 4, cex = 0.95, col = kpi2_col, font = 2)\n\ntext(p_hat, 0.72, sprintf(\"p̂ = %.1f%%\", 100 * p_hat), pos = 3, cex = 1.0, font = 2, col = \"#2C3E50\")\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"95% confidence interval for add-to-cart rate with baseline (19%) and stretch (26%) KPI markers.","fig-asp":"0.6","fig-cap":"Figure 1. Confidence interval for add-to-cart proportion with KPI benchmarks.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-ci-plot","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"p_hat <- 0.22\nmoe_target <- 0.02\nz <- qnorm(0.975)\n\nn_informed <- ceiling(p_hat * (1 - p_hat) * (z / moe_target)^2)\nn_safe <- ceiling(0.25 * (z / moe_target)^2)\n\nsample_size_table <- data.frame(\n  Approach = c(\"Informed (p̂ = 0.22)\", \"Conservative (p = 0.50)\"),\n  Required_n = c(format(n_informed, big.mark=\",\"), format(n_safe, big.mark=\",\")),\n  Additional_Visitors = c(format(max(n_informed - 600, 0), big.mark=\",\"), format(max(n_safe - 600, 0), big.mark=\",\")),\n  Use_Case = c(\"Known conversion rate environment\", \"New products or uncertain rates\"),\n  stringsAsFactors = FALSE\n)\nhtml_table(sample_size_table, caption = \"Table 2: Sample size recommendations for ±2% precision at 95% confidence (Additional_Visitors shows increment beyond current n=600)\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}}];
+globalThis.qwebrCellDetails = [{"code":"# Standard confidence interval calculation\np_hat <- 0.22\nn <- 600\n\n# Compute\nse  <- sqrt(p_hat * (1 - p_hat) / n)\nz   <- qnorm(0.975)\nmoe <- z * se\nci  <- p_hat + c(-1, 1) * moe\n\n# Quality checks\nsucc <- n * p_hat\nfail <- n * (1 - p_hat)\nrule_ok <- succ >= 10 && fail >= 10","id":1,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"ci-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\nresults_table <- data.frame(\n  Metric = c(\"Sample proportion (p̂)\", \"Standard error\", \"Margin of error\",\n             \"95% CI lower\", \"95% CI upper\", \"Successes\", \"Failures\",\n             \"Validity check\"),\n  Value  = c(sprintf(\"%.3f\", p_hat),\n             sprintf(\"%.4f\", se),\n             sprintf(\"%.4f (±%.1f%%)\", moe, moe*100),\n             sprintf(\"%.3f (%.1f%%)\", ci[1], ci[1]*100),\n             sprintf(\"%.3f (%.1f%%)\", ci[2], ci[2]*100),\n             as.character(round(succ)),\n             as.character(round(fail)),\n             ifelse(rule_ok, \"Passed (n·p̂ ≥ 10 and n·(1−p̂) ≥ 10)\", \"Warning\")),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Confidence interval calculation results\")","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Ensure local vars\np_hat <- get0(\"p_hat\", ifnotfound = 0.22)\nn     <- get0(\"n\",     ifnotfound = 600)\n\nkpi1 <- 0.19; kpi2 <- 0.26\nz  <- qnorm(0.975)\nse <- sqrt(p_hat * (1 - p_hat) / n)\nmoe <- z * se\nci_lower <- p_hat - moe\nci_upper <- p_hat + moe\n\nop <- par(mar = c(5, 4.5, 3.5, 2), xaxs = \"i\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nplot(NA, xlim = c(0.15, 0.30), ylim = c(0, 1), yaxt = \"n\",\n     xlab = \"Add-to-cart proportion\", ylab = \"\",\n     main = \"95% Confidence Interval with KPI Benchmarks\",\n     cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\nrect(ci_lower, 0, ci_upper, 1, col = rgb(0.2, 0.6, 1, 0.12), border = NA)\nsegments(ci_lower, 0.5, ci_upper, 0.5, lwd = 6, col = \"#2C3E50\", lend = 2)\npoints(p_hat, 0.5, pch = 21, cex = 2.1, bg = \"#2C3E50\", col = \"white\", lwd = 2)\n\nkpi1_met <- (ci_lower <= kpi1 && kpi1 <= ci_upper)\nkpi2_met <- (ci_lower <= kpi2 && kpi2 <= ci_upper)\nkpi1_col <- if (kpi1_met) \"#27AE60\" else \"#E74C3C\"\nkpi2_col <- if (kpi2_met) \"#27AE60\" else \"#E74C3C\"\n\nabline(v = kpi1, lty = 2, lwd = 2, col = kpi1_col)\ntext(kpi1, 0.88, sprintf(\"Baseline KPI (%.0f%%)\", 100 * kpi1), pos = 4, cex = 0.95, col = kpi1_col, font = 2)\n\nabline(v = kpi2, lty = 2, lwd = 2, col = kpi2_col)\ntext(kpi2, 0.20, sprintf(\"Stretch KPI (%.0f%%)\", 100 * kpi2), pos = 4, cex = 0.95, col = kpi2_col, font = 2)\n\ntext(p_hat, 0.72, sprintf(\"p̂ = %.1f%%\", 100 * p_hat), pos = 3, cex = 1.0, font = 2, col = \"#2C3E50\")\nbox(col = \"#95A5A6\", lwd = 1.2)","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"95% confidence interval for add-to-cart rate with baseline (19%) and stretch (26%) KPI markers.","fig-asp":"0.6","fig-cap":"Figure 1. Confidence interval for add-to-cart proportion with KPI benchmarks.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-ci-plot","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"p_hat <- 0.22\nmoe_target <- 0.02\nz <- qnorm(0.975)\n\nn_informed <- ceiling(p_hat * (1 - p_hat) * (z / moe_target)^2)\nn_safe <- ceiling(0.25 * (z / moe_target)^2)\n\nsample_size_table <- data.frame(\n  Approach = c(\"Informed (p̂ = 0.22)\", \"Conservative (p = 0.50)\"),\n  Required_n = c(format(n_informed, big.mark=\",\"), format(n_safe, big.mark=\",\")),\n  Additional_Visitors = c(format(max(n_informed - 600, 0), big.mark=\",\"), format(max(n_safe - 600, 0), big.mark=\",\")),\n  Use_Case = c(\"Known conversion rate environment\", \"New products or uncertain rates\"),\n  stringsAsFactors = FALSE\n)\nhtml_table(sample_size_table, caption = \"Table 2: Sample size recommendations for ±2% precision at 95% confidence (Additional_Visitors shows increment beyond current n=600)\")","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}}];
 
 </script>
 <script type="module">
@@ -1679,20 +1682,18 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate - Flair Marketing Intelligence (FlairMI)">
+<link rel="stylesheet" href="../../assets/css/flairmi.css">
+<meta property="og:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate – Flair Marketing Intelligence (FlairMI)">
 <meta property="og:description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.svg">
+<meta property="og:image" content="https://flairmi.com/blog/posts/assets/images/01-margin-of-error-hero.png">
 <meta property="og:site_name" content="Flair Marketing Intelligence (FlairMI)">
-<meta name="twitter:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate - Flair Marketing Intelligence (FlairMI)">
+<meta property="og:image:alt" content="FlairMI portfolio overview">
+<meta name="twitter:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate – Flair Marketing Intelligence (FlairMI)">
 <meta name="twitter:description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.svg">
+<meta name="twitter:image" content="https://flairmi.com/blog/posts/assets/images/01-margin-of-error-hero.png">
+<meta name="twitter:image:alt" content="FlairMI portfolio overview">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/01-margin-of-error.html">
-<script defer src="/assets/js/ga4.js"></script>
-<script defer src="/assets/js/contact-form.js"></script>
-<meta name="robots" content="index,follow">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://flairmi.com/blog/posts/01-margin-of-error.html">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -1718,21 +1719,105 @@ window.Quarto = {
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../survey/index.html"> 
-<span class="menu-text">Survey</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-products" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Products</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
+        <li>
+    <a class="dropdown-item" href="../../products/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../stats/index.html"> 
-<span class="menu-text">Stats</span></a>
+        <li>
+    <a class="dropdown-item" href="../../products/trimwrite.html">
+ <span class="dropdown-text">TrimWrite</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/quartopad.html">
+ <span class="dropdown-text">QuartoPad</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/ethos.html">
+ <span class="dropdown-text">Ethos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/analog.html">
+ <span class="dropdown-text">Analog</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="../../tools/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/margin-guard.html">
+ <span class="dropdown-text">Margin Guard</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/marketing-decision-toolkit.html">
+ <span class="dropdown-text">Marketing Decision Toolkit</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Methods</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-methods">    
+        <li>
+    <a class="dropdown-item" href="../../methods/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../methods/semscreenr.html">
+ <span class="dropdown-text">semScreenR</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-press" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Press</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-press">    
+        <li>
+    <a class="dropdown-item" href="../../press/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/ddmm.html">
+ <span class="dropdown-text">DDMM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/marai.html">
+ <span class="dropdown-text">MarAI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/asrda.html">
+ <span class="dropdown-text">ASRDA</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/smallsamplelab.html">
+ <span class="dropdown-text">Small Sample Lab</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../writer/index.html"> 
-<span class="menu-text">Writer</span></a>
+    <a class="nav-link" href="../../teaching/index.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../labs/index.html"> 
+<span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -2131,8 +2216,6 @@ pre, code, pre code { white-space: pre-wrap; word-break: break-word; }
 .copy-btn { border:1px solid #e1e4e8; background:#f7f7f7; padding:.35rem .6rem; border-radius:6px; cursor:pointer; }
 .copy-btn:active { transform: scale(.98); }
 </style>
-<div id="qwebr-insertion-location-1"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>TL;DR: Add-to-cart is <strong>22%</strong> (n=600); <strong>95% CI [18.8%, 25.2%]</strong> - <strong>baseline KPI 19% is acceptable</strong>, <strong>stretch 26% isn’t</strong>; for ±2 pp precision, target <strong>~1,472-2,401 visitors</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
@@ -2184,14 +2267,14 @@ Action: Baseline KPI (19%) is met; stretch goal (26%) is not.</p>
 </section>
 <section id="calculation" class="level2">
 <h2 class="anchored" data-anchor-id="calculation">Calculation</h2>
-<div id="qwebr-insertion-location-2"></div>
+<div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<div id="qwebr-insertion-location-3"></div>
+<div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="visualization" class="level2">
 <h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
-<div id="qwebr-insertion-location-4"></div>
+<div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="results-and-interpretation" class="level2">
@@ -2205,7 +2288,7 @@ Action: Baseline KPI (19%) is met; stretch goal (26%) is not.</p>
 <p>To achieve ±<strong>2 percentage points</strong> precision at 95% confidence: <span class="math display">\[
 n = \hat{p}(1-\hat{p})\left(\frac{Z^*}{\text{MOE}_{\text{target}}}\right)^2.
 \]</span></p>
-<div id="qwebr-insertion-location-5"></div>
+<div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="assumptions" class="level2">
@@ -2248,7 +2331,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
 </section>
 <section id="comments" class="level2">
 <h2 class="anchored" data-anchor-id="comments">Comments</h2>
-<script src="https://giscus.app/client.js" data-repo="MohammedAliSharafuddin/flairmi" data-repo-id="" data-category="Blog Comments" data-category-id="" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="MohammedAliSharafuddin/flairmi-site" data-repo-id="" data-category="Blog Comments" data-category-id="" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
 </script>
 <script type="application/ld+json">
 {
@@ -2260,7 +2343,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about.html",
+    "url": "https://flairmi.com/about/",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },
@@ -2285,7 +2368,18 @@ Agresti, Alan. 2019. <em>Statistical Methods for the Social Sciences</em>. Bosto
 <div id="ref-R-base" class="csl-entry" role="listitem">
 R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.r-project.org/">https://www.r-project.org/</a>.
 </div>
-</div></section></div></main> <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ali_sharafuddin2024,
+  author = {Ali Sharafuddin, Mohammed},
+  title = {Confidence {Interval} for a {Proportion:} {Analyzing}
+    {Add-to-Cart} {Rate}},
+  date = {2024-06-10},
+  url = {https://flairmi.com/blog/posts/01-margin-of-error.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ali_sharafuddin2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Ali Sharafuddin, Mohammed. 2024. <span>“Confidence Interval for a
+Proportion: Analyzing Add-to-Cart Rate.”</span> June 10, 2024. <a href="https://flairmi.com/blog/posts/01-margin-of-error.html">https://flairmi.com/blog/posts/01-margin-of-error.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -2373,6 +2467,11 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -2690,13 +2789,13 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p><a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="mailto:mohammedali.page@gmail.com?subject=FlairMI%20Feedback">Feedback</a></p>
+<p><a href="../../about.html">Founder</a> · <a href="mailto:mohammedali.page@gmail.com?subject=FlairMI%20Feedback">Feedback</a></p>
 </div>
   </div>
 </footer>

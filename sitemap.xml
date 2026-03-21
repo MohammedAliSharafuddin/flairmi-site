@@ -1,59 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://flairmi.com/downloads/TermsOfUse.html</loc>
+    <lastmod>2026-03-21T05:58:51.781Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Rate_Card_INR.html</loc>
+    <lastmod>2026-03-21T05:58:51.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Invoice_INR.html</loc>
+    <lastmod>2026-03-21T05:58:51.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/FlairMI_Sponsor_Kit.html</loc>
+    <lastmod>2026-03-21T05:58:51.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Affiliate_Sponsorship_Disclosure.html</loc>
+    <lastmod>2026-03-21T05:58:51.778Z</lastmod>
+  </url>
+  <url>
     <loc>https://flairmi.com/writer/templates/regression_report.html</loc>
-    <lastmod>2025-10-25T02:52:00.000Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.063Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/writer/index.html</loc>
-    <lastmod>2025-10-26T04:55:02.986Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.062Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/stats/index.html</loc>
-    <lastmod>2025-10-26T04:55:02.745Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/teaching/index.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/press/marai.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/press/ddmm.html</loc>
+    <lastmod>2026-03-21T06:33:14.350Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/methods/semscreenr.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/tools/marketing-decision-toolkit.html</loc>
+    <lastmod>2026-03-21T06:31:40.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/tools/index.html</loc>
+    <lastmod>2026-03-21T06:33:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/products/quartopad.html</loc>
+    <lastmod>2026-03-21T06:33:14.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/products/ethos.html</loc>
+    <lastmod>2026-03-21T06:33:14.348Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/06-logistic-basics.html</loc>
-    <lastmod>2025-10-26T06:02:06.158Z</lastmod>
+    <lastmod>2026-03-21T06:33:14.361Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/04-welch-t.html</loc>
-    <lastmod>2025-10-26T06:01:48.466Z</lastmod>
+    <lastmod>2026-03-21T06:33:14.359Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/02-two-proportion-test.html</loc>
-    <lastmod>2025-10-26T06:01:31.035Z</lastmod>
+    <lastmod>2026-03-21T06:33:14.357Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/index.html</loc>
-    <lastmod>2025-10-25T15:50:35.221Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flairmi.com/about.html</loc>
-    <lastmod>2025-10-26T05:43:22.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flairmi.com/blog/posts/01-margin-of-error.html</loc>
-    <lastmod>2025-10-26T06:01:21.564Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flairmi.com/blog/posts/03-t-test.html</loc>
-    <lastmod>2025-10-26T06:01:39.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flairmi.com/blog/posts/05-simple-regression.html</loc>
-    <lastmod>2025-10-26T06:01:57.713Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.061Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/index.html</loc>
-    <lastmod>2025-10-26T05:49:46.145Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/about.html</loc>
+    <lastmod>2026-03-21T06:28:05.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/blog/posts/01-margin-of-error.html</loc>
+    <lastmod>2026-03-21T06:33:14.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/blog/posts/03-t-test.html</loc>
+    <lastmod>2026-03-21T06:33:14.358Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/blog/posts/05-simple-regression.html</loc>
+    <lastmod>2026-03-21T06:33:14.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/products/analog.html</loc>
+    <lastmod>2026-03-21T06:31:40.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/products/index.html</loc>
+    <lastmod>2026-03-21T06:33:14.347Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/products/trimwrite.html</loc>
+    <lastmod>2026-03-21T06:33:14.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/tools/margin-guard.html</loc>
+    <lastmod>2026-03-21T06:33:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/methods/index.html</loc>
+    <lastmod>2026-03-21T06:33:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/press/asrda.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/press/index.html</loc>
+    <lastmod>2026-03-21T06:33:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/press/smallsamplelab.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/labs/index.html</loc>
+    <lastmod>2026-03-21T06:31:40.265Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/survey/index.html</loc>
-    <lastmod>2025-10-26T04:55:02.845Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.062Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/writer/templates/ab_test_report.html</loc>
-    <lastmod>2025-10-25T02:52:00.000Z</lastmod>
+    <lastmod>2026-03-21T06:28:05.062Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/index.html</loc>
+    <lastmod>2026-03-21T06:35:14.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Availability_Calendar.html</loc>
+    <lastmod>2026-03-21T05:58:51.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Insertion_Order_MiniSponsor.html</loc>
+    <lastmod>2026-03-21T05:58:51.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/PrivacyPolicy.html</loc>
+    <lastmod>2026-03-21T05:58:51.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/downloads/Refund_Cancellation_Policy.html</loc>
+    <lastmod>2026-03-21T05:58:51.781Z</lastmod>
   </url>
 </urlset>

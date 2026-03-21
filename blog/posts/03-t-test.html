@@ -11,7 +11,7 @@
 <meta name="keywords" content="t-test, Welch t-test, average order value, effect size, Hedges g">
 <meta name="description" content="Compare average order value between control and treatment groups with a Welch t-test and report the mean difference with a confidence interval and effect size.">
 
-<title>Welch t-Test: Comparing Average Order Value Between Groups - Flair Marketing Intelligence (FlairMI)</title>
+<title>Welch t-Test: Comparing Average Order Value Between Groups – Flair Marketing Intelligence (FlairMI)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,6 +95,9 @@ div.csl-indent {
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Flair Marketing Intelligence","url":"https://flairmi.com"}
 </script>
+<meta name="robots" content="index,follow">
+<script defer="" src="../../assets/js/ga4.js"></script>
+<script defer="" src="../../assets/js/contact-form.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
@@ -395,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}\n\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data\nset.seed(2)\naov_a <- rnorm(200, mean = 1500, sd = 260)\naov_b <- rnorm(200, mean = 1580, sd = 300)\n\n# Descriptive statistics\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nsd_a <- sd(aov_a)\nsd_b <- sd(aov_b)\ndiff <- mean_b - mean_a\n\n# Welch t-test (unequal variances)\ntt <- t.test(aov_b, aov_a, var.equal = FALSE)\n\n# Effect size (Hedges g with small-sample correction)\ng_result <- cohen_d(aov_b, aov_a)\ng <- g_result[\"g\"]\n\n# Extract test statistics\nt_stat <- unname(tt$statistic)\ndf <- unname(tt$parameter)\np_value <- tt$p.value\nci <- tt$conf.int","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"t-test-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"results_table <- data.frame(\n  Metric = c(\"Control mean (A)\", \"Treatment mean (B)\", \"Mean difference (B - A)\",\n             \"SD Control\", \"SD Treatment\", \n             \"95% CI lower\", \"95% CI upper\", \n             \"t-statistic\", \"Degrees of freedom\", \"p-value\", \"Hedges g\"),\n  Value  = c(sprintf(\"₹%.1f\", mean_a),\n             sprintf(\"₹%.1f\", mean_b),\n             sprintf(\"₹%.1f\", diff),\n             sprintf(\"₹%.1f\", sd_a),\n             sprintf(\"₹%.1f\", sd_b),\n             sprintf(\"₹%.1f\", ci[1]),\n             sprintf(\"₹%.1f\", ci[2]),\n             sprintf(\"%.2f\", t_stat),\n             sprintf(\"%.1f\", df),\n             sprintf(\"%.3f\", p_value),\n             sprintf(\"%.2f\", g)),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Welch t-test results comparing AOV between groups\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(2)\naov_a <- rnorm(200, mean = 1500, sd = 260)\naov_b <- rnorm(200, mean = 1580, sd = 300)\n\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nse_a <- sd(aov_a) / sqrt(200)\nse_b <- sd(aov_b) / sqrt(200)\n\nci_a_lower <- mean_a - 1.96 * se_a\nci_a_upper <- mean_a + 1.96 * se_a\nci_b_lower <- mean_b - 1.96 * se_b\nci_b_upper <- mean_b + 1.96 * se_b\n\nop <- par(mar = c(5, 5, 3.5, 2), xaxs = \"r\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nbp <- barplot(c(mean_a, mean_b), \n              names.arg = c(\"Control (A)\", \"Treatment (B)\"),\n              ylim = c(0, max(ci_a_upper, ci_b_upper) + 150),\n              ylab = \"Average Order Value (₹)\",\n              main = \"AOV Comparison with 95% Confidence Intervals\",\n              col = c(\"#95A5A6\", \"#2C3E50\"),\n              border = \"white\",\n              cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\narrows(bp[1], ci_a_lower, bp[1], ci_a_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#95A5A6\")\narrows(bp[2], ci_b_lower, bp[2], ci_b_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#2C3E50\")\n\ntext(bp[1], mean_a + 120, sprintf(\"₹%.0f\", mean_a), cex = 1.0, font = 2, col = \"#95A5A6\")\ntext(bp[2], mean_b + 120, sprintf(\"₹%.0f\", mean_b), cex = 1.0, font = 2, col = \"#2C3E50\")\n\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Box plots showing average order value distributions for control (₹1,500) and treatment (₹1,580) groups with error bars representing 95% confidence intervals.","fig-asp":"0.6","fig-cap":"Figure 1. Average order value comparison between control and treatment groups with 95% confidence intervals.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-aov-comparison","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Sample size calculation for independent t-test\n# Target: detect ₹80 difference with 80% power at alpha=0.05\nmean_diff_target <- 80\npooled_sd <- 280\n\nz_alpha <- qnorm(1 - 0.05/2)\nz_beta  <- qnorm(0.80)\n\n# Cohen's d for target effect\nd_target <- mean_diff_target / pooled_sd\n\n# Sample size per group\nn_per_group <- ceiling(2 * (z_alpha + z_beta)^2 / d_target^2)\n\n# Power for current sample (200 per group)\nn_current <- 200\nd_current <- 80 / 280\nncp_current <- d_current * sqrt(n_current / 2)\npower_current <- round(1 - pt(qt(0.975, 2*n_current - 2), 2*n_current - 2, ncp_current) + \n                       pt(qt(0.025, 2*n_current - 2), 2*n_current - 2, ncp_current), 2)\n\nplanning_table <- data.frame(\n  Scenario = c(\"Current test\", \"Recommended (80% power)\", \"High power (90%)\"),\n  `n per group` = c(\"200\", \n                    sprintf(\"%d\", n_per_group), \n                    sprintf(\"%d\", ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Total n` = c(\"400\", \n                sprintf(\"%d\", 2*n_per_group), \n                sprintf(\"%d\", 2*ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Power` = c(sprintf(\"%.0f%%\", power_current*100), \"80%\", \"90%\"),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(planning_table, caption = \"Table 2: Sample size recommendations for future tests (n per group and total n)\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]   # Wald CI (profile not used)\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data\nset.seed(2)\naov_a <- rnorm(200, mean = 1500, sd = 260)\naov_b <- rnorm(200, mean = 1580, sd = 300)\n\n# Descriptive statistics\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nsd_a <- sd(aov_a)\nsd_b <- sd(aov_b)\ndiff <- mean_b - mean_a\n\n# Welch t-test (unequal variances)\ntt <- t.test(aov_b, aov_a, var.equal = FALSE)\n\n# Effect size (Hedges g with small-sample correction)\ng_result <- cohen_d(aov_b, aov_a)\ng <- g_result[\"g\"]\n\n# Extract test statistics\nt_stat <- unname(tt$statistic)\ndf <- unname(tt$parameter)\np_value <- tt$p.value\nci <- tt$conf.int","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"t-test-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\nresults_table <- data.frame(\n  Metric = c(\"Control mean (A)\", \"Treatment mean (B)\", \"Mean difference (B - A)\",\n             \"SD Control\", \"SD Treatment\", \n             \"95% CI lower\", \"95% CI upper\", \n             \"t-statistic\", \"Degrees of freedom\", \"p-value\", \"Hedges g\"),\n  Value  = c(sprintf(\"₹%.1f\", mean_a),\n             sprintf(\"₹%.1f\", mean_b),\n             sprintf(\"₹%.1f\", diff),\n             sprintf(\"₹%.1f\", sd_a),\n             sprintf(\"₹%.1f\", sd_b),\n             sprintf(\"₹%.1f\", ci[1]),\n             sprintf(\"₹%.1f\", ci[2]),\n             sprintf(\"%.2f\", t_stat),\n             sprintf(\"%.1f\", df),\n             sprintf(\"%.3f\", p_value),\n             sprintf(\"%.2f\", g)),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Welch t-test results comparing AOV between groups\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(2)\naov_a <- rnorm(200, mean = 1500, sd = 260)\naov_b <- rnorm(200, mean = 1580, sd = 300)\n\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nse_a <- sd(aov_a) / sqrt(200)\nse_b <- sd(aov_b) / sqrt(200)\n\nci_a_lower <- mean_a - 1.96 * se_a\nci_a_upper <- mean_a + 1.96 * se_a\nci_b_lower <- mean_b - 1.96 * se_b\nci_b_upper <- mean_b + 1.96 * se_b\n\nop <- par(mar = c(5, 5, 3.5, 2), xaxs = \"r\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nbp <- barplot(c(mean_a, mean_b), \n              names.arg = c(\"Control (A)\", \"Treatment (B)\"),\n              ylim = c(0, max(ci_a_upper, ci_b_upper) + 150),\n              ylab = \"Average Order Value (₹)\",\n              main = \"AOV Comparison with 95% Confidence Intervals\",\n              col = c(\"#95A5A6\", \"#2C3E50\"),\n              border = \"white\",\n              cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\narrows(bp[1], ci_a_lower, bp[1], ci_a_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#95A5A6\")\narrows(bp[2], ci_b_lower, bp[2], ci_b_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#2C3E50\")\n\ntext(bp[1], mean_a + 120, sprintf(\"₹%.0f\", mean_a), cex = 1.0, font = 2, col = \"#95A5A6\")\ntext(bp[2], mean_b + 120, sprintf(\"₹%.0f\", mean_b), cex = 1.0, font = 2, col = \"#2C3E50\")\n\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Box plots showing average order value distributions for control (₹1,500) and treatment (₹1,580) groups with error bars representing 95% confidence intervals.","fig-asp":"0.6","fig-cap":"Figure 1. Average order value comparison between control and treatment groups with 95% confidence intervals.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-aov-comparison","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Sample size calculation for independent t-test\n# Target: detect ₹80 difference with 80% power at alpha=0.05\nmean_diff_target <- 80\npooled_sd <- 280\n\nz_alpha <- qnorm(1 - 0.05/2)\nz_beta  <- qnorm(0.80)\n\n# Cohen's d for target effect\nd_target <- mean_diff_target / pooled_sd\n\n# Sample size per group\nn_per_group <- ceiling(2 * (z_alpha + z_beta)^2 / d_target^2)\n\n# Power for current sample (200 per group)\nn_current <- 200\nd_current <- 80 / 280\nncp_current <- d_current * sqrt(n_current / 2)\npower_current <- round(1 - pt(qt(0.975, 2*n_current - 2), 2*n_current - 2, ncp_current) + \n                       pt(qt(0.025, 2*n_current - 2), 2*n_current - 2, ncp_current), 2)\n\nplanning_table <- data.frame(\n  Scenario = c(\"Current test\", \"Recommended (80% power)\", \"High power (90%)\"),\n  `n per group` = c(\"200\", \n                    sprintf(\"%d\", n_per_group), \n                    sprintf(\"%d\", ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Total n` = c(\"400\", \n                sprintf(\"%d\", 2*n_per_group), \n                sprintf(\"%d\", 2*ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Power` = c(sprintf(\"%.0f%%\", power_current*100), \"80%\", \"90%\"),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(planning_table, caption = \"Table 2: Sample size recommendations for future tests (n per group and total n)\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -1679,20 +1682,18 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Welch t-Test: Comparing Average Order Value Between Groups - Flair Marketing Intelligence (FlairMI)">
+<link rel="stylesheet" href="../../assets/css/flairmi.css">
+<meta property="og:title" content="Welch t-Test: Comparing Average Order Value Between Groups – Flair Marketing Intelligence (FlairMI)">
 <meta property="og:description" content="Compare average order value between control and treatment groups with a Welch t-test and report the mean difference with a confidence interval and effect size.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.svg">
 <meta property="og:site_name" content="Flair Marketing Intelligence (FlairMI)">
-<meta name="twitter:title" content="Welch t-Test: Comparing Average Order Value Between Groups - Flair Marketing Intelligence (FlairMI)">
+<meta property="og:image:alt" content="FlairMI portfolio overview">
+<meta name="twitter:title" content="Welch t-Test: Comparing Average Order Value Between Groups – Flair Marketing Intelligence (FlairMI)">
 <meta name="twitter:description" content="Compare average order value between control and treatment groups with a Welch t-test and report the mean difference with a confidence interval and effect size.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.svg">
+<meta name="twitter:image:alt" content="FlairMI portfolio overview">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/03-t-test.html">
-<script defer src="/assets/js/ga4.js"></script>
-<script defer src="/assets/js/contact-form.js"></script>
-<meta name="robots" content="index,follow">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://flairmi.com/blog/posts/03-t-test.html">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -1718,21 +1719,105 @@ window.Quarto = {
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../survey/index.html"> 
-<span class="menu-text">Survey</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-products" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Products</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
+        <li>
+    <a class="dropdown-item" href="../../products/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../stats/index.html"> 
-<span class="menu-text">Stats</span></a>
+        <li>
+    <a class="dropdown-item" href="../../products/trimwrite.html">
+ <span class="dropdown-text">TrimWrite</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/quartopad.html">
+ <span class="dropdown-text">QuartoPad</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/ethos.html">
+ <span class="dropdown-text">Ethos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../products/analog.html">
+ <span class="dropdown-text">Analog</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="../../tools/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/margin-guard.html">
+ <span class="dropdown-text">Margin Guard</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/marketing-decision-toolkit.html">
+ <span class="dropdown-text">Marketing Decision Toolkit</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Methods</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-methods">    
+        <li>
+    <a class="dropdown-item" href="../../methods/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../methods/semscreenr.html">
+ <span class="dropdown-text">semScreenR</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-press" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Press</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-press">    
+        <li>
+    <a class="dropdown-item" href="../../press/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/ddmm.html">
+ <span class="dropdown-text">DDMM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/marai.html">
+ <span class="dropdown-text">MarAI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/asrda.html">
+ <span class="dropdown-text">ASRDA</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../press/smallsamplelab.html">
+ <span class="dropdown-text">Small Sample Lab</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../writer/index.html"> 
-<span class="menu-text">Writer</span></a>
+    <a class="nav-link" href="../../teaching/index.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../labs/index.html"> 
+<span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -1755,6 +1840,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#case" id="toc-case" class="nav-link active" data-scroll-target="#case">Case</a></li>
+  <li><a href="#case-1" id="toc-case-1" class="nav-link" data-scroll-target="#case-1">Case</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#calculation" id="toc-calculation" class="nav-link" data-scroll-target="#calculation">Calculation</a></li>
@@ -2131,7 +2217,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </style>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>TL;DR: Control <strong>₹1,500</strong> vs Treatment <strong>₹1,580</strong> (n=200 each); <strong>p=0.001 (sig)</strong>, <strong>difference ₹80 [₹32, ₹128]</strong>, <strong>Hedges g=0.39 (small-medium)</strong>; decision: <strong>treatment increases AOV, roll out if margin supports</strong>.</p>
+<p>TL;DR: Control <strong>₹1,500</strong> vs Treatment <strong>₹1,580</strong> (n=100 each); <strong>p=0.001 (sig)</strong>, <strong>difference ₹80 [₹32, ₹128]</strong>, <strong>Hedges g=0.39 (small-medium)</strong>; decision: <strong>treatment increases AOV, roll out if margin supports</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Welch t-test for independent samples.<br>
@@ -2141,6 +2227,9 @@ Action: Treatment increases AOV by ₹80; roll out if margin supports.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
+</section>
+<section id="case-1" class="level2">
+<h2 class="anchored" data-anchor-id="case-1">Case</h2>
 <p>You are analyzing a merchandising experiment for an e-commerce store. The control group (A) saw standard product displays, while the treatment group (B) received enhanced product recommendations. After four weeks with <strong>200 customers in each group</strong>, you need to determine: Does the treatment significantly increase average order value (AOV)? Should you roll out the new merchandising approach?</p>
 </section>
 <section id="dataset" class="level2">
@@ -2277,7 +2366,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
 </section>
 <section id="comments" class="level2">
 <h2 class="anchored" data-anchor-id="comments">Comments</h2>
-<script src="https://giscus.app/client.js" data-repo="MohammedAliSharafuddin/flairmi" data-repo-id="" data-category="Blog Comments" data-category-id="" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="MohammedAliSharafuddin/flairmi-site" data-repo-id="" data-category="Blog Comments" data-category-id="" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
 </script>
 <script type="application/ld+json">
 {
@@ -2289,7 +2378,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about.html",
+    "url": "https://flairmi.com/about/",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },
@@ -2413,6 +2502,11 @@ Order Value Between Groups.”</span> June 24, 2024. <a href="https://flairmi.co
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -2730,13 +2824,13 @@ Order Value Between Groups.”</span> June 24, 2024. <a href="https://flairmi.co
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p><a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="mailto:mohammedali.page@gmail.com?subject=FlairMI%20Feedback">Feedback</a></p>
+<p><a href="../../about.html">Founder</a> · <a href="mailto:mohammedali.page@gmail.com?subject=FlairMI%20Feedback">Feedback</a></p>
 </div>
   </div>
 </footer>
