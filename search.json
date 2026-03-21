@@ -98,186 +98,249 @@
     "text": "Affiliate and Sponsorship Disclosure\nDate: 25 October 2025\nFlairMI earns referral revenue from select survey and analytics platforms. Sponsored placements are labeled on the page with the partner name. We do not accept equity in exchange for coverage. Partners do not review drafts before publication. Contact sponsor@flairmi.com to discuss campaigns."
   },
   {
-    "objectID": "writer/templates/regression_report.html",
-    "href": "writer/templates/regression_report.html",
-    "title": "Regression report",
+    "objectID": "services/index.html",
+    "href": "services/index.html",
+    "title": "Services",
     "section": "",
-    "text": "Summarise a simple model with variables, units, coefficient interpretation, and the minimum diagnostics needed for a credible applied report."
+    "text": "Services\n    \n    \n      FlairMI supports organisations, teaching teams, researchers, and\n      practitioners through targeted consulting and workshop delivery in R,\n      RStudio, technical writing, statistical analysis, research design, and\n      marketing analytics.\n    \n  \n  \n    \n      \n      \n        Short workshops for student cohorts or analytics teams\n        Hands-on software onboarding for R, RStudio, and Quarto\n        Project-specific review of methods, dashboards, and reporting\n        Course-facing support for teaching materials and examples"
   },
   {
-    "objectID": "writer/templates/regression_report.html#purpose",
-    "href": "writer/templates/regression_report.html#purpose",
-    "title": "Regression report",
+    "objectID": "services/index.html#service-areas",
+    "href": "services/index.html#service-areas",
+    "title": "Services",
+    "section": "Service Areas",
+    "text": "Service Areas\n\n  \n    R Programming And RStudio\n    Training and implementation support for data wrangling, analysis workflows, and reproducible scripting in R.\n  \n  \n    Technical Writing And Quarto\n    Support for structured reports, reproducible documents, teaching notes, and technical publication workflows.\n  \n  \n    Statistical Analysis\n    Applied support for descriptive analysis, testing, measurement, and interpretation in business and academic settings.\n  \n  \n    Research Design\n    Guidance for survey design, data collection planning, instrument structure, and reporting strategy.\n  \n  \n    Marketing Analytics\n    Help with ROI tracking, CAC and CLV thinking, funnel review, forecasting, segmentation, and dashboard use."
+  },
+  {
+    "objectID": "services/index.html#enquiries",
+    "href": "services/index.html#enquiries",
+    "title": "Services",
+    "section": "Enquiries",
+    "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Area\n        \n          R and RStudio\n          Technical writing\n          Statistical analysis\n          Research design\n          Marketing analytics\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send enquiry\n      Messages go directly to mohammedali.page@gmail.com."
+  },
+  {
+    "objectID": "templates/rfm-segmentation.html",
+    "href": "templates/rfm-segmentation.html",
+    "title": "RFM Segmentation",
     "section": "",
-    "text": "Summarise a simple model with variables, units, coefficient interpretation, and the minimum diagnostics needed for a credible applied report."
+    "text": "Download\n    \n    \n      Score customers on Recency, Frequency, and Monetary value, then assign\n      them to named segments that support retention, reactivation, and growth\n      actions.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "writer/templates/regression_report.html#report-outline",
-    "href": "writer/templates/regression_report.html#report-outline",
-    "title": "Regression report",
-    "section": "Report Outline",
-    "text": "Report Outline\n\nResponse and predictor in plain language\nCoefficient, uncertainty, and practical interpretation\nModel fit and one key limitation\nDecision or implication\nLink to supporting notebook or method page"
+    "objectID": "templates/rfm-segmentation.html#key-inputs",
+    "href": "templates/rfm-segmentation.html#key-inputs",
+    "title": "RFM Segmentation",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nRecency score\nFrequency score\nMonetary score"
   },
   {
-    "objectID": "writer/templates/regression_report.html#related-pages",
-    "href": "writer/templates/regression_report.html#related-pages",
-    "title": "Regression report",
-    "section": "Related Pages",
-    "text": "Related Pages\n\nProduct workflow: QuartoPad\nEditing and style workflow: TrimWrite\nPublishing workflow: FlairMI Press"
+    "objectID": "templates/rfm-segmentation.html#notes",
+    "href": "templates/rfm-segmentation.html#notes",
+    "title": "RFM Segmentation",
+    "section": "Notes",
+    "text": "Notes\nSegment assignment is formula-driven and can be adapted if your business uses a different scoring logic. The workbook is useful for classroom segmentation exercises and quick practical customer-priority discussions."
   },
   {
-    "objectID": "writer/index.html",
-    "href": "writer/index.html",
-    "title": "Writer",
+    "objectID": "templates/marketing-funnel-dashboard.html",
+    "href": "templates/marketing-funnel-dashboard.html",
+    "title": "Marketing Funnel Dashboard",
     "section": "",
-    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and writing review.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
+    "text": "Download\n    \n    \n      Visualise conversion and drop-off across the marketing funnel from\n      impressions through to customers won. The workbook also supports quick\n      review of stage cost and top-of-funnel channel contribution.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "writer/index.html#legacy-route",
-    "href": "writer/index.html#legacy-route",
-    "title": "Writer",
+    "objectID": "templates/marketing-funnel-dashboard.html#key-inputs",
+    "href": "templates/marketing-funnel-dashboard.html#key-inputs",
+    "title": "Marketing Funnel Dashboard",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nFunnel stage volumes\nStage-level costs\nChannel impressions, clicks, and leads"
+  },
+  {
+    "objectID": "templates/marketing-funnel-dashboard.html#notes",
+    "href": "templates/marketing-funnel-dashboard.html#notes",
+    "title": "Marketing Funnel Dashboard",
+    "section": "Notes",
+    "text": "Notes\nConversion rates and cost-per-stage views are calculated automatically. The workbook is useful for marketing review meetings, teaching funnel logic, and quick discussions about where drop-off hurts most."
+  },
+  {
+    "objectID": "templates/competitive-positioning-map.html",
+    "href": "templates/competitive-positioning-map.html",
+    "title": "Competitive Positioning Map",
     "section": "",
-    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and writing review.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
+    "text": "Download\n    \n    \n      Plot your company and competitors across two strategic dimensions of your\n      choice. The workbook supports gap identification, score comparison, and\n      basic weighted ranking.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "stats/index.html",
-    "href": "stats/index.html",
-    "title": "Stats",
+    "objectID": "templates/competitive-positioning-map.html#key-inputs",
+    "href": "templates/competitive-positioning-map.html#key-inputs",
+    "title": "Competitive Positioning Map",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nCustom X-axis and Y-axis labels\nCompetitor scores on each axis\nMarket share and revenue inputs"
+  },
+  {
+    "objectID": "templates/competitive-positioning-map.html#notes",
+    "href": "templates/competitive-positioning-map.html#notes",
+    "title": "Competitive Positioning Map",
+    "section": "Notes",
+    "text": "Notes\nThe workbook is useful when you want a structured positioning exercise for a classroom, strategy workshop, or a quick competitor-mapping discussion without building a slide deck from scratch."
+  },
+  {
+    "objectID": "templates/churn-rate-dashboard.html",
+    "href": "templates/churn-rate-dashboard.html",
+    "title": "Churn Rate Dashboard",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows and public method notes.\nUse the Blog for guided WebR tutorials tied to real use cases."
+    "text": "Download\n    \n    \n      Monitor monthly customer churn, revenue churn, net revenue retention, and\n      cohort retention over time. The workbook is designed for recurring-revenue\n      or membership-style analysis.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "stats/index.html#legacy-route",
-    "href": "stats/index.html#legacy-route",
-    "title": "Stats",
+    "objectID": "templates/churn-rate-dashboard.html#key-inputs",
+    "href": "templates/churn-rate-dashboard.html#key-inputs",
+    "title": "Churn Rate Dashboard",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nStart customers, new customers, and churned customers\nMonthly churn rate\nRevenue and expansion fields for retention calculations"
+  },
+  {
+    "objectID": "templates/churn-rate-dashboard.html#notes",
+    "href": "templates/churn-rate-dashboard.html#notes",
+    "title": "Churn Rate Dashboard",
+    "section": "Notes",
+    "text": "Notes\nThe workbook derives annual churn from monthly churn and highlights whether net revenue retention is above 100 percent. It is useful for teaching retention logic and for practical recurring-revenue review."
+  },
+  {
+    "objectID": "templates/cac-calculator.html",
+    "href": "templates/cac-calculator.html",
+    "title": "CAC Calculator",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows and public method notes.\nUse the Blog for guided WebR tutorials tied to real use cases."
+    "text": "Download\n    \n    \n      Calculate and compare customer acquisition cost across channels. The\n      workbook helps identify efficient acquisition sources, period-over-period\n      changes, and payback periods by channel.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "teaching/index.html",
-    "href": "teaching/index.html",
-    "title": "Teaching",
+    "objectID": "templates/cac-calculator.html#key-inputs",
+    "href": "templates/cac-calculator.html#key-inputs",
+    "title": "CAC Calculator",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nTotal spend by channel\nNew customers acquired\nPrior-period CAC\nMonthly ARPU and gross margin"
+  },
+  {
+    "objectID": "templates/cac-calculator.html#notes",
+    "href": "templates/cac-calculator.html#notes",
+    "title": "CAC Calculator",
+    "section": "Notes",
+    "text": "Notes\nPayback period is derived from CAC and monthly gross profit. The workbook works well when you need a lightweight way to explain acquisition efficiency and the difference between cheap traffic and sustainable customer economics."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html",
+    "href": "textbooks/smallsamplelab.html",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
     "section": "",
-    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows and classroom-facing examples"
+    "text": "Proofreading\n    \n    \n      Small Sample Lab is a practical methods book for students and researchers\n      working with limited datasets in education, health, business, social\n      science, and resource-constrained contexts.\n    \n  \n  \n    \n      \n      The title is in proofreading. The project already maps chapters, worked projects, guided lab practicals, and instructor-facing material."
   },
   {
-    "objectID": "teaching/index.html#teaching",
-    "href": "teaching/index.html#teaching",
-    "title": "Teaching",
+    "objectID": "textbooks/smallsamplelab.html#what-it-covers",
+    "href": "textbooks/smallsamplelab.html#what-it-covers",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "What It Covers",
+    "text": "What It Covers\nThe book focuses on exact tests, resampling, nonparametric analysis, small-sample regression, reliability, effect sizes, interpretation, and transparent reporting. It is especially relevant where sample sizes are modest but rigorous quantitative analysis is still required."
+  },
+  {
+    "objectID": "textbooks/index.html",
+    "href": "textbooks/index.html",
+    "title": "Textbooks",
     "section": "",
-    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows and classroom-facing examples"
+    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    An open textbook for analysts and managers applying quantitative methods to real marketing problems with AI-assisted workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A survey research text structured for multi-chapter drafting, transparent computation, and reproducible reporting in R.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical book for small-sample research in education, health, business, and resource-constrained contexts.\n    Open page"
   },
   {
-    "objectID": "press/marai.html",
-    "href": "press/marai.html",
-    "title": "MarAI",
+    "objectID": "textbooks/index.html#textbooks-and-teaching-materials",
+    "href": "textbooks/index.html#textbooks-and-teaching-materials",
+    "title": "Textbooks",
     "section": "",
-    "text": "MarAI brings together marketing, analytics, and teaching-oriented publishing work.\n\n\n\nBook and teaching line\nCompanion examples and course-facing material\nPublishing page for the MarAI project\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/MarAI_Suite"
+    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    An open textbook for analysts and managers applying quantitative methods to real marketing problems with AI-assisted workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A survey research text structured for multi-chapter drafting, transparent computation, and reproducible reporting in R.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical book for small-sample research in education, health, business, and resource-constrained contexts.\n    Open page"
   },
   {
-    "objectID": "press/marai.html#marai",
-    "href": "press/marai.html#marai",
-    "title": "MarAI",
+    "objectID": "textbooks/asrda.html",
+    "href": "textbooks/asrda.html",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
     "section": "",
-    "text": "MarAI brings together marketing, analytics, and teaching-oriented publishing work.\n\n\n\nBook and teaching line\nCompanion examples and course-facing material\nPublishing page for the MarAI project\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/MarAI_Suite"
+    "text": "Proofreading\n    \n    \n      ASRDA guides survey research from conceptualisation through reproducible\n      reporting. It is built for students, researchers, and contributors who\n      need a stable structure for survey-focused chapter writing and transparent\n      computation in R.\n    \n  \n  \n    \n      \n      The title is in proofreading. The project scaffold already covers chapter templates, data policy, references, and reproducibility guidance."
   },
   {
-    "objectID": "press/ddmm.html",
-    "href": "press/ddmm.html",
-    "title": "DDMM",
+    "objectID": "textbooks/asrda.html#what-it-covers",
+    "href": "textbooks/asrda.html#what-it-covers",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "What It Covers",
+    "text": "What It Covers\nThe project is structured around multi-chapter drafting, a common chapter scaffold, transparent code, and automated HTML and PDF builds. The emphasis is not just on analysis, but on the full path from constructs and scales to results, interpretation, and reproducible reporting."
+  },
+  {
+    "objectID": "products/quartopad.html",
+    "href": "products/quartopad.html",
+    "title": "QuartoPad",
     "section": "",
-    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nBook and teaching line\nDigital marketing and analytics focus\nCompanion material and course-facing context\n\n\n\n\n\nSource repo: DMM_Suite"
+    "text": "Private Beta\n    \n    \n      QuartoPad is a browser-based editor for Quarto projects. It is designed\n      for analysts, lecturers, researchers, and technical writers who want live\n      preview, chunk execution, citation workflows, and dataset inspection in a\n      local-first environment.\n    \n    \n      Request beta access\n      Back to products\n    \n    \n      Live previewQuarto rendering inside the editor workflow\n      Chunk executionRun R code and retain the session state\n      Research toolingCitations, dataset preview, and document structure"
   },
   {
-    "objectID": "press/ddmm.html#ddmm",
-    "href": "press/ddmm.html#ddmm",
-    "title": "DDMM",
-    "section": "",
-    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nBook and teaching line\nDigital marketing and analytics focus\nCompanion material and course-facing context\n\n\n\n\n\nSource repo: DMM_Suite"
+    "objectID": "products/quartopad.html#what-it-covers",
+    "href": "products/quartopad.html#what-it-covers",
+    "title": "QuartoPad",
+    "section": "What It Covers",
+    "text": "What It Covers\nQuartoPad combines a source editor, rendered preview, dataset browser, console, and citation workflow in one interface. The current build supports live rendering, inline chunk execution with a persistent environment, preview of tabular data, and citation work through local bibliographies and CrossRef-aware flows."
   },
   {
-    "objectID": "methods/index.html",
-    "href": "methods/index.html",
-    "title": "Methods",
-    "section": "",
-    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages."
+    "objectID": "products/quartopad.html#current-stage",
+    "href": "products/quartopad.html#current-stage",
+    "title": "QuartoPad",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe product is in private beta. The current direction is shaped around technical writing, reproducible research, classroom authoring, and local document workflows where a full cloud platform would be unnecessary overhead."
   },
   {
-    "objectID": "methods/index.html#methods",
-    "href": "methods/index.html#methods",
-    "title": "Methods",
-    "section": "",
-    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages."
+    "objectID": "products/quartopad.html#beta-access",
+    "href": "products/quartopad.html#beta-access",
+    "title": "QuartoPad",
+    "section": "Beta Access",
+    "text": "Beta Access\n\n  Request QuartoPad Beta Access\n  Use this form if you want to test QuartoPad for technical writing, teaching, or research workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Role\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
   },
   {
-    "objectID": "methods/index.html#on-this-section",
-    "href": "methods/index.html#on-this-section",
-    "title": "Methods",
-    "section": "On This Section",
-    "text": "On This Section\n\nMethod pages connect packages, public explanations, and related teaching material.\nVisit the Blog for worked examples and tutorials.\nVisit Teaching for classroom-facing material."
-  },
-  {
-    "objectID": "tools/margin-guard.html",
-    "href": "tools/margin-guard.html",
+    "objectID": "products/margin-guard.html",
+    "href": "products/margin-guard.html",
     "title": "Margin Guard",
     "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
+    "text": "Live\n    \n    \n      Margin Guard is a browser-based promotion break-even calculator. It\n      compares baseline contribution against promo-period contribution and helps\n      you judge whether expected demand uplift is enough to justify the margin\n      given away.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Break-even logicRequired units, lift, and net contribution delta\n      Scenario planningEvaluate pricing and fixed-cost assumptions quickly\n      Browser-basedNo install required for teaching or practical use"
   },
   {
-    "objectID": "tools/margin-guard.html#margin-guard",
-    "href": "tools/margin-guard.html#margin-guard",
+    "objectID": "products/margin-guard.html#what-it-helps-you-answer",
+    "href": "products/margin-guard.html#what-it-helps-you-answer",
     "title": "Margin Guard",
-    "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
+    "section": "What It Helps You Answer",
+    "text": "What It Helps You Answer\nMargin Guard is built for pricing and campaign questions such as:\n\nHow much contribution margin is the promotion giving away per unit?\nHow many units are required to break even after discounting?\nDoes the forecast uplift clear the threshold or leave a thin buffer?\nWhat is the net contribution delta versus the baseline scenario?"
   },
   {
-    "objectID": "products/trimwrite.html",
-    "href": "products/trimwrite.html",
-    "title": "TrimWrite",
-    "section": "",
-    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
+    "objectID": "products/margin-guard.html#use-the-live-tool",
+    "href": "products/margin-guard.html#use-the-live-tool",
+    "title": "Margin Guard",
+    "section": "Use The Live Tool",
+    "text": "Use The Live Tool\nThe current version is live in the browser and can be used immediately:\nOpen Margin Guard"
   },
   {
-    "objectID": "products/trimwrite.html#trimwrite",
-    "href": "products/trimwrite.html#trimwrite",
-    "title": "TrimWrite",
+    "objectID": "products/ethos.html",
+    "href": "products/ethos.html",
+    "title": "Ethos",
     "section": "",
-    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
+    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics stackDescriptives, tests, reliability, EFA, CFA, SEM, and survey design\n      Writer exportsDOCX and Quarto outputs with reproducibility support"
   },
   {
-    "objectID": "products/index.html",
-    "href": "products/index.html",
-    "title": "Products",
-    "section": "",
-    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
+    "objectID": "products/ethos.html#what-it-covers",
+    "href": "products/ethos.html#what-it-covers",
+    "title": "Ethos",
+    "section": "What It Covers",
+    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, ethics review, and report generation. The current alpha architecture includes a survey builder, analytics modules, writer exports, ethics workflow, offline/PWA groundwork, and self-hosted deployment patterns."
   },
   {
-    "objectID": "products/index.html#product-portfolio",
-    "href": "products/index.html#product-portfolio",
-    "title": "Products",
-    "section": "",
-    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
+    "objectID": "products/ethos.html#current-stage",
+    "href": "products/ethos.html#current-stage",
+    "title": "Ethos",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe product is in alpha. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully."
   },
   {
-    "objectID": "products/index.html#products-at-a-glance",
-    "href": "products/index.html#products-at-a-glance",
-    "title": "Products",
-    "section": "Products At A Glance",
-    "text": "Products At A Glance\n\n\n\nProduct\nFocus\nPublic page\nRepository\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen\ntrimwrite\n\n\nQuartoPad\nQuarto authoring and rendering\nOpen\nquartopad\n\n\nEthos\nSurvey, analytics, and reporting workflows\nOpen\nethos\n\n\nAnalog\nSmaller product experiment\nOpen\nanalog"
-  },
-  {
-    "objectID": "products/analog.html",
-    "href": "products/analog.html",
-    "title": "Analog",
-    "section": "",
-    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
-  },
-  {
-    "objectID": "products/analog.html#analog",
-    "href": "products/analog.html#analog",
-    "title": "Analog",
-    "section": "",
-    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
+    "objectID": "products/ethos.html#pilot-interest",
+    "href": "products/ethos.html#pilot-interest",
+    "title": "Ethos",
+    "section": "Pilot Interest",
+    "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Organisation\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
   },
   {
     "objectID": "blog/posts/05-simple-regression.html",
@@ -522,35 +585,35 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, survey research,\n      quantitative methods, technical writing, and reproducible workflows in R\n      and Quarto.\n    \n    \n      FlairMI is the public portfolio layer for that work. It brings together\n      textbooks, downloadable templates, local-first tools, and workshop-led\n      services in one place at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#founder",
     "href": "about.html#founder",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, survey research,\n      quantitative methods, technical writing, and reproducible workflows in R\n      and Quarto.\n    \n    \n      FlairMI is the public portfolio layer for that work. It brings together\n      textbooks, downloadable templates, local-first tools, and workshop-led\n      services in one place at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#current-work",
     "href": "about.html#current-work",
     "title": "About",
     "section": "Current Work",
-    "text": "Current Work\n\nSoftware projects including TrimWrite, QuartoPad, Ethos, and related tools.\nBooks, course materials, and companion resources including DDMM, MarAI, ASRDA, and Small Sample Lab.\nMethods-oriented work and reproducible research workflows.\nTeaching resources, worked examples, and public-facing portfolio material."
+    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management, MarAI, ASRDA, and Small Sample Lab.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
   },
   {
     "objectID": "about.html#about-flairmi",
     "href": "about.html#about-flairmi",
     "title": "About",
     "section": "About FlairMI",
-    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) brings together several parts of the portfolio in one place:\n\nsoftware and workflow projects\nfree tools and templates\nmethods pages for reusable scholarly work\nbooks, course materials, and companion resources\n\nThe site is meant to be easy to navigate whether you are looking for a product, a method, a book, a teaching resource, or the public blog."
+    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is structured around four public-facing areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nThe companion academic identity remains on the personal site, while FlairMI acts as the product, publishing, and delivery layer."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\nFor product questions, teaching enquiries, workshops, consulting, and publishing:\nEmail: mohammedali.page@gmail.com"
+    "text": "Contact\nFor product questions, workshops, consulting, teaching adoption, and publishing:\nEmail: mohammedali.page@gmail.com"
   },
   {
     "objectID": "about.html#connect",
@@ -564,35 +627,42 @@
     "href": "index.html",
     "title": "Flair Marketing Intelligence",
     "section": "",
-    "text": "FlairMI\n  \n  \n    FlairMI is the public home for Mohammed Ali Sharafuddin's work across\n    software, research methods, teaching materials, and publishing projects.\n  \n  \n    Explore products\n    Browse books\n    Read the blog"
+    "text": "FlairMI\n  \n  \n    Flair Marketing Intelligence is the public portfolio of Mohammed Ali\n    Sharafuddin. It brings together textbooks, downloadable Excel templates,\n    browser-based tools, and beta software built for teaching, technical\n    writing, survey research, and applied marketing analysis.\n  \n  \n    Browse textbooks\n    Explore templates\n    View products"
   },
   {
-    "objectID": "index.html#explore-flairmi",
-    "href": "index.html#explore-flairmi",
+    "objectID": "index.html#textbooks",
+    "href": "index.html#textbooks",
     "title": "Flair Marketing Intelligence",
-    "section": "Explore FlairMI",
-    "text": "Explore FlairMI\nFlairMI is organized around a few clear areas so you can move directly to the part of the portfolio that matters to you.\n\n  \n    Products\n    Software projects\n    TrimWrite, QuartoPad, Ethos, and Analog bring together writing, authoring, survey, and workflow-oriented software.\n    Browse products\n  \n  \n    Tools\n    Free utilities\n    Practical calculators, templates, and decision aids for teaching, analysis, and day-to-day marketing work.\n    Browse tools\n  \n  \n    Methods\n    Methods and packages\n    Reusable methods work, package notes, and research-oriented resources.\n    Browse methods\n  \n  \n    Press\n    Books and publishing\n    Book pages, companion material, and title-level information for current and developing publishing projects.\n    Browse books\n  \n  \n    Teaching\n    Teaching resources\n    Companion materials, worked examples, and course-facing resources connected to products, methods, and books.\n    Browse teaching resources\n  \n  \n    Labs\n    Experiments and side projects\n    Smaller experiments, public demos, and portfolio projects that sit outside the main product and publishing lines.\n    Browse labs"
+    "section": "Textbooks",
+    "text": "Textbooks\nFour textbooks anchor the teaching and publishing side of FlairMI. Data-Driven Management: Statistics for Managers is live today. The remaining three titles are in proofreading and preparation for release.\n\n  \n    Live\n    Data-Driven Management: Statistics for Managers\n    A multi-output teaching line with a textbook, lecture decks, companion site, examples, and instructor resources.\n    Open textbook page\n  \n  \n    Proofreading\n    AI-Powered Marketing Analytics: Applied Methods for Managers\n    An applied methods text for managers and analysts working with modern marketing data and AI-assisted workflows.\n    Open textbook page\n  \n  \n    Proofreading\n    Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R\n    A survey research book that moves from measurement design to reproducible analysis and reporting in R.\n    Open textbook page\n  \n  \n    Proofreading\n    Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers\n    A practical book for students and researchers working with limited datasets, exact methods, and reproducible reporting.\n    Open textbook page"
   },
   {
-    "objectID": "index.html#featured-pages",
-    "href": "index.html#featured-pages",
+    "objectID": "index.html#templates-and-dashboards",
+    "href": "index.html#templates-and-dashboards",
     "title": "Flair Marketing Intelligence",
-    "section": "Featured Pages",
-    "text": "Featured Pages\n\n  \n\n\n\nPage\nFocus\nWhere to begin\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen page\n\n\nQuartoPad\nQuarto authoring and rendering workflow\nOpen page\n\n\nEthos\nSurvey, analytics, and reporting environment\nOpen page\n\n\nMargin Guard\nPromotion and pricing support tool\nOpen page\n\n\nMethods\nResearch workflows, package notes, and public methods pages\nOpen page\n\n\nDDMM\nBook and teaching materials\nOpen page"
+    "section": "Templates And Dashboards",
+    "text": "Templates And Dashboards\nFlairMI hosts the full Marketing Decision Toolkit directly on the site, with ten downloadable Excel workbooks for planning, forecasting, segmentation, and performance measurement.\n\n  \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n  \n  \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    Marketing Funnel Dashboard\n    Track conversion, drop-off, and cost efficiency across the funnel.\n    Open template page"
   },
   {
-    "objectID": "index.html#across-the-site",
-    "href": "index.html#across-the-site",
+    "objectID": "index.html#products",
+    "href": "index.html#products",
     "title": "Flair Marketing Intelligence",
-    "section": "Across The Site",
-    "text": "Across The Site\n\nProduct pages describe the software projects and link to supporting repositories.\nTool pages collect practical utilities and downloadable resources.\nMethods pages connect packages and workflows to their public context.\nPress pages bring together books, companion materials, and teaching links.\nLegacy paths such as Stats, Survey, and Writer remain available for continuity."
+    "section": "Products",
+    "text": "Products\nThe product line mixes live browser utilities with beta software. Price Memory and Margin Guard are already public. QuartoPad, TrimWrite, and Ethos are in testing and can be requested through the embedded beta forms on their pages.\n\n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open product page\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open product page\n  \n  \n    Private Beta\n    QuartoPad\n    A browser-based editor for Quarto documents with live preview, chunk execution, and citation support.\n    Open product page\n  \n  \n    Testing\n    TrimWrite\n    A revision tool for checking AI-shaped phrasing, vague language, and structural repetition in drafts.\n    Open product page\n  \n  \n    Alpha\n    Ethos\n    A privacy-first academic survey, analytics, and writer suite designed for self-hosted use.\n    Open product page"
+  },
+  {
+    "objectID": "index.html#services",
+    "href": "index.html#services",
+    "title": "Flair Marketing Intelligence",
+    "section": "Services",
+    "text": "Services\nFlairMI also supports teaching and implementation through consulting and workshops in R, RStudio, Quarto-based technical writing, statistical analysis, research design, and marketing analytics.\n\n  \n    R And RStudio Workshops\n    Hands-on sessions for analysts, lecturers, and student cohorts using modern R workflows.\n  \n  \n    Technical Writing With Quarto\n    Support for reproducible reports, teaching material, and professional documents.\n  \n  \n    Statistical Analysis And Research Design\n    Guidance for survey projects, experiments, measurement, and reporting.\n  \n  \n    Marketing Analytics Consulting\n    Applied support for dashboards, forecasting, segmentation, funnel analysis, and campaign review."
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Flair Marketing Intelligence",
     "section": "Contact",
-    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for product questions, teaching enquiries, publishing\n    enquiries, or general collaboration.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Products\n          Tools\n          Methods\n          Press and teaching\n          Consulting\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Textbooks\n          Templates\n          Products\n          Services\n          Workshops\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
   },
   {
     "objectID": "blog/index.html",
@@ -868,193 +938,270 @@
     "text": "Comments"
   },
   {
-    "objectID": "products/ethos.html",
-    "href": "products/ethos.html",
-    "title": "Ethos",
+    "objectID": "products/index.html",
+    "href": "products/index.html",
+    "title": "Products",
     "section": "",
-    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
+    "text": "FlairMI products fall into two groups. Price Memory and Margin Guard are already public and live in the browser. QuartoPad, TrimWrite, and Ethos are in testing, with embedded forms for beta interest and pilot enquiries.\n\n  \n    Live\n    \n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open product page\n  \n  \n    Live\n    \n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open product page\n  \n  \n    Private Beta\n    \n    A browser-based editor for Quarto documents with live rendering, chunk execution, dataset preview, and citations.\n    Open product page\n  \n  \n    Testing\n    \n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Open product page\n  \n  \n    Alpha\n    \n    A self-hosted survey, analytics, and writer suite designed for privacy-sensitive academic and institutional use.\n    Open product page"
   },
   {
-    "objectID": "products/ethos.html#ethos",
-    "href": "products/ethos.html#ethos",
-    "title": "Ethos",
+    "objectID": "products/index.html#product-portfolio",
+    "href": "products/index.html#product-portfolio",
+    "title": "Products",
     "section": "",
-    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
+    "text": "FlairMI products fall into two groups. Price Memory and Margin Guard are already public and live in the browser. QuartoPad, TrimWrite, and Ethos are in testing, with embedded forms for beta interest and pilot enquiries.\n\n  \n    Live\n    \n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open product page\n  \n  \n    Live\n    \n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open product page\n  \n  \n    Private Beta\n    \n    A browser-based editor for Quarto documents with live rendering, chunk execution, dataset preview, and citations.\n    Open product page\n  \n  \n    Testing\n    \n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Open product page\n  \n  \n    Alpha\n    \n    A self-hosted survey, analytics, and writer suite designed for privacy-sensitive academic and institutional use.\n    Open product page"
   },
   {
-    "objectID": "products/quartopad.html",
-    "href": "products/quartopad.html",
-    "title": "QuartoPad",
+    "objectID": "products/index.html#at-a-glance",
+    "href": "products/index.html#at-a-glance",
+    "title": "Products",
+    "section": "At A Glance",
+    "text": "At A Glance\n\n  \n    Live now\n    Price Memory and Margin Guard are public-facing tools with live browser access and dedicated product pages.\n  \n  \n    Writer workflow\n    QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n  \n  \n    Academic stack\n    Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
+  },
+  {
+    "objectID": "products/price-memory.html",
+    "href": "products/price-memory.html",
+    "title": "Price Memory",
     "section": "",
-    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
+    "text": "Live\n    \n    \n      Price Memory is a local grocery price tracker. You enter an item, store,\n      price, and date, and the browser builds a personal price history so you\n      can see whether a sale is actually cheaper than your usual price.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Browser-onlyNo account setup and no backend required\n      IndexedDB storageYour price log stays on your device\n      Visual historyTrack item-level prices with charts and CSV export"
   },
   {
-    "objectID": "products/quartopad.html#quartopad",
-    "href": "products/quartopad.html#quartopad",
-    "title": "QuartoPad",
+    "objectID": "products/price-memory.html#why-it-exists",
+    "href": "products/price-memory.html#why-it-exists",
+    "title": "Price Memory",
+    "section": "Why It Exists",
+    "text": "Why It Exists\nPrice Memory was built to solve a simple decision problem: shoppers often see a discount label but do not know whether the offer is genuinely below their usual purchase price. By storing a personal item-level history locally, the tool turns that vague memory into a usable price record."
+  },
+  {
+    "objectID": "products/price-memory.html#what-you-can-do",
+    "href": "products/price-memory.html#what-you-can-do",
+    "title": "Price Memory",
+    "section": "What You Can Do",
+    "text": "What You Can Do\n\nLog prices by item, store, date, and note\nReview item-level price history over time\nUse a lightweight chart to spot real price dips\nExport your records as CSV for backup or further analysis"
+  },
+  {
+    "objectID": "products/price-memory.html#use-the-live-tool",
+    "href": "products/price-memory.html#use-the-live-tool",
+    "title": "Price Memory",
+    "section": "Use The Live Tool",
+    "text": "Use The Live Tool\nThe current version is live in the browser and stores records locally on your device:\nOpen Price Memory"
+  },
+  {
+    "objectID": "products/trimwrite.html",
+    "href": "products/trimwrite.html",
+    "title": "TrimWrite",
     "section": "",
-    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
+    "text": "Testing\n    \n    \n      TrimWrite is a revision tool for checking AI-like phrasing, vague\n      language, structural artifacts, and repetitive voice patterns before a\n      report, article, or submission goes out.\n    \n    \n      View public site\n      Request testing access\n    \n    \n      Pattern reviewHighlights vague language, fluff, and AI-shaped phrases\n      Draft diagnosticsReadability, clarity, structural counts, and AI likelihood\n      Workflow supportExports, sample texts, history, and local-first use"
   },
   {
-    "objectID": "tools/index.html",
-    "href": "tools/index.html",
-    "title": "Tools",
+    "objectID": "products/trimwrite.html#what-it-does",
+    "href": "products/trimwrite.html#what-it-does",
+    "title": "TrimWrite",
+    "section": "What It Does",
+    "text": "What It Does\nTrimWrite is built for people who need to review a draft quickly before publication, submission, or handoff. The current testing build analyses text for vague wording, filler, loaded language, AI-style phrases, AI vocabulary, readability, and structural signals such as list-heavy or formulaic writing."
+  },
+  {
+    "objectID": "products/trimwrite.html#current-stage",
+    "href": "products/trimwrite.html#current-stage",
+    "title": "TrimWrite",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe product is in testing. The current build already includes client-side analysis, export options, usage gating, sample-text demos, and an evolving auth-enabled backend layer for synced features."
+  },
+  {
+    "objectID": "products/trimwrite.html#testing-access",
+    "href": "products/trimwrite.html#testing-access",
+    "title": "TrimWrite",
+    "section": "Testing Access",
+    "text": "Testing Access\n\n  Request TrimWrite Testing Access\n  Use this form if you want to test TrimWrite on articles, reports, course material, or editorial workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Use case\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
+  },
+  {
+    "objectID": "textbooks/ddmm.html",
+    "href": "textbooks/ddmm.html",
+    "title": "Data-Driven Management: Statistics for Managers",
     "section": "",
-    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
+    "text": "Live\n    \n    \n      This is a multi-output teaching line built around a textbook, lecture\n      decks, companion site, worked examples, instructor resources, and episode\n      materials. It is designed for reproducible teaching, adoption, and course\n      delivery.\n    \n    \n      Open live companion site\n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        27-chapter book project\n        Lecture slide decks and worked examples\n        Companion website and instructor resources\n        YouTube-oriented supporting materials"
   },
   {
-    "objectID": "tools/index.html#tools",
-    "href": "tools/index.html#tools",
-    "title": "Tools",
+    "objectID": "textbooks/ddmm.html#positioning",
+    "href": "textbooks/ddmm.html#positioning",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "Positioning",
+    "text": "Positioning\nData-Driven Management: Statistics for Managers is the most mature textbook line in the FlairMI portfolio. The live public deployment already exists, and the underlying source project is structured to support teaching, adoption, and multi-format delivery from a shared asset base."
+  },
+  {
+    "objectID": "textbooks/marai.html",
+    "href": "textbooks/marai.html",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
     "section": "",
-    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
+    "text": "Proofreading\n    \n    \n      MarAI is an open textbook for marketing analysts, data-literate managers,\n      and advanced undergraduates who want to apply quantitative methods to real\n      marketing problems, with AI tools accelerating parts of the workflow.\n    \n  \n  \n    \n      \n      The title is in proofreading and preparation. The project already has a structured multi-part book workflow with companion examples and teaching intent."
   },
   {
-    "objectID": "tools/index.html#on-this-section",
-    "href": "tools/index.html#on-this-section",
-    "title": "Tools",
-    "section": "On This Section",
-    "text": "On This Section\n\nUse these pages to access tools directly.\nVisit the Methods section for package-led work.\nVisit the Blog for tutorials, examples, and longer explanations."
+    "objectID": "textbooks/marai.html#what-it-covers",
+    "href": "textbooks/marai.html#what-it-covers",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "What It Covers",
+    "text": "What It Covers\nThe book is positioned as a companion to Data-Driven Management: Statistics for Managers. It focuses more narrowly on marketing analytics problems, publicly available data, working examples, and the practical use of AI tools in an applied analytical workflow."
   },
   {
-    "objectID": "tools/marketing-decision-toolkit.html",
-    "href": "tools/marketing-decision-toolkit.html",
-    "title": "Marketing Decision Toolkit",
+    "objectID": "templates/break-even-analysis.html",
+    "href": "templates/break-even-analysis.html",
+    "title": "Break-Even Analysis",
     "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
+    "text": "Download\n    \n    \n      Calculate the unit volume and revenue required to cover fixed and\n      variable costs. The workbook helps you model contribution margin,\n      payback thresholds, and profit across a range of sales volumes.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
-    "href": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
-    "title": "Marketing Decision Toolkit",
+    "objectID": "templates/break-even-analysis.html#key-inputs",
+    "href": "templates/break-even-analysis.html#key-inputs",
+    "title": "Break-Even Analysis",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nSelling price per unit\nVariable cost per unit\nMonthly and annual fixed costs\nTarget profit"
+  },
+  {
+    "objectID": "templates/break-even-analysis.html#notes",
+    "href": "templates/break-even-analysis.html#notes",
+    "title": "Break-Even Analysis",
+    "section": "Notes",
+    "text": "Notes\nAll editable dashboard cells are clearly separated from calculated outputs. The scenario table is useful for teaching contribution logic, price sensitivity, and break-even reasoning."
+  },
+  {
+    "objectID": "templates/campaign-roi-tracker.html",
+    "href": "templates/campaign-roi-tracker.html",
+    "title": "Campaign ROI Tracker",
     "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
+    "text": "Download\n    \n    \n      Track marketing spend, revenue, and return on investment across up to\n      eight channels. The workbook helps you compare channel-level performance\n      and monitor blended results across the full year.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "press/asrda.html",
-    "href": "press/asrda.html",
-    "title": "ASRDA",
+    "objectID": "templates/campaign-roi-tracker.html#key-inputs",
+    "href": "templates/campaign-roi-tracker.html#key-inputs",
+    "title": "Campaign ROI Tracker",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nBudget ($) planned spend by channel\nSpend ($) actual spend in the period\nRevenue ($) attributed revenue\nImpressions, Leads, and Conversions"
+  },
+  {
+    "objectID": "templates/campaign-roi-tracker.html#notes",
+    "href": "templates/campaign-roi-tracker.html#notes",
+    "title": "Campaign ROI Tracker",
+    "section": "Notes",
+    "text": "Notes\nROI is calculated as (Revenue - Spend) / Spend. The workbook also reports CAC and conversion rate, so it works well for campaign review and classroom exercises around performance interpretation."
+  },
+  {
+    "objectID": "templates/clv-calculator.html",
+    "href": "templates/clv-calculator.html",
+    "title": "CLV Calculator",
     "section": "",
-    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nBook and project page\nPublic-facing information for the ASRDA title\nSpace for future companion and reference material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ASRDA"
+    "text": "Download\n    \n    \n      Quantify the long-term value of a customer relationship. The workbook\n      compares CLV against CAC, models retention economics, and helps you\n      compare value across customer segments.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "press/asrda.html#asrda",
-    "href": "press/asrda.html#asrda",
-    "title": "ASRDA",
+    "objectID": "templates/clv-calculator.html#key-inputs",
+    "href": "templates/clv-calculator.html#key-inputs",
+    "title": "CLV Calculator",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nAverage purchase value\nPurchase frequency per year\nGross margin\nCustomer lifespan\nDiscount rate"
+  },
+  {
+    "objectID": "templates/clv-calculator.html#notes",
+    "href": "templates/clv-calculator.html#notes",
+    "title": "CLV Calculator",
+    "section": "Notes",
+    "text": "Notes\nThe workbook includes a cohort retention view and a CLV:CAC lens for unit economics. It is useful for teaching relationship value and for quick segment comparisons in planning work."
+  },
+  {
+    "objectID": "templates/index.html",
+    "href": "templates/index.html",
+    "title": "Templates",
     "section": "",
-    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nBook and project page\nPublic-facing information for the ASRDA title\nSpace for future companion and reference material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ASRDA"
+    "text": "FlairMI hosts ten downloadable Excel workbooks for campaign planning, forecasting, segmentation, churn review, funnel analysis, and decision support. Each template page includes a preview, a short explanation, and a direct download link hosted on FlairMI.\n\n  \n    \n    Download\n    \n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    \n    Download\n    \n    Track deal stages, weighted revenue, and representative-level performance.\n    Open template page\n  \n  \n    \n    Download\n    \n    Model unit volume, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    \n    Download\n    \n    Estimate customer lifetime value and compare segments against acquisition cost.\n    Open template page\n  \n  \n    \n    Download\n    \n    Plot competitors across two strategic dimensions and identify market gaps.\n    Open template page\n  \n  \n    \n    Download\n    \n    Analyse funnel conversion, drop-off, and channel contribution.\n    Open template page\n  \n  \n    \n    Download\n    \n    Compare customer acquisition cost by channel and estimate payback period.\n    Open template page\n  \n  \n    \n    Download\n    \n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n  \n    \n    Download\n    \n    Segment customers by recency, frequency, and monetary value.\n    Open template page\n  \n  \n    \n    Download\n    \n    Monitor customer churn, revenue churn, and retention trends.\n    Open template page"
   },
   {
-    "objectID": "press/index.html",
-    "href": "press/index.html",
-    "title": "Press",
+    "objectID": "templates/index.html#marketing-decision-toolkit",
+    "href": "templates/index.html#marketing-decision-toolkit",
+    "title": "Templates",
     "section": "",
-    "text": "FlairMI Press brings together book pages, companion material, and title-level information across the publishing side of the portfolio.\n\n  \n    DDMM\n    \n    Books and teaching materials centered on digital and data-driven marketing.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and publishing work around marketing, analytics, and companion materials.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
+    "text": "FlairMI hosts ten downloadable Excel workbooks for campaign planning, forecasting, segmentation, churn review, funnel analysis, and decision support. Each template page includes a preview, a short explanation, and a direct download link hosted on FlairMI.\n\n  \n    \n    Download\n    \n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    \n    Download\n    \n    Track deal stages, weighted revenue, and representative-level performance.\n    Open template page\n  \n  \n    \n    Download\n    \n    Model unit volume, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    \n    Download\n    \n    Estimate customer lifetime value and compare segments against acquisition cost.\n    Open template page\n  \n  \n    \n    Download\n    \n    Plot competitors across two strategic dimensions and identify market gaps.\n    Open template page\n  \n  \n    \n    Download\n    \n    Analyse funnel conversion, drop-off, and channel contribution.\n    Open template page\n  \n  \n    \n    Download\n    \n    Compare customer acquisition cost by channel and estimate payback period.\n    Open template page\n  \n  \n    \n    Download\n    \n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n  \n    \n    Download\n    \n    Segment customers by recency, frequency, and monetary value.\n    Open template page\n  \n  \n    \n    Download\n    \n    Monitor customer churn, revenue churn, and retention trends.\n    Open template page"
   },
   {
-    "objectID": "press/index.html#flairmi-press",
-    "href": "press/index.html#flairmi-press",
-    "title": "Press",
+    "objectID": "templates/index.html#how-to-use-the-workbooks",
+    "href": "templates/index.html#how-to-use-the-workbooks",
+    "title": "Templates",
+    "section": "How To Use The Workbooks",
+    "text": "How To Use The Workbooks\n\nDownload a workbook from its template page.\nOpen it in Excel or LibreOffice Calc.\nReplace the example values on the Sample Data sheet with your own data.\nKeep the column headings unchanged so the formulas and dashboards continue to work."
+  },
+  {
+    "objectID": "templates/index.html#need-a-workshop-or-custom-version",
+    "href": "templates/index.html#need-a-workshop-or-custom-version",
+    "title": "Templates",
+    "section": "Need A Workshop Or Custom Version?",
+    "text": "Need A Workshop Or Custom Version?\nIf you want help using these templates in teaching, consulting, or internal decision support, visit the Services page or use the home contact form."
+  },
+  {
+    "objectID": "templates/revenue-forecast-model.html",
+    "href": "templates/revenue-forecast-model.html",
+    "title": "Revenue Forecast Model",
     "section": "",
-    "text": "FlairMI Press brings together book pages, companion material, and title-level information across the publishing side of the portfolio.\n\n  \n    DDMM\n    \n    Books and teaching materials centered on digital and data-driven marketing.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and publishing work around marketing, analytics, and companion materials.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
+    "text": "Download\n    \n    \n      Build a 12-month rolling revenue forecast with base, bull, and bear\n      scenarios. The workbook helps track actuals against plan while monitoring\n      gross profit, operating expenses, and EBITDA.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "press/index.html#on-this-section",
-    "href": "press/index.html#on-this-section",
-    "title": "Press",
-    "section": "On This Section",
-    "text": "On This Section\n\nTitle pages collect book information, companion resources, and related links.\nVisit Teaching for course-facing material.\nVisit About for founder and portfolio information."
+    "objectID": "templates/revenue-forecast-model.html#key-inputs",
+    "href": "templates/revenue-forecast-model.html#key-inputs",
+    "title": "Revenue Forecast Model",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nBase monthly revenue\nActual revenue for closed months\nMonthly operating expenses"
   },
   {
-    "objectID": "press/smallsamplelab.html",
-    "href": "press/smallsamplelab.html",
-    "title": "Small Sample Lab",
+    "objectID": "templates/revenue-forecast-model.html#notes",
+    "href": "templates/revenue-forecast-model.html#notes",
+    "title": "Revenue Forecast Model",
+    "section": "Notes",
+    "text": "Notes\nThe model uses scenario multipliers around the base line and compares actuals against the forecast automatically. It is a practical workbook for teaching planning logic or building a simple internal forecast review."
+  },
+  {
+    "objectID": "templates/sales-pipeline-tracker.html",
+    "href": "templates/sales-pipeline-tracker.html",
+    "title": "Sales Pipeline Tracker",
     "section": "",
-    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it fits naturally in FlairMI Press.\n\n\n\nBook and methods crossover project\nTeaching-friendly material with reusable examples\nCompanion page for the Small Sample Lab line\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/smallsamplelab"
+    "text": "Download\n    \n    \n      Monitor the health of a sales pipeline by stage and by representative.\n      The workbook tracks deal values, win probabilities, weighted revenue, and\n      average days in each stage.\n    \n    \n      Download workbook\n      Back to templates"
   },
   {
-    "objectID": "press/smallsamplelab.html#small-sample-lab",
-    "href": "press/smallsamplelab.html#small-sample-lab",
-    "title": "Small Sample Lab",
-    "section": "",
-    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it fits naturally in FlairMI Press.\n\n\n\nBook and methods crossover project\nTeaching-friendly material with reusable examples\nCompanion page for the Small Sample Lab line\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/smallsamplelab"
+    "objectID": "templates/sales-pipeline-tracker.html#key-inputs",
+    "href": "templates/sales-pipeline-tracker.html#key-inputs",
+    "title": "Sales Pipeline Tracker",
+    "section": "Key Inputs",
+    "text": "Key Inputs\n\nDeal name or company\nStage and sales representative\nClose date\nDeal value and win probability"
   },
   {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
-    "section": "",
-    "text": "FlairMI Labs collects experiments, prototypes, and smaller public projects that sit outside the main product, methods, and publishing pages.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory\ncampustales\nsmaller experimental pages that do not sit naturally in the main sections"
-  },
-  {
-    "objectID": "labs/index.html#labs",
-    "href": "labs/index.html#labs",
-    "title": "Labs",
-    "section": "",
-    "text": "FlairMI Labs collects experiments, prototypes, and smaller public projects that sit outside the main product, methods, and publishing pages.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory\ncampustales\nsmaller experimental pages that do not sit naturally in the main sections"
-  },
-  {
-    "objectID": "survey/index.html",
-    "href": "survey/index.html",
-    "title": "Survey",
-    "section": "",
-    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets."
-  },
-  {
-    "objectID": "survey/index.html#legacy-route",
-    "href": "survey/index.html#legacy-route",
-    "title": "Survey",
-    "section": "",
-    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets."
-  },
-  {
-    "objectID": "writer/templates/ab_test_report.html",
-    "href": "writer/templates/ab_test_report.html",
-    "title": "A/B test report",
-    "section": "",
-    "text": "Summarise an experiment with counts, effect size, a decision line, and the minimum context a manager or reviewer needs."
-  },
-  {
-    "objectID": "writer/templates/ab_test_report.html#purpose",
-    "href": "writer/templates/ab_test_report.html#purpose",
-    "title": "A/B test report",
-    "section": "",
-    "text": "Summarise an experiment with counts, effect size, a decision line, and the minimum context a manager or reviewer needs."
-  },
-  {
-    "objectID": "writer/templates/ab_test_report.html#report-outline",
-    "href": "writer/templates/ab_test_report.html#report-outline",
-    "title": "A/B test report",
-    "section": "Report Outline",
-    "text": "Report Outline\n\nBusiness question\nSample sizes and outcome metric\nEffect estimate and confidence interval\nPlain-language decision line\nLink to supporting notebook or method page"
-  },
-  {
-    "objectID": "writer/templates/ab_test_report.html#related-pages",
-    "href": "writer/templates/ab_test_report.html#related-pages",
-    "title": "A/B test report",
-    "section": "Related Pages",
-    "text": "Related Pages\n\nProduct workflow: TrimWrite\nQuarto workflow: QuartoPad\nSurvey-to-report workflow: Ethos"
+    "objectID": "templates/sales-pipeline-tracker.html#notes",
+    "href": "templates/sales-pipeline-tracker.html#notes",
+    "title": "Sales Pipeline Tracker",
+    "section": "Notes",
+    "text": "Notes\nWeighted value is calculated from deal value and win probability. The workbook is useful when you need a simple pipeline view without opening a full CRM or when you want a teaching-friendly sales dashboard example."
   },
   {
     "objectID": "downloads/index.html",
     "href": "downloads/index.html",
     "title": "Downloads",
     "section": "",
-    "text": "This page collects downloadable files, policy documents, and supporting materials available through FlairMI."
+    "text": "This page collects hosted workbook downloads, policy documents, and supporting files available through FlairMI."
   },
   {
     "objectID": "downloads/index.html#downloads",
     "href": "downloads/index.html#downloads",
     "title": "Downloads",
     "section": "",
-    "text": "This page collects downloadable files, policy documents, and supporting materials available through FlairMI."
+    "text": "This page collects hosted workbook downloads, policy documents, and supporting files available through FlairMI."
   },
   {
-    "objectID": "downloads/index.html#public-files",
-    "href": "downloads/index.html#public-files",
+    "objectID": "downloads/index.html#toolkit-files",
+    "href": "downloads/index.html#toolkit-files",
     "title": "Downloads",
-    "section": "Public Files",
-    "text": "Public Files\n\nFlairMI Starter Pack (zip)\n200-episode index (CSV)\nPolicies: Privacy · Terms · Refunds · Disclosure\nBusiness: Invoice PDF · Invoice DOCX · Insertion Order · Rate Card\nOps: KPI Tracker · Welcome Sequence · Availability Calendar\nSponsors: Sponsor Kit · Outreach Email"
+    "section": "Toolkit Files",
+    "text": "Toolkit Files\n\nCampaign ROI Tracker\nSales Pipeline Tracker\nBreak-Even Analysis\nCLV Calculator\nCompetitive Positioning Map\nMarketing Funnel Dashboard\nCAC Calculator\nRevenue Forecast Model\nRFM Segmentation\nChurn Rate Dashboard"
+  },
+  {
+    "objectID": "downloads/index.html#policies-and-supporting-files",
+    "href": "downloads/index.html#policies-and-supporting-files",
+    "title": "Downloads",
+    "section": "Policies And Supporting Files",
+    "text": "Policies And Supporting Files\n\nPrivacy\nTerms\nRefunds\nDisclosure\nFlairMI Starter Pack (zip)\n200-episode index (CSV)"
   },
   {
     "objectID": "downloads/Availability_Calendar.html",

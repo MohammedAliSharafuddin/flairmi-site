@@ -9,27 +9,22 @@ Live site:
 
 This repository contains the published static site for FlairMI, including:
 
-- homepage and about page
-- products, tools, methods, press, teaching, and labs sections
-- blog posts and legacy continuity routes
-- site assets and Quarto-generated files
+- home and about pages
+- textbooks, templates, products, and services sections
+- blog posts, downloads, and static assets
 
 ## Source and Deployment Model
 
 - Private source repository: `MohammedAliSharafuddin/flairmi`
 - Public deployment repository: `MohammedAliSharafuddin/flairmi-site`
 
-The public repository exists to keep deployment and domain serving separate from
-the private authoring source.
-
-Do not treat this repo as a second source of truth. Edit content in `flairmi`,
-render there, and then sync the generated `_site/` output into this repo.
+The public repository exists only for deployment. Edit content in `flairmi`,
+render there, and sync the generated output into this repo.
 
 ## Deployment Notes
 
 - GitHub Pages serves this site from the `main` branch
 - Custom domain: `flairmi.com`
 - `.nojekyll` is included so static assets are served without Jekyll processing
-- GA4 loader lives in `assets/js/ga4.js`
 - Contact form handling lives in `assets/js/contact-form.js`
 - Public contact email: `mohammedali.page@gmail.com`
