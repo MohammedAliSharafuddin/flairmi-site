@@ -228,42 +228,140 @@
     "href": "textbooks/smallsamplelab.html",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
     "section": "",
-    "text": "Proofreading\n    \n    \n      Small Sample Lab is a practical methods book for students and researchers\n      working with limited datasets in education, health, business, social\n      science, and resource-constrained contexts.\n    \n  \n  \n    \n      \n      The title is in proofreading. The project already maps chapters, worked projects, guided lab practicals, and instructor-facing material."
+    "text": "Proofreading\n    \n    \n      Small Sample Lab is a practical methods guide for studies where data are\n      limited but rigorous quantitative analysis is still required. It is\n      written for students and early-career researchers working across\n      education, health, business, and resource-constrained research settings.\n    \n    \n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        Eight-part project design with guided lab practicals\n        Exact, resampling, rank-based, and Bayesian methods\n        Worked projects, generated datasets, and helper functions\n        Built for R, Quarto, and transparent reporting"
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#what-it-covers",
-    "href": "textbooks/smallsamplelab.html#what-it-covers",
+    "objectID": "textbooks/smallsamplelab.html#positioning",
+    "href": "textbooks/smallsamplelab.html#positioning",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "What It Covers",
-    "text": "What It Covers\nThe book focuses on exact tests, resampling, nonparametric analysis, small-sample regression, reliability, effect sizes, interpretation, and transparent reporting. It is especially relevant where sample sizes are modest but rigorous quantitative analysis is still required."
+    "section": "Positioning",
+    "text": "Positioning\nQuantitative Analysis with Small Samples addresses a common gap in methods training: what to do when the dataset is too small for comfortable large-sample assumptions, but the research question still matters. The project is grounded in applied contexts such as classroom interventions, pilot studies, small markets, community-based research, and Small Island Developing States where sample sizes are often modest by necessity."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#who-it-is-for",
+    "href": "textbooks/smallsamplelab.html#who-it-is-for",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "Who It Is For",
+    "text": "Who It Is For\nThis book is being developed for:\n\nundergraduates, taught masters students, and early-career PhD researchers\neducation, health, business, and social-science users\nanalysts and practitioners working with samples of roughly 10 to 100 cases\nreaders who need method guidance that is both statistically careful and operationally realistic\n\nIt is not framed as an abstract statistical monograph. The goal is to help readers choose defensible methods, run them in R, and report them honestly."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#prerequisite-knowledge",
+    "href": "textbooks/smallsamplelab.html#prerequisite-knowledge",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "Prerequisite Knowledge",
+    "text": "Prerequisite Knowledge\nA basic introductory-statistics background is helpful, but the project is written to be teachable. The source material assumes readers may be learning some of these methods for the first time, and the repo already supports that with synthetic datasets, helper functions, lab practicals, and worked projects. R and Quarto are the core workflow tools."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#book-structure",
+    "href": "textbooks/smallsamplelab.html#book-structure",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "Book Structure",
+    "text": "Book Structure\nThe source project maps the teaching line into eight parts:\n\nFoundations\nData Collection and Preparation\nAnalysis Methods\nReporting and Interpretation\nWorked Projects\nTechnical Appendices\nGuided Lab Practicals\nInstructor’s Manual\n\nThe current Quarto build already includes the main teaching sequence, worked projects, guided labs, and instructor-facing material. Technical appendices are part of the broader project design and are being prepared alongside the main book build."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#what-the-book-covers",
+    "href": "textbooks/smallsamplelab.html#what-the-book-covers",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "What The Book Covers",
+    "text": "What The Book Covers\nThe repo materials already point to a clear methods range:\n\nexact tests and resampling methods\nnonparametric rank-based procedures\npenalised and Bayesian regression for limited data\nreliability and measurement-quality checks for short scales\nmulti-criteria decision-making for small-case settings\neffect sizes, confidence intervals, and transparent interpretation\n\nThis is paired with complete worked projects and a guided-lab layer so the reader can move from explanation to application rather than stopping at theory."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#what-already-exists-in-the-project",
+    "href": "textbooks/smallsamplelab.html#what-already-exists-in-the-project",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "What Already Exists In The Project",
+    "text": "What Already Exists In The Project\n\n  \n    Generated Datasets\n    The repo already includes scripts that generate project datasets for marketing, service-quality, and process-change examples so readers can rebuild examples locally.\n  \n  \n    Helper Functions\n    Reusable R helpers are already defined for exact tests, bootstrap intervals, Wilcoxon procedures, and Firth logistic regression.\n  \n  \n    Guided Labs\n    The planned lab sequence already covers Fisher's exact test, bootstrap confidence intervals, rank tests, reliability analysis, power planning, imputation, and data screening.\n  \n  \n    Worked Projects\n    The source outline already includes integrated projects such as campaign evaluation, short-scale reliability assessment, and paired intervention evaluation."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#why-this-project-is-useful",
+    "href": "textbooks/smallsamplelab.html#why-this-project-is-useful",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "Why This Project Is Useful",
+    "text": "Why This Project Is Useful\nSmall-sample work is often treated as a compromise case. This book takes the opposite view: with the right methods, small studies can still be analysed carefully and reported responsibly. That matters in exactly the contexts where researchers have the least margin for wasted effort, weak assumptions, or overclaimed findings."
+  },
+  {
+    "objectID": "textbooks/smallsamplelab.html#current-stage",
+    "href": "textbooks/smallsamplelab.html#current-stage",
+    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe public status remains Proofreading, but the repo already contains a real teaching system: structured chapters, generated datasets, helper functions, lab practicals, worked projects, and an instructor-manual track. This page now reflects that actual level of project maturity."
   },
   {
     "objectID": "textbooks/index.html",
     "href": "textbooks/index.html",
     "title": "Textbooks",
     "section": "",
-    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    An open textbook for analysts and managers applying quantitative methods to real marketing problems with AI-assisted workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A survey research text structured for multi-chapter drafting, transparent computation, and reproducible reporting in R.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical book for small-sample research in education, health, business, and resource-constrained contexts.\n    Open page"
+    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical small-sample methods guide with worked projects, guided lab practicals, generated datasets, and instructor-facing material.\n    Open page"
   },
   {
     "objectID": "textbooks/index.html#textbooks-and-teaching-materials",
     "href": "textbooks/index.html#textbooks-and-teaching-materials",
     "title": "Textbooks",
     "section": "",
-    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    An open textbook for analysts and managers applying quantitative methods to real marketing problems with AI-assisted workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A survey research text structured for multi-chapter drafting, transparent computation, and reproducible reporting in R.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical book for small-sample research in education, health, business, and resource-constrained contexts.\n    Open page"
+    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open page\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical small-sample methods guide with worked projects, guided lab practicals, generated datasets, and instructor-facing material.\n    Open page"
   },
   {
     "objectID": "textbooks/asrda.html",
     "href": "textbooks/asrda.html",
     "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
     "section": "",
-    "text": "Proofreading\n    \n    \n      ASRDA guides survey research from conceptualisation through reproducible\n      reporting. It is built for students, researchers, and contributors who\n      need a stable structure for survey-focused chapter writing and transparent\n      computation in R.\n    \n  \n  \n    \n      \n      The title is in proofreading. The project scaffold already covers chapter templates, data policy, references, and reproducibility guidance."
+    "text": "Proofreading\n    \n    \n      ASRDA is a survey-research textbook built around the full workflow: from\n      constructs, hypotheses, and instrument design through data quality,\n      modelling, interpretation, and reproducible reporting in R.\n    \n    \n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        41 chapters across 14 parts\n        Appendices, shared chapter template, and style rules\n        HTML and PDF publishing workflow\n        R-first survey analysis and reporting"
   },
   {
-    "objectID": "textbooks/asrda.html#what-it-covers",
-    "href": "textbooks/asrda.html#what-it-covers",
+    "objectID": "textbooks/asrda.html#positioning",
+    "href": "textbooks/asrda.html#positioning",
     "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
-    "section": "What It Covers",
-    "text": "What It Covers\nThe project is structured around multi-chapter drafting, a common chapter scaffold, transparent code, and automated HTML and PDF builds. The emphasis is not just on analysis, but on the full path from constructs and scales to results, interpretation, and reproducible reporting."
+    "section": "Positioning",
+    "text": "Positioning\nApplied Survey Research and Data Analysis: From Constructs to Conclusions Using R is the most methodologically broad textbook line in the FlairMI portfolio. It is designed for readers who need one coherent route from survey design and measurement to advanced analysis, interpretation, automation, and open-science delivery rather than a collection of disconnected methods notes."
+  },
+  {
+    "objectID": "textbooks/asrda.html#who-it-is-for",
+    "href": "textbooks/asrda.html#who-it-is-for",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "Who It Is For",
+    "text": "Who It Is For\nThe repo README and book scaffold make the intended audience clear:\n\nstudents and researchers working with survey data in R\neditors and contributors writing within a common chapter framework\nreaders who need a stable HTML and PDF build with figures, references, and reproducible code\n\nThis makes ASRDA useful both as a teaching text and as an editorial production system for a large, multi-chapter methods book."
+  },
+  {
+    "objectID": "textbooks/asrda.html#prerequisite-knowledge",
+    "href": "textbooks/asrda.html#prerequisite-knowledge",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "Prerequisite Knowledge",
+    "text": "Prerequisite Knowledge\nThe book is written to be practical rather than purely theoretical, but it does assume familiarity with basic research methods, survey concepts, and introductory statistical reasoning. Readers should be comfortable working in R or be prepared to learn from fully visible code blocks, reproducible examples, and chapter-level package notes."
+  },
+  {
+    "objectID": "textbooks/asrda.html#book-structure",
+    "href": "textbooks/asrda.html#book-structure",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "Book Structure",
+    "text": "Book Structure\nThe current Quarto configuration already maps the book into fourteen parts plus appendices:\n\nConceptualisation and Theoretical Framing\nInstrument Design and Sampling\nData Capture, Cleaning, and Quality Control\nMeasurement, Reliability, and Validity\nDescriptive and Diagnostic Statistics\nBivariate Analysis and Group Comparisons\nPresentation and Interpretation\nMultivariate Modelling and Prediction\nDimensionality Reduction and Latent Structures\nSpatial, Network, and Choice Analysis\nMachine Learning and Advanced Weighting\nMulticriteria and Fuzzy Decision Modelling\nPsychometrics, Bayesian, and Meta-Analytical Layers\nIntegration, Reproducibility, and Future Directions\n\nThat structure is already much richer than a standard survey-methods sequence. It moves from constructs and scales to multilevel models, survival analysis, choice modelling, weighting, psychometrics, MCDM, Bayesian inference, and workflow automation in one editorial frame."
+  },
+  {
+    "objectID": "textbooks/asrda.html#how-chapters-are-built",
+    "href": "textbooks/asrda.html#how-chapters-are-built",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "How Chapters Are Built",
+    "text": "How Chapters Are Built\n\n  \n    Common Scaffold\n    Each chapter is designed around learning outcomes, key terms, packages, data notes, worked examples, pitfalls, exercises, references, and a final checklist.\n  \n  \n    Reproducible Code\n    The repo is explicit about clean code blocks, fixed seeds, documented packages, and portable data handling so chapters can be rebuilt reliably.\n  \n  \n    Editorial Consistency\n    The project includes style guidance, chapter templates, helper scripts, a bibliography, and a defined repository layout for multi-author drafting.\n  \n  \n    Publishable Outputs\n    The Quarto configuration is already set up for HTML and PDF builds, with a GitHub Pages workflow for automated publishing."
+  },
+  {
+    "objectID": "textbooks/asrda.html#what-already-exists-in-the-project",
+    "href": "textbooks/asrda.html#what-already-exists-in-the-project",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "What Already Exists In The Project",
+    "text": "What Already Exists In The Project\nThe current ASRDA repo already contains:\n\nthe full chapter order for forty-one chapters\nfront matter, appendices, bibliography, styles, and data folders\nR helper files for packages, checks, and reusable functions\na reusable chapter template for contributors\ndeployment instructions for automated public builds\n\nThat means the editorial and reproducibility infrastructure is already in place even while the book remains in proofreading and refinement."
+  },
+  {
+    "objectID": "textbooks/asrda.html#why-this-book-matters",
+    "href": "textbooks/asrda.html#why-this-book-matters",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "Why This Book Matters",
+    "text": "Why This Book Matters\nMany survey methods resources stop after sampling, reliability, and a small set of classical tests. ASRDA is trying to do more. The planned sequence connects measurement quality to modern modelling, predictive relevance, weighting, latent-variable methods, spatial and network approaches, and reproducible delivery. For instructors and applied researchers, that makes it both a teaching reference and a workflow model."
+  },
+  {
+    "objectID": "textbooks/asrda.html#current-stage",
+    "href": "textbooks/asrda.html#current-stage",
+    "title": "Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe public-facing status on FlairMI remains Proofreading because the book is still being edited and stabilised. But the underlying source project is already substantial. This page now reflects that actual maturity: the structure, templates, code discipline, and publishing pipeline are already there even before final polishing is complete."
   },
   {
     "objectID": "products/quartopad.html",
@@ -1103,14 +1201,63 @@
     "href": "textbooks/marai.html",
     "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
     "section": "",
-    "text": "Proofreading\n    \n    \n      MarAI is an open textbook for marketing analysts, data-literate managers,\n      and advanced undergraduates who want to apply quantitative methods to real\n      marketing problems, with AI tools accelerating parts of the workflow.\n    \n  \n  \n    \n      \n      The title is in proofreading and preparation. The project already has a structured multi-part book workflow with companion examples and teaching intent."
+    "text": "Proofreading\n    \n    \n      MarAI is an applied textbook for marketing analysts, data-literate\n      managers, and advanced undergraduates who want to work through real\n      marketing problems with quantitative methods, reproducible code, and\n      carefully bounded AI support.\n    \n    \n      See the companion DDMM textbook\n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        12 chapters across 5 parts\n        12 worked-example units planned in parallel\n        Lecture-deck and instructor tracks already scaffolded\n        Public datasets and reproducible R workflows"
   },
   {
-    "objectID": "textbooks/marai.html#what-it-covers",
-    "href": "textbooks/marai.html#what-it-covers",
+    "objectID": "textbooks/marai.html#positioning",
+    "href": "textbooks/marai.html#positioning",
     "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
-    "section": "What It Covers",
-    "text": "What It Covers\nThe book is positioned as a companion to Data-Driven Management: Statistics for Managers. It focuses more narrowly on marketing analytics problems, publicly available data, working examples, and the practical use of AI tools in an applied analytical workflow."
+    "section": "Positioning",
+    "text": "Positioning\nAI-Powered Marketing Analytics: Applied Methods for Managers is the applied marketing-analytics companion to Data-Driven Management: Statistics for Managers. DDMM establishes the statistical foundation. MarAI is where that foundation is put to work in customer analysis, campaign measurement, forecasting, competitive intelligence, and reporting for decision-makers."
+  },
+  {
+    "objectID": "textbooks/marai.html#who-it-is-for",
+    "href": "textbooks/marai.html#who-it-is-for",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "Who It Is For",
+    "text": "Who It Is For\nThis title is being written for marketing analysts, data-literate managers, MBA and advanced undergraduate learners, and instructors who want a practical teaching line built around marketing use cases rather than generic statistics examples. It is especially suited to readers who already understand basic descriptive statistics, hypothesis testing, and simple regression, and now need a more applied path into marketing analytics."
+  },
+  {
+    "objectID": "textbooks/marai.html#prerequisite-knowledge",
+    "href": "textbooks/marai.html#prerequisite-knowledge",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "Prerequisite Knowledge",
+    "text": "Prerequisite Knowledge\nThe book assumes a working grasp of introductory statistics and a willingness to run examples in R. It does not require deep programming experience, and it does not assume that AI tools replace analytical judgment. The repo material is explicit that AI is used to accelerate specific steps such as code drafting, interpretation support, and stakeholder-ready summaries while the analyst retains responsibility for the method, checks, and conclusion."
+  },
+  {
+    "objectID": "textbooks/marai.html#book-structure",
+    "href": "textbooks/marai.html#book-structure",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "Book Structure",
+    "text": "Book Structure\nThe current book configuration already defines a five-part teaching sequence:\n\nWorking with Marketing Data\nUnderstanding Customers\nMeasuring Campaigns\nCompetitive Intelligence\nPutting It Together\n\nAcross those five parts, the repo is already structured for twelve chapters covering customer segmentation, lifetime value, churn prediction, campaign ROI, attribution, demand forecasting, competitive positioning, and integrated reporting workflows."
+  },
+  {
+    "objectID": "textbooks/marai.html#what-already-exists-in-the-project",
+    "href": "textbooks/marai.html#what-already-exists-in-the-project",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "What Already Exists In The Project",
+    "text": "What Already Exists In The Project\n\n  \n    Book Build\n    The main Quarto book structure is already in place with the full chapter order, site configuration, bibliography, and shared templates.\n  \n  \n    Worked Examples\n    A parallel examples track is already planned as twelve worked units so that each method can be demonstrated on real marketing data.\n  \n  \n    Teaching Outputs\n    The repo already separates lecture decks and instructor materials into their own tracks, which makes the project suitable for later course adoption.\n  \n  \n    Shared Assets\n    Datasets, bibliographies, functions, and templates are organised in shared directories so the book, examples, and teaching materials can evolve from one asset base."
+  },
+  {
+    "objectID": "textbooks/marai.html#current-build-status",
+    "href": "textbooks/marai.html#current-build-status",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "Current Build Status",
+    "text": "Current Build Status\nThe source project is already beyond the idea stage. Based on the repo status and current Quarto setup:\n\nthe overall project structure is complete\nall twelve chapter stubs have been created\nchapter writing is in progress\nworked examples are in progress\nlecture decks, instructor pack, and quiz layers are planned next\n\nThat means this page represents a book line that is being actively assembled and proofread, not a placeholder concept with no production structure behind it."
+  },
+  {
+    "objectID": "textbooks/marai.html#data-and-workflow-approach",
+    "href": "textbooks/marai.html#data-and-workflow-approach",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "Data And Workflow Approach",
+    "text": "Data And Workflow Approach\nThe repo is designed around publicly available datasets, open licences, and reproducible R workflows. The current material points to datasets such as Online Retail II, Bank Marketing, and the UK Retail Sales Index, with chapter-level codebooks and provenance notes held in the shared dataset folders. This is important for instructors and self-directed readers who need examples that can actually be rerun and inspected."
+  },
+  {
+    "objectID": "textbooks/marai.html#what-to-expect-at-release",
+    "href": "textbooks/marai.html#what-to-expect-at-release",
+    "title": "AI-Powered Marketing Analytics: Applied Methods for Managers",
+    "section": "What To Expect At Release",
+    "text": "What To Expect At Release\nWhen the proofreading and content pass are complete, this title is intended to ship as more than a book file. The source structure already anticipates a teaching package with the book, worked examples, slide decks, instructor resources, and reusable datasets aligned to the same chapter sequence."
   },
   {
     "objectID": "templates/break-even-analysis.html",
