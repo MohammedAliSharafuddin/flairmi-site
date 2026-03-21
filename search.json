@@ -144,28 +144,28 @@
     "href": "stats/index.html",
     "title": "Stats",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases."
+    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows and public method notes.\nUse the Blog for guided WebR tutorials tied to real use cases."
   },
   {
     "objectID": "stats/index.html#legacy-route",
     "href": "stats/index.html#legacy-route",
     "title": "Stats",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases."
+    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows and public method notes.\nUse the Blog for guided WebR tutorials tied to real use cases."
   },
   {
     "objectID": "teaching/index.html",
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR"
+    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows and classroom-facing examples"
   },
   {
     "objectID": "teaching/index.html#teaching",
     "href": "teaching/index.html#teaching",
     "title": "Teaching",
     "section": "",
-    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR"
+    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows and classroom-facing examples"
   },
   {
     "objectID": "press/marai.html",
@@ -196,81 +196,585 @@
     "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nBook and teaching line\nDigital marketing and analytics focus\nCompanion material and course-facing context\n\n\n\n\n\nSource repo: DMM_Suite"
   },
   {
-    "objectID": "methods/semscreenr.html",
-    "href": "methods/semscreenr.html",
-    "title": "semScreenR",
+    "objectID": "methods/index.html",
+    "href": "methods/index.html",
+    "title": "Methods",
     "section": "",
-    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nR package and workflow page\nUseful for research, teaching, and package discovery\nConnected to methods, books, and classroom material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/semScreenR"
+    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages."
   },
   {
-    "objectID": "methods/semscreenr.html#semscreenr",
-    "href": "methods/semscreenr.html#semscreenr",
-    "title": "semScreenR",
+    "objectID": "methods/index.html#methods",
+    "href": "methods/index.html#methods",
+    "title": "Methods",
     "section": "",
-    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nR package and workflow page\nUseful for research, teaching, and package discovery\nConnected to methods, books, and classroom material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/semScreenR"
+    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages."
   },
   {
-    "objectID": "tools/marketing-decision-toolkit.html",
-    "href": "tools/marketing-decision-toolkit.html",
-    "title": "Marketing Decision Toolkit",
-    "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
-  },
-  {
-    "objectID": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
-    "href": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
-    "title": "Marketing Decision Toolkit",
-    "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
-  },
-  {
-    "objectID": "tools/index.html",
-    "href": "tools/index.html",
-    "title": "Tools",
-    "section": "",
-    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
-  },
-  {
-    "objectID": "tools/index.html#tools",
-    "href": "tools/index.html#tools",
-    "title": "Tools",
-    "section": "",
-    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
-  },
-  {
-    "objectID": "tools/index.html#on-this-section",
-    "href": "tools/index.html#on-this-section",
-    "title": "Tools",
+    "objectID": "methods/index.html#on-this-section",
+    "href": "methods/index.html#on-this-section",
+    "title": "Methods",
     "section": "On This Section",
-    "text": "On This Section\n\nUse these pages to access tools directly.\nVisit the Methods section for package-led work.\nVisit the Blog for tutorials, examples, and longer explanations."
+    "text": "On This Section\n\nMethod pages connect packages, public explanations, and related teaching material.\nVisit the Blog for worked examples and tutorials.\nVisit Teaching for classroom-facing material."
   },
   {
-    "objectID": "products/quartopad.html",
-    "href": "products/quartopad.html",
-    "title": "QuartoPad",
+    "objectID": "tools/margin-guard.html",
+    "href": "tools/margin-guard.html",
+    "title": "Margin Guard",
     "section": "",
-    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
+    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
   },
   {
-    "objectID": "products/quartopad.html#quartopad",
-    "href": "products/quartopad.html#quartopad",
-    "title": "QuartoPad",
+    "objectID": "tools/margin-guard.html#margin-guard",
+    "href": "tools/margin-guard.html#margin-guard",
+    "title": "Margin Guard",
     "section": "",
-    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
+    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
   },
   {
-    "objectID": "products/ethos.html",
-    "href": "products/ethos.html",
-    "title": "Ethos",
+    "objectID": "products/trimwrite.html",
+    "href": "products/trimwrite.html",
+    "title": "TrimWrite",
     "section": "",
-    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
+    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
   },
   {
-    "objectID": "products/ethos.html#ethos",
-    "href": "products/ethos.html#ethos",
-    "title": "Ethos",
+    "objectID": "products/trimwrite.html#trimwrite",
+    "href": "products/trimwrite.html#trimwrite",
+    "title": "TrimWrite",
     "section": "",
-    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
+    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
+  },
+  {
+    "objectID": "products/index.html",
+    "href": "products/index.html",
+    "title": "Products",
+    "section": "",
+    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
+  },
+  {
+    "objectID": "products/index.html#product-portfolio",
+    "href": "products/index.html#product-portfolio",
+    "title": "Products",
+    "section": "",
+    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
+  },
+  {
+    "objectID": "products/index.html#products-at-a-glance",
+    "href": "products/index.html#products-at-a-glance",
+    "title": "Products",
+    "section": "Products At A Glance",
+    "text": "Products At A Glance\n\n\n\nProduct\nFocus\nPublic page\nRepository\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen\ntrimwrite\n\n\nQuartoPad\nQuarto authoring and rendering\nOpen\nquartopad\n\n\nEthos\nSurvey, analytics, and reporting workflows\nOpen\nethos\n\n\nAnalog\nSmaller product experiment\nOpen\nanalog"
+  },
+  {
+    "objectID": "products/analog.html",
+    "href": "products/analog.html",
+    "title": "Analog",
+    "section": "",
+    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
+  },
+  {
+    "objectID": "products/analog.html#analog",
+    "href": "products/analog.html#analog",
+    "title": "Analog",
+    "section": "",
+    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html",
+    "href": "blog/posts/05-simple-regression.html",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "",
+    "text": "TL;DR: Revenue = ₹10k + ₹0.50 per ₹1 ad spend (n=200); slope CI [₹0.44, ₹0.56], R²=0.80 (strong fit), residuals look normal; decision: each ₹1k ad spend yields ~₹500 revenue, but check for nonlinearity at higher budgets."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#case",
+    "href": "blog/posts/05-simple-regression.html#case",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Case",
+    "text": "Case"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#case-1",
+    "href": "blog/posts/05-simple-regression.html#case-1",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Case",
+    "text": "Case\nYou manage digital advertising for an e-commerce platform and want to quantify the relationship between weekly ad spend and revenue. Specifically: For every additional rupee spent on ads, how much revenue can you expect? Is the relationship strong enough to justify continued investment? What portion of revenue variation is explained by ad spend alone?"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#dataset",
+    "href": "blog/posts/05-simple-regression.html#dataset",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Dataset",
+    "text": "Dataset\nSynthetic sample from weekly marketing data (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nspend\nWeekly ad spend\n₹ (rupees)\n\n\nrevenue\nWeekly revenue\n₹ (rupees)\n\n\nn\nNumber of weeks\n200\n\n\nRange\nSpend range\n₹0 - ₹100,000"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#method",
+    "href": "blog/posts/05-simple-regression.html#method",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Method",
+    "text": "Method\nWe use ordinary least squares (OLS) regression to model revenue as a linear function of ad spend. The regression equation is:\n\\[\n\\text{Revenue}_i = \\beta_0 + \\beta_1 \\times \\text{Spend}_i + \\epsilon_i,\n\\]\nwhere \\(\\beta_0\\) is the intercept (baseline revenue when spend = 0), \\(\\beta_1\\) is the slope (marginal revenue per rupee of spend), and \\(\\epsilon_i\\) is the error term assumed to be normally distributed with constant variance.\nThe slope estimate with standard error: \\[\n\\hat{\\beta}_1 = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{\\sum(x_i - \\bar{x})^2}, \\quad SE(\\hat{\\beta}_1) = \\frac{s}{\\sqrt{\\sum(x_i - \\bar{x})^2}},\n\\] where \\(s\\) is the residual standard error.\nThe coefficient of determination (R-squared): \\[\nR^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}} = 1 - \\frac{\\sum(y_i - \\hat{y}_i)^2}{\\sum(y_i - \\bar{y})^2}.\n\\]\nWe report 95% confidence intervals for both intercept and slope using standard t-distribution critical values."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#calculation",
+    "href": "blog/posts/05-simple-regression.html#calculation",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Calculation",
+    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#visualization",
+    "href": "blog/posts/05-simple-regression.html#visualization",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Visualization",
+    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#results-and-interpretation",
+    "href": "blog/posts/05-simple-regression.html#results-and-interpretation",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Results and Interpretation",
+    "text": "Results and Interpretation\nThe regression analysis reveals a statistically significant positive relationship between ad spend and revenue. The estimated slope is ₹0.300 (95% CI [₹0.240, ₹0.360]), meaning that for every additional rupee spent on advertising, revenue increases by approximately ₹0.30 on average (R Core Team 2024).\nThe intercept of ₹49,991 represents the estimated baseline revenue when ad spend is zero. While statistically significant (p &lt; 0.001), this should be interpreted cautiously as the model may not hold outside the observed spend range (₹0 - ₹100,000).\nModel fit: The R² value of 0.419 (42%) indicates that ad spend explains about 42% of the variation in weekly revenue. The remaining 58% is due to other factors not included in this simple model (e.g., seasonality, competitor actions, organic traffic, product mix).\nStatistical significance: The F-statistic (F(1, 198) = 142.7, p &lt; 0.001) confirms the overall model is highly significant. The slope’s p-value &lt; 0.001 indicates strong evidence that the relationship is not due to chance.\nPractical significance: A ₹0.30 return per rupee suggests a 30% marginal return on ad spend in terms of revenue (not profit). This is a gross relationship - you must subtract costs to determine actual ROI. The 95% CI [₹0.24, ₹0.36] suggests the true marginal return could range from 24% to 36%.\nDecision framework. The positive and significant relationship supports continued ad investment, but association does not imply causation. Before making budget decisions: (1) Check residual diagnostics for violations of regression assumptions, (2) Consider confounding variables (e.g., seasonality, external events), (3) Calculate net profit impact after subtracting ad costs and other variable costs, (4) Test whether the relationship holds at different spend levels (non-linearity), (5) Consider building a multiple regression model with additional predictors for better prediction accuracy."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#residual-diagnostics",
+    "href": "blog/posts/05-simple-regression.html#residual-diagnostics",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Residual Diagnostics",
+    "text": "Residual Diagnostics\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nDiagnostic interpretation: The residuals vs. fitted plot should show random scatter around zero (no pattern). The Q-Q plot should show points following the diagonal line. Deviations suggest violations of assumptions (heteroscedasticity, non-normality, or non-linearity)."
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#assumptions",
+    "href": "blog/posts/05-simple-regression.html#assumptions",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Assumptions",
+    "text": "Assumptions\nSimple linear regression assumes:\n\nLinearity: The relationship between spend and revenue is linear (check with scatterplot and residual plot)\nIndependence: Weekly observations are independent (no autocorrelation across time)\nHomoscedasticity: Constant variance of residuals across all levels of spend (check residuals vs. fitted plot)\nNormality of residuals: Residuals are approximately normally distributed (check Q-Q plot; less critical with n = 200)\nNo measurement error in predictor: Ad spend is measured accurately\nNo omitted variable bias: Other important predictors are not correlated with spend"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#limitations",
+    "href": "blog/posts/05-simple-regression.html#limitations",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Limitations",
+    "text": "Limitations\nThis analysis does not account for:\n\nCausality: Correlation does not prove ad spend causes revenue. Reverse causality is possible (higher revenue allows more ad spend)\nConfounding variables: Seasonality, promotions, competitor actions, product launches, organic trends\nNon-linear relationships: Diminishing returns at high spend levels, or threshold effects at low spend\nTime series structure: Temporal autocorrelation, lagged effects (ads may influence future weeks)\nInteraction effects: Ad effectiveness may vary by channel, audience segment, or time period\nCosts: This models revenue, not profit. Must subtract ad costs and variable costs to assess true ROI\n\nRecommendations for improvement: - Add time trends and seasonal dummies to control for temporal patterns - Use multiple regression with additional predictors (organic traffic, email campaigns, competitor spend) - Test for non-linearity with polynomial terms or segmented regression - Consider time series models (ARIMA, VAR) if temporal dependencies exist - Conduct controlled experiments (randomized ad spend levels) to establish causality - Calculate contribution margin and customer lifetime value for profit-focused analysis\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2025, October 25). Simple linear regression: Modeling revenue from ad spend. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/05-simple-regression.html\n@online{sharafuddin2025-regression,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Simple Linear Regression: Modeling Revenue from Ad Spend},\n  year   = {2025},\n  date   = {2025-10-25},\n  url    = {https://flairmi.com/blog/posts/05-simple-regression.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/05-simple-regression.html#comments",
+    "href": "blog/posts/05-simple-regression.html#comments",
+    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
+    "section": "Comments",
+    "text": "Comments"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html",
+    "href": "blog/posts/03-t-test.html",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "",
+    "text": "TL;DR: Control ₹1,500 vs Treatment ₹1,580 (n=100 each); p=0.001 (sig), difference ₹80 [₹32, ₹128], Hedges g=0.39 (small-medium); decision: treatment increases AOV, roll out if margin supports."
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#case",
+    "href": "blog/posts/03-t-test.html#case",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Case",
+    "text": "Case"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#case-1",
+    "href": "blog/posts/03-t-test.html#case-1",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Case",
+    "text": "Case\nYou are analyzing a merchandising experiment for an e-commerce store. The control group (A) saw standard product displays, while the treatment group (B) received enhanced product recommendations. After four weeks with 200 customers in each group, you need to determine: Does the treatment significantly increase average order value (AOV)? Should you roll out the new merchandising approach?"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#dataset",
+    "href": "blog/posts/03-t-test.html#dataset",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Dataset",
+    "text": "Dataset\nSynthetic sample from e-commerce experiment (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\naov_a\nControl group AOV\n₹ (rupees)\n\n\naov_b\nTreatment group AOV\n₹ (rupees)\n\n\nn_a\nControl sample size\n200\n\n\nn_b\nTreatment sample size\n200\n\n\nmean_a\nControl mean\n₹1,500\n\n\nmean_b\nTreatment mean\n₹1,580"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#method",
+    "href": "blog/posts/03-t-test.html#method",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Method",
+    "text": "Method\nWe use a Welch t-test to compare two independent groups with potentially unequal variances (Welch 1947). This is more robust than Student’s t-test when variances differ. We report the mean difference with a 95% confidence interval and Hedges g as an effect size measure (which applies a small-sample correction to Cohen’s d).\nThe mean difference: \\[\n\\bar{x}_B - \\bar{x}_A = \\frac{1}{n_B}\\sum x_{B,i} - \\frac{1}{n_A}\\sum x_{A,i}.\n\\]\nHedges g for effect size: \\[\ng = J \\times \\frac{\\bar{x}_B - \\bar{x}_A}{s_{\\text{pooled}}}, \\quad J = 1 - \\frac{3}{4(n_A + n_B) - 9}.\n\\]"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#calculation",
+    "href": "blog/posts/03-t-test.html#calculation",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Calculation",
+    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#visualization",
+    "href": "blog/posts/03-t-test.html#visualization",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Visualization",
+    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#results-and-interpretation",
+    "href": "blog/posts/03-t-test.html#results-and-interpretation",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Results and Interpretation",
+    "text": "Results and Interpretation\nThe control group had a mean AOV of ₹1,500 (SD = ₹260), while the treatment group had a mean AOV of ₹1,580 (SD = ₹300). The estimated mean difference was ₹80 with a 95% confidence interval of [₹32, ₹128]. A Welch t-test found a statistically significant difference, t(391) = 3.28, p = 0.001 (Welch 1947; R Core Team 2024).\nThe effect size, measured by Hedges g = 0.29, is considered small to medium by conventional standards (small: 0.20, medium: 0.50, large: 0.80). This indicates a practically meaningful improvement in average order value.\nWhile statistically significant (p = 0.001), the 95% CI [₹32, ₹128] suggests the true improvement could range from modest to substantial. The lower bound indicates at minimum a ₹32 increase per order, which could translate to significant revenue gains at scale.\nDecision framework. The treatment group shows a statistically significant and practically meaningful increase in AOV. With an estimated lift of ₹80 per order and a small-to-medium effect size, this suggests the enhanced merchandising approach is effective. Consider rolling out the treatment, monitoring for consistency across customer segments, and calculating the expected revenue impact based on your order volume."
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#sample-size-planning",
+    "href": "blog/posts/03-t-test.html#sample-size-planning",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Sample Size Planning",
+    "text": "Sample Size Planning\nTo detect an ₹80 difference in AOV with 80% power at α = 0.05 (assuming SD ≈ ₹280), you need approximately 196 customers per group (392 total). Your current test with 200 per group achieved approximately 81% power to detect this effect size.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nFor future tests, use the formula: \\[\nn_{\\text{per group}} = \\frac{2(z_{1-\\alpha/2} + z_{1-\\beta})^2}{d^2},\n\\] where \\(d\\) is Cohen’s d (mean difference divided by pooled standard deviation)."
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#assumptions",
+    "href": "blog/posts/03-t-test.html#assumptions",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Assumptions",
+    "text": "Assumptions\nThe Welch t-test assumes:\n\nIndependent observations: Each customer’s order is independent\nRandom assignment: Customers were randomly allocated to control or treatment\nApproximate normality: AOV distributions are approximately normal, or sample sizes are large enough (n ≥ 30 per group) for the Central Limit Theorem to apply\nNo requirement for equal variances: Welch t-test adjusts degrees of freedom for unequal variances (SD control = ₹260, treatment = ₹300)"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#limitations",
+    "href": "blog/posts/03-t-test.html#limitations",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Limitations",
+    "text": "Limitations\nThis analysis does not account for:\n\nSkewness: AOV distributions in retail are often right-skewed. Consider median comparisons or log-transformation if extreme outliers are present.\nSegmentation: Results may vary by customer segment (new vs. returning, device type, traffic source)\nTime effects: Seasonal patterns or time-of-week effects could influence AOV\nMultiple testing: If running multiple simultaneous experiments, adjust significance levels accordingly\n\nFor highly skewed data, consider the Mann-Whitney U test (Wilcoxon rank-sum test) as a non-parametric alternative.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 24). Welch t-test: Comparing average order value between groups. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/03-t-test.html\n@online{sharafuddin2024-t-test,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Welch t-Test: Comparing Average Order Value Between Groups},\n  year   = {2024},\n  date   = {2024-06-24},\n  url    = {https://flairmi.com/blog/posts/03-t-test.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/03-t-test.html#comments",
+    "href": "blog/posts/03-t-test.html#comments",
+    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
+    "section": "Comments",
+    "text": "Comments"
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html",
+    "href": "blog/posts/01-margin-of-error.html",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "",
+    "text": "TL;DR: Add-to-cart is 22% (n=600); 95% CI [18.8%, 25.2%] - baseline KPI 19% is acceptable, stretch 26% isn’t; for ±2 pp precision, target ~1,472-2,401 visitors."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#case",
+    "href": "blog/posts/01-margin-of-error.html#case",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Case",
+    "text": "Case\nYou are a data analyst for an e-commerce site. You observed a 22% add-to-cart rate over two weeks with 600 visitors. The business question: Does this performance meet the baseline KPI of 19%? Can you claim the stretch goal of 26%? To answer this, you need to compute a 95% confidence interval for the add-to-cart proportion, read the margin of error, and assess whether the KPIs are acceptable."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#dataset",
+    "href": "blog/posts/01-margin-of-error.html#dataset",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Dataset",
+    "text": "Dataset\nSynthetic sample for a single two-week window.\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nsuccesses\nAdd to cart count\n132\n\n\nn\nSample size\n600\n\n\np_hat\nObserved proportion\n0.22"
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#method",
+    "href": "blog/posts/01-margin-of-error.html#method",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Method",
+    "text": "Method\nWe use the Wald large-sample CI for a binomial proportion (Agresti 2019):\n\\[\n\\text{MOE} = Z^* \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}.\n\\]"
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#calculation",
+    "href": "blog/posts/01-margin-of-error.html#calculation",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Calculation",
+    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#visualization",
+    "href": "blog/posts/01-margin-of-error.html#visualization",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Visualization",
+    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#results-and-interpretation",
+    "href": "blog/posts/01-margin-of-error.html#results-and-interpretation",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Results and Interpretation",
+    "text": "Results and Interpretation\nThe estimated add-to-cart proportion was 0.22 (22.0%) with a 95% confidence interval of [0.188, 0.252] (or [18.8%, 25.2%]), a margin of error of ±3.2 percentage points. The large-sample rule holds (132 successes, 468 failures) (Agresti 2019; R Core Team 2024).\nKPI assessment. Baseline KPI (19%) lies within the CI; stretch KPI (26%) lies above the CI.\nBusiness decision. The baseline KPI (19%) is acceptable given the data, suggesting acceptable performance. The stretch KPI (26%) is not supported by this sample - more visitors or performance improvements are needed to claim that goal."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#sample-size-planning",
+    "href": "blog/posts/01-margin-of-error.html#sample-size-planning",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Sample Size Planning",
+    "text": "Sample Size Planning\nTo achieve ±2 percentage points precision at 95% confidence: \\[\nn = \\hat{p}(1-\\hat{p})\\left(\\frac{Z^*}{\\text{MOE}_{\\text{target}}}\\right)^2.\n\\]\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#assumptions",
+    "href": "blog/posts/01-margin-of-error.html#assumptions",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Assumptions",
+    "text": "Assumptions\nThe Wald interval assumes:\n\nIndependent observations: Each visitor’s cart action is independent (no clustering by session or user ID)\nRandom sampling: Visitors represent a random sample from the population (not biased toward specific traffic sources or times)\nLarge-sample validity: Both \\(n\\hat{p} \\ge 10\\) and \\(n(1-\\hat{p}) \\ge 10\\) (conditions met: 132 successes and 468 failures both exceed 10)\nStable process: The true conversion rate remains constant during the observation period (no seasonal trends, promotional effects, or A/B tests running concurrently)\n\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 10). Confidence interval for a proportion: Analyzing add-to-cart rate. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/01-margin-of-error.html\n@online{sharafuddin2024-ci-proportion,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate},\n  year   = {2024},\n  date   = {2024-06-10},\n  url    = {https://flairmi.com/blog/posts/01-margin-of-error.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#comments",
+    "href": "blog/posts/01-margin-of-error.html#comments",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Comments",
+    "text": "Comments"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+  },
+  {
+    "objectID": "about.html#founder",
+    "href": "about.html#founder",
+    "title": "About",
+    "section": "",
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+  },
+  {
+    "objectID": "about.html#current-work",
+    "href": "about.html#current-work",
+    "title": "About",
+    "section": "Current Work",
+    "text": "Current Work\n\nSoftware projects including TrimWrite, QuartoPad, Ethos, and related tools.\nBooks, course materials, and companion resources including DDMM, MarAI, ASRDA, and Small Sample Lab.\nMethods-oriented work and reproducible research workflows.\nTeaching resources, worked examples, and public-facing portfolio material."
+  },
+  {
+    "objectID": "about.html#about-flairmi",
+    "href": "about.html#about-flairmi",
+    "title": "About",
+    "section": "About FlairMI",
+    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) brings together several parts of the portfolio in one place:\n\nsoftware and workflow projects\nfree tools and templates\nmethods pages for reusable scholarly work\nbooks, course materials, and companion resources\n\nThe site is meant to be easy to navigate whether you are looking for a product, a method, a book, a teaching resource, or the public blog."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nFor product questions, teaching enquiries, workshops, consulting, and publishing:\nEmail: mohammedali.page@gmail.com"
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About",
+    "section": "Connect",
+    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 21 March 2026"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Flair Marketing Intelligence",
+    "section": "",
+    "text": "FlairMI\n  \n  \n    FlairMI is the public home for Mohammed Ali Sharafuddin's work across\n    software, research methods, teaching materials, and publishing projects.\n  \n  \n    Explore products\n    Browse books\n    Read the blog"
+  },
+  {
+    "objectID": "index.html#explore-flairmi",
+    "href": "index.html#explore-flairmi",
+    "title": "Flair Marketing Intelligence",
+    "section": "Explore FlairMI",
+    "text": "Explore FlairMI\nFlairMI is organized around a few clear areas so you can move directly to the part of the portfolio that matters to you.\n\n  \n    Products\n    Software projects\n    TrimWrite, QuartoPad, Ethos, and Analog bring together writing, authoring, survey, and workflow-oriented software.\n    Browse products\n  \n  \n    Tools\n    Free utilities\n    Practical calculators, templates, and decision aids for teaching, analysis, and day-to-day marketing work.\n    Browse tools\n  \n  \n    Methods\n    Methods and packages\n    Reusable methods work, package notes, and research-oriented resources.\n    Browse methods\n  \n  \n    Press\n    Books and publishing\n    Book pages, companion material, and title-level information for current and developing publishing projects.\n    Browse books\n  \n  \n    Teaching\n    Teaching resources\n    Companion materials, worked examples, and course-facing resources connected to products, methods, and books.\n    Browse teaching resources\n  \n  \n    Labs\n    Experiments and side projects\n    Smaller experiments, public demos, and portfolio projects that sit outside the main product and publishing lines.\n    Browse labs"
+  },
+  {
+    "objectID": "index.html#featured-pages",
+    "href": "index.html#featured-pages",
+    "title": "Flair Marketing Intelligence",
+    "section": "Featured Pages",
+    "text": "Featured Pages\n\n  \n\n\n\nPage\nFocus\nWhere to begin\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen page\n\n\nQuartoPad\nQuarto authoring and rendering workflow\nOpen page\n\n\nEthos\nSurvey, analytics, and reporting environment\nOpen page\n\n\nMargin Guard\nPromotion and pricing support tool\nOpen page\n\n\nMethods\nResearch workflows, package notes, and public methods pages\nOpen page\n\n\nDDMM\nBook and teaching materials\nOpen page"
+  },
+  {
+    "objectID": "index.html#across-the-site",
+    "href": "index.html#across-the-site",
+    "title": "Flair Marketing Intelligence",
+    "section": "Across The Site",
+    "text": "Across The Site\n\nProduct pages describe the software projects and link to supporting repositories.\nTool pages collect practical utilities and downloadable resources.\nMethods pages connect packages and workflows to their public context.\nPress pages bring together books, companion materials, and teaching links.\nLegacy paths such as Stats, Survey, and Writer remain available for continuity."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Flair Marketing Intelligence",
+    "section": "Contact",
+    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for product questions, teaching enquiries, publishing\n    enquiries, or general collaboration.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Products\n          Tools\n          Methods\n          Press and teaching\n          Consulting\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Statistics Blog",
+    "section": "",
+    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+  },
+  {
+    "objectID": "blog/index.html#welcome-to-flairmi-statistics-blog",
+    "href": "blog/index.html#welcome-to-flairmi-statistics-blog",
+    "title": "Statistics Blog",
+    "section": "",
+    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html",
+    "href": "blog/posts/02-two-proportion-test.html",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "",
+    "text": "TL;DR: Variant A 12.0% vs B 9.5% (n=500 each); p=0.175 (ns), difference +2.5 pp [−1.1, +6.1 pp], Cohen h=0.15 (small); decision: no clear winner, continue testing or explore other factors."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#case",
+    "href": "blog/posts/02-two-proportion-test.html#case",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Case",
+    "text": "Case"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#case-1",
+    "href": "blog/posts/02-two-proportion-test.html#case-1",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Case",
+    "text": "Case\nYou ran an A/B test on a product page. After two weeks, variant A had 120 conversions from 1,000 visitors (12.0%), while variant B had 95 conversions from 1,000 visitors (9.5%). The business question: Is the 2.5 percentage point difference statistically significant? Should you keep variant A or run a confirmatory test?"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#dataset",
+    "href": "blog/posts/02-two-proportion-test.html#dataset",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Dataset",
+    "text": "Dataset\nSynthetic A/B experiment data (Schema C).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nvariant\nTest group\nA or B\n\n\nconverted\nConversion event\n0 or 1\n\n\nn\nSample size\n2,000 rows\n\n\nx_A\nConversions in A\n120\n\n\nx_B\nConversions in B\n95\n\n\nn_A\nVisitors in A\n1,000\n\n\nn_B\nVisitors in B\n1,000"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#method",
+    "href": "blog/posts/02-two-proportion-test.html#method",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Method",
+    "text": "Method\nWe use a two-proportion z test to compare independent proportions (Agresti 2019). The test statistic follows a chi-squared distribution with 1 degree of freedom when using the squared z statistic. We report the difference with a 95% confidence interval and Cohen’s h as an effect size measure.\nThe difference in proportions: \\[\n\\hat{p}_A - \\hat{p}_B = \\frac{x_A}{n_A} - \\frac{x_B}{n_B}.\n\\]\nCohen’s h for effect size: \\[\nh = 2(\\arcsin\\sqrt{\\hat{p}_A} - \\arcsin\\sqrt{\\hat{p}_B}).\n\\]"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#calculation",
+    "href": "blog/posts/02-two-proportion-test.html#calculation",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Calculation",
+    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#visualization",
+    "href": "blog/posts/02-two-proportion-test.html#visualization",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Visualization",
+    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#results-and-interpretation",
+    "href": "blog/posts/02-two-proportion-test.html#results-and-interpretation",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Results and Interpretation",
+    "text": "Results and Interpretation\nVariant A converted at 12.0% (120/1,000) and variant B at 9.5% (95/1,000). The estimated difference was 2.5 percentage points with a 95% confidence interval of [0.5, 4.5] percentage points. A two-proportion z test found a statistically significant difference, χ²(1) = 4.68, p = 0.031 (Agresti 2019; R Core Team 2024).\nThe effect size, measured by Cohen’s h = 0.14, is considered small by conventional standards (small: 0.20, medium: 0.50, large: 0.80). While the result is statistically significant, the practical impact is modest.\nThe 95% CI [0.5, 4.5 pp] indicates uncertainty about the true effect magnitude, with the lower bound suggesting the true improvement could be as small as 0.5 percentage points.\nDecision framework. Variant A shows a statistically significant improvement over variant B. The confidence interval suggests the true lift is between 0.5 and 4.5 percentage points. Given the small effect size and modest sample, consider running a confirmatory test next week with a larger sample to validate the finding before a full rollout."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#sample-size-planning",
+    "href": "blog/posts/02-two-proportion-test.html#sample-size-planning",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Sample Size Planning",
+    "text": "Sample Size Planning\nTo detect a 2.5 percentage point difference with 80% power at α = 0.05, you need approximately 1,570 visitors per group (3,140 total). Your current test with 1,000 per group achieved approximately 60% power to detect this effect size (calculated as the probability that a z-statistic exceeds the critical value given the observed effect).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nFor future tests, use the formula: \\[\nn_{\\text{per group}} = \\frac{2\\bar{p}(1-\\bar{p})(z_{1-\\alpha/2} + z_{1-\\beta})^2}{\\delta^2},\n\\] where \\(\\bar{p}\\) is the average of the two proportions and \\(\\delta\\) is the target difference."
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#assumptions",
+    "href": "blog/posts/02-two-proportion-test.html#assumptions",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Assumptions",
+    "text": "Assumptions\nThe two-proportion test assumes:\n\nIndependent samples: Each visitor appears in only one variant (no crossover or contamination between groups)\nRandom assignment: Visitors were randomly allocated to A or B without systematic bias (e.g., no assignment based on time of day or device type)\nLarge sample approximation: Each group has at least 5 expected successes and 5 expected failures for the normal approximation to hold (both conditions met: 120 successes, 880 failures in A; 95 successes, 905 failures in B - all values exceed 5)\nStable conversion rates: The true conversion rate for each variant remains constant during the test period (no external events or time trends affecting one group differently)"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#limitations",
+    "href": "blog/posts/02-two-proportion-test.html#limitations",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Limitations",
+    "text": "Limitations\nThis analysis does not stratify by device type, traffic source, or time of day. Differences in these factors could influence conversion rates. Consider a stratified analysis or regression model if imbalances are suspected.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 17). Two-proportion test: Comparing conversion rates between variants. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/02-two-proportion-test.html\n@online{sharafuddin2024-two-prop,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Two-Proportion Test: Comparing Conversion Rates Between Variants},\n  year   = {2024},\n  date   = {2024-06-17},\n  url    = {https://flairmi.com/blog/posts/02-two-proportion-test.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/02-two-proportion-test.html#comments",
+    "href": "blog/posts/02-two-proportion-test.html#comments",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Comments",
+    "text": "Comments"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html",
+    "href": "blog/posts/04-welch-t.html",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "",
+    "text": "TL;DR: Group A ₹1,201 (SD ₹180) vs B ₹1,269 (SD ₹260), n=50 each; variance ratio 2.08 suggests unequal variance; Welch p=0.18 (ns), Equal-variance p=0.13 (ns), difference ₹68 [−32, +168]; decision: use Welch for safety, no evidence of AOV difference."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#case",
+    "href": "blog/posts/04-welch-t.html#case",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Case",
+    "text": "Case"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#case-1",
+    "href": "blog/posts/04-welch-t.html#case-1",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Case",
+    "text": "Case\nYou are analyzing average order value (AOV) from two store locations with different sample sizes (120 vs. 150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? How does the variance ratio influence this decision?"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#dataset",
+    "href": "blog/posts/04-welch-t.html#dataset",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Dataset",
+    "text": "Dataset\nSynthetic sample from e-commerce experiment (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\naov_a\nGroup A AOV\n₹ (rupees)\n\n\naov_b\nGroup B AOV\n₹ (rupees)\n\n\nn_a\nGroup A sample size\n120\n\n\nn_b\nGroup B sample size\n150\n\n\nsd_a\nGroup A SD (approx)\n₹180\n\n\nsd_b\nGroup B SD (approx)\n₹260"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#method",
+    "href": "blog/posts/04-welch-t.html#method",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Method",
+    "text": "Method\nWe compare two approaches to testing differences in means:\n\nEqual-variance t-test (Student’s t-test): Assumes both groups have equal population variances and pools sample variances to estimate standard error\nWelch t-test: Does not assume equal variances and adjusts degrees of freedom based on the variance ratio (Welch 1947)\n\nThe Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. A ratio below 0.5 or above 2.0 suggests meaningful variance differences and strongly favors using the Welch t-test.\nTest statistic for equal-variance t-test: \\[\nt = \\frac{\\bar{x}_A - \\bar{x}_B}{s_p\\sqrt{\\frac{1}{n_A} + \\frac{1}{n_B}}}, \\quad s_p^2 = \\frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A + n_B - 2}.\n\\]\nTest statistic for Welch t-test: \\[\nt = \\frac{\\bar{x}_A - \\bar{x}_B}{\\sqrt{\\frac{s_A^2}{n_A} + \\frac{s_B^2}{n_B}}}, \\quad df \\approx \\frac{\\left(\\frac{s_A^2}{n_A} + \\frac{s_B^2}{n_B}\\right)^2}{\\frac{(s_A^2/n_A)^2}{n_A-1} + \\frac{(s_B^2/n_B)^2}{n_B-1}}.\n\\]"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#calculation",
+    "href": "blog/posts/04-welch-t.html#calculation",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Calculation",
+    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#visualization",
+    "href": "blog/posts/04-welch-t.html#visualization",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Visualization",
+    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#results-and-interpretation",
+    "href": "blog/posts/04-welch-t.html#results-and-interpretation",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Results and Interpretation",
+    "text": "Results and Interpretation\nGroup A had a mean AOV of ₹1,201 (SD = ₹180, n=120), while group B had a mean AOV of ₹1,269 (SD = ₹260, n=150). The variance ratio of 0.48 (calculated as 32,400 / 67,600) indicates substantial heterogeneity in variances between groups, strongly favoring the Welch t-test.\nWelch t-test results: The Welch t-test found a statistically significant difference, t(229) = -2.30, p = 0.022, with a 95% CI of [₹11.4, ₹124.6] for the mean difference (Welch 1947; R Core Team 2024). The adjusted degrees of freedom (229 vs. the pooled 268) reflect the variance inequality.\nEqual-variance t-test results: The equal-variance t-test yielded t(268) = -2.39, p = 0.018, with a 95% CI of [₹12.2, ₹123.8]. While the results are similar in this case, the equal-variance assumption is violated (variance ratio = 0.48 &lt; 0.5).\nMethod comparison: When variances differ substantially (ratio &lt; 0.5 or &gt; 2.0), especially with unequal sample sizes, the equal-variance t-test can produce inflated Type I error rates. The Welch t-test is more conservative and robust. In this case, both tests reach the same conclusion (p &lt; 0.05), but the Welch test provides more reliable inference given the variance inequality.\nDecision framework. With a variance ratio of 0.48 and unequal sample sizes, use the Welch t-test as your primary result. The mean difference of ₹68 (95% CI [₹11, ₹125]) suggests group B has higher AOV, but the wide confidence interval indicates uncertainty about the magnitude. Always check variance homogeneity before choosing your test, and default to Welch when in doubt - it is robust even when variances are equal."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#sample-size-planning",
+    "href": "blog/posts/04-welch-t.html#sample-size-planning",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Sample Size Planning",
+    "text": "Sample Size Planning\nFor future tests with similar variance structure, plan for adequate power using the more conservative Welch approach. To detect a ₹70 difference with 80% power at α = 0.05 (assuming larger SD ≈ ₹260), you need approximately 175 per group (350 total). Your current test achieved approximately 55% power with the unequal sample sizes.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote: When planning with unequal variances, use the larger standard deviation for conservative sample size estimates. Equal sample sizes are preferable as they maximize power and minimize Type I error inflation."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#assumptions",
+    "href": "blog/posts/04-welch-t.html#assumptions",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Assumptions",
+    "text": "Assumptions\nBoth t-tests assume:\n\nIndependent observations: Each customer’s order is independent\nRandom sampling: Customers were randomly sampled from their respective populations\nApproximate normality: AOV distributions are approximately normal, or sample sizes are large enough (n ≥ 30 per group) for the Central Limit Theorem to apply\n\nAdditional assumption for equal-variance t-test: - Homogeneity of variance: Population variances are equal (violated in this case with ratio = 0.48)\nWelch t-test advantage: Does not require equal variances; adjusts degrees of freedom automatically based on observed variance ratio."
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#limitations",
+    "href": "blog/posts/04-welch-t.html#limitations",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Limitations",
+    "text": "Limitations\nThis analysis does not account for:\n\nLevene’s test or F-test: We used variance ratio as a rule of thumb (&lt; 0.5 or &gt; 2.0). Formal tests like Levene’s test can assess homogeneity statistically\nNon-normality: With smaller samples or extreme skewness, consider non-parametric alternatives (Mann-Whitney U test)\nPaired data: If measurements are paired, use paired t-test instead\nMultiple groups: For more than two groups, use ANOVA with appropriate variance adjustments (Welch ANOVA)\n\nWhen variance ratio is between 0.5 and 2.0 with equal sample sizes, both tests typically give similar results. Always report which test you used and justify the choice based on variance diagnostics.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2025, October 25). Welch t-test vs equal-variance t-test: Comparing methods. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/04-welch-t.html\n@online{sharafuddin2025-welch-comparison,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Welch t-Test vs Equal-Variance t-Test: Comparing Methods},\n  year   = {2025},\n  date   = {2025-10-25},\n  url    = {https://flairmi.com/blog/posts/04-welch-t.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/04-welch-t.html#comments",
+    "href": "blog/posts/04-welch-t.html#comments",
+    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "section": "Comments",
+    "text": "Comments"
   },
   {
     "objectID": "blog/posts/06-logistic-basics.html",
@@ -364,585 +868,67 @@
     "text": "Comments"
   },
   {
-    "objectID": "blog/posts/04-welch-t.html",
-    "href": "blog/posts/04-welch-t.html",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
+    "objectID": "products/ethos.html",
+    "href": "products/ethos.html",
+    "title": "Ethos",
     "section": "",
-    "text": "TL;DR: Group A ₹1,201 (SD ₹180) vs B ₹1,269 (SD ₹260), n=50 each; variance ratio 2.08 suggests unequal variance; Welch p=0.18 (ns), Equal-variance p=0.13 (ns), difference ₹68 [−32, +168]; decision: use Welch for safety, no evidence of AOV difference."
+    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
   },
   {
-    "objectID": "blog/posts/04-welch-t.html#case",
-    "href": "blog/posts/04-welch-t.html#case",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Case",
-    "text": "Case"
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#case-1",
-    "href": "blog/posts/04-welch-t.html#case-1",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Case",
-    "text": "Case\nYou are analyzing average order value (AOV) from two store locations with different sample sizes (120 vs. 150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? How does the variance ratio influence this decision?"
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#dataset",
-    "href": "blog/posts/04-welch-t.html#dataset",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Dataset",
-    "text": "Dataset\nSynthetic sample from e-commerce experiment (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\naov_a\nGroup A AOV\n₹ (rupees)\n\n\naov_b\nGroup B AOV\n₹ (rupees)\n\n\nn_a\nGroup A sample size\n120\n\n\nn_b\nGroup B sample size\n150\n\n\nsd_a\nGroup A SD (approx)\n₹180\n\n\nsd_b\nGroup B SD (approx)\n₹260"
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#method",
-    "href": "blog/posts/04-welch-t.html#method",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Method",
-    "text": "Method\nWe compare two approaches to testing differences in means:\n\nEqual-variance t-test (Student’s t-test): Assumes both groups have equal population variances and pools sample variances to estimate standard error\nWelch t-test: Does not assume equal variances and adjusts degrees of freedom based on the variance ratio (Welch 1947)\n\nThe Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. A ratio below 0.5 or above 2.0 suggests meaningful variance differences and strongly favors using the Welch t-test.\nTest statistic for equal-variance t-test: \\[\nt = \\frac{\\bar{x}_A - \\bar{x}_B}{s_p\\sqrt{\\frac{1}{n_A} + \\frac{1}{n_B}}}, \\quad s_p^2 = \\frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A + n_B - 2}.\n\\]\nTest statistic for Welch t-test: \\[\nt = \\frac{\\bar{x}_A - \\bar{x}_B}{\\sqrt{\\frac{s_A^2}{n_A} + \\frac{s_B^2}{n_B}}}, \\quad df \\approx \\frac{\\left(\\frac{s_A^2}{n_A} + \\frac{s_B^2}{n_B}\\right)^2}{\\frac{(s_A^2/n_A)^2}{n_A-1} + \\frac{(s_B^2/n_B)^2}{n_B-1}}.\n\\]"
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#calculation",
-    "href": "blog/posts/04-welch-t.html#calculation",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Calculation",
-    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#visualization",
-    "href": "blog/posts/04-welch-t.html#visualization",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Visualization",
-    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#results-and-interpretation",
-    "href": "blog/posts/04-welch-t.html#results-and-interpretation",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Results and Interpretation",
-    "text": "Results and Interpretation\nGroup A had a mean AOV of ₹1,201 (SD = ₹180, n=120), while group B had a mean AOV of ₹1,269 (SD = ₹260, n=150). The variance ratio of 0.48 (calculated as 32,400 / 67,600) indicates substantial heterogeneity in variances between groups, strongly favoring the Welch t-test.\nWelch t-test results: The Welch t-test found a statistically significant difference, t(229) = -2.30, p = 0.022, with a 95% CI of [₹11.4, ₹124.6] for the mean difference (Welch 1947; R Core Team 2024). The adjusted degrees of freedom (229 vs. the pooled 268) reflect the variance inequality.\nEqual-variance t-test results: The equal-variance t-test yielded t(268) = -2.39, p = 0.018, with a 95% CI of [₹12.2, ₹123.8]. While the results are similar in this case, the equal-variance assumption is violated (variance ratio = 0.48 &lt; 0.5).\nMethod comparison: When variances differ substantially (ratio &lt; 0.5 or &gt; 2.0), especially with unequal sample sizes, the equal-variance t-test can produce inflated Type I error rates. The Welch t-test is more conservative and robust. In this case, both tests reach the same conclusion (p &lt; 0.05), but the Welch test provides more reliable inference given the variance inequality.\nDecision framework. With a variance ratio of 0.48 and unequal sample sizes, use the Welch t-test as your primary result. The mean difference of ₹68 (95% CI [₹11, ₹125]) suggests group B has higher AOV, but the wide confidence interval indicates uncertainty about the magnitude. Always check variance homogeneity before choosing your test, and default to Welch when in doubt - it is robust even when variances are equal."
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#sample-size-planning",
-    "href": "blog/posts/04-welch-t.html#sample-size-planning",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Sample Size Planning",
-    "text": "Sample Size Planning\nFor future tests with similar variance structure, plan for adequate power using the more conservative Welch approach. To detect a ₹70 difference with 80% power at α = 0.05 (assuming larger SD ≈ ₹260), you need approximately 175 per group (350 total). Your current test achieved approximately 55% power with the unequal sample sizes.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNote: When planning with unequal variances, use the larger standard deviation for conservative sample size estimates. Equal sample sizes are preferable as they maximize power and minimize Type I error inflation."
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#assumptions",
-    "href": "blog/posts/04-welch-t.html#assumptions",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Assumptions",
-    "text": "Assumptions\nBoth t-tests assume:\n\nIndependent observations: Each customer’s order is independent\nRandom sampling: Customers were randomly sampled from their respective populations\nApproximate normality: AOV distributions are approximately normal, or sample sizes are large enough (n ≥ 30 per group) for the Central Limit Theorem to apply\n\nAdditional assumption for equal-variance t-test: - Homogeneity of variance: Population variances are equal (violated in this case with ratio = 0.48)\nWelch t-test advantage: Does not require equal variances; adjusts degrees of freedom automatically based on observed variance ratio."
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#limitations",
-    "href": "blog/posts/04-welch-t.html#limitations",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Limitations",
-    "text": "Limitations\nThis analysis does not account for:\n\nLevene’s test or F-test: We used variance ratio as a rule of thumb (&lt; 0.5 or &gt; 2.0). Formal tests like Levene’s test can assess homogeneity statistically\nNon-normality: With smaller samples or extreme skewness, consider non-parametric alternatives (Mann-Whitney U test)\nPaired data: If measurements are paired, use paired t-test instead\nMultiple groups: For more than two groups, use ANOVA with appropriate variance adjustments (Welch ANOVA)\n\nWhen variance ratio is between 0.5 and 2.0 with equal sample sizes, both tests typically give similar results. Always report which test you used and justify the choice based on variance diagnostics.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2025, October 25). Welch t-test vs equal-variance t-test: Comparing methods. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/04-welch-t.html\n@online{sharafuddin2025-welch-comparison,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Welch t-Test vs Equal-Variance t-Test: Comparing Methods},\n  year   = {2025},\n  date   = {2025-10-25},\n  url    = {https://flairmi.com/blog/posts/04-welch-t.html},\n  langid = {en}\n}"
-  },
-  {
-    "objectID": "blog/posts/04-welch-t.html#comments",
-    "href": "blog/posts/04-welch-t.html#comments",
-    "title": "Welch t-Test vs Equal-Variance t-Test: Comparing Methods",
-    "section": "Comments",
-    "text": "Comments"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html",
-    "href": "blog/posts/02-two-proportion-test.html",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "objectID": "products/ethos.html#ethos",
+    "href": "products/ethos.html#ethos",
+    "title": "Ethos",
     "section": "",
-    "text": "TL;DR: Variant A 12.0% vs B 9.5% (n=500 each); p=0.175 (ns), difference +2.5 pp [−1.1, +6.1 pp], Cohen h=0.15 (small); decision: no clear winner, continue testing or explore other factors."
+    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
   },
   {
-    "objectID": "blog/posts/02-two-proportion-test.html#case",
-    "href": "blog/posts/02-two-proportion-test.html#case",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Case",
-    "text": "Case"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#case-1",
-    "href": "blog/posts/02-two-proportion-test.html#case-1",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Case",
-    "text": "Case\nYou ran an A/B test on a product page. After two weeks, variant A had 120 conversions from 1,000 visitors (12.0%), while variant B had 95 conversions from 1,000 visitors (9.5%). The business question: Is the 2.5 percentage point difference statistically significant? Should you keep variant A or run a confirmatory test?"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#dataset",
-    "href": "blog/posts/02-two-proportion-test.html#dataset",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Dataset",
-    "text": "Dataset\nSynthetic A/B experiment data (Schema C).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nvariant\nTest group\nA or B\n\n\nconverted\nConversion event\n0 or 1\n\n\nn\nSample size\n2,000 rows\n\n\nx_A\nConversions in A\n120\n\n\nx_B\nConversions in B\n95\n\n\nn_A\nVisitors in A\n1,000\n\n\nn_B\nVisitors in B\n1,000"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#method",
-    "href": "blog/posts/02-two-proportion-test.html#method",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Method",
-    "text": "Method\nWe use a two-proportion z test to compare independent proportions (Agresti 2019). The test statistic follows a chi-squared distribution with 1 degree of freedom when using the squared z statistic. We report the difference with a 95% confidence interval and Cohen’s h as an effect size measure.\nThe difference in proportions: \\[\n\\hat{p}_A - \\hat{p}_B = \\frac{x_A}{n_A} - \\frac{x_B}{n_B}.\n\\]\nCohen’s h for effect size: \\[\nh = 2(\\arcsin\\sqrt{\\hat{p}_A} - \\arcsin\\sqrt{\\hat{p}_B}).\n\\]"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#calculation",
-    "href": "blog/posts/02-two-proportion-test.html#calculation",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Calculation",
-    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#visualization",
-    "href": "blog/posts/02-two-proportion-test.html#visualization",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Visualization",
-    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#results-and-interpretation",
-    "href": "blog/posts/02-two-proportion-test.html#results-and-interpretation",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Results and Interpretation",
-    "text": "Results and Interpretation\nVariant A converted at 12.0% (120/1,000) and variant B at 9.5% (95/1,000). The estimated difference was 2.5 percentage points with a 95% confidence interval of [0.5, 4.5] percentage points. A two-proportion z test found a statistically significant difference, χ²(1) = 4.68, p = 0.031 (Agresti 2019; R Core Team 2024).\nThe effect size, measured by Cohen’s h = 0.14, is considered small by conventional standards (small: 0.20, medium: 0.50, large: 0.80). While the result is statistically significant, the practical impact is modest.\nThe 95% CI [0.5, 4.5 pp] indicates uncertainty about the true effect magnitude, with the lower bound suggesting the true improvement could be as small as 0.5 percentage points.\nDecision framework. Variant A shows a statistically significant improvement over variant B. The confidence interval suggests the true lift is between 0.5 and 4.5 percentage points. Given the small effect size and modest sample, consider running a confirmatory test next week with a larger sample to validate the finding before a full rollout."
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#sample-size-planning",
-    "href": "blog/posts/02-two-proportion-test.html#sample-size-planning",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Sample Size Planning",
-    "text": "Sample Size Planning\nTo detect a 2.5 percentage point difference with 80% power at α = 0.05, you need approximately 1,570 visitors per group (3,140 total). Your current test with 1,000 per group achieved approximately 60% power to detect this effect size (calculated as the probability that a z-statistic exceeds the critical value given the observed effect).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nFor future tests, use the formula: \\[\nn_{\\text{per group}} = \\frac{2\\bar{p}(1-\\bar{p})(z_{1-\\alpha/2} + z_{1-\\beta})^2}{\\delta^2},\n\\] where \\(\\bar{p}\\) is the average of the two proportions and \\(\\delta\\) is the target difference."
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#assumptions",
-    "href": "blog/posts/02-two-proportion-test.html#assumptions",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Assumptions",
-    "text": "Assumptions\nThe two-proportion test assumes:\n\nIndependent samples: Each visitor appears in only one variant (no crossover or contamination between groups)\nRandom assignment: Visitors were randomly allocated to A or B without systematic bias (e.g., no assignment based on time of day or device type)\nLarge sample approximation: Each group has at least 5 expected successes and 5 expected failures for the normal approximation to hold (both conditions met: 120 successes, 880 failures in A; 95 successes, 905 failures in B - all values exceed 5)\nStable conversion rates: The true conversion rate for each variant remains constant during the test period (no external events or time trends affecting one group differently)"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#limitations",
-    "href": "blog/posts/02-two-proportion-test.html#limitations",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Limitations",
-    "text": "Limitations\nThis analysis does not stratify by device type, traffic source, or time of day. Differences in these factors could influence conversion rates. Consider a stratified analysis or regression model if imbalances are suspected.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 17). Two-proportion test: Comparing conversion rates between variants. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/02-two-proportion-test.html\n@online{sharafuddin2024-two-prop,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Two-Proportion Test: Comparing Conversion Rates Between Variants},\n  year   = {2024},\n  date   = {2024-06-17},\n  url    = {https://flairmi.com/blog/posts/02-two-proportion-test.html},\n  langid = {en}\n}"
-  },
-  {
-    "objectID": "blog/posts/02-two-proportion-test.html#comments",
-    "href": "blog/posts/02-two-proportion-test.html#comments",
-    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
-    "section": "Comments",
-    "text": "Comments"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Statistics Blog",
+    "objectID": "products/quartopad.html",
+    "href": "products/quartopad.html",
+    "title": "QuartoPad",
     "section": "",
-    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
   },
   {
-    "objectID": "blog/index.html#welcome-to-flairmi-statistics-blog",
-    "href": "blog/index.html#welcome-to-flairmi-statistics-blog",
-    "title": "Statistics Blog",
+    "objectID": "products/quartopad.html#quartopad",
+    "href": "products/quartopad.html#quartopad",
+    "title": "QuartoPad",
     "section": "",
-    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Flair Marketing Intelligence",
+    "objectID": "tools/index.html",
+    "href": "tools/index.html",
+    "title": "Tools",
     "section": "",
-    "text": "FlairMI\n  \n  \n    FlairMI is the public home for Mohammed Ali Sharafuddin's work across\n    software, research methods, teaching materials, and publishing projects.\n  \n  \n    Explore products\n    Browse books\n    Read the blog"
+    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
   },
   {
-    "objectID": "index.html#explore-flairmi",
-    "href": "index.html#explore-flairmi",
-    "title": "Flair Marketing Intelligence",
-    "section": "Explore FlairMI",
-    "text": "Explore FlairMI\nFlairMI is organized around a few clear areas so you can move directly to the part of the portfolio that matters to you.\n\n  \n    Products\n    Software projects\n    TrimWrite, QuartoPad, Ethos, and Analog bring together writing, authoring, survey, and workflow-oriented software.\n    Browse products\n  \n  \n    Tools\n    Free utilities\n    Practical calculators, templates, and decision aids for teaching, analysis, and day-to-day marketing work.\n    Browse tools\n  \n  \n    Methods\n    Methods and packages\n    Reusable methods work, package pages, and research-oriented resources such as semScreenR.\n    Browse methods\n  \n  \n    Press\n    Books and publishing\n    Book pages, companion material, and title-level information for current and developing publishing projects.\n    Browse books\n  \n  \n    Teaching\n    Teaching resources\n    Companion materials, worked examples, and course-facing resources connected to products, methods, and books.\n    Browse teaching resources\n  \n  \n    Labs\n    Experiments and side projects\n    Smaller experiments, public demos, and portfolio projects that sit outside the main product and publishing lines.\n    Browse labs"
-  },
-  {
-    "objectID": "index.html#featured-pages",
-    "href": "index.html#featured-pages",
-    "title": "Flair Marketing Intelligence",
-    "section": "Featured Pages",
-    "text": "Featured Pages\n\n  \n\n\n\nPage\nFocus\nWhere to begin\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen page\n\n\nQuartoPad\nQuarto authoring and rendering workflow\nOpen page\n\n\nEthos\nSurvey, analytics, and reporting environment\nOpen page\n\n\nMargin Guard\nPromotion and pricing support tool\nOpen page\n\n\nsemScreenR\nMethods page for a reusable SEM workflow\nOpen page\n\n\nDDMM\nBook and teaching materials\nOpen page"
-  },
-  {
-    "objectID": "index.html#across-the-site",
-    "href": "index.html#across-the-site",
-    "title": "Flair Marketing Intelligence",
-    "section": "Across The Site",
-    "text": "Across The Site\n\nProduct pages describe the software projects and link to supporting repositories.\nTool pages collect practical utilities and downloadable resources.\nMethods pages connect packages and workflows to their public context.\nPress pages bring together books, companion materials, and teaching links.\nLegacy paths such as Stats, Survey, and Writer remain available for continuity."
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Flair Marketing Intelligence",
-    "section": "Contact",
-    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for product questions, teaching enquiries, publishing\n    enquiries, or general collaboration.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Products\n          Tools\n          Methods\n          Press and teaching\n          Consulting\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "tools/index.html#tools",
+    "href": "tools/index.html#tools",
+    "title": "Tools",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
   },
   {
-    "objectID": "about.html#founder",
-    "href": "about.html#founder",
-    "title": "About",
-    "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
-  },
-  {
-    "objectID": "about.html#current-work",
-    "href": "about.html#current-work",
-    "title": "About",
-    "section": "Current Work",
-    "text": "Current Work\n\nSoftware projects including TrimWrite, QuartoPad, Ethos, and related tools.\nBooks, course materials, and companion resources including DDMM, MarAI, ASRDA, and Small Sample Lab.\nMethods-oriented work such as semScreenR and reproducible research workflows.\nTeaching resources, worked examples, and public-facing portfolio material."
-  },
-  {
-    "objectID": "about.html#about-flairmi",
-    "href": "about.html#about-flairmi",
-    "title": "About",
-    "section": "About FlairMI",
-    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) brings together several parts of the portfolio in one place:\n\nsoftware and workflow projects\nfree tools and templates\nmethods pages for reusable scholarly work\nbooks, course materials, and companion resources\n\nThe site is meant to be easy to navigate whether you are looking for a product, a method, a book, a teaching resource, or the public blog."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nFor product questions, teaching enquiries, workshops, consulting, and publishing:\nEmail: mohammedali.page@gmail.com"
-  },
-  {
-    "objectID": "about.html#connect",
-    "href": "about.html#connect",
-    "title": "About",
-    "section": "Connect",
-    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 21 March 2026"
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html",
-    "href": "blog/posts/01-margin-of-error.html",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "",
-    "text": "TL;DR: Add-to-cart is 22% (n=600); 95% CI [18.8%, 25.2%] - baseline KPI 19% is acceptable, stretch 26% isn’t; for ±2 pp precision, target ~1,472-2,401 visitors."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#case",
-    "href": "blog/posts/01-margin-of-error.html#case",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Case",
-    "text": "Case\nYou are a data analyst for an e-commerce site. You observed a 22% add-to-cart rate over two weeks with 600 visitors. The business question: Does this performance meet the baseline KPI of 19%? Can you claim the stretch goal of 26%? To answer this, you need to compute a 95% confidence interval for the add-to-cart proportion, read the margin of error, and assess whether the KPIs are acceptable."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#dataset",
-    "href": "blog/posts/01-margin-of-error.html#dataset",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Dataset",
-    "text": "Dataset\nSynthetic sample for a single two-week window.\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nsuccesses\nAdd to cart count\n132\n\n\nn\nSample size\n600\n\n\np_hat\nObserved proportion\n0.22"
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#method",
-    "href": "blog/posts/01-margin-of-error.html#method",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Method",
-    "text": "Method\nWe use the Wald large-sample CI for a binomial proportion (Agresti 2019):\n\\[\n\\text{MOE} = Z^* \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}.\n\\]"
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#calculation",
-    "href": "blog/posts/01-margin-of-error.html#calculation",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Calculation",
-    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#visualization",
-    "href": "blog/posts/01-margin-of-error.html#visualization",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Visualization",
-    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#results-and-interpretation",
-    "href": "blog/posts/01-margin-of-error.html#results-and-interpretation",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Results and Interpretation",
-    "text": "Results and Interpretation\nThe estimated add-to-cart proportion was 0.22 (22.0%) with a 95% confidence interval of [0.188, 0.252] (or [18.8%, 25.2%]), a margin of error of ±3.2 percentage points. The large-sample rule holds (132 successes, 468 failures) (Agresti 2019; R Core Team 2024).\nKPI assessment. Baseline KPI (19%) lies within the CI; stretch KPI (26%) lies above the CI.\nBusiness decision. The baseline KPI (19%) is acceptable given the data, suggesting acceptable performance. The stretch KPI (26%) is not supported by this sample - more visitors or performance improvements are needed to claim that goal."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#sample-size-planning",
-    "href": "blog/posts/01-margin-of-error.html#sample-size-planning",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Sample Size Planning",
-    "text": "Sample Size Planning\nTo achieve ±2 percentage points precision at 95% confidence: \\[\nn = \\hat{p}(1-\\hat{p})\\left(\\frac{Z^*}{\\text{MOE}_{\\text{target}}}\\right)^2.\n\\]\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#assumptions",
-    "href": "blog/posts/01-margin-of-error.html#assumptions",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Assumptions",
-    "text": "Assumptions\nThe Wald interval assumes:\n\nIndependent observations: Each visitor’s cart action is independent (no clustering by session or user ID)\nRandom sampling: Visitors represent a random sample from the population (not biased toward specific traffic sources or times)\nLarge-sample validity: Both \\(n\\hat{p} \\ge 10\\) and \\(n(1-\\hat{p}) \\ge 10\\) (conditions met: 132 successes and 468 failures both exceed 10)\nStable process: The true conversion rate remains constant during the observation period (no seasonal trends, promotional effects, or A/B tests running concurrently)\n\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 10). Confidence interval for a proportion: Analyzing add-to-cart rate. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/01-margin-of-error.html\n@online{sharafuddin2024-ci-proportion,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate},\n  year   = {2024},\n  date   = {2024-06-10},\n  url    = {https://flairmi.com/blog/posts/01-margin-of-error.html},\n  langid = {en}\n}"
-  },
-  {
-    "objectID": "blog/posts/01-margin-of-error.html#comments",
-    "href": "blog/posts/01-margin-of-error.html#comments",
-    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
-    "section": "Comments",
-    "text": "Comments"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html",
-    "href": "blog/posts/03-t-test.html",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "",
-    "text": "TL;DR: Control ₹1,500 vs Treatment ₹1,580 (n=100 each); p=0.001 (sig), difference ₹80 [₹32, ₹128], Hedges g=0.39 (small-medium); decision: treatment increases AOV, roll out if margin supports."
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#case",
-    "href": "blog/posts/03-t-test.html#case",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Case",
-    "text": "Case"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#case-1",
-    "href": "blog/posts/03-t-test.html#case-1",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Case",
-    "text": "Case\nYou are analyzing a merchandising experiment for an e-commerce store. The control group (A) saw standard product displays, while the treatment group (B) received enhanced product recommendations. After four weeks with 200 customers in each group, you need to determine: Does the treatment significantly increase average order value (AOV)? Should you roll out the new merchandising approach?"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#dataset",
-    "href": "blog/posts/03-t-test.html#dataset",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Dataset",
-    "text": "Dataset\nSynthetic sample from e-commerce experiment (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\naov_a\nControl group AOV\n₹ (rupees)\n\n\naov_b\nTreatment group AOV\n₹ (rupees)\n\n\nn_a\nControl sample size\n200\n\n\nn_b\nTreatment sample size\n200\n\n\nmean_a\nControl mean\n₹1,500\n\n\nmean_b\nTreatment mean\n₹1,580"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#method",
-    "href": "blog/posts/03-t-test.html#method",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Method",
-    "text": "Method\nWe use a Welch t-test to compare two independent groups with potentially unequal variances (Welch 1947). This is more robust than Student’s t-test when variances differ. We report the mean difference with a 95% confidence interval and Hedges g as an effect size measure (which applies a small-sample correction to Cohen’s d).\nThe mean difference: \\[\n\\bar{x}_B - \\bar{x}_A = \\frac{1}{n_B}\\sum x_{B,i} - \\frac{1}{n_A}\\sum x_{A,i}.\n\\]\nHedges g for effect size: \\[\ng = J \\times \\frac{\\bar{x}_B - \\bar{x}_A}{s_{\\text{pooled}}}, \\quad J = 1 - \\frac{3}{4(n_A + n_B) - 9}.\n\\]"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#calculation",
-    "href": "blog/posts/03-t-test.html#calculation",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Calculation",
-    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#visualization",
-    "href": "blog/posts/03-t-test.html#visualization",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Visualization",
-    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#results-and-interpretation",
-    "href": "blog/posts/03-t-test.html#results-and-interpretation",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Results and Interpretation",
-    "text": "Results and Interpretation\nThe control group had a mean AOV of ₹1,500 (SD = ₹260), while the treatment group had a mean AOV of ₹1,580 (SD = ₹300). The estimated mean difference was ₹80 with a 95% confidence interval of [₹32, ₹128]. A Welch t-test found a statistically significant difference, t(391) = 3.28, p = 0.001 (Welch 1947; R Core Team 2024).\nThe effect size, measured by Hedges g = 0.29, is considered small to medium by conventional standards (small: 0.20, medium: 0.50, large: 0.80). This indicates a practically meaningful improvement in average order value.\nWhile statistically significant (p = 0.001), the 95% CI [₹32, ₹128] suggests the true improvement could range from modest to substantial. The lower bound indicates at minimum a ₹32 increase per order, which could translate to significant revenue gains at scale.\nDecision framework. The treatment group shows a statistically significant and practically meaningful increase in AOV. With an estimated lift of ₹80 per order and a small-to-medium effect size, this suggests the enhanced merchandising approach is effective. Consider rolling out the treatment, monitoring for consistency across customer segments, and calculating the expected revenue impact based on your order volume."
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#sample-size-planning",
-    "href": "blog/posts/03-t-test.html#sample-size-planning",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Sample Size Planning",
-    "text": "Sample Size Planning\nTo detect an ₹80 difference in AOV with 80% power at α = 0.05 (assuming SD ≈ ₹280), you need approximately 196 customers per group (392 total). Your current test with 200 per group achieved approximately 81% power to detect this effect size.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nFor future tests, use the formula: \\[\nn_{\\text{per group}} = \\frac{2(z_{1-\\alpha/2} + z_{1-\\beta})^2}{d^2},\n\\] where \\(d\\) is Cohen’s d (mean difference divided by pooled standard deviation)."
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#assumptions",
-    "href": "blog/posts/03-t-test.html#assumptions",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Assumptions",
-    "text": "Assumptions\nThe Welch t-test assumes:\n\nIndependent observations: Each customer’s order is independent\nRandom assignment: Customers were randomly allocated to control or treatment\nApproximate normality: AOV distributions are approximately normal, or sample sizes are large enough (n ≥ 30 per group) for the Central Limit Theorem to apply\nNo requirement for equal variances: Welch t-test adjusts degrees of freedom for unequal variances (SD control = ₹260, treatment = ₹300)"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#limitations",
-    "href": "blog/posts/03-t-test.html#limitations",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Limitations",
-    "text": "Limitations\nThis analysis does not account for:\n\nSkewness: AOV distributions in retail are often right-skewed. Consider median comparisons or log-transformation if extreme outliers are present.\nSegmentation: Results may vary by customer segment (new vs. returning, device type, traffic source)\nTime effects: Seasonal patterns or time-of-week effects could influence AOV\nMultiple testing: If running multiple simultaneous experiments, adjust significance levels accordingly\n\nFor highly skewed data, consider the Mann-Whitney U test (Wilcoxon rank-sum test) as a non-parametric alternative.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 24). Welch t-test: Comparing average order value between groups. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/03-t-test.html\n@online{sharafuddin2024-t-test,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Welch t-Test: Comparing Average Order Value Between Groups},\n  year   = {2024},\n  date   = {2024-06-24},\n  url    = {https://flairmi.com/blog/posts/03-t-test.html},\n  langid = {en}\n}"
-  },
-  {
-    "objectID": "blog/posts/03-t-test.html#comments",
-    "href": "blog/posts/03-t-test.html#comments",
-    "title": "Welch t-Test: Comparing Average Order Value Between Groups",
-    "section": "Comments",
-    "text": "Comments"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html",
-    "href": "blog/posts/05-simple-regression.html",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "",
-    "text": "TL;DR: Revenue = ₹10k + ₹0.50 per ₹1 ad spend (n=200); slope CI [₹0.44, ₹0.56], R²=0.80 (strong fit), residuals look normal; decision: each ₹1k ad spend yields ~₹500 revenue, but check for nonlinearity at higher budgets."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#case",
-    "href": "blog/posts/05-simple-regression.html#case",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Case",
-    "text": "Case"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#case-1",
-    "href": "blog/posts/05-simple-regression.html#case-1",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Case",
-    "text": "Case\nYou manage digital advertising for an e-commerce platform and want to quantify the relationship between weekly ad spend and revenue. Specifically: For every additional rupee spent on ads, how much revenue can you expect? Is the relationship strong enough to justify continued investment? What portion of revenue variation is explained by ad spend alone?"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#dataset",
-    "href": "blog/posts/05-simple-regression.html#dataset",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Dataset",
-    "text": "Dataset\nSynthetic sample from weekly marketing data (Schema A).\n\n\n\nVariable\nLabel\nValue\n\n\n\n\nspend\nWeekly ad spend\n₹ (rupees)\n\n\nrevenue\nWeekly revenue\n₹ (rupees)\n\n\nn\nNumber of weeks\n200\n\n\nRange\nSpend range\n₹0 - ₹100,000"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#method",
-    "href": "blog/posts/05-simple-regression.html#method",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Method",
-    "text": "Method\nWe use ordinary least squares (OLS) regression to model revenue as a linear function of ad spend. The regression equation is:\n\\[\n\\text{Revenue}_i = \\beta_0 + \\beta_1 \\times \\text{Spend}_i + \\epsilon_i,\n\\]\nwhere \\(\\beta_0\\) is the intercept (baseline revenue when spend = 0), \\(\\beta_1\\) is the slope (marginal revenue per rupee of spend), and \\(\\epsilon_i\\) is the error term assumed to be normally distributed with constant variance.\nThe slope estimate with standard error: \\[\n\\hat{\\beta}_1 = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{\\sum(x_i - \\bar{x})^2}, \\quad SE(\\hat{\\beta}_1) = \\frac{s}{\\sqrt{\\sum(x_i - \\bar{x})^2}},\n\\] where \\(s\\) is the residual standard error.\nThe coefficient of determination (R-squared): \\[\nR^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}} = 1 - \\frac{\\sum(y_i - \\hat{y}_i)^2}{\\sum(y_i - \\bar{y})^2}.\n\\]\nWe report 95% confidence intervals for both intercept and slope using standard t-distribution critical values."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#calculation",
-    "href": "blog/posts/05-simple-regression.html#calculation",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Calculation",
-    "text": "Calculation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#visualization",
-    "href": "blog/posts/05-simple-regression.html#visualization",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Visualization",
-    "text": "Visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#results-and-interpretation",
-    "href": "blog/posts/05-simple-regression.html#results-and-interpretation",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Results and Interpretation",
-    "text": "Results and Interpretation\nThe regression analysis reveals a statistically significant positive relationship between ad spend and revenue. The estimated slope is ₹0.300 (95% CI [₹0.240, ₹0.360]), meaning that for every additional rupee spent on advertising, revenue increases by approximately ₹0.30 on average (R Core Team 2024).\nThe intercept of ₹49,991 represents the estimated baseline revenue when ad spend is zero. While statistically significant (p &lt; 0.001), this should be interpreted cautiously as the model may not hold outside the observed spend range (₹0 - ₹100,000).\nModel fit: The R² value of 0.419 (42%) indicates that ad spend explains about 42% of the variation in weekly revenue. The remaining 58% is due to other factors not included in this simple model (e.g., seasonality, competitor actions, organic traffic, product mix).\nStatistical significance: The F-statistic (F(1, 198) = 142.7, p &lt; 0.001) confirms the overall model is highly significant. The slope’s p-value &lt; 0.001 indicates strong evidence that the relationship is not due to chance.\nPractical significance: A ₹0.30 return per rupee suggests a 30% marginal return on ad spend in terms of revenue (not profit). This is a gross relationship - you must subtract costs to determine actual ROI. The 95% CI [₹0.24, ₹0.36] suggests the true marginal return could range from 24% to 36%.\nDecision framework. The positive and significant relationship supports continued ad investment, but association does not imply causation. Before making budget decisions: (1) Check residual diagnostics for violations of regression assumptions, (2) Consider confounding variables (e.g., seasonality, external events), (3) Calculate net profit impact after subtracting ad costs and other variable costs, (4) Test whether the relationship holds at different spend levels (non-linearity), (5) Consider building a multiple regression model with additional predictors for better prediction accuracy."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#residual-diagnostics",
-    "href": "blog/posts/05-simple-regression.html#residual-diagnostics",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Residual Diagnostics",
-    "text": "Residual Diagnostics\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nDiagnostic interpretation: The residuals vs. fitted plot should show random scatter around zero (no pattern). The Q-Q plot should show points following the diagonal line. Deviations suggest violations of assumptions (heteroscedasticity, non-normality, or non-linearity)."
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#assumptions",
-    "href": "blog/posts/05-simple-regression.html#assumptions",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Assumptions",
-    "text": "Assumptions\nSimple linear regression assumes:\n\nLinearity: The relationship between spend and revenue is linear (check with scatterplot and residual plot)\nIndependence: Weekly observations are independent (no autocorrelation across time)\nHomoscedasticity: Constant variance of residuals across all levels of spend (check residuals vs. fitted plot)\nNormality of residuals: Residuals are approximately normally distributed (check Q-Q plot; less critical with n = 200)\nNo measurement error in predictor: Ad spend is measured accurately\nNo omitted variable bias: Other important predictors are not correlated with spend"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#limitations",
-    "href": "blog/posts/05-simple-regression.html#limitations",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Limitations",
-    "text": "Limitations\nThis analysis does not account for:\n\nCausality: Correlation does not prove ad spend causes revenue. Reverse causality is possible (higher revenue allows more ad spend)\nConfounding variables: Seasonality, promotions, competitor actions, product launches, organic trends\nNon-linear relationships: Diminishing returns at high spend levels, or threshold effects at low spend\nTime series structure: Temporal autocorrelation, lagged effects (ads may influence future weeks)\nInteraction effects: Ad effectiveness may vary by channel, audience segment, or time period\nCosts: This models revenue, not profit. Must subtract ad costs and variable costs to assess true ROI\n\nRecommendations for improvement: - Add time trends and seasonal dummies to control for temporal patterns - Use multiple regression with additional predictors (organic traffic, email campaigns, competitor spend) - Test for non-linearity with polynomial terms or segmented regression - Consider time series models (ARIMA, VAR) if temporal dependencies exist - Conduct controlled experiments (randomized ad spend levels) to establish causality - Calculate contribution margin and customer lifetime value for profit-focused analysis\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2025, October 25). Simple linear regression: Modeling revenue from ad spend. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/05-simple-regression.html\n@online{sharafuddin2025-regression,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Simple Linear Regression: Modeling Revenue from Ad Spend},\n  year   = {2025},\n  date   = {2025-10-25},\n  url    = {https://flairmi.com/blog/posts/05-simple-regression.html},\n  langid = {en}\n}"
-  },
-  {
-    "objectID": "blog/posts/05-simple-regression.html#comments",
-    "href": "blog/posts/05-simple-regression.html#comments",
-    "title": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-    "section": "Comments",
-    "text": "Comments"
-  },
-  {
-    "objectID": "products/analog.html",
-    "href": "products/analog.html",
-    "title": "Analog",
-    "section": "",
-    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
-  },
-  {
-    "objectID": "products/analog.html#analog",
-    "href": "products/analog.html#analog",
-    "title": "Analog",
-    "section": "",
-    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
-  },
-  {
-    "objectID": "products/index.html",
-    "href": "products/index.html",
-    "title": "Products",
-    "section": "",
-    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
-  },
-  {
-    "objectID": "products/index.html#product-portfolio",
-    "href": "products/index.html#product-portfolio",
-    "title": "Products",
-    "section": "",
-    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
-  },
-  {
-    "objectID": "products/index.html#products-at-a-glance",
-    "href": "products/index.html#products-at-a-glance",
-    "title": "Products",
-    "section": "Products At A Glance",
-    "text": "Products At A Glance\n\n\n\nProduct\nFocus\nPublic page\nRepository\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen\ntrimwrite\n\n\nQuartoPad\nQuarto authoring and rendering\nOpen\nquartopad\n\n\nEthos\nSurvey, analytics, and reporting workflows\nOpen\nethos\n\n\nAnalog\nSmaller product experiment\nOpen\nanalog"
-  },
-  {
-    "objectID": "products/trimwrite.html",
-    "href": "products/trimwrite.html",
-    "title": "TrimWrite",
-    "section": "",
-    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
-  },
-  {
-    "objectID": "products/trimwrite.html#trimwrite",
-    "href": "products/trimwrite.html#trimwrite",
-    "title": "TrimWrite",
-    "section": "",
-    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
-  },
-  {
-    "objectID": "tools/margin-guard.html",
-    "href": "tools/margin-guard.html",
-    "title": "Margin Guard",
-    "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
-  },
-  {
-    "objectID": "tools/margin-guard.html#margin-guard",
-    "href": "tools/margin-guard.html#margin-guard",
-    "title": "Margin Guard",
-    "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
-  },
-  {
-    "objectID": "methods/index.html",
-    "href": "methods/index.html",
-    "title": "Methods",
-    "section": "",
-    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages.\n\n  \n    semScreenR\n    \n    Package-level scholarly work is presented here alongside documentation, repo access, and public context.\n    Open semScreenR"
-  },
-  {
-    "objectID": "methods/index.html#methods",
-    "href": "methods/index.html#methods",
-    "title": "Methods",
-    "section": "",
-    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages.\n\n  \n    semScreenR\n    \n    Package-level scholarly work is presented here alongside documentation, repo access, and public context.\n    Open semScreenR"
-  },
-  {
-    "objectID": "methods/index.html#on-this-section",
-    "href": "methods/index.html#on-this-section",
-    "title": "Methods",
+    "objectID": "tools/index.html#on-this-section",
+    "href": "tools/index.html#on-this-section",
+    "title": "Tools",
     "section": "On This Section",
-    "text": "On This Section\n\nMethod pages connect packages, public explanations, and related teaching material.\nVisit the Blog for worked examples and tutorials.\nVisit Teaching for classroom-facing material."
+    "text": "On This Section\n\nUse these pages to access tools directly.\nVisit the Methods section for package-led work.\nVisit the Blog for tutorials, examples, and longer explanations."
+  },
+  {
+    "objectID": "tools/marketing-decision-toolkit.html",
+    "href": "tools/marketing-decision-toolkit.html",
+    "title": "Marketing Decision Toolkit",
+    "section": "",
+    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
+  },
+  {
+    "objectID": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
+    "href": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
+    "title": "Marketing Decision Toolkit",
+    "section": "",
+    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
   },
   {
     "objectID": "press/asrda.html",
