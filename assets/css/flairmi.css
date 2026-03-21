@@ -15,6 +15,33 @@ body {
   background: #fbfcff;
 }
 
+main.content a:not(.flair-button) {
+  color: var(--flair-primary-dark);
+  text-decoration-color: rgba(31, 77, 143, 0.35);
+}
+
+main.content a:not(.flair-button):hover {
+  color: var(--flair-accent);
+  text-decoration-color: rgba(216, 138, 29, 0.5);
+}
+
+main.content p code,
+main.content li code,
+main.content td code,
+main.content h1 code,
+main.content h2 code,
+main.content h3 code,
+main.content h4 code {
+  font-family: inherit;
+  font-size: 0.96em;
+  font-weight: 600;
+  color: var(--flair-ink);
+  background: var(--flair-surface-strong);
+  border: 1px solid var(--flair-border);
+  border-radius: 0.45rem;
+  padding: 0.08rem 0.36rem;
+}
+
 .flair-hero {
   background: linear-gradient(135deg, #173b6a 0%, #21568f 48%, #d88a1d 100%);
   color: #fff;
