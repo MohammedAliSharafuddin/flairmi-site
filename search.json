@@ -112,165 +112,165 @@
     "text": "Summarise a simple model with variables, units, coefficient interpretation, and the minimum diagnostics needed for a credible applied report."
   },
   {
-    "objectID": "writer/templates/regression_report.html#recommended-flow",
-    "href": "writer/templates/regression_report.html#recommended-flow",
+    "objectID": "writer/templates/regression_report.html#report-outline",
+    "href": "writer/templates/regression_report.html#report-outline",
     "title": "Regression report",
-    "section": "Recommended flow",
-    "text": "Recommended flow\n\nDefine the response and predictor in plain language.\nReport the coefficient, uncertainty, and practical meaning.\nState model fit and one limitation.\nConnect the result to a business or research decision.\nLink back to the reproducible method page or notebook."
+    "section": "Report Outline",
+    "text": "Report Outline\n\nResponse and predictor in plain language\nCoefficient, uncertainty, and practical interpretation\nModel fit and one key limitation\nDecision or implication\nLink to supporting notebook or method page"
   },
   {
-    "objectID": "writer/templates/regression_report.html#canonical-homes",
-    "href": "writer/templates/regression_report.html#canonical-homes",
+    "objectID": "writer/templates/regression_report.html#related-pages",
+    "href": "writer/templates/regression_report.html#related-pages",
     "title": "Regression report",
-    "section": "Canonical homes",
-    "text": "Canonical homes\n\nProduct workflow: QuartoPad\nEditing and style workflow: TrimWrite\nPublishing workflow: FlairMI Press"
+    "section": "Related Pages",
+    "text": "Related Pages\n\nProduct workflow: QuartoPad\nEditing and style workflow: TrimWrite\nPublishing workflow: FlairMI Press"
   },
   {
     "objectID": "writer/index.html",
     "href": "writer/index.html",
     "title": "Writer",
     "section": "",
-    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and AI-era writing checks.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
+    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and writing review.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
   },
   {
     "objectID": "writer/index.html#legacy-route",
     "href": "writer/index.html#legacy-route",
     "title": "Writer",
     "section": "",
-    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and AI-era writing checks.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
+    "text": "This route is preserved for continuity. Writing workflows are\n  now split between TrimWrite,\n  QuartoPad,\n  Ethos, and\n  FlairMI Press.\n\n\n\n\nUse TrimWrite for editorial quality and writing review.\nUse QuartoPad for Quarto-native drafting and rendering workflows.\nUse Ethos for survey-to-report pipelines in privacy-sensitive settings.\nUse Press for books, manuals, and citation-ready public outputs."
   },
   {
     "objectID": "stats/index.html",
     "href": "stats/index.html",
     "title": "Stats",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases.\n\n\n\n\n\nMove utility pages into canonical /tools/... routes.\nKeep legacy links stable while the public information architecture settles.\nAvoid launching a separate Stats brand; FlairMI now holds the public canonical route."
+    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases."
   },
   {
     "objectID": "stats/index.html#legacy-route",
     "href": "stats/index.html#legacy-route",
     "title": "Stats",
     "section": "",
-    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases.\n\n\n\n\n\nMove utility pages into canonical /tools/... routes.\nKeep legacy links stable while the public information architecture settles.\nAvoid launching a separate Stats brand; FlairMI now holds the public canonical route."
+    "text": "This route is preserved for continuity. The old Stats suite is\n  being split across the new Tools,\n  Methods, and Blog\n  sections.\n\n\n\n\nUse Tools for free calculators and downloadable utility assets.\nUse Methods for package-led scholarly workflows such as semScreenR.\nUse the Blog for guided WebR tutorials tied to real use cases."
   },
   {
     "objectID": "teaching/index.html",
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "Teaching is the adoption layer that connects books, methods assets, templates, slides, and product demos into something instructors can actually use.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR\n\n\n\n\nKeep teaching resources discoverable from flairmi.com/teaching, but link each resource back to its canonical product or press page so the public information architecture stays coherent."
+    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR"
   },
   {
-    "objectID": "teaching/index.html#teaching-layer",
-    "href": "teaching/index.html#teaching-layer",
+    "objectID": "teaching/index.html#teaching",
+    "href": "teaching/index.html#teaching",
     "title": "Teaching",
     "section": "",
-    "text": "Teaching is the adoption layer that connects books, methods assets, templates, slides, and product demos into something instructors can actually use.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR\n\n\n\n\nKeep teaching resources discoverable from flairmi.com/teaching, but link each resource back to its canonical product or press page so the public information architecture stays coherent."
+    "text": "This section brings together course-facing resources, companion materials, worked examples, and teaching-oriented links from across FlairMI.\n\n\n\ncompanion resources for press titles\ncourse adoption notes\nworked examples, labs, and slides\nQuartoPad and Ethos workflows that support teaching delivery\n\n\n\n\n\nDDMM\nMarAI\nASRDA\nSmall Sample Lab\nMethods workflows such as semScreenR"
   },
   {
     "objectID": "press/marai.html",
     "href": "press/marai.html",
     "title": "MarAI",
     "section": "",
-    "text": "MarAI is positioned here as a FlairMI Press title and teaching line rather than as an isolated repo brand.\n\n\n\nFlairMI Press title\nTeaching and AI-in-marketing asset\nStrong candidate for companion examples, slides, and adoption guidance\n\n\n\n\n\nCanonical public route: /press/marai\nCanonical repo: https://github.com/MohammedAliSharafuddin/MarAI_Suite\n\n\n\n\nTreat this route as the public landing page for future title metadata, companion assets, and adoption calls to action."
+    "text": "MarAI brings together marketing, analytics, and teaching-oriented publishing work.\n\n\n\nBook and teaching line\nCompanion examples and course-facing material\nPublishing page for the MarAI project\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/MarAI_Suite"
   },
   {
     "objectID": "press/marai.html#marai",
     "href": "press/marai.html#marai",
     "title": "MarAI",
     "section": "",
-    "text": "MarAI is positioned here as a FlairMI Press title and teaching line rather than as an isolated repo brand.\n\n\n\nFlairMI Press title\nTeaching and AI-in-marketing asset\nStrong candidate for companion examples, slides, and adoption guidance\n\n\n\n\n\nCanonical public route: /press/marai\nCanonical repo: https://github.com/MohammedAliSharafuddin/MarAI_Suite\n\n\n\n\nTreat this route as the public landing page for future title metadata, companion assets, and adoption calls to action."
+    "text": "MarAI brings together marketing, analytics, and teaching-oriented publishing work.\n\n\n\nBook and teaching line\nCompanion examples and course-facing material\nPublishing page for the MarAI project\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/MarAI_Suite"
   },
   {
     "objectID": "press/ddmm.html",
     "href": "press/ddmm.html",
     "title": "DDMM",
     "section": "",
-    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nFlairMI Press title\nTeaching companion line\nAnchor case for consolidating legacy book repos into a single public routing system\n\n\n\n\n\nCanonical public route: /press/ddmm\nCanonical source repo: DMM_Suite\nRelated continuity: legacy DDMM source and deployment repos can now point back here\n\n\n\n\nPreserve the existing public teaching value, but point all future public copy, book metadata, and course adoption paths back to this canonical route."
+    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nBook and teaching line\nDigital marketing and analytics focus\nCompanion material and course-facing context\n\n\n\n\n\nSource repo: DMM_Suite"
   },
   {
     "objectID": "press/ddmm.html#ddmm",
     "href": "press/ddmm.html#ddmm",
     "title": "DDMM",
     "section": "",
-    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nFlairMI Press title\nTeaching companion line\nAnchor case for consolidating legacy book repos into a single public routing system\n\n\n\n\n\nCanonical public route: /press/ddmm\nCanonical source repo: DMM_Suite\nRelated continuity: legacy DDMM source and deployment repos can now point back here\n\n\n\n\nPreserve the existing public teaching value, but point all future public copy, book metadata, and course adoption paths back to this canonical route."
+    "text": "DDMM is the strongest existing book-and-courseware line in the portfolio, and it already has both private-source and public-deployment repo history.\n\n\n\nBook and teaching line\nDigital marketing and analytics focus\nCompanion material and course-facing context\n\n\n\n\n\nSource repo: DMM_Suite"
   },
   {
     "objectID": "methods/semscreenr.html",
     "href": "methods/semscreenr.html",
     "title": "semScreenR",
     "section": "",
-    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nMethods-layer scholarly asset\nUseful for academic credibility, teaching, and package discovery\nStrong candidate for cross-linking from books, courseware, and blog posts\n\n\n\n\n\nCanonical public route: /methods/semscreenr\nCanonical repo: https://github.com/MohammedAliSharafuddin/semScreenR\n\n\n\n\nAdd examples, install instructions, and citation guidance here over time so semScreenR becomes discoverable outside GitHub alone."
+    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nR package and workflow page\nUseful for research, teaching, and package discovery\nConnected to methods, books, and classroom material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/semScreenR"
   },
   {
     "objectID": "methods/semscreenr.html#semscreenr",
     "href": "methods/semscreenr.html#semscreenr",
     "title": "semScreenR",
     "section": "",
-    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nMethods-layer scholarly asset\nUseful for academic credibility, teaching, and package discovery\nStrong candidate for cross-linking from books, courseware, and blog posts\n\n\n\n\n\nCanonical public route: /methods/semscreenr\nCanonical repo: https://github.com/MohammedAliSharafuddin/semScreenR\n\n\n\n\nAdd examples, install instructions, and citation guidance here over time so semScreenR becomes discoverable outside GitHub alone."
+    "text": "semScreenR is a methods asset first: an R package and workflow around screening, diagnostics, and reproducible SEM-related work.\n\n\n\nR package and workflow page\nUseful for research, teaching, and package discovery\nConnected to methods, books, and classroom material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/semScreenR"
   },
   {
     "objectID": "tools/marketing-decision-toolkit.html",
     "href": "tools/marketing-decision-toolkit.html",
     "title": "Marketing Decision Toolkit",
     "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nFree toolkit under FlairMI Tools\nTeaching-friendly asset that can also support consulting and lead capture\nNatural bridge into TrimWrite, Ethos, and book/course lines\n\n\n\n\n\nCanonical public route: /tools/marketing-decision-toolkit\nCanonical repo: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit\n\n\n\n\nKeep the toolkit public and practical, then use this page as the stable route for version notes, companion posts, and download calls to action."
+    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
   },
   {
     "objectID": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
     "href": "tools/marketing-decision-toolkit.html#marketing-decision-toolkit",
     "title": "Marketing Decision Toolkit",
     "section": "",
-    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nFree toolkit under FlairMI Tools\nTeaching-friendly asset that can also support consulting and lead capture\nNatural bridge into TrimWrite, Ethos, and book/course lines\n\n\n\n\n\nCanonical public route: /tools/marketing-decision-toolkit\nCanonical repo: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit\n\n\n\n\nKeep the toolkit public and practical, then use this page as the stable route for version notes, companion posts, and download calls to action."
+    "text": "The Marketing Decision Toolkit is a practical collection of lightweight decision assets: templates, worksheets, and simple structured supports for applied marketing decisions.\n\n\n\nPractical templates and worksheets\nSupport for structured marketing analysis\nUseful alongside tools, books, and teaching resources\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/marketing-decision-toolkit"
   },
   {
     "objectID": "tools/index.html",
     "href": "tools/index.html",
     "title": "Tools",
     "section": "",
-    "text": "FlairMI Tools holds free utilities, downloadable toolkits, and simple decision support assets that feed teaching, search demand, and product discovery.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets that convert teaching content and consulting logic into reusable public resources.\n    Open the toolkit"
+    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
   },
   {
-    "objectID": "tools/index.html#tools-layer",
-    "href": "tools/index.html#tools-layer",
+    "objectID": "tools/index.html#tools",
+    "href": "tools/index.html#tools",
     "title": "Tools",
     "section": "",
-    "text": "FlairMI Tools holds free utilities, downloadable toolkits, and simple decision support assets that feed teaching, search demand, and product discovery.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets that convert teaching content and consulting logic into reusable public resources.\n    Open the toolkit"
+    "text": "FlairMI Tools collects practical utilities, calculators, and templates for teaching, analysis, and applied marketing work.\n\n  \n    Margin Guard\n    \n    A practical calculator for pricing and promotion decisions that can also support educational use and content marketing.\n    Open Margin Guard\n  \n  \n    Marketing Decision Toolkit\n    \n    A bundle of practical assets for structured marketing analysis and planning.\n    Open the toolkit"
   },
   {
-    "objectID": "tools/index.html#tool-rules",
-    "href": "tools/index.html#tool-rules",
+    "objectID": "tools/index.html#on-this-section",
+    "href": "tools/index.html#on-this-section",
     "title": "Tools",
-    "section": "Tool Rules",
-    "text": "Tool Rules\n\nKeep tools simple and useful.\nUse tools to drive qualified traffic into the broader FlairMI ecosystem.\nAvoid creating disconnected micro-brands for each utility.\nLink every tool to one next step: a method page, a product page, or a teaching asset."
+    "section": "On This Section",
+    "text": "On This Section\n\nUse these pages to access tools directly.\nVisit the Methods section for package-led work.\nVisit the Blog for tutorials, examples, and longer explanations."
   },
   {
     "objectID": "products/quartopad.html",
     "href": "products/quartopad.html",
     "title": "QuartoPad",
     "section": "",
-    "text": "Canonical public route. QuartoPad is the Quarto-native editor\n  and workflow product in the FlairMI portfolio.\n\nQuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nPrimary domain: Quarto authoring and rendering workflow\nPortfolio role: standalone product with strong overlap with teaching and methods work\nAdjacent links: TrimWrite for text quality, Press for book and teaching outputs\n\n\n\n\n\nCanonical public route: /products/quartopad\nCanonical code repo: https://github.com/MohammedAliSharafuddin/quartopad\n\n\n\n\n\nInstall and explore the package\nJoin a beta for improved authoring workflows\nUse FlairMI pages as the stable public docs layer\n\n\n\n\nKeep the product repo independent, but make all public-facing copy point back to this canonical page so the product sits inside the FlairMI architecture instead of looking disconnected."
+    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
   },
   {
     "objectID": "products/quartopad.html#quartopad",
     "href": "products/quartopad.html#quartopad",
     "title": "QuartoPad",
     "section": "",
-    "text": "Canonical public route. QuartoPad is the Quarto-native editor\n  and workflow product in the FlairMI portfolio.\n\nQuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nPrimary domain: Quarto authoring and rendering workflow\nPortfolio role: standalone product with strong overlap with teaching and methods work\nAdjacent links: TrimWrite for text quality, Press for book and teaching outputs\n\n\n\n\n\nCanonical public route: /products/quartopad\nCanonical code repo: https://github.com/MohammedAliSharafuddin/quartopad\n\n\n\n\n\nInstall and explore the package\nJoin a beta for improved authoring workflows\nUse FlairMI pages as the stable public docs layer\n\n\n\n\nKeep the product repo independent, but make all public-facing copy point back to this canonical page so the product sits inside the FlairMI architecture instead of looking disconnected."
+    "text": "QuartoPad serves analysts, researchers, and instructors who want a local, reproducible drafting workflow around Quarto and R without the weight of a full cloud platform.\n\n\n\nLocal Quarto authoring and rendering workflow\nStrong fit for writing, teaching, and reproducible analysis\nRelated pages: TrimWrite and Press\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/quartopad"
   },
   {
     "objectID": "products/ethos.html",
     "href": "products/ethos.html",
     "title": "Ethos",
     "section": "",
-    "text": "Canonical public route. Ethos is the product home for the\n  survey, analytics, and writing stack that previously appeared as separate\n  suite ideas.\n\nEthos is the cleanest way to unify the older Survey, Stats, and Writer concepts. It carries the privacy-first survey platform story without multiplying public brands.\n\n\n\nPrimary domain: privacy-first survey collection, analytics, and reporting\nPortfolio role: product umbrella for earlier survey-suite concepts\nAdjacent links: Methods for reusable workflows, Teaching for adoption assets\n\n\n\n\n\nCanonical public route: /products/ethos\nCanonical code repo: https://github.com/MohammedAliSharafuddin/ethos\nRelated public continuity: legacy survey-suite ideas are being folded into Ethos\n\n\n\n\n\nRequest a pilot for labs, departments, or teaching use cases\nReview the privacy-first product positioning\nContact FlairMI for implementation or support\n\n\n\n\nMove public references from legacy survey-suite names to Ethos, then archive or fold the precursor repos once the reusable pieces are extracted."
+    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
   },
   {
     "objectID": "products/ethos.html#ethos",
     "href": "products/ethos.html#ethos",
     "title": "Ethos",
     "section": "",
-    "text": "Canonical public route. Ethos is the product home for the\n  survey, analytics, and writing stack that previously appeared as separate\n  suite ideas.\n\nEthos is the cleanest way to unify the older Survey, Stats, and Writer concepts. It carries the privacy-first survey platform story without multiplying public brands.\n\n\n\nPrimary domain: privacy-first survey collection, analytics, and reporting\nPortfolio role: product umbrella for earlier survey-suite concepts\nAdjacent links: Methods for reusable workflows, Teaching for adoption assets\n\n\n\n\n\nCanonical public route: /products/ethos\nCanonical code repo: https://github.com/MohammedAliSharafuddin/ethos\nRelated public continuity: legacy survey-suite ideas are being folded into Ethos\n\n\n\n\n\nRequest a pilot for labs, departments, or teaching use cases\nReview the privacy-first product positioning\nContact FlairMI for implementation or support\n\n\n\n\nMove public references from legacy survey-suite names to Ethos, then archive or fold the precursor repos once the reusable pieces are extracted."
+    "text": "Ethos brings together survey, analytics, and reporting workflows in one place, with an emphasis on privacy-sensitive work and structured outputs.\n\n\n\nSurvey and response collection\nReporting and workflow support\nRelated pages: Methods and Teaching\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ethos"
   },
   {
     "objectID": "blog/posts/06-logistic-basics.html",
@@ -550,77 +550,70 @@
     "href": "index.html",
     "title": "Flair Marketing Intelligence",
     "section": "",
-    "text": "FlairMI portfolio hub\n  \n  \n    FlairMI is now the canonical front door for the portfolio: products stay in\n    their own repos, while public discovery, positioning, and canonical URLs\n    live on flairmi.com.\n  \n  \n    Explore products\n    Browse books and teaching\n    Read the blog"
+    "text": "FlairMI\n  \n  \n    FlairMI is the public home for Mohammed Ali Sharafuddin's work across\n    software, research methods, teaching materials, and publishing projects.\n  \n  \n    Explore products\n    Browse books\n    Read the blog"
   },
   {
-    "objectID": "index.html#portfolio-structure",
-    "href": "index.html#portfolio-structure",
+    "objectID": "index.html#explore-flairmi",
+    "href": "index.html#explore-flairmi",
     "title": "Flair Marketing Intelligence",
-    "section": "Portfolio Structure",
-    "text": "Portfolio Structure\nFlairMI now organises the public portfolio into six stable layers.\n\n  \n    Products\n    Revenue products\n    TrimWrite, QuartoPad, Ethos, and Analog keep separate codebases but share a single public brand system on FlairMI.\n    Open products overview\n  \n  \n    Tools\n    Free utilities\n    Margin Guard and the Marketing Decision Toolkit stay discoverable as free tools that support lead generation and teaching.\n    Open tools overview\n  \n  \n    Methods\n    Research methods assets\n    Method-specific packages such as semScreenR get canonical pages that connect GitHub, documentation, and scholarly positioning.\n    Open methods overview\n  \n  \n    Press\n    Books and manuals\n    DDMM, MarAI, ASRDA, and Small Sample Lab are now positioned as FlairMI Press titles with stable canonical homes.\n    Open press overview\n  \n  \n    Teaching\n    Course adoption\n    Companion sites, slides, worked examples, and instructor assets are grouped for adoption and course delivery.\n    Open teaching overview\n  \n  \n    Labs\n    Experiments and archives\n    Precursors, benchmarks, and side projects are tracked in one place so they stop cluttering the public brand surface.\n    Open labs and consolidation map"
+    "section": "Explore FlairMI",
+    "text": "Explore FlairMI\nFlairMI is organized around a few clear areas so you can move directly to the part of the portfolio that matters to you.\n\n  \n    Products\n    Software projects\n    TrimWrite, QuartoPad, Ethos, and Analog bring together writing, authoring, survey, and workflow-oriented software.\n    Browse products\n  \n  \n    Tools\n    Free utilities\n    Practical calculators, templates, and decision aids for teaching, analysis, and day-to-day marketing work.\n    Browse tools\n  \n  \n    Methods\n    Methods and packages\n    Reusable methods work, package pages, and research-oriented resources such as semScreenR.\n    Browse methods\n  \n  \n    Press\n    Books and publishing\n    Book pages, companion material, and title-level information for current and developing publishing projects.\n    Browse books\n  \n  \n    Teaching\n    Teaching resources\n    Companion materials, worked examples, and course-facing resources connected to products, methods, and books.\n    Browse teaching resources\n  \n  \n    Labs\n    Experiments and side projects\n    Smaller experiments, public demos, and portfolio projects that sit outside the main product and publishing lines.\n    Browse labs"
   },
   {
-    "objectID": "index.html#core-canonical-routes",
-    "href": "index.html#core-canonical-routes",
+    "objectID": "index.html#featured-pages",
+    "href": "index.html#featured-pages",
     "title": "Flair Marketing Intelligence",
-    "section": "Core Canonical Routes",
-    "text": "Core Canonical Routes\n\n  \n\n\n\nPublic route\nWhat it anchors\nCanonical repo\nStatus\n\n\n\n\n/products/trimwrite\nAI-era editorial quality product\ntrimwrite\nPrivate beta\n\n\n/products/quartopad\nLocal Quarto editor for R workflows\nquartopad\nPrivate beta\n\n\n/products/ethos\nPrivacy-first survey, analytics, and writer platform\nethos\nInternal build\n\n\n/tools/margin-guard\nPromotion break-even utility\nmargin-guard\nLive utility\n\n\n/methods/semscreenr\nSEM screening package and method page\nsemScreenR\nReady for public package positioning\n\n\n/press/ddmm\nBook and courseware line for DDMM\nDMM_Suite\nPublic deployment already exists"
+    "section": "Featured Pages",
+    "text": "Featured Pages\n\n  \n\n\n\nPage\nFocus\nWhere to begin\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen page\n\n\nQuartoPad\nQuarto authoring and rendering workflow\nOpen page\n\n\nEthos\nSurvey, analytics, and reporting environment\nOpen page\n\n\nMargin Guard\nPromotion and pricing support tool\nOpen page\n\n\nsemScreenR\nMethods page for a reusable SEM workflow\nOpen page\n\n\nDDMM\nBook and teaching materials\nOpen page"
   },
   {
-    "objectID": "index.html#unification-rules",
-    "href": "index.html#unification-rules",
+    "objectID": "index.html#across-the-site",
+    "href": "index.html#across-the-site",
     "title": "Flair Marketing Intelligence",
-    "section": "Unification Rules",
-    "text": "Unification Rules\n\nFlairMI is the house brand and canonical public URL system.\nProduct repos stay separate when the codebase, release cadence, or install path is different.\nFree utilities support discovery under Tools, not as disconnected microsites.\nBooks and courseware live under Press and Teaching, not as isolated project brands.\nBenchmark repos, forks, and abandoned prototypes move to Labs or stay private."
-  },
-  {
-    "objectID": "index.html#current-focus",
-    "href": "index.html#current-focus",
-    "title": "Flair Marketing Intelligence",
-    "section": "Current Focus",
-    "text": "Current Focus\n\n  Immediate goal. Make flairmi the source of truth again,\n  then point every public repo and landing page back to these canonical routes.\n\n\nSync public-only assets and copy from flairmi-site into flairmi.\nReplace scattered suite placeholders with product and press architecture.\nPreserve legacy /stats, /survey, and /writer routes as continuity pages while the product surface is consolidated.\nMove books and courseware into explicit FlairMI Press positioning.\nTrack merge, archive, and benchmark repos in one internal TODO map."
+    "section": "Across The Site",
+    "text": "Across The Site\n\nProduct pages describe the software projects and link to supporting repositories.\nTool pages collect practical utilities and downloadable resources.\nMethods pages connect packages and workflows to their public context.\nPress pages bring together books, companion materials, and teaching links.\nLegacy paths such as Stats, Survey, and Writer remain available for continuity."
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Flair Marketing Intelligence",
     "section": "Contact",
-    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for product pilots, teaching adoption, collaboration, or book\n    enquiries. Messages route directly to the public FlairMI inbox.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Products\n          Tools\n          Methods\n          Press and teaching\n          Consulting\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for product questions, teaching enquiries, publishing\n    enquiries, or general collaboration.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Products\n          Tools\n          Methods\n          Press and teaching\n          Consulting\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single canonical public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
   },
   {
     "objectID": "about.html#founder",
     "href": "about.html#founder",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single canonical public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, quantitative methods,\n      survey research, and reproducible workflows in R and Quarto.\n    \n    \n      FlairMI brings the applied side of that work into one public portfolio:\n      products, tools, methods assets, books, and teaching resources with a\n      single public home on flairmi.com.\n    \n    \n      Products\n      Methods\n      Books\n      Teaching\n      Privacy-first software"
   },
   {
     "objectID": "about.html#current-work",
     "href": "about.html#current-work",
     "title": "About",
     "section": "Current Work",
-    "text": "Current Work\n\nBuilding product lines around TrimWrite, QuartoPad, Ethos, and supporting utilities.\nWriting and maintaining teaching and book projects such as DDMM, MarAI, ASRDA, and Small Sample Lab.\nDeveloping open methods assets such as semScreenR for reproducible research workflows.\nConsolidating legacy repos and public routes into the new FlairMI architecture."
+    "text": "Current Work\n\nSoftware projects including TrimWrite, QuartoPad, Ethos, and related tools.\nBooks, course materials, and companion resources including DDMM, MarAI, ASRDA, and Small Sample Lab.\nMethods-oriented work such as semScreenR and reproducible research workflows.\nTeaching resources, worked examples, and public-facing portfolio material."
   },
   {
     "objectID": "about.html#about-flairmi",
     "href": "about.html#about-flairmi",
     "title": "About",
     "section": "About FlairMI",
-    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is now the house brand for the public portfolio. It does four jobs at once:\n\nproduct discovery for software such as TrimWrite, QuartoPad, and Ethos\nfree tools and templates for applied analytics and decision support\nmethods pages for reusable scholarly assets such as semScreenR\npress and teaching pages for books, courseware, and companion resources\n\n\nWhat stays separate\n\nProduct codebases stay in separate repos when they need separate releases.\nPersonal academic identity stays available through the founder profile and external scholarly profiles.\nExperimental and benchmark repos stay in Labs unless they earn a stable public role.\n\n\n\nWhat is canonical here\n\nPublic positioning\nCanonical product and book URLs\nPortfolio navigation\nContact and adoption entry points\nPublic blog and learning content"
+    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) brings together several parts of the portfolio in one place:\n\nsoftware and workflow projects\nfree tools and templates\nmethods pages for reusable scholarly work\nbooks, course materials, and companion resources\n\nThe site is meant to be easy to navigate whether you are looking for a product, a method, a book, a teaching resource, or the public blog."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\nFor product pilots, teaching adoption, workshops, consulting, and publishing enquiries:\nEmail: mohammedali.page@gmail.com"
+    "text": "Contact\nFor product questions, teaching enquiries, workshops, consulting, and publishing:\nEmail: mohammedali.page@gmail.com"
   },
   {
     "objectID": "about.html#connect",
@@ -872,175 +865,161 @@
     "href": "products/analog.html",
     "title": "Analog",
     "section": "",
-    "text": "Product under review. Analog currently remains in the\n  product layer, but its long-term role is still being evaluated.\n\nAnalog is preserved here so the portfolio has a stable canonical route while the product definition sharpens.\n\n\n\nKeep the repo separate if development is active\nKeep this public page light until the product story is clear\nMove Analog to Labs if it becomes exploratory rather than product-led\n\n\n\n\n\nCanonical public route: /products/analog\nCanonical code repo: https://github.com/MohammedAliSharafuddin/analog\n\n\n\n\n\nDoes Analog support the core FlairMI product thesis?\nIs it a product, a demo, or an experimental branch?\nShould it stay in main navigation after the next review cycle?"
+    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
   },
   {
     "objectID": "products/analog.html#analog",
     "href": "products/analog.html#analog",
     "title": "Analog",
     "section": "",
-    "text": "Product under review. Analog currently remains in the\n  product layer, but its long-term role is still being evaluated.\n\nAnalog is preserved here so the portfolio has a stable canonical route while the product definition sharpens.\n\n\n\nKeep the repo separate if development is active\nKeep this public page light until the product story is clear\nMove Analog to Labs if it becomes exploratory rather than product-led\n\n\n\n\n\nCanonical public route: /products/analog\nCanonical code repo: https://github.com/MohammedAliSharafuddin/analog\n\n\n\n\n\nDoes Analog support the core FlairMI product thesis?\nIs it a product, a demo, or an experimental branch?\nShould it stay in main navigation after the next review cycle?"
+    "text": "Analog is a smaller experimental product page inside the FlairMI portfolio. Public material is limited at the moment, but the project remains part of the software section.\n\n\n\nSmaller experimental product concept\nPart of the wider software portfolio\nRelated page: Labs\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/analog"
   },
   {
     "objectID": "products/index.html",
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI is the public discovery layer for products that still need separate code repositories, release cycles, and onboarding paths.\n\n  \n    TrimWrite\n    \n    Positioning, onboarding, and canonical links live here. Product code and experiments stay in the dedicated TrimWrite repos.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Analog\n    \n    Analog remains part of the product layer for now, but it stays under active review until its role is sharper.\n    Open Analog"
+    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
   },
   {
-    "objectID": "products/index.html#product-layer",
-    "href": "products/index.html#product-layer",
+    "objectID": "products/index.html#product-portfolio",
+    "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI is the public discovery layer for products that still need separate code repositories, release cycles, and onboarding paths.\n\n  \n    TrimWrite\n    \n    Positioning, onboarding, and canonical links live here. Product code and experiments stay in the dedicated TrimWrite repos.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Analog\n    \n    Analog remains part of the product layer for now, but it stays under active review until its role is sharper.\n    Open Analog"
+    "text": "FlairMI brings together software projects that focus on writing, authoring, survey work, reporting, and related workflows.\n\n  \n    TrimWrite\n    \n    TrimWrite focuses on clear writing, revision, and review-oriented workflows.\n    Open TrimWrite\n  \n  \n    QuartoPad\n    \n    A local editor and workflow layer for Quarto-heavy writing, reproducible analysis, and teaching use cases.\n    Open QuartoPad\n  \n  \n    Ethos\n    \n    Ethos absorbs the old Survey, Stats, and Writer suite thinking into one more coherent platform story.\n    Open Ethos\n  \n  \n    Preview\n    \n    Analog is a lighter experimental product page inside the wider software portfolio.\n    Open Analog"
   },
   {
-    "objectID": "products/index.html#product-rules",
-    "href": "products/index.html#product-rules",
+    "objectID": "products/index.html#products-at-a-glance",
+    "href": "products/index.html#products-at-a-glance",
     "title": "Products",
-    "section": "Product Rules",
-    "text": "Product Rules\n\nPublic positioning belongs on flairmi.com/products/....\nDedicated repos still own product code, packaging, and releases.\nVanity domains can stay live, but they should point back to these canonical routes.\nProduct pages should explain who the product is for, what problem it solves, and where to go next."
-  },
-  {
-    "objectID": "products/index.html#current-canonical-mapping",
-    "href": "products/index.html#current-canonical-mapping",
-    "title": "Products",
-    "section": "Current Canonical Mapping",
-    "text": "Current Canonical Mapping\n\n\n\n\n\n\n\n\n\nProduct\nCanonical FlairMI route\nCanonical repo\nCurrent role\n\n\n\n\nTrimWrite\n/products/trimwrite\ntrimwrite\nwriting quality product\n\n\nQuartoPad\n/products/quartopad\nquartopad\nQuarto drafting and rendering workflow\n\n\nEthos\n/products/ethos\nethos\nsurvey, analytics, and writer platform\n\n\nAnalog\n/products/analog\nanalog\nproduct under review"
-  },
-  {
-    "objectID": "products/index.html#next-step",
-    "href": "products/index.html#next-step",
-    "title": "Products",
-    "section": "Next Step",
-    "text": "Next Step\nThe next operational step is to make each kept product repo point back to its canonical FlairMI page in the repo README and any landing site copy."
+    "section": "Products At A Glance",
+    "text": "Products At A Glance\n\n\n\nProduct\nFocus\nPublic page\nRepository\n\n\n\n\nTrimWrite\nWriting quality and editorial review\nOpen\ntrimwrite\n\n\nQuartoPad\nQuarto authoring and rendering\nOpen\nquartopad\n\n\nEthos\nSurvey, analytics, and reporting workflows\nOpen\nethos\n\n\nAnalog\nSmaller product experiment\nOpen\nanalog"
   },
   {
     "objectID": "products/trimwrite.html",
     "href": "products/trimwrite.html",
     "title": "TrimWrite",
     "section": "",
-    "text": "Canonical public route. TrimWrite is the focused writing\n  product in the FlairMI portfolio. Discovery and positioning live here even if\n  product code and pilots continue elsewhere.\n\nTrimWrite should stay narrow: editorial quality, AI-era writing checks, style consistency, and text-review workflows. That focus is what makes the product brand legible.\n\n\n\nPrimary domain: writing quality and review workflows\nPortfolio role: focused software brand inside FlairMI\nAdjacent links: QuartoPad for drafting, Ethos for survey-to-report flows\n\n\n\n\n\nCanonical public route: /products/trimwrite\nCanonical code repo: https://github.com/MohammedAliSharafuddin/trimwrite\nLegacy landing repo/domain: https://github.com/MohammedAliSharafuddin/trimwrite.com, https://trimwrite.com/\n\n\n\n\n\nJoin a product pilot\nRequest a demo\nRead the product positioning and roadmap on FlairMI\n\n\n\n\nKeep trimwrite.com if it helps acquisition, but treat this page as the canonical product home and redirect the vanity domain here when you are ready."
+    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
   },
   {
     "objectID": "products/trimwrite.html#trimwrite",
     "href": "products/trimwrite.html#trimwrite",
     "title": "TrimWrite",
     "section": "",
-    "text": "Canonical public route. TrimWrite is the focused writing\n  product in the FlairMI portfolio. Discovery and positioning live here even if\n  product code and pilots continue elsewhere.\n\nTrimWrite should stay narrow: editorial quality, AI-era writing checks, style consistency, and text-review workflows. That focus is what makes the product brand legible.\n\n\n\nPrimary domain: writing quality and review workflows\nPortfolio role: focused software brand inside FlairMI\nAdjacent links: QuartoPad for drafting, Ethos for survey-to-report flows\n\n\n\n\n\nCanonical public route: /products/trimwrite\nCanonical code repo: https://github.com/MohammedAliSharafuddin/trimwrite\nLegacy landing repo/domain: https://github.com/MohammedAliSharafuddin/trimwrite.com, https://trimwrite.com/\n\n\n\n\n\nJoin a product pilot\nRequest a demo\nRead the product positioning and roadmap on FlairMI\n\n\n\n\nKeep trimwrite.com if it helps acquisition, but treat this page as the canonical product home and redirect the vanity domain here when you are ready."
+    "text": "TrimWrite focuses on editorial quality, clear writing, revision, and review-oriented workflows for reports, articles, and structured documents.\n\n\n\nWriting review and revision\nStyle consistency across drafts and documents\nRelated pages: QuartoPad and Ethos\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/trimwrite\nPublic domain: https://trimwrite.com/"
   },
   {
     "objectID": "tools/margin-guard.html",
     "href": "tools/margin-guard.html",
     "title": "Margin Guard",
     "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nFree utility under FlairMI Tools\nStrong fit for SEO, teaching demos, and lightweight lead generation\nGood bridge between blog content and paid analytics products\n\n\n\n\n\nCanonical public route: /tools/margin-guard\nCanonical repo: https://github.com/MohammedAliSharafuddin/margin-guard\n\n\n\n\nPair this tool with a related blog post, a teaching example, and a call to explore the Marketing Decision Toolkit."
+    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
   },
   {
     "objectID": "tools/margin-guard.html#margin-guard",
     "href": "tools/margin-guard.html#margin-guard",
     "title": "Margin Guard",
     "section": "",
-    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nFree utility under FlairMI Tools\nStrong fit for SEO, teaching demos, and lightweight lead generation\nGood bridge between blog content and paid analytics products\n\n\n\n\n\nCanonical public route: /tools/margin-guard\nCanonical repo: https://github.com/MohammedAliSharafuddin/margin-guard\n\n\n\n\nPair this tool with a related blog post, a teaching example, and a call to explore the Marketing Decision Toolkit."
+    "text": "Margin Guard is a free utility for evaluating promotion and pricing decisions without losing control of contribution logic.\n\n\n\nPromotion and pricing support\nQuick break-even thinking for discount decisions\nA practical companion to teaching and applied examples\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/margin-guard\nRelated page: Marketing Decision Toolkit"
   },
   {
     "objectID": "methods/index.html",
     "href": "methods/index.html",
     "title": "Methods",
     "section": "",
-    "text": "Methods pages give scholarly and package-led work a stable public home without forcing it into either the product or book buckets.\n\n  \n    semScreenR\n    \n    Package-level scholarly work gets a canonical methods page so it can connect documentation, repo access, and academic positioning.\n    Open semScreenR"
+    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages.\n\n  \n    semScreenR\n    \n    Package-level scholarly work is presented here alongside documentation, repo access, and public context.\n    Open semScreenR"
   },
   {
-    "objectID": "methods/index.html#methods-layer",
-    "href": "methods/index.html#methods-layer",
+    "objectID": "methods/index.html#methods",
+    "href": "methods/index.html#methods",
     "title": "Methods",
     "section": "",
-    "text": "Methods pages give scholarly and package-led work a stable public home without forcing it into either the product or book buckets.\n\n  \n    semScreenR\n    \n    Package-level scholarly work gets a canonical methods page so it can connect documentation, repo access, and academic positioning.\n    Open semScreenR"
+    "text": "Methods pages bring together reusable workflows, research-oriented tools, and package pages.\n\n  \n    semScreenR\n    \n    Package-level scholarly work is presented here alongside documentation, repo access, and public context.\n    Open semScreenR"
   },
   {
-    "objectID": "methods/index.html#method-rules",
-    "href": "methods/index.html#method-rules",
+    "objectID": "methods/index.html#on-this-section",
+    "href": "methods/index.html#on-this-section",
     "title": "Methods",
-    "section": "Method Rules",
-    "text": "Method Rules\n\nKeep method pages citation-friendly and clear.\nLink packages to teaching use, real examples, and publication context.\nUse FlairMI as the public route even when the package has its own repo and documentation."
+    "section": "On This Section",
+    "text": "On This Section\n\nMethod pages connect packages, public explanations, and related teaching material.\nVisit the Blog for worked examples and tutorials.\nVisit Teaching for classroom-facing material."
   },
   {
     "objectID": "press/asrda.html",
     "href": "press/asrda.html",
     "title": "ASRDA",
     "section": "",
-    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nFlairMI Press title\nCandidate for citation-ready landing page treatment\nNatural bridge between academic credibility and applied public discovery\n\n\n\n\n\nCanonical public route: /press/asrda\nCanonical repo: https://github.com/MohammedAliSharafuddin/ASRDA\n\n\n\n\nKeep the repo focused on source material, and use this page for public metadata, citation support, and companion links."
+    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nBook and project page\nPublic-facing information for the ASRDA title\nSpace for future companion and reference material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ASRDA"
   },
   {
     "objectID": "press/asrda.html#asrda",
     "href": "press/asrda.html#asrda",
     "title": "ASRDA",
     "section": "",
-    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nFlairMI Press title\nCandidate for citation-ready landing page treatment\nNatural bridge between academic credibility and applied public discovery\n\n\n\n\n\nCanonical public route: /press/asrda\nCanonical repo: https://github.com/MohammedAliSharafuddin/ASRDA\n\n\n\n\nKeep the repo focused on source material, and use this page for public metadata, citation support, and companion links."
+    "text": "ASRDA belongs in the press layer so it gains a stable scholarly and public identity inside the wider portfolio.\n\n\n\nBook and project page\nPublic-facing information for the ASRDA title\nSpace for future companion and reference material\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/ASRDA"
   },
   {
     "objectID": "press/index.html",
     "href": "press/index.html",
     "title": "Press",
     "section": "",
-    "text": "FlairMI Press is the publishing layer for books, manuals, and companion materials. It gives each title a stable public route while keeping academic identity and citations legible.\n\n  \n    DDMM\n    \n    Book and courseware line with existing public deployment assets that should now resolve back to a canonical FlairMI Press route.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and book material that should live inside the same citation-ready press architecture.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
+    "text": "FlairMI Press brings together book pages, companion material, and title-level information across the publishing side of the portfolio.\n\n  \n    DDMM\n    \n    Books and teaching materials centered on digital and data-driven marketing.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and publishing work around marketing, analytics, and companion materials.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
   },
   {
     "objectID": "press/index.html#flairmi-press",
     "href": "press/index.html#flairmi-press",
     "title": "Press",
     "section": "",
-    "text": "FlairMI Press is the publishing layer for books, manuals, and companion materials. It gives each title a stable public route while keeping academic identity and citations legible.\n\n  \n    DDMM\n    \n    Book and courseware line with existing public deployment assets that should now resolve back to a canonical FlairMI Press route.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and book material that should live inside the same citation-ready press architecture.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
+    "text": "FlairMI Press brings together book pages, companion material, and title-level information across the publishing side of the portfolio.\n\n  \n    DDMM\n    \n    Books and teaching materials centered on digital and data-driven marketing.\n    Open DDMM\n  \n  \n    MarAI\n    \n    Course and publishing work around marketing, analytics, and companion materials.\n    Open MarAI\n  \n  \n    ASRDA\n    \n    A press page keeps the title visible, citable, and connected to companion material.\n    Open ASRDA\n  \n  \n    Small Sample Lab\n    \n    A title that sits between book, method, and teaching use cases.\n    Open Small Sample Lab"
   },
   {
-    "objectID": "press/index.html#press-rules",
-    "href": "press/index.html#press-rules",
+    "objectID": "press/index.html#on-this-section",
+    "href": "press/index.html#on-this-section",
     "title": "Press",
-    "section": "Press Rules",
-    "text": "Press Rules\n\nEach serious title gets its own canonical page under flairmi.com/press/....\nCitation and companion links should live on the title page, not in scattered repos.\nTeaching and adoption resources can live under Teaching while the title page remains canonical here."
+    "section": "On This Section",
+    "text": "On This Section\n\nTitle pages collect book information, companion resources, and related links.\nVisit Teaching for course-facing material.\nVisit About for founder and portfolio information."
   },
   {
     "objectID": "press/smallsamplelab.html",
     "href": "press/smallsamplelab.html",
     "title": "Small Sample Lab",
     "section": "",
-    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it benefits from a canonical press route under FlairMI.\n\n\n\nFlairMI Press title\nMethods crossover asset\nTeaching-friendly project with reusable examples\n\n\n\n\n\nCanonical public route: /press/smallsamplelab\nCanonical repo: https://github.com/MohammedAliSharafuddin/smallsamplelab\n\n\n\n\nConnect this page to method examples and teaching materials so the project does not remain a disconnected repo-only asset."
+    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it fits naturally in FlairMI Press.\n\n\n\nBook and methods crossover project\nTeaching-friendly material with reusable examples\nCompanion page for the Small Sample Lab line\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/smallsamplelab"
   },
   {
     "objectID": "press/smallsamplelab.html#small-sample-lab",
     "href": "press/smallsamplelab.html#small-sample-lab",
     "title": "Small Sample Lab",
     "section": "",
-    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it benefits from a canonical press route under FlairMI.\n\n\n\nFlairMI Press title\nMethods crossover asset\nTeaching-friendly project with reusable examples\n\n\n\n\n\nCanonical public route: /press/smallsamplelab\nCanonical repo: https://github.com/MohammedAliSharafuddin/smallsamplelab\n\n\n\n\nConnect this page to method examples and teaching materials so the project does not remain a disconnected repo-only asset."
+    "text": "Small Sample Lab sits at the boundary of book, method, and teaching asset, which is exactly why it fits naturally in FlairMI Press.\n\n\n\nBook and methods crossover project\nTeaching-friendly material with reusable examples\nCompanion page for the Small Sample Lab line\n\n\n\n\n\nGitHub: https://github.com/MohammedAliSharafuddin/smallsamplelab"
   },
   {
     "objectID": "labs/index.html",
     "href": "labs/index.html",
     "title": "Labs",
     "section": "",
-    "text": "FlairMI Labs is the buffer between the main portfolio and everything that is still exploratory, in review, or being retired.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory if it remains a public demo\ncampustales if you want a light public mention without making it core\nproducts under review such as Analog if they stop fitting the main product thesis\n\n\n\n\n\ncanonical products\nbooks with real citation goals\nmethods assets with stable scholarly value\n\n\n\n\nUse the internal plan to decide which repos merge, archive, or stay private. This public page should stay selective rather than listing every benchmark and internal reference repo."
+    "text": "FlairMI Labs collects experiments, prototypes, and smaller public projects that sit outside the main product, methods, and publishing pages.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory\ncampustales\nsmaller experimental pages that do not sit naturally in the main sections"
   },
   {
-    "objectID": "labs/index.html#labs-layer",
-    "href": "labs/index.html#labs-layer",
+    "objectID": "labs/index.html#labs",
+    "href": "labs/index.html#labs",
     "title": "Labs",
     "section": "",
-    "text": "FlairMI Labs is the buffer between the main portfolio and everything that is still exploratory, in review, or being retired.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory if it remains a public demo\ncampustales if you want a light public mention without making it core\nproducts under review such as Analog if they stop fitting the main product thesis\n\n\n\n\n\ncanonical products\nbooks with real citation goals\nmethods assets with stable scholarly value\n\n\n\n\nUse the internal plan to decide which repos merge, archive, or stay private. This public page should stay selective rather than listing every benchmark and internal reference repo."
+    "text": "FlairMI Labs collects experiments, prototypes, and smaller public projects that sit outside the main product, methods, and publishing pages.\n\n\n\nexperimental public demos\nideas under evaluation\nlegacy or precursor projects that still need a stable note\npublic side projects that do not deserve first-class product navigation yet\n\n\n\n\n\nprice-memory\ncampustales\nsmaller experimental pages that do not sit naturally in the main sections"
   },
   {
     "objectID": "survey/index.html",
     "href": "survey/index.html",
     "title": "Survey",
     "section": "",
-    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets.\n\n\n\n\n\nFold old survey-suite concepts into Ethos instead of building another disconnected public brand.\nKeep survey design and sampling guidance tied to books, methods assets, and deployable products."
+    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets."
   },
   {
     "objectID": "survey/index.html#legacy-route",
     "href": "survey/index.html#legacy-route",
     "title": "Survey",
     "section": "",
-    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets.\n\n\n\n\n\nFold old survey-suite concepts into Ethos instead of building another disconnected public brand.\nKeep survey design and sampling guidance tied to books, methods assets, and deployable products."
+    "text": "This route is preserved for continuity. Survey-related work is\n  now being consolidated into Ethos,\n  Teaching, and\n  Methods.\n\n\n\n\nUse Ethos for the privacy-first survey, analytics, and writer platform.\nUse Teaching for courseware and adoption assets.\nUse Methods for method-specific workflows and reusable research assets."
   },
   {
     "objectID": "writer/templates/ab_test_report.html",
@@ -1057,39 +1036,39 @@
     "text": "Summarise an experiment with counts, effect size, a decision line, and the minimum context a manager or reviewer needs."
   },
   {
-    "objectID": "writer/templates/ab_test_report.html#recommended-flow",
-    "href": "writer/templates/ab_test_report.html#recommended-flow",
+    "objectID": "writer/templates/ab_test_report.html#report-outline",
+    "href": "writer/templates/ab_test_report.html#report-outline",
     "title": "A/B test report",
-    "section": "Recommended flow",
-    "text": "Recommended flow\n\nState the business question in one sentence.\nReport the sample sizes and outcome metric.\nReport the effect estimate and confidence interval.\nAdd one plain-language decision line.\nLink to the reproducible method page or notebook."
+    "section": "Report Outline",
+    "text": "Report Outline\n\nBusiness question\nSample sizes and outcome metric\nEffect estimate and confidence interval\nPlain-language decision line\nLink to supporting notebook or method page"
   },
   {
-    "objectID": "writer/templates/ab_test_report.html#canonical-homes",
-    "href": "writer/templates/ab_test_report.html#canonical-homes",
+    "objectID": "writer/templates/ab_test_report.html#related-pages",
+    "href": "writer/templates/ab_test_report.html#related-pages",
     "title": "A/B test report",
-    "section": "Canonical homes",
-    "text": "Canonical homes\n\nProduct workflow: TrimWrite\nQuarto workflow: QuartoPad\nSurvey-to-report workflow: Ethos"
+    "section": "Related Pages",
+    "text": "Related Pages\n\nProduct workflow: TrimWrite\nQuarto workflow: QuartoPad\nSurvey-to-report workflow: Ethos"
   },
   {
     "objectID": "downloads/index.html",
     "href": "downloads/index.html",
     "title": "Downloads",
     "section": "",
-    "text": "FlairMI Starter Pack (zip)\n200-episode index (CSV)\nPolicies: Privacy · Terms · Refunds · Disclosure\nBusiness: Invoice PDF · Invoice DOCX · Insertion Order · Rate Card\nOps: KPI Tracker · Welcome Sequence · Availability Calendar\nSponsors: Sponsor Kit · Outreach Email"
+    "text": "This page collects downloadable files, policy documents, and supporting materials available through FlairMI."
+  },
+  {
+    "objectID": "downloads/index.html#downloads",
+    "href": "downloads/index.html#downloads",
+    "title": "Downloads",
+    "section": "",
+    "text": "This page collects downloadable files, policy documents, and supporting materials available through FlairMI."
   },
   {
     "objectID": "downloads/index.html#public-files",
     "href": "downloads/index.html#public-files",
     "title": "Downloads",
-    "section": "",
-    "text": "FlairMI Starter Pack (zip)\n200-episode index (CSV)\nPolicies: Privacy · Terms · Refunds · Disclosure\nBusiness: Invoice PDF · Invoice DOCX · Insertion Order · Rate Card\nOps: KPI Tracker · Welcome Sequence · Availability Calendar\nSponsors: Sponsor Kit · Outreach Email"
-  },
-  {
-    "objectID": "downloads/index.html#internal-planning",
-    "href": "downloads/index.html#internal-planning",
-    "title": "Downloads",
-    "section": "Internal planning",
-    "text": "Internal planning\nMaintainer plans, roadmap notes, and migration checklists are no longer exposed through the public downloads route. Public pages should link to products, tools, methods, press titles, and policies only."
+    "section": "Public Files",
+    "text": "Public Files\n\nFlairMI Starter Pack (zip)\n200-episode index (CSV)\nPolicies: Privacy · Terms · Refunds · Disclosure\nBusiness: Invoice PDF · Invoice DOCX · Insertion Order · Rate Card\nOps: KPI Tracker · Welcome Sequence · Availability Calendar\nSponsors: Sponsor Kit · Outreach Email"
   },
   {
     "objectID": "downloads/Availability_Calendar.html",
