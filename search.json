@@ -1085,11 +1085,18 @@
     "text": "Book Structure\nThe textbook currently spans 27 chapters across eight parts:\n\nFoundations\nDescribing Data\nProbability\nRelationships\nEstimation\nHypothesis Testing Logic\nCore Tests\nInterpretation and Decision Use"
   },
   {
+    "objectID": "textbooks/ddmm.html#sample-outputs",
+    "href": "textbooks/ddmm.html#sample-outputs",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "Sample Outputs",
+    "text": "Sample Outputs\n\n  \n    \n    Companion Site Overview\n    The public DDMM companion site brings together the textbook, slides, worked examples, datasets, instructor-facing materials, and download routes in one teaching hub.\n    Open the companion overview\n  \n  \n    \n    Lecture Slides And Teaching Outputs\n    The lecture-slides index shows the block-by-block RevealJS decks that support the teaching sequence, from foundations to interpretation and decision use.\n    Open the lecture slides index"
+  },
+  {
     "objectID": "textbooks/ddmm.html#what-you-can-use-today",
     "href": "textbooks/ddmm.html#what-you-can-use-today",
     "title": "Data-Driven Management: Statistics for Managers",
     "section": "What You Can Use Today",
-    "text": "What You Can Use Today\n\nThe live companion site provides the public-facing entry point for the textbook and related materials.\nThe broader DDMM suite includes 27 lecture decks, worked examples, datasets, and instructor-oriented assets.\nThe project is designed as a teaching system rather than a single book file, so course delivery, examples, slides, and supplementary outputs move together.\n\n\n  Visit the DDMM companion site"
+    "text": "What You Can Use Today\n\nThe live companion site provides the public-facing entry point for the textbook and related materials.\nThe broader DDMM suite includes 27 lecture decks, worked examples, datasets, and instructor-oriented assets.\nThe project is designed as a teaching system rather than a single book file, so course delivery, examples, slides, and supplementary outputs move together.\n\n\n  Visit the DDMM companion site\n  Open the textbook overview\n  Browse worked examples"
   },
   {
     "objectID": "textbooks/marai.html",

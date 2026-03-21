@@ -141,6 +141,7 @@ main.content h4 code {
   border-radius: 12px;
   border: 1px solid var(--flair-border);
   margin-bottom: 1rem;
+  background: #fff;
 }
 
 .flair-meta {
