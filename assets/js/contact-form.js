@@ -1,4 +1,6 @@
 (function () {
+  // Contact forms are submitted through FormSubmit with a fallback to mailto.
+  // A hidden honeypot field is injected into every form to reduce basic spam.
   var recipient = "mohammedali.page@gmail.com";
   var endpoint = "https://formsubmit.co/ajax/" + recipient;
   var forms = document.querySelectorAll("[data-contact-form]");
@@ -29,7 +31,24 @@
       "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + body;
   }
 
+  function ensureHoneypot(form) {
+    if (form.querySelector('input[name="_honey"]')) {
+      return;
+    }
+
+    var honeypot = document.createElement("input");
+    honeypot.type = "text";
+    honeypot.name = "_honey";
+    honeypot.tabIndex = -1;
+    honeypot.autocomplete = "off";
+    honeypot.setAttribute("aria-hidden", "true");
+    honeypot.className = "contact-honeypot";
+    form.prepend(honeypot);
+  }
+
   forms.forEach(function (form) {
+    ensureHoneypot(form);
+
     var statusId = form.getAttribute("data-status-id");
     var statusEl = statusId ? document.getElementById(statusId) : null;
     var submitButton = form.querySelector('button[type="submit"]');

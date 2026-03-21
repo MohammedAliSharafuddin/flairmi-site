@@ -116,7 +116,7 @@
     "href": "services/index.html#enquiries",
     "title": "Services",
     "section": "Enquiries",
-    "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Area\n        \n          R and RStudio\n          Technical writing\n          Statistical analysis\n          Research design\n          Marketing analytics\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send enquiry\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Area\n        \n          R and RStudio\n          Technical writing\n          Statistical analysis\n          Research design\n          Marketing analytics\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send enquiry\n      Use the form below to describe your workshop, course, or consulting need."
   },
   {
     "objectID": "templates/rfm-segmentation.html",
@@ -287,11 +287,18 @@
     "text": "Current Stage\nThe product is in private beta. The current direction is shaped around technical writing, reproducible research, classroom authoring, and local document workflows where a full cloud platform would be unnecessary overhead."
   },
   {
+    "objectID": "products/quartopad.html#access-and-limitations",
+    "href": "products/quartopad.html#access-and-limitations",
+    "title": "QuartoPad",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nQuartoPad is not yet a public self-serve product. Beta access is available on request via the form below, and pricing is not published while the product is still being tested. The current build is focused on Quarto and R-oriented writing workflows rather than general-purpose document editing."
+  },
+  {
     "objectID": "products/quartopad.html#beta-access",
     "href": "products/quartopad.html#beta-access",
     "title": "QuartoPad",
     "section": "Beta Access",
-    "text": "Beta Access\n\n  Request QuartoPad Beta Access\n  Use this form if you want to test QuartoPad for technical writing, teaching, or research workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Role\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Beta Access\n\n  Request QuartoPad Beta Access\n  Use this form if you want to test QuartoPad for technical writing, teaching, or research workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Role\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to request beta access or ask a workflow question."
   },
   {
     "objectID": "products/margin-guard.html",
@@ -306,6 +313,13 @@
     "title": "Margin Guard",
     "section": "What It Helps You Answer",
     "text": "What It Helps You Answer\nMargin Guard is built for pricing and campaign questions such as:\n\nHow much contribution margin is the promotion giving away per unit?\nHow many units are required to break even after discounting?\nDoes the forecast uplift clear the threshold or leave a thin buffer?\nWhat is the net contribution delta versus the baseline scenario?"
+  },
+  {
+    "objectID": "products/margin-guard.html#access-and-limitations",
+    "href": "products/margin-guard.html#access-and-limitations",
+    "title": "Margin Guard",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nMargin Guard is free to use in the browser and does not require an account. The current version is built for quick single-scenario promotion checks rather than multi-period pricing models or collaborative workflow management."
   },
   {
     "objectID": "products/margin-guard.html#use-the-live-tool",
@@ -336,11 +350,18 @@
     "text": "Current Stage\nThe product is in alpha. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully."
   },
   {
+    "objectID": "products/ethos.html#access-and-limitations",
+    "href": "products/ethos.html#access-and-limitations",
+    "title": "Ethos",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nEthos is not available as a public hosted service. Pilot and update requests are handled directly through the form below while the self-hosted alpha is stabilised. Pricing and deployment scope are not published yet because pilot use is being discussed case by case with institutions and research teams."
+  },
+  {
     "objectID": "products/ethos.html#pilot-interest",
     "href": "products/ethos.html#pilot-interest",
     "title": "Ethos",
     "section": "Pilot Interest",
-    "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Organisation\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Organisation\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to register pilot interest or request an update."
   },
   {
     "objectID": "blog/posts/05-simple-regression.html",
@@ -585,28 +606,28 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, survey research,\n      quantitative methods, technical writing, and reproducible workflows in R\n      and Quarto.\n    \n    \n      FlairMI is the public portfolio layer for that work. It brings together\n      textbooks, downloadable templates, local-first tools, and workshop-led\n      services in one place at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#founder",
     "href": "about.html#founder",
     "title": "About",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and builder\n      focused on digital marketing, marketing analytics, survey research,\n      quantitative methods, technical writing, and reproducible workflows in R\n      and Quarto.\n    \n    \n      FlairMI is the public portfolio layer for that work. It brings together\n      textbooks, downloadable templates, local-first tools, and workshop-led\n      services in one place at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#current-work",
     "href": "about.html#current-work",
     "title": "About",
     "section": "Current Work",
-    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management, MarAI, ASRDA, and Small Sample Lab.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
+    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
   },
   {
     "objectID": "about.html#about-flairmi",
     "href": "about.html#about-flairmi",
     "title": "About",
     "section": "About FlairMI",
-    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is structured around four public-facing areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nThe companion academic identity remains on the personal site, while FlairMI acts as the product, publishing, and delivery layer."
+    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is a public-facing platform built around open educational and analytical work. It combines teaching resources, downloadable tools, practical software, and service-led support for people who work with data, writing, surveys, and decision-making.\nThe site is organised around four public areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nFlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at mohammedalisharafuddin.github.io."
   },
   {
     "objectID": "about.html#contact",
@@ -627,7 +648,7 @@
     "href": "index.html",
     "title": "Flair Marketing Intelligence",
     "section": "",
-    "text": "FlairMI\n  \n  \n    Flair Marketing Intelligence is the public portfolio of Mohammed Ali\n    Sharafuddin. It brings together textbooks, downloadable Excel templates,\n    browser-based tools, and beta software built for teaching, technical\n    writing, survey research, and applied marketing analysis.\n  \n  \n    Browse textbooks\n    Explore templates\n    View products"
+    "text": "FlairMI\n  \n  \n    Browse textbooks\n    Explore templates\n    View products"
   },
   {
     "objectID": "index.html#textbooks",
@@ -641,7 +662,7 @@
     "href": "index.html#templates-and-dashboards",
     "title": "Flair Marketing Intelligence",
     "section": "Templates And Dashboards",
-    "text": "Templates And Dashboards\nFlairMI hosts the full Marketing Decision Toolkit directly on the site, with ten downloadable Excel workbooks for planning, forecasting, segmentation, and performance measurement.\n\n  \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n  \n  \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    Marketing Funnel Dashboard\n    Track conversion, drop-off, and cost efficiency across the funnel.\n    Open template page"
+    "text": "Templates And Dashboards\nFlairMI hosts the full Marketing Decision Toolkit directly on the site, with ten downloadable Excel workbooks for planning, forecasting, segmentation, and performance measurement. The cards below show a selection from the full toolkit.\n\n  \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n  \n  \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    Marketing Funnel Dashboard\n    Track conversion, drop-off, and cost efficiency across the funnel.\n    Open template page\n  \n\n\n  Browse all ten templates"
   },
   {
     "objectID": "index.html#products",
@@ -662,21 +683,21 @@
     "href": "index.html#contact",
     "title": "Flair Marketing Intelligence",
     "section": "Contact",
-    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Textbooks\n          Templates\n          Products\n          Services\n          Workshops\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Textbooks\n          Templates\n          Products\n          Services\n          Workshops\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages are sent through the contact form and reviewed directly."
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Statistics Blog",
     "section": "",
-    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\nNew posts are published periodically as teaching notes, worked examples, and interactive statistical explainers are completed.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Templates, Products, or Services."
   },
   {
     "objectID": "blog/index.html#welcome-to-flairmi-statistics-blog",
     "href": "blog/index.html#welcome-to-flairmi-statistics-blog",
     "title": "Statistics Blog",
     "section": "",
-    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Methods, Tools, or the product pages under Products."
+    "text": "Practical statistics tutorials for marketing and e-commerce analytics. Each post includes:\n\nInteractive calculations running directly in your browser (powered by WebR)\nReal-world business cases from A/B testing, conversion optimization, and revenue analysis\nComprehensive explanations with method, assumptions, limitations, and decision frameworks\nSample size planning guidance for designing future experiments\nReproducible code with detailed statistical computations\n\nAll posts use academic-style presentation with no dependency on Python or external servers - just open and run R code in your browser.\nNew posts are published periodically as teaching notes, worked examples, and interactive statistical explainers are completed.\n\n\n\nConfidence Intervals: Margin of error analysis for conversion rates\nHypothesis Testing: Two-proportion tests, t-tests (Welch and pooled methods)\nRegression Analysis: Simple linear regression for ad spend modeling\nLogistic Regression: Purchase prediction from behavioral data\nEffect Sizes: Cohen’s h, Cohen’s d, Hedges g with practical interpretation\n\nBrowse posts below, then continue into Templates, Products, or Services."
   },
   {
     "objectID": "blog/posts/02-two-proportion-test.html",
@@ -980,6 +1001,13 @@
     "text": "What You Can Do\n\nLog prices by item, store, date, and note\nReview item-level price history over time\nUse a lightweight chart to spot real price dips\nExport your records as CSV for backup or further analysis"
   },
   {
+    "objectID": "products/price-memory.html#access-and-limitations",
+    "href": "products/price-memory.html#access-and-limitations",
+    "title": "Price Memory",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nPrice Memory is free to use in the browser and does not require an account. Because the current version stores records locally in IndexedDB, your data stays on the device and is not automatically synced across browsers or devices."
+  },
+  {
     "objectID": "products/price-memory.html#use-the-live-tool",
     "href": "products/price-memory.html#use-the-live-tool",
     "title": "Price Memory",
@@ -1008,18 +1036,25 @@
     "text": "Current Stage\nThe product is in testing. The current build already includes client-side analysis, export options, usage gating, sample-text demos, and an evolving auth-enabled backend layer for synced features."
   },
   {
+    "objectID": "products/trimwrite.html#access-and-limitations",
+    "href": "products/trimwrite.html#access-and-limitations",
+    "title": "TrimWrite",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nTrimWrite currently has a public-facing website, but broader testing access is handled on request through the form below. Pricing is not published during this testing phase. The current build is primarily aimed at English-language draft review and is still evolving in how it handles longer editorial workflows and shared use."
+  },
+  {
     "objectID": "products/trimwrite.html#testing-access",
     "href": "products/trimwrite.html#testing-access",
     "title": "TrimWrite",
     "section": "Testing Access",
-    "text": "Testing Access\n\n  Request TrimWrite Testing Access\n  Use this form if you want to test TrimWrite on articles, reports, course material, or editorial workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Use case\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Messages go directly to mohammedali.page@gmail.com."
+    "text": "Testing Access\n\n  Request TrimWrite Testing Access\n  Use this form if you want to test TrimWrite on articles, reports, course material, or editorial workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Use case\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to request testing access or discuss an editorial use case."
   },
   {
     "objectID": "textbooks/ddmm.html",
     "href": "textbooks/ddmm.html",
     "title": "Data-Driven Management: Statistics for Managers",
     "section": "",
-    "text": "Live\n    \n    \n      This is a multi-output teaching line built around a textbook, lecture\n      decks, companion site, worked examples, instructor resources, and episode\n      materials. It is designed for reproducible teaching, adoption, and course\n      delivery.\n    \n    \n      Open live companion site\n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        27-chapter book project\n        Lecture slide decks and worked examples\n        Companion website and instructor resources\n        YouTube-oriented supporting materials"
+    "text": "Live\n    \n    \n      This is a multi-output teaching line built around a textbook, lecture\n      decks, companion site, worked examples, instructor resources, and episode\n      materials. It is designed for reproducible teaching, adoption, and course\n      delivery.\n    \n    \n      Open live companion site\n      Back to textbooks\n    \n  \n  \n    \n      \n      \n        27 chapters across 8 parts\n        27 lecture decks and worked examples\n        Companion website, datasets, and downloads\n        Instructor resources and episode materials"
   },
   {
     "objectID": "textbooks/ddmm.html#positioning",
@@ -1027,6 +1062,34 @@
     "title": "Data-Driven Management: Statistics for Managers",
     "section": "Positioning",
     "text": "Positioning\nData-Driven Management: Statistics for Managers is the most mature textbook line in the FlairMI portfolio. The live public deployment already exists, and the underlying source project is structured to support teaching, adoption, and multi-format delivery from a shared asset base."
+  },
+  {
+    "objectID": "textbooks/ddmm.html#who-it-is-for",
+    "href": "textbooks/ddmm.html#who-it-is-for",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "Who It Is For",
+    "text": "Who It Is For\nThis teaching line is written for management and business students who need to use statistics to make decisions, not to specialise as statisticians. It fits undergraduate and postgraduate learners, instructors who want a reproducible teaching workflow, and readers who prefer applied business examples over abstract mathematical treatment."
+  },
+  {
+    "objectID": "textbooks/ddmm.html#prerequisite-knowledge",
+    "href": "textbooks/ddmm.html#prerequisite-knowledge",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "Prerequisite Knowledge",
+    "text": "Prerequisite Knowledge\nThe book assumes basic comfort with percentages, tables, and introductory business concepts. It does not depend on advanced mathematics. R-based examples and supporting materials are included so that instructors and self-directed learners can move from explanation to practical analysis without building a course stack from scratch."
+  },
+  {
+    "objectID": "textbooks/ddmm.html#book-structure",
+    "href": "textbooks/ddmm.html#book-structure",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "Book Structure",
+    "text": "Book Structure\nThe textbook currently spans 27 chapters across eight parts:\n\nFoundations\nDescribing Data\nProbability\nRelationships\nEstimation\nHypothesis Testing Logic\nCore Tests\nInterpretation and Decision Use"
+  },
+  {
+    "objectID": "textbooks/ddmm.html#what-you-can-use-today",
+    "href": "textbooks/ddmm.html#what-you-can-use-today",
+    "title": "Data-Driven Management: Statistics for Managers",
+    "section": "What You Can Use Today",
+    "text": "What You Can Use Today\n\nThe live companion site provides the public-facing entry point for the textbook and related materials.\nThe broader DDMM suite includes 27 lecture decks, worked examples, datasets, and instructor-oriented assets.\nThe project is designed as a teaching system rather than a single book file, so course delivery, examples, slides, and supplementary outputs move together.\n\n\n  Visit the DDMM companion site"
   },
   {
     "objectID": "textbooks/marai.html",
