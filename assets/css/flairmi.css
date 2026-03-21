@@ -97,6 +97,24 @@ main.content h4 code {
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
 }
 
+.flair-button.cta-strong,
+.flair-button.cta-strong:visited {
+  background: linear-gradient(135deg, #d88a1d 0%, #f1bc63 100%);
+  color: #13263f;
+  border-color: rgba(216, 138, 29, 0.55);
+  box-shadow: 0 14px 28px rgba(216, 138, 29, 0.26);
+}
+
+.flair-button.cta-strong:hover {
+  color: #13263f;
+  box-shadow: 0 18px 34px rgba(216, 138, 29, 0.34);
+  transform: translateY(-1px);
+}
+
+.flair-card .flair-button {
+  margin-top: 0.35rem;
+}
+
 .flair-button.secondary,
 .flair-button.secondary:visited {
   background: rgba(255, 255, 255, 0.14);
