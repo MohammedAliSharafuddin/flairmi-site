@@ -498,6 +498,10 @@ main.content h4 code {
   color: var(--flair-accent);
 }
 
+.soft-launch-hidden {
+  display: none !important;
+}
+
 @media (max-width: 900px) {
   .flair-hero {
     padding: 2.2rem 1.25rem;

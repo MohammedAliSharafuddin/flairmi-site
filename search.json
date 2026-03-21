@@ -700,48 +700,6 @@
     "text": "Comments"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
-  },
-  {
-    "objectID": "about.html#founder",
-    "href": "about.html#founder",
-    "title": "About",
-    "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
-  },
-  {
-    "objectID": "about.html#current-work",
-    "href": "about.html#current-work",
-    "title": "About",
-    "section": "Current Work",
-    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
-  },
-  {
-    "objectID": "about.html#about-flairmi",
-    "href": "about.html#about-flairmi",
-    "title": "About",
-    "section": "About FlairMI",
-    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is a public-facing platform built around open educational and analytical work. It combines teaching resources, downloadable tools, practical software, and service-led support for people who work with data, writing, surveys, and decision-making.\nThe site is organised around four public areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nFlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at mohammedalisharafuddin.github.io."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nFor product questions, workshops, consulting, teaching adoption, and publishing:\nEmail: mohammedali.page@gmail.com"
-  },
-  {
-    "objectID": "about.html#connect",
-    "href": "about.html#connect",
-    "title": "About",
-    "section": "Connect",
-    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 21 March 2026"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Flair Marketing Intelligence",
@@ -782,6 +740,48 @@
     "title": "Flair Marketing Intelligence",
     "section": "Contact",
     "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Textbooks\n          Templates\n          Products\n          Services\n          Workshops\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages are sent through the contact form and reviewed directly."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+  },
+  {
+    "objectID": "about.html#founder",
+    "href": "about.html#founder",
+    "title": "About",
+    "section": "",
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+  },
+  {
+    "objectID": "about.html#current-work",
+    "href": "about.html#current-work",
+    "title": "About",
+    "section": "Current Work",
+    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
+  },
+  {
+    "objectID": "about.html#about-flairmi",
+    "href": "about.html#about-flairmi",
+    "title": "About",
+    "section": "About FlairMI",
+    "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is a public-facing platform built around open educational and analytical work. It combines teaching resources, downloadable tools, practical software, and service-led support for people who work with data, writing, surveys, and decision-making.\nThe site is organised around four public areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nFlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at mohammedalisharafuddin.github.io."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nFor product questions, workshops, consulting, teaching adoption, and publishing:\nEmail: mohammedali.page@gmail.com"
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About",
+    "section": "Connect",
+    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 21 March 2026"
   },
   {
     "objectID": "blog/index.html",
