@@ -725,7 +725,7 @@
     "href": "index.html#products",
     "title": "Flair Marketing Intelligence",
     "section": "Products",
-    "text": "Products\nThe product line mixes live browser utilities with beta software. Price Memory and Margin Guard are already public. QuartoPad, TrimWrite, and Ethos are in testing and can be requested through the embedded beta forms on their pages.\n\n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n  \n    Private Beta\n    QuartoPad\n    A browser-based editor for Quarto documents with live preview, chunk execution, and citation support.\n    Open product page\n  \n  \n    Testing\n    TrimWrite\n    A revision tool for checking AI-shaped phrasing, vague language, and structural repetition in drafts.\n    Open product page\n  \n  \n    Alpha\n    Ethos\n    A privacy-first academic survey, analytics, and writer suite designed for self-hosted use.\n    Open product page"
+    "text": "Products\nThe current FlairMI product line has two live browser utilities and three upcoming research and writing tools. The live tools can be opened immediately; the next line is presented here as coming-soon previews with product pages, screens, and beta-interest forms.\n\n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n\n\nComing Soon\n\n  \n    Private Beta\n    QuartoPad\n    A local-first Quarto workspace with live preview, chunk execution, project browsing, and citation-aware editing.\n    Preview coming-soon page\n  \n  \n    Testing\n    TrimWrite\n    A revision environment for voice cleanup, AI-pattern checks, and final-draft tightening before submission.\n    Preview coming-soon page\n  \n  \n    Alpha\n    Ethos\n    A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n    Preview coming-soon page\n  \n\n\n  Browse all product previews"
   },
   {
     "objectID": "index.html#services",
@@ -1061,14 +1061,28 @@
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products fall into two groups. Price Memory and Margin Guard are already public and live in the browser. QuartoPad, TrimWrite, and Ethos are in testing, with embedded forms for beta interest and pilot enquiries.\n\n  \n    Live\n    \n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    \n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product\n  \n  \n    Private Beta\n    \n    A browser-based editor for Quarto documents with live rendering, chunk execution, dataset preview, and citations.\n    Open product page\n  \n  \n    Testing\n    \n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Open product page\n  \n  \n    Alpha\n    \n    A self-hosted survey, analytics, and writer suite designed for privacy-sensitive academic and institutional use.\n    Open product page"
+    "text": "FlairMI products now split cleanly into live utilities and coming-soon previews. Price Memory and Margin Guard are already public in the browser. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
   },
   {
     "objectID": "products/index.html#product-portfolio",
     "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products fall into two groups. Price Memory and Margin Guard are already public and live in the browser. QuartoPad, TrimWrite, and Ethos are in testing, with embedded forms for beta interest and pilot enquiries.\n\n  \n    Live\n    \n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    \n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product\n  \n  \n    Private Beta\n    \n    A browser-based editor for Quarto documents with live rendering, chunk execution, dataset preview, and citations.\n    Open product page\n  \n  \n    Testing\n    \n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Open product page\n  \n  \n    Alpha\n    \n    A self-hosted survey, analytics, and writer suite designed for privacy-sensitive academic and institutional use.\n    Open product page"
+    "text": "FlairMI products now split cleanly into live utilities and coming-soon previews. Price Memory and Margin Guard are already public in the browser. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+  },
+  {
+    "objectID": "products/index.html#live-now",
+    "href": "products/index.html#live-now",
+    "title": "Products",
+    "section": "Live Now",
+    "text": "Live Now\n\n  \n    Live\n    Price Memory\n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product"
+  },
+  {
+    "objectID": "products/index.html#coming-soon",
+    "href": "products/index.html#coming-soon",
+    "title": "Products",
+    "section": "Coming Soon",
+    "text": "Coming Soon\n\n  \n    Private Beta\n    QuartoPad\n    A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.\n    Preview coming-soon page\n  \n  \n    Testing\n    TrimWrite\n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Preview coming-soon page\n  \n  \n    Alpha\n    Ethos\n    A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n    Preview coming-soon page"
   },
   {
     "objectID": "products/index.html#at-a-glance",
