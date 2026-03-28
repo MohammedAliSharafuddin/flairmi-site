@@ -1,30 +1,5 @@
-period,portfolio,metric,unit,target,current,notes
-2026-H2,All,Monthly site sessions,sessions,3000,,Target by 2026-12-31
-2026-H2,All,Email subscribers,subscribers,700,,Target by 2026-12-31
-2026-H2,All,Paid customers,cumulative,70,,Target by 2026-12-31
-2026-H2,All,Product revenue share,share,0.65,,Target by 2026-12-31
-2026-H2,All,Webinar to pack conversion,share,0.10,,Target by 2026-12-31
-2026-H2,All,Email opt-in rate,share,0.035,,Target by 2026-12-31
-2026-H2,Small Sample Lab,Customers,cumulative,20,,Target by 2026-12-31
-2027-H1,All,Monthly site sessions,sessions,7000,,Target by 2027-06-30
-2027-H1,All,Email subscribers,subscribers,2000,,Target by 2027-06-30
-2027-H1,All,Paid customers,cumulative,180,,Target by 2027-06-30
-2027-H1,All,Average order value,INR,4500,,Target by 2027-06-30
-2027-H1,All,Repeat buyer rate,share,0.10,,Target by 2027-06-30
-2027-H1,All,Launch conversion from email,share,0.02,,Target by 2027-06-30
-2027-H1,Small Sample Lab,Email segment size,subscribers,500,,Target by 2027-06-30
-2027-H2,All,Monthly site sessions,sessions,11000,,Target by 2027-12-31
-2027-H2,All,Email subscribers,subscribers,4000,,Target by 2027-12-31
-2027-H2,All,Paid customers,cumulative,320,,Target by 2027-12-31
-2027-H2,All,Product revenue share,share,0.68,,Target by 2027-12-31
-2027-H2,All,Repeat buyer rate,share,0.14,,Target by 2027-12-31
-2027-H2,All,Webinar attendance rate,share,0.35,,Target by 2027-12-31
-2027-H2,Small Sample Lab,Institutional deals,cumulative,2,,Target by 2027-12-31
-2028-H1,All,Monthly site sessions,sessions,15000,,Target by 2028-06-30
-2028-H1,All,Email subscribers,subscribers,6500,,Target by 2028-06-30
-2028-H1,All,Paid customers,cumulative,500,,Target by 2028-06-30
-2028-H1,All,Cumulative revenue,INR,2550000,,Target by 2028-06-30
-2028-H1,All,Product revenue share,share,0.70,,Target by 2028-06-30
-2028-H1,All,Repeat buyer rate,share,0.18,,Target by 2028-06-30
-2028-H1,Small Sample Lab,Cumulative revenue,INR,510000,,Target by 2028-06-30
-2028-H1,Software,Cumulative revenue,INR,127500,,Target by 2028-06-30
+metric,unit,target,current,notes
+Visits per week,visits,12000,10850,Increase retargeting on mobile web
+Add-to-cart rate,share,0.18,0.16,Monitor Schema A campaigns
+Survey completes per day,completes,80,72,Boost email reminders
+Consult leads per month,leads,15,13,Run Schema G outreach
