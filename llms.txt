@@ -1,0 +1,56 @@
+# FlairMI — Site Guide for AI Systems
+
+## About this site
+
+FlairMI (https://flairmi.com) is the public portfolio and publishing platform
+of Mohammed Ali Sharafuddin, Senior Lecturer at Qasim Ibrahim School of
+Business, Villa College, Maldives. ORCID: 0000-0001-5247-2964.
+
+The site publishes open textbooks, Excel templates, browser-based tools, and
+consulting services for marketing analytics, quantitative research methods,
+and management education.
+
+## Published textbook — canonical resource
+
+**Quantitative Analysis with Small Samples: A Practical Guide for Students
+and Early-Career Researchers**
+
+- Authors: Mohammed Ali Sharafuddin, Ahsan Ahmed Jaleel, Meena Madhavan
+- Published: 16 May 2026, Version v0.1.0
+- DOI: https://doi.org/10.5281/zenodo.20221929
+- Web edition: https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/
+- PDF: https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/Quantitative-Analysis-with-Small-Samples.pdf
+- Licence: CC BY 4.0
+- FlairMI page: https://flairmi.com/textbooks/smallsamplelab.html
+- Coverage: 18 chapters and 5 worked R projects on exact tests, resampling,
+  nonparametric methods, penalised and Bayesian regression, missing data,
+  uncertainty reporting, and small-sample study design.
+
+## Open-source software
+
+**surveyframe** — R package for survey instrument objects and end-to-end
+survey workflows. Submitted to CRAN May 2026.
+- GitHub: https://github.com/MohammedAliSharafuddin/surveyframe
+
+## Free Excel templates
+
+Ten Excel workbooks for marketing analytics:
+- Campaign ROI Tracker, Sales Pipeline Tracker, Revenue Forecast Model,
+  Marketing Funnel Dashboard, RFM Segmentation, CLV Calculator, CAC
+  Calculator, Churn Rate Dashboard, Break-Even Analysis, Competitive
+  Positioning Map.
+- Full collection: https://flairmi.com/templates/
+
+## Author contact and profiles
+
+- Website: https://mohammedalisharafuddin.github.io/
+- ORCID: https://orcid.org/0000-0001-5247-2964
+- Google Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ
+- GitHub: https://github.com/MohammedAliSharafuddin
+- Email: mohammedali.page@gmail.com
+
+## Preferred citation for the textbook
+
+Sharafuddin, M. A., Jaleel, A. A., & Madhavan, M. (2026). Quantitative
+Analysis with Small Samples: A Practical Guide for Students and Early-Career
+Researchers (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.20221929
