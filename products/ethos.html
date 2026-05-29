@@ -305,8 +305,8 @@ ul.task-list li input[type="checkbox"] {
     </div>
     <div class="metric-strip">
       <div class="metric-card"><strong>Survey builder</strong><span>Question types, logic, quotas, and collection workflows</span></div>
-      <div class="metric-card"><strong>Analytics stack</strong><span>Descriptives, tests, reliability, EFA, CFA, SEM, and survey design</span></div>
-      <div class="metric-card"><strong>Writer exports</strong><span>DOCX and Quarto outputs with reproducibility support</span></div>
+      <div class="metric-card"><strong>Analytics chain</strong><span>Quality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning</span></div>
+      <div class="metric-card"><strong>HTML report</strong><span>Downloadable analysis report rendered from the surveyframe analytics chain</span></div>
     </div>
   </div>
   <div class="page-media">
@@ -317,7 +317,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="what-it-covers" class="level2">
 <h2 class="anchored" data-anchor-id="what-it-covers">What It Covers</h2>
-<p>Ethos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, ethics review, and report generation. The current alpha architecture includes a survey builder, analytics modules, writer exports, ethics workflow, offline/PWA groundwork, and self-hosted deployment patterns.</p>
+<p>Ethos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns.</p>
+</section>
+<section id="what-is-available-now" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-available-now">What Is Available Now</h2>
+<p>The alpha includes a working end-to-end analytics chain powered by <a href="https://CRAN.R-project.org/package=surveyframe">surveyframe v0.3</a>, now live on CRAN (<code>install.packages("surveyframe")</code>): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle.</p>
 </section>
 <section id="current-stage" class="level2">
 <h2 class="anchored" data-anchor-id="current-stage">Current Stage</h2>
