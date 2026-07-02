@@ -6,14 +6,15 @@ FlairMI (https://flairmi.com) is the public portfolio and publishing platform
 of Mohammed Ali Sharafuddin, Senior Lecturer at Qasim Ibrahim School of
 Business, Villa College, Maldives. ORCID: 0000-0001-5247-2964.
 
-The site publishes open textbooks, Excel templates, browser-based tools, and
-consulting services for marketing analytics, quantitative research methods,
-and management education.
+The site publishes open textbooks, free Excel templates, browser-based
+tools, an R package, and consulting services for business analytics,
+marketing analytics, small-sample research methods, and reproducible
+workflows.
 
-## Published textbook — canonical resource
+## Textbooks
 
 **Quantitative Analysis with Small Samples: A Practical Guide for Students
-and Early-Career Researchers**
+and Early-Career Researchers** (published, free)
 
 - Authors: Mohammed Ali Sharafuddin, Ahsan Ahmed Jaleel, Meena Madhavan
 - Published: 16 May 2026, Version v0.1.0
@@ -26,11 +27,55 @@ and Early-Career Researchers**
   nonparametric methods, penalised and Bayesian regression, missing data,
   uncertainty reporting, and small-sample study design.
 
+**Data-Driven Management: Statistics for Managers** (live)
+
+- A multi-output teaching line with a textbook, lecture decks, a companion
+  site, worked examples, and instructor resources.
+- FlairMI page: https://flairmi.com/textbooks/ddmm.html
+
+**AI-Powered Marketing Analytics: Applied Methods for Managers** (in
+proofreading)
+
+- A five-part, twelve-chapter marketing analytics teaching line with worked
+  examples, public datasets, and AI-assisted analytical workflows.
+- FlairMI page: https://flairmi.com/textbooks/marai.html
+
+**Applied Survey Research and Data Analysis: From Constructs to
+Conclusions Using R** (in proofreading)
+
+- A large-format survey research text with forty-one chapters covering the
+  path from constructs and measurement to modelling, reporting, and
+  reproducible publishing in R.
+- FlairMI page: https://flairmi.com/textbooks/asrda.html
+
 ## Open-source software
 
 **surveyframe** — R package for survey instrument objects and end-to-end
-survey workflows. Submitted to CRAN May 2026.
+survey workflows: instrument design, static HTML export, a Shiny module,
+response quality checks, scale scoring, psychometric diagnostics, analysis
+planning, and reproducible HTML reporting. Live on CRAN.
+
+- Install: `install.packages("surveyframe")`
+- CRAN: https://CRAN.R-project.org/package=surveyframe
 - GitHub: https://github.com/MohammedAliSharafuddin/surveyframe
+
+## Free browser tools
+
+- **Price Memory** (live, free) — a personal grocery price tracker that
+  stores history locally in the browser.
+  https://flairmi.com/products/price-memory.html
+- **Margin Guard** (live, free) — a promotion break-even calculator for
+  pricing and campaign decisions.
+  https://flairmi.com/products/margin-guard.html
+
+## Software previews
+
+- **QuartoPad** (private beta) — https://flairmi.com/products/quartopad.html
+- **TrimWrite** (testing) — https://flairmi.com/products/trimwrite.html
+- **Ethos** (alpha) — https://flairmi.com/products/ethos.html
+
+These are teaser pages with product framing and enquiry forms. Pricing is
+not published for any of them yet.
 
 ## Free Excel templates
 
@@ -41,6 +86,14 @@ Ten Excel workbooks for marketing analytics:
   Positioning Map.
 - Full collection: https://flairmi.com/templates/
 
+## Consulting and workshops
+
+FlairMI offers consulting and workshops in business analytics, marketing
+analytics, small-sample methods, and reproducible workflows, by enquiry.
+No published pricing or checkout exists yet.
+
+- https://flairmi.com/services/
+
 ## Author contact and profiles
 
 - Website: https://mohammedalisharafuddin.github.io/
@@ -49,7 +102,7 @@ Ten Excel workbooks for marketing analytics:
 - GitHub: https://github.com/MohammedAliSharafuddin
 - Email: mohammedali.page@gmail.com
 
-## Preferred citation for the textbook
+## Preferred citation for the published textbook
 
 Sharafuddin, M. A., Jaleel, A. A., & Madhavan, M. (2026). Quantitative
 Analysis with Small Samples: A Practical Guide for Students and Early-Career
