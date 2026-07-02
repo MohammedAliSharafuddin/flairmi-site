@@ -100,23 +100,30 @@
   {
     "objectID": "services/index.html",
     "href": "services/index.html",
-    "title": "Services",
+    "title": "Analytics Consulting and R Workshops",
     "section": "",
-    "text": "Services\n    \n    \n      FlairMI supports organisations, teaching teams, researchers, and\n      practitioners through targeted consulting and workshop delivery in R,\n      RStudio, technical writing, statistical analysis, research design, and\n      marketing analytics.\n    \n  \n  \n    \n      \n      \n        Short workshops for student cohorts or analytics teams\n        Hands-on software onboarding for R, RStudio, and Quarto\n        Project-specific review of methods, dashboards, and reporting\n        Course-facing support for teaching materials and examples"
+    "text": "Services\n    \n    \n      FlairMI supports organisations, teaching teams, researchers, and\n      practitioners through targeted consulting and workshop delivery in\n      business analytics, marketing analytics, small-sample methods, and\n      reproducible workflows.\n    \n  \n  \n    \n      \n      \n        Short workshops for student cohorts or analytics teams\n        Hands-on onboarding for Quarto and reproducible reporting workflows\n        Project-specific review of methods, dashboards, and reporting\n        Course-facing support for teaching materials and examples"
   },
   {
     "objectID": "services/index.html#service-areas",
     "href": "services/index.html#service-areas",
-    "title": "Services",
+    "title": "Analytics Consulting and R Workshops",
     "section": "Service Areas",
-    "text": "Service Areas\n\n  \n    R Programming And RStudio\n    Training and implementation support for data wrangling, analysis workflows, and reproducible scripting in R.\n  \n  \n    Technical Writing And Quarto\n    Support for structured reports, reproducible documents, teaching notes, and technical publication workflows.\n  \n  \n    Statistical Analysis\n    Applied support for descriptive analysis, testing, measurement, and interpretation in business and academic settings.\n  \n  \n    Research Design\n    Guidance for survey design, data collection planning, instrument structure, and reporting strategy.\n  \n  \n    Marketing Analytics\n    Help with ROI tracking, CAC and CLV thinking, funnel review, forecasting, segmentation, and dashboard use."
+    "text": "Service Areas\n\n  \n    Business Analytics\n    Support for KPI reporting, dashboard structure, forecasting, pipeline visibility, profitability review, and management reporting.\n  \n  \n    Marketing Analytics\n    Applied work on ROI review, CAC and CLV thinking, funnel analysis, segmentation, pricing, and campaign decision support.\n  \n  \n    Small-Sample Methods\n    Support for exact tests, resampling, rank-based methods, limited-data reporting, and defensible interpretation in small-n settings.\n  \n  \n    Workflow And Quarto\n    Support for reproducible reporting, structured documents, technical writing, and workflow cleanup around Quarto and adjacent tools.\n  \n  \n    Teaching And Instructor Support\n    Course-facing help with examples, workbook use, teaching flow, and workshop design for academic and professional-learning settings."
+  },
+  {
+    "objectID": "services/index.html#how-engagements-usually-start",
+    "href": "services/index.html#how-engagements-usually-start",
+    "title": "Analytics Consulting and R Workshops",
+    "section": "How Engagements Usually Start",
+    "text": "How Engagements Usually Start\n\nA short note describing the team, project, or course context.\nA review of the current workflow, dashboard, analysis plan, or teaching need.\nAgreement on whether the best fit is a workshop, review, onboarding session, or scoped implementation support."
   },
   {
     "objectID": "services/index.html#enquiries",
     "href": "services/index.html#enquiries",
-    "title": "Services",
+    "title": "Analytics Consulting and R Workshops",
     "section": "Enquiries",
-    "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Area\n        \n          R and RStudio\n          Technical writing\n          Statistical analysis\n          Research design\n          Marketing analytics\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send enquiry\n      Use the form below to describe your workshop, course, or consulting need."
+    "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Area\n        \n          Business analytics\n          Marketing analytics\n          Small Sample Lab\n          Workflow onboarding\n          Teaching support\n          Workshop\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send enquiry\n      Use the form below to describe your workshop, sprint, or consulting need."
   },
   {
     "objectID": "templates/rfm-segmentation.html",
@@ -228,77 +235,70 @@
     "href": "textbooks/smallsamplelab.html",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
     "section": "",
-    "text": "Proofreading\n    \n    \n      Small Sample Lab is a practical methods guide for studies where data are\n      limited but rigorous quantitative analysis is still required. It is\n      written for students and early-career researchers working across\n      education, health, business, and resource-constrained research settings.\n    \n    \n      Back to textbooks\n    \n  \n  \n    \n      \n      UNDER PROOFREADING"
+    "text": "Published — v0.1.0\n    \n    \n      A published open textbook on rigorous quantitative analysis when sample\n      sizes are small. Written for students, early-career researchers, and\n      analysts across education, health, business, and resource-constrained\n      settings. Free to read online under CC BY 4.0.\n    \n    \n      Read the book →\n      Download PDF\n    \n    \n      \n        \n      \n       \n      \n        \n      \n    \n  \n  \n    \n      \n      Published: 16 May 2026\n      Version: v0.1.0\n         Zenodo DOI: 10.5281/zenodo.20221929\n         Licence: CC BY 4.0\n         18 chapters · 5 worked R projects"
   },
   {
     "objectID": "textbooks/smallsamplelab.html#positioning",
     "href": "textbooks/smallsamplelab.html#positioning",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
     "section": "Positioning",
-    "text": "Positioning\nQuantitative Analysis with Small Samples addresses a common gap in methods training: what to do when the dataset is too small for comfortable large-sample assumptions, but the research question still matters. The project is grounded in applied contexts such as classroom interventions, pilot studies, small markets, community-based research, and Small Island Developing States where sample sizes are often modest by necessity."
+    "text": "Positioning\nIn a big-data and machine-learning era, many real studies still operate with small samples, limited recruitment, pilot data, or constrained field settings. That is exactly where bad method choices become expensive. Small Sample Lab is positioned for readers who need methods that are careful, teachable, and realistic when n is modest by necessity."
   },
   {
     "objectID": "textbooks/smallsamplelab.html#who-it-is-for",
     "href": "textbooks/smallsamplelab.html#who-it-is-for",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
     "section": "Who It Is For",
-    "text": "Who It Is For\nThis book is being developed for:\n\nundergraduates, taught masters students, and early-career PhD researchers\neducation, health, business, and social-science users\nanalysts and practitioners working with samples of roughly 10 to 100 cases\nreaders who need method guidance that is both statistically careful and operationally realistic\n\nIt is not framed as an abstract statistical monograph. The goal is to help readers choose defensible methods, run them in R, and report them honestly."
+    "text": "Who It Is For\nSmall Sample Lab is being developed for:\n\nstudents, taught masters learners, and early-career PhD researchers\nusers in education, health, business, and social-science settings\nanalysts and practitioners working with samples of roughly 10 to 100 cases\nreaders who need method guidance that is statistically careful and operationally realistic"
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#prerequisite-knowledge",
-    "href": "textbooks/smallsamplelab.html#prerequisite-knowledge",
+    "objectID": "textbooks/smallsamplelab.html#what-the-core-project-already-contains",
+    "href": "textbooks/smallsamplelab.html#what-the-core-project-already-contains",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "Prerequisite Knowledge",
-    "text": "Prerequisite Knowledge\nA basic introductory-statistics background is helpful, but the project is written to be teachable. The source material assumes readers may be learning some of these methods for the first time, and the repo already supports that with synthetic datasets, helper functions, lab practicals, and worked projects. R and Quarto are the core workflow tools."
+    "section": "What The Core Project Already Contains",
+    "text": "What The Core Project Already Contains\n\n  \n    Generated Datasets\n    The source project already includes scripts that generate working datasets for realistic examples, so the line is not starting from a blank outline.\n  \n  \n    Helper Functions\n    Reusable R helpers already exist for exact tests, bootstrap intervals, Wilcoxon procedures, and Firth logistic regression.\n  \n  \n    Guided Labs\n    The planned lab sequence already covers Fisher's exact test, bootstrap confidence intervals, rank tests, reliability analysis, power planning, imputation, and data screening.\n  \n  \n    Worked Projects\n    The source outline already includes integrated projects such as campaign evaluation, short-scale reliability assessment, and paired intervention evaluation."
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#book-structure",
-    "href": "textbooks/smallsamplelab.html#book-structure",
+    "objectID": "textbooks/smallsamplelab.html#beyond-the-book",
+    "href": "textbooks/smallsamplelab.html#beyond-the-book",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "Book Structure",
-    "text": "Book Structure\nThe source project maps the teaching line into eight parts:\n\nFoundations\nData Collection and Preparation\nAnalysis Methods\nReporting and Interpretation\nWorked Projects\nTechnical Appendices\nGuided Lab Practicals\nInstructor’s Manual\n\nThe current Quarto build already includes the main teaching sequence, worked projects, guided labs, and instructor-facing material. Technical appendices are part of the broader project design and are being prepared alongside the main book build."
+    "section": "Beyond The Book",
+    "text": "Beyond The Book\nSmall Sample Lab is being developed as more than a single manuscript. The underlying project already supports a broader methods line built around guided application, teaching use, and careful workflow support for limited-data studies.\n\n  \n    Guided Labs\n    Step-by-step practicals help readers move from explanation to implementation rather than stopping at theory.\n  \n  \n    Applied Examples\n    Worked projects and synthetic datasets give the methods line concrete business, education, and research settings.\n  \n  \n    Teaching Resources\n    The project design already anticipates lab practicals, instructor-facing support, and teaching-oriented companion material.\n  \n  \n    Methods Review Support\n    Small-sample workflows also connect naturally to project-specific review and interpretation support where limited data make method choice critical."
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#what-the-book-covers",
-    "href": "textbooks/smallsamplelab.html#what-the-book-covers",
+    "objectID": "textbooks/smallsamplelab.html#what-the-line-covers",
+    "href": "textbooks/smallsamplelab.html#what-the-line-covers",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "What The Book Covers",
-    "text": "What The Book Covers\nThe repo materials already point to a clear methods range:\n\nexact tests and resampling methods\nnonparametric rank-based procedures\npenalised and Bayesian regression for limited data\nreliability and measurement-quality checks for short scales\nmulti-criteria decision-making for small-case settings\neffect sizes, confidence intervals, and transparent interpretation\n\nThis is paired with complete worked projects and a guided-lab layer so the reader can move from explanation to application rather than stopping at theory."
+    "section": "What The Line Covers",
+    "text": "What The Line Covers\nThe methods range already anchored in the source project includes:\n\nexact tests and resampling methods\nnonparametric rank-based procedures\npenalized and Bayesian regression for limited data\nreliability and measurement-quality checks for short scales\nmulti-criteria decision-making in small-case settings\neffect sizes, confidence intervals, and transparent interpretation\n\nThis range matters because small studies should not be treated as a compromise case by default. With the right methods and clear reporting, they can still be analysed carefully and interpreted honestly."
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#what-already-exists-in-the-project",
-    "href": "textbooks/smallsamplelab.html#what-already-exists-in-the-project",
+    "objectID": "textbooks/smallsamplelab.html#cite-this-book",
+    "href": "textbooks/smallsamplelab.html#cite-this-book",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "What Already Exists In The Project",
-    "text": "What Already Exists In The Project\n\n  \n    Generated Datasets\n    The repo already includes scripts that generate project datasets for marketing, service-quality, and process-change examples so readers can rebuild examples locally.\n  \n  \n    Helper Functions\n    Reusable R helpers are already defined for exact tests, bootstrap intervals, Wilcoxon procedures, and Firth logistic regression.\n  \n  \n    Guided Labs\n    The planned lab sequence already covers Fisher's exact test, bootstrap confidence intervals, rank tests, reliability analysis, power planning, imputation, and data screening.\n  \n  \n    Worked Projects\n    The source outline already includes integrated projects such as campaign evaluation, short-scale reliability assessment, and paired intervention evaluation."
+    "section": "Cite This Book",
+    "text": "Cite This Book\n\nSharafuddin, M. A., Jaleel, A. A., & Madhavan, M. (2026). Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.20221929"
   },
   {
-    "objectID": "textbooks/smallsamplelab.html#why-this-project-is-useful",
-    "href": "textbooks/smallsamplelab.html#why-this-project-is-useful",
+    "objectID": "textbooks/smallsamplelab.html#access-the-book",
+    "href": "textbooks/smallsamplelab.html#access-the-book",
     "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "Why This Project Is Useful",
-    "text": "Why This Project Is Useful\nSmall-sample work is often treated as a compromise case. This book takes the opposite view: with the right methods, small studies can still be analysed carefully and reported responsibly. That matters in exactly the contexts where researchers have the least margin for wasted effort, weak assumptions, or overclaimed findings."
-  },
-  {
-    "objectID": "textbooks/smallsamplelab.html#current-stage",
-    "href": "textbooks/smallsamplelab.html#current-stage",
-    "title": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
-    "section": "Current Stage",
-    "text": "Current Stage\nThe public status remains Proofreading, but the repo already contains a real teaching system: structured chapters, generated datasets, helper functions, lab practicals, worked projects, and an instructor-manual track. This page now reflects that actual level of project maturity."
+    "section": "Access the Book",
+    "text": "Access the Book\n\n  \n    Web Edition\n    Full interactive book with live R code cells and chapter quizzes.\n    Read online →\n  \n  \n    PDF\n    Print-formatted PDF for offline reading and citation.\n    Download PDF →\n  \n  \n    DOCX\n    Editable Word document for accessibility and adaptation.\n    Download DOCX →\n  \n  \n    Companion Resources\n    Lab practicals, instructor manual, Moodle pack, and slide decks available separately.\n    Contact for access →"
   },
   {
     "objectID": "textbooks/index.html",
     "href": "textbooks/index.html",
     "title": "Textbooks",
     "section": "",
-    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical small-sample methods guide with worked projects, guided lab practicals, generated datasets, and instructor-facing material.\n    Open page"
+    "text": "FlairMI presents four textbook lines. Quantitative Analysis with Small Samples is published and free to read online. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics and Applied Survey Research and Data Analysis are in development.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Published — v0.1.0\n    \n    Published 16 May 2026. 18 chapters and 5 worked R projects covering exact tests, resampling, nonparametric methods, Bayesian regression, missing data, and uncertainty reporting. Free under CC BY 4.0. DOI: 10.5281/zenodo.20221929\n    Read the book   Book details"
   },
   {
     "objectID": "textbooks/index.html#textbooks-and-teaching-materials",
     "href": "textbooks/index.html#textbooks-and-teaching-materials",
     "title": "Textbooks",
     "section": "",
-    "text": "FlairMI currently presents four textbook lines. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples are in proofreading.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Proofreading\n    \n    A practical small-sample methods guide with worked projects, guided lab practicals, generated datasets, and instructor-facing material.\n    Open page"
+    "text": "FlairMI presents four textbook lines. Quantitative Analysis with Small Samples is published and free to read online. Data-Driven Management: Statistics for Managers is live. AI-Powered Marketing Analytics and Applied Survey Research and Data Analysis are in development.\n\n  \n    Live\n    \n    A multi-output Quarto project producing a textbook, lecture decks, companion site, worked examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    \n    A five-part, twelve-chapter marketing analytics teaching line with worked examples, public datasets, and AI-assisted analytical workflows.\n    Open page\n  \n  \n    Proofreading\n    \n    A large-format survey research text with forty-one chapters, contributor scaffolds, and a reproducible build from constructs to conclusions.\n    Open page\n  \n  \n    Published — v0.1.0\n    \n    Published 16 May 2026. 18 chapters and 5 worked R projects covering exact tests, resampling, nonparametric methods, Bayesian regression, missing data, and uncertainty reporting. Free under CC BY 4.0. DOI: 10.5281/zenodo.20221929\n    Read the book   Book details"
   },
   {
     "objectID": "textbooks/asrda.html",
@@ -431,14 +431,21 @@
     "href": "products/ethos.html",
     "title": "Ethos",
     "section": "",
-    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics stackDescriptives, tests, reliability, EFA, CFA, SEM, and survey design\n      Writer exportsDOCX and Quarto outputs with reproducibility support"
+    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics chainQuality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning\n      HTML reportDownloadable analysis report rendered from the surveyframe analytics chain"
   },
   {
     "objectID": "products/ethos.html#what-it-covers",
     "href": "products/ethos.html#what-it-covers",
     "title": "Ethos",
     "section": "What It Covers",
-    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, ethics review, and report generation. The current alpha architecture includes a survey builder, analytics modules, writer exports, ethics workflow, offline/PWA groundwork, and self-hosted deployment patterns."
+    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns."
+  },
+  {
+    "objectID": "products/ethos.html#what-is-available-now",
+    "href": "products/ethos.html#what-is-available-now",
+    "title": "Ethos",
+    "section": "What Is Available Now",
+    "text": "What Is Available Now\nThe alpha includes a working end-to-end analytics chain powered by surveyframe v0.3, now live on CRAN (install.packages(\"surveyframe\")): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle."
   },
   {
     "objectID": "products/ethos.html#current-stage",
@@ -702,86 +709,93 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Flair Marketing Intelligence",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "",
-    "text": "FlairMI\n  \n  \n    Browse textbooks\n    Explore templates\n    View products"
+    "text": "FlairMI\n  \n  \n    FlairMI brings together textbooks, downloadable decision templates,\n    browser-based tools, and focused support for teams and learners who need\n    clearer reporting, better method choices, and cleaner workflows.\n  \n  \n    Browse textbooks\n    Explore templates\n    View products\n    View services"
+  },
+  {
+    "objectID": "index.html#portfolio-lines",
+    "href": "index.html#portfolio-lines",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
+    "section": "Portfolio Lines",
+    "text": "Portfolio Lines\n\n  \n    Business Analytics\n    Dashboards, KPI reporting, forecasting, profitability review, pipeline visibility, and decision-tool packs for teams that need cleaner management insight.\n  \n  \n    Marketing Analytics\n    ROI, CAC, CLV, funnel performance, segmentation, pricing, and campaign review materials built for practical decision support.\n  \n  \n    Small Sample Lab\n    A distinct small-sample methods portfolio built around exact tests, resampling, nonparametrics, careful interpretation, and realistic applied research settings.\n  \n  \n    Workflow Products\n    Quarto, reproducible reporting, voice-cleanup, and privacy-first workflow products that turn analysis and writing into a cleaner operating system."
   },
   {
     "objectID": "index.html#textbooks",
     "href": "index.html#textbooks",
-    "title": "Flair Marketing Intelligence",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Textbooks",
-    "text": "Textbooks\nFour textbooks anchor the teaching and publishing side of FlairMI. Data-Driven Management: Statistics for Managers is live today. The remaining three titles are in proofreading and preparation for release.\n\n  \n    Live\n    Data-Driven Management: Statistics for Managers\n    A multi-output teaching line with a textbook, lecture decks, companion site, examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    AI-Powered Marketing Analytics: Applied Methods for Managers\n    An applied methods text for managers and analysts working with modern marketing data and AI-assisted workflows.\n    Open textbook page\n  \n  \n    Proofreading\n    Applied Survey Research and Data Analysis: From Constructs to Conclusions Using R\n    A survey research book that moves from measurement design to reproducible analysis and reporting in R.\n    Open textbook page\n  \n  \n    Proofreading\n    Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers\n    A practical book for students and researchers working with limited datasets, exact methods, and reproducible reporting.\n    Open textbook page"
+    "text": "Textbooks\nFour textbook lines anchor the publishing and teaching side of FlairMI. Data-Driven Management: Statistics for Managers is live and Quantitative Analysis with Small Samples (Small Sample Lab) is published. AI-Powered Marketing Analytics and Applied Survey Research and Data Analysis are in proofreading and companion-resource development.\n\n  \n    Live\n    Data-Driven Management: Statistics for Managers\n    A multi-output teaching line with a textbook, lecture decks, companion site, examples, and instructor resources.\n    Open live textbook\n  \n  \n    Proofreading\n    AI-Powered Marketing Analytics\n    An applied methods line for managers and analysts working with modern marketing data and AI-assisted analytical workflows.\n    Open textbook page\n  \n  \n    Proofreading\n    Applied Survey Research and Data Analysis\n    A survey-research line that moves from measurement design to reproducible analysis and reporting in R.\n    Open textbook page\n  \n  \n    Published — v0.1.0\n    Quantitative Analysis with Small Samples\n    A published open textbook on exact tests, resampling, nonparametric methods, penalised and Bayesian regression, and five worked R projects. Free under CC BY 4.0.\n    Read the book   Book details"
   },
   {
-    "objectID": "index.html#templates-and-dashboards",
-    "href": "index.html#templates-and-dashboards",
-    "title": "Flair Marketing Intelligence",
-    "section": "Templates And Dashboards",
-    "text": "Templates And Dashboards\nFlairMI hosts the full Marketing Decision Toolkit directly on the site, with ten downloadable Excel workbooks for planning, forecasting, segmentation, and performance measurement. The cards below show a selection from the full toolkit.\n\n  \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n  \n  \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    Marketing Funnel Dashboard\n    Track conversion, drop-off, and cost efficiency across the funnel.\n    Open template page\n  \n\n\n  Browse all ten templates"
+    "objectID": "index.html#decision-toolkit-and-dashboards",
+    "href": "index.html#decision-toolkit-and-dashboards",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
+    "section": "Decision Toolkit And Dashboards",
+    "text": "Decision Toolkit And Dashboards\nThe template layer spans both business analytics and marketing analytics. The free workbook library remains public, and the surrounding FlairMI site is being shaped around clearer decision-support use cases, companion guidance, and workshop delivery.\n\n  \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n  \n  \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n\n\n  Browse all decision templates"
   },
   {
-    "objectID": "index.html#products",
-    "href": "index.html#products",
-    "title": "Flair Marketing Intelligence",
-    "section": "Products",
-    "text": "Products\nThe current FlairMI product line has two live browser utilities and three upcoming research and writing tools. The live tools can be opened immediately; the next line is presented here as coming-soon previews with product pages, screens, and beta-interest forms.\n\n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n\n\nComing Soon\n\n  \n    Private Beta\n    QuartoPad\n    A local-first Quarto workspace with live preview, chunk execution, project browsing, and citation-aware editing.\n    Preview coming-soon page\n  \n  \n    Testing\n    TrimWrite\n    A revision environment for voice cleanup, AI-pattern checks, and final-draft tightening before submission.\n    Preview coming-soon page\n  \n  \n    Alpha\n    Ethos\n    A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n    Preview coming-soon page\n  \n\n\n  Browse all product previews"
+    "objectID": "index.html#workflow-products",
+    "href": "index.html#workflow-products",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
+    "section": "Workflow Products",
+    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN. Price Memory and Margin Guard are live in the browser. QuartoPad, TrimWrite, and Ethos remain in preview as the broader workflow line takes shape.\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    install.packages(\"surveyframe\")\n    View on CRAN\n  \n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n  \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
   },
   {
     "objectID": "index.html#services",
     "href": "index.html#services",
-    "title": "Flair Marketing Intelligence",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Services",
-    "text": "Services\nFlairMI also supports teaching and implementation through consulting and workshops in R, RStudio, Quarto-based technical writing, statistical analysis, research design, and marketing analytics.\n\n  \n    R And RStudio Workshops\n    Hands-on sessions for analysts, lecturers, and student cohorts using modern R workflows.\n  \n  \n    Technical Writing With Quarto\n    Support for reproducible reports, teaching material, and professional documents.\n  \n  \n    Statistical Analysis And Research Design\n    Guidance for survey projects, experiments, measurement, and reporting.\n  \n  \n    Marketing Analytics Consulting\n    Applied support for dashboards, forecasting, segmentation, funnel analysis, and campaign review."
+    "text": "Services\nThe services layer reflects the same four portfolio areas: business analytics, marketing analytics, Small Sample Lab, and workflow onboarding. Engagements are scoped around workshops, reviews, onboarding, and applied implementation support.\n\n  \n    Business Analytics Sprints\n    Support for dashboards, KPI review, forecasting, profitability, and reporting systems.\n  \n  \n    Marketing Analytics Sprints\n    Applied support for funnels, ROI, CAC, CLV, segmentation, pricing, and campaign review.\n  \n  \n    Small Sample Research Review\n    Careful review of method choice, analysis workflow, and reporting for small-n studies and pilot datasets.\n  \n  \n    Workflow Onboarding\n    Hands-on support for Quarto, reproducible reports, and privacy-first writing and analytics workflows.\n  \n\n\n  View consulting and workshop services"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
-    "title": "Flair Marketing Intelligence",
+    "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Contact",
-    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Textbooks\n          Templates\n          Products\n          Services\n          Workshops\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages are sent through the contact form and reviewed directly."
+    "text": "Contact\n\n  Contact FlairMI\n  \n    Use this form for textbooks, templates, products, workshops, or consulting.\n  \n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Interest\n        \n          Business analytics\n          Marketing analytics\n          Small Sample Lab\n          Workflow products\n          Teaching and workshops\n          Services\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send message\n      Messages are sent through the contact form and reviewed directly."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "",
     "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#founder",
     "href": "about.html#founder",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "",
     "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#current-work",
     "href": "about.html#current-work",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "Current Work",
-    "text": "Current Work\n\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
+    "text": "Current Work\n\nR package: surveyframe v0.3.0, now live on CRAN — survey instrument workflows from design to reproducible reporting.\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
   },
   {
     "objectID": "about.html#about-flairmi",
     "href": "about.html#about-flairmi",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "About FlairMI",
     "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is a public-facing platform built around open educational and analytical work. It combines teaching resources, downloadable tools, practical software, and service-led support for people who work with data, writing, surveys, and decision-making.\nThe site is organised around four public areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nFlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at mohammedalisharafuddin.github.io."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "Contact",
     "text": "Contact\nFor product questions, workshops, consulting, teaching adoption, and publishing:\nEmail: mohammedali.page@gmail.com"
   },
   {
     "objectID": "about.html#connect",
     "href": "about.html#connect",
-    "title": "About",
+    "title": "About Mohammed Ali Sharafuddin",
     "section": "Connect",
-    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 21 March 2026"
+    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 29 May 2026"
   },
   {
     "objectID": "blog/index.html",
@@ -1061,21 +1075,21 @@
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products now split cleanly into live utilities and coming-soon previews. Price Memory and Margin Guard are already public in the browser. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory and Margin Guard are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
   },
   {
     "objectID": "products/index.html#product-portfolio",
     "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products now split cleanly into live utilities and coming-soon previews. Price Memory and Margin Guard are already public in the browser. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory and Margin Guard are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
   },
   {
     "objectID": "products/index.html#live-now",
     "href": "products/index.html#live-now",
     "title": "Products",
     "section": "Live Now",
-    "text": "Live Now\n\n  \n    Live\n    Price Memory\n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product"
+    "text": "Live Now\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    install.packages(\"surveyframe\")\n    View on CRAN GitHub\n  \n  \n    Live\n    Price Memory\n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product"
   },
   {
     "objectID": "products/index.html#coming-soon",
@@ -1089,7 +1103,7 @@
     "href": "products/index.html#at-a-glance",
     "title": "Products",
     "section": "At A Glance",
-    "text": "At A Glance\n\n  \n    Live now\n    Price Memory and Margin Guard are public-facing tools with live browser access and dedicated product pages.\n  \n  \n    Writer workflow\n    QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n  \n  \n    Academic stack\n    Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
+    "text": "At A Glance\n\n  \n    R package\n    surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.\n  \n  \n    Live now\n    Price Memory and Margin Guard are public-facing tools with live browser access and dedicated product pages.\n  \n  \n    Writer workflow\n    QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n  \n  \n    Academic stack\n    Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
   },
   {
     "objectID": "products/price-memory.html",
@@ -1339,30 +1353,44 @@
   {
     "objectID": "templates/index.html",
     "href": "templates/index.html",
-    "title": "Templates",
+    "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "FlairMI hosts ten downloadable Excel workbooks for campaign planning, forecasting, segmentation, churn review, funnel analysis, and decision support. Each template page includes a preview, a short explanation, and a direct download link hosted on FlairMI.\n\n  \n    \n    Download\n    \n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    \n    Download\n    \n    Track deal stages, weighted revenue, and representative-level performance.\n    Open template page\n  \n  \n    \n    Download\n    \n    Model unit volume, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    \n    Download\n    \n    Estimate customer lifetime value and compare segments against acquisition cost.\n    Open template page\n  \n  \n    \n    Download\n    \n    Plot competitors across two strategic dimensions and identify market gaps.\n    Open template page\n  \n  \n    \n    Download\n    \n    Analyse funnel conversion, drop-off, and channel contribution.\n    Open template page\n  \n  \n    \n    Download\n    \n    Compare customer acquisition cost by channel and estimate payback period.\n    Open template page\n  \n  \n    \n    Download\n    \n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n  \n    \n    Download\n    \n    Segment customers by recency, frequency, and monetary value.\n    Open template page\n  \n  \n    \n    Download\n    \n    Monitor customer churn, revenue churn, and retention trends.\n    Open template page"
+    "text": "FlairMI hosts ten downloadable workbooks that now sit under a broader Decision Toolkit frame. The free workbook layer remains public, and the wider FlairMI site is being shaped around clearer business-analytics and marketing- analytics use cases, companion guidance, and training support."
   },
   {
-    "objectID": "templates/index.html#marketing-decision-toolkit",
-    "href": "templates/index.html#marketing-decision-toolkit",
-    "title": "Templates",
+    "objectID": "templates/index.html#decision-toolkit",
+    "href": "templates/index.html#decision-toolkit",
+    "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "FlairMI hosts ten downloadable Excel workbooks for campaign planning, forecasting, segmentation, churn review, funnel analysis, and decision support. Each template page includes a preview, a short explanation, and a direct download link hosted on FlairMI.\n\n  \n    \n    Download\n    \n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    \n    Download\n    \n    Track deal stages, weighted revenue, and representative-level performance.\n    Open template page\n  \n  \n    \n    Download\n    \n    Model unit volume, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    \n    Download\n    \n    Estimate customer lifetime value and compare segments against acquisition cost.\n    Open template page\n  \n  \n    \n    Download\n    \n    Plot competitors across two strategic dimensions and identify market gaps.\n    Open template page\n  \n  \n    \n    Download\n    \n    Analyse funnel conversion, drop-off, and channel contribution.\n    Open template page\n  \n  \n    \n    Download\n    \n    Compare customer acquisition cost by channel and estimate payback period.\n    Open template page\n  \n  \n    \n    Download\n    \n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n  \n    \n    Download\n    \n    Segment customers by recency, frequency, and monetary value.\n    Open template page\n  \n  \n    \n    Download\n    \n    Monitor customer churn, revenue churn, and retention trends.\n    Open template page"
+    "text": "FlairMI hosts ten downloadable workbooks that now sit under a broader Decision Toolkit frame. The free workbook layer remains public, and the wider FlairMI site is being shaped around clearer business-analytics and marketing- analytics use cases, companion guidance, and training support."
+  },
+  {
+    "objectID": "templates/index.html#free-workbook-library",
+    "href": "templates/index.html#free-workbook-library",
+    "title": "Free Marketing and Business Analytics Excel Templates",
+    "section": "Free Workbook Library",
+    "text": "Free Workbook Library\n\n  \n    \n    Download\n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n  \n  \n    \n    Download\n    Sales Pipeline Tracker\n    Track deal stages, weighted revenue, and representative-level performance.\n    Open template page\n  \n  \n    \n    Download\n    Break-Even Analysis\n    Model unit volume, break-even thresholds, and profit sensitivity.\n    Open template page\n  \n  \n    \n    Download\n    CLV Calculator\n    Estimate customer lifetime value and compare segments against acquisition cost.\n    Open template page\n  \n  \n    \n    Download\n    Competitive Positioning Map\n    Plot competitors across two strategic dimensions and identify market gaps.\n    Open template page\n  \n  \n    \n    Download\n    Marketing Funnel Dashboard\n    Analyse funnel conversion, drop-off, and channel contribution.\n    Open template page\n  \n  \n    \n    Download\n    CAC Calculator\n    Compare customer acquisition cost by channel and estimate payback period.\n    Open template page\n  \n  \n    \n    Download\n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n  \n  \n    \n    Download\n    RFM Segmentation\n    Segment customers by recency, frequency, and monetary value.\n    Open template page\n  \n  \n    \n    Download\n    Churn Rate Dashboard\n    Monitor customer churn, revenue churn, and retention trends.\n    Open template page"
+  },
+  {
+    "objectID": "templates/index.html#how-the-toolkit-fits-into-flairmi",
+    "href": "templates/index.html#how-the-toolkit-fits-into-flairmi",
+    "title": "Free Marketing and Business Analytics Excel Templates",
+    "section": "How The Toolkit Fits Into FlairMI",
+    "text": "How The Toolkit Fits Into FlairMI\n\n  \n    Business Analytics\n    Templates such as the Sales Pipeline Tracker, Revenue Forecast Model, and Break-Even Analysis support KPI review, forecasting, and management reporting.\n  \n  \n    Marketing Analytics\n    Campaign ROI, CAC, CLV, funnel, churn, and segmentation workbooks support practical channel review and customer analysis.\n  \n  \n    Teaching And Workshops\n    The same workbook line can be used in teaching, workshops, and internal training when a team wants more structured walkthroughs and examples.\n  \n  \n    Companion Guidance\n    FlairMI is gradually adding stronger narrative framing around the workbook library so visitors can move from standalone files to broader decision-support use."
   },
   {
     "objectID": "templates/index.html#how-to-use-the-workbooks",
     "href": "templates/index.html#how-to-use-the-workbooks",
-    "title": "Templates",
+    "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "How To Use The Workbooks",
     "text": "How To Use The Workbooks\n\nDownload a workbook from its template page.\nOpen it in Excel or LibreOffice Calc.\nReplace the example values on the Sample Data sheet with your own data.\nKeep the column headings unchanged so the formulas and dashboards continue to work."
   },
   {
-    "objectID": "templates/index.html#need-a-workshop-or-custom-version",
-    "href": "templates/index.html#need-a-workshop-or-custom-version",
-    "title": "Templates",
-    "section": "Need A Workshop Or Custom Version?",
-    "text": "Need A Workshop Or Custom Version?\nIf you want help using these templates in teaching, consulting, or internal decision support, visit the Services page or use the home contact form."
+    "objectID": "templates/index.html#need-adaptation-or-training",
+    "href": "templates/index.html#need-adaptation-or-training",
+    "title": "Free Marketing and Business Analytics Excel Templates",
+    "section": "Need Adaptation Or Training?",
+    "text": "Need Adaptation Or Training?\nIf you want help using these templates in teaching, consulting, or internal decision support, visit the Services page or use the home contact form."
   },
   {
     "objectID": "templates/revenue-forecast-model.html",

@@ -141,6 +141,12 @@ main.content h4 code {
   border-radius: 14px;
   padding: 1.2rem;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.flair-card:hover {
+  border-color: var(--flair-primary);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.09);
 }
 
 .flair-card h3,
@@ -335,14 +341,28 @@ main.content h4 code {
 }
 
 .page-copy,
-.page-media,
+.page-media {
+  background: #fff;
+  border: 1px solid var(--flair-border);
+  border-radius: 18px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.05);
+}
+
 .feature-panel,
 .download-panel,
 .section-panel {
   background: #fff;
   border: 1px solid var(--flair-border);
-  border-radius: 18px;
-  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.05);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.feature-panel:hover,
+.download-panel:hover,
+.section-panel:hover {
+  border-color: var(--flair-primary);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.09);
 }
 
 .page-copy {

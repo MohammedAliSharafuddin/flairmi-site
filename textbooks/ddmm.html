@@ -116,10 +116,68 @@ ul.task-list li input[type="checkbox"] {
       "@id": "https://flairmi.com/#organization"
     },
     "description": "Textbooks, templates, browser-based tools, and workshops for teaching, research, and marketing analytics."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "@id": "https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/#book",
+    "name": "Quantitative Analysis with Small Samples: A Practical Guide for Students and Early-Career Researchers",
+    "url": "https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Mohammed Ali Sharafuddin",
+        "sameAs": "https://orcid.org/0000-0001-5247-2964"
+      },
+      {
+        "@type": "Person",
+        "name": "Ahsan Ahmed Jaleel",
+        "sameAs": "https://orcid.org/0009-0004-5576-8700"
+      },
+      {
+        "@type": "Person",
+        "name": "Meena Madhavan",
+        "sameAs": "https://orcid.org/0000-0003-1244-5392"
+      }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zenodo"
+    },
+    "datePublished": "2026-05-16",
+    "inLanguage": "en",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.20221929"
+    },
+    "isAccessibleForFree": true,
+    "description": "An open textbook covering rigorous quantitative analysis when sample sizes are small. Topics include study design, measurement quality, exact and resampling tests, nonparametric inference, penalised and Bayesian regression, missing data, uncertainty reporting, and five worked projects in R.",
+    "about": ["small sample statistics", "quantitative research methods", "nonparametric statistics", "Bayesian regression", "R programming"],
+    "sameAs": "https://doi.org/10.5281/zenodo.20221929"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://github.com/MohammedAliSharafuddin/surveyframe#software",
+    "name": "surveyframe",
+    "url": "https://github.com/MohammedAliSharafuddin/surveyframe",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "R",
+    "author": {
+      "@id": "https://flairmi.com/about.html#person"
+    },
+    "description": "An R package for survey instrument objects and end-to-end survey workflows, submitted to CRAN in May 2026.",
+    "license": "https://opensource.org/licenses/MIT",
+    "programmingLanguage": "R"
   }
 ]
 </script>
 <meta name="robots" content="index,follow">
+<meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
+<meta name="googlebot" content="index,follow">
+<meta name="bingbot" content="index,follow">
 <script defer="" src="../assets/js/ga4.js"></script>
 <script defer="" src="../assets/js/nav-overview.js"></script>
 <script defer="" src="../assets/js/contact-form.js"></script>
@@ -127,14 +185,15 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/css/flairmi-20260321.css">
 <meta property="og:title" content="Data-Driven Management: Statistics for Managers – Flair Marketing Intelligence">
-<meta property="og:description" content="A live statistics textbook and teaching suite with 27 chapters, eight parts, lecture decks, worked examples, and instructor resources.">
+<meta property="og:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta property="og:site_name" content="Flair Marketing Intelligence">
-<meta property="og:image:alt" content="FlairMI portfolio overview">
+<meta property="og:site_name" content="FlairMI">
+<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
 <meta name="twitter:title" content="Data-Driven Management: Statistics for Managers – Flair Marketing Intelligence">
-<meta name="twitter:description" content="A live statistics textbook and teaching suite with 27 chapters, eight parts, lecture decks, worked examples, and instructor resources.">
+<meta name="twitter:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI portfolio overview">
+<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/textbooks/ddmm.html">
 </head>
@@ -292,16 +351,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="page-hero">
   <div class="page-copy">
-    <span class="flair-status beta">Under Review</span>
+    <span class="flair-status live">Live</span>
     <h1>Data-Driven Management: Statistics for Managers</h1>
     <p class="page-lead">
-      This is a complete textbook and teaching suite built around 27 chapters,
-      lecture decks, worked examples, datasets, instructor resources, a
-      companion site, and a Moodle package. The first public release is
-      expected in June 2026 and is currently in final review.
+      This is a multi-output teaching line built around a textbook, lecture
+      decks, companion site, worked examples, instructor resources, and episode
+      materials. It is designed for reproducible teaching, adoption, and course
+      delivery.
     </p>
     <div class="hero-actions">
-      <a class="flair-button cta-strong" href="#release-status">View release status</a>
+      <a class="flair-button cta-strong" href="https://mohammedalisharafuddin.github.io/ddmm-suite/" target="_blank" rel="noopener">Open live companion site</a>
       <a class="flair-button secondary-dark" href="../textbooks/index.html">Back to textbooks</a>
     </div>
   </div>
@@ -311,15 +370,15 @@ ul.task-list li input[type="checkbox"] {
       <ul class="compact-list">
         <li>27 chapters across 8 parts</li>
         <li>27 lecture decks and worked examples</li>
-        <li>Companion site, datasets, and Moodle package</li>
-        <li>Instructor resources and downloadable teaching assets</li>
+        <li>Companion website, datasets, and downloads</li>
+        <li>Instructor resources and episode materials</li>
       </ul>
     </div>
   </div>
 </div>
 <section id="positioning" class="level2">
 <h2 class="anchored" data-anchor-id="positioning">Positioning</h2>
-<p><code>Data-Driven Management: Statistics for Managers</code> is the most mature textbook line in the FlairMI portfolio and is now in final editorial review ahead of its first public release in June 2026. The underlying source project already supports teaching, adoption, and multi-format delivery from a shared asset base.</p>
+<p><code>Data-Driven Management: Statistics for Managers</code> is the most mature textbook line in the FlairMI portfolio. The live public deployment already exists, and the underlying source project is structured to support teaching, adoption, and multi-format delivery from a shared asset base.</p>
 </section>
 <section id="who-it-is-for" class="level2">
 <h2 class="anchored" data-anchor-id="who-it-is-for">Who It Is For</h2>
@@ -349,27 +408,28 @@ ul.task-list li input[type="checkbox"] {
   <div class="flair-card">
     <img src="../assets/images/textbooks/ddmm-companion-overview.png" alt="DDMM companion site overview with quick links to the textbook, slides, examples, datasets, instructor resources, and downloads">
     <h3 class="anchored">Companion Site Overview</h3>
-    <p>The DDMM companion site brings together the textbook, slides, worked examples, datasets, instructor-facing materials, and download routes in one teaching hub.</p>
-    <p>Public access is paused during final review. This preview shows the planned public structure.</p>
+    <p>The public DDMM companion site brings together the textbook, slides, worked examples, datasets, instructor-facing materials, and download routes in one teaching hub.</p>
+    <p><a href="https://mohammedalisharafuddin.github.io/ddmm-suite/site/index.html" target="_blank" rel="noopener">Open the companion overview</a></p>
   </div>
   <div class="flair-card">
     <img src="../assets/images/textbooks/ddmm-lecture-slides.png" alt="DDMM lecture slides index showing block-by-block RevealJS decks across the eight parts of the course">
     <h3 class="anchored">Lecture Slides And Teaching Outputs</h3>
     <p>The lecture-slides index shows the block-by-block RevealJS decks that support the teaching sequence, from foundations to interpretation and decision use.</p>
-    <p>The screenshots remain available here while the live public links are held back for review.</p>
+    <p><a href="https://mohammedalisharafuddin.github.io/ddmm-suite/site/chapters/index.html" target="_blank" rel="noopener">Open the lecture slides index</a></p>
   </div>
 </div>
 </section>
-<section id="release-status" class="level2">
-<h2 class="anchored" data-anchor-id="release-status">Current Release Status</h2>
+<section id="what-you-can-use-today" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-can-use-today">What You Can Use Today</h2>
 <ul>
-<li>The first public release of this book is expected in June 2026.</li>
-<li>The suite combines a complete textbook with a teaching package designed around Education 5.0 principles, spanning 27 chapters, lecture decks, worked examples, datasets, instructor resources, a companion site, and a Moodle package.</li>
-<li>The screenshots on this page reflect the planned release structure.</li>
+<li>The live companion site provides the public-facing entry point for the textbook and related materials.</li>
+<li>The broader DDMM suite includes 27 lecture decks, worked examples, datasets, and instructor-oriented assets.</li>
+<li>The project is designed as a teaching system rather than a single book file, so course delivery, examples, slides, and supplementary outputs move together.</li>
 </ul>
 <div class="card-link-row">
-  <a class="flair-button cta-strong" href="../textbooks/index.html">Browse other textbooks</a>
-  <a class="flair-button secondary-dark" href="#positioning">Review positioning</a>
+  <a class="flair-button cta-strong" href="https://mohammedalisharafuddin.github.io/ddmm-suite/" target="_blank" rel="noopener">Visit the DDMM companion site</a>
+  <a class="flair-button secondary-dark" href="https://mohammedalisharafuddin.github.io/ddmm-suite/site/books/index.html" target="_blank" rel="noopener">Open the textbook overview</a>
+  <a class="flair-button secondary-dark" href="https://mohammedalisharafuddin.github.io/ddmm-suite/site/examples/index.html" target="_blank" rel="noopener">Browse worked examples</a>
 </div>
 
 
@@ -785,7 +845,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for teaching, research, and marketing analytics.<br> <a href="../textbooks/index.html">Textbooks</a> · <a href="../templates/index.html">Templates</a> · <a href="../products/index.html">Products</a> · <a href="../services/index.html">Services</a></p>
+<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../textbooks/index.html">Textbooks</a> · <a href="../templates/index.html">Templates</a> · <a href="../products/index.html">Products</a> · <a href="../services/index.html">Services</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
