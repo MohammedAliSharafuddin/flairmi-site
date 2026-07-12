@@ -1,25 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">FlairMI</title>
-  <desc id="desc">Practical marketing analytics, statistics tutorials, and browser-based tools.</desc>
+  <desc id="desc">Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f7fafc" />
-      <stop offset="100%" stop-color="#eef2f7" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2138" />
+      <stop offset="100%" stop-color="#1f4d8f" />
     </linearGradient>
   </defs>
+
   <rect width="1200" height="630" fill="url(#bg)" />
-  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#ffffff" stroke="#d7dde6" />
-  <text x="112" y="156" fill="#2d4259" font-family="IBM Plex Mono, Menlo, monospace" font-size="24" letter-spacing="3">FLAIRMI</text>
-  <text x="112" y="248" fill="#17212b" font-family="Georgia, serif" font-size="72">Marketing analytics,</text>
-  <text x="112" y="326" fill="#17212b" font-family="Georgia, serif" font-size="72">statistics, and WebR tools.</text>
-  <text x="112" y="404" fill="#4e5e70" font-family="Arial, Helvetica, sans-serif" font-size="30">Practical tutorials, browser-based apps, and decision-focused learning resources.</text>
-  <rect x="112" y="458" width="244" height="52" rx="10" fill="#203347" />
-  <text x="144" y="492" fill="#ffffff" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">FLAIRMI.COM</text>
-  <circle cx="920" cy="226" r="92" fill="#dce7f2" />
-  <circle cx="996" cy="304" r="56" fill="#b9d0e6" />
-  <circle cx="878" cy="334" r="44" fill="#8db4d6" />
-  <rect x="820" y="390" width="224" height="98" rx="16" fill="#eff5fb" stroke="#c7d8e8" />
-  <text x="850" y="438" fill="#29405b" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24">Blog</text>
-  <text x="850" y="470" fill="#29405b" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24">Stats</text>
-  <text x="940" y="470" fill="#29405b" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24">Survey</text>
+
+  <!-- text column: x 72-720, kept clear of the decorative zone (x 780-1130) -->
+  <text x="72" y="112" fill="#d88a1d" font-family="DejaVu Sans Mono, monospace" font-size="22" letter-spacing="4" font-weight="bold">FLAIRMI</text>
+
+  <text x="72" y="222" fill="#ffffff" font-family="DejaVu Serif, serif" font-size="66" font-weight="bold">Textbooks, templates,</text>
+  <text x="72" y="294" fill="#ffffff" font-family="DejaVu Serif, serif" font-size="66" font-weight="bold">and analytics tools.</text>
+
+  <text x="72" y="352" fill="#c3d3e8" font-family="DejaVu Sans, sans-serif" font-size="27">Open textbooks, free Excel templates, and R packages</text>
+  <text x="72" y="388" fill="#c3d3e8" font-family="DejaVu Sans, sans-serif" font-size="27">for teaching, research, and practice.</text>
+
+  <rect x="72" y="458" width="300" height="56" rx="10" fill="#d88a1d" />
+  <text x="102" y="494" fill="#0f2138" font-family="DejaVu Sans Mono, monospace" font-size="22" font-weight="bold" letter-spacing="1">FLAIRMI.COM</text>
+
+  <text x="72" y="562" fill="#8fa6c2" font-family="DejaVu Sans, sans-serif" font-size="22">By Mohammed Ali Sharafuddin</text>
+
+  <!-- decorative zone: fully separate from the text column, x 780-1130 -->
+  <circle cx="960" cy="180" r="86" fill="#ffffff" fill-opacity="0.08" />
+  <circle cx="1050" cy="270" r="46" fill="#d88a1d" fill-opacity="0.85" />
+  <circle cx="880" cy="290" r="34" fill="#ffffff" fill-opacity="0.16" />
+
+  <rect x="792" y="368" width="326" height="176" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.18" />
+  <text x="824" y="416" fill="#ffffff" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="bold">Textbooks</text>
+  <text x="824" y="454" fill="#ffffff" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="bold">Templates</text>
+  <text x="824" y="492" fill="#ffffff" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="bold">surveyframe</text>
+  <text x="824" y="524" fill="#c3d3e8" font-family="DejaVu Sans, sans-serif" font-size="19">R package, live on CRAN</text>
 </svg>
