@@ -50,14 +50,40 @@ Conclusions Using R** (in proofreading)
 
 ## Open-source software
 
-**surveyframe** — R package for survey instrument objects and end-to-end
-survey workflows: instrument design, static HTML export, a Shiny module,
-response quality checks, scale scoring, psychometric diagnostics, analysis
-planning, and reproducible HTML reporting. Live on CRAN.
+**surveyframe** (v0.3.3, live on CRAN since 11 July 2026) — R package for
+survey instrument objects and end-to-end survey workflows: instrument
+design, static HTML export, a Shiny module, response quality checks, scale
+scoring, psychometric diagnostics, analysis planning, and reproducible
+HTML reporting. The instrument's analysis plan is declared before data
+collection and executed as declared. MIT licence, free.
 
 - Install: `install.packages("surveyframe")`
 - CRAN: https://CRAN.R-project.org/package=surveyframe
+- Documentation: https://mohammedalisharafuddin.github.io/surveyframe/
 - GitHub: https://github.com/MohammedAliSharafuddin/surveyframe
+- A manuscript describing the package was submitted to the Journal of
+  Statistical Software and is under review (not yet accepted).
+- Companion methodology preprint: "Social Science Research 6.0: A
+  Proof-of-Integrity Framework for Tamper-Evident Survey Instruments",
+  https://doi.org/10.31235/osf.io/jmbv8_v1
+
+## Blog
+
+FlairMI publishes applied statistics tutorials and product notes at
+https://flairmi.com/blog/. Recent posts:
+
+- "surveyframe 0.3.3 is on CRAN" — the 0.3.3 release notes: redesigned
+  exported survey, WCAG 2.2 AA accessibility, an opt-in ggplot2 plotting
+  layer, and a diverging bar chart for Likert results.
+  https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html
+- "Why the analysis plan comes first" — why surveyframe requires the
+  analysis plan to be declared before data collection, and why that
+  matters beyond academic research.
+  https://flairmi.com/blog/posts/08-analysis-plan-before-data.html
+- "surveyframe Field Types: Single Choice" — a worked, runnable example
+  declaring a single_choice question, its codebook, its exported survey,
+  and its analysis output.
+  https://flairmi.com/blog/posts/09-surveyframe-single-choice.html
 
 ## Free browser tools
 

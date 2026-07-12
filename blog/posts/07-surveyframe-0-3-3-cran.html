@@ -7,9 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammed Ali Sharafuddin">
-<meta name="description" content="Price Memory is a live browser-based grocery price tracker that stores data locally and builds a personal price history.">
+<meta name="dcterms.date" content="2026-07-12">
+<meta name="keywords" content="surveyframe, CRAN, R package, survey research, analysis plan, WCAG 2.2, accessibility, Likert chart, ggplot2">
+<meta name="description" content="surveyframe 0.3.3 is on CRAN: a redesigned exported survey, WCAG 2.2 AA accessibility, an opt-in ggplot2 layer, and a diverging bar chart for Likert results.">
 
-<title>Price Memory – Flair Marketing Intelligence</title>
+<title>surveyframe 0.3.3 is on CRAN – Flair Marketing Intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +24,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-19d27813f1524be4f82ab4aac4671233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-19d27813f1524be4f82ab4aac4671233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -183,36 +220,36 @@ ul.task-list li input[type="checkbox"] {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
-<script defer="" src="../assets/js/ga4.js"></script>
-<script defer="" src="../assets/js/nav-overview.js"></script>
-<script defer="" src="../assets/js/contact-form.js"></script>
+<script defer="" src="../../assets/js/ga4.js"></script>
+<script defer="" src="../../assets/js/nav-overview.js"></script>
+<script defer="" src="../../assets/js/contact-form.js"></script>
 
 
-<link rel="stylesheet" href="../assets/css/flairmi-20260321.css">
-<meta property="og:title" content="Price Memory – Flair Marketing Intelligence">
+<link rel="stylesheet" href="../../assets/css/flairmi-20260321.css">
+<meta property="og:title" content="surveyframe 0.3.3 is on CRAN – Flair Marketing Intelligence">
 <meta property="og:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
 <meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
-<meta name="twitter:title" content="Price Memory – Flair Marketing Intelligence">
+<meta name="twitter:title" content="surveyframe 0.3.3 is on CRAN – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://flairmi.com/products/price-memory.html">
+<link rel="canonical" href="https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Flair Marketing Intelligence</span>
     </a>
   </div>
@@ -223,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -232,29 +269,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-textbooks">    
         <li>
-    <a class="dropdown-item" href="../textbooks/index.html">
+    <a class="dropdown-item" href="../../textbooks/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/ddmm.html">
+    <a class="dropdown-item" href="../../textbooks/ddmm.html">
  <span class="dropdown-text">Statistics for Managers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/marai.html">
+    <a class="dropdown-item" href="../../textbooks/marai.html">
  <span class="dropdown-text">Marketing Analytics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/asrda.html">
+    <a class="dropdown-item" href="../../textbooks/asrda.html">
  <span class="dropdown-text">Survey Research in R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/smallsamplelab.html">
+    <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -263,41 +300,41 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
         <li>
-    <a class="dropdown-item" href="../products/index.html">
+    <a class="dropdown-item" href="../../products/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/price-memory.html">
+    <a class="dropdown-item" href="../../products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/margin-guard.html">
+    <a class="dropdown-item" href="../../products/margin-guard.html">
  <span class="dropdown-text">Margin Guard</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/quartopad.html">
+    <a class="dropdown-item" href="../../products/quartopad.html">
  <span class="dropdown-text">QuartoPad</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/trimwrite.html">
+    <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/ethos.html">
+    <a class="dropdown-item" href="../../products/ethos.html">
  <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../services/index.html"> 
+    <a class="nav-link" href="../../services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -311,18 +348,44 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-surveyframe-is" id="toc-what-surveyframe-is" class="nav-link active" data-scroll-target="#what-surveyframe-is">What surveyframe is</a></li>
+  <li><a href="#install-it" id="toc-install-it" class="nav-link" data-scroll-target="#install-it">Install it</a></li>
+  <li><a href="#what-is-new-in-0.3.3" id="toc-what-is-new-in-0.3.3" class="nav-link" data-scroll-target="#what-is-new-in-0.3.3">What is new in 0.3.3</a>
+  <ul class="collapse">
+  <li><a href="#the-exported-survey-looks-like-a-real-instrument" id="toc-the-exported-survey-looks-like-a-real-instrument" class="nav-link" data-scroll-target="#the-exported-survey-looks-like-a-real-instrument">The exported survey looks like a real instrument</a></li>
+  <li><a href="#it-meets-wcag-2.2-aa" id="toc-it-meets-wcag-2.2-aa" class="nav-link" data-scroll-target="#it-meets-wcag-2.2-aa">It meets WCAG 2.2 AA</a></li>
+  <li><a href="#it-works-on-a-phone" id="toc-it-works-on-a-phone" class="nav-link" data-scroll-target="#it-works-on-a-phone">It works on a phone</a></li>
+  <li><a href="#a-plotting-layer-on-request" id="toc-a-plotting-layer-on-request" class="nav-link" data-scroll-target="#a-plotting-layer-on-request">A plotting layer, on request</a></li>
+  <li><a href="#a-proper-chart-for-likert-scales" id="toc-a-proper-chart-for-likert-scales" class="nav-link" data-scroll-target="#a-proper-chart-for-likert-scales">A proper chart for Likert scales</a></li>
+  </ul></li>
+  <li><a href="#built-from-a-real-study" id="toc-built-from-a-real-study" class="nav-link" data-scroll-target="#built-from-a-real-study">Built from a real study</a></li>
+  <li><a href="#where-it-is-heading" id="toc-where-it-is-heading" class="nav-link" data-scroll-target="#where-it-is-heading">Where it is heading</a></li>
+  <li><a href="#get-it" id="toc-get-it" class="nav-link" data-scroll-target="#get-it">Get it</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Price Memory</h1>
-</div>
+<h1 class="title">surveyframe 0.3.3 is on CRAN</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">surveyframe</div>
+    <div class="quarto-category">R packages</div>
+    <div class="quarto-category">survey research</div>
+    <div class="quarto-category">release notes</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Price Memory is a live browser-based grocery price tracker that stores data locally and builds a personal price history.
+    surveyframe 0.3.3 is on CRAN: a redesigned exported survey, WCAG 2.2 AA accessibility, an opt-in ggplot2 layer, and a diverging bar chart for Likert results.
   </div>
 </div>
 
@@ -345,63 +408,78 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
       
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 12, 2026</p>
+    </div>
+  </div>
   
     
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>surveyframe, CRAN, R package, survey research, analysis plan, WCAG 2.2, accessibility, Likert chart, ggplot2</p>
+  </div>
+</div>
 
 </header>
 
 
-<div class="page-hero">
-  <div class="page-copy">
-    <span class="flair-status live">Live</span>
-    <h1>Price Memory</h1>
-    <p class="page-lead">
-      Price Memory is a local grocery price tracker. You enter an item, store,
-      price, and date, and the browser builds a personal price history so you
-      can see whether a sale is actually cheaper than your usual price.
-    </p>
-    <div class="hero-actions">
-      <a class="flair-button cta-strong" href="https://mohammedalisharafuddin.github.io/price-memory/" target="_blank" rel="noopener">Open live tool</a>
-      <a class="flair-button secondary-dark" href="../products/index.html">Back to products</a>
-    </div>
-    <div class="metric-strip">
-      <div class="metric-card"><strong>Browser-only</strong><span>No account setup and no backend required</span></div>
-      <div class="metric-card"><strong>IndexedDB storage</strong><span>Your price log stays on your device</span></div>
-      <div class="metric-card"><strong>Visual history</strong><span>Track item-level prices with charts and CSV export</span></div>
-    </div>
-  </div>
-  <div class="page-media">
-    <div class="media-frame">
-      <img src="../assets/images/products/price-memory.png" alt="Price Memory showing a grocery item history with a local price chart">
-    </div>
-  </div>
-</div>
-<section id="why-it-exists" class="level2">
-<h2 class="anchored" data-anchor-id="why-it-exists">Why It Exists</h2>
-<p>Price Memory was built to solve a simple decision problem: shoppers often see a discount label but do not know whether the offer is genuinely below their usual purchase price. By storing a personal item-level history locally, the tool turns that vague memory into a usable price record.</p>
+<p>TL;DR: <strong>surveyframe 0.3.3</strong> was accepted on CRAN on <strong>11 July 2026</strong>. Install it with <code>install.packages("surveyframe")</code>. The full documentation site is now live at <a href="https://mohammedalisharafuddin.github.io/surveyframe/">mohammedalisharafuddin.github.io/surveyframe</a>. This release rebuilds the look of the exported survey, meets <strong>WCAG 2.2 AA</strong>, reflows properly on phones, and adds an opt-in <strong>ggplot2</strong> plotting layer including a diverging stacked-bar chart for Likert results. It is free and open source under the MIT licence.</p>
+<section id="what-surveyframe-is" class="level2">
+<h2 class="anchored" data-anchor-id="what-surveyframe-is">What surveyframe is</h2>
+<p>surveyframe is an R package for survey research. Its one distinctive idea is the order of work. You build the instrument first, which means the questions, the scoring rules, and the analysis plan, and you do that <strong>before</strong> you collect a single response. The plan you declare up front is the plan that runs when the data comes in.</p>
+<p>Most survey tools work the other way round. You gather responses, open the results, and then decide how to analyse them. surveyframe makes that harder to do by accident, because the analysis is already written down as part of the instrument. That is worth explaining on its own, so it gets <a href="08-analysis-plan-before-data.html">its own post</a>.</p>
 </section>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
+<section id="install-it" class="level2">
+<h2 class="anchored" data-anchor-id="install-it">Install it</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"surveyframe"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That is the whole install. surveyframe is on CRAN, so there is no extra step and no development toolchain to set up. The documentation, function reference, and worked examples now live on the <a href="https://mohammedalisharafuddin.github.io/surveyframe/">pkgdown site</a>.</p>
+</section>
+<section id="what-is-new-in-0.3.3" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-new-in-0.3.3">What is new in 0.3.3</h2>
+<section id="the-exported-survey-looks-like-a-real-instrument" class="level3">
+<h3 class="anchored" data-anchor-id="the-exported-survey-looks-like-a-real-instrument">The exported survey looks like a real instrument</h3>
+<p>The survey you export has been redesigned end to end. Question text now uses larger serif typography, options sit in bordered cards with a selection tick, Likert points are numbered squares, and the matrix, slider, and ranking blocks have all been restyled. A slim progress bar runs along the top. The result reads as a considered survey rather than a plain web form, which matters when you are asking real respondents to give you real attention.</p>
+</section>
+<section id="it-meets-wcag-2.2-aa" class="level3">
+<h3 class="anchored" data-anchor-id="it-meets-wcag-2.2-aa">It meets WCAG 2.2 AA</h3>
+<p>The exported survey passes an instrumented accessibility audit at WCAG 2.2 AA. In practice that means every input carries an accessible name, keyboard focus is visible as you move across the option cards, and validation errors are announced to assistive technology rather than shown by colour alone. Required questions are marked in more than one way, ranking items can be reordered with the keyboard, and touch targets meet a 44-pixel minimum on phones. Accessibility here is not a claim on a marketing page. It is a property the build checks.</p>
+</section>
+<section id="it-works-on-a-phone" class="level3">
+<h3 class="anchored" data-anchor-id="it-works-on-a-phone">It works on a phone</h3>
+<p>Matrix questions used to force a wide table that needed horizontal scrolling on a small screen. Below 600 pixels they now reflow into stacked, labelled row cards, so a respondent on a phone answers the same question without pinching and dragging.</p>
+</section>
+<section id="a-plotting-layer-on-request" class="level3">
+<h3 class="anchored" data-anchor-id="a-plotting-layer-on-request">A plotting layer, on request</h3>
+<p>There is a new optional plotting layer built on ggplot2. Turn it on and your analysis blocks gain charts: bar charts for frequency and chi-square blocks, and scatter plots with a regression overlay for correlation and regression blocks. It is opt-in, so nothing changes in your reports unless you ask for it.</p>
+</section>
+<section id="a-proper-chart-for-likert-scales" class="level3">
+<h3 class="anchored" data-anchor-id="a-proper-chart-for-likert-scales">A proper chart for Likert scales</h3>
+<p>Likert items in a report now get a diverging stacked-bar chart. Agreement and disagreement diverge from the centre, darkest at each pole and lightest next to the neutral point, so you can read the balance of a scale at a glance instead of squinting at a plain frequency bar.</p>
+</section>
+</section>
+<section id="built-from-a-real-study" class="level2">
+<h2 class="anchored" data-anchor-id="built-from-a-real-study">Built from a real study</h2>
+<p>surveyframe 0.3.3 is not a paper exercise. It was hardened while running an actual live survey study on AI room service. That deployment surfaced a real bug: the submission call to Google Apps Script was triggering a CORS preflight that Apps Script never answers, so some responses were being dropped silently. The submission path has been rewritten to avoid that preflight, and those responses now arrive. Bugs found in production are the ones worth fixing, and this release carries several of them.</p>
+</section>
+<section id="where-it-is-heading" class="level2">
+<h2 class="anchored" data-anchor-id="where-it-is-heading">Where it is heading</h2>
+<p>The next version, v0.4, leans into small-sample methods, the situation most applied researchers actually face. That work is anchored by the companion textbook, <a href="https://flairmi.com/textbooks/">Quantitative Analysis with Small Samples</a>, which is free and already available. A manuscript describing the package has also been submitted to the Journal of Statistical Software and is under review. More on that if and when it is accepted.</p>
+</section>
+<section id="get-it" class="level2">
+<h2 class="anchored" data-anchor-id="get-it">Get it</h2>
 <ul>
-<li>Log prices by item, store, date, and note</li>
-<li>Review item-level price history over time</li>
-<li>Use a lightweight chart to spot real price dips</li>
-<li>Export your records as CSV for backup or further analysis</li>
+<li>Install: <code>install.packages("surveyframe")</code></li>
+<li>Documentation: <a href="https://mohammedalisharafuddin.github.io/surveyframe/">mohammedalisharafuddin.github.io/surveyframe</a></li>
+<li>Source: <a href="https://github.com/MohammedAliSharafuddin/surveyframe">github.com/MohammedAliSharafuddin/surveyframe</a></li>
+<li>On CRAN: <a href="https://CRAN.R-project.org/package=surveyframe">CRAN.R-project.org/package=surveyframe</a></li>
 </ul>
-</section>
-<section id="access-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="access-and-limitations">Access And Limitations</h2>
-<p>Price Memory is free to use in the browser and does not require an account. Because the current version stores records locally in IndexedDB, your data stays on the device and is not automatically synced across browsers or devices.</p>
-</section>
-<section id="use-the-live-tool" class="level2">
-<h2 class="anchored" data-anchor-id="use-the-live-tool">Use The Live Tool</h2>
-<p>The current version is live in the browser and stores records locally on your device:</p>
-<div class="card-link-row">
-  <a class="flair-button cta-strong" href="https://mohammedalisharafuddin.github.io/price-memory/" target="_blank" rel="noopener">Open Price Memory</a>
-</div>
+<p>If you want the reasoning behind the design, read <a href="08-analysis-plan-before-data.html">why the analysis plan comes first</a>.</p>
 
 
 </section>
@@ -816,13 +894,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../textbooks/index.html">Textbooks</a> · <a href="../templates/index.html">Templates</a> · <a href="../products/index.html">Products</a> · <a href="../services/index.html">Services</a></p>
+<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../../textbooks/index.html">Textbooks</a> · <a href="../../templates/index.html">Templates</a> · <a href="../../products/index.html">Products</a> · <a href="../../services/index.html">Services</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

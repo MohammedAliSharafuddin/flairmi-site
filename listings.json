@@ -2,6 +2,9 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/07-surveyframe-0-3-3-cran.html",
+      "/blog/posts/08-analysis-plan-before-data.html",
+      "/blog/posts/09-surveyframe-single-choice.html",
       "/blog/posts/04-welch-t.html",
       "/blog/posts/05-simple-regression.html",
       "/blog/posts/06-logistic-basics.html",
