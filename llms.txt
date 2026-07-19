@@ -84,6 +84,10 @@ https://flairmi.com/blog/. Recent posts:
   declaring a single_choice question, its codebook, its exported survey,
   and its analysis output.
   https://flairmi.com/blog/posts/09-surveyframe-single-choice.html
+- "Persona Builder: a free browser tool for personas": building a UX or
+  marketing persona card at one of three detail levels, then exporting it
+  as a PNG or PDF.
+  https://flairmi.com/blog/posts/10-persona-builder.html
 
 ## Free browser tools
 
@@ -93,6 +97,10 @@ https://flairmi.com/blog/. Recent posts:
 - **Margin Guard** (live, free) — a promotion break-even calculator for
   pricing and campaign decisions.
   https://flairmi.com/products/margin-guard.html
+- **Persona Builder** (live, free): a UX research and marketing persona
+  card builder with three detail levels and PNG/PDF export, data stays in
+  the browser's local storage.
+  https://flairmi.com/products/persona-builder.html
 
 ## Software previews
 

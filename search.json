@@ -399,74 +399,116 @@
     "text": "Beta Access\n\n  Request QuartoPad Beta Access\n  Use this form if you want to test QuartoPad for technical writing, teaching, or research workflows.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Role\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to request beta access or ask a workflow question."
   },
   {
-    "objectID": "products/margin-guard.html",
-    "href": "products/margin-guard.html",
-    "title": "Margin Guard",
+    "objectID": "products/persona-builder.html",
+    "href": "products/persona-builder.html",
+    "title": "Persona Builder",
     "section": "",
-    "text": "Live\n    \n    \n      Margin Guard is a browser-based promotion break-even calculator. It\n      compares baseline contribution against promo-period contribution and helps\n      you judge whether expected demand uplift is enough to justify the margin\n      given away.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Break-even logicRequired units, lift, and net contribution delta\n      Scenario planningEvaluate pricing and fixed-cost assumptions quickly\n      Browser-basedNo install required for teaching or practical use"
+    "text": "Live\n    \n    \n      Persona Builder is a single-page tool for building UX research and\n      marketing personas. Fill in a form at one of three detail levels and\n      watch a formatted persona card update as you type, then export it as\n      a PNG or a PDF.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Three detail levelsBasic, standard, and full, without losing earlier fields\n      Local storageSaved personas stay on your device, nothing is uploaded\n      PNG and PDF exportOne click to a file sized for a slide or a report"
   },
   {
-    "objectID": "products/margin-guard.html#what-it-helps-you-answer",
-    "href": "products/margin-guard.html#what-it-helps-you-answer",
-    "title": "Margin Guard",
-    "section": "What It Helps You Answer",
-    "text": "What It Helps You Answer\nMargin Guard is built for pricing and campaign questions such as:\n\nHow much contribution margin is the promotion giving away per unit?\nHow many units are required to break even after discounting?\nDoes the forecast uplift clear the threshold or leave a thin buffer?\nWhat is the net contribution delta versus the baseline scenario?"
+    "objectID": "products/persona-builder.html#why-it-exists",
+    "href": "products/persona-builder.html#why-it-exists",
+    "title": "Persona Builder",
+    "section": "Why It Exists",
+    "text": "Why It Exists\nPersona work tends to sit between two extremes. A blank slide gives a team no structure and an inconsistent result each time someone writes one. A heavyweight product forces a sign-up or a subscription before a single field is entered. Persona Builder sits between those two, a plain form on one side of the screen and a live preview of the finished card on the other, with no account required."
   },
   {
-    "objectID": "products/margin-guard.html#access-and-limitations",
-    "href": "products/margin-guard.html#access-and-limitations",
-    "title": "Margin Guard",
+    "objectID": "products/persona-builder.html#what-it-helps-you-produce",
+    "href": "products/persona-builder.html#what-it-helps-you-produce",
+    "title": "Persona Builder",
+    "section": "What It Helps You Produce",
+    "text": "What It Helps You Produce\n\nA one-line basic card for a quick workshop exercise or an early sketch.\nA standard card with age, location, occupation, goals, pain points, typical behaviour, and preferred channels.\nA full research profile that adds a representative quote, motivations, personality traits, technology comfort, key metrics tracked, and a notes field for sources and caveats.\nA finished card exported as a PNG or a PDF, sized for a slide deck or a research report."
+  },
+  {
+    "objectID": "products/persona-builder.html#access-and-limitations",
+    "href": "products/persona-builder.html#access-and-limitations",
+    "title": "Persona Builder",
     "section": "Access And Limitations",
-    "text": "Access And Limitations\nMargin Guard is free to use in the browser and does not require an account. The current version is built for quick single-scenario promotion checks rather than multi-period pricing models or collaborative workflow management."
+    "text": "Access And Limitations\nPersona Builder is free to use in the browser and does not require an account. Saved personas are written to the browser’s local storage on the device in use, so they do not sync between devices and are not backed up anywhere outside that browser."
   },
   {
-    "objectID": "products/margin-guard.html#use-the-live-tool",
-    "href": "products/margin-guard.html#use-the-live-tool",
-    "title": "Margin Guard",
+    "objectID": "products/persona-builder.html#use-the-live-tool",
+    "href": "products/persona-builder.html#use-the-live-tool",
+    "title": "Persona Builder",
     "section": "Use The Live Tool",
-    "text": "Use The Live Tool\nThe current version is live in the browser and can be used immediately:\n\n  Open Margin Guard"
+    "text": "Use The Live Tool\nThe current version is live in the browser and can be used immediately:\n\n  Open Persona Builder"
   },
   {
-    "objectID": "products/ethos.html",
-    "href": "products/ethos.html",
-    "title": "Ethos",
+    "objectID": "products/index.html",
+    "href": "products/index.html",
+    "title": "Products",
     "section": "",
-    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics chainQuality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning\n      HTML reportDownloadable analysis report rendered from the surveyframe analytics chain"
+    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
   },
   {
-    "objectID": "products/ethos.html#what-it-covers",
-    "href": "products/ethos.html#what-it-covers",
-    "title": "Ethos",
-    "section": "What It Covers",
-    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns."
+    "objectID": "products/index.html#product-portfolio",
+    "href": "products/index.html#product-portfolio",
+    "title": "Products",
+    "section": "",
+    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
   },
   {
-    "objectID": "products/ethos.html#what-is-available-now",
-    "href": "products/ethos.html#what-is-available-now",
-    "title": "Ethos",
-    "section": "What Is Available Now",
-    "text": "What Is Available Now\nThe alpha includes a working end-to-end analytics chain powered by surveyframe v0.3, now live on CRAN (install.packages(\"surveyframe\")): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle."
+    "objectID": "products/index.html#live-now",
+    "href": "products/index.html#live-now",
+    "title": "Products",
+    "section": "Live Now",
+    "text": "Live Now\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    Free and open source, MIT licence.\n    install.packages(\"surveyframe\")\n    View on CRAN GitHub\n  \n  \n    Live\n    Price Memory\n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product\n  \n  \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.\n    Open live product"
   },
   {
-    "objectID": "products/ethos.html#current-stage",
-    "href": "products/ethos.html#current-stage",
-    "title": "Ethos",
-    "section": "Current Stage",
-    "text": "Current Stage\nThe product is in alpha. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully."
+    "objectID": "products/index.html#coming-soon",
+    "href": "products/index.html#coming-soon",
+    "title": "Products",
+    "section": "Coming Soon",
+    "text": "Coming Soon\n\n  \n    Private Beta\n    QuartoPad\n    A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.\n    Preview coming-soon page\n  \n  \n    Testing\n    TrimWrite\n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Preview coming-soon page\n  \n  \n    Alpha\n    Ethos\n    A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n    Preview coming-soon page"
   },
   {
-    "objectID": "products/ethos.html#access-and-limitations",
-    "href": "products/ethos.html#access-and-limitations",
-    "title": "Ethos",
-    "section": "Access And Limitations",
-    "text": "Access And Limitations\nEthos is not available as a public hosted service. Pilot and update requests are handled directly through the form below while the self-hosted alpha is stabilised. Pricing and deployment scope are not published yet because pilot use is being discussed case by case with institutions and research teams."
+    "objectID": "products/index.html#at-a-glance",
+    "href": "products/index.html#at-a-glance",
+    "title": "Products",
+    "section": "At A Glance",
+    "text": "At A Glance\n\n  \n    R package\n    surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.\n  \n  \n    Live now\n    Price Memory, Margin Guard, and Persona Builder are public-facing tools with live browser access and dedicated product pages.\n  \n  \n    Writer workflow\n    QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n  \n  \n    Academic stack\n    Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
   },
   {
-    "objectID": "products/ethos.html#pilot-interest",
-    "href": "products/ethos.html#pilot-interest",
-    "title": "Ethos",
-    "section": "Pilot Interest",
-    "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Organisation\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to register pilot interest or request an update."
+    "objectID": "blog/posts/10-persona-builder.html",
+    "href": "blog/posts/10-persona-builder.html",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "",
+    "text": "TL;DR: Persona Builder is a free, single-page browser tool for building UX research and marketing personas. Fill in a form at one of three detail levels, basic, standard, or full, and watch a formatted persona card update as you type. Export the finished card as a PNG or a PDF. Nothing you type is sent anywhere, the form data and any saved personas stay in your own browser. Try it at mohammedalisharafuddin.github.io/persona-builder."
+  },
+  {
+    "objectID": "blog/posts/10-persona-builder.html#why-a-persona-builder",
+    "href": "blog/posts/10-persona-builder.html#why-a-persona-builder",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Why a persona builder",
+    "text": "Why a persona builder\nA persona is a short, structured description of a type of user or customer, built from research rather than guesswork, and used to keep a team’s decisions anchored to a real audience instead of an assumption. The idea is standard practice in UX research and marketing, but the tools for producing one tend to sit at two extremes. A blank slide gives you no structure and an inconsistent result each time. A heavyweight product forces sign-up, a subscription, or an account before you can write a single field.\nPersona Builder sits between those two. It is a form on one side of the screen and a live preview of the finished card on the other. There is no account, no subscription, and no server involved once the page has loaded."
+  },
+  {
+    "objectID": "blog/posts/10-persona-builder.html#three-levels-of-detail",
+    "href": "blog/posts/10-persona-builder.html#three-levels-of-detail",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Three levels of detail",
+    "text": "Three levels of detail\nNot every persona needs the same amount of information, so the tool offers three tiers:\n\nBasic: name, role, and a one-line summary. Enough for a quick workshop exercise or an early sketch.\nStandard: adds age, location, occupation, goals, pain points, typical behaviour, and preferred channels. This is the level most research and marketing teams settle on for day-to-day use.\nFull: adds a representative quote, motivations, personality traits, technology comfort, key metrics tracked, and a notes field for sources and caveats.\n\nSwitching levels does not discard what you have already written. Fields from a lower tier stay filled in if you move up to a fuller one, and moving back down simply hides the extra fields rather than clearing them."
+  },
+  {
+    "objectID": "blog/posts/10-persona-builder.html#avatars-without-a-photo-library",
+    "href": "blog/posts/10-persona-builder.html#avatars-without-a-photo-library",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Avatars without a photo library",
+    "text": "Avatars without a photo library\nEvery persona card needs a face, but real research personas are usually composites, not photographs of an actual person. Persona Builder gives you three ways to fill the avatar: upload your own photo, pick one of eight generated sample avatars, or fall back to plain initials. The sample avatars are drawn as inline SVG shapes at the point you click them, so there is no image library to load and no external request involved."
+  },
+  {
+    "objectID": "blog/posts/10-persona-builder.html#export-and-save",
+    "href": "blog/posts/10-persona-builder.html#export-and-save",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Export and save",
+    "text": "Export and save\nA finished card exports as a PNG or a PDF with one click, sized for dropping straight into a slide deck or a research report. Personas can also be saved inside the tool itself for later editing, a saved list appears under the form with each entry’s name and last-updated date, and any entry can be reloaded or deleted. Saved data lives in the browser’s local storage on the device you are using, so it does not follow you between devices and it does not pass through a server."
+  },
+  {
+    "objectID": "blog/posts/10-persona-builder.html#try-it",
+    "href": "blog/posts/10-persona-builder.html#try-it",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Try it",
+    "text": "Try it\nOpen Persona Builder and click “Load sample” to see a complete example, a marketing manager persona built across all three tiers, before building your own from a blank card."
   },
   {
     "objectID": "blog/posts/08-analysis-plan-before-data.html",
@@ -865,7 +907,7 @@
     "href": "index.html#workflow-products",
     "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Workflow Products",
-    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN. Price Memory and Margin Guard are live in the browser. QuartoPad, TrimWrite, and Ethos remain in preview as the broader workflow line takes shape.\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    install.packages(\"surveyframe\")\n    View on CRAN\n  \n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n  \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
+    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN. Price Memory, Margin Guard, and Persona Builder are live in the browser. QuartoPad, TrimWrite, and Ethos remain in preview as the broader workflow line takes shape.\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    install.packages(\"surveyframe\")\n    View on CRAN\n  \n  \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n  \n  \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas, with PNG and PDF export.\n    Open live product\n  \n  \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
   },
   {
     "objectID": "index.html#services",
@@ -1225,39 +1267,74 @@
     "text": "Adapt this to your own survey\nTo reuse this for a different single_choice question, change three things and leave the rest:\n\nThe id and label in sf_item()\nThe values and labels in sf_choices()\nThe variable in the plan’s roles, to match your new id\n\nEverything else, the codebook, the export, the plan structure, and run_analysis_plan(), works the same way regardless of what the question actually asks.\n\nGet surveyframe\ninstall.packages(\"surveyframe\")\n\nDocumentation: mohammedalisharafuddin.github.io/surveyframe\nSource: github.com/MohammedAliSharafuddin/surveyframe\nRelease notes: surveyframe 0.3.3 is on CRAN\nThe reasoning behind the plan-first design: why the analysis plan comes first"
   },
   {
-    "objectID": "products/index.html",
-    "href": "products/index.html",
-    "title": "Products",
+    "objectID": "products/ethos.html",
+    "href": "products/ethos.html",
+    "title": "Ethos",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory and Margin Guard are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics chainQuality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning\n      HTML reportDownloadable analysis report rendered from the surveyframe analytics chain"
   },
   {
-    "objectID": "products/index.html#product-portfolio",
-    "href": "products/index.html#product-portfolio",
-    "title": "Products",
+    "objectID": "products/ethos.html#what-it-covers",
+    "href": "products/ethos.html#what-it-covers",
+    "title": "Ethos",
+    "section": "What It Covers",
+    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns."
+  },
+  {
+    "objectID": "products/ethos.html#what-is-available-now",
+    "href": "products/ethos.html#what-is-available-now",
+    "title": "Ethos",
+    "section": "What Is Available Now",
+    "text": "What Is Available Now\nThe alpha includes a working end-to-end analytics chain powered by surveyframe v0.3, now live on CRAN (install.packages(\"surveyframe\")): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle."
+  },
+  {
+    "objectID": "products/ethos.html#current-stage",
+    "href": "products/ethos.html#current-stage",
+    "title": "Ethos",
+    "section": "Current Stage",
+    "text": "Current Stage\nThe product is in alpha. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully."
+  },
+  {
+    "objectID": "products/ethos.html#access-and-limitations",
+    "href": "products/ethos.html#access-and-limitations",
+    "title": "Ethos",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nEthos is not available as a public hosted service. Pilot and update requests are handled directly through the form below while the self-hosted alpha is stabilised. Pricing and deployment scope are not published yet because pilot use is being discussed case by case with institutions and research teams."
+  },
+  {
+    "objectID": "products/ethos.html#pilot-interest",
+    "href": "products/ethos.html#pilot-interest",
+    "title": "Ethos",
+    "section": "Pilot Interest",
+    "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      \n        Name\n        \n      \n      \n        Email\n        \n      \n      \n        Organisation\n        \n      \n      \n        Message\n        \n      \n    \n    \n      Send request\n      Use the form below to register pilot interest or request an update."
+  },
+  {
+    "objectID": "products/margin-guard.html",
+    "href": "products/margin-guard.html",
+    "title": "Margin Guard",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory and Margin Guard are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "Live\n    \n    \n      Margin Guard is a browser-based promotion break-even calculator. It\n      compares baseline contribution against promo-period contribution and helps\n      you judge whether expected demand uplift is enough to justify the margin\n      given away.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Break-even logicRequired units, lift, and net contribution delta\n      Scenario planningEvaluate pricing and fixed-cost assumptions quickly\n      Browser-basedNo install required for teaching or practical use"
   },
   {
-    "objectID": "products/index.html#live-now",
-    "href": "products/index.html#live-now",
-    "title": "Products",
-    "section": "Live Now",
-    "text": "Live Now\n\n  \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    Free and open source, MIT licence.\n    install.packages(\"surveyframe\")\n    View on CRAN GitHub\n  \n  \n    Live\n    Price Memory\n    A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n    Open live product\n  \n  \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n    Open live product"
+    "objectID": "products/margin-guard.html#what-it-helps-you-answer",
+    "href": "products/margin-guard.html#what-it-helps-you-answer",
+    "title": "Margin Guard",
+    "section": "What It Helps You Answer",
+    "text": "What It Helps You Answer\nMargin Guard is built for pricing and campaign questions such as:\n\nHow much contribution margin is the promotion giving away per unit?\nHow many units are required to break even after discounting?\nDoes the forecast uplift clear the threshold or leave a thin buffer?\nWhat is the net contribution delta versus the baseline scenario?"
   },
   {
-    "objectID": "products/index.html#coming-soon",
-    "href": "products/index.html#coming-soon",
-    "title": "Products",
-    "section": "Coming Soon",
-    "text": "Coming Soon\n\n  \n    Private Beta\n    QuartoPad\n    A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.\n    Preview coming-soon page\n  \n  \n    Testing\n    TrimWrite\n    A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n    Preview coming-soon page\n  \n  \n    Alpha\n    Ethos\n    A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n    Preview coming-soon page"
+    "objectID": "products/margin-guard.html#access-and-limitations",
+    "href": "products/margin-guard.html#access-and-limitations",
+    "title": "Margin Guard",
+    "section": "Access And Limitations",
+    "text": "Access And Limitations\nMargin Guard is free to use in the browser and does not require an account. The current version is built for quick single-scenario promotion checks rather than multi-period pricing models or collaborative workflow management."
   },
   {
-    "objectID": "products/index.html#at-a-glance",
-    "href": "products/index.html#at-a-glance",
-    "title": "Products",
-    "section": "At A Glance",
-    "text": "At A Glance\n\n  \n    R package\n    surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.\n  \n  \n    Live now\n    Price Memory and Margin Guard are public-facing tools with live browser access and dedicated product pages.\n  \n  \n    Writer workflow\n    QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n  \n  \n    Academic stack\n    Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
+    "objectID": "products/margin-guard.html#use-the-live-tool",
+    "href": "products/margin-guard.html#use-the-live-tool",
+    "title": "Margin Guard",
+    "section": "Use The Live Tool",
+    "text": "Use The Live Tool\nThe current version is live in the browser and can be used immediately:\n\n  Open Margin Guard"
   },
   {
     "objectID": "products/price-memory.html",
