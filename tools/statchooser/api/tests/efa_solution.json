@@ -1,0 +1,177 @@
+{
+  "test": "Exploratory factor analysis",
+  "surveyframe_id": "efa_solution",
+  "when": "Uncovers the latent factor structure of a set of items when the structure is not specified in advance.",
+  "example": "You have twenty attitude questions and do not yet know how they group. Exploratory factor analysis looks for a smaller set of hidden themes that explain the answers.",
+  "small_sample": "Factor analysis needs many cases per item, so it is fragile in small samples. Use parallel analysis to decide the number of factors, and treat a small-sample solution as exploratory only.",
+  "assumptions": [
+    "Items are continuous or treated as ordinal with an appropriate correlation matrix",
+    "Sampling adequacy is acceptable (KMO above .60) and Bartlett's test is significant",
+    "Sample size is adequate, commonly 5 to 10 cases per item"
+  ],
+  "alternative": "Confirmatory factor analysis, when theory specifies the structure in advance",
+  "r_code": "# efa_analysis.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\nlibrary(surveyframe)\n\n# Check readiness first (KMO, Bartlett), then extract the solution.\nefa_report(resp, instr)\nefa_solution(resp, instr)",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"efa_solution\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: The item pool to explore ----\nsec_b <- sf_item(\"sec_b\", \"Section B: The item pool to explore\", type = \"section_break\")\nscale_1_1 <- sf_item(\"scale_1_1\", \"[Item pool item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_2 <- sf_item(\"scale_1_2\", \"[Item pool item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_3 <- sf_item(\"scale_1_3\", \"[Item pool item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_4 <- sf_item(\"scale_1_4\", \"[Item pool item 4 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_5 <- sf_item(\"scale_1_5\", \"[Item pool item 5 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_6 <- sf_item(\"scale_1_6\", \"[Item pool item 6 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1 <- sf_scale(\"scale_1\", \"Item pool\", c(\"scale_1_1\", \"scale_1_2\", \"scale_1_3\", \"scale_1_4\", \"scale_1_5\", \"scale_1_6\"), method = \"mean\")\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, scale_1_1, scale_1_2, scale_1_3, scale_1_4, scale_1_5, scale_1_6, scale_1\n  )\n)\n\n# Check readiness, then extract (read responses first):\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\nefa_report(responses, instr)\nefa_solution(responses, instr)",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "The item pool to explore",
+        "intro": "",
+        "items": [
+          {
+            "label": "Item pool — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Item pool — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Item pool — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Item pool — item 4",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Item pool — item 5",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Item pool — item 6",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Factor, then Exploratory Factor Analysis",
+    "Move the items into the Variables box",
+    "Set extraction to parallel analysis and rotation to oblimin; inspect KMO and Bartlett under Assumption Checks"
+  ],
+  "apa_report_template": "An exploratory factor analysis with oblimin rotation supported a two-factor solution explaining value per cent of the variance. Sampling adequacy was acceptable, KMO = value, and Bartlett's test was significant, X2(df) = value, p = value.",
+  "references": [
+    "Fabrigar, L. R., Wegener, D. T., MacCallum, R. C., and Strahan, E. J. (1999). Evaluating the use of exploratory factor analysis in psychological research. Psychological Methods, 4(3), 272 to 299."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

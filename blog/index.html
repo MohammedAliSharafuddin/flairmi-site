@@ -41,10 +41,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-19d27813f1524be4f82ab4aac4671233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6e96d2d0e85a629b88ea69667b6a9433.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -248,7 +252,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../assets/css/flairmi-20260321.css">
 <meta property="og:title" content="Statistics Blog – Flair Marketing Intelligence">
 <meta property="og:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -263,7 +266,169 @@ window.Quarto = {
 <link rel="canonical" href="https://flairmi.com/blog/">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -271,6 +436,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo light-content">
+    <img src="../assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Flair Marketing Intelligence</span>
@@ -327,6 +494,14 @@ window.Quarto = {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../products/surveyframe.html">
+ <span class="dropdown-text">surveyframe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../products/statchooser.html">
+ <span class="dropdown-text">StatChooser</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
@@ -356,10 +531,67 @@ window.Quarto = {
     <a class="nav-link" href="../services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
-<span class="menu-text">Blog</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blog" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blog</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
+        <li>
+    <a class="dropdown-item" href="../blog/index.html">
+ <span class="dropdown-text">All posts</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Statistics Tutorials</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/01-margin-of-error.html">
+ <span class="dropdown-text">Confidence Interval for a Proportion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/02-two-proportion-test.html">
+ <span class="dropdown-text">Two-Proportion Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/03-t-test.html">
+ <span class="dropdown-text">t-Test: Average Order Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/04-welch-t.html">
+ <span class="dropdown-text">Welch vs Equal-Variance t-Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/05-simple-regression.html">
+ <span class="dropdown-text">Simple Linear Regression</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/06-logistic-basics.html">
+ <span class="dropdown-text">Logistic Regression Basics</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
+ <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/08-analysis-plan-before-data.html">
+ <span class="dropdown-text">Why the Analysis Plan Comes First</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/09-surveyframe-single-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Single Choice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/11-surveyframe-multiple-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Multiple Choice</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Tools &amp; Announcements</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/10-persona-builder.html">
+ <span class="dropdown-text">Persona Builder Announcement</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
@@ -367,6 +599,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -376,9 +609,10 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QSUyRkIlMjB0ZXN0aW5n">A/B testing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Y29udmVyc2lvbiUyMG9wdGltaXphdGlvbg==">conversion optimization <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZWNvbW1lcmNl">ecommerce <span class="quarto-category-count">(3)</span></div><div class="category" data-category="aG93LXRv">how-to <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bG9naXN0aWMlMjByZWdyZXNzaW9u">logistic regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFya2V0aW5n">marketing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFya2V0aW5nJTIwYW5hbHl0aWNz">marketing analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kJTIwY29tcGFyaXNvbg==">method comparison <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kb2xvZ3k=">methodology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UiUyMHBhY2thZ2Vz">R packages <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVncmVzc2lvbg==">regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVsZWFzZSUyMG5vdGVz">release notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2glMjBkZXNpZ24=">research design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmV2ZW51ZSUyMG9wdGltaXphdGlvbg==">revenue optimization <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3RhdGlzdGljcw==">statistics <span class="quarto-category-count">(6)</span></div><div class="category" data-category="c3VydmV5JTIwcmVzZWFyY2g=">survey research <span class="quarto-category-count">(3)</span></div><div class="category" data-category="c3VydmV5ZnJhbWU=">surveyframe <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dG9vbHM=">tools <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VVglMjByZXNlYXJjaA==">UX research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2ViJTIwYW5hbHl0aWNz">web analytics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="d2ViJTIwdG9vbHM=">web tools <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="QSUyRkIlMjB0ZXN0aW5n">A/B testing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Y29udmVyc2lvbiUyMG9wdGltaXphdGlvbg==">conversion optimization <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZWNvbW1lcmNl">ecommerce <span class="quarto-category-count">(3)</span></div><div class="category" data-category="aG93LXRv">how-to <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bG9naXN0aWMlMjByZWdyZXNzaW9u">logistic regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFya2V0aW5n">marketing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFya2V0aW5nJTIwYW5hbHl0aWNz">marketing analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kJTIwY29tcGFyaXNvbg==">method comparison <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kb2xvZ3k=">methodology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UiUyMHBhY2thZ2Vz">R packages <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cmVncmVzc2lvbg==">regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVsZWFzZSUyMG5vdGVz">release notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2glMjBkZXNpZ24=">research design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmV2ZW51ZSUyMG9wdGltaXphdGlvbg==">revenue optimization <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3RhdGlzdGljcw==">statistics <span class="quarto-category-count">(6)</span></div><div class="category" data-category="c3VydmV5JTIwcmVzZWFyY2g=">survey research <span class="quarto-category-count">(4)</span></div><div class="category" data-category="c3VydmV5ZnJhbWU=">surveyframe <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dG9vbHM=">tools <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VVglMjByZXNlYXJjaA==">UX research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2ViJTIwYW5hbHl0aWNz">web analytics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="d2ViJTIwdG9vbHM=">web tools <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -449,7 +683,35 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="dG9vbHMlMkNVWCUyMHJlc2VhcmNoJTJDbWFya2V0aW5nJTJDd2ViJTIwdG9vbHM=" data-listing-date-sort="1784401200000" data-listing-file-modified-sort="1784434076773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="520">
+<div class="quarto-post image-right" data-index="0" data-categories="c3VydmV5ZnJhbWUlMkNSJTIwcGFja2FnZXMlMkNzdXJ2ZXklMjByZXNlYXJjaCUyQ2hvdy10bw==" data-listing-date-sort="1784746800000" data-listing-file-modified-sort="1784792362880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1678">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/posts/11-surveyframe-multiple-choice.html" class="no-external">surveyframe Field Types: Multiple Choice</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3VydmV5ZnJhbWU='); return false;">surveyframe</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMHBhY2thZ2Vz'); return false;">R packages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3VydmV5JTIwcmVzZWFyY2g='); return false;">survey research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aG93LXRv'); return false;">how-to</div>
+
+</div>
+<div class="delink listing-description"><a href="../blog/posts/11-surveyframe-multiple-choice.html" class="no-external">
+<p>Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran’s Q test it produces. Copy-pasteable R throughout.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blog/posts/11-surveyframe-multiple-choice.html" class="no-external">
+<div class="listing-date">
+Jul 23, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="dG9vbHMlMkNVWCUyMHJlc2VhcmNoJTJDbWFya2V0aW5nJTJDd2ViJTIwdG9vbHM=" data-listing-date-sort="1784401200000" data-listing-file-modified-sort="1784795824350" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="520">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/10-persona-builder.html" class="no-external">Persona Builder: a free browser tool for personas</a>
@@ -477,7 +739,7 @@ Jul 19, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3VydmV5ZnJhbWUlMkNSJTIwcGFja2FnZXMlMkNzdXJ2ZXklMjByZXNlYXJjaCUyQ3JlbGVhc2UlMjBub3Rlcw==" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
+<div class="quarto-post image-right" data-index="2" data-categories="c3VydmV5ZnJhbWUlMkNSJTIwcGFja2FnZXMlMkNzdXJ2ZXklMjByZXNlYXJjaCUyQ3JlbGVhc2UlMjBub3Rlcw==" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1783884630787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/07-surveyframe-0-3-3-cran.html" class="no-external">surveyframe 0.3.3 is on CRAN</a>
@@ -505,7 +767,7 @@ Jul 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="c3VydmV5JTIwcmVzZWFyY2glMkNyZXNlYXJjaCUyMGRlc2lnbiUyQ21ldGhvZG9sb2d5JTJDc3VydmV5ZnJhbWU=" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="762">
+<div class="quarto-post image-right" data-index="3" data-categories="c3VydmV5JTIwcmVzZWFyY2glMkNyZXNlYXJjaCUyMGRlc2lnbiUyQ21ldGhvZG9sb2d5JTJDc3VydmV5ZnJhbWU=" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1783884637216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="762">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/08-analysis-plan-before-data.html" class="no-external">Why the analysis plan comes first</a>
@@ -533,7 +795,7 @@ Jul 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="c3VydmV5ZnJhbWUlMkNSJTIwcGFja2FnZXMlMkNzdXJ2ZXklMjByZXNlYXJjaCUyQ2hvdy10bw==" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1373">
+<div class="quarto-post image-right" data-index="4" data-categories="c3VydmV5ZnJhbWUlMkNSJTIwcGFja2FnZXMlMkNzdXJ2ZXklMjByZXNlYXJjaCUyQ2hvdy10bw==" data-listing-date-sort="1783796400000" data-listing-file-modified-sort="1783884646337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1373">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/09-surveyframe-single-choice.html" class="no-external">surveyframe Field Types: Single Choice</a>
@@ -561,7 +823,7 @@ Jul 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ21ldGhvZCUyMGNvbXBhcmlzb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2539">
+<div class="quarto-post image-right" data-index="5" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ21ldGhvZCUyMGNvbXBhcmlzb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2539">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/04-welch-t.html" class="no-external">Welch t-Test vs Equal-Variance t-Test: Comparing Methods</a>
@@ -589,7 +851,7 @@ Oct 25, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="c3RhdGlzdGljcyUyQ3JlZ3Jlc3Npb24lMkNtYXJrZXRpbmclMjBhbmFseXRpY3MlMkNyZXZlbnVlJTIwb3B0aW1pemF0aW9u" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2335">
+<div class="quarto-post image-right" data-index="6" data-categories="c3RhdGlzdGljcyUyQ3JlZ3Jlc3Npb24lMkNtYXJrZXRpbmclMjBhbmFseXRpY3MlMkNyZXZlbnVlJTIwb3B0aW1pemF0aW9u" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2335">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/05-simple-regression.html" class="no-external">Simple Linear Regression: Modeling Revenue from Ad Spend</a>
@@ -617,7 +879,7 @@ Oct 25, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="c3RhdGlzdGljcyUyQ2xvZ2lzdGljJTIwcmVncmVzc2lvbiUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2647">
+<div class="quarto-post image-right" data-index="7" data-categories="c3RhdGlzdGljcyUyQ2xvZ2lzdGljJTIwcmVncmVzc2lvbiUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1761332400000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2647">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/06-logistic-basics.html" class="no-external">Logistic Regression Basics: Predicting Purchase from Session Count</a>
@@ -645,7 +907,7 @@ Oct 25, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ3JldmVudWUlMjBvcHRpbWl6YXRpb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1719169200000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2143">
+<div class="quarto-post image-right" data-index="8" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ3JldmVudWUlMjBvcHRpbWl6YXRpb24lMkNlY29tbWVyY2U=" data-listing-date-sort="1719169200000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2143">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/03-t-test.html" class="no-external">Welch t-Test: Comparing Average Order Value Between Groups</a>
@@ -673,7 +935,7 @@ Jun 24, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkN3ZWIlMjBhbmFseXRpY3M=" data-listing-date-sort="1718564400000" data-listing-file-modified-sort="1784432588975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1931">
+<div class="quarto-post image-right" data-index="9" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkN3ZWIlMjBhbmFseXRpY3M=" data-listing-date-sort="1718564400000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1931">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/02-two-proportion-test.html" class="no-external">Two-Proportion Test: Comparing Conversion Rates Between Variants</a>
@@ -701,7 +963,7 @@ Jun 17, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkN3ZWIlMjBhbmFseXRpY3M=" data-listing-date-sort="1717959600000" data-listing-file-modified-sort="1784432588974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1567">
+<div class="quarto-post image-right" data-index="10" data-categories="c3RhdGlzdGljcyUyQ0ElMkZCJTIwdGVzdGluZyUyQ2NvbnZlcnNpb24lMjBvcHRpbWl6YXRpb24lMkN3ZWIlMjBhbmFseXRpY3M=" data-listing-date-sort="1717959600000" data-listing-file-modified-sort="1782892452099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1567">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/01-margin-of-error.html" class="no-external">Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate</a>
@@ -734,6 +996,19 @@ Jun 10, 2024
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

@@ -1,0 +1,165 @@
+{
+  "test": "McDonald's omega",
+  "surveyframe_id": "reliability_omega",
+  "when": "Estimates internal consistency from a factor model, allowing item loadings to differ, the recommended default.",
+  "example": "The same five satisfaction questions vary in how strongly each reflects the idea. McDonald's omega estimates the scale's consistency without assuming every question counts equally.",
+  "small_sample": "Omega is the safer estimate for short scales, but it needs enough cases for a stable factor model. Report its confidence interval and read it alongside alpha.",
+  "assumptions": [
+    "Items measure a single construct",
+    "A congeneric factor model fits the items",
+    "Sample size supports stable loading estimates"
+  ],
+  "alternative": "Cronbach's alpha, when tau-equivalence is defensible or required for comparison with prior studies",
+  "r_code": "# reliability_omega.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\nlibrary(surveyframe)\n\n# instr holds your items grouped into scales with sf_scale().\n# resp is the response data loaded with read_responses().\nreliability_report(resp, instr, omega = TRUE)",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"reliability_omega\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: The scale to assess ----\nsec_b <- sf_item(\"sec_b\", \"Section B: The scale to assess\", type = \"section_break\")\nscale_1_1 <- sf_item(\"scale_1_1\", \"[Construct item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_2 <- sf_item(\"scale_1_2\", \"[Construct item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_3 <- sf_item(\"scale_1_3\", \"[Construct item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_4 <- sf_item(\"scale_1_4\", \"[Construct item 4 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1_5 <- sf_item(\"scale_1_5\", \"[Construct item 5 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"scale_1\")\nscale_1 <- sf_scale(\"scale_1\", \"Construct\", c(\"scale_1_1\", \"scale_1_2\", \"scale_1_3\", \"scale_1_4\", \"scale_1_5\"), method = \"mean\")\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, scale_1_1, scale_1_2, scale_1_3, scale_1_4, scale_1_5, scale_1\n  )\n)\n\n# Internal consistency (read responses first):\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\nreliability_report(responses, instr, omega = TRUE)",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "The scale to assess",
+        "intro": "",
+        "items": [
+          {
+            "label": "Construct — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Construct — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Construct — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Construct — item 4",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Construct — item 5",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Reliability, then Unidimensional Reliability",
+    "Move the scale items into the Variables box",
+    "Under Scale Statistics, tick McDonald's omega"
+  ],
+  "apa_report_template": "The scale showed good internal consistency, McDonald's omega = value, 95 per cent CI [value, value].",
+  "references": [
+    "McDonald, R. P. (1999). Test theory: A unified treatment. Lawrence Erlbaum."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

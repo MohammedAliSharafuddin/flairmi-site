@@ -1,0 +1,125 @@
+{
+  "test": "Fisher's exact test",
+  "surveyframe_id": "fisher_exact",
+  "when": "Tests association in a 2 by 2 table when samples are small and chi-square expected counts cannot be trusted.",
+  "example": "A pilot of 18 customers is split into those who saw a new advert and those who did not, and you record whether each one bought. With so few people the chi-square table cannot be trusted, so Fisher's exact test checks the advert and purchase link directly.",
+  "small_sample": "This is already the small-sample choice for a 2 by 2 table. Report the odds ratio with a confidence interval, and treat a non-significant result from few cases as inconclusive rather than as evidence of no effect.",
+  "assumptions": [
+    "Observations are independent",
+    "Both variables have exactly two categories",
+    "Row and column totals are treated as fixed"
+  ],
+  "alternative": "Chi-square test, when all expected counts reach 5",
+  "r_code": "# analysis_plan_fisher_exact.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# Add this entry to your instrument's analysis_plan list.\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Are the two binary variables related in this small sample?\",\n  family            = \"association\",\n  method            = \"fisher_exact\",\n  roles             = list(\n    row        = \"var_a\",\n    column     = \"var_b\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# instr     <- sf_instrument(\"My study\", components = list(...),\n#                            analysis_plan = list(plan_entry))\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"fisher_exact\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\ncat_set <- sf_choices(\"cat_set\", 1:3, c(\"Category 1\", \"Category 2\", \"Category 3\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Categorical variables ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Categorical variables\", type = \"section_break\")\nvar_a <- sf_item(\"var_a\", \"[first categorical variable - replace]\", type = \"single_choice\", choice_set = \"cat_set\")\nvar_b <- sf_item(\"var_b\", \"[second categorical variable - replace]\", type = \"single_choice\", choice_set = \"cat_set\")\n\n# ---- Analysis plan (ids match the items and scales above) ----\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Are the two binary variables related in this small sample?\",\n  family            = \"association\",\n  method            = \"fisher_exact\",\n  roles             = list(\n    row        = \"var_a\",\n    column     = \"var_b\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, var_a, var_b\n  ),\n  analysis_plan = list(plan_entry)\n)\n\n# Run it end to end once you have responses:\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Categorical variables",
+        "intro": "",
+        "items": [
+          {
+            "label": "first categorical variable",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Category 1",
+              "Category 2",
+              "Category 3"
+            ]
+          },
+          {
+            "label": "second categorical variable",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Category 1",
+              "Category 2",
+              "Category 3"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Frequencies, then Contingency Tables",
+    "Move the two binary variables to Rows and Columns",
+    "Under Statistics, tick Fisher's exact test"
+  ],
+  "apa_report_template": "Fisher's exact test indicated a significant association between variable A and variable B, p = value, odds ratio = value.",
+  "references": [
+    "Fisher, R. A. (1935). The design of experiments. Oliver and Boyd."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

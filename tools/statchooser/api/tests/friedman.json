@@ -1,0 +1,141 @@
+{
+  "test": "Friedman test",
+  "surveyframe_id": "friedman",
+  "when": "Compares three or more repeated measurements on the same cases using ranks.",
+  "example": "Eight judges each rank the same three coffees from best to worst. The Friedman test asks whether the coffees received systematically different ratings.",
+  "small_sample": "A solid small-sample choice for repeated rankings. Follow a significant result with Conover's post hoc test, and report Kendall's W as the effect size.",
+  "assumptions": [
+    "The outcome is at least ordinal",
+    "All measurements come from the same cases",
+    "Cases are independent of one another"
+  ],
+  "alternative": "Repeated measures ANOVA, when normality holds at each time point",
+  "r_code": "# analysis_plan_friedman.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# Add this entry to your instrument's analysis_plan list.\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Did the outcome change across the repeated measurements?\",\n  family            = \"group_comparison\",\n  method            = \"friedman\",\n  roles             = list(\n    measures   = c(\"time1_var\", \"time2_var\", \"time3_var\")\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# instr     <- sf_instrument(\"My study\", components = list(...),\n#                            analysis_plan = list(plan_entry))\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"friedman\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Repeated measurements ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Repeated measurements\", type = \"section_break\")\ntime1_var <- sf_item(\"time1_var\", \"[outcome at time 1 - replace]\", type = \"likert\", choice_set = \"agree5\")\ntime2_var <- sf_item(\"time2_var\", \"[outcome at time 2 - replace]\", type = \"likert\", choice_set = \"agree5\")\ntime3_var <- sf_item(\"time3_var\", \"[outcome at time 3 - replace]\", type = \"likert\", choice_set = \"agree5\")\n\n# ---- Analysis plan (ids match the items and scales above) ----\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Did the outcome change across the repeated measurements?\",\n  family            = \"group_comparison\",\n  method            = \"friedman\",\n  roles             = list(\n    measures   = c(\"time1_var\", \"time2_var\", \"time3_var\")\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, time1_var, time2_var, time3_var\n  ),\n  analysis_plan = list(plan_entry)\n)\n\n# Run it end to end once you have responses:\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Repeated measurements",
+        "intro": "",
+        "items": [
+          {
+            "label": "outcome at time 1",
+            "type": "likert",
+            "placeholder": true,
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          {
+            "label": "outcome at time 2",
+            "type": "likert",
+            "placeholder": true,
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          },
+          {
+            "label": "outcome at time 3",
+            "type": "likert",
+            "placeholder": true,
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "ANOVA, then Repeated Measures ANOVA",
+    "Define the within-subject factor and assign the measurement columns",
+    "Under Nonparametrics, move the factor across to run the Friedman test, and tick Conover's post hoc tests"
+  ],
+  "apa_report_template": "A Friedman test indicated a significant difference across the three measurements, X2(df) = value, p = value, Kendall's W = value.",
+  "references": [
+    "Friedman, M. (1937). The use of ranks to avoid the assumption of normality implicit in the analysis of variance. Journal of the American Statistical Association, 32(200), 675 to 701."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

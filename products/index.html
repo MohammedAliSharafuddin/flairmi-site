@@ -39,10 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-19d27813f1524be4f82ab4aac4671233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6e96d2d0e85a629b88ea69667b6a9433.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -188,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="../assets/js/contact-form.js"></script>
 
 
-<link rel="stylesheet" href="../assets/css/flairmi-20260321.css">
 <meta property="og:title" content="Products – Flair Marketing Intelligence">
 <meta property="og:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -203,7 +206,169 @@ ul.task-list li input[type="checkbox"] {
 <link rel="canonical" href="https://flairmi.com/products/">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -211,6 +376,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo light-content">
+    <img src="../assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Flair Marketing Intelligence</span>
@@ -267,6 +434,14 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../products/surveyframe.html">
+ <span class="dropdown-text">surveyframe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../products/statchooser.html">
+ <span class="dropdown-text">StatChooser</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
@@ -296,10 +471,67 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
-<span class="menu-text">Blog</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blog" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blog</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
+        <li>
+    <a class="dropdown-item" href="../blog/index.html">
+ <span class="dropdown-text">All posts</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Statistics Tutorials</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/01-margin-of-error.html">
+ <span class="dropdown-text">Confidence Interval for a Proportion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/02-two-proportion-test.html">
+ <span class="dropdown-text">Two-Proportion Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/03-t-test.html">
+ <span class="dropdown-text">t-Test: Average Order Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/04-welch-t.html">
+ <span class="dropdown-text">Welch vs Equal-Variance t-Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/05-simple-regression.html">
+ <span class="dropdown-text">Simple Linear Regression</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/06-logistic-basics.html">
+ <span class="dropdown-text">Logistic Regression Basics</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
+ <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/08-analysis-plan-before-data.html">
+ <span class="dropdown-text">Why the Analysis Plan Comes First</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/09-surveyframe-single-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Single Choice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog/posts/11-surveyframe-multiple-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Multiple Choice</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Tools &amp; Announcements</li>
+        <li>
+    <a class="dropdown-item" href="../blog/posts/10-persona-builder.html">
+ <span class="dropdown-text">Persona Builder Announcement</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
@@ -307,6 +539,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -318,6 +551,7 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -364,76 +598,134 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="live-now" class="level2">
 <h2 class="anchored" data-anchor-id="live-now">Live Now</h2>
-<div class="flair-grid">
-  <div class="flair-card">
-    <span class="flair-status live">Live on CRAN</span>
-    <h3 class="anchored">surveyframe</h3>
-    <p>An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.</p>
-    <p>Free and open source, MIT licence.</p>
-    <p><code>install.packages("surveyframe")</code></p>
-    <p><a class="flair-button cta-strong" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a> <a href="https://github.com/MohammedAliSharafuddin/surveyframe" target="_blank" rel="noopener">GitHub</a></p>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">surveyframe</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-live">Live on CRAN</span></div>
+        <p>An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.</p>
+        <p>Free and open source, MIT licence.</p>
+        <p><code>install.packages("surveyframe")</code></p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a> <a href="https://github.com/MohammedAliSharafuddin/surveyframe" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
-    <h3 class="anchored">Price Memory</h3>
-    <p>A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.</p>
-    <p><a class="flair-button cta-strong" href="./price-memory.html">Open live product</a></p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Price Memory</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-live">Live</span></div>
+        <p>A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-primary" href="./price-memory.html">Open live product</a>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
-    <h3 class="anchored">Margin Guard</h3>
-    <p>A promotion break-even calculator for pricing, discounting, and campaign planning decisions.</p>
-    <p><a class="flair-button cta-strong" href="./margin-guard.html">Open live product</a></p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Margin Guard</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-live">Live</span></div>
+        <p>A promotion break-even calculator for pricing, discounting, and campaign planning decisions.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-primary" href="./margin-guard.html">Open live product</a>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
-    <h3 class="anchored">Persona Builder</h3>
-    <p>A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.</p>
-    <p><a class="flair-button cta-strong" href="./persona-builder.html">Open live product</a></p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Persona Builder</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-live">Live</span></div>
+        <p>A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-primary" href="./persona-builder.html">Open live product</a>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 <section id="coming-soon" class="level2">
 <h2 class="anchored" data-anchor-id="coming-soon">Coming Soon</h2>
-<div class="flair-grid">
-  <div class="flair-card">
-    <span class="flair-status beta">Private Beta</span>
-    <h3 class="anchored">QuartoPad</h3>
-    <p>A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.</p>
-    <p><a href="./quartopad.html">Preview coming-soon page</a></p>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">QuartoPad</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-early">Private Beta</span></div>
+        <p>A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-outline-dark" href="./quartopad.html">Preview coming-soon page</a>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status private">Testing</span>
-    <h3 class="anchored">TrimWrite</h3>
-    <p>A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.</p>
-    <p><a href="./trimwrite.html">Preview coming-soon page</a></p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">TrimWrite</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-review">Testing</span></div>
+        <p>A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-outline-dark" href="./trimwrite.html">Preview coming-soon page</a>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status private">Alpha</span>
-    <h3 class="anchored">Ethos</h3>
-    <p>A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.</p>
-    <p><a href="./ethos.html">Preview coming-soon page</a></p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Ethos</div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge badge-early">Alpha</span></div>
+        <p>A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.</p>
+      </div>
+      <div class="card-body card-cta">
+        <a class="btn btn-outline-dark" href="./ethos.html">Preview coming-soon page</a>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 <section id="at-a-glance" class="level2">
 <h2 class="anchored" data-anchor-id="at-a-glance">At A Glance</h2>
-<div class="feature-grid">
-  <div class="feature-panel">
-    <h3 class="anchored">R package</h3>
-    <p>surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.</p>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">R package</div>
+      <div class="card-body">
+        <p>surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Live now</h3>
-    <p>Price Memory, Margin Guard, and Persona Builder are public-facing tools with live browser access and dedicated product pages.</p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Live now</div>
+      <div class="card-body">
+        <p>Price Memory, Margin Guard, and Persona Builder are public-facing tools with live browser access and dedicated product pages.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Writer workflow</h3>
-    <p>QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.</p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Writer workflow</div>
+      <div class="card-body">
+        <p>QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Academic stack</h3>
-    <p>Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment.</p>
+  <div class="g-col-12 g-col-md-6 d-flex">
+    <div class="card h-100">
+      <div class="card-header">Academic stack</div>
+      <div class="card-body">
+        <p>Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -443,6 +735,19 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

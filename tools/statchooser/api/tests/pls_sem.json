@@ -1,0 +1,185 @@
+{
+  "test": "PLS-SEM",
+  "surveyframe_id": "pls_sem",
+  "when": "Estimates a composite-based structural model, suited to prediction-oriented research, complex models, and smaller samples.",
+  "example": "With a small sample and a focus on prediction, PLS-SEM estimates how brand image drives satisfaction and then loyalty, building each idea up from its survey items.",
+  "small_sample": "PLS-SEM tolerates smaller samples, but the 10-times rule alone is not enough. Justify the size with a power analysis, and report bootstrap confidence intervals for every path.",
+  "assumptions": [
+    "Constructs are modelled as composites of their indicators",
+    "Sample size meets the minimum from a power analysis or the inverse square root method, not the 10-times rule alone",
+    "Measurement quality is assessed before the structural model: loadings, composite reliability, AVE, and HTMT",
+    "Paths are tested with bootstrapped confidence intervals, commonly 5000 resamples"
+  ],
+  "alternative": "Covariance-based SEM, for strict theory testing with larger samples",
+  "r_code": "# pls_sem_analysis.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\nlibrary(surveyframe)\n\npls_model <- sf_model(\n  \"pls_1\", \"Structural model\", type = \"pls_sem\",\n  constructs = list(\n    sf_construct(\"IV\", \"Predictor construct\", c(\"iv_1\", \"iv_2\", \"iv_3\"),\n                 mode = \"composite\"),\n    sf_construct(\"DV\", \"Outcome construct\", c(\"dv_1\", \"dv_2\", \"dv_3\"),\n                 mode = \"composite\")\n  ),\n  paths   = list(sf_path(\"IV\", \"DV\")),\n  options = list(bootstrap = 5000)\n)\nsyntax <- seminr_syntax(pls_model)\ncat(syntax)\n\n# Fit the generated syntax with seminr:\n# install.packages(\"seminr\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"pls_sem\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Predictor construct (IV) ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Predictor construct (IV)\", type = \"section_break\")\niv_1 <- sf_item(\"iv_1\", \"[Predictor item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv_2 <- sf_item(\"iv_2\", \"[Predictor item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv_3 <- sf_item(\"iv_3\", \"[Predictor item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv <- sf_scale(\"iv\", \"Predictor\", c(\"iv_1\", \"iv_2\", \"iv_3\"), method = \"mean\")\n\n# ---- Section C: Outcome construct (DV) ----\nsec_c <- sf_item(\"sec_c\", \"Section C: Outcome construct (DV)\", type = \"section_break\")\ndv_1 <- sf_item(\"dv_1\", \"[Outcome item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv_2 <- sf_item(\"dv_2\", \"[Outcome item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv_3 <- sf_item(\"dv_3\", \"[Outcome item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv <- sf_scale(\"dv\", \"Outcome\", c(\"dv_1\", \"dv_2\", \"dv_3\"), method = \"mean\")\n\n# ---- Structural model ----\npls_model <- sf_model(\n  \"model_1\", \"Structural model\", type = \"pls_sem\",\n  constructs = list(\n    sf_construct(\"IV\", \"Predictor construct\", c(\"iv_1\", \"iv_2\", \"iv_3\"), mode = \"composite\"),\n    sf_construct(\"DV\", \"Outcome construct\", c(\"dv_1\", \"dv_2\", \"dv_3\"), mode = \"composite\")\n  ),\n  paths   = list(sf_path(\"IV\", \"DV\")),\n  options = list(bootstrap = 5000)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, iv_1, iv_2, iv_3, iv, sec_c, dv_1, dv_2, dv_3, dv\n  ),\n  models        = list(pls_model)\n)\n\n# Generate the model syntax:\nsyntax <- seminr_syntax(pls_model)\ncat(syntax)",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Predictor construct (IV)",
+        "intro": "",
+        "items": [
+          {
+            "label": "Predictor — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Predictor — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Predictor — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      },
+      {
+        "letter": "C",
+        "title": "Outcome construct (DV)",
+        "intro": "",
+        "items": [
+          {
+            "label": "Outcome — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Outcome — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Outcome — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "JASP does not estimate PLS-SEM; use R with seminr, or SmartPLS",
+    "Assess the measurement model first: loadings above .708, composite reliability above .70, AVE above .50, HTMT below .85",
+    "Then assess the structural model: path coefficients with 5000 bootstrap resamples, R2, and effect sizes"
+  ],
+  "apa_report_template": "The PLS-SEM measurement model met all quality thresholds: loadings exceeded .708, composite reliability exceeded .70, and AVE exceeded .50. The structural path from the predictor construct to the outcome construct was significant, beta = value, t = value, p = value, based on 5000 bootstrap resamples.",
+  "references": [
+    "Hair, J. F., Hult, G. T. M., Ringle, C. M., and Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). Sage."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

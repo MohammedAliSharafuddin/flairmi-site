@@ -1,0 +1,123 @@
+{
+  "test": "McNemar's test",
+  "surveyframe_id": "mcnemar",
+  "when": "Tests change in a binary outcome when the same cases are measured twice, for example before and after an intervention.",
+  "example": "Forty people say whether they support a policy, watch a short film, then say again. McNemar's test asks whether the film shifted opinion, by comparing how many switched from no to yes against how many switched from yes to no.",
+  "small_sample": "When the number of people who changed their mind is small, use the exact binomial form of McNemar's test rather than the chi-square approximation.",
+  "assumptions": [
+    "The outcome is binary at both time points",
+    "The two measurements come from the same cases",
+    "Pairs of observations are independent of other pairs"
+  ],
+  "alternative": "Cochran's Q, when the binary outcome is measured at three or more time points",
+  "r_code": "# analysis_plan_mcnemar.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# Add this entry to your instrument's analysis_plan list.\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Did the binary outcome change between the two measurements?\",\n  family            = \"group_comparison\",\n  method            = \"mcnemar\",\n  roles             = list(\n    before     = \"time1_var\",\n    after      = \"time2_var\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# instr     <- sf_instrument(\"My study\", components = list(...),\n#                            analysis_plan = list(plan_entry))\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"mcnemar\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nyn <- sf_choices(\"yn\", c(\"yes\", \"no\"), c(\"Yes\", \"No\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Repeated binary measure ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Repeated binary measure\", type = \"section_break\")\ntime1_var <- sf_item(\"time1_var\", \"[binary outcome at time 1 - replace]\", type = \"single_choice\", choice_set = \"yn\")\ntime2_var <- sf_item(\"time2_var\", \"[binary outcome at time 2 - replace]\", type = \"single_choice\", choice_set = \"yn\")\n\n# ---- Analysis plan (ids match the items and scales above) ----\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Did the binary outcome change between the two measurements?\",\n  family            = \"group_comparison\",\n  method            = \"mcnemar\",\n  roles             = list(\n    before     = \"time1_var\",\n    after      = \"time2_var\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, time1_var, time2_var\n  ),\n  analysis_plan = list(plan_entry)\n)\n\n# Run it end to end once you have responses:\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Repeated binary measure",
+        "intro": "",
+        "items": [
+          {
+            "label": "binary outcome at time 1",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "binary outcome at time 2",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Yes",
+              "No"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Frequencies, then Contingency Tables",
+    "Move the before variable to Rows and the after variable to Columns",
+    "Under Statistics, tick McNemar's test"
+  ],
+  "apa_report_template": "McNemar's test indicated a significant change in the proportion of cases between the first measurement (value per cent) and the second (value per cent), X2(1, N = value) = value, p = value.",
+  "references": [
+    "McNemar, Q. (1947). Note on the sampling error of the difference between correlated proportions or percentages. Psychometrika, 12(2), 153 to 157."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

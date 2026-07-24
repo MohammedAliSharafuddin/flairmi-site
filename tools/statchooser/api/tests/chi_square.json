@@ -1,0 +1,125 @@
+{
+  "test": "Chi-square test",
+  "surveyframe_id": "chi_square",
+  "when": "Tests whether two categorical variables are related, or whether group membership and a categorical outcome are independent.",
+  "example": "Imagine asking 100 students whether they prefer tea or coffee and noting each student's year of study. A chi-square test asks whether drink preference depends on year of study, or whether the two are unrelated.",
+  "small_sample": "When the table is small or sparse the chi-square approximation breaks down. Switch to Fisher's exact test or simulate the p-value, and report Cramer's V with a confidence interval rather than the p-value alone.",
+  "assumptions": [
+    "Observations are independent of one another",
+    "Each case appears in exactly one cell of the table",
+    "At least 80 per cent of expected cell counts are 5 or more, and none is below 1"
+  ],
+  "alternative": "Fisher's exact test, when expected counts are small in a 2 by 2 table",
+  "r_code": "# analysis_plan_chi_square.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# Add this entry to your instrument's analysis_plan list.\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Are the two categorical variables related?\",\n  family            = \"association\",\n  method            = \"chi_square\",\n  roles             = list(\n    row        = \"var_a\",\n    column     = \"var_b\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# instr     <- sf_instrument(\"My study\", components = list(...),\n#                            analysis_plan = list(plan_entry))\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"chi_square\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\ncat_set <- sf_choices(\"cat_set\", 1:3, c(\"Category 1\", \"Category 2\", \"Category 3\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Categorical variables ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Categorical variables\", type = \"section_break\")\nvar_a <- sf_item(\"var_a\", \"[first categorical variable - replace]\", type = \"single_choice\", choice_set = \"cat_set\")\nvar_b <- sf_item(\"var_b\", \"[second categorical variable - replace]\", type = \"single_choice\", choice_set = \"cat_set\")\n\n# ---- Analysis plan (ids match the items and scales above) ----\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Are the two categorical variables related?\",\n  family            = \"association\",\n  method            = \"chi_square\",\n  roles             = list(\n    row        = \"var_a\",\n    column     = \"var_b\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, var_a, var_b\n  ),\n  analysis_plan = list(plan_entry)\n)\n\n# Run it end to end once you have responses:\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Categorical variables",
+        "intro": "",
+        "items": [
+          {
+            "label": "first categorical variable",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Category 1",
+              "Category 2",
+              "Category 3"
+            ]
+          },
+          {
+            "label": "second categorical variable",
+            "type": "single_choice",
+            "placeholder": true,
+            "choices": [
+              "Category 1",
+              "Category 2",
+              "Category 3"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Frequencies, then Contingency Tables",
+    "Move one variable to Rows and the other to Columns",
+    "Under Statistics, tick Chi-square and Phi and Cramer's V"
+  ],
+  "apa_report_template": "A chi-square test of independence indicated a significant association between variable A and variable B, X2(df, N = value) = value, p = value, Cramer's V = value.",
+  "references": [
+    "Pearson, K. (1900). On the criterion that a given system of deviations... Philosophical Magazine, 50(302), 157 to 175."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

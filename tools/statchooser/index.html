@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- index.html : StatChooser -->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StatChooser: which statistical test should I use? Free test chooser with R and survey design</title>
+  <meta name="description" content="A free statistical test chooser. Answer four short questions about your design and data and get the right test, with assumptions, runnable R code, JASP steps, an APA reporting sentence, a small-sample note, and a ready survey questionnaire. Companion to the surveyframe R package." />
+  <meta name="keywords" content="statistical test chooser, which statistical test should I use, choose a statistical test, statistics decision tree, survey research, small sample statistics, surveyframe, R statistics, JASP, APA reporting, questionnaire design" />
+  <link rel="canonical" href="https://flairmi.com/tools/statchooser/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="StatChooser" />
+  <meta property="og:title" content="StatChooser: which statistical test should I use?" />
+  <meta property="og:description" content="A free statistical test chooser. Four questions to the right test, with assumptions, R code, JASP steps, an APA sentence, and a ready survey. Companion to the surveyframe R package." />
+  <meta property="og:url" content="https://flairmi.com/tools/statchooser/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="StatChooser: which statistical test should I use?" />
+  <meta name="twitter:description" content="A free statistical test chooser, companion to the surveyframe R package. Four questions to the right test, with R code, JASP steps, an APA sentence, and a ready survey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "StatChooser",
+    "alternateName": ["Statistical test chooser", "Which statistical test should I use"],
+    "applicationCategory": "Statistical software",
+    "operatingSystem": "Any (web browser)",
+    "url": "https://flairmi.com/tools/statchooser/",
+    "description": "An interactive statistical test advisor. Companion to the surveyframe R package: every recommendation carries a method ID that runs directly in run_analysis_plan().",
+    "keywords": "statistical test chooser, which statistical test, survey research, small sample statistics, surveyframe, R, JASP, APA reporting",
+    "featureList": [
+      "Recommends a statistical test from your design and data",
+      "Assumptions, runnable surveyframe R code, JASP steps, and an APA reporting sentence",
+      "Small-sample tools and techniques for each test",
+      "A ready-to-adopt survey questionnaire skeleton with an HTML preview"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Mohammed Ali Sharafuddin",
+      "identifier": "https://orcid.org/0000-0001-5247-2964"
+    },
+    "isRelatedTo": {
+      "@type": "SoftwareApplication",
+      "name": "surveyframe",
+      "url": "https://CRAN.R-project.org/package=surveyframe"
+    },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which statistical test should I use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on your goal, your design, and your data. StatChooser asks four short questions (goal, design, data, measurement) and recommends a specific test, such as an independent samples t test, a chi-square test, a one-way ANOVA, a Pearson or Spearman correlation, a regression, a mediation or moderation analysis, reliability, EFA or CFA, or SEM, along with its assumptions and runnable R code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is StatChooser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StatChooser is a free, open-source statistical test chooser for survey and small-sample research. It is the companion front end to the surveyframe R package: every recommendation carries a method ID that runs directly in surveyframe's run_analysis_plan(), and each result includes a small-sample note and a ready-to-adopt survey questionnaire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is StatChooser free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. StatChooser is free and open source under the MIT licence, with no ads and no paid tiers."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <h1>StatChooser <span class="sigma">&Sigma;</span></h1>
+      <p class="tagline">The statistical test chooser for survey and small-sample research</p>
+      <p class="strap">Which statistical test should I use? Four short questions, then a recommendation with assumptions, runnable R code, JASP steps, and an APA reporting sentence. Companion to the <a href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">surveyframe</a> R package.</p>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <section class="faq" aria-label="Frequently asked questions">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Which statistical test should I use?</summary>
+        <p>It depends on your goal, your design, and your data. StatChooser asks four short questions (goal, design, data, measurement) and recommends a specific test, such as an independent samples t test, a chi-square test, a one-way ANOVA, a Pearson or Spearman correlation, a regression, a mediation or moderation analysis, reliability, EFA or CFA, or SEM, along with its assumptions and runnable R code.</p>
+      </details>
+      <details>
+        <summary>What is StatChooser?</summary>
+        <p>StatChooser is a free, open-source statistical test chooser for survey and small-sample research. It is the companion front end to the <a href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">surveyframe</a> R package: every recommendation carries a method ID that runs directly in surveyframe's <span class="mono">run_analysis_plan()</span>, and each result includes a small-sample note and a ready-to-adopt survey questionnaire.</p>
+      </details>
+      <details>
+        <summary>Is StatChooser free?</summary>
+        <p>Yes. StatChooser is free and open source under the MIT licence, with no ads and no paid tiers.</p>
+      </details>
+    </section>
+
+    <footer class="site">
+      <p>Open source under the MIT licence. Decision data: <a href="data/decisions.json">decisions.json</a> &middot; Machine endpoints: <a href="llms.txt">llms.txt</a> &middot; <a href="https://github.com/MohammedAliSharafuddin/surveyframe" target="_blank" rel="noopener">surveyframe on GitHub</a></p>
+      <p>StatChooser supports method choice. It does not replace methodological judgement or supervision. Verify every assumption on your own data before reporting.</p>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

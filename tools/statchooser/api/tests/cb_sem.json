@@ -1,0 +1,185 @@
+{
+  "test": "Covariance-based SEM",
+  "surveyframe_id": "cb_sem",
+  "when": "Tests a full structural model among latent variables in the covariance-based tradition, suited to theory testing with larger samples.",
+  "example": "A theory says service quality raises trust, which in turn raises loyalty. Covariance-based SEM tests this whole chain of relationships among the underlying ideas at once.",
+  "small_sample": "Covariance-based SEM is demanding on sample size. With a small sample prefer PLS-SEM, or fit a simpler path model on observed scale scores.",
+  "assumptions": [
+    "The structural and measurement model is specified by theory in advance",
+    "Multivariate normality, or a robust estimator such as MLR",
+    "Sample size supports stable estimation, commonly 200 or more",
+    "The model is identified"
+  ],
+  "alternative": "PLS-SEM, when the focus is prediction, constructs are composites, or the sample is small",
+  "r_code": "# cb_sem_analysis.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\nlibrary(surveyframe)\n\nmodel <- sf_model(\n  \"model_1\", \"Structural model\", type = \"cb_sem\",\n  constructs = list(\n    sf_construct(\"IV\", \"Predictor construct\", c(\"iv_1\", \"iv_2\", \"iv_3\")),\n    sf_construct(\"DV\", \"Outcome construct\", c(\"dv_1\", \"dv_2\", \"dv_3\"))\n  ),\n  paths = list(sf_path(\"IV\", \"DV\"))\n)\ninstr  <- add_model(instr, model)\nsyntax <- sem_lavaan_syntax(model, instr)\ncat(syntax)\n\n# Fit with lavaan:\n# fit <- lavaan::sem(syntax, data = scored)\n# lavaan::summary(fit, fit.measures = TRUE, standardized = TRUE)",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"cb_sem\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: Predictor construct (IV) ----\nsec_b <- sf_item(\"sec_b\", \"Section B: Predictor construct (IV)\", type = \"section_break\")\niv_1 <- sf_item(\"iv_1\", \"[Predictor item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv_2 <- sf_item(\"iv_2\", \"[Predictor item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv_3 <- sf_item(\"iv_3\", \"[Predictor item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"iv\")\niv <- sf_scale(\"iv\", \"Predictor\", c(\"iv_1\", \"iv_2\", \"iv_3\"), method = \"mean\")\n\n# ---- Section C: Outcome construct (DV) ----\nsec_c <- sf_item(\"sec_c\", \"Section C: Outcome construct (DV)\", type = \"section_break\")\ndv_1 <- sf_item(\"dv_1\", \"[Outcome item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv_2 <- sf_item(\"dv_2\", \"[Outcome item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv_3 <- sf_item(\"dv_3\", \"[Outcome item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"dv\")\ndv <- sf_scale(\"dv\", \"Outcome\", c(\"dv_1\", \"dv_2\", \"dv_3\"), method = \"mean\")\n\n# ---- Structural model ----\nsem_model <- sf_model(\n  \"model_1\", \"Structural model\", type = \"cb_sem\",\n  constructs = list(\n    sf_construct(\"IV\", \"Predictor construct\", c(\"iv_1\", \"iv_2\", \"iv_3\")),\n    sf_construct(\"DV\", \"Outcome construct\", c(\"dv_1\", \"dv_2\", \"dv_3\"))\n  ),\n  paths = list(sf_path(\"IV\", \"DV\"))\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, iv_1, iv_2, iv_3, iv, sec_c, dv_1, dv_2, dv_3, dv\n  ),\n  models        = list(sem_model)\n)\n\n# Generate the model syntax:\nsyntax <- sem_lavaan_syntax(sem_model, instr)\ncat(syntax)",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "Predictor construct (IV)",
+        "intro": "",
+        "items": [
+          {
+            "label": "Predictor — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Predictor — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Predictor — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      },
+      {
+        "letter": "C",
+        "title": "Outcome construct (DV)",
+        "intro": "",
+        "items": [
+          {
+            "label": "Outcome — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Outcome — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Outcome — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "SEM, then Structural Equation Modeling",
+    "Paste or write the lavaan syntax generated by surveyframe",
+    "Report fit indices and standardised path coefficients"
+  ],
+  "apa_report_template": "The structural model showed acceptable fit, X2(df) = value, CFI = value, RMSEA = value, SRMR = value. The path from the predictor construct to the outcome construct was significant, beta = value, p = value.",
+  "references": [
+    "Kline, R. B. (2016). Principles and practice of structural equation modeling (4th ed.). Guilford Press."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}

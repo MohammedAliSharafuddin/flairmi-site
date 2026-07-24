@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" width="620" height="200" role="img" aria-label="FlairMI logo">
+  <!-- crescent mark -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="62" fill="#111111"/>
+  <circle cx="77" cy="100" r="58" fill="#ffffff"/>
+
+  <!-- two-tone wordmark: FLAIR reversed on black, MI plain on white -->
+  <g transform="translate(210,52)">
+    <rect x="0" y="0" width="240" height="96" fill="#111111"/>
+    <rect x="240" y="0" width="120" height="96" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+    <text x="120" y="68" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" letter-spacing="2" fill="#ffffff" text-anchor="middle">FLAIR</text>
+    <text x="300" y="68" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" letter-spacing="2" fill="#111111" text-anchor="middle">MI</text>
+  </g>
+</svg>

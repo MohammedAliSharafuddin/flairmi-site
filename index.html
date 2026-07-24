@@ -40,10 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-19d27813f1524be4f82ab4aac4671233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6e96d2d0e85a629b88ea69667b6a9433.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4f0f6dd805068469949740cdabd73b10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -189,7 +193,6 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="./assets/js/contact-form.js"></script>
 
 
-<link rel="stylesheet" href="assets/css/flairmi-20260321.css">
 <meta property="og:title" content="Textbooks, Decision Templates, and Workflow Tools – Flair Marketing Intelligence">
 <meta property="og:description" content="Open textbooks, free Excel templates, and analytics tools for teaching, research, and practice. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -204,7 +207,169 @@ ul.task-list li input[type="checkbox"] {
 <link rel="canonical" href="https://flairmi.com/">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -212,6 +377,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo light-content">
+    <img src="./assets/images/flairmi-mark-white.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Flair Marketing Intelligence</span>
@@ -268,6 +435,14 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./products/surveyframe.html">
+ <span class="dropdown-text">surveyframe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./products/statchooser.html">
+ <span class="dropdown-text">StatChooser</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
@@ -297,10 +472,67 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
-<span class="menu-text">Blog</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blog" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blog</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
+        <li>
+    <a class="dropdown-item" href="./blog/index.html">
+ <span class="dropdown-text">All posts</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Statistics Tutorials</li>
+        <li>
+    <a class="dropdown-item" href="./blog/posts/01-margin-of-error.html">
+ <span class="dropdown-text">Confidence Interval for a Proportion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/02-two-proportion-test.html">
+ <span class="dropdown-text">Two-Proportion Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/03-t-test.html">
+ <span class="dropdown-text">t-Test: Average Order Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/04-welch-t.html">
+ <span class="dropdown-text">Welch vs Equal-Variance t-Test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/05-simple-regression.html">
+ <span class="dropdown-text">Simple Linear Regression</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/06-logistic-basics.html">
+ <span class="dropdown-text">Logistic Regression Basics</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="./blog/posts/07-surveyframe-0-3-3-cran.html">
+ <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/08-analysis-plan-before-data.html">
+ <span class="dropdown-text">Why the Analysis Plan Comes First</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/09-surveyframe-single-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Single Choice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog/posts/11-surveyframe-multiple-choice.html">
+ <span class="dropdown-text">surveyframe Field Types: Multiple Choice</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Tools &amp; Announcements</li>
+        <li>
+    <a class="dropdown-item" href="./blog/posts/10-persona-builder.html">
+ <span class="dropdown-text">Persona Builder Announcement</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
@@ -308,6 +540,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -319,6 +552,7 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -371,183 +605,259 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<div class="flair-hero">
-  <div class="flair-kicker">FlairMI</div>
-  <h1>Business analytics, marketing analytics, and small-sample methods for teaching, research, and practical decision-making.</h1>
-  <p class="page-lead">
+<div class="p-4 p-md-5 mb-4 rounded-3 bg-primary text-white">
+  <div class="text-uppercase small fw-bold mb-2 opacity-75">FlairMI</div>
+  <h1 class="text-white">Business analytics, marketing analytics, and small-sample methods for teaching, research, and practical decision-making.</h1>
+  <p class="lead" style="max-width: 60ch;">
     FlairMI brings together textbooks, downloadable decision templates,
     browser-based tools, and focused support for teams and learners who need
     clearer reporting, better method choices, and cleaner workflows.
   </p>
-  <div class="flair-actions">
-    <a class="flair-button" href="./textbooks/index.html">Browse textbooks</a>
-    <a class="flair-button secondary" href="./templates/index.html">Explore templates</a>
-    <a class="flair-button secondary" href="./products/index.html">View products</a>
-    <a class="flair-button secondary" href="./services/index.html">View services</a>
+  <div class="d-flex flex-wrap gap-2 mt-3">
+    <a class="btn btn-light" href="./textbooks/index.html">Browse textbooks</a>
+    <a class="btn btn-outline-light" href="./templates/index.html">Explore templates</a>
+    <a class="btn btn-outline-light" href="./products/index.html">View products</a>
+    <a class="btn btn-outline-light" href="./services/index.html">View services</a>
   </div>
 </div>
 <section id="portfolio-lines" class="level2">
 <h2 class="anchored" data-anchor-id="portfolio-lines">Portfolio Lines</h2>
-<div class="feature-grid">
-  <div class="feature-panel">
-    <h3 class="anchored">Business Analytics</h3>
-    <p>Dashboards, KPI reporting, forecasting, profitability review, pipeline visibility, and decision-tool packs for teams that need cleaner management insight.</p>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5 anchored">Business Analytics</h3>
+        <p class="mb-0">Dashboards, KPI reporting, forecasting, profitability review, pipeline visibility, and decision-tool packs for teams that need cleaner management insight.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Marketing Analytics</h3>
-    <p>ROI, CAC, CLV, funnel performance, segmentation, pricing, and campaign review materials built for practical decision support.</p>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5 anchored">Marketing Analytics</h3>
+        <p class="mb-0">ROI, CAC, CLV, funnel performance, segmentation, pricing, and campaign review materials built for practical decision support.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Small Sample Lab</h3>
-    <p>A distinct small-sample methods portfolio built around exact tests, resampling, nonparametrics, careful interpretation, and realistic applied research settings.</p>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5 anchored">Small Sample Lab</h3>
+        <p class="mb-0">A distinct small-sample methods portfolio built around exact tests, resampling, nonparametrics, careful interpretation, and realistic applied research settings.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
-    <h3 class="anchored">Workflow Products</h3>
-    <p>Quarto, reproducible reporting, voice-cleanup, and privacy-first workflow products that turn analysis and writing into a cleaner operating system.</p>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5 anchored">Workflow Products</h3>
+        <p class="mb-0">Quarto, reproducible reporting, voice-cleanup, and privacy-first workflow products that turn analysis and writing into a cleaner operating system.</p>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 <section id="textbooks" class="level2">
 <h2 class="anchored" data-anchor-id="textbooks">Textbooks</h2>
 <p>Four textbook lines anchor the publishing and teaching side of FlairMI. <code>Data-Driven Management: Statistics for Managers</code> is live and <code>Quantitative Analysis with Small Samples</code> (Small Sample Lab) is published. <code>AI-Powered Marketing Analytics</code> and <code>Applied Survey Research and Data Analysis</code> are in proofreading and companion-resource development.</p>
-<div class="flair-grid">
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Live</span>
     <h3 class="anchored">Data-Driven Management: Statistics for Managers</h3>
     <p>A multi-output teaching line with a textbook, lecture decks, companion site, examples, and instructor resources.</p>
-    <p><a class="flair-button cta-strong" href="./textbooks/ddmm.html">Open live textbook</a></p>
+    <p><a class="btn btn-primary" href="./textbooks/ddmm.html">Open live textbook</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status beta">Proofreading</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-review">Proofreading</span>
     <h3 class="anchored">AI-Powered Marketing Analytics</h3>
     <p>An applied methods line for managers and analysts working with modern marketing data and AI-assisted analytical workflows.</p>
     <p><a href="./textbooks/marai.html">Open textbook page</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status beta">Proofreading</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-review">Proofreading</span>
     <h3 class="anchored">Applied Survey Research and Data Analysis</h3>
     <p>A survey-research line that moves from measurement design to reproducible analysis and reporting in R.</p>
     <p><a href="./textbooks/asrda.html">Open textbook page</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Published — v0.1.0</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Published</span> <span class="text-muted small">v0.1.0</span>
     <h3 class="anchored">Quantitative Analysis with Small Samples</h3>
     <p>A published open textbook on exact tests, resampling, nonparametric methods, penalised and Bayesian regression, and five worked R projects. Free under CC BY 4.0.</p>
-    <p><a class="flair-button cta-strong" href="https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/" target="_blank" rel="noopener">Read the book</a> &nbsp; <a href="./textbooks/smallsamplelab.html">Book details</a></p>
+    <p><a class="btn btn-primary" href="https://mohammedalisharafuddin.github.io/quantitative-analysis-with-small-samples/" target="_blank" rel="noopener">Read the book</a> &nbsp; <a href="./textbooks/smallsamplelab.html">Book details</a></p>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 <section id="decision-toolkit-and-dashboards" class="level2">
 <h2 class="anchored" data-anchor-id="decision-toolkit-and-dashboards">Decision Toolkit And Dashboards</h2>
 <p>The template layer spans both <code>business analytics</code> and <code>marketing analytics</code>. The free workbook library remains public, and the surrounding FlairMI site is being shaped around clearer decision-support use cases, companion guidance, and workshop delivery.</p>
-<div class="template-gallery">
-  <div class="flair-card">
+<div class="grid">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Campaign ROI Tracker</h3>
     <p>Compare spend, revenue, ROI, CAC, and conversion performance across channels.</p>
     <p><a href="./templates/campaign-roi-tracker.html">Open template page</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Sales Pipeline Tracker</h3>
     <p>Monitor deal stages, weighted revenue, and representative-level pipeline performance.</p>
     <p><a href="./templates/sales-pipeline-tracker.html">Open template page</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Break-Even Analysis</h3>
     <p>Model contribution margin, break-even thresholds, and profit sensitivity.</p>
     <p><a href="./templates/break-even-analysis.html">Open template page</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Revenue Forecast Model</h3>
     <p>Build a rolling forecast with scenarios and actual-versus-plan tracking.</p>
     <p><a href="./templates/revenue-forecast-model.html">Open template page</a></p>
+      </div>
+    </div>
   </div>
 </div>
-<div class="card-link-row">
-  <a class="flair-button secondary-dark" href="./templates/index.html">Browse all decision templates</a>
+<div class="d-flex flex-wrap gap-2 mt-3">
+  <a class="btn btn-outline-primary" href="./templates/index.html">Browse all decision templates</a>
 </div>
 </section>
 <section id="workflow-products" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-products">Workflow Products</h2>
 <p>FlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. <code>surveyframe</code> is live on CRAN. <code>Price Memory</code>, <code>Margin Guard</code>, and <code>Persona Builder</code> are live in the browser. <code>QuartoPad</code>, <code>TrimWrite</code>, and <code>Ethos</code> remain in preview as the broader workflow line takes shape.</p>
-<div class="flair-grid">
-  <div class="flair-card">
-    <span class="flair-status live">Live on CRAN</span>
+<div class="grid">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Live on CRAN</span>
     <h3 class="anchored">surveyframe</h3>
     <p>An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.</p>
     <p><code>install.packages("surveyframe")</code></p>
-    <p><a class="flair-button cta-strong" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a></p>
+    <p><a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Live</span>
     <h3 class="anchored">Price Memory</h3>
     <p>A local grocery price tracker that builds a personal price history in the browser.</p>
-    <p><a class="flair-button cta-strong" href="./products/price-memory.html">Open live product</a></p>
+    <p><a class="btn btn-primary" href="./products/price-memory.html">Open live product</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Live</span>
     <h3 class="anchored">Margin Guard</h3>
     <p>A promotion break-even calculator for pricing and campaign decisions.</p>
-    <p><a class="flair-button cta-strong" href="./products/margin-guard.html">Open live product</a></p>
+    <p><a class="btn btn-primary" href="./products/margin-guard.html">Open live product</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status live">Live</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-live">Live</span>
     <h3 class="anchored">Persona Builder</h3>
     <p>A browser tool for building UX research and marketing personas, with PNG and PDF export.</p>
-    <p><a class="flair-button cta-strong" href="./products/persona-builder.html">Open live product</a></p>
+    <p><a class="btn btn-primary" href="./products/persona-builder.html">Open live product</a></p>
+      </div>
+    </div>
   </div>
-  <div class="flair-card">
-    <span class="flair-status beta">Private Beta</span>
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+    <span class="badge badge-early">Private Beta</span>
     <h3 class="anchored">QuartoPad, TrimWrite, and Ethos</h3>
     <p>Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.</p>
     <p><a href="./products/index.html">Browse workflow product pages</a></p>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 <section id="services" class="level2">
 <h2 class="anchored" data-anchor-id="services">Services</h2>
 <p>The services layer reflects the same four portfolio areas: <code>business analytics</code>, <code>marketing analytics</code>, <code>Small Sample Lab</code>, and <code>workflow onboarding</code>. Engagements are scoped around workshops, reviews, onboarding, and applied implementation support.</p>
-<div class="feature-grid">
-  <div class="feature-panel">
+<div class="grid">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Business Analytics Sprints</h3>
     <p>Support for dashboards, KPI review, forecasting, profitability, and reporting systems.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Marketing Analytics Sprints</h3>
     <p>Applied support for funnels, ROI, CAC, CLV, segmentation, pricing, and campaign review.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Small Sample Research Review</h3>
     <p>Careful review of method choice, analysis workflow, and reporting for small-n studies and pilot datasets.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-panel">
+  <div class="g-col-12 g-col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
     <h3 class="anchored">Workflow Onboarding</h3>
     <p>Hands-on support for Quarto, reproducible reports, and privacy-first writing and analytics workflows.</p>
+      </div>
+    </div>
   </div>
 </div>
-<div class="card-link-row">
-  <a class="flair-button secondary-dark" href="./services/index.html">View consulting and workshop services</a>
+<div class="d-flex flex-wrap gap-2 mt-3">
+  <a class="btn btn-outline-primary" href="./services/index.html">View consulting and workshop services</a>
 </div>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<div class="contact-panel">
+<div class="card"><div class="card-body">
   <h2 class="anchored">Contact FlairMI</h2>
-  <p class="contact-note">
+  <p class="text-muted small">
     Use this form for textbooks, templates, products, workshops, or consulting.
   </p>
   <form data-contact-form="" data-form-subject="FlairMI portfolio enquiry" data-status-id="home-contact-status">
-    <div class="contact-grid">
-      <div class="contact-field">
-        <label for="home-name">Name</label>
-        <input id="home-name" name="name" type="text" required="">
-      </div>
-      <div class="contact-field">
-        <label for="home-email">Email</label>
-        <input id="home-email" name="email" type="email" required="">
-      </div>
-      <div class="contact-field">
-        <label for="home-interest">Interest</label>
-        <select id="home-interest" name="interest">
+    <div class="grid">
+      <div class="g-col-12 g-col-md-6"><label for="home-name" class="form-label">Name</label><input id="home-name" class="form-control" name="name" type="text" required=""></div>
+      <div class="g-col-12 g-col-md-6"><label for="home-email" class="form-label">Email</label><input id="home-email" class="form-control" name="email" type="email" required=""></div>
+      <div class="g-col-12 g-col-md-6"><label for="home-interest" class="form-label">Interest</label><select id="home-interest" class="form-select" name="interest">
           <option value="Business analytics">Business analytics</option>
           <option value="Marketing analytics">Marketing analytics</option>
           <option value="Small Sample Lab">Small Sample Lab</option>
@@ -556,16 +866,14 @@ ul.task-list li input[type="checkbox"] {
           <option value="Services">Services</option>
         </select>
       </div>
-      <div class="contact-field">
-        <label for="home-message">Message</label>
-        <textarea id="home-message" name="message" placeholder="Tell me what you want to adopt, review, build, or improve."></textarea>
-      </div>
+      <div class="g-col-12 g-col-md-6"><label for="home-message" class="form-label">Message</label><textarea id="home-message" class="form-control" name="message" placeholder="Tell me what you want to adopt, review, build, or improve."></textarea></div>
     </div>
-    <div class="contact-actions">
-      <button class="contact-submit" type="submit">Send message</button>
-      <span class="contact-status" id="home-contact-status">Messages are sent through the contact form and reviewed directly.</span>
+    <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <span class="text-muted small" id="home-contact-status">Messages are sent through the contact form and reviewed directly.</span>
     </div>
   </form>
+</div>
 </div>
 
 
@@ -574,6 +882,19 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

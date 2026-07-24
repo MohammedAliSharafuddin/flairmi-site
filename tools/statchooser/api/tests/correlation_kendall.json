@@ -1,0 +1,177 @@
+{
+  "test": "Kendall's tau",
+  "surveyframe_id": "correlation_kendall",
+  "when": "Measures a monotonic relationship using concordant and discordant pairs, preferred for small samples and tied ranks.",
+  "example": "With only nine countries ranked on press freedom and on income, and several ties, Kendall's tau measures how consistently the two rankings agree.",
+  "small_sample": "Kendall's tau is the preferred coefficient for very small samples and many ties. Report its confidence interval rather than the p-value alone.",
+  "assumptions": [
+    "Both variables are at least ordinal",
+    "The relationship is monotonic",
+    "Pairs of observations are independent"
+  ],
+  "alternative": "Spearman's rho, for moderate to large samples with few ties",
+  "r_code": "# analysis_plan_correlation_kendall.R\n# StatChooser export. Runs with the surveyframe package (Sharafuddin, 2026).\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# Add this entry to your instrument's analysis_plan list.\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Is there a monotonic relationship between X and Y in this small sample?\",\n  family            = \"association\",\n  method            = \"correlation_kendall\",\n  roles             = list(\n    x          = \"x_var\",\n    y          = \"y_var\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# instr     <- sf_instrument(\"My study\", components = list(...),\n#                            analysis_plan = list(plan_entry))\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_skeleton": "# survey_skeleton.R\n# StatChooser sample survey skeleton (surveyframe method = \"correlation_kendall\").\n# Section A is a standard demographic block. Section B, and C/D/E where present,\n# carry the measures the analysis plan needs. Replace every [bracketed] stem\n# with your own validated items before fielding the survey.\n# install.packages(\"surveyframe\")\nlibrary(surveyframe)\n\n# ---- Choice sets (define once, reuse) ----\nagree5 <- sf_choices(\"agree5\", 1:5,\n  c(\"Strongly disagree\", \"Disagree\", \"Neutral\", \"Agree\", \"Strongly agree\"))\ngender_cs <- sf_choices(\"gender_cs\",\n  c(\"woman\", \"man\", \"nonbinary\", \"selfdescribe\", \"na\"),\n  c(\"Woman\", \"Man\", \"Non-binary\", \"Prefer to self-describe\", \"Prefer not to say\"))\nedu_cs <- sf_choices(\"edu_cs\", 1:5,\n  c(\"Secondary or below\", \"Diploma\", \"Bachelor degree\", \"Master degree\", \"Doctorate\"))\nrole_cs <- sf_choices(\"role_cs\", 1:4,\n  c(\"Entry or junior\", \"Mid-level\", \"Senior or manager\", \"Executive or owner\"))\nindustry_cs <- sf_choices(\"industry_cs\", 1:5,\n  c(\"Manufacturing\", \"Retail or trade\", \"Services\", \"Public sector\", \"Other\"))\n\n# ---- Section A: Respondent profile ----\nsec_a <- sf_item(\"sec_a\", \"Section A: Respondent profile\", type = \"section_break\",\n  section_intro = \"A few background questions about you.\")\nage <- sf_item(\"age\", \"Your age in years\", type = \"numeric\")\ngender <- sf_item(\"gender\", \"Your gender\", type = \"single_choice\", choice_set = \"gender_cs\")\neducation <- sf_item(\"education\", \"Highest level of education completed\", type = \"single_choice\", choice_set = \"edu_cs\")\njob_role <- sf_item(\"job_role\", \"Your role or seniority\", type = \"single_choice\", choice_set = \"role_cs\")\nexperience <- sf_item(\"experience\", \"Years of experience\", type = \"numeric\")\nindustry <- sf_item(\"industry\", \"Your industry or sector\", type = \"single_choice\", choice_set = \"industry_cs\")\n\n# ---- Section B: The two variables ----\nsec_b <- sf_item(\"sec_b\", \"Section B: The two variables\", type = \"section_break\")\nx_var_1 <- sf_item(\"x_var_1\", \"[Variable X item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"x_var\")\nx_var_2 <- sf_item(\"x_var_2\", \"[Variable X item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"x_var\")\nx_var_3 <- sf_item(\"x_var_3\", \"[Variable X item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"x_var\")\nx_var <- sf_scale(\"x_var\", \"Variable X\", c(\"x_var_1\", \"x_var_2\", \"x_var_3\"), method = \"mean\")\ny_var_1 <- sf_item(\"y_var_1\", \"[Variable Y item 1 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"y_var\")\ny_var_2 <- sf_item(\"y_var_2\", \"[Variable Y item 2 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"y_var\")\ny_var_3 <- sf_item(\"y_var_3\", \"[Variable Y item 3 - replace stem]\", type = \"likert\", choice_set = \"agree5\", scale_id = \"y_var\")\ny_var <- sf_scale(\"y_var\", \"Variable Y\", c(\"y_var_1\", \"y_var_2\", \"y_var_3\"), method = \"mean\")\n\n# ---- Analysis plan (ids match the items and scales above) ----\nplan_entry <- list(\n  id                = \"RQ1\",\n  research_question = \"Is there a monotonic relationship between X and Y in this small sample?\",\n  family            = \"association\",\n  method            = \"correlation_kendall\",\n  roles             = list(\n    x          = \"x_var\",\n    y          = \"y_var\"\n  ),\n  options           = list(alpha = 0.05)\n)\n\n# ---- Assemble the instrument ----\ninstr <- sf_instrument(\n  title         = \"[Your study title]\",\n  description   = \"[Population and purpose]\",\n  components    = list(\n    sec_a, age, gender, education, job_role, experience, industry, sec_b, x_var_1, x_var_2, x_var_3, x_var, y_var_1, y_var_2, y_var_3, y_var\n  ),\n  analysis_plan = list(plan_entry)\n)\n\n# Run it end to end once you have responses:\n# responses <- read_responses(\"my_data.csv\", instr, strict = FALSE)\n# scored    <- score_scales(responses, instr)\n# results   <- run_analysis_plan(scored, instr)\n# render_results(results, instr, output_file = \"results.html\")",
+  "survey_preview": {
+    "sections": [
+      {
+        "letter": "A",
+        "title": "Respondent profile",
+        "intro": "A few background questions about you.",
+        "items": [
+          {
+            "label": "Your age in years",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your gender",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "label": "Highest level of education completed",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Secondary or below",
+              "Diploma",
+              "Bachelor degree",
+              "Master degree",
+              "Doctorate"
+            ]
+          },
+          {
+            "label": "Your role or seniority",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Entry or junior",
+              "Mid-level",
+              "Senior or manager",
+              "Executive or owner"
+            ]
+          },
+          {
+            "label": "Years of experience",
+            "type": "numeric",
+            "placeholder": false
+          },
+          {
+            "label": "Your industry or sector",
+            "type": "single_choice",
+            "placeholder": false,
+            "choices": [
+              "Manufacturing",
+              "Retail or trade",
+              "Services",
+              "Public sector",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "The two variables",
+        "intro": "",
+        "items": [
+          {
+            "label": "Variable X — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Variable X — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Variable X — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Variable Y — item 1",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Variable Y — item 2",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          },
+          {
+            "label": "Variable Y — item 3",
+            "type": "likert",
+            "choices": [
+              "Strongly disagree",
+              "Disagree",
+              "Neutral",
+              "Agree",
+              "Strongly agree"
+            ],
+            "placeholder": true
+          }
+        ]
+      }
+    ]
+  },
+  "jasp": [
+    "Regression, then Correlation",
+    "Move both variables into the Variables box",
+    "Tick Kendall's tau-b"
+  ],
+  "apa_report_template": "A Kendall rank correlation indicated a significant positive relationship between X and Y, tau-b = value, p = value.",
+  "references": [
+    "Kendall, M. G. (1938). A new measure of rank correlation. Biometrika, 30(1/2), 81 to 93."
+  ],
+  "run_with": "Place the plan entry inside sf_instrument(analysis_plan = list(...)) and call run_analysis_plan(). See https://CRAN.R-project.org/package=surveyframe",
+  "citation": {
+    "tool": "Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software]. https://flairmi.com/tools/statchooser/",
+    "package_r": "citation(\"surveyframe\")",
+    "package_text": "Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe"
+  }
+}
