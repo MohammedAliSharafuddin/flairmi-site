@@ -930,7 +930,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </section>
 <section id="run-the-plan-against-responses" class="level2">
 <h2 class="anchored" data-anchor-id="run-the-plan-against-responses">Run the plan against responses</h2>
-<p>In your own project this is <code>read_responses()</code> reading a CSV or Google Sheet, with one logical column per checkbox option. Here it is 140 rows of synthetic data, generated once with a fixed seed so this page renders the same result every time.</p>
+<p>In your own project this is <code>read_responses()</code> reading a CSV or Google Sheet, with one logical column per checkbox option. Here it is 140 rows of synthetic data, generated once with a fixed seed so this page renders the same result every time. The exact file is downloadable as <a href="../../assets/data/blog/11-multiple-choice-responses.csv">11-multiple-choice-responses.csv</a>, if you would rather point <code>read_responses()</code> at a real file than regenerate it.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">140</span></span>
@@ -1756,7 +1756,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb8-256"><a href="#cb8-256" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-257"><a href="#cb8-257" aria-hidden="true" tabindex="-1"></a><span class="fu">## Run the plan against responses</span></span>
 <span id="cb8-258"><a href="#cb8-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a>In your own project this is <span class="in">`read_responses()`</span> reading a CSV or Google Sheet, with one logical column per checkbox option. Here it is 140 rows of synthetic data, generated once with a fixed seed so this page renders the same result every time.</span>
+<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a>In your own project this is <span class="in">`read_responses()`</span> reading a CSV or Google Sheet, with one logical column per checkbox option. Here it is 140 rows of synthetic data, generated once with a fixed seed so this page renders the same result every time. The exact file is downloadable as <span class="co">[</span><span class="ot">11-multiple-choice-responses.csv</span><span class="co">](/assets/data/blog/11-multiple-choice-responses.csv)</span>, if you would rather point <span class="in">`read_responses()`</span> at a real file than regenerate it.</span>
 <span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-263"><a href="#cb8-263" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb8-264"><a href="#cb8-264" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: responses</span></span>
