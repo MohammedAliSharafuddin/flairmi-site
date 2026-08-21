@@ -158,7 +158,7 @@
     "href": "toolkit/index.html#frequently-asked-questions",
     "title": "Marketing Toolkit Hub",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    Is the Marketing Toolkit Hub free?\n    Yes, every tool in the hub is free, with no account and no usage limit.\n  \n  \n    Do I need to sign up or install anything?\n    No. Every tool runs in your browser, client-side. Nothing is installed and nothing you enter is sent to a server.\n  \n  \n    Which tools are live right now?\n    STP Builder is the first tool built, covering segmentation, targeting, and positioning. Persona Builder, listed under FlairMI's Products section, is also live and complements it. The other 29 tools listed above are planned, built one category at a time.\n  \n  \n    Can I suggest a tool that is not on the list?\n    Yes, use the Request a Tool link below and say which framework you would use."
+    "text": "Frequently Asked Questions\n\n  \n    Is the Marketing Toolkit Hub free?\n    Yes, every tool in the hub is free, with no account and no usage limit.\n  \n  \n    Do I need to sign up or install anything?\n    No installation and no sign-up. Every tool runs in your browser and stays there.\n  \n  \n    Which tools are live right now?\n    STP Builder is the first tool built, covering segmentation, targeting, and positioning. Persona Builder, listed under FlairMI's Products section, is also live and complements it. The other 29 tools listed above are planned, built one category at a time.\n  \n  \n    Can I suggest a tool that is not on the list?\n    Yes, use the Request a Tool link below and say which framework you would use."
   },
   {
     "objectID": "toolkit/index.html#request-a-tool",
@@ -1467,35 +1467,7 @@
     "href": "products/persona-builder.html",
     "title": "Persona Builder",
     "section": "",
-    "text": "Live\n    \n    \n      Persona Builder is a single-page tool for building UX research and\n      marketing personas. Fill in a form at one of three detail levels and\n      watch a formatted persona card update as you type, then export it as\n      a PNG or a PDF.\n    \n    \n      Open live tool\n      Back to products\n    \n    \n      Three detail levelsBasic, standard, and full, without losing earlier fields\n      Local storageSaved personas stay on your device, nothing is uploaded\n      PNG and PDF exportOne click to a file sized for a slide or a report"
-  },
-  {
-    "objectID": "products/persona-builder.html#why-it-exists",
-    "href": "products/persona-builder.html#why-it-exists",
-    "title": "Persona Builder",
-    "section": "Why It Exists",
-    "text": "Why It Exists\nPersona work tends to sit between two extremes. A blank slide gives a team no structure and an inconsistent result each time someone writes one. A heavyweight product forces a sign-up or a subscription before a single field is entered. Persona Builder sits between those two, a plain form on one side of the screen and a live preview of the finished card on the other, with no account required."
-  },
-  {
-    "objectID": "products/persona-builder.html#what-it-helps-you-produce",
-    "href": "products/persona-builder.html#what-it-helps-you-produce",
-    "title": "Persona Builder",
-    "section": "What It Helps You Produce",
-    "text": "What It Helps You Produce\n\nA one-line basic card for a quick workshop exercise or an early sketch.\nA standard card with age, location, occupation, goals, pain points, typical behaviour, and preferred channels.\nA full research profile that adds a representative quote, motivations, personality traits, technology comfort, key metrics tracked, and a notes field for sources and caveats.\nA finished card exported as a PNG or a PDF, sized for a slide deck or a research report."
-  },
-  {
-    "objectID": "products/persona-builder.html#access-and-limitations",
-    "href": "products/persona-builder.html#access-and-limitations",
-    "title": "Persona Builder",
-    "section": "Access And Limitations",
-    "text": "Access And Limitations\nPersona Builder is free to use in the browser and does not require an account. Saved personas are written to the browser’s local storage on the device in use, so they do not sync between devices and are not backed up anywhere outside that browser."
-  },
-  {
-    "objectID": "products/persona-builder.html#use-the-live-tool",
-    "href": "products/persona-builder.html#use-the-live-tool",
-    "title": "Persona Builder",
-    "section": "Use The Live Tool",
-    "text": "Use The Live Tool\nThe current version is live in the browser and can be used immediately:\n\n  Open Persona Builder"
+    "text": "Live\n    Persona Builder\n    \n      Persona Builder is a single-page tool for building UX research and\n      marketing personas. Fill in a form at one of three detail levels and\n      watch a formatted persona card update as you type, then export it as\n      a PNG or a PDF.\n    \n    \n      Open live tool\n      Back to products\n    \n  \n  \n          \n  \n\nFull explanation and FAQ live on the tool page itself."
   },
   {
     "objectID": "products/quartopad.html",
@@ -1929,7 +1901,7 @@
     "href": "toolkit/stp-builder.html#frequently-asked-questions",
     "title": "STP Builder",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n\n  \n    What is the difference between segmentation, targeting, and positioning?\n    Segmentation divides a market into groups. Targeting picks which group to pursue. Positioning designs the claim that group will hear. They run in that order because each stage needs the one before it: you cannot target a segment that has not been defined, and you cannot position a claim to an audience that has not been chosen.\n  \n  \n    How many segments should I create?\n    Two to five. Fewer than two is not really a segmentation, and more than five usually means the groups are not distinct enough to act on separately. Three is a common starting point, matching the worked example above (freelancers, small agencies, enterprise IT teams).\n  \n  \n    Does STP Builder save or send my data anywhere?\n    No. Everything runs in your browser. Nothing you type is uploaded, stored on a server, or saved once you close the tab.\n  \n  \n    Is this for real campaign planning, or only for teaching?\n    Both. The framework and the positioning statement template are the same ones used in professional planning, drawn from the STP theory taught in Week 2 of The Evidence-Based Digital Marketer. Students use it to learn the method, marketers use it to draft a real statement before a campaign brief.\n  \n  \n    Why does a positioning statement need evidence?\n    Without evidence, a positioning statement is just a guess dressed up as a claim. Naming what supports it, a pilot result, a survey finding, a usage statistic, means the claim can be checked against real data and revised when the data disagrees, rather than repeated on faith."
+    "text": "Frequently Asked Questions\n\n\n  \n    What is the difference between segmentation, targeting, and positioning?\n    Segmentation divides a market into groups. Targeting picks which group to pursue. Positioning designs the claim that group will hear. Each stage builds on the one before it: segmentation supplies the group targeting selects from, and targeting names the audience positioning speaks to.\n  \n  \n    How many segments should I create?\n    Two to five. Below two, you still have one broad market. Above five, the groups usually blur together too much to act on separately. Three is a common starting point, matching the worked example above (freelancers, small agencies, enterprise IT teams).\n  \n  \n    Does STP Builder save or send my data anywhere?\n    It stays in your browser. Everything you type runs locally and disappears the moment you close the tab.\n  \n  \n    Is this for real campaign planning, or only for teaching?\n    Both. The framework and the positioning statement template are the same ones used in professional planning, drawn from the STP theory taught in Week 2 of The Evidence-Based Digital Marketer. Students use it to learn the method, marketers use it to draft a real statement before a campaign brief.\n  \n  \n    Why does a positioning statement need evidence?\n    Evidence turns a guess into a claim you can check. Name what supports it, a pilot result, a survey finding, a usage statistic, and the claim can be tested against real data and revised when the data disagrees."
   },
   {
     "objectID": "toolkit/stp-builder.html#related",
