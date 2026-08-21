@@ -1,0 +1,146 @@
+/* Shared styles for the FlairMI Marketing Toolkit Hub (flairmi.com/toolkit/).
+   Reused by the landing page, the five category pages, and every tool page,
+   see plans/FlairMI_Marketing_Toolkit_Hub_Master_Plan.md. Keeps the same
+   monochrome ink/white brand as the rest of the site (assets/brand.scss);
+   the only colour this file introduces is the categorical dataviz palette
+   used for segment/category identity in charts, which is exempt from the
+   monochrome rule the same way the status badges are. */
+
+/* brand.scss defines --foreground/--background/--muted-fg/--border/--accent/
+   --radius on :root, but nothing inside brand.scss itself references them
+   via var(), so Quarto's CSS minifier treats them as dead code and strips
+   them from the compiled bootstrap bundle (confirmed: --badge-live, which
+   IS self-referenced there, survives; these do not). Same class of bug as
+   the Bootstrap .row/.col-* silent-absence issue already documented in
+   CLAUDE.md. Redeclared locally here, matching brand.scss's literal
+   values ($ink #111111, $white #ffffff, $ink-muted #6b6b6b, $hairline
+   #e5e5e5), so this stylesheet does not depend on tokens that may not
+   exist in the shipped CSS. */
+:root {
+  --toolkit-fg: #111111;
+  --toolkit-bg: #ffffff;
+  --toolkit-muted: #6b6b6b;
+  --toolkit-border: #e5e5e5;
+  --toolkit-radius: 0.25rem;
+}
+
+.toolkit-stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0 1.5rem;
+  border-bottom: 1px solid var(--toolkit-border);
+  margin-bottom: 1.5rem;
+}
+.toolkit-stat {
+  min-width: 8rem;
+}
+.toolkit-stat .stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.toolkit-stat .stat-label {
+  color: var(--toolkit-muted);
+  font-size: 0.9rem;
+}
+
+.toolkit-app {
+  border: 1px solid var(--toolkit-border);
+  border-radius: var(--toolkit-radius);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  /* The site navbar is fixed/sticky (~78px tall), so anything scrolled to
+     the very top of the viewport, an anchor link into this section, or a
+     browser's own "scroll into view", would otherwise land underneath it.
+     scroll-margin-top keeps the stage nav and legend clear of the navbar. */
+  scroll-margin-top: 90px;
+}
+.toolkit-app h3 {
+  margin-top: 0;
+}
+.toolkit-stage-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.toolkit-stage-nav button {
+  border: 1px solid var(--toolkit-border);
+  background: var(--toolkit-bg);
+  color: var(--toolkit-fg);
+  border-radius: var(--toolkit-radius);
+  padding: 0.35rem 0.85rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.toolkit-stage-nav button[aria-current="step"] {
+  background: var(--toolkit-fg);
+  color: var(--toolkit-bg);
+}
+.toolkit-stage-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.toolkit-app label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.toolkit-app input[type="text"],
+.toolkit-app input[type="number"],
+.toolkit-app select,
+.toolkit-app textarea {
+  width: 100%;
+  border: 1px solid var(--toolkit-border);
+  border-radius: var(--toolkit-radius);
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.toolkit-app .toolkit-btn {
+  border: 1px solid var(--toolkit-fg);
+  background: var(--toolkit-fg);
+  color: var(--toolkit-bg);
+  border-radius: var(--toolkit-radius);
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.toolkit-app .toolkit-btn.secondary {
+  background: var(--toolkit-bg);
+  color: var(--toolkit-fg);
+}
+.toolkit-app .toolkit-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.toolkit-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.85rem;
+}
+.toolkit-legend span.swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.toolkit-brief-box {
+  background: var(--toolkit-fg);
+  color: var(--toolkit-bg);
+  padding: 1rem 1.25rem;
+  border-radius: var(--toolkit-radius);
+  margin-top: 0.75rem;
+}
+.toolkit-brief-box h4 {
+  color: var(--toolkit-bg);
+  margin-top: 0;
+}

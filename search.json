@@ -126,6 +126,48 @@
     "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support, or a project-specific discussion.\n  \n    \n      Name\n      Email\n      Area\n          Business analytics\n          Marketing analytics\n          Small Sample Lab\n          Workflow onboarding\n          Teaching support\n          Workshop\n        \n      \n      Message\n    \n    \n      Send enquiry\n      Use the form below to describe your workshop, sprint, or consulting need."
   },
   {
+    "objectID": "toolkit/index.html",
+    "href": "toolkit/index.html",
+    "title": "Marketing Toolkit Hub",
+    "section": "",
+    "text": "Thirty planned tools across five categories, each a free, client-side marketing framework you can use directly in the browser. Every tool works without an account and without sending your data anywhere.\n\n\n  1tool in progress\n  29tools planned\n  5categories"
+  },
+  {
+    "objectID": "toolkit/index.html#marketing-toolkit-hub",
+    "href": "toolkit/index.html#marketing-toolkit-hub",
+    "title": "Marketing Toolkit Hub",
+    "section": "",
+    "text": "Thirty planned tools across five categories, each a free, client-side marketing framework you can use directly in the browser. Every tool works without an account and without sending your data anywhere.\n\n\n  1tool in progress\n  29tools planned\n  5categories"
+  },
+  {
+    "objectID": "toolkit/index.html#categories",
+    "href": "toolkit/index.html#categories",
+    "title": "Marketing Toolkit Hub",
+    "section": "Categories",
+    "text": "Categories\n\n  \n    \n      1. Strategic Analysis\n      \n        Frameworks that come before any customer-specific decision: SWOT,\n        PESTEL, Porter's Five Forces, Ansoff Matrix.\n        Planned 4 tools\n      \n    \n  \n  \n    \n      2. Customer Understanding\n      \n        Tools that build the picture of who the customer is: STP\n        Builder, RFM Segmentation, Customer Journey Mapper, Value\n        Proposition Canvas, IPA Matrix, plus Persona Builder.\n        In progress STP Builder · Planned 4 more\n      \n    \n  \n  \n    \n      3. Portfolio and Growth\n      \n        Deciding where to focus resources: BCG Matrix, GE-McKinsey\n        Matrix, Product Life Cycle Identifier, Diffusion of Innovation\n        Calculator.\n        Planned 4 tools\n      \n    \n  \n  \n    \n      4. Planning and Execution\n      \n        Turning strategy into a campaign: 7Ps Planner, Campaign Brief\n        Generator, and nine execution-asset tools (UTM builder, meta tag\n        generator, and more).\n        Planned 11 tools\n      \n    \n  \n  \n    \n      5. Performance and Analytics\n      \n        Measuring what happened after a campaign runs: CLV Calculator,\n        Price Elasticity, NPS Tracker, Brand Equity Assessor, SERVQUAL,\n        Attribution Comparison, and the MMM Analyser.\n        Planned 7 tools"
+  },
+  {
+    "objectID": "toolkit/index.html#available-now",
+    "href": "toolkit/index.html#available-now",
+    "title": "Marketing Toolkit Hub",
+    "section": "Available Now",
+    "text": "Available Now\n\n  \n    \n      STP Builder\n      \n        In progress\n        Segmentation, targeting, and positioning as an interactive\n        dot-cluster diagram, ending in a draft campaign brief.\n      \n      \n        Open STP Builder"
+  },
+  {
+    "objectID": "toolkit/index.html#frequently-asked-questions",
+    "href": "toolkit/index.html#frequently-asked-questions",
+    "title": "Marketing Toolkit Hub",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\nIs the Marketing Toolkit Hub free? Yes, every tool in the hub is free, with no account and no usage limit.\nDo I need to sign up or install anything? No. Every tool runs in your browser, client-side. Nothing is installed and nothing you enter is sent to a server.\nWhich tools are live right now? STP Builder is the first tool built, covering segmentation, targeting, and positioning. Persona Builder, listed under FlairMI’s Products section, is also live and complements it. The other 29 tools listed above are planned, built one category at a time.\nCan I suggest a tool that is not on the list? Yes, use the Request a Tool link below and say which framework you would use."
+  },
+  {
+    "objectID": "toolkit/index.html#request-a-tool",
+    "href": "toolkit/index.html#request-a-tool",
+    "title": "Marketing Toolkit Hub",
+    "section": "Request a Tool",
+    "text": "Request a Tool\nMissing something you’d use? Get in touch and say which framework you’d want built next."
+  },
+  {
     "objectID": "templates/rfm-segmentation.html",
     "href": "templates/rfm-segmentation.html",
     "title": "RFM Segmentation",
@@ -1839,6 +1881,62 @@
     "title": "Sales Pipeline Tracker",
     "section": "Notes",
     "text": "Notes\nWeighted value is calculated from deal value and win probability. The workbook is useful when you need a simple pipeline view without opening a full CRM or when you want a teaching-friendly sales dashboard example."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html",
+    "href": "toolkit/stp-builder.html",
+    "title": "STP Builder",
+    "section": "",
+    "text": "In progress\n    \n    \n      Segmentation, targeting, and positioning as one interactive diagram.\n      Define your market's segments, narrow to the one you're targeting,\n      and draft a positioning statement you can actually test."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#what-stp-is",
+    "href": "toolkit/stp-builder.html#what-stp-is",
+    "title": "STP Builder",
+    "section": "What STP Is",
+    "text": "What STP Is\nSegmentation, targeting, and positioning (STP) is the classic sequence for turning a broad market into a specific campaign claim. Segmentation divides a market into groups whose needs or behaviour are similar enough to address with one message. Targeting selects which segment or segments to address, based on size, accessibility, competitive advantage, and strategic fit. Positioning designs the claim, message, and evidence that make the offering meaningful to that segment. The three stages are cumulative: segmentation without targeting is a map with no destination, targeting without positioning names an audience but not a claim, and positioning without targeting produces a polished message aimed at no one in particular.\nThe tool below walks through all three stages, then compiles the result into a campaign brief. It draws on the same STP framework taught in Week 2 of The Evidence-Based Digital Marketer, FlairMI’s open digital marketing textbook, where the underlying dot-cluster diagram this tool is built from first appeared as a static figure."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#who-it-is-for",
+    "href": "toolkit/stp-builder.html#who-it-is-for",
+    "title": "STP Builder",
+    "section": "Who It Is For",
+    "text": "Who It Is For\nMarketing students learning STP as a method, and early-stage founders or product marketers who have a broad idea of their market but have not yet written a positioning statement they could defend with evidence. The tool asks for the same four elements a real planning canvas would: a named segment, a frame of reference, a point of difference, and evidence."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#the-positioning-statement-template",
+    "href": "toolkit/stp-builder.html#the-positioning-statement-template",
+    "title": "STP Builder",
+    "section": "The Positioning Statement Template",
+    "text": "The Positioning Statement Template\nA positioning statement is testable when it names four things explicitly: the target segment, the frame of reference (what category the offering competes in), the point of difference (what it does better than alternatives in that category), and the evidence (what supports the claim). A statement built this way can be checked against real data and revised when the evidence calls it into question, unlike a vague claim such as “we serve busy professionals.”"
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#worked-example",
+    "href": "toolkit/stp-builder.html#worked-example",
+    "title": "STP Builder",
+    "section": "Worked Example",
+    "text": "Worked Example\nA project-management SaaS company starts with one broad market: “people who manage projects.” That is not a segment, it is almost anyone. A first pass at segmentation might split the market into freelancers working alone, small agencies coordinating client work across a handful of people, and enterprise IT teams running formal change-control processes. Those three groups need different features, different price points, and different proof.\nThe company targets small agencies: large enough to need shared visibility across a team, small enough that enterprise tools are overkill for them. The resulting positioning statement: “For small agencies coordinating client work across five to twenty people, considering project-management software for small teams, this is the only tool that turns a plan into a live Gantt chart with no setup, evidenced by a median time-to-first-chart of under four minutes across forty pilot teams.” Each element in that statement is checkable. The evidence claim in particular should be verified before the campaign launches at scale, not assumed."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#build-your-own",
+    "href": "toolkit/stp-builder.html#build-your-own",
+    "title": "STP Builder",
+    "section": "Build Your Own",
+    "text": "Build Your Own\n\n  \n\nNothing you enter here is sent anywhere. The tool runs entirely in your browser and nothing is saved once you leave the page."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#frequently-asked-questions",
+    "href": "toolkit/stp-builder.html#frequently-asked-questions",
+    "title": "STP Builder",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\nWhat is the difference between segmentation, targeting, and positioning? Segmentation divides a market into groups. Targeting picks which group to pursue. Positioning designs the claim that group will hear. They run in that order because each stage needs the one before it: you cannot target a segment that has not been defined, and you cannot position a claim to an audience that has not been chosen.\nHow many segments should I create? Two to five. Fewer than two is not really a segmentation, and more than five usually means the groups are not distinct enough to act on separately. Three is a common starting point, matching the worked example above (freelancers, small agencies, enterprise IT teams).\nDoes STP Builder save or send my data anywhere? No. Everything runs in your browser. Nothing you type is uploaded, stored on a server, or saved once you close the tab.\nIs this for real campaign planning, or only for teaching? Both. The framework and the positioning statement template are the same ones used in professional planning, drawn from the STP theory taught in Week 2 of The Evidence-Based Digital Marketer. Students use it to learn the method, marketers use it to draft a real statement before a campaign brief.\nWhy does a positioning statement need evidence? Without evidence, a positioning statement is just a guess dressed up as a claim. Naming what supports it, a pilot result, a survey finding, a usage statistic, means the claim can be checked against real data and revised when the data disagrees, rather than repeated on faith."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#related",
+    "href": "toolkit/stp-builder.html#related",
+    "title": "STP Builder",
+    "section": "Related",
+    "text": "Related\nThis tool is the first entry in FlairMI’s Marketing Toolkit Hub, a growing set of client-side marketing frameworks. See also Persona Builder for building out the people behind a segment once you have named one."
   },
   {
     "objectID": "downloads/index.html",
