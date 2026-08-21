@@ -385,10 +385,28 @@
     margin: 28px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);
   }
   .intro p { margin: 0 0 12px; max-width: 68ch; line-height: 1.6; font-size: 14.5px; }
-  .faq-item { margin-bottom: 16px; max-width: 68ch; }
-  .faq-item:last-child { margin-bottom: 4px; }
-  .faq-item dt { font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
-  .faq-item dd { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.6; }
+
+  /* FAQ accordion, native <details>/<summary>, no JS. Independent
+     toggles, a plus-to-cross indicator rotated with pure CSS. The
+     answer text stays in the real page HTML regardless of whether any
+     script runs, which is what a non-JS crawler needs to read it. */
+  .faq-list { max-width: 68ch; border-top: 1px solid var(--rule); margin-top: 4px; }
+  .faq-item { border-bottom: 1px solid var(--rule); }
+  .faq-item summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 13px 2px; font-weight: 700; font-size: 14.5px; cursor: pointer; list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: "+"; flex: none; font-weight: 400; font-size: 19px; line-height: 1;
+    color: var(--ink-muted); transition: transform 0.15s ease;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .faq-item .faq-answer { margin: 0 0 14px; padding-right: 24px; color: var(--ink-muted); font-size: 14px; line-height: 1.6; }
+  @media (prefers-reduced-motion: reduce) {
+    .faq-item summary::after { transition: none; }
+  }
 </style>
 </head>
 <body>
@@ -414,28 +432,28 @@
   <p>UX researchers and product teams building a persona from interview or survey data, and marketers who need a shared reference for who a campaign is actually speaking to. The three detail levels match how far along that research usually is: Basic for a quick placeholder while research is still underway, Standard once goals and pain points are documented, Full once you have a quote and behavioural detail worth recording.</p>
 
   <h2>Frequently Asked Questions</h2>
-  <dl>
-    <div class="faq-item">
-      <dt>What is a persona, and why build one?</dt>
-      <dd>A persona is a summary of one type of user or customer, built from research rather than guesswork, that a team can refer to when making a decision. It keeps a design or marketing choice grounded in a specific person's goals and constraints instead of an assumed average user.</dd>
-    </div>
-    <div class="faq-item">
-      <dt>Is Persona Builder free?</dt>
-      <dd>Yes, with no account, no usage limit, and no paid tier.</dd>
-    </div>
-    <div class="faq-item">
-      <dt>Does my data get uploaded anywhere?</dt>
-      <dd>No. The form, the preview, and saved personas all run and stay in your browser's local storage. Nothing is sent to a server.</dd>
-    </div>
-    <div class="faq-item">
-      <dt>What is the difference between the Basic, Standard, and Full levels?</dt>
-      <dd>Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Each level keeps every field from the level before it.</dd>
-    </div>
-    <div class="faq-item">
-      <dt>Can I export my persona for a slide deck or report?</dt>
-      <dd>Yes, as a PNG for a slide or a PDF for a document, both sized to fit the exported card directly.</dd>
-    </div>
-  </dl>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>What is a persona, and why build one?</summary>
+      <p class="faq-answer">A persona is a summary of one type of user or customer, built from research rather than guesswork, that a team can refer to when making a decision. It keeps a design or marketing choice grounded in a specific person's goals and constraints instead of an assumed average user.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is Persona Builder free?</summary>
+      <p class="faq-answer">Yes, with no account, no usage limit, and no paid tier.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does my data get uploaded anywhere?</summary>
+      <p class="faq-answer">No. The form, the preview, and saved personas all run and stay in your browser's local storage. Nothing is sent to a server.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What is the difference between the Basic, Standard, and Full levels?</summary>
+      <p class="faq-answer">Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Each level keeps every field from the level before it.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I export my persona for a slide deck or report?</summary>
+      <p class="faq-answer">Yes, as a PNG for a slide or a PDF for a document, both sized to fit the exported card directly.</p>
+    </details>
+  </div>
 </div>
 
 <div class="layout">

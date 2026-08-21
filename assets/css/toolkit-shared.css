@@ -144,3 +144,56 @@
   color: var(--toolkit-bg);
   margin-top: 0;
 }
+
+/* FAQ accordion, native <details>/<summary>, no JS. Independent toggles
+   (any number can be open at once), a plus-to-cross indicator rotated with
+   pure CSS. Chosen over a JS-toggled-div accordion specifically because
+   the answer text must exist in the real page HTML regardless of whether
+   any script runs, the same reason the rest of this site's SEO/GEO work
+   keeps static content out of JS-only render paths. */
+.faq-list {
+  border-top: 1px solid var(--toolkit-border);
+  margin: 1rem 0 2rem;
+}
+.faq-item {
+  border-bottom: 1px solid var(--toolkit-border);
+}
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  flex: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--toolkit-muted);
+  transition: transform 0.15s ease;
+}
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.faq-item summary:focus-visible {
+  outline: 3px solid var(--toolkit-fg);
+  outline-offset: 2px;
+}
+.faq-item .faq-answer {
+  margin: 0 0 1rem;
+  padding-right: 1.6rem;
+  color: var(--toolkit-muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-item summary::after {
+    transition: none;
+  }
+}
