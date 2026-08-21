@@ -99,7 +99,7 @@ FlairMI publishes applied statistics tutorials and product notes at
 - **[Margin Guard](https://flairmi.com/products/margin-guard.html)** (live,
   free) — a promotion break-even calculator for pricing and campaign
   decisions.
-- **[Persona Builder](https://flairmi.com/products/persona-builder.html)**
+- **[Persona Builder](https://flairmi.com/tools/persona-builder/)**
   (live, free) — a UX research and marketing persona card builder with
   three detail levels and PNG/PDF export, data stays in the browser's
   local storage.
