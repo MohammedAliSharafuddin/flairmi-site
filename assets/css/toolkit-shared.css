@@ -197,3 +197,146 @@
     transition: none;
   }
 }
+
+/* Scored grid: shared by SWOT, PESTEL, and (later) Porter's Five Forces
+   and the Ansoff Matrix. See assets/js/toolkit/scored-grid.js. */
+.scored-grid {
+  display: grid;
+  /* auto-fit/minmax rather than a fixed column-count breakpoint: a 4-up
+     (or wider) fixed grid runs out of room for real item text well
+     before the viewport itself feels narrow, each column drops under
+     100px of usable width and item text wraps to one word per line,
+     the same "leaf card" defect found and fixed on
+     products/persona-builder.qmd. Letting the grid size its own columns
+     against a real minimum, instead of guessing a viewport breakpoint,
+     means it never has to guess again as new tools add more categories
+     (PESTEL's six, for instance). */
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.scored-category {
+  border: 1px solid var(--toolkit-border);
+  border-top: 3px solid var(--toolkit-fg);
+  border-radius: var(--toolkit-radius);
+  padding: 0.9rem 1rem 1rem;
+}
+.scored-category h4 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+.scored-item-list {
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
+.scored-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--toolkit-border);
+  font-size: 0.9rem;
+}
+.scored-item:last-child {
+  border-bottom: none;
+}
+.scored-item-text {
+  flex: 1;
+}
+.scored-item-score {
+  flex: none;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--toolkit-muted);
+  font-size: 0.8rem;
+  border: 1px solid var(--toolkit-border);
+  border-radius: var(--toolkit-radius);
+  padding: 0.05rem 0.4rem;
+}
+.scored-item-remove {
+  flex: none;
+  border: none;
+  background: none;
+  color: var(--toolkit-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.1rem;
+}
+.scored-item-remove:hover {
+  color: var(--toolkit-fg);
+}
+.scored-item-empty {
+  color: var(--toolkit-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  padding: 0.35rem 0;
+}
+.scored-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.scored-add-text {
+  width: 100%;
+  border: 1px solid var(--toolkit-border);
+  border-radius: var(--toolkit-radius);
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+}
+.scored-add-row {
+  display: flex;
+  align-items: end;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.scored-add-row label {
+  font-size: 0.75rem;
+  color: var(--toolkit-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.scored-add-row select {
+  border: 1px solid var(--toolkit-border);
+  border-radius: var(--toolkit-radius);
+  padding: 0.25rem 0.35rem;
+}
+.scored-add-row .toolkit-btn {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+}
+.scored-lower {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.scored-chart-wrap {
+  flex: 1 1 320px;
+}
+.scored-chart-wrap h3,
+.scored-priorities-wrap h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+}
+.scored-chart-wrap svg {
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+}
+.scored-priorities-wrap {
+  flex: 1 1 280px;
+}
+.scored-priorities {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+.scored-priorities li {
+  margin-bottom: 0.5rem;
+}
+.scored-priorities-meta {
+  color: var(--toolkit-muted);
+  font-size: 0.8rem;
+}
