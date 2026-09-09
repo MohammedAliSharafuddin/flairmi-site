@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammed Ali Sharafuddin">
-<meta name="description" content="Ethos is a privacy-first academic survey, analytics, and writer suite built for self-hosted use.">
+<meta name="description" content="Ethos is an academic survey, analytics, and writer suite in 2 editions, Community for self-hosting and Pro as a hosted service. Neither is available yet.">
 
 <title>Ethos - Flair Marketing Intelligence</title>
 <style>
@@ -184,18 +184,26 @@ ul.task-list li input[type="checkbox"] {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="../assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="../assets/js/consent.js"></script>
+<script defer="" src="../assets/js/flag-counter.js"></script>
 <script defer="" src="../assets/js/nav-overview.js"></script>
 <script defer="" src="../assets/js/contact-form.js"></script>
 
 
+<link rel="stylesheet" href="../assets/css/consent.css">
+<link rel="stylesheet" href="../assets/css/flag-counter.css">
 <meta property="og:title" content="Ethos – Flair Marketing Intelligence">
-<meta property="og:description" content="Ethos is a privacy-first academic survey, analytics, and writer suite built for self-hosted use.">
+<meta property="og:description" content="Ethos is an academic survey, analytics, and writer suite in 2 editions, Community for self-hosting and Pro as a hosted service. Neither is available yet.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
 <meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
 <meta name="twitter:title" content="Ethos – Flair Marketing Intelligence">
-<meta name="twitter:description" content="Ethos is a privacy-first academic survey, analytics, and writer suite built for self-hosted use.">
+<meta name="twitter:description" content="Ethos is an academic survey, analytics, and writer suite in 2 editions, Community for self-hosting and Pro as a hosted service. Neither is available yet.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
 <meta name="twitter:site" content="@flairmi">
@@ -367,6 +375,14 @@ ul.task-list li input[type="checkbox"] {
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
         <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
@@ -416,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Ethos is a privacy-first academic survey, analytics, and writer suite built for self-hosted use.
+    Ethos is an academic survey, analytics, and writer suite in 2 editions, Community for self-hosting and Pro as a hosted service. Neither is available yet.
   </div>
 </div>
 
@@ -453,9 +469,10 @@ ul.task-list li input[type="checkbox"] {
     <span class="badge badge-early">Alpha</span>
     <h1>Ethos</h1>
     <p class="lead" style="max-width: 60ch;">
-      Ethos is a privacy-first academic survey, analytics, and writer suite for
-      institutions, teaching labs, and research teams that need self-hosted
-      workflows with zero external calls.
+      Ethos is an academic survey, analytics, and writer suite for
+      institutions, teaching labs, and research teams. It comes in 2 editions.
+      Ethos Community is downloaded and run on your own hardware. Ethos Pro is
+      a hosted service. Neither is available yet.
     </p>
     <div class="d-flex flex-wrap gap-2 mt-3">
       <a class="btn btn-outline-primary" href="#ethos-beta">Request an update</a>
@@ -473,19 +490,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="what-it-covers" class="level2">
 <h2 class="anchored" data-anchor-id="what-it-covers">What It Covers</h2>
-<p>Ethos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns.</p>
+<p>Ethos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, and a downloadable HTML report.</p>
+</section>
+<section id="the-2-editions" class="level2">
+<h2 class="anchored" data-anchor-id="the-2-editions">The 2 Editions</h2>
+<p>The edition split was settled on 7 September 2026.</p>
+<p><strong>Ethos Community</strong> is downloaded and self-hosted. Everything runs on your own hardware, with no external calls, no CDNs, and no telemetry. That guarantee describes Community specifically, and it is the edition the promise was written for.</p>
+<p><strong>Ethos Pro</strong> is a hosted service, and it is not offered as a download. It adds an approval workflow, organisation administration, and audit export on top of Community. Pro is at an early scaffolding stage. Nothing in it is finished, and none of it should be read as available.</p>
 </section>
 <section id="what-is-available-now" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-available-now">What Is Available Now</h2>
-<p>The alpha includes a working end-to-end analytics chain powered by <a href="https://CRAN.R-project.org/package=surveyframe">surveyframe v0.3</a>, now live on CRAN (<code>install.packages("surveyframe")</code>): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle.</p>
+<p>Nothing is available to download or sign up for. The work in progress is an end-to-end analytics chain powered by <a href="https://CRAN.R-project.org/package=surveyframe">surveyframe 0.4.1</a>, which is on CRAN and can be used on its own today (<code>install.packages("surveyframe")</code>). That chain defines an instrument, imports CSV responses, runs quality reporting, scores scales, checks reliability and EFA readiness, generates CFA lavaan syntax for structural planning, and renders a downloadable HTML report.</p>
+<p>The interface is mid-rebuild, so the screens shown here will change.</p>
+<p>PLS-SEM, CB-SEM, and structural equation model execution are not built. They arrive in surveyframe 0.5, which has not started and carries no date.</p>
 </section>
 <section id="current-stage" class="level2">
 <h2 class="anchored" data-anchor-id="current-stage">Current Stage</h2>
-<p>The product is in <code>alpha</code>. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully.</p>
+<p>The product is in <code>alpha</code> and the interface is being rebuilt. This page explains the direction of the suite while access and pilots are still being scoped. Treat everything described here as intent, not as shipped software.</p>
 </section>
 <section id="access-and-limitations" class="level2">
 <h2 class="anchored" data-anchor-id="access-and-limitations">Access And Limitations</h2>
-<p>Ethos is not available as a public hosted service. Pilot and update requests are handled directly through the form below while the self-hosted alpha is stabilised. Pricing and deployment scope are not published yet because pilot use is being discussed case by case with institutions and research teams.</p>
+<p>Ethos is not available, in either edition. There is no download, no hosted sign-up, and no public beta. Pilot and update requests are handled through the form below while the alpha is stabilised and the interface rebuild finishes. Pricing and deployment scope are not published yet, because pilot use is being discussed case by case with institutions and research teams.</p>
 </section>
 <section id="pilot-interest" class="level2">
 <h2 class="anchored" data-anchor-id="pilot-interest">Pilot Interest</h2>
@@ -926,7 +951,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

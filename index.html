@@ -185,11 +185,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="./assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="./assets/js/consent.js"></script>
+<script defer="" src="./assets/js/flag-counter.js"></script>
 <script defer="" src="./assets/js/nav-overview.js"></script>
 <script defer="" src="./assets/js/contact-form.js"></script>
 
 
+<link rel="stylesheet" href="assets/css/consent.css">
+<link rel="stylesheet" href="assets/css/flag-counter.css">
 <meta property="og:title" content="Textbooks, Decision Templates, and Workflow Tools – Flair Marketing Intelligence">
 <meta property="og:description" content="FlairMI publishes open textbooks, free Excel templates, and browser-based tools for marketing analytics, business analytics, and small-sample research methods. By Mohammed Ali Sharafuddin.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -367,6 +375,14 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
@@ -606,14 +622,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="workflow-products" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-products">Workflow Products</h2>
-<p>FlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. <code>surveyframe</code> is live on CRAN. <code>Price Memory</code>, <code>Margin Guard</code>, and <code>Persona Builder</code> are live in the browser. <code>QuartoPad</code>, <code>TrimWrite</code>, and <code>Ethos</code> remain in preview as the broader workflow line takes shape.</p>
+<p>FlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. <code>surveyframe</code> is live on CRAN at version 0.4.1. <code>Price Memory</code>, <code>Margin Guard</code>, and <code>Persona Builder</code> are live in the browser. <code>QuartoPad</code>, <code>TrimWrite</code>, and <code>Ethos</code> are previews. None of the 3 can be downloaded or signed up for yet.</p>
 <div class="grid">
   <div class="g-col-12 g-col-md-6">
     <div class="card h-100">
       <div class="card-body">
     <span class="badge badge-live">Live on CRAN</span>
     <h3 class="anchored">surveyframe</h3>
-    <p>An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.</p>
+    <p>An R package for end-to-end survey research, from instrument design to a reproducible report. Version 0.4 added decision analysis, text analysis, and a provenance trail.</p>
     <p><code>install.packages("surveyframe")</code></p>
     <p><a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a></p>
       </div>
@@ -1151,7 +1167,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="./downloads/PrivacyPolicy.html">Privacy</a> · <a href="./downloads/TermsOfUse.html">Terms</a> · <a href="./downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="./downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="./partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="./downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="./downloads/TermsOfUse.html">Terms</a> · <a href="./downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="./downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="./partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://flairmi.com/products/surveyframe.html</loc>
-    <lastmod>2026-07-24T20:49:28.285Z</lastmod>
+    <lastmod>2026-09-09T06:10:37.155Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/products/quartopad.html</loc>
@@ -78,7 +78,11 @@
   </url>
   <url>
     <loc>https://flairmi.com/products/ethos.html</loc>
-    <lastmod>2026-07-24T20:49:28.284Z</lastmod>
+    <lastmod>2026-09-09T06:11:15.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html</loc>
+    <lastmod>2026-09-09T06:12:49.466Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/10-persona-builder.html</loc>
@@ -90,15 +94,15 @@
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/06-logistic-basics.html</loc>
-    <lastmod>2026-07-26T08:17:58.620Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.741Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/04-welch-t.html</loc>
-    <lastmod>2026-07-26T08:17:58.616Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.741Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/02-two-proportion-test.html</loc>
-    <lastmod>2026-07-26T08:17:58.612Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.740Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/index.html</loc>
@@ -106,23 +110,23 @@
   </url>
   <url>
     <loc>https://flairmi.com/about.html</loc>
-    <lastmod>2026-07-24T20:50:35.125Z</lastmod>
+    <lastmod>2026-09-09T06:34:38.454Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/index.html</loc>
-    <lastmod>2026-08-21T14:49:08.781Z</lastmod>
+    <lastmod>2026-09-09T06:11:56.313Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/01-margin-of-error.html</loc>
-    <lastmod>2026-07-26T08:17:58.610Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.738Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/03-t-test.html</loc>
-    <lastmod>2026-07-26T08:17:58.614Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.741Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/05-simple-regression.html</loc>
-    <lastmod>2026-07-26T08:17:58.618Z</lastmod>
+    <lastmod>2026-09-09T06:08:26.741Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html</loc>
@@ -137,8 +141,12 @@
     <lastmod>2026-07-25T08:26:46.898Z</lastmod>
   </url>
   <url>
+    <loc>https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html</loc>
+    <lastmod>2026-09-09T06:13:17.131Z</lastmod>
+  </url>
+  <url>
     <loc>https://flairmi.com/products/index.html</loc>
-    <lastmod>2026-08-21T14:49:53.845Z</lastmod>
+    <lastmod>2026-09-09T06:11:56.314Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/products/price-memory.html</loc>
@@ -206,7 +214,7 @@
   </url>
   <url>
     <loc>https://flairmi.com/downloads/PrivacyPolicy.html</loc>
-    <lastmod>2026-07-01T07:54:12.100Z</lastmod>
+    <lastmod>2026-09-09T06:36:47.655Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/downloads/Refund_Cancellation_Policy.html</loc>
@@ -214,10 +222,10 @@
   </url>
   <url>
     <loc>https://flairmi.com/tools/persona-builder/</loc>
-    <lastmod>2026-08-21T19:07:00.000Z</lastmod>
+    <lastmod>2026-09-09T06:53:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://flairmi.com/tools/statchooser/</loc>
-    <lastmod>2026-08-21T19:07:00.000Z</lastmod>
+    <lastmod>2026-09-09T06:53:32.000Z</lastmod>
   </url>
 </urlset>

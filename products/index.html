@@ -184,11 +184,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="../assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="../assets/js/consent.js"></script>
+<script defer="" src="../assets/js/flag-counter.js"></script>
 <script defer="" src="../assets/js/nav-overview.js"></script>
 <script defer="" src="../assets/js/contact-form.js"></script>
 
 
+<link rel="stylesheet" href="../assets/css/consent.css">
+<link rel="stylesheet" href="../assets/css/flag-counter.css">
 <meta property="og:title" content="Products – Flair Marketing Intelligence">
 <meta property="og:description" content="Live browser tools, R packages, and beta software on FlairMI, including surveyframe, Price Memory, Margin Guard, Persona Builder, QuartoPad, TrimWrite, and Ethos.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -367,6 +375,14 @@ ul.task-list li input[type="checkbox"] {
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
         <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
@@ -450,7 +466,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="product-portfolio" class="level2">
 <h2 class="anchored" data-anchor-id="product-portfolio">Product Portfolio</h2>
-<p>FlairMI products span live browser utilities, a published R package, and coming-soon software previews. <code>Price Memory</code>, <code>Margin Guard</code>, and <code>Persona Builder</code> are already public in the browser. <code>surveyframe</code> is live on CRAN. <code>QuartoPad</code>, <code>TrimWrite</code>, and <code>Ethos</code> are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms.</p>
+<p>FlairMI products span live browser utilities, a published R package, and software previews. <code>Price Memory</code>, <code>Margin Guard</code>, and <code>Persona Builder</code> are already public in the browser. <code>surveyframe</code> is live on CRAN at 0.4.1. <code>QuartoPad</code>, <code>TrimWrite</code>, and <code>Ethos</code> are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet.</p>
 </section>
 <section id="live-now" class="level2">
 <h2 class="anchored" data-anchor-id="live-now">Live Now</h2>
@@ -460,7 +476,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="card-header">surveyframe</div>
       <div class="card-body">
         <div class="card-meta"><span class="badge badge-live">Live on CRAN</span></div>
-        <p>An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.</p>
+        <p>An R package for end-to-end survey research workflows, from instrument design to a reproducible report. Version 0.4 added 10 decision-analysis methods, 9 text-analysis methods, and a disclosed-amendment provenance trail. <a href="./surveyframe.html">Full feature list</a>.</p>
         <p>Free and open source, MIT licence.</p>
         <p><code>install.packages("surveyframe")</code></p>
       </div>
@@ -543,43 +559,6 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <div class="card-body card-cta">
         <a class="btn btn-outline-dark" href="./ethos.html">Preview coming-soon page</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<section id="at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="at-a-glance">At A Glance</h2>
-<div class="grid">
-  <div class="g-col-12 g-col-md-6 d-flex">
-    <div class="card h-100">
-      <div class="card-header">R package</div>
-      <div class="card-body">
-        <p>surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.</p>
-      </div>
-    </div>
-  </div>
-  <div class="g-col-12 g-col-md-6 d-flex">
-    <div class="card h-100">
-      <div class="card-header">Live now</div>
-      <div class="card-body">
-        <p>Price Memory, Margin Guard, and Persona Builder are public-facing tools with live browser access and dedicated product pages.</p>
-      </div>
-    </div>
-  </div>
-  <div class="g-col-12 g-col-md-6 d-flex">
-    <div class="card h-100">
-      <div class="card-header">Writer workflow</div>
-      <div class="card-body">
-        <p>QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.</p>
-      </div>
-    </div>
-  </div>
-  <div class="g-col-12 g-col-md-6 d-flex">
-    <div class="card h-100">
-      <div class="card-header">Academic stack</div>
-      <div class="card-body">
-        <p>Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment.</p>
       </div>
     </div>
   </div>
@@ -1004,7 +983,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

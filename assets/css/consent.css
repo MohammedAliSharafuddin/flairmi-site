@@ -1,0 +1,41 @@
+/* assets/css/consent.css
+   Styles for the cookie consent banner in assets/js/consent.js. Kept in the
+   site's own CSS rather than inlined, so it is purged and cached like
+   everything else. */
+#flairmi-consent-banner {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1080;
+  background: #13325B;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, .25);
+}
+.flairmi-consent-inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+#flairmi-consent-banner p {
+  margin: 0;
+  font-size: .95rem;
+  max-width: 60ch;
+}
+#flairmi-consent-banner a { color: #fff; text-decoration: underline; }
+.flairmi-consent-actions { display: flex; gap: .5rem; flex-shrink: 0; }
+#flairmi-consent-banner button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: .45rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .95rem;
+}
+#flairmi-consent-banner button.primary { background: #fff; color: #13325B; font-weight: 600; }
+#flairmi-consent-banner button:focus-visible { outline: 3px solid #FFD166; outline-offset: 2px; }

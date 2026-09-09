@@ -466,14 +466,14 @@
     "href": "products/surveyframe.html",
     "title": "surveyframe",
     "section": "",
-    "text": "Live on CRAN\n    \n    \n      surveyframe is an R package covering the full survey research pipeline:\n      instrument design, static HTML export, a Shiny module, response quality\n      checking, psychometric diagnostics, and reproducible HTML reporting.\n    \n    \n      View on CRAN\n      GitHub\n      Back to products\n    \n    \n      Instrument to reportDesign, field, and analyse a survey without leaving R\n      Static HTML exportA dependency-free survey respondents can complete in a browser\n      Reproducible reportingDeclared analysis plans and HTML reports from the same package"
+    "text": "Live on CRAN v0.4.1\n    \n    \n      surveyframe is an R package covering the full survey research pipeline:\n      instrument design, static HTML export, a Shiny module, response quality\n      checking, psychometric diagnostics, and reproducible HTML reporting.\n    \n    \n      View on CRAN\n      GitHub\n      Back to products\n    \n    \n      Instrument to reportDesign, field, and analyse a survey without leaving R\n      Static HTML exportA dependency-free survey respondents can complete in a browser\n      Reproducible reportingDeclared analysis plans and HTML reports from the same package"
   },
   {
     "objectID": "products/surveyframe.html#why-it-exists",
     "href": "products/surveyframe.html#why-it-exists",
     "title": "surveyframe",
     "section": "Why It Exists",
-    "text": "Why It Exists\nSurvey research workflows are usually stitched together from several disconnected tools: one for the instrument, another for hosting responses, another for cleaning, another for analysis. surveyframe keeps the whole sequence, instrument design through reproducible reporting, in one R package, which is documented on the blog and this site’s field-type series."
+    "text": "Why It Exists\nSurvey research workflows are usually stitched together from 4 disconnected tools: one for the instrument, another for hosting responses, another for cleaning, another for analysis. surveyframe keeps the whole sequence, instrument design through reproducible reporting, in one R package, which is documented on the blog and this site’s field-type series."
   },
   {
     "objectID": "products/surveyframe.html#what-you-can-do",
@@ -481,6 +481,13 @@
     "title": "surveyframe",
     "section": "What You Can Do",
     "text": "What You Can Do\n\nDesign survey instruments with sf_item() and export a static, dependency-free HTML survey respondents can complete in a browser\nRun response quality checks and psychometric diagnostics (reliability, item diagnostics) on collected data\nDeclare an analysis plan before data collection and run it with run_analysis_plan() for a reproducible HTML report\nUse the optional ggplot2 layer, including a diverging bar chart for Likert-type results"
+  },
+  {
+    "objectID": "products/surveyframe.html#new-in-0.4",
+    "href": "products/surveyframe.html#new-in-0.4",
+    "title": "surveyframe",
+    "section": "New In 0.4",
+    "text": "New In 0.4\nVersion 0.4.0 was a major release, and 0.4.1 followed it on CRAN.\nMulti-criteria decision analysis. 10 methods, AHP, ANP, DEMATEL, VIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS, each carrying a literature citation. 2 new item types collect the judgement data inside the instrument itself, a pairwise comparison on Saaty’s 1-to-9 scale and a constant-sum criteria weighting. AHP judgements are screened for consistency against Saaty’s random-index table, and sensitivity_analysis() reports how far a ranking moves when the weights are perturbed.\nText analysis for open-ended responses. 9 methods, from term and n-gram frequency through keyword-in-context concordance, co-occurrence, sentiment, and LDA or structural topic modelling. They run through the same analysis plan and reporting pipeline as every other method family.\nSmall-sample corrections. The Hodges-Lehmann shift estimator, the paired Wilcoxon pseudomedian interval, the exact odds-ratio interval on Fisher’s test, and Firth’s bias-reduced logistic regression for data prone to separation. An advisory on assumption_report() flags when a study is small enough for these to matter.\nDisclosed amendments and a provenance trail. amend_sframe() appends a timestamped entry to an ordered log, recording why an instrument changed and which fields moved, and never overwrites earlier entries. Changes touching the analysis plan or a model require a deviation report, and the sign-off field records a reviewer’s name or the literal none, so an unreviewed change stays visible. link_git_commit() ties the file’s SHA-256 hash to a specific Git commit. An edit that bypasses amend_sframe() still fails the integrity check exactly as before.\nTeaching and export, added in 0.4.1. A library of 22 demos, each showing one thing, reachable with sframe_demos() and openable as an editable Quarto notebook. sframe_export_labelled() writes SPSS .sav or Stata .dta with the question wording and response options attached, so variables arrive labelled rather than as bare codes."
   },
   {
     "objectID": "products/surveyframe.html#access-and-limitations",
@@ -564,35 +571,42 @@
     "href": "products/ethos.html",
     "title": "Ethos",
     "section": "",
-    "text": "Alpha\n    \n    \n      Ethos is a privacy-first academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams that need self-hosted\n      workflows with zero external calls.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics chainQuality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning\n      HTML reportDownloadable analysis report rendered from the surveyframe analytics chain"
+    "text": "Alpha\n    \n    \n      Ethos is an academic survey, analytics, and writer suite for\n      institutions, teaching labs, and research teams. It comes in 2 editions.\n      Ethos Community is downloaded and run on your own hardware. Ethos Pro is\n      a hosted service. Neither is available yet.\n    \n    \n      Request an update\n      Back to products\n    \n    \n      Survey builderQuestion types, logic, quotas, and collection workflows\n      Analytics chainQuality reporting, scale scoring, reliability, and EFA readiness; CFA lavaan syntax for structural planning\n      HTML reportDownloadable analysis report rendered from the surveyframe analytics chain"
   },
   {
     "objectID": "products/ethos.html#what-it-covers",
     "href": "products/ethos.html#what-it-covers",
     "title": "Ethos",
     "section": "What It Covers",
-    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current alpha architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, a downloadable HTML report, and self-hosted deployment patterns."
+    "text": "What It Covers\nEthos is intended for research and teaching environments that need one integrated system for instrument building, response collection, statistical analysis, and reproducible report generation. The current architecture includes a survey builder, an analytics chain covering quality reporting through to EFA readiness and CFA lavaan syntax output, and a downloadable HTML report."
+  },
+  {
+    "objectID": "products/ethos.html#the-2-editions",
+    "href": "products/ethos.html#the-2-editions",
+    "title": "Ethos",
+    "section": "The 2 Editions",
+    "text": "The 2 Editions\nThe edition split was settled on 7 September 2026.\nEthos Community is downloaded and self-hosted. Everything runs on your own hardware, with no external calls, no CDNs, and no telemetry. That guarantee describes Community specifically, and it is the edition the promise was written for.\nEthos Pro is a hosted service, and it is not offered as a download. It adds an approval workflow, organisation administration, and audit export on top of Community. Pro is at an early scaffolding stage. Nothing in it is finished, and none of it should be read as available."
   },
   {
     "objectID": "products/ethos.html#what-is-available-now",
     "href": "products/ethos.html#what-is-available-now",
     "title": "Ethos",
     "section": "What Is Available Now",
-    "text": "What Is Available Now\nThe alpha includes a working end-to-end analytics chain powered by surveyframe v0.3, now live on CRAN (install.packages(\"surveyframe\")): define an instrument, import CSV responses, run quality reporting, score scales, check reliability and EFA readiness, generate CFA lavaan syntax for structural planning, and render a downloadable HTML report. All computation runs locally through a self-hosted R engine with no external calls. PLS-SEM, CB-SEM, and structural equation model execution are planned for the next release cycle."
+    "text": "What Is Available Now\nNothing is available to download or sign up for. The work in progress is an end-to-end analytics chain powered by surveyframe 0.4.1, which is on CRAN and can be used on its own today (install.packages(\"surveyframe\")). That chain defines an instrument, imports CSV responses, runs quality reporting, scores scales, checks reliability and EFA readiness, generates CFA lavaan syntax for structural planning, and renders a downloadable HTML report.\nThe interface is mid-rebuild, so the screens shown here will change.\nPLS-SEM, CB-SEM, and structural equation model execution are not built. They arrive in surveyframe 0.5, which has not started and carries no date."
   },
   {
     "objectID": "products/ethos.html#current-stage",
     "href": "products/ethos.html#current-stage",
     "title": "Ethos",
     "section": "Current Stage",
-    "text": "Current Stage\nThe product is in alpha. The public page is meant to explain the direction of the suite while access and pilots are still being scoped carefully."
+    "text": "Current Stage\nThe product is in alpha and the interface is being rebuilt. This page explains the direction of the suite while access and pilots are still being scoped. Treat everything described here as intent, not as shipped software."
   },
   {
     "objectID": "products/ethos.html#access-and-limitations",
     "href": "products/ethos.html#access-and-limitations",
     "title": "Ethos",
     "section": "Access And Limitations",
-    "text": "Access And Limitations\nEthos is not available as a public hosted service. Pilot and update requests are handled directly through the form below while the self-hosted alpha is stabilised. Pricing and deployment scope are not published yet because pilot use is being discussed case by case with institutions and research teams."
+    "text": "Access And Limitations\nEthos is not available, in either edition. There is no download, no hosted sign-up, and no public beta. Pilot and update requests are handled through the form below while the alpha is stabilised and the interface rebuild finishes. Pricing and deployment scope are not published yet, because pilot use is being discussed case by case with institutions and research teams."
   },
   {
     "objectID": "products/ethos.html#pilot-interest",
@@ -600,6 +614,55 @@
     "title": "Ethos",
     "section": "Pilot Interest",
     "text": "Pilot Interest\n\n  Register Interest In Ethos\n  Use this form if you want updates on self-hosted pilots, institutional testing, or teaching-lab use cases.\n  \n    \n      Name\n      Email\n      Organisation\n      Message\n    \n    \n      Send request\n      Use the form below to register pilot interest or request an update."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "",
+    "text": "TL;DR: surveyframe 0.4.0 reached CRAN on 20 August 2026. Install it with install.packages(\"surveyframe\"). This is the largest release so far. It adds multi-criteria decision analysis with 10 methods, a 9-method text-analysis family for open-ended responses, a track of small-sample corrections, and a disclosed-amendment and Git-linked provenance trail for .sframe files. It also carries 2 breaking changes, described at the end. Free and open source under the MIT licence."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#decision-analysis-collected-inside-the-instrument",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#decision-analysis-collected-inside-the-instrument",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "Decision analysis, collected inside the instrument",
+    "text": "Decision analysis, collected inside the instrument\nMulti-criteria decision analysis usually sits in a gap. Computation packages assume a clean decision matrix already exists. Survey software has no concept of a decision method at all. Getting from one to the other is manual work, and it is where mistakes enter.\n0.4.0 closes that gap. It ships 10 methods, each carrying a verified literature citation:\n\nThe Analytic Hierarchy Process (AHP) and the Analytic Network Process (ANP)\nThe Decision Making Trial and Evaluation Laboratory method (DEMATEL)\nVIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS\n\nTwo new item types collect the judgement data inside the survey itself. pairwise_comparison uses Saaty’s 1-to-9 ratio scale for AHP and ANP, or a 0-to-4 directed influence scale for DEMATEL. criteria_weight is a constant-sum allocation across criteria. Both render identically in the static HTML survey, the Shiny module, and the builder preview.\nAn aggregation layer turns per-respondent answers into the matrices the methods consume. It validates that every pair was answered, and it combines respondents with the geometric mean for AHP and ANP, which preserves reciprocity, or the arithmetic mean for DEMATEL. AHP judgements are screened for consistency against Saaty’s random-index table, and the consistency-ratio distribution is reported whether or not a study declared a filtering threshold in advance.\nEvery ranking method resolves its inputs in the same order, and records where each number came from, so a results table can state the provenance of what it shows. sensitivity_analysis() reports how far a ranking moves under a declared perturbation of the weights, and carries a degenerate flag so a ranking that never separated its alternatives cannot report false stability.\nEach method’s implementation had to agree with an independent computation of the same method on the same matrix before it was accepted. That practice caught a real defect during development, a WASPAS runner that had inherited SMART’s normalisation step by mistake."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#text-analysis-for-open-ended-responses",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#text-analysis-for-open-ended-responses",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "Text analysis for open-ended responses",
+    "text": "Text analysis for open-ended responses\nOpen-ended answers are usually the part of a survey that never gets analysed. 0.4.0 adds a 9-method family for them, running through the same analysis-plan and reporting pipeline as every other method:\n\nterm_freq and ngram_freq, top terms and top bigrams or trigrams, as a bar chart or word cloud\nterm_context, a keyword-in-context concordance showing what came before and after a chosen word\nco_occurrence and co_occurrence_network, pairwise co-occurrence as a heatmap, and a clustered force-directed network\ntidy_sentiment, positive and negative counts and the proportion positive\nquanteda_dfm, a document-feature matrix summary\ntopic_model_lda and stm_topics, Latent Dirichlet Allocation and structural topic modelling\n\nA shared cleaning step, clean_text_responses(), and a 174-word English stopword list are both exported, so a study can reuse or override them outside a runner. The heavier methods keep their dependencies optional.\nThe vignette is explicit about what the family does not attempt. Stemming, lemmatisation, tf-idf, and keyness comparison are not implemented."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#corrections-for-small-samples",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#corrections-for-small-samples",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "Corrections for small samples",
+    "text": "Corrections for small samples\nApplied research usually runs on fewer respondents than the textbook assumes, and the ordinary versions of these tests can flip significance on repeated draws from data whose true difference never changed. This release adds:\n\nThe Hodges-Lehmann shift estimator, for the two-group Mann-Whitney comparison\nThe paired Wilcoxon pseudomedian confidence interval, for the paired t-test\nThe exact odds-ratio confidence interval on Fisher’s test, which avoids the continuity correction a Wald interval needs when a cell is zero\nFirth’s bias-reduced logistic regression, for regression prone to separation at small n\n\nAn advisory on assumption_report() and sample_size_plan() flags when a study’s sample size falls in the range where these are worth considering."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#disclosed-amendments-and-a-provenance-trail",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#disclosed-amendments-and-a-provenance-trail",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "Disclosed amendments and a provenance trail",
+    "text": "Disclosed amendments and a provenance trail\nA SHA-256 hash proves a .sframe file has not changed since it was written. It cannot tell a legitimate revision from an undisclosed edit, because both break the hash identically.\n0.4.0 adds a disclosed-revision path alongside the hash check, without weakening it. amend_sframe() compares an instrument before and after a change and appends a timestamped entry to an ordered log. It never overwrites. Each entry records a reason from a controlled vocabulary, a free-text explanation, and which top-level fields changed.\nAmendments come in 2 tiers. Pipeline amendments, such as a data correction or bot-response removal, need only a reason. Design amendments, meaning anything touching the analysis plan or a model, require a deviation report describing what changed in the research question, method, or model, and why. The sign-off field is never blank. It records a reviewer’s name or the literal none, so an unreviewed design change stays visible to anyone auditing the file.\nlink_git_commit() records the current Git commit SHA and subject line alongside an instrument, tying the file hash to a commit that already has an explanation attached. Git is optional.\nAn edit made directly to a .sframe file, bypassing amend_sframe(), still fails the integrity check on read exactly as it did before.\nThe .sframe format is now documented as a standalone JSON Schema, so a reviewer or a second tool can validate a file without installing the package."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#what-breaks",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#what-breaks",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "What breaks",
+    "text": "What breaks\nTwo changes need attention before you upgrade.\nvalidate_sframe() and validate_model() now return an sframe_validation diagnostic object, visibly, instead of returning 2 different things depending on strict. Reading $valid and $problems still works, so the common pattern needs no migration. What breaks is code using the return value as an instrument, as in instrument &lt;- validate_sframe(instrument). Wrap it in as_sframe(). Passing a validation result where an instrument is expected now raises an error that names the fix.\nThe Shiny collector now emits expansion columns for matrix items instead of pipe-joining a matrix item’s cells into a single column.\nBoth changes came out of a code review by a Journal of Statistical Software editor. The same review prompted accessor methods for every class, so user code no longer has to reach into the underlying list. The registered S3 method count went from 41 to 103."
+  },
+  {
+    "objectID": "blog/posts/12-surveyframe-0-4-0-cran.html#get-it",
+    "href": "blog/posts/12-surveyframe-0-4-0-cran.html#get-it",
+    "title": "surveyframe 0.4.0 is on CRAN",
+    "section": "Get it",
+    "text": "Get it\n\nInstall: install.packages(\"surveyframe\")\nDocumentation: mohammedalisharafuddin.github.io/surveyframe\nSource: github.com/MohammedAliSharafuddin/surveyframe\nOn CRAN: CRAN.R-project.org/package=surveyframe\n\nThe follow-up release, 0.4.1, adds a 22-demo teaching library and labelled SPSS and Stata export."
   },
   {
     "objectID": "blog/posts/10-persona-builder.html",
@@ -970,21 +1033,21 @@
     "href": "about.html",
     "title": "About Mohammed Ali Sharafuddin",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto. He founded FlairMI, which\n      publishes his open-source tools, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#founder",
     "href": "about.html#founder",
     "title": "About Mohammed Ali Sharafuddin",
     "section": "",
-    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto.\n    \n    \n      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source\n      tools, practical techniques, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software for teaching, research,\n      technical writing, and applied analytics.\n    \n    \n      The platform brings these resources together in one public home at\n      flairmi.com, making it easier for students, educators,\n      researchers, and practitioners to find usable materials, working tools,\n      and structured learning resources in one place.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
+    "text": "Mohammed Ali Sharafuddin is an academic researcher, educator, and\n      software developer focused on digital marketing, marketing analytics,\n      survey research, quantitative methods, technical writing, and\n      reproducible workflows in R and Quarto. He founded FlairMI, which\n      publishes his open-source tools, textbooks, tutorials, downloadable\n      templates, and privacy-conscious software at flairmi.com.\n    \n    \n      Textbooks\n      Templates\n      Products\n      Workshops\n      Privacy-first software"
   },
   {
     "objectID": "about.html#current-work",
     "href": "about.html#current-work",
     "title": "About Mohammed Ali Sharafuddin",
     "section": "Current Work",
-    "text": "Current Work\n\nR package: surveyframe v0.3.0, now live on CRAN — survey instrument workflows from design to reproducible reporting.\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
+    "text": "Current Work\n\nR package: surveyframe v0.4.1, live on CRAN. Survey instrument workflows from design to reproducible reporting, now including multi-criteria decision analysis, text analysis of open-ended responses, and a disclosed-amendment provenance trail.\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
   },
   {
     "objectID": "about.html#about-flairmi",
@@ -992,6 +1055,13 @@
     "title": "About Mohammed Ali Sharafuddin",
     "section": "About FlairMI",
     "text": "About FlairMI\nFlair Marketing Intelligence (FlairMI) is a public-facing platform built around open educational and analytical work. It combines teaching resources, downloadable tools, practical software, and service-led support for people who work with data, writing, surveys, and decision-making.\nThe site is organised around four public areas:\n\nTextbooks for book pages, teaching lines, and companion resources\nTemplates for hosted workbook downloads and dashboard explainers\nProducts for live tools and beta software\nServices for workshops, consulting, and implementation support\n\nFlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at mohammedalisharafuddin.github.io."
+  },
+  {
+    "objectID": "about.html#where-readers-come-from",
+    "href": "about.html#where-readers-come-from",
+    "title": "About Mohammed Ali Sharafuddin",
+    "section": "Where Readers Come From",
+    "text": "Where Readers Come From"
   },
   {
     "objectID": "about.html#contact",
@@ -1005,7 +1075,7 @@
     "href": "about.html#connect",
     "title": "About Mohammed Ali Sharafuddin",
     "section": "Connect",
-    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 29 May 2026"
+    "text": "Connect\n\nGoogle Scholar: https://scholar.google.com/citations?user=DgaDtq4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0001-5247-2964\nGitHub profile: https://github.com/MohammedAliSharafuddin\nLinkedIn: https://www.linkedin.com/in/mohammed-ali-s-157a2719/\nPersonal academic site: https://mohammedalisharafuddin.github.io/\n\n\nLast updated: 9 September 2026"
   },
   {
     "objectID": "index.html",
@@ -1040,7 +1110,7 @@
     "href": "index.html#workflow-products",
     "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Workflow Products",
-    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN. Price Memory, Margin Guard, and Persona Builder are live in the browser. QuartoPad, TrimWrite, and Ethos remain in preview as the broader workflow line takes shape.\n\n  \n    \n      \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research: instrument design, static HTML export, Shiny module, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n    install.packages(\"surveyframe\")\n    View on CRAN\n      \n    \n  \n  \n    \n      \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas, with PNG and PDF export.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
+    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN at version 0.4.1. Price Memory, Margin Guard, and Persona Builder are live in the browser. QuartoPad, TrimWrite, and Ethos are previews. None of the 3 can be downloaded or signed up for yet.\n\n  \n    \n      \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research, from instrument design to a reproducible report. Version 0.4 added decision analysis, text analysis, and a provenance trail.\n    install.packages(\"surveyframe\")\n    View on CRAN\n      \n    \n  \n  \n    \n      \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas, with PNG and PDF export.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
   },
   {
     "objectID": "index.html#services",
@@ -1463,25 +1533,81 @@
     "text": "Adapt this to your own survey\nTo reuse this for a different multiple_choice question, change four things and leave the rest:\n\nThe id and label in sf_item()\nThe values and labels in sf_choices()\nThe column names in the plan’s roles$measures, and in responses, to match your new id (surveyframe names each binary column &lt;id&gt;_&lt;value&gt;)\nThe probabilities in the synthetic responses, or point read_responses() at your real data\n\nThe codebook, the export, and the multi-response summary table work the same way regardless of how many options the question offers.\n\nGet surveyframe\ninstall.packages(\"surveyframe\")\n\nDocumentation: mohammedalisharafuddin.github.io/surveyframe\nSource: github.com/MohammedAliSharafuddin/surveyframe\nRelease notes: surveyframe 0.3.3 is on CRAN\nThe single_choice walkthrough this post builds on: surveyframe Field Types: Single Choice"
   },
   {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "",
+    "text": "TL;DR: surveyframe 0.4.1 reached CRAN on 3 September 2026, 14 days after 0.4.0. Install it with install.packages(\"surveyframe\"). It adds a library of 22 teaching demos, labelled SPSS and Stata export, and seeded reports that reproduce exactly. It also fixes 2 defects that could silently corrupt collected data, which is why it followed 0.4.0 so closely. Free and open source under the MIT licence."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#why-this-release-came-so-fast",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#why-this-release-came-so-fast",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "Why this release came so fast",
+    "text": "Why this release came so fast\nCRAN asks for 1 to 2 months between submissions. This one went in 14 days after 0.4.0, and the reason was set out in the submission comments: 2 of the fixes below could corrupt collected data without raising an error. Data that is quietly wrong is worse than data that fails loudly, so the release was not held back. It was accepted the same day it was submitted."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#a-library-of-22-demos",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#a-library-of-22-demos",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "A library of 22 demos",
+    "text": "A library of 22 demos\nThe most common question about a survey package is not how a function works. It is which approach fits the data you actually have.\n0.4.1 answers that with 22 small demos, each showing one thing. List them with sframe_demos(), load one with sframe_demo(\"two_group\"), or get an editable Quarto notebook with sframe_demo_qmd(\"two_group\"). Together they cover every analysis method and every question type in the package.\nEach demo also ships a codebook of variable and value labels, and the results surveyframe produced for it, so you can check the numbers against other software rather than taking them on trust.\nA companion vignette, vignette(\"learn-by-example\"), walks you from picking the demo that matches your data through to the finished report."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#labelled-export-to-spss-and-stata",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#labelled-export-to-spss-and-stata",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "Labelled export to SPSS and Stata",
+    "text": "Labelled export to SPSS and Stata\nsframe_export_labelled() writes SPSS .sav or Stata .dta with the question wording and the response options attached. Variables arrive in the other package already labelled, instead of as bare numeric codes that someone has to map by hand. haven is an optional dependency."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#reports-that-reproduce",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#reports-that-reproduce",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "Reports that reproduce",
+    "text": "Reports that reproduce\nrun_analysis_plan() gains a seed argument, set by default. Bootstrap confidence intervals and the EFA parallel analysis previously drew from the random stream unseeded, so the same data gave a slightly different interval on every run.\nThis means confidence intervals will move once when you re-run an older analysis. Test statistics and p values are unaffected. Pass seed = NULL for the previous behaviour.\nrender_report() now states which engine produced the file, Quarto or the built-in writer, in a message, in an engine attribute, and in the report itself beside the instrument hash and the seed."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#the-2-data-corruption-fixes",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#the-2-data-corruption-fixes",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "The 2 data-corruption fixes",
+    "text": "The 2 data-corruption fixes\nThe Google Sheets collector could corrupt collected data. Adding a question mid-study left the sheet’s header stale while new rows used the new order, so values landed under the wrong headings with no error raised. The collector now matches columns by name.\nBranching rules using %in% with more than one value never worked in an exported survey. The question stayed hidden whatever the respondent answered. This had been present since 0.3.0."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#other-fixes",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#other-fixes",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "Other fixes",
+    "text": "Other fixes\n\nsem_lavaan_syntax() produced a mediation model lavaan could not fit, because indirect effects referred to path labels that were never written.\nStraight-lining no longer flags scales shorter than 4 items, where identical answers are normal rather than careless. quality_report() gains straightline_min_items. When no scale is long enough to check, the report says so instead of dropping the chart silently.\nReading a response file with read.csv() no longer mangles matrix columns whose labels contain spaces. Use check.names = FALSE."
+  },
+  {
+    "objectID": "blog/posts/13-surveyframe-0-4-1-cran.html#get-it",
+    "href": "blog/posts/13-surveyframe-0-4-1-cran.html#get-it",
+    "title": "surveyframe 0.4.1 is on CRAN",
+    "section": "Get it",
+    "text": "Get it\n\nInstall: install.packages(\"surveyframe\")\nDocumentation: mohammedalisharafuddin.github.io/surveyframe\nSource: github.com/MohammedAliSharafuddin/surveyframe\nOn CRAN: CRAN.R-project.org/package=surveyframe\n\nIf you have not read them yet, the 0.4.0 release notes cover the decision-analysis, text-analysis, and provenance work this release builds on."
+  },
+  {
     "objectID": "products/index.html",
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN at 0.4.1. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
   },
   {
     "objectID": "products/index.html#product-portfolio",
     "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and coming-soon software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN. QuartoPad, TrimWrite, and Ethos are presented as teaser pages with screens, product framing, and beta or pilot enquiry forms."
+    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN at 0.4.1. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
   },
   {
     "objectID": "products/index.html#live-now",
     "href": "products/index.html#live-now",
     "title": "Products",
     "section": "Live Now",
-    "text": "Live Now\n\n  \n    \n      surveyframe\n      \n        Live on CRAN\n        An R package for end-to-end survey research workflows: instrument design, static HTML export, Shiny module, response quality, scale scoring, psychometric diagnostics, analysis planning, and reproducible HTML reporting.\n        Free and open source, MIT licence.\n        install.packages(\"surveyframe\")\n      \n      \n        View on CRAN GitHub\n      \n    \n  \n  \n    \n      Price Memory\n      \n        Live\n        A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Margin Guard\n      \n        Live\n        A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Persona Builder\n      \n        Live\n        A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.\n      \n      \n        Open live product"
+    "text": "Live Now\n\n  \n    \n      surveyframe\n      \n        Live on CRAN\n        An R package for end-to-end survey research workflows, from instrument design to a reproducible report. Version 0.4 added 10 decision-analysis methods, 9 text-analysis methods, and a disclosed-amendment provenance trail. Full feature list.\n        Free and open source, MIT licence.\n        install.packages(\"surveyframe\")\n      \n      \n        View on CRAN GitHub\n      \n    \n  \n  \n    \n      Price Memory\n      \n        Live\n        A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Margin Guard\n      \n        Live\n        A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Persona Builder\n      \n        Live\n        A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.\n      \n      \n        Open live product"
   },
   {
     "objectID": "products/index.html#coming-soon",
@@ -1489,13 +1615,6 @@
     "title": "Products",
     "section": "Coming Soon",
     "text": "Coming Soon\n\n  \n    \n      QuartoPad\n      \n        Private Beta\n        A local-first Quarto workspace with live rendering, chunk execution, dataset preview, and citation-aware editing.\n      \n      \n        Preview coming-soon page\n      \n    \n  \n  \n    \n      TrimWrite\n      \n        Testing\n        A revision environment for spotting AI-like phrasing, vague language, and structural repetition before publication.\n      \n      \n        Preview coming-soon page\n      \n    \n  \n  \n    \n      Ethos\n      \n        Alpha\n        A research workflow product for survey design, defensible data collection, guided analysis, and reproducible reporting.\n      \n      \n        Preview coming-soon page"
-  },
-  {
-    "objectID": "products/index.html#at-a-glance",
-    "href": "products/index.html#at-a-glance",
-    "title": "Products",
-    "section": "At A Glance",
-    "text": "At A Glance\n\n  \n    \n      R package\n      \n        surveyframe is on CRAN and covers the full survey research pipeline from instrument design to reproducible reporting.\n      \n    \n  \n  \n    \n      Live now\n      \n        Price Memory, Margin Guard, and Persona Builder are public-facing tools with live browser access and dedicated product pages.\n      \n    \n  \n  \n    \n      Writer workflow\n      \n        QuartoPad and TrimWrite are designed to support drafting, revision, preview, and final-document quality control.\n      \n    \n  \n  \n    \n      Academic stack\n      \n        Ethos brings survey building, analytics, ethics workflow, and writer exports into one self-hosted environment."
   },
   {
     "objectID": "products/price-memory.html",
@@ -1929,7 +2048,56 @@
     "href": "downloads/PrivacyPolicy.html",
     "title": "Privacy Policy",
     "section": "",
-    "text": "Privacy Policy\nDate: 25 October 2025\nFlair Marketing Intelligence (FlairMI) collects email addresses and firmographic details to administer the waitlist and Starter Pack. We store data in encrypted services located in Mumbai and Frankfurt. Access is limited to the research team. We retain contact records for twelve months unless you request deletion earlier. Contact mohammedali.page@gmail.com for access, corrections, or deletion requests."
+    "text": "Date: 9 September 2026\nThis policy covers the website at flairmi.com. It does not cover the Ethos software, which is documented separately and is not available yet.\n\n\nThis site uses Google Analytics 4 (GA4) to understand which pages are visited and how. GA4 sets cookies and collects standard technical data, including your approximate location, device type, browser, and the pages you view. No name, email address, or other directly identifying information is sent to GA4 through this site.\nIf you are visiting from the European Union or the United Kingdom, analytics stay switched off until you accept them on the banner shown on your first visit. Declining is a real choice. No analytics cookies are set and no data reaches Google. Your choice is stored in your browser so you are asked once, and you can change it from the link in the footer at any time.\nYou can also opt out with the Google Analytics opt-out add-on, or by blocking third-party cookies in your browser.\nThe flag counter on the About page shows aggregate visitor counts by country, taken from that same analytics data when the site is rebuilt. It is a static file served from this site. It identifies nobody, adds no tracking of its own, and sets no cookie.\n\n\n\nThe contact, pilot, and enquiry forms on this site send what you type to FormSubmit (formsubmit.co), which forwards it by email. That means your name, email address, organisation if you give one, and your message pass through that service. Use email instead if you would rather not use the forms.\nEnquiry records are kept for 12 months unless you ask for deletion sooner. Access is limited to Mohammed Ali Sharafuddin.\n\n\n\n\nNo advertising, no ad networks, and no remarketing or advertising cookies\nNo selling or sharing of personal data\nNo account system, so there is nothing to sign up for and no password to store\nNo tracking across other websites\n\n\n\n\nTextbooks, templates, and workbooks download directly. No email address is required, and downloading one is not recorded against you as an individual.\n\n\n\nContact mohammedali.page@gmail.com for access to what is held about you, for corrections, or for deletion. Under UK and EU data protection law you can also object to processing and complain to your national supervisory authority.\n\n\n\n\n\n\n\n\n\n\n\nService\nWhat it receives\nWhy\n\n\n\n\nGoogle Analytics 4\nPage views and technical data, after consent in the EU and UK\nUnderstanding which pages are useful\n\n\nFormSubmit\nWhat you type into a form\nDelivering enquiries by email\n\n\n\nLinks to external sites are governed by those sites’ own privacy policies, not this one.\n\n\n\nThe date at the top of this page is the date it last changed. The previous version of this policy described a waitlist and a Starter Pack that were never launched, and it did not mention analytics. It was rewritten on 9 September 2026 to describe what the site actually does."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#analytics",
+    "href": "downloads/PrivacyPolicy.html#analytics",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "This site uses Google Analytics 4 (GA4) to understand which pages are visited and how. GA4 sets cookies and collects standard technical data, including your approximate location, device type, browser, and the pages you view. No name, email address, or other directly identifying information is sent to GA4 through this site.\nIf you are visiting from the European Union or the United Kingdom, analytics stay switched off until you accept them on the banner shown on your first visit. Declining is a real choice. No analytics cookies are set and no data reaches Google. Your choice is stored in your browser so you are asked once, and you can change it from the link in the footer at any time.\nYou can also opt out with the Google Analytics opt-out add-on, or by blocking third-party cookies in your browser.\nThe flag counter on the About page shows aggregate visitor counts by country, taken from that same analytics data when the site is rebuilt. It is a static file served from this site. It identifies nobody, adds no tracking of its own, and sets no cookie."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#the-contact-and-enquiry-forms",
+    "href": "downloads/PrivacyPolicy.html#the-contact-and-enquiry-forms",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "The contact, pilot, and enquiry forms on this site send what you type to FormSubmit (formsubmit.co), which forwards it by email. That means your name, email address, organisation if you give one, and your message pass through that service. Use email instead if you would rather not use the forms.\nEnquiry records are kept for 12 months unless you ask for deletion sooner. Access is limited to Mohammed Ali Sharafuddin."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#what-this-site-does-not-do",
+    "href": "downloads/PrivacyPolicy.html#what-this-site-does-not-do",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "No advertising, no ad networks, and no remarketing or advertising cookies\nNo selling or sharing of personal data\nNo account system, so there is nothing to sign up for and no password to store\nNo tracking across other websites"
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#downloads",
+    "href": "downloads/PrivacyPolicy.html#downloads",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "Textbooks, templates, and workbooks download directly. No email address is required, and downloading one is not recorded against you as an individual."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#your-rights",
+    "href": "downloads/PrivacyPolicy.html#your-rights",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "Contact mohammedali.page@gmail.com for access to what is held about you, for corrections, or for deletion. Under UK and EU data protection law you can also object to processing and complain to your national supervisory authority."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#third-parties-named-in-this-policy",
+    "href": "downloads/PrivacyPolicy.html#third-parties-named-in-this-policy",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "Service\nWhat it receives\nWhy\n\n\n\n\nGoogle Analytics 4\nPage views and technical data, after consent in the EU and UK\nUnderstanding which pages are useful\n\n\nFormSubmit\nWhat you type into a form\nDelivering enquiries by email\n\n\n\nLinks to external sites are governed by those sites’ own privacy policies, not this one."
+  },
+  {
+    "objectID": "downloads/PrivacyPolicy.html#changes",
+    "href": "downloads/PrivacyPolicy.html#changes",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "The date at the top of this page is the date it last changed. The previous version of this policy described a waitlist and a Starter Pack that were never launched, and it did not mention analytics. It was rewritten on 9 September 2026 to describe what the site actually does."
   },
   {
     "objectID": "downloads/Refund_Cancellation_Policy.html",

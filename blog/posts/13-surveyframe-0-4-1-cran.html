@@ -7,9 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammed Ali Sharafuddin">
-<meta name="description" content="Hosted Excel workbook for plotting competitors across two strategic dimensions and identifying market gaps.">
+<meta name="dcterms.date" content="2026-09-03">
+<meta name="keywords" content="surveyframe, CRAN, R package, teaching demos, SPSS export, Stata export, reproducibility, seed, bug fixes">
+<meta name="description" content="surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.">
 
-<title>Competitive Positioning Map - Flair Marketing Intelligence</title>
+<title>surveyframe 0.4.1 is on CRAN - Flair Marketing Intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,23 +27,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-dcf9637eb6d5df37037d3005a2ac9f95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-dcf9637eb6d5df37037d3005a2ac9f95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -189,40 +191,41 @@ ul.task-list li input[type="checkbox"] {
      accept. Putting ga4.js back on this line would load the tag on every
      page for everyone again, which is what the 2026-09-09 audit found and
      what downloads/PrivacyPolicy.md now says does not happen. -->
-<script defer="" src="../assets/js/consent.js"></script>
-<script defer="" src="../assets/js/flag-counter.js"></script>
-<script defer="" src="../assets/js/nav-overview.js"></script>
-<script defer="" src="../assets/js/contact-form.js"></script>
+<script defer="" src="../../assets/js/consent.js"></script>
+<script defer="" src="../../assets/js/flag-counter.js"></script>
+<script defer="" src="../../assets/js/nav-overview.js"></script>
+<script defer="" src="../../assets/js/contact-form.js"></script>
 
 
-<link rel="stylesheet" href="../assets/css/consent.css">
-<link rel="stylesheet" href="../assets/css/flag-counter.css">
-<meta property="og:title" content="Competitive Positioning Map – Flair Marketing Intelligence">
-<meta property="og:description" content="Hosted Excel workbook for plotting competitors across two strategic dimensions and identifying market gaps.">
+<link rel="stylesheet" href="../../assets/css/consent.css">
+<link rel="stylesheet" href="../../assets/css/flag-counter.css">
+<link rel="stylesheet" href="../../assets/css/blog-tables.css">
+<meta property="og:title" content="surveyframe 0.4.1 is on CRAN – Flair Marketing Intelligence">
+<meta property="og:description" content="surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
 <meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
-<meta name="twitter:title" content="Competitive Positioning Map – Flair Marketing Intelligence">
-<meta name="twitter:description" content="Hosted Excel workbook for plotting competitors across two strategic dimensions and identifying market gaps.">
+<meta name="twitter:title" content="surveyframe 0.4.1 is on CRAN – Flair Marketing Intelligence">
+<meta name="twitter:description" content="surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://flairmi.com/templates/competitive-positioning-map.html">
+<link rel="canonical" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
+    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Flair Marketing Intelligence</span>
     </a>
   </div>
@@ -233,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -242,33 +245,33 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-textbooks">    
         <li>
-    <a class="dropdown-item" href="../textbooks/index.html">
+    <a class="dropdown-item" href="../../textbooks/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/ddmm.html">
+    <a class="dropdown-item" href="../../textbooks/ddmm.html">
  <span class="dropdown-text">Statistics for Managers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/marai.html">
+    <a class="dropdown-item" href="../../textbooks/marai.html">
  <span class="dropdown-text">Marketing Analytics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/asrda.html">
+    <a class="dropdown-item" href="../../textbooks/asrda.html">
  <span class="dropdown-text">Survey Research in R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/smallsamplelab.html">
+    <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/dmarketing.html">
+    <a class="dropdown-item" href="../../textbooks/dmarketing.html">
  <span class="dropdown-text">Digital Marketing</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -277,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-toolkit">    
         <li>
-    <a class="dropdown-item" href="../toolkit/index.html">
+    <a class="dropdown-item" href="../../toolkit/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
@@ -285,11 +288,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Persona Builder</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/stp-builder.html">
+    <a class="dropdown-item" href="../../toolkit/stp-builder.html">
  <span class="dropdown-text">STP Builder</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/swot-analysis.html">
+    <a class="dropdown-item" href="../../toolkit/swot-analysis.html">
  <span class="dropdown-text">SWOT Analysis Builder</span></a>
   </li>  
     </ul>
@@ -300,41 +303,41 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
         <li>
-    <a class="dropdown-item" href="../products/index.html">
+    <a class="dropdown-item" href="../../products/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/surveyframe.html">
+    <a class="dropdown-item" href="../../products/surveyframe.html">
  <span class="dropdown-text">surveyframe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/statchooser.html">
+    <a class="dropdown-item" href="../../products/statchooser.html">
  <span class="dropdown-text">StatChooser</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/price-memory.html">
+    <a class="dropdown-item" href="../../products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/margin-guard.html">
+    <a class="dropdown-item" href="../../products/margin-guard.html">
  <span class="dropdown-text">Margin Guard</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/quartopad.html">
+    <a class="dropdown-item" href="../../products/quartopad.html">
  <span class="dropdown-text">QuartoPad</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/trimwrite.html">
+    <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/ethos.html">
+    <a class="dropdown-item" href="../../products/ethos.html">
  <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../services/index.html"> 
+    <a class="nav-link" href="../../services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -343,33 +346,33 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">All posts</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Statistics Tutorials</li>
         <li>
-    <a class="dropdown-item" href="../blog/posts/01-margin-of-error.html">
+    <a class="dropdown-item" href="../../blog/posts/01-margin-of-error.html">
  <span class="dropdown-text">Confidence Interval for a Proportion</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/02-two-proportion-test.html">
+    <a class="dropdown-item" href="../../blog/posts/02-two-proportion-test.html">
  <span class="dropdown-text">Two-Proportion Test</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/03-t-test.html">
+    <a class="dropdown-item" href="../../blog/posts/03-t-test.html">
  <span class="dropdown-text">t-Test: Average Order Value</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/04-welch-t.html">
+    <a class="dropdown-item" href="../../blog/posts/04-welch-t.html">
  <span class="dropdown-text">Welch vs Equal-Variance t-Test</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/05-simple-regression.html">
+    <a class="dropdown-item" href="../../blog/posts/05-simple-regression.html">
  <span class="dropdown-text">Simple Linear Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/06-logistic-basics.html">
+    <a class="dropdown-item" href="../../blog/posts/06-logistic-basics.html">
  <span class="dropdown-text">Logistic Regression Basics</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
@@ -383,31 +386,31 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
+    <a class="dropdown-item" href="../../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/08-analysis-plan-before-data.html">
+    <a class="dropdown-item" href="../../blog/posts/08-analysis-plan-before-data.html">
  <span class="dropdown-text">Why the Analysis Plan Comes First</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/09-surveyframe-single-choice.html">
+    <a class="dropdown-item" href="../../blog/posts/09-surveyframe-single-choice.html">
  <span class="dropdown-text">surveyframe Field Types: Single Choice</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/11-surveyframe-multiple-choice.html">
+    <a class="dropdown-item" href="../../blog/posts/11-surveyframe-multiple-choice.html">
  <span class="dropdown-text">surveyframe Field Types: Multiple Choice</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Tools &amp; Announcements</li>
         <li>
-    <a class="dropdown-item" href="../blog/posts/10-persona-builder.html">
+    <a class="dropdown-item" href="../../blog/posts/10-persona-builder.html">
  <span class="dropdown-text">Persona Builder Announcement</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -421,18 +424,38 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-this-release-came-so-fast" id="toc-why-this-release-came-so-fast" class="nav-link active" data-scroll-target="#why-this-release-came-so-fast">Why this release came so fast</a></li>
+  <li><a href="#a-library-of-22-demos" id="toc-a-library-of-22-demos" class="nav-link" data-scroll-target="#a-library-of-22-demos">A library of 22 demos</a></li>
+  <li><a href="#labelled-export-to-spss-and-stata" id="toc-labelled-export-to-spss-and-stata" class="nav-link" data-scroll-target="#labelled-export-to-spss-and-stata">Labelled export to SPSS and Stata</a></li>
+  <li><a href="#reports-that-reproduce" id="toc-reports-that-reproduce" class="nav-link" data-scroll-target="#reports-that-reproduce">Reports that reproduce</a></li>
+  <li><a href="#the-2-data-corruption-fixes" id="toc-the-2-data-corruption-fixes" class="nav-link" data-scroll-target="#the-2-data-corruption-fixes">The 2 data-corruption fixes</a></li>
+  <li><a href="#other-fixes" id="toc-other-fixes" class="nav-link" data-scroll-target="#other-fixes">Other fixes</a></li>
+  <li><a href="#get-it" id="toc-get-it" class="nav-link" data-scroll-target="#get-it">Get it</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Competitive Positioning Map</h1>
-</div>
+<h1 class="title">surveyframe 0.4.1 is on CRAN</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">surveyframe</div>
+    <div class="quarto-category">R packages</div>
+    <div class="quarto-category">survey research</div>
+    <div class="quarto-category">release notes</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Hosted Excel workbook for plotting competitors across two strategic dimensions and identifying market gaps.
+    surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.
   </div>
 </div>
 
@@ -455,44 +478,71 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
       
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 3, 2026</p>
+    </div>
+  </div>
   
     
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>surveyframe, CRAN, R package, teaching demos, SPSS export, Stata export, reproducibility, seed, bug fixes</p>
+  </div>
+</div>
 
 </header>
 
 
-<div class="grid align-items-center mb-4">
-  <div class="g-col-12 g-col-lg-7">
-    <span class="badge badge-live">Download</span>
-    <h1>Competitive Positioning Map</h1>
-    <p class="lead" style="max-width: 60ch;">
-      Plot your company and competitors across two strategic dimensions of your
-      choice. The workbook supports gap identification, score comparison, and
-      basic weighted ranking.
-    </p>
-    <div class="d-flex flex-wrap gap-2 mt-3">
-      <a class="btn btn-primary" href="../downloads/toolkit/Competitive_Positioning_Map.xlsx">Download workbook</a>
-      <a class="btn btn-outline-primary" href="./index.html">Back to templates</a>
-    </div>
-  </div>
-  <div class="g-col-12 g-col-lg-5">
-          <img src="../assets/images/templates/competitive-positioning-map.png" alt="Preview of the Competitive Positioning Map workbook" class="img-fluid rounded-3 border">
-  </div>
-</div>
-<section id="key-inputs" class="level2">
-<h2 class="anchored" data-anchor-id="key-inputs">Key Inputs</h2>
+<p>TL;DR: <strong>surveyframe 0.4.1</strong> reached CRAN on <strong>3 September 2026</strong>, 14 days after 0.4.0. Install it with <code>install.packages("surveyframe")</code>. It adds a library of 22 teaching demos, labelled SPSS and Stata export, and seeded reports that reproduce exactly. It also fixes 2 defects that could silently corrupt collected data, which is why it followed 0.4.0 so closely. Free and open source under the MIT licence.</p>
+<section id="why-this-release-came-so-fast" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-release-came-so-fast">Why this release came so fast</h2>
+<p>CRAN asks for 1 to 2 months between submissions. This one went in 14 days after 0.4.0, and the reason was set out in the submission comments: 2 of the fixes below could corrupt collected data without raising an error. Data that is quietly wrong is worse than data that fails loudly, so the release was not held back. It was accepted the same day it was submitted.</p>
+</section>
+<section id="a-library-of-22-demos" class="level2">
+<h2 class="anchored" data-anchor-id="a-library-of-22-demos">A library of 22 demos</h2>
+<p>The most common question about a survey package is not how a function works. It is which approach fits the data you actually have.</p>
+<p>0.4.1 answers that with 22 small demos, each showing one thing. List them with <code>sframe_demos()</code>, load one with <code>sframe_demo("two_group")</code>, or get an editable Quarto notebook with <code>sframe_demo_qmd("two_group")</code>. Together they cover every analysis method and every question type in the package.</p>
+<p>Each demo also ships a codebook of variable and value labels, and the results surveyframe produced for it, so you can check the numbers against other software rather than taking them on trust.</p>
+<p>A companion vignette, <code>vignette("learn-by-example")</code>, walks you from picking the demo that matches your data through to the finished report.</p>
+</section>
+<section id="labelled-export-to-spss-and-stata" class="level2">
+<h2 class="anchored" data-anchor-id="labelled-export-to-spss-and-stata">Labelled export to SPSS and Stata</h2>
+<p><code>sframe_export_labelled()</code> writes SPSS <code>.sav</code> or Stata <code>.dta</code> with the question wording and the response options attached. Variables arrive in the other package already labelled, instead of as bare numeric codes that someone has to map by hand. <code>haven</code> is an optional dependency.</p>
+</section>
+<section id="reports-that-reproduce" class="level2">
+<h2 class="anchored" data-anchor-id="reports-that-reproduce">Reports that reproduce</h2>
+<p><code>run_analysis_plan()</code> gains a <code>seed</code> argument, set by default. Bootstrap confidence intervals and the EFA parallel analysis previously drew from the random stream unseeded, so the same data gave a slightly different interval on every run.</p>
+<p>This means <strong>confidence intervals will move once</strong> when you re-run an older analysis. Test statistics and p values are unaffected. Pass <code>seed = NULL</code> for the previous behaviour.</p>
+<p><code>render_report()</code> now states which engine produced the file, Quarto or the built-in writer, in a message, in an <code>engine</code> attribute, and in the report itself beside the instrument hash and the seed.</p>
+</section>
+<section id="the-2-data-corruption-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="the-2-data-corruption-fixes">The 2 data-corruption fixes</h2>
+<p><strong>The Google Sheets collector could corrupt collected data.</strong> Adding a question mid-study left the sheet’s header stale while new rows used the new order, so values landed under the wrong headings with no error raised. The collector now matches columns by name.</p>
+<p><strong>Branching rules using <code>%in%</code> with more than one value never worked in an exported survey.</strong> The question stayed hidden whatever the respondent answered. This had been present since 0.3.0.</p>
+</section>
+<section id="other-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="other-fixes">Other fixes</h2>
 <ul>
-<li>Custom X-axis and Y-axis labels</li>
-<li>Competitor scores on each axis</li>
-<li>Market share and revenue inputs</li>
+<li><code>sem_lavaan_syntax()</code> produced a mediation model lavaan could not fit, because indirect effects referred to path labels that were never written.</li>
+<li>Straight-lining no longer flags scales shorter than 4 items, where identical answers are normal rather than careless. <code>quality_report()</code> gains <code>straightline_min_items</code>. When no scale is long enough to check, the report says so instead of dropping the chart silently.</li>
+<li>Reading a response file with <code>read.csv()</code> no longer mangles matrix columns whose labels contain spaces. Use <code>check.names = FALSE</code>.</li>
 </ul>
 </section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<p>The workbook is useful when you want a structured positioning exercise for a classroom, strategy workshop, or a quick competitor-mapping discussion without building a slide deck from scratch.</p>
+<section id="get-it" class="level2">
+<h2 class="anchored" data-anchor-id="get-it">Get it</h2>
+<ul>
+<li>Install: <code>install.packages("surveyframe")</code></li>
+<li>Documentation: <a href="https://mohammedalisharafuddin.github.io/surveyframe/">mohammedalisharafuddin.github.io/surveyframe</a></li>
+<li>Source: <a href="https://github.com/MohammedAliSharafuddin/surveyframe">github.com/MohammedAliSharafuddin/surveyframe</a></li>
+<li>On CRAN: <a href="https://CRAN.R-project.org/package=surveyframe">CRAN.R-project.org/package=surveyframe</a></li>
+</ul>
+<p>If you have not read them yet, the <a href="12-surveyframe-0-4-0-cran.html">0.4.0 release notes</a> cover the decision-analysis, text-analysis, and provenance work this release builds on.</p>
 
 
 </section>
@@ -907,13 +957,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../textbooks/index.html">Textbooks</a> · <a href="../templates/index.html">Templates</a> · <a href="../products/index.html">Products</a> · <a href="../services/index.html">Services</a></p>
+<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../../textbooks/index.html">Textbooks</a> · <a href="../../templates/index.html">Templates</a> · <a href="../../products/index.html">Products</a> · <a href="../../services/index.html">Services</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

@@ -1,0 +1,45 @@
+/* assets/css/blog-tables.css
+   Shared table, code-wrapping, and copy-button styles for the blog posts.
+   This exact rule set was pasted into posts 01 to 06 as an inline <style>
+   block, 6 byte-identical copies once whitespace and comments were
+   normalised. Extracted here 2026-09-09. Applied through
+   blog/posts/_metadata.yml so every post picks it up, including new ones. */
+
+/* Responsive, wrapped tables */
+.flair-table-wrap { overflow-x: auto; margin: .75rem 0; }
+.flair-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .95rem;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+.flair-table th,
+.flair-table td {
+  border: 1px solid #e1e4e8;
+  padding: 8px;
+  vertical-align: top;
+  word-break: break-word;
+}
+.flair-table th { background: #f7f7f7; text-align: left; }
+.flair-table tr:nth-child(even) { background: #fafafa; }
+.flair-caption { font-weight: 600; margin: .25rem 0 .5rem 0; }
+
+/* Wrap long inline code and pre blocks */
+pre, code, pre code { white-space: pre-wrap; word-break: break-word; }
+
+@media (max-width: 600px) {
+  .flair-table td,
+  .flair-table th { padding: 6px; font-size: .9rem; }
+}
+
+/* Copy buttons */
+.copy-row { display: flex; gap: .5rem; margin: .5rem 0; }
+.copy-btn {
+  border: 1px solid #e1e4e8;
+  background: #f7f7f7;
+  padding: .35rem .6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.copy-btn:active { transform: scale(.98); }

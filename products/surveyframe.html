@@ -184,11 +184,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="../assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="../assets/js/consent.js"></script>
+<script defer="" src="../assets/js/flag-counter.js"></script>
 <script defer="" src="../assets/js/nav-overview.js"></script>
 <script defer="" src="../assets/js/contact-form.js"></script>
 
 
+<link rel="stylesheet" href="../assets/css/consent.css">
+<link rel="stylesheet" href="../assets/css/flag-counter.css">
 <meta property="og:title" content="surveyframe – Flair Marketing Intelligence">
 <meta property="og:description" content="surveyframe is an R package on CRAN for end-to-end survey research: instrument design, static HTML export, response quality checking, psychometric diagnostics, and reproducible reporting.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -367,6 +375,14 @@ ul.task-list li input[type="checkbox"] {
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
         <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
@@ -450,7 +466,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="grid align-items-center mb-4">
   <div class="g-col-12 g-col-lg-7">
-    <span class="badge badge-live">Live on CRAN</span>
+    <span class="badge badge-live">Live on CRAN</span> <span class="text-muted small">v0.4.1</span>
     <h1>surveyframe</h1>
     <p class="lead" style="max-width: 60ch;">
       surveyframe is an R package covering the full survey research pipeline:
@@ -471,7 +487,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="why-it-exists" class="level2">
 <h2 class="anchored" data-anchor-id="why-it-exists">Why It Exists</h2>
-<p>Survey research workflows are usually stitched together from several disconnected tools: one for the instrument, another for hosting responses, another for cleaning, another for analysis. surveyframe keeps the whole sequence, instrument design through reproducible reporting, in one R package, which is documented on the <a href="../blog/index.html">blog</a> and this site’s field-type series.</p>
+<p>Survey research workflows are usually stitched together from 4 disconnected tools: one for the instrument, another for hosting responses, another for cleaning, another for analysis. surveyframe keeps the whole sequence, instrument design through reproducible reporting, in one R package, which is documented on the <a href="../blog/index.html">blog</a> and this site’s field-type series.</p>
 </section>
 <section id="what-you-can-do" class="level2">
 <h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
@@ -481,6 +497,15 @@ ul.task-list li input[type="checkbox"] {
 <li>Declare an analysis plan before data collection and run it with <code>run_analysis_plan()</code> for a reproducible HTML report</li>
 <li>Use the optional ggplot2 layer, including a diverging bar chart for Likert-type results</li>
 </ul>
+</section>
+<section id="new-in-0.4" class="level2">
+<h2 class="anchored" data-anchor-id="new-in-0.4">New In 0.4</h2>
+<p>Version 0.4.0 was a major release, and 0.4.1 followed it on CRAN.</p>
+<p><strong>Multi-criteria decision analysis.</strong> 10 methods, AHP, ANP, DEMATEL, VIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS, each carrying a literature citation. 2 new item types collect the judgement data inside the instrument itself, a pairwise comparison on Saaty’s 1-to-9 scale and a constant-sum criteria weighting. AHP judgements are screened for consistency against Saaty’s random-index table, and <code>sensitivity_analysis()</code> reports how far a ranking moves when the weights are perturbed.</p>
+<p><strong>Text analysis for open-ended responses.</strong> 9 methods, from term and n-gram frequency through keyword-in-context concordance, co-occurrence, sentiment, and LDA or structural topic modelling. They run through the same analysis plan and reporting pipeline as every other method family.</p>
+<p><strong>Small-sample corrections.</strong> The Hodges-Lehmann shift estimator, the paired Wilcoxon pseudomedian interval, the exact odds-ratio interval on Fisher’s test, and Firth’s bias-reduced logistic regression for data prone to separation. An advisory on <code>assumption_report()</code> flags when a study is small enough for these to matter.</p>
+<p><strong>Disclosed amendments and a provenance trail.</strong> <code>amend_sframe()</code> appends a timestamped entry to an ordered log, recording why an instrument changed and which fields moved, and never overwrites earlier entries. Changes touching the analysis plan or a model require a deviation report, and the sign-off field records a reviewer’s name or the literal <code>none</code>, so an unreviewed change stays visible. <code>link_git_commit()</code> ties the file’s SHA-256 hash to a specific Git commit. An edit that bypasses <code>amend_sframe()</code> still fails the integrity check exactly as before.</p>
+<p><strong>Teaching and export, added in 0.4.1.</strong> A library of 22 demos, each showing one thing, reachable with <code>sframe_demos()</code> and openable as an editable Quarto notebook. <code>sframe_export_labelled()</code> writes SPSS <code>.sav</code> or Stata <code>.dta</code> with the question wording and response options attached, so variables arrive labelled rather than as bare codes.</p>
 </section>
 <section id="access-and-limitations" class="level2">
 <h2 class="anchored" data-anchor-id="access-and-limitations">Access And Limitations</h2>
@@ -911,7 +936,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

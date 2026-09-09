@@ -206,7 +206,13 @@ div.csl-indent {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="../../assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="../../assets/js/consent.js"></script>
+<script defer="" src="../../assets/js/flag-counter.js"></script>
 <script defer="" src="../../assets/js/nav-overview.js"></script>
 <script defer="" src="../../assets/js/contact-form.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
@@ -1793,6 +1799,9 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../assets/css/consent.css">
+<link rel="stylesheet" href="../../assets/css/flag-counter.css">
+<link rel="stylesheet" href="../../assets/css/blog-tables.css">
 <meta property="og:title" content="Simple Linear Regression: Modeling Revenue from Ad Spend – Flair Marketing Intelligence">
 <meta property="og:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -1970,6 +1979,14 @@ window.Quarto = {
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
@@ -2375,21 +2392,6 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<style>
-.flair-table-wrap{overflow-x:auto;margin:.75rem 0}
-.flair-table{border-collapse:collapse;width:100%;font-size:.95rem;table-layout:fixed;word-wrap:break-word;}
-.flair-table th,.flair-table td{border:1px solid #e1e4e8;padding:8px;vertical-align:top;word-break:break-word;}
-.flair-table th{background:#f7f7f7;text-align:left}
-.flair-table tr:nth-child(even){background:#fafafa}
-.flair-caption{font-weight:600;margin:.25rem 0 .5rem 0}
-pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
-@media (max-width:600px){
-  .flair-table td,.flair-table th{padding:6px;font-size:.9rem}
-}
-.copy-row{display:flex;gap:.5rem;margin:.5rem 0;}
-.copy-btn{border:1px solid #e1e4e8;background:#f7f7f7;padding:.35rem .6rem;border-radius:6px;cursor:pointer;}
-.copy-btn:active{transform:scale(.98);}
-</style>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>TL;DR: Revenue = <strong>₹10k + ₹0.50 per ₹1 ad spend</strong> (n=200); <strong>slope CI [₹0.44, ₹0.56]</strong>, <strong>R²=0.80 (strong fit)</strong>, <strong>residuals look normal</strong>; decision: <strong>each ₹1k ad spend yields ~₹500 revenue, but check for nonlinearity at higher budgets</strong>.</p>
@@ -3000,7 +3002,7 @@ Modeling Revenue from Ad Spend.”</span> October 25, 2025. <a href="https://fla
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

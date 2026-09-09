@@ -51,19 +51,24 @@ Conclusions Using R** (in proofreading)
 
 ## Open-source software
 
-**surveyframe** (v0.3.3, live on CRAN since 11 July 2026) — R package for
-survey instrument objects and end-to-end survey workflows: instrument
-design, static HTML export, a Shiny module, response quality checks, scale
-scoring, psychometric diagnostics, analysis planning, and reproducible
-HTML reporting. The instrument's analysis plan is declared before data
-collection and executed as declared. MIT licence, free.
+**surveyframe** (v0.4.1, live on CRAN since 3 September 2026) is an R
+package for survey instrument objects and end-to-end survey workflows:
+instrument design, static HTML export, a Shiny module, response quality
+checks, scale scoring, psychometric diagnostics, analysis planning, and
+reproducible HTML reporting. The instrument's analysis plan is declared
+before data collection and executed as declared. Version 0.4.0 added
+multi-criteria decision analysis (10 methods), text analysis of open-ended
+responses (9 methods), small-sample corrections, and a disclosed-amendment
+and Git-linked provenance trail. Version 0.4.1 added a 22-demo teaching
+library and labelled SPSS and Stata export. MIT licence, free.
 
 - Install: `install.packages("surveyframe")`
 - [CRAN](https://CRAN.R-project.org/package=surveyframe)
 - [Documentation](https://mohammedalisharafuddin.github.io/surveyframe/)
 - [GitHub](https://github.com/MohammedAliSharafuddin/surveyframe)
-- A manuscript describing the package was submitted to the Journal of
-  Statistical Software and is under review (not yet accepted).
+- A manuscript describing the package is in preparation for the R Journal,
+  pinned to CRAN 0.4.0. It was rejected on scope by the Journal of
+  Statistical Software on 7 August 2026 and retargeted.
 - Companion methodology preprint: [Social Science Research 6.0: A
   Proof-of-Integrity Framework for Tamper-Evident Survey
   Instruments](https://doi.org/10.31235/osf.io/jmbv8_v1)
@@ -73,6 +78,14 @@ collection and executed as declared. MIT licence, free.
 FlairMI publishes applied statistics tutorials and product notes at
 [flairmi.com/blog](https://flairmi.com/blog/). Recent posts:
 
+- ["surveyframe 0.4.1 is on CRAN"](https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html)
+  is the 0.4.1 release notes: a 22-demo teaching library, labelled SPSS and
+  Stata export, seeded reproducible reports, and 2 fixes for defects that
+  could silently corrupt collected data.
+- ["surveyframe 0.4.0 is on CRAN"](https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html)
+  is the 0.4.0 release notes: 10 multi-criteria decision analysis methods,
+  9 text-analysis methods for open-ended responses, small-sample corrections,
+  and a disclosed-amendment and Git-linked provenance trail.
 - ["surveyframe 0.3.3 is on CRAN"](https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html)
   — the 0.3.3 release notes: redesigned exported survey, WCAG 2.2 AA
   accessibility, an opt-in ggplot2 plotting layer, and a diverging bar

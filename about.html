@@ -185,11 +185,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="bingbot" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<script defer="" src="./assets/js/ga4.js"></script>
+<!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
+     load it, so analytics stay off for EU and UK visitors until they
+     accept. Putting ga4.js back on this line would load the tag on every
+     page for everyone again, which is what the 2026-09-09 audit found and
+     what downloads/PrivacyPolicy.md now says does not happen. -->
+<script defer="" src="./assets/js/consent.js"></script>
+<script defer="" src="./assets/js/flag-counter.js"></script>
 <script defer="" src="./assets/js/nav-overview.js"></script>
 <script defer="" src="./assets/js/contact-form.js"></script>
 
 
+<link rel="stylesheet" href="assets/css/consent.css">
+<link rel="stylesheet" href="assets/css/flag-counter.css">
 <meta property="og:title" content="About Mohammed Ali Sharafuddin – Flair Marketing Intelligence">
 <meta property="og:description" content="Mohammed Ali Sharafuddin: Senior Lecturer at Villa College Maldives, academic researcher in quantitative methods and marketing analytics, author of Quantitative Analysis with Small Samples, and founder of FlairMI.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
@@ -368,6 +376,14 @@ ul.task-list li input[type="checkbox"] {
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
         <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
@@ -467,19 +483,9 @@ ul.task-list li input[type="checkbox"] {
       Mohammed Ali Sharafuddin is an academic researcher, educator, and
       software developer focused on digital marketing, marketing analytics,
       survey research, quantitative methods, technical writing, and
-      reproducible workflows in R and Quarto.
-    </p>
-    <p>
-      FlairMI, founded by Mohammed Ali Sharafuddin, is dedicated to open-source
-      tools, practical techniques, textbooks, tutorials, downloadable
-      templates, and privacy-conscious software for teaching, research,
-      technical writing, and applied analytics.
-    </p>
-    <p>
-      The platform brings these resources together in one public home at
-      <strong>flairmi.com</strong>, making it easier for students, educators,
-      researchers, and practitioners to find usable materials, working tools,
-      and structured learning resources in one place.
+      reproducible workflows in R and Quarto. He founded FlairMI, which
+      publishes his open-source tools, textbooks, tutorials, downloadable
+      templates, and privacy-conscious software at <strong>flairmi.com</strong>.
     </p>
     <div>
       <span class="badge text-bg-light border me-1 mb-1">Textbooks</span>
@@ -494,7 +500,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="current-work" class="level2">
 <h2 class="anchored" data-anchor-id="current-work">Current Work</h2>
 <ul>
-<li>R package: <a href="https://CRAN.R-project.org/package=surveyframe">surveyframe</a> v0.3.0, now live on CRAN — survey instrument workflows from design to reproducible reporting.</li>
+<li>R package: <a href="https://CRAN.R-project.org/package=surveyframe">surveyframe</a> v0.4.1, live on CRAN. Survey instrument workflows from design to reproducible reporting, now including multi-criteria decision analysis, text analysis of open-ended responses, and a disclosed-amendment provenance trail.</li>
 <li>Software projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.</li>
 <li>Four textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.</li>
 <li>Hosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.</li>
@@ -513,6 +519,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>FlairMI acts as the public product, publishing, and delivery layer for this work. The academic personal site, including detailed research, projects, publications, and academic background, is available at <a href="https://mohammedalisharafuddin.github.io/">mohammedalisharafuddin.github.io</a>.</p>
 </section>
+<section id="where-readers-come-from" class="level2">
+<h2 class="anchored" data-anchor-id="where-readers-come-from">Where Readers Come From</h2>
+<!-- Rendered by assets/js/flag-counter.js from assets/data/flag-counts.json,
+     which R/fetch_ga4_countries.R writes from the GA4 Data API at render
+     time. Stays empty until that data file holds real counts. -->
+<div id="flag-counter"></div>
+</section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
 <p>For product questions, workshops, consulting, teaching adoption, and publishing:</p>
@@ -528,7 +541,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Personal academic site: <a href="https://mohammedalisharafuddin.github.io/" class="uri">https://mohammedalisharafuddin.github.io/</a></li>
 </ul>
 <hr>
-<p><em>Last updated: 29 May 2026</em></p>
+<p><em>Last updated: 9 September 2026</em></p>
 
 
 </section>
@@ -949,7 +962,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="./downloads/PrivacyPolicy.html">Privacy</a> · <a href="./downloads/TermsOfUse.html">Terms</a> · <a href="./downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="./downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="./partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="./downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="./downloads/TermsOfUse.html">Terms</a> · <a href="./downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="./downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="./partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>
