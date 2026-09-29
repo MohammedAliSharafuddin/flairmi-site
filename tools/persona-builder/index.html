@@ -987,24 +987,41 @@
 
   // ---- sample data for previewing the full view ----
   var samplePersona = {
-    level: 'full',
-    photoData: avatarSvgDataUri(avatarPalettes[3].bg, avatarPalettes[3].fg),
-    'f-name': 'Sophie Laurent',
-    'f-role': 'Marketing manager, mid-sized retail chain',
-    'f-tagline': 'Juggles three campaigns at once and trusts data over instinct, but only when the dashboard is fast to read.',
-    'f-age': '34',
-    'f-location': 'Lyon, France',
-    'f-occupation': 'Manages a team of four across social, email, and in-store promotions for a regional retail chain.',
-    'f-goals': 'Prove marketing ROI to the finance team each quarter\nCut the time spent building reports by half\nGrow repeat customer rate without discounting more',
-    'f-pains': 'Data lives in four disconnected tools\nCampaign results arrive too late to adjust mid-flight\nLeadership asks for numbers she has to chase manually',
-    'f-behaviours': 'Checks dashboards first thing every morning\nPrefers a single summary screen over granular tables\nDelegates execution but reviews every report personally',
-    channels: ['Email', 'Mobile app', 'In person'],
-    'f-quote': 'If I cannot explain the number in one sentence, I do not trust it yet.',
-    'f-motivations': 'Wants to be seen as the data-literate voice in leadership meetings\nWants her team to leave work on time more often\nWants a system she will not have to replace again next year',
-    'f-traits': 'Pragmatic, direct, mildly skeptical of new tools, protective of her team',
-    'f-techcomfort': 'Medium',
-    'f-kpis': 'Campaign ROI, repeat purchase rate, report turnaround time',
-    'f-notes': 'Composite persona built from four customer interviews and one internal stakeholder session, Q2 2026. Revisit after the next loyalty programme launch.'
+    level: 'journey',
+    photoData: avatarSvgDataUri(avatarPalettes[0].bg, avatarPalettes[0].fg),
+    'f-name': 'Lukas Hoffmann',
+    'f-role': 'IT project manager, travels for work and leisure',
+    'f-tagline': 'Plans every trip like a system rollout: checks the specs, reads the reviews, and books only when nothing is left to chance.',
+    'f-age': '38',
+    'f-location': 'Munich, Germany',
+    'f-occupation': 'Leads software rollouts for a logistics firm and books 6 to 8 hotel stays a year, half of them for work.',
+    'f-goals': 'Find a hotel he can trust without a second search\nStay productive on work trips with reliable Wi-Fi and a quiet room\nGive his family a stress-free holiday once a year',
+    'f-pains': 'Fees that appear only at the payment step\nHotel websites that leave out check-in times or Wi-Fi details\nService that changes from one stay to the next',
+    'f-behaviours': 'Reads the hotel website first, then the reviews\nCompares at least three hotels before booking\nChecks every confirmation email before he travels',
+    channels: ['Email', 'Search', 'Mobile app'],
+    'f-quote': 'If the website answers my questions, I book. If I have to email to ask, I keep looking.',
+    'f-motivations': 'Wants reassurance before he pays\nWants his time back on work trips\nWants to be recognised as a returning guest',
+    'f-traits': 'Methodical, cautious, loyal once trust is earned, detail-oriented',
+    'f-techcomfort': 'High',
+    'f-kpis': 'Wi-Fi speed, total price including fees, review score',
+    'f-notes': 'Illustrative teaching persona built around the Content but cautious segment in O\'Rourke et al. (2026), CC BY 4.0. Stages marked as assumptions are not from the study.',
+    'j-segment': 'Content but cautious',
+    'j-share': '25%',
+    'j-delight': 'Medium',
+    'j-evidence': 'Mixed',
+    'j-moveto': 'Delighted advocate',
+    'j-movewhy': 'Consistent service and a personalised loyalty offer',
+    journey: {
+      template: 'resort',
+      stages: [
+        { label: 'Inspiration', touchpoint: 'Past stays, hotel websites', goal: 'Shortlist hotels he already trusts', emotion: 1, feeling: 'sure', factor: 'Previous knowledge of the hotel', basis: 'assumption', source: 'Not reported for this segment' },
+        { label: 'Research', touchpoint: 'Hotel website', goal: 'Get every practical answer before choosing', emotion: 2, feeling: 'respected', factor: 'Complete website information', basis: 'data', source: "O'Rourke et al. (2026), Table 2" },
+        { label: 'Booking', touchpoint: 'Booking engine', goal: 'Book with no surprises in the price', emotion: 1, feeling: 'sure', factor: 'Total price including fees', basis: 'data', source: "O'Rourke et al. (2026), Table 3" },
+        { label: 'Pre-arrival', touchpoint: 'Pre-arrival email', goal: 'Confirm check-in time and Wi-Fi', emotion: 1, feeling: 'sure', factor: 'Clear pre-arrival communication', basis: 'assumption', source: 'Recommended in the study, not measured' },
+        { label: 'On-site', touchpoint: 'Front desk, room', goal: 'Get consistent, prompt service', emotion: 1, feeling: 'sure', factor: 'Service consistency and speed', basis: 'data', source: "O'Rourke et al. (2026), section 3.2" },
+        { label: 'Post-stay', touchpoint: 'Loyalty email', goal: 'Be recognised as a returning guest', emotion: 2, feeling: 'pleased', factor: 'Personalised loyalty offer', basis: 'assumption', source: 'Conversion path suggested in the study' }
+      ]
+    }
   };
 
   el('sampleBtn').addEventListener('click', function () {
