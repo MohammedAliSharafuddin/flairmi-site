@@ -27,7 +27,7 @@
 (function () {
   "use strict";
 
-  const STORAGE_KEY = "flairmi-journey-mapper-v2";
+  const STORAGE_KEY = "flairmi-journey-mapper-v3";
   const PALETTE = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"];
   const MAX_PERSONAS = 4;
   const SILOS = ["", "Operations", "HR", "Compliance", "Finance", "Marketing", "IT", "Other"];
@@ -103,7 +103,7 @@
       stages: s,
       personas: [
         {
-          id: pA, name: "The Price-Focused Seeker", color: PALETTE[2],
+          id: pA, name: "Markus, the Price-Focused Seeker", color: PALETTE[2],
           cells: cells([
             ["Hotel reputation, prior knowledge", "Find a hotel with a known name", -1, "unsure", DS, "", "Hotel reputation (AR 3.7), prior knowledge of the hotel (AR 2.9)", "data", "Table 2"],
             ["Online search, reviews", "Avoid a bad choice", -2, "worried", DS, "", "Hotel reputation", "data", "Table 2, feelings unsure and worried"],
@@ -114,7 +114,7 @@
           ])
         },
         {
-          id: pB, name: "The Cautious Planner", color: PALETTE[0],
+          id: pB, name: "Claire, the Cautious Planner", color: PALETTE[0],
           cells: cells([
             ["Hotel website", "Find a hotel that feels reliable", 1, "", CC, "", "", "assumption", "No stage-specific finding"],
             ["Hotel website", "Get reassurance before choosing", 2, "respected", CC, "Clear, complete website information", "Hotel website (AR 2.0)", "data", "Table 2"],
@@ -125,7 +125,7 @@
           ])
         },
         {
-          id: pC, name: "The Status-Seeking Advocate", color: PALETTE[1],
+          id: pC, name: "Isabella, the Status-Seeking Advocate", color: PALETTE[1],
           cells: cells([
             ["Friends and family, previous stay", "Return to somewhere proven", 3, "happy", DA, "Recommendation from friends and family", "Previous experience (AR 5.4), recommendation (AR 3.0)", "data", "Table 2"],
             ["Little online search", "Confirm the choice quickly", 2, "pleased", DA, "", "Uses search engines (AR -2.5) and hotel website (AR -2.8) less", "data", "Table 2, section 5"],
