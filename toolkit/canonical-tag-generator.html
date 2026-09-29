@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="Canonical Tag Generator – Flair Marketing Intelligence">
 <meta property="og:description" content="Canonical Tag Generator is a free browser tool that normalises URLs, strips tracking parameters, and writes canonical link tags.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/canonical-tag-generator.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="Canonical Tag Generator: Normalise URL variants, strip tracking parameters, and see which duplicates collapse into one canonical tag.">
 <meta name="twitter:title" content="Canonical Tag Generator – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Canonical Tag Generator is a free browser tool that normalises URLs, strips tracking parameters, and writes canonical link tags.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/canonical-tag-generator.jpg">
+<meta name="twitter:image:alt" content="Canonical Tag Generator: Normalise URL variants, strip tracking parameters, and see which duplicates collapse into one canonical tag.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/canonical-tag-generator.html">
@@ -476,8 +476,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="canon-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Paste the URL variants a page is reached by, choose the rules, and the tool shows which of them are the same page.</p>
 <p>One page often has many addresses: with and without www, http and https, with tracking parameters, with a trailing slash or without. Search engines may treat each as a separate page and split its ranking signals. A canonical tag names the one preferred address.</p>
+<p>Everything above runs in your browser and saves to this device only. Paste the URL variants a page is reached by, choose the rules, and the tool shows which of them are the same page.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>Each URL passes through the chosen rules in order: protocol, host case, www, fragment, index file, path case, query string, and trailing slash.</p>
@@ -488,20 +488,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>What does a canonical tag do?</summary>
-    <p class="faq-answer">It tells search engines which URL is the preferred version of a page, so ranking signals from duplicates are combined on that one address.</p>
+    <summary>What is a canonical tag?</summary>
+    <p class="faq-answer">A canonical tag is a link element in a page's head that names the preferred URL for that content. It tells search engines to combine ranking signals from duplicate URLs onto one address.</p>
   </details>
   <details class="faq-item">
-    <summary>Should the canonical URL use a trailing slash?</summary>
-    <p class="faq-answer">Either works. What matters is choosing one form and using it everywhere, in canonical tags, internal links, and the sitemap.</p>
+    <summary>What causes duplicate URLs?</summary>
+    <p class="faq-answer">Duplicate URLs come from tracking parameters, http and https, www and non-www hosts, trailing slashes, index file names, and letter case. Each creates another address for the same page.</p>
   </details>
   <details class="faq-item">
-    <summary>Should I strip every query parameter?</summary>
-    <p class="faq-answer">Only when the parameters never change the content. Keep parameters that select different content, such as a product variant.</p>
+    <summary>Should canonical URLs have a trailing slash?</summary>
+    <p class="faq-answer">Either form works. Choose one and use it everywhere: in canonical tags, internal links, and the sitemap.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. Everything is processed in the browser and saved to this device only.</p>
+    <summary>Should I strip query parameters from canonical URLs?</summary>
+    <p class="faq-answer">Strip parameters that never change the content, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this Canonical Tag Generator free?</summary>
+    <p class="faq-answer">Yes. The Canonical Tag Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
   </details>
 </div>
 </section>
@@ -541,34 +545,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a canonical tag do?",
+      "name": "What is a canonical tag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It tells search engines which URL is the preferred version of a page, so ranking signals from duplicates are combined on that one address."
+        "text": "A canonical tag is a link element in a page's head that names the preferred URL for that content. It tells search engines to combine ranking signals from duplicate URLs onto one address."
       }
     },
     {
       "@type": "Question",
-      "name": "Should the canonical URL use a trailing slash?",
+      "name": "What causes duplicate URLs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Either works. What matters is choosing one form and using it everywhere, in canonical tags, internal links, and the sitemap."
+        "text": "Duplicate URLs come from tracking parameters, http and https, www and non-www hosts, trailing slashes, index file names, and letter case. Each creates another address for the same page."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I strip every query parameter?",
+      "name": "Should canonical URLs have a trailing slash?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only when the parameters never change the content. Keep parameters that select different content, such as a product variant."
+        "text": "Either form works. Choose one and use it everywhere: in canonical tags, internal links, and the sitemap."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "Should I strip query parameters from canonical URLs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Everything is processed in the browser and saved to this device only."
+        "text": "Strip parameters that never change the content, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this Canonical Tag Generator free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Canonical Tag Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
       }
     }
   ]

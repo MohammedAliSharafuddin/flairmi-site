@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="Colour Contrast Checker – Flair Marketing Intelligence">
 <meta property="og:description" content="Colour Contrast Checker is a free browser tool that tests colour pairs against WCAG contrast levels and checks a whole palette at once.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/colour-contrast-checker.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="Colour Contrast Checker: WCAG contrast ratios with AA and AAA results, a suggested passing colour, and a whole-palette check.">
 <meta name="twitter:title" content="Colour Contrast Checker – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Colour Contrast Checker is a free browser tool that tests colour pairs against WCAG contrast levels and checks a whole palette at once.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/colour-contrast-checker.jpg">
+<meta name="twitter:image:alt" content="Colour Contrast Checker: WCAG contrast ratios with AA and AAA results, a suggested passing colour, and a whole-palette check.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/colour-contrast-checker.html">
@@ -476,8 +476,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="contrast-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Pick a text and a background colour. The preview, the ratio, and the pass or fail results update at once.</p>
 <p>Low contrast makes text hard to read for people with low vision, on a phone in sunlight, or on a cheap screen. The Web Content Accessibility Guidelines (WCAG) set minimum contrast ratios, and many public bodies require them.</p>
+<p>Everything above runs in your browser and saves to this device only. Pick a text and a background colour. The preview, the ratio, and the pass or fail results update at once.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The ratio compares the relative luminance of the lighter colour with the darker one.</p>
@@ -488,20 +488,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>What contrast ratio do I need?</summary>
-    <p class="faq-answer">4.5 to 1 for normal text meets WCAG AA, the level most organisations and laws require. Large text and interface parts such as icons and input borders need 3 to 1.</p>
+    <summary>What is a good colour contrast ratio?</summary>
+    <p class="faq-answer">WCAG 2 level AA requires a contrast ratio of 4.5 to 1 for normal text and 3 to 1 for large text and interface parts. Level AAA requires 7 to 1 for normal text.</p>
   </details>
   <details class="faq-item">
-    <summary>Does brand colour have to pass?</summary>
-    <p class="faq-answer">Text in a brand colour must pass on its background. A brand colour that fails can still be used for large display text, borders, or fills with dark or light text on top.</p>
+    <summary>How is the contrast ratio calculated?</summary>
+    <p class="faq-answer">The contrast ratio is (L1 + 0.05) divided by (L2 + 0.05), where L1 is the relative luminance of the lighter colour and L2 that of the darker one. Ratios run from 1 to 1 up to 21 to 1.</p>
   </details>
   <details class="faq-item">
-    <summary>Why check a whole palette?</summary>
-    <p class="faq-answer">A palette grid shows which combinations are safe before designers start, so every pairing in a template is known to pass.</p>
+    <summary>What counts as large text in WCAG?</summary>
+    <p class="faq-answer">Large text in WCAG is 24 pixels or larger, or 18.66 pixels and bold. It needs a lower contrast ratio because it is easier to read.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. Everything is processed in the browser and saved to this device only.</p>
+    <summary>Can brand colours fail contrast checks?</summary>
+    <p class="faq-answer">Yes, brand colours often fail for normal text. A failing brand colour can still be used for large headings, borders, or fills with dark or light text on top. The palette check shows which pairings are safe.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this Colour Contrast Checker free?</summary>
+    <p class="faq-answer">Yes. The Colour Contrast Checker is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
   </details>
 </div>
 </section>
@@ -541,34 +545,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What contrast ratio do I need?",
+      "name": "What is a good colour contrast ratio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "4.5 to 1 for normal text meets WCAG AA, the level most organisations and laws require. Large text and interface parts such as icons and input borders need 3 to 1."
+        "text": "WCAG 2 level AA requires a contrast ratio of 4.5 to 1 for normal text and 3 to 1 for large text and interface parts. Level AAA requires 7 to 1 for normal text."
       }
     },
     {
       "@type": "Question",
-      "name": "Does brand colour have to pass?",
+      "name": "How is the contrast ratio calculated?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Text in a brand colour must pass on its background. A brand colour that fails can still be used for large display text, borders, or fills with dark or light text on top."
+        "text": "The contrast ratio is (L1 + 0.05) divided by (L2 + 0.05), where L1 is the relative luminance of the lighter colour and L2 that of the darker one. Ratios run from 1 to 1 up to 21 to 1."
       }
     },
     {
       "@type": "Question",
-      "name": "Why check a whole palette?",
+      "name": "What counts as large text in WCAG?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A palette grid shows which combinations are safe before designers start, so every pairing in a template is known to pass."
+        "text": "Large text in WCAG is 24 pixels or larger, or 18.66 pixels and bold. It needs a lower contrast ratio because it is easier to read."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "Can brand colours fail contrast checks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Everything is processed in the browser and saved to this device only."
+        "text": "Yes, brand colours often fail for normal text. A failing brand colour can still be used for large headings, borders, or fills with dark or light text on top. The palette check shows which pairings are safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this Colour Contrast Checker free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Colour Contrast Checker is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
       }
     }
   ]

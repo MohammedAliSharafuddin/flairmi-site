@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="A/B Test Calculator">
 <meta property="og:description" content="A/B Test Calculator is a free browser tool that sizes a conversion test before it runs and tests the result for significance afterwards.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/ab-test-calculator.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="A/B Test Sample Size and Significance Calculator: Size an A/B test before it runs, then test the result with a z-test and confidence intervals.">
 <meta name="twitter:title" content="A/B Test Calculator">
 <meta name="twitter:description" content="A/B Test Calculator is a free browser tool that sizes a conversion test before it runs and tests the result for significance afterwards.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/ab-test-calculator.jpg">
+<meta name="twitter:image:alt" content="A/B Test Sample Size and Significance Calculator: Size an A/B test before it runs, then test the result with a z-test and confidence intervals.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/ab-test-calculator.html">
@@ -476,8 +476,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="ab-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Plan a test on the left, or enter a finished test’s results on the right.</p>
 <p>Most A/B tests fail in one of two ways: they stop too early, so a random swing looks like a win, or they run on too little traffic to detect the change that matters. Sizing the test before it starts, and testing the result properly after it ends, prevents both.</p>
+<p>Everything above runs in your browser and saves to this device only. Plan a test on the left, or enter a finished test’s results on the right.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The sample size per variant uses the normal approximation for comparing two proportions.</p>
@@ -488,20 +488,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>What is the minimum detectable effect?</summary>
-    <p class="faq-answer">The smallest lift worth acting on, entered here as a percentage of the baseline rate. Smaller effects need far larger samples.</p>
+    <summary>How do you calculate sample size for an A/B test?</summary>
+    <p class="faq-answer">Set the baseline conversion rate, the smallest lift worth detecting, the significance level, and the power. This calculator applies the standard two-proportion formula and gives visitors per variant and the run time at your traffic.</p>
   </details>
   <details class="faq-item">
-    <summary>What do significance and power mean?</summary>
-    <p class="faq-answer">Significance, usually 95%, limits the chance of calling a difference real when it is not. Power, usually 80%, is the chance of detecting a real difference of the size you set.</p>
+    <summary>How do you know if an A/B test is statistically significant?</summary>
+    <p class="faq-answer">An A/B test is statistically significant when a two-proportion z-test gives a p-value below your significance level, usually 0.05. The difference is then unlikely to be chance alone.</p>
   </details>
   <details class="faq-item">
-    <summary>Can I stop the test as soon as it is significant?</summary>
-    <p class="faq-answer">No. Stopping at the first significant reading inflates false positives. Run to the planned sample size, then read the result.</p>
+    <summary>What is the minimum detectable effect in A/B testing?</summary>
+    <p class="faq-answer">The minimum detectable effect is the smallest lift worth acting on, stated relative to the baseline rate. Halving it roughly quadruples the sample a test needs.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. Everything is processed in the browser and saved to this device only.</p>
+    <summary>Can I stop an A/B test early?</summary>
+    <p class="faq-answer">Do not stop an A/B test at the first significant result. Checking repeatedly and stopping early inflates false positives. Run to the planned sample size, then read the result once.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this A/B Test Calculator free?</summary>
+    <p class="faq-answer">Yes. The A/B Test Calculator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
   </details>
 </div>
 </section>
@@ -541,34 +545,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the minimum detectable effect?",
+      "name": "How do you calculate sample size for an A/B test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The smallest lift worth acting on, entered here as a percentage of the baseline rate. Smaller effects need far larger samples."
+        "text": "Set the baseline conversion rate, the smallest lift worth detecting, the significance level, and the power. This calculator applies the standard two-proportion formula and gives visitors per variant and the run time at your traffic."
       }
     },
     {
       "@type": "Question",
-      "name": "What do significance and power mean?",
+      "name": "How do you know if an A/B test is statistically significant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Significance, usually 95%, limits the chance of calling a difference real when it is not. Power, usually 80%, is the chance of detecting a real difference of the size you set."
+        "text": "An A/B test is statistically significant when a two-proportion z-test gives a p-value below your significance level, usually 0.05. The difference is then unlikely to be chance alone."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I stop the test as soon as it is significant?",
+      "name": "What is the minimum detectable effect in A/B testing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Stopping at the first significant reading inflates false positives. Run to the planned sample size, then read the result."
+        "text": "The minimum detectable effect is the smallest lift worth acting on, stated relative to the baseline rate. Halving it roughly quadruples the sample a test needs."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "Can I stop an A/B test early?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Everything is processed in the browser and saved to this device only."
+        "text": "Do not stop an A/B test at the first significant result. Checking repeatedly and stopping early inflates false positives. Run to the planned sample size, then read the result once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this A/B Test Calculator free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The A/B Test Calculator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
       }
     }
   ]

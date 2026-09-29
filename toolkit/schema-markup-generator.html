@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="Schema Markup Generator – Flair Marketing Intelligence">
 <meta property="og:description" content="Schema Markup Generator is a free browser tool that writes JSON-LD structured data for organisations, hotels, articles, products, events, and FAQs.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/schema-markup-generator.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="Schema Markup Generator: Write JSON-LD structured data for eight common schema types, with required fields flagged.">
 <meta name="twitter:title" content="Schema Markup Generator – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Schema Markup Generator is a free browser tool that writes JSON-LD structured data for organisations, hotels, articles, products, events, and FAQs.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/schema-markup-generator.jpg">
+<meta name="twitter:image:alt" content="Schema Markup Generator: Write JSON-LD structured data for eight common schema types, with required fields flagged.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/schema-markup-generator.html">
@@ -476,8 +476,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="schema-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Pick a schema type, fill in the fields, and copy the JSON-LD block into the page. It opens on a sample boutique hotel in Lisbon.</p>
 <p>Structured data describes a page’s content in a form search engines and AI systems read directly: this page is a hotel, here is its address, its star rating, and its check-in time. It can earn rich results in search and makes the page easier to cite accurately.</p>
+<p>Everything above runs in your browser and saves to this device only. Pick a schema type, fill in the fields, and copy the JSON-LD block into the page. It opens on a sample boutique hotel in Lisbon.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The generator builds a JSON-LD object using the schema.org vocabulary and leaves out empty fields.</p>
@@ -488,20 +488,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>Where do I put the JSON-LD?</summary>
-    <p class="faq-answer">Anywhere in the page HTML, usually in the head. It is invisible to visitors.</p>
+    <summary>What is schema markup?</summary>
+    <p class="faq-answer">Schema markup is structured data, written in the schema.org vocabulary, that describes a page's content to search engines and AI systems, such as a hotel's address and star rating. JSON-LD is the format Google recommends.</p>
   </details>
   <details class="faq-item">
-    <summary>Does structured data improve rankings?</summary>
-    <p class="faq-answer">It helps search engines understand the page and can earn rich results, such as star ratings or FAQ answers. It is not a ranking shortcut.</p>
+    <summary>Does schema markup help SEO?</summary>
+    <p class="faq-answer">Schema markup helps search engines understand a page and can earn rich results, such as star ratings or FAQ answers. It also makes a page easier for AI answer engines to cite accurately. It is not a direct ranking factor.</p>
   </details>
   <details class="faq-item">
-    <summary>Which type should a hotel use?</summary>
-    <p class="faq-answer">Hotel, a subtype of LocalBusiness, with the address, contact details, check-in and check-out times, and star rating.</p>
+    <summary>Which schema type should a hotel use?</summary>
+    <p class="faq-answer">A hotel should use the Hotel type, a subtype of LocalBusiness, with the address, telephone, check-in and check-out times, star rating, and price range.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. Everything is processed in the browser and saved to this device only.</p>
+    <summary>Where do I put JSON-LD on a page?</summary>
+    <p class="faq-answer">Put JSON-LD anywhere in the page HTML, usually in the head, inside a script tag with the type application/ld+json. Visitors do not see it.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this Schema Markup Generator free?</summary>
+    <p class="faq-answer">Yes. The Schema Markup Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
   </details>
 </div>
 </section>
@@ -541,34 +545,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Where do I put the JSON-LD?",
+      "name": "What is schema markup?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anywhere in the page HTML, usually in the head. It is invisible to visitors."
+        "text": "Schema markup is structured data, written in the schema.org vocabulary, that describes a page's content to search engines and AI systems, such as a hotel's address and star rating. JSON-LD is the format Google recommends."
       }
     },
     {
       "@type": "Question",
-      "name": "Does structured data improve rankings?",
+      "name": "Does schema markup help SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It helps search engines understand the page and can earn rich results, such as star ratings or FAQ answers. It is not a ranking shortcut."
+        "text": "Schema markup helps search engines understand a page and can earn rich results, such as star ratings or FAQ answers. It also makes a page easier for AI answer engines to cite accurately. It is not a direct ranking factor."
       }
     },
     {
       "@type": "Question",
-      "name": "Which type should a hotel use?",
+      "name": "Which schema type should a hotel use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hotel, a subtype of LocalBusiness, with the address, contact details, check-in and check-out times, and star rating."
+        "text": "A hotel should use the Hotel type, a subtype of LocalBusiness, with the address, telephone, check-in and check-out times, star rating, and price range."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "Where do I put JSON-LD on a page?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Everything is processed in the browser and saved to this device only."
+        "text": "Put JSON-LD anywhere in the page HTML, usually in the head, inside a script tag with the type application/ld+json. Visitors do not see it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this Schema Markup Generator free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Schema Markup Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
       }
     }
   ]

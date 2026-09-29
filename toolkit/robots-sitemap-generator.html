@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="Robots.txt and Sitemap Generator – Flair Marketing Intelligence">
 <meta property="og:description" content="Robots.txt and Sitemap Generator is a free browser tool that writes robots.txt rules, including AI crawler rules, and a valid sitemap.xml.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/robots-sitemap-generator.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="Robots.txt and Sitemap Generator: Write robots.txt rules, including choices for AI crawlers, and a valid sitemap.xml from a URL list.">
 <meta name="twitter:title" content="Robots.txt and Sitemap Generator – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Robots.txt and Sitemap Generator is a free browser tool that writes robots.txt rules, including AI crawler rules, and a valid sitemap.xml.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/robots-sitemap-generator.jpg">
+<meta name="twitter:image:alt" content="Robots.txt and Sitemap Generator: Write robots.txt rules, including choices for AI crawlers, and a valid sitemap.xml from a URL list.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/robots-sitemap-generator.html">
@@ -476,8 +476,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="robots-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Set the paths to keep out of search, choose which AI crawlers to block, list the site’s URLs, and download both files.</p>
 <p>The robots.txt file tells crawlers which parts of a site to skip. The sitemap lists the pages you want found. Together they steer how search engines and AI systems read a site. Since 2023, AI companies publish separate crawler names for model training and for search answers, so a site can allow one and block the other.</p>
+<p>Everything above runs in your browser and saves to this device only. Set the paths to keep out of search, choose which AI crawlers to block, list the site’s URLs, and download both files.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The robots.txt starts with a rule for all crawlers, adds a block rule for each AI crawler you tick, and ends with the sitemap location.</p>
@@ -488,20 +488,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>Should I block AI crawlers?</summary>
-    <p class="faq-answer">It depends on what you want. Blocking training crawlers keeps pages out of future model training. Blocking answer crawlers also removes the site from AI search answers, which cuts visibility. Many sites block the first and allow the second.</p>
+    <summary>What is a robots.txt file?</summary>
+    <p class="faq-answer">A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it, but it does not secure private pages.</p>
   </details>
   <details class="faq-item">
-    <summary>Does robots.txt hide pages from search results?</summary>
-    <p class="faq-answer">Not reliably. A blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results, and a login to keep it private.</p>
+    <summary>How do I block AI crawlers in robots.txt?</summary>
+    <p class="faq-answer">Add a user-agent group for each AI crawler with Disallow: /. Training crawlers include GPTBot, ClaudeBot, CCBot, and Google-Extended. Answer crawlers include OAI-SearchBot, Claude-SearchBot, and PerplexityBot, and blocking them removes the site from AI search answers.</p>
   </details>
   <details class="faq-item">
-    <summary>How many URLs can a sitemap hold?</summary>
-    <p class="faq-answer">50,000 URLs or 50 MB uncompressed, whichever comes first. Larger sites split the list and add a sitemap index.</p>
+    <summary>What is an XML sitemap?</summary>
+    <p class="faq-answer">An XML sitemap is a file that lists the URLs you want search engines to find, with optional last-modified dates. It follows the sitemaps.org protocol, holds up to 50,000 URLs per file, and is referenced from robots.txt.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. Everything is processed in the browser and saved to this device only.</p>
+    <summary>Does robots.txt remove a page from Google?</summary>
+    <p class="faq-answer">Not reliably. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this Robots.txt and Sitemap Generator free?</summary>
+    <p class="faq-answer">Yes. The Robots.txt and Sitemap Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
   </details>
 </div>
 </section>
@@ -541,34 +545,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Should I block AI crawlers?",
+      "name": "What is a robots.txt file?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on what you want. Blocking training crawlers keeps pages out of future model training. Blocking answer crawlers also removes the site from AI search answers, which cuts visibility. Many sites block the first and allow the second."
+        "text": "A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it, but it does not secure private pages."
       }
     },
     {
       "@type": "Question",
-      "name": "Does robots.txt hide pages from search results?",
+      "name": "How do I block AI crawlers in robots.txt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not reliably. A blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results, and a login to keep it private."
+        "text": "Add a user-agent group for each AI crawler with Disallow: /. Training crawlers include GPTBot, ClaudeBot, CCBot, and Google-Extended. Answer crawlers include OAI-SearchBot, Claude-SearchBot, and PerplexityBot, and blocking them removes the site from AI search answers."
       }
     },
     {
       "@type": "Question",
-      "name": "How many URLs can a sitemap hold?",
+      "name": "What is an XML sitemap?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "50,000 URLs or 50 MB uncompressed, whichever comes first. Larger sites split the list and add a sitemap index."
+        "text": "An XML sitemap is a file that lists the URLs you want search engines to find, with optional last-modified dates. It follows the sitemaps.org protocol, holds up to 50,000 URLs per file, and is referenced from robots.txt."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "Does robots.txt remove a page from Google?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Everything is processed in the browser and saved to this device only."
+        "text": "Not reliably. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this Robots.txt and Sitemap Generator free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Robots.txt and Sitemap Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
       }
     }
   ]

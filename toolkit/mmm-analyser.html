@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/css/consent.css">
 <meta property="og:title" content="MMM Analyser – Flair Marketing Intelligence">
 <meta property="og:description" content="MMM Analyser is a free browser tool for marketing mix modelling with carryover and diminishing returns, fitted to spend and sales history.">
-<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/mmm-analyser.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI, and response curves per channel.">
 <meta name="twitter:title" content="MMM Analyser – Flair Marketing Intelligence">
 <meta name="twitter:description" content="MMM Analyser is a free browser tool for marketing mix modelling with carryover and diminishing returns, fitted to spend and sales history.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/mmm-analyser.jpg">
+<meta name="twitter:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI, and response curves per channel.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/mmm-analyser.html">
@@ -476,9 +476,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="mmm-app"></div>
 </div>
-<p>Everything above runs in your browser and saves to this device only. Spend and sales data never leave the browser. It opens on 2 years of weekly hotel booking revenue, generated from known settings, so you can see how closely the model recovers them.</p>
 <p>Marketing mix modelling estimates how much each channel’s spend adds to sales, using the history of both. It captures two effects a simple regression misses: advertising keeps working after the week it runs, and each extra unit of spend adds less than the one before.</p>
 <p>The model covers promotion spend and price. Product, place, people, process, and physical evidence are outside it, and are planned in the <a href="../toolkit/7ps-marketing-mix-planner.html">7Ps Marketing Mix Planner</a>.</p>
+<p>Everything above runs in your browser and saves to this device only. Spend and sales data never leave the browser. It opens on 2 years of weekly hotel booking revenue, generated from known settings, so you can see how closely the model recovers them.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>For each channel, spend is carried forward by an adstock rate, then passed through a saturation curve. Sales are modelled as a base, plus trend, seasonality, and price, plus the channel effects.</p>
@@ -489,20 +489,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
-    <summary>How much data do I need?</summary>
-    <p class="faq-answer">At least 10 periods for every coefficient the model estimates. With four channels, trend, seasonality, and price that is about 90 periods, so 2 years of weekly data.</p>
+    <summary>What is marketing mix modelling?</summary>
+    <p class="faq-answer">Marketing mix modelling (MMM) is a statistical method that estimates how much each marketing channel's spend adds to sales, using the history of both. It captures carryover, where advertising keeps working after it runs, and diminishing returns.</p>
   </details>
   <details class="faq-item">
-    <summary>What is marginal ROI?</summary>
-    <p class="faq-answer">The extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI once it is near saturation, which is when budget should move elsewhere.</p>
+    <summary>What is adstock in marketing mix modelling?</summary>
+    <p class="faq-answer">Adstock is the carried-over effect of past advertising. With a carryover rate of 0.6, 60% of last week's effect carries into this week, then 60% of that into the next week.</p>
   </details>
   <details class="faq-item">
-    <summary>Why can a channel show a negative effect?</summary>
-    <p class="faq-answer">Usually because its spend moves with something the model leaves out, such as a seasonal sale. The tool flags it, and that channel's estimate should not guide budgets.</p>
+    <summary>What is marginal ROI in marketing mix modelling?</summary>
+    <p class="faq-answer">Marginal ROI is the extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI near saturation, which is the point to move budget elsewhere.</p>
   </details>
   <details class="faq-item">
-    <summary>Does it send my data anywhere?</summary>
-    <p class="faq-answer">No. The model is fitted in the browser. Nothing is uploaded.</p>
+    <summary>How much data does marketing mix modelling need?</summary>
+    <p class="faq-answer">Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality, and price, that is about 90 periods, or roughly 2 years of weekly data.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is this MMM Analyser free?</summary>
+    <p class="faq-answer">Yes. The MMM Analyser is free, needs no account or installation, and runs in any modern browser, including on a phone. Spend and sales data never leave the browser.</p>
   </details>
 </div>
 </section>
@@ -542,34 +546,42 @@ ul.task-list li input[type="checkbox"] {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much data do I need?",
+      "name": "What is marketing mix modelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At least 10 periods for every coefficient the model estimates. With four channels, trend, seasonality, and price that is about 90 periods, so 2 years of weekly data."
+        "text": "Marketing mix modelling (MMM) is a statistical method that estimates how much each marketing channel's spend adds to sales, using the history of both. It captures carryover, where advertising keeps working after it runs, and diminishing returns."
       }
     },
     {
       "@type": "Question",
-      "name": "What is marginal ROI?",
+      "name": "What is adstock in marketing mix modelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI once it is near saturation, which is when budget should move elsewhere."
+        "text": "Adstock is the carried-over effect of past advertising. With a carryover rate of 0.6, 60% of last week's effect carries into this week, then 60% of that into the next week."
       }
     },
     {
       "@type": "Question",
-      "name": "Why can a channel show a negative effect?",
+      "name": "What is marginal ROI in marketing mix modelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually because its spend moves with something the model leaves out, such as a seasonal sale. The tool flags it, and that channel's estimate should not guide budgets."
+        "text": "Marginal ROI is the extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI near saturation, which is the point to move budget elsewhere."
       }
     },
     {
       "@type": "Question",
-      "name": "Does it send my data anywhere?",
+      "name": "How much data does marketing mix modelling need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The model is fitted in the browser. Nothing is uploaded."
+        "text": "Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality, and price, that is about 90 periods, or roughly 2 years of weekly data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this MMM Analyser free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The MMM Analyser is free, needs no account or installation, and runs in any modern browser, including on a phone. Spend and sales data never leave the browser."
       }
     }
   ]
