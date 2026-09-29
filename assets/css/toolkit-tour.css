@@ -1,0 +1,23 @@
+/* assets/css/toolkit-tour.css
+   Guided demos, see assets/js/toolkit/toolkit-tour.js. The caption bar is
+   pinned to the bottom of the screen so it works one-handed on a phone. */
+.tk-tour-launch { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin: 1rem 0 0.25rem; }
+.tk-tour-go { border: 2px solid #111111; background: #111111; color: #ffffff; border-radius: 0.25rem; padding: 0.5rem 1.1rem; font-weight: 700; cursor: pointer; font-size: 1rem; }
+.tk-tour-go:hover, .tk-tour-go:focus-visible { background: #ffffff; color: #111111; }
+.tk-tour-note { color: #6b6b6b; font-size: 0.85rem; }
+.tk-tour-focus { outline: 3px solid #2a78d6 !important; outline-offset: 4px; border-radius: 0.25rem; box-shadow: 0 0 0 9999px rgba(17, 17, 17, 0.06); transition: outline-color 0.2s; }
+body.tk-tour-on { padding-bottom: 240px; }
+.tk-tour-card { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); width: min(620px, calc(100vw - 20px)); background: #ffffff; color: #111111; border: 2px solid #111111; border-radius: 0.35rem; padding: 0.75rem 1rem 0.8rem; z-index: 2000; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18); }
+.tk-tour-top { display: flex; align-items: center; gap: 0.6rem; }
+.tk-tour-count { font-size: 0.78rem; color: #6b6b6b; white-space: nowrap; }
+.tk-tour-progress { flex: 1; height: 4px; background: #e5e5e5; border-radius: 2px; overflow: hidden; }
+.tk-tour-progress span { display: block; height: 100%; background: #2a78d6; transition: width 0.3s; }
+.tk-tour-x { border: none; background: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: #6b6b6b; padding: 0 0.2rem; }
+.tk-tour-title { margin: 0.45rem 0 0.25rem; font-size: 1.02rem; font-weight: 700; }
+.tk-tour-text { margin: 0 0 0.6rem; font-size: 0.92rem; line-height: 1.45; }
+.tk-tour-actions { display: flex; gap: 0.5rem; justify-content: flex-end; }
+.tk-tour-actions button { border: 1px solid #111111; background: #ffffff; color: #111111; border-radius: 0.25rem; padding: 0.4rem 0.9rem; font-weight: 700; cursor: pointer; min-width: 4.5rem; }
+.tk-tour-actions button.tk-tour-primary { background: #111111; color: #ffffff; }
+.tk-tour-actions button:disabled { opacity: 0.35; cursor: default; }
+.tk-tour-busy .tk-tour-actions button { opacity: 0.5; }
+@media (prefers-reduced-motion: reduce) { .tk-tour-progress span, .tk-tour-focus { transition: none; } }
