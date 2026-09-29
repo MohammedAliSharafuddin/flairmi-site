@@ -24,7 +24,7 @@
   const DIMENSIONS = [
     { id: "tan", label: "Tangibles", color: TK.PALETTE[0], items: ["Equipment looks modern and well kept", "Facilities are visually appealing", "Staff look neat and professional", "Printed and digital materials are clear and attractive"] },
     { id: "rel", label: "Reliability", color: TK.PALETTE[1], items: ["Services are delivered as promised", "Staff show a sincere interest in solving problems", "The service is right the first time", "Services are delivered at the promised time", "Records and bills are accurate"] },
-    { id: "res", label: "Responsiveness", color: TK.PALETTE[2], items: ["Customers are told exactly when services will happen", "Service is prompt", "Staff are always willing to help", "Staff make time to respond to requests"] },
+    { id: "res", label: "Responsiveness", color: TK.PALETTE[2], items: ["Customers are told exactly when services will happen", "Service is quick", "Staff are always willing to help", "Staff make time to respond to requests"] },
     { id: "ass", label: "Assurance", color: TK.PALETTE[3], items: ["Staff behaviour builds confidence", "Customers feel safe in their dealings", "Staff are courteous every time", "Staff have the knowledge to answer questions"] },
     { id: "emp", label: "Empathy", color: TK.PALETTE[6], items: ["Customers get individual attention", "Opening hours suit customers", "Staff give personal attention", "The business has customers' best interests at heart", "Staff understand customers' specific needs"] }
   ];

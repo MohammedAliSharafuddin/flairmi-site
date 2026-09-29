@@ -156,7 +156,7 @@
         [image ? (isUrl(image) ? "Set" : "Check") : "Missing", "Share image", st(isUrl(image))]]);
       const trunc = (s, px, font) => { if (textWidth(s, font) <= px) return s; let t = s; while (t.length && textWidth(t + " …", font) > px) t = t.slice(0, -1); return t.trim() + " …"; };
       el(root, "serp").innerHTML = `<div class="mp-site">${TK.esc(v("site") || host)}<span>${TK.esc(url)}</span></div><div class="mp-title">${TK.esc(trunc(title, 600, "20px Arial"))}</div><div class="mp-desc">${TK.esc(trunc(desc, 920, "14px Arial"))}</div>`;
-      const img = isUrl(image) ? `<div class="mp-img" style="background-image:url('${TK.esc(image)}')"></div>` : `<div class="mp-img mp-noimg">No image set. Shares show a small or empty preview.</div>`;
+      const img = isUrl(image) ? `<div class="mp-img" style="background-image:url('${TK.esc(image)}')"></div>` : `<div class="mp-img mp-noimg">Add an image for a full-size preview card. Shares fall back to a small or empty preview.</div>`;
       el(root, "og").innerHTML = `${img}<div class="mp-body"><div class="mp-host">${TK.esc(host.toUpperCase())}</div><div class="mp-otitle">${TK.esc(title)}</div><div class="mp-odesc">${TK.esc(trunc(desc, 700, "14px Arial"))}</div></div>`;
       el(root, "x").innerHTML = `${img}<div class="mp-body"><div class="mp-otitle">${TK.esc(title)}</div><div class="mp-host">From ${TK.esc(host)}</div></div>`;
       const a = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -384,10 +384,10 @@ https://example.com/offers/spring/?ref=partner</textarea></label>
       const kwPos = kw ? h.toLowerCase().indexOf(kw) : -1;
       el(root, "htiles").innerHTML = tiles([[`${h.length}`, "Headline characters"], [`${hw.length}`, "Headline words"], [`${Math.round(px)} px`, "Width in search results, limit about 600", px <= 600 ? "tk-pos" : "tk-neg"]]);
       const checks = [
-        [px <= 600, px <= 600 ? "Fits a search result title without truncation." : "Likely truncated in search results. Shorten or move key words forward."],
-        [hw.length >= 5 && hw.length <= 14, hw.length < 5 ? "Short. It may not say enough to earn the click." : hw.length > 14 ? "Long. Cut words that do not change the meaning." : "Word count in a readable range."],
-        [!kw || kwPos >= 0, !kw ? "Add a target keyword to check its position." : kwPos < 0 ? "The keyword does not appear in the headline." : kwPos <= 30 ? "The keyword appears early, where readers and search engines weight it most." : "The keyword appears late. Consider moving it forward."],
-        [true, /\d/.test(h) ? "Contains a number, which sets a specific expectation." : "No number. A specific figure can sharpen the promise where one fits."],
+        [px <= 600, px <= 600 ? "Fits a search result title in full." : "Likely truncated in search results. Shorten or move key words forward."],
+        [hw.length >= 5 && hw.length <= 14, hw.length < 5 ? "Short. It may not say enough to earn the click." : hw.length > 14 ? "Long. Cut words the meaning can spare." : "Word count in a readable range."],
+        [!kw || kwPos >= 0, !kw ? "Add a target keyword to check its position." : kwPos < 0 ? "Add the keyword to the headline." : kwPos <= 30 ? "The keyword appears early, where readers and search engines weight it most." : "The keyword appears late. Consider moving it forward."],
+        [true, /\d/.test(h) ? "Contains a number, which sets a specific expectation." : "A specific figure can sharpen the promise where one fits."],
         [true, /^[^a-z]*[A-Z][^A-Z]*$/.test(h.replace(/\b[A-Z]{2,}\b/g, "")) ? "Sentence case." : "Title case or mixed case. Pick one style and use it across the site."]];
       el(root, "hchecks").innerHTML = checks.map(([ok, t]) => `<li><span class="tk-badge ${ok ? "pass" : "fail"}">${ok ? "OK" : "Check"}</span> ${t}</li>`).join("");
     }
@@ -397,7 +397,7 @@ https://example.com/offers/spring/?ref=partner</textarea></label>
 
   // ---------------- Robots.txt and sitemap ----------------
   const AI_BOTS = [
-    ["GPTBot", "OpenAI, model training", "train"], ["ClaudeBot", "Anthropic, model training", "train"], ["Google-Extended", "Google, Gemini training (a control token, not a crawler)", "train"],
+    ["GPTBot", "OpenAI, model training", "train"], ["ClaudeBot", "Anthropic, model training", "train"], ["Google-Extended", "Google, Gemini training (a control token read by Google's crawlers)", "train"],
     ["CCBot", "Common Crawl, open dataset used for training", "train"], ["Applebot-Extended", "Apple, model training", "train"], ["Meta-ExternalAgent", "Meta, model training", "train"], ["Bytespider", "ByteDance, model training", "train"],
     ["OAI-SearchBot", "OpenAI, search answers", "answer"], ["Claude-SearchBot", "Anthropic, search answers", "answer"], ["PerplexityBot", "Perplexity, search answers", "answer"]];
   function robots(config) {

@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Persona Builder: Free UX and Marketing Persona Tool</title>
-<meta name="description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta name="description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. Free, opens straight away, and your data stays on your device.">
 <link rel="canonical" href="https://flairmi.com/tools/persona-builder/">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Persona Builder: Free UX and Marketing Persona Tool">
-<meta property="og:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta property="og:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. Free, opens straight away, and your data stays on your device.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flairmi.com/tools/persona-builder/">
 <meta property="og:site_name" content="FlairMI">
@@ -19,7 +19,7 @@
 <meta property="og:image:alt" content="Persona Builder: persona cards at four detail levels, including a stage-by-stage Journey level, exported as PNG, PDF, or JSON.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Persona Builder: Free UX and Marketing Persona Tool">
-<meta name="twitter:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta name="twitter:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. Free, opens straight away, and your data stays on your device.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/persona-builder.jpg">
 <meta name="twitter:image:alt" content="Persona Builder: persona cards at four detail levels, including a stage-by-stage Journey level, exported as PNG, PDF, or JSON.">
 <script type="application/ld+json">
@@ -86,7 +86,7 @@
       "name": "Is this Persona Builder free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Persona Builder is free, needs no account or installation, and runs in any modern browser, including on a phone. Personas are saved in the browser's local storage on this device and never uploaded."
+        "text": "Yes. The Persona Builder is free and opens straight away in any modern browser, including on a phone. Personas are saved in your browser's local storage and stay on your device."
       }
     }
   ]
@@ -615,7 +615,7 @@
         <div class="field">
           <label for="j-evidence">Evidence behind this persona</label>
           <select id="j-evidence">
-            <option value="">Not stated</option>
+            <option value="">To confirm</option>
             <option value="Research-based">Research-based</option>
             <option value="Mixed">Mixed</option>
             <option value="Assumed">Assumed</option>
@@ -694,7 +694,7 @@
     </details>
     <details class="faq-item">
       <summary>Is this Persona Builder free?</summary>
-      <p class="faq-answer">Yes. The Persona Builder is free, needs no account or installation, and runs in any modern browser, including on a phone. Personas are saved in the browser's local storage on this device and never uploaded.</p>
+      <p class="faq-answer">Yes. The Persona Builder is free and opens straight away in any modern browser, including on a phone. Personas are saved in your browser's local storage and stay on your device.</p>
     </details>
   </div>
 </div>
@@ -893,7 +893,7 @@
         '<div class="field"><label>Deciding factor</label><input type="text" data-s="factor" value="' + esc(st.factor) + '" placeholder="e.g. price, location, reputation"></div>' +
         '<div class="two-col">' +
           '<div class="field"><label>Basis</label><select data-s="basis">' +
-            '<option value=""' + (!st.basis ? ' selected' : '') + '>Not stated</option>' +
+            '<option value=""' + (!st.basis ? ' selected' : '') + '>To confirm</option>' +
             '<option value="data"' + (st.basis === 'data' ? ' selected' : '') + '>From data</option>' +
             '<option value="assumption"' + (st.basis === 'assumption' ? ' selected' : '') + '>Assumption</option>' +
           '</select></div>' +
@@ -951,7 +951,7 @@
     html += sparkline(j.stages);
     html += '<table class="card-journey"><thead><tr><th>Stage</th><th>Goal</th><th>Feeling</th><th>Decides on</th></tr></thead><tbody>';
     html += j.stages.map(function (st) {
-      var dot = '<span class="basis-dot ' + (st.basis === 'data' ? 'data' : st.basis === 'assumption' ? '' : 'none') + '" title="' + (st.basis === 'data' ? 'From data' : st.basis === 'assumption' ? 'Assumption' : 'Basis not stated') + '"></span>';
+      var dot = '<span class="basis-dot ' + (st.basis === 'data' ? 'data' : st.basis === 'assumption' ? '' : 'none') + '" title="' + (st.basis === 'data' ? 'From data' : st.basis === 'assumption' ? 'Assumption' : 'Basis to confirm') + '"></span>';
       var e = FJ ? FJ.emotion(st.emotion) : null;
       var feel = e ? FJ.fmt(Number(st.emotion)) + ' ' + esc(st.feeling || e.label.toLowerCase()) : esc(st.feeling);
       return '<tr><td>' + dot + esc(st.label) + (st.source ? '<span class="card-src">' + esc(st.source) + '</span>' : '') + '</td>' +
@@ -996,11 +996,11 @@
     photoData: avatarSvgDataUri(avatarPalettes[0].bg, avatarPalettes[0].fg),
     'f-name': 'Lukas Hoffmann',
     'f-role': 'IT project manager, travels for work and leisure',
-    'f-tagline': 'Plans every trip like a system rollout: checks the specs, reads the reviews, and books only when nothing is left to chance.',
+    'f-tagline': 'Plans every trip like a system rollout: checks the specs, reads the reviews, and books only once every detail checks out.',
     'f-age': '38',
     'f-location': 'Munich, Germany',
     'f-occupation': 'Leads software rollouts for a logistics firm and books 6 to 8 hotel stays a year, half of them for work.',
-    'f-goals': 'Find a hotel he can trust without a second search\nStay productive on work trips with reliable Wi-Fi and a quiet room\nGive his family a stress-free holiday once a year',
+    'f-goals': 'Find a hotel he can trust on the first search\nStay productive on work trips with reliable Wi-Fi and a quiet room\nGive his family a stress-free holiday once a year',
     'f-pains': 'Fees that appear only at the payment step\nHotel websites that leave out check-in times or Wi-Fi details\nService that changes from one stay to the next',
     'f-behaviours': 'Reads the hotel website first, then the reviews\nCompares at least three hotels before booking\nChecks every confirmation email before he travels',
     channels: ['Email', 'Search', 'Mobile app'],
@@ -1019,11 +1019,11 @@
     journey: {
       template: 'resort',
       stages: [
-        { label: 'Inspiration', touchpoint: 'Past stays, hotel websites', goal: 'Shortlist hotels he already trusts', emotion: 1, feeling: 'sure', factor: 'Previous knowledge of the hotel', basis: 'assumption', source: 'Not reported for this segment' },
+        { label: 'Inspiration', touchpoint: 'Past stays, hotel websites', goal: 'Shortlist hotels he already trusts', emotion: 1, feeling: 'sure', factor: 'Previous knowledge of the hotel', basis: 'assumption', source: 'Outside the study\'s findings for this segment' },
         { label: 'Research', touchpoint: 'Hotel website', goal: 'Get every practical answer before choosing', emotion: 2, feeling: 'respected', factor: 'Complete website information', basis: 'data', source: "O'Rourke et al. (2026), Table 2" },
         { label: 'Booking', touchpoint: 'Booking engine', goal: 'Book with no surprises in the price', emotion: 1, feeling: 'sure', factor: 'Total price including fees', basis: 'data', source: "O'Rourke et al. (2026), Table 3" },
-        { label: 'Pre-arrival', touchpoint: 'Pre-arrival email', goal: 'Confirm check-in time and Wi-Fi', emotion: 1, feeling: 'sure', factor: 'Clear pre-arrival communication', basis: 'assumption', source: 'Recommended in the study, not measured' },
-        { label: 'On-site', touchpoint: 'Front desk, room', goal: 'Get consistent, prompt service', emotion: 1, feeling: 'sure', factor: 'Service consistency and speed', basis: 'data', source: "O'Rourke et al. (2026), section 3.2" },
+        { label: 'Pre-arrival', touchpoint: 'Pre-arrival email', goal: 'Confirm check-in time and Wi-Fi', emotion: 1, feeling: 'sure', factor: 'Clear pre-arrival communication', basis: 'assumption', source: 'Recommended in the study, an assumption here' },
+        { label: 'On-site', touchpoint: 'Front desk, room', goal: 'Get consistent, quick service', emotion: 1, feeling: 'sure', factor: 'Service consistency and speed', basis: 'data', source: "O'Rourke et al. (2026), section 3.2" },
         { label: 'Post-stay', touchpoint: 'Loyalty email', goal: 'Be recognised as a returning guest', emotion: 2, feeling: 'pleased', factor: 'Personalised loyalty offer', basis: 'assumption', source: 'Conversion path suggested in the study' }
       ]
     }
@@ -1100,7 +1100,7 @@
   }
 
   function listHtml(items) {
-    if (!items.length) return '<div class="card-empty-note">Not specified</div>';
+    if (!items.length) return '<div class="card-empty-note">To be added</div>';
     return '<ul class="card-list">' + items.map(function (i) { return '<li>' + esc(i) + '</li>'; }).join('') + '</ul>';
   }
 
@@ -1136,8 +1136,8 @@
     if (d.level !== 'basic') {
       html += '<div class="card-section"><div class="card-section-title">Context</div>';
       html += '<div class="card-grid-two">';
-      html += '<div class="card-fact"><strong>Occupation</strong>' + (d['f-occupation'] ? esc(d['f-occupation']) : '<span class="card-empty-note">Not specified</span>') + '</div>';
-      html += '<div class="card-fact"><strong>Channels</strong>' + (d.channels.length ? '<div class="card-chips">' + d.channels.map(function (c) { return '<span class="card-chip">' + esc(c) + '</span>'; }).join('') + '</div>' : '<span class="card-empty-note">Not specified</span>') + '</div>';
+      html += '<div class="card-fact"><strong>Occupation</strong>' + (d['f-occupation'] ? esc(d['f-occupation']) : '<span class="card-empty-note">To be added</span>') + '</div>';
+      html += '<div class="card-fact"><strong>Channels</strong>' + (d.channels.length ? '<div class="card-chips">' + d.channels.map(function (c) { return '<span class="card-chip">' + esc(c) + '</span>'; }).join('') + '</div>' : '<span class="card-empty-note">To be added</span>') + '</div>';
       html += '</div></div>';
 
       html += '<div class="card-section"><div class="card-section-title">Goals</div>' + listHtml(linesToArray(d['f-goals'])) + '</div>';
@@ -1152,11 +1152,11 @@
       html += '<div class="card-section"><div class="card-section-title">Motivations</div>' + listHtml(linesToArray(d['f-motivations'])) + '</div>';
 
       var traitsArr = (d['f-traits'] || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
-      html += '<div class="card-section"><div class="card-section-title">Traits</div>' + (traitsArr.length ? '<div class="card-chips">' + traitsArr.map(function (t) { return '<span class="card-chip">' + esc(t) + '</span>'; }).join('') + '</div>' : '<div class="card-empty-note">Not specified</div>') + '</div>';
+      html += '<div class="card-section"><div class="card-section-title">Traits</div>' + (traitsArr.length ? '<div class="card-chips">' + traitsArr.map(function (t) { return '<span class="card-chip">' + esc(t) + '</span>'; }).join('') + '</div>' : '<div class="card-empty-note">To be added</div>') + '</div>';
 
       html += '<div class="card-section"><div class="card-grid-two">';
-      html += '<div class="card-fact"><strong>Tech comfort</strong>' + (d['f-techcomfort'] ? esc(d['f-techcomfort']) : '<span class="card-empty-note">Not set</span>') + '</div>';
-      html += '<div class="card-fact"><strong>Key metrics</strong>' + (d['f-kpis'] ? esc(d['f-kpis']) : '<span class="card-empty-note">Not specified</span>') + '</div>';
+      html += '<div class="card-fact"><strong>Tech comfort</strong>' + (d['f-techcomfort'] ? esc(d['f-techcomfort']) : '<span class="card-empty-note">To be set</span>') + '</div>';
+      html += '<div class="card-fact"><strong>Key metrics</strong>' + (d['f-kpis'] ? esc(d['f-kpis']) : '<span class="card-empty-note">To be added</span>') + '</div>';
       html += '</div></div>';
 
       if (d['f-notes']) {
@@ -1232,7 +1232,7 @@
 
   async function deletePersona(id, ev) {
     ev.stopPropagation();
-    if (!confirm('Delete this saved persona? This cannot be undone.')) return;
+    if (!confirm('Delete this saved persona? Deleting is permanent.')) return;
     try {
       localStorage.removeItem(STORAGE_PREFIX + id);
       var list = await getIndex();
@@ -1254,7 +1254,7 @@
     list.sort(function (a, b) { return b.updatedAt - a.updatedAt; });
     var container = el('savedList');
     if (!list.length) {
-      container.innerHTML = '<div class="saved-empty">No saved personas yet.</div>';
+      container.innerHTML = '<div class="saved-empty">Saved personas appear here.</div>';
       return;
     }
     container.innerHTML = list.map(function (item) {

@@ -35,7 +35,7 @@
       classify(p, ctx) {
         const high = p.y >= ctx.setting("cut"), lead = p.x >= 1;
         if (high && lead) return { label: "Star", advice: "Invest to hold share while the market grows. It becomes a cash cow as growth slows." };
-        if (high) return { label: "Question mark", advice: "Invest to build share where you can win, or withdraw. Holding still uses cash without a return." };
+        if (high) return { label: "Question mark", advice: "Invest to build share where you can win, or withdraw. Holding still uses cash and earns little back." };
         if (lead) return { label: "Cash cow", advice: "Defend share with modest spend and use the cash to fund stars and question marks." };
         return { label: "Dog", advice: "Harvest or divest, unless it supports a stronger product or serves a loyal niche profitably." };
       },

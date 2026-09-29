@@ -482,14 +482,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The robots.txt starts with a rule for all crawlers, adds a block rule for each AI crawler you tick, and ends with the sitemap location.</p>
 <div class="tk-formula">User-agent: *<br>Disallow: /admin/<br><br>User-agent: GPTBot<br>Disallow: /<br><br>Sitemap: https://example.com/sitemap.xml</div>
-<p>The sitemap follows the sitemaps.org protocol: one host, at most 50,000 URLs per file, with an optional last-modified date per URL. Robots.txt is a request that reputable crawlers honour. It does not secure private pages.</p>
+<p>The sitemap follows the sitemaps.org protocol: one host, at most 50,000 URLs per file, with an optional last-modified date per URL. Robots.txt is a request that reputable crawlers honour. Private pages need a login to stay private.</p>
 </section>
 <section id="frequently-asked-questions" class="level2">
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <div class="faq-list">
   <details class="faq-item">
     <summary>What is a robots.txt file?</summary>
-    <p class="faq-answer">A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it, but it does not secure private pages.</p>
+    <p class="faq-answer">A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it. Private pages need a login to stay private.</p>
   </details>
   <details class="faq-item">
     <summary>How do I block AI crawlers in robots.txt?</summary>
@@ -501,11 +501,11 @@ ul.task-list li input[type="checkbox"] {
   </details>
   <details class="faq-item">
     <summary>Does robots.txt remove a page from Google?</summary>
-    <p class="faq-answer">Not reliably. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results.</p>
+    <p class="faq-answer">Only partly. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results.</p>
   </details>
   <details class="faq-item">
     <summary>Is this Robots.txt and Sitemap Generator free?</summary>
-    <p class="faq-answer">Yes. The Robots.txt and Sitemap Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
+    <p class="faq-answer">Yes. The Robots.txt and Sitemap Generator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device.</p>
   </details>
 </div>
 </section>
@@ -548,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "What is a robots.txt file?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it, but it does not secure private pages."
+        "text": "A robots.txt file is a text file at the root of a website that tells crawlers which paths they may fetch. Reputable crawlers honour it. Private pages need a login to stay private."
       }
     },
     {
@@ -572,7 +572,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "Does robots.txt remove a page from Google?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not reliably. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results."
+        "text": "Only partly. A page blocked in robots.txt can still appear if other sites link to it. Use a noindex tag to keep a page out of search results."
       }
     },
     {
@@ -580,7 +580,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "Is this Robots.txt and Sitemap Generator free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Robots.txt and Sitemap Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
+        "text": "Yes. The Robots.txt and Sitemap Generator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
       }
     }
   ]

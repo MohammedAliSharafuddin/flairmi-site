@@ -58,7 +58,7 @@
     title: "Business-friendly city hotel for Lukas Hoffmann",
     notes: [
       { id: "j1", zone: "jobs", text: "Stay productive on a 3-day work trip" },
-      { id: "j2", zone: "jobs", text: "Book a hotel without a second search" },
+      { id: "j2", zone: "jobs", text: "Book a hotel on the first search" },
       { id: "j3", zone: "jobs", text: "Plan a family holiday once a year" },
       { id: "g1", zone: "gains", text: "Reliable fast Wi-Fi" },
       { id: "g2", zone: "gains", text: "Recognised as a returning guest" },

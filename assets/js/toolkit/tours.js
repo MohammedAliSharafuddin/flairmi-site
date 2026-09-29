@@ -66,7 +66,7 @@
     "journey-app": { steps: [
       { sel: "#journey-app .jm-toolbar", title: "The classroom case", text: "Three hotel guests from O'Rourke et al. (2026), one per delight segment, on a 6-stage resort journey.", do: [["click", '#journey-app [data-act="preset"]']] },
       { sel: "#journey-app-editor", title: "Stages", text: "Pick a template or edit the stages. The phase groups neighbouring stages into bands above the chart.", do: [["click", '#journey-app [data-tab="stages"]']] },
-      { sel: "#journey-app-editor", title: "Personas as goal-states", text: "Each persona has a goal, feeling, deciding factor, and segment at every stage. It is not one fixed card.", do: [["click", '#journey-app [data-tab="personas"]']] },
+      { sel: "#journey-app-editor", title: "Personas as goal-states", text: "Each persona has a goal, feeling, deciding factor, and segment at every stage. The card changes as the journey goes on.", do: [["click", '#journey-app [data-tab="personas"]']] },
       { sel: "#journey-app-editor .jm-card:nth-child(3)", title: "Score an emotion", text: "Move the slider and the tool explains the score in terms of expectations, with feeling words to pick from.", do: [["set", "#journey-app-editor .jm-card:nth-child(3) [data-f=\"emotion\"]", -1]] },
       { sel: "#journey-app svg.jm-chart", title: "Three guests, one journey", text: "The same stages feel very different to each segment. Hollow points are assumptions, and a ring marks a change of segment." },
       { sel: "#journey-app .jm-table-wrap", title: "The service blueprint", text: "Below the lines of interaction, visibility, and internal interaction sits the backstage work, each tagged to the silo that owns it." },
@@ -98,7 +98,7 @@
       { sel: "#vpc-app .vpc-canvas", title: "Two halves", text: "The circle is the customer: jobs, pains, and gains. The square is the offer: products, pain relievers, and gain creators.", do: [["click", '#vpc-app [data-a="sample"]']] },
       { sel: "#vpc-app .vpc-add", title: "Add a pain reliever", text: "Pick the area, type a short note, and add it.", do: [["select", '#vpc-app [data-k="zone"]', "painRelievers"], ["type", '#vpc-app [data-k="text"]', "Same room type on every stay"], ["click", '#vpc-app [data-a="add"]']] },
       { sel: "#vpc-app .vpc-canvas", title: "Drag and match", text: "Drag notes between areas. Click a pain or gain to tick the relievers or creators that answer it. Matches show as dashed lines." },
-      { sel: "#vpc-app .vpc-kpis", title: "Fit", text: "Fit is the share of pains and gains answered by the offer. Here one pain and one gain still have no answer." }
+      { sel: "#vpc-app .vpc-kpis", title: "Fit", text: "Fit is the share of pains and gains answered by the offer. Here one pain and one gain are still unanswered." }
     ] },
 
     "ipa-app": { steps: [
@@ -129,7 +129,7 @@
       { sel: '#plc-app [data-k="csv"]', title: "Sales history", text: "Quarterly bookings for a serviced apartment brand, oldest first." },
       { sel: "#plc-app .plc-chart", title: "The fitted S-curve", text: "The dashed line is the fitted curve. The shaded bands mark introduction, growth, and maturity.", do: [["click", '#plc-app [data-a="run"]']] },
       { sel: '#plc-app [data-k="csv"]', title: "Add two falling quarters", text: "Suppose bookings drop in the next two quarters.", do: [["set", '#plc-app [data-k="csv"]', "quarter,bookings\n2023 Q1,40\n2023 Q2,55\n2023 Q3,80\n2023 Q4,120\n2024 Q1,190\n2024 Q2,280\n2024 Q3,390\n2024 Q4,500\n2025 Q1,610\n2025 Q2,690\n2025 Q3,750\n2025 Q4,790\n2026 Q1,815\n2026 Q2,828\n2026 Q3,832\n2026 Q4,770\n2027 Q1,700"], ["click", '#plc-app [data-a="run"]']] },
-      { sel: "#plc-app .tk-kpis", title: "Decline detected", text: "Two falls of more than 5% in a row mark decline, which a logistic curve alone cannot show." },
+      { sel: "#plc-app .tk-kpis", title: "Decline detected", text: "Two falls of more than 5% in a row mark decline, which a logistic curve alone misses." },
       { sel: "#plc-app .plc-mix", title: "What to do at this stage", text: "The mix priorities change with the stage: prune the range, cut or hold price, and spend only to keep loyal buyers." }
     ] },
 
@@ -143,7 +143,7 @@
     // ---------------- Planning and execution ----------------
     "ps-app": { steps: [
       { sel: '#ps-app [data-k="positioning"]', title: "Start from the positioning", text: "The segment and positioning come from STP Builder when it has been used on this device.", do: [["click", '#ps-app [data-a="sample"]']] },
-      { sel: "#ps-app .ps-cards", title: "Seven Ps, three prompts each", text: "Product, price, place, promotion, then people, process, and physical evidence for services." },
+      { sel: "#ps-app .ps-cards", title: "Seven Ps, three questions each", text: "Product, price, place, promotion, then people, process, and physical evidence for services." },
       { sel: '#ps-app [data-p="people"]', title: "Rate the fit", text: "Each P is rated for how well it supports the positioning. Front desk staff now have authority to fix problems, so people rises to 4.", do: [["click", '#ps-app [data-p="people"] [data-v="4"]']] },
       { sel: "#ps-app .ps-chart", title: "The weakest link", text: "The lowest bar is where the plan breaks its own promise. Here that is process." },
       { sel: X("ps-app"), title: "Carry it forward", text: "The plan is saved on this device for the Campaign Brief Generator, and exports as PNG or PDF." }
@@ -169,14 +169,14 @@
       { sel: "#meta-app .tk-grid", title: "Title, URL, and image", text: "Everything a search engine or social platform shows for a page." },
       { sel: '#meta-app [data-k="tiles"]', title: "Length by pixels", text: "Search results cut titles at about 600 pixels. A longer title turns red.", do: [["type", '#meta-app [data-k="title"]', "Customer Journey Mapper: free browser tool for service blueprints and personas | FlairMI"]] },
       { sel: '#meta-app [data-k="serp"]', title: "Search preview", text: "The title is cut short, just as Google would show it." },
-      { sel: '#meta-app [data-k="og"]', title: "Social card", text: "Without a share image, Facebook and LinkedIn show an empty preview." },
+      { sel: '#meta-app [data-k="og"]', title: "Social card", text: "With the share image missing, Facebook and LinkedIn fall back to an empty preview." },
       { sel: '#meta-app [data-k="code"]', title: "Copy the tags", text: "The title, description, canonical, Open Graph, and Twitter card tags, ready for the page head.", do: [["type", '#meta-app [data-k="title"]', "Customer Journey Mapper: free browser tool | FlairMI"]] }
     ] },
 
     "schema-app": { steps: [
       { sel: "#schema-app .tk-grid", title: "A hotel, in structured data", text: "Name, address, star rating, and check-in times in the schema.org vocabulary." },
       { sel: '#schema-app [data-k="out"]', title: "JSON-LD", text: "Empty fields are left out, and the block is ready to paste into the page." },
-      { sel: '#schema-app [data-k="fields"]', title: "Switch to FAQ", text: "A question line, then its answer line, repeated.", do: [["select", '#schema-app [data-k="type"]', "FAQPage"], ["type", '#schema-app [data-f="faq"]', "Do you offer late check-out?\nYes, members can check out at 14:00 at no charge."]] },
+      { sel: '#schema-app [data-k="fields"]', title: "Switch to FAQ", text: "A question line, then its answer line, repeated.", do: [["select", '#schema-app [data-k="type"]', "FAQPage"], ["type", '#schema-app [data-f="faq"]', "Do you offer late check-out?\nYes, members can check out at 14:00 free of charge."]] },
       { sel: '#schema-app [data-k="out"]', title: "FAQ markup", text: "Search engines and AI answer engines can read the answers directly. Every tool page on this site uses it." }
     ] },
 
@@ -198,7 +198,7 @@
     ] },
 
     "robots-app": { steps: [
-      { sel: '#robots-app [data-k="disallow"]', title: "Keep private paths out", text: "Admin, checkout, and internal search pages add nothing to search results." },
+      { sel: '#robots-app [data-k="disallow"]', title: "Keep private paths out", text: "Admin, checkout, and internal search pages only clutter search results." },
       { sel: "#robots-app .tk-panel", title: "Decide on AI crawlers", text: "Block training crawlers and keep answer crawlers, so pages stay out of model training but still appear in AI search answers.", do: [["check", '#robots-app [data-bot="GPTBot"]', true], ["check", '#robots-app [data-bot="ClaudeBot"]', true], ["check", '#robots-app [data-bot="CCBot"]', true]] },
       { sel: '#robots-app [data-k="robots"]', title: "robots.txt", text: "One rule for all crawlers, a block for each training crawler, and the sitemap address." },
       { sel: '#robots-app [data-k="xml"]', title: "sitemap.xml", text: "Built from the URL list, with last-modified dates where given." }
@@ -261,14 +261,14 @@
 
     "nps-app": { steps: [
       { sel: "#nps-app .tk-panel", title: "Add a survey wave", text: "Type counts, or paste raw 0 to 10 scores and the tool sorts them.", do: [["click", '#nps-app [data-a="sample"]'], ["type", '#nps-app [data-k="label"]', "2026 Q4"], ["type", '#nps-app [data-k="raw"]', "10 9 9 10 8 7 9 10 6 9 10 8 9 10 4 9 10 9 8 10 9 7 10 9 3 10 9 10 8 9"]] },
-      { sel: '#nps-app [data-k="tiles"]', title: "Score and margin of error", text: "Thirty responses give a wide margin, so the change is not yet larger than chance.", do: [["click", '#nps-app [data-a="add"]']] },
+      { sel: '#nps-app [data-k="tiles"]', title: "Score and margin of error", text: "Thirty responses give a wide margin, so the change is still within chance.", do: [["click", '#nps-app [data-a="add"]']] },
       { sel: '#nps-app [data-k="trend"]', title: "The trend", text: "The band is the 95% interval. A small sample widens it." },
       { sel: '#nps-app [data-k="stack"]', title: "The mix behind the score", text: "Promoters, passives, and detractors by wave." }
     ] },
 
     "attr-app": { steps: [
       { sel: '#attr-app [data-k="csv"]', title: "Conversion paths", text: "Each row is a sequence of channels that ended in a booking, with the count and value." },
-      { sel: '#attr-app [data-k="chart"]', title: "Five models, one dataset", text: "Last click gives Direct over half the credit. First click gives it none." },
+      { sel: '#attr-app [data-k="chart"]', title: "Five models, one dataset", text: "Last click gives Direct over half the credit. First click gives it zero." },
       { sel: '#attr-app [data-k="tiles"]', title: "The top channel depends on the model", text: "Direct is the most model-sensitive channel. Its credit swings by 57 points." },
       { sel: '#attr-app [data-k="measure"]', title: "Switch to value", text: "Credit by booking value in place of booking count.", do: [["select", '#attr-app [data-k="measure"]', "value"]] },
       { sel: '#attr-app [data-k="table"]', title: "Every channel, every model", text: "The top channel in each model is in bold.", do: [["wait", 2000], ["select", '#attr-app [data-k="measure"]', "conv"]] }

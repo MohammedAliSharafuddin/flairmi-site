@@ -42,7 +42,7 @@
     "3": { label: "Delighted", text: "Expectations exceeded. The guest is likely to return and recommend.", words: ["happy", "proud", "joyful", "loved"] },
     "2": { label: "Pleased", text: "Expectations met with warmth. The guest feels valued.", words: ["pleased", "respected", "understood"] },
     "1": { label: "Reassured", text: "Expectations met. The guest feels confident in the choice.", words: ["sure"] },
-    "0": { label: "Neutral", text: "Nothing stands out. The stage passes without a strong feeling either way.", words: [] },
+    "0": { label: "Neutral", text: "The stage passes quietly and leaves a mild impression either way.", words: [] },
     "-1": { label: "Uneasy", text: "Doubt creeps in. The guest is unsure expectations will be met.", words: ["unsure"] },
     "-2": { label: "Worried", text: "Expectations at risk. The guest expects something to go wrong.", words: ["worried", "overwhelmed"] },
     "-3": { label: "Distressed", text: "Expectations broken. The guest is at risk of leaving or posting a negative review.", words: ["frustrated", "angry", "fearful", "ashamed"] }

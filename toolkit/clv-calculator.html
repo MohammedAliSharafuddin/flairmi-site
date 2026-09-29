@@ -481,7 +481,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>The annual margin per customer is order value times purchases per year times gross margin. Retention sets the chance a customer is still buying each year, and the discount rate converts future profit to today’s value.</p>
-<div class="tk-formula">Annual margin m = order value × purchases per year × margin %<br>CLV over T years = Σ<sub>t=0</sub><sup>T−1</sup> m × r<sup>t</sup> ÷ (1 + d)<sup>t</sup><br>CLV with no horizon = m × (1 + d) ÷ (1 + d − r)<br>Simple CLV = m ÷ (1 − r)</div>
+<div class="tk-formula">Annual margin m = order value × purchases per year × margin %<br>CLV over T years = Σ<sub>t=0</sub><sup>T−1</sup> m × r<sup>t</sup> ÷ (1 + d)<sup>t</sup><br>CLV over an open-ended horizon = m × (1 + d) ÷ (1 + d − r)<br>Simple CLV = m ÷ (1 − r)</div>
 <p>r is the retention rate and d the discount rate. A CLV to CAC ratio of 3 to 1 or more is a common benchmark for a healthy acquisition budget.</p>
 </section>
 <section id="frequently-asked-questions" class="level2">
@@ -493,7 +493,7 @@ ul.task-list li input[type="checkbox"] {
   </details>
   <details class="faq-item">
     <summary>How do you calculate customer lifetime value?</summary>
-    <p class="faq-answer">Multiply order value, purchases per year, and gross margin to get the annual margin. Then add up each year's margin, weighted by the chance the customer is still buying and discounted to today. With no end date, CLV is the annual margin times (1 + d) divided by (1 + d minus r).</p>
+    <p class="faq-answer">Multiply order value, purchases per year, and gross margin to get the annual margin. Then add up each year's margin, weighted by the chance the customer is still buying and discounted to today. Over an open-ended horizon, CLV is the annual margin times (1 + d) divided by (1 + d minus r).</p>
   </details>
   <details class="faq-item">
     <summary>What is a good CLV to CAC ratio?</summary>
@@ -505,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   </details>
   <details class="faq-item">
     <summary>Is this Customer Lifetime Value Calculator free?</summary>
-    <p class="faq-answer">Yes. The Customer Lifetime Value Calculator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
+    <p class="faq-answer">Yes. The Customer Lifetime Value Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device.</p>
   </details>
 </div>
 </section>
@@ -556,7 +556,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "How do you calculate customer lifetime value?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Multiply order value, purchases per year, and gross margin to get the annual margin. Then add up each year's margin, weighted by the chance the customer is still buying and discounted to today. With no end date, CLV is the annual margin times (1 + d) divided by (1 + d minus r)."
+        "text": "Multiply order value, purchases per year, and gross margin to get the annual margin. Then add up each year's margin, weighted by the chance the customer is still buying and discounted to today. Over an open-ended horizon, CLV is the annual margin times (1 + d) divided by (1 + d minus r)."
       }
     },
     {
@@ -580,7 +580,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "Is this Customer Lifetime Value Calculator free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Customer Lifetime Value Calculator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
+        "text": "Yes. The Customer Lifetime Value Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
       }
     }
   ]

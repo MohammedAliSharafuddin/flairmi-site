@@ -1,5 +1,5 @@
 /*
- * STP Builder — segmentation, targeting, and positioning as an interactive
+ * STP Builder: segmentation, targeting, and positioning as an interactive
  * dot-cluster diagram. Visual grammar adopted from the digital-marketing
  * textbook's fig-stp-flow (Week 2, "the STP process as a progressive
  * narrowing from full market to a specific positioning claim"): a field of
@@ -340,9 +340,9 @@
     if (stage === "segmented") {
       panel.html(`
         <p>The market has recoloured into ${segments.length} segments.
-        Select the one segment this campaign will target. Targeting means
-        choosing based on size, accessibility, competitive advantage, and
-        strategic fit, not simply picking a favourite.</p>
+        Select the one segment this campaign will target. Weigh each one on
+        size, accessibility, competitive advantage, and strategic fit before
+        choosing.</p>
         <label for="stp-target-select">Target segment</label>
         <select id="stp-target-select">
           <option value="">Choose a segment</option>

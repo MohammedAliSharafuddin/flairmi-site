@@ -46,7 +46,7 @@
             <div class="tk-kpi"><span class="tk-kpi-v tk-kpi-text">${TK.esc(sorted[0].d.label)}</span><span class="tk-kpi-l">Strongest force</span></div>
             <div class="tk-kpi"><span class="tk-kpi-v">${done.length} / ${st.length}</span><span class="tk-kpi-l">Forces scored</span></div>
           </div>
-          <ul class="tk-list">${strong.length ? strong.map((s) => `<li><strong>${TK.esc(s.d.label)}</strong> is strong at ${TK.fmt(s.score, 1)}, so it holds down profit in this market.${s.note ? " " + TK.esc(s.note) : ""}</li>`).join("") : "<li>No force scores 3.5 or above. Profit in this market faces light structural pressure.</li>"}</ul>`;
+          <ul class="tk-list">${strong.length ? strong.map((s) => `<li><strong>${TK.esc(s.d.label)}</strong> is strong at ${TK.fmt(s.score, 1)}, so it holds down profit in this market.${s.note ? " " + TK.esc(s.note) : ""}</li>`).join("") : "<li>Every force scores below 3.5. Profit in this market faces light structural pressure.</li>"}</ul>`;
       }
     });
   }

@@ -32,7 +32,7 @@
   const MAX_PERSONAS = 4;
   const SILOS = ["", "Operations", "HR", "Compliance", "Finance", "Marketing", "IT", "Other"];
   const GAPS = {
-    "": "No gap tagged",
+    "": "Gap untagged",
     "1": "Gap 1, listening",
     "2": "Gap 2, service design and standards",
     "3": "Gap 3, service performance",
@@ -108,7 +108,7 @@
             ["Hotel reputation, prior knowledge", "Find a hotel with a known name", -1, "unsure", DS, "", "Hotel reputation (AR 3.7), prior knowledge of the hotel (AR 2.9)", "data", "Table 2"],
             ["Online search, reviews", "Avoid a bad choice", -2, "worried", DS, "", "Hotel reputation", "data", "Table 2, feelings unsure and worried"],
             ["Booking engine", "Get the best price", -2, "worried", DS, "Price decides the booking", "Price (AR 2.4)", "data", "Table 3"],
-            ["Pre-arrival email", "Confirm nothing costs extra", -1, "unsure", DS, "", "Price", "assumption", "Not measured in the study"],
+            ["Pre-arrival email", "Confirm the price is final", -1, "unsure", DS, "", "Price", "assumption", "Outside the study's measures"],
             ["Room, restaurant, breakfast", "Get a good room in a good location", -2, "worried", DS, "Restaurant and breakfast fall short", "Room size (AR 3.3), location (AR 2.7), price (AR 2.6)", "data", "Table 4"],
             ["Review sites", "Judge whether the price was worth it", -2, "worried", DS, "", "Satisfaction 1.53 of 5", "data", "Section 4.3"]
           ])
@@ -116,12 +116,12 @@
         {
           id: pB, name: "Claire, the Cautious Planner", color: PALETTE[0],
           cells: cells([
-            ["Hotel website", "Find a hotel that feels reliable", 1, "", CC, "", "", "assumption", "No stage-specific finding"],
+            ["Hotel website", "Find a hotel that feels reliable", 1, "", CC, "", "", "assumption", "The study reports this segment at research"],
             ["Hotel website", "Get reassurance before choosing", 2, "respected", CC, "Clear, complete website information", "Hotel website (AR 2.0)", "data", "Table 2"],
             ["Booking engine", "Book with confidence", 1, "sure", CC, "", "", "data", "Table 3"],
-            ["Pre-arrival email", "Know what to expect on arrival", 1, "sure", CC, "Clear pre-arrival communication", "", "assumption", "Recommended in section 6.2, not measured"],
-            ["Front desk, restaurant", "Receive consistent, prompt service", 1, "sure", CC, "Any service deviation is felt", "Service consistency and speed", "data", "Section 3.2, Table 4"],
-            ["Loyalty email", "Feel the choice was right", 2, "pleased", DA, "Personalised loyalty offer", "Satisfaction 4.30 of 5", "assumption", "Conversion path suggested in section 6, not observed"]
+            ["Pre-arrival email", "Know what to expect on arrival", 1, "sure", CC, "Clear pre-arrival communication", "", "assumption", "Recommended in section 6.2, an assumption here"],
+            ["Front desk, restaurant", "Receive consistent, quick service", 1, "sure", CC, "Any service deviation is felt", "Service consistency and speed", "data", "Section 3.2, Table 4"],
+            ["Loyalty email", "Feel the choice was right", 2, "pleased", DA, "Personalised loyalty offer", "Satisfaction 4.30 of 5", "assumption", "Conversion path suggested in section 6, a possibility here"]
           ])
         },
         {
@@ -130,7 +130,7 @@
             ["Friends and family, previous stay", "Return to somewhere proven", 3, "happy", DA, "Recommendation from friends and family", "Previous experience (AR 5.4), recommendation (AR 3.0)", "data", "Table 2"],
             ["Little online search", "Confirm the choice quickly", 2, "pleased", DA, "", "Uses search engines (AR -2.5) and hotel website (AR -2.8) less", "data", "Table 2, section 5"],
             ["Booking engine, agent", "Book a hotel with local character", 3, "proud", DA, "", "Local character (AR 2.7), price matters less (AR -3.6)", "data", "Table 3"],
-            ["Concierge email", "Have preferences known before arrival", 2, "pleased", DA, "Personalised welcome planned", "", "assumption", "Recommended in section 6.2, not measured"],
+            ["Concierge email", "Have preferences known before arrival", 2, "pleased", DA, "Personalised welcome planned", "", "assumption", "Recommended in section 6.2, an assumption here"],
             ["Room, lobby, restaurant", "Be treated as special", 3, "happy", DA, "Originality, prestige, exclusive atmosphere", "Originality (AR 2.9), prestige (AR 2.8), exclusive atmosphere (AR 2.3)", "data", "Table 4"],
             ["Social media, referrals", "Share the stay", 2, "pleased", DA, "", "Satisfaction 4.45 of 5", "data", "Section 4.3"]
           ])
@@ -143,7 +143,7 @@
         { id: uid("x"), stageId: id[4], personaId: pA, text: "Other guests' atmosphere rated negatively (AR 6.3)", gap: "2", silo: "Operations", mot: false },
         { id: uid("x"), stageId: id[4], personaId: pB, text: "Inconsistent or slow service", gap: "3", silo: "HR", mot: true },
         { id: uid("x"), stageId: id[5], personaId: pC, text: "International atmosphere rated negatively (AR 2.5)", gap: "1", silo: "Marketing", mot: false },
-        { id: uid("x"), stageId: id[5], personaId: pA, text: "No follow-up that acknowledges feedback", gap: "1", silo: "IT", mot: false }
+        { id: uid("x"), stageId: id[5], personaId: pA, text: "Feedback goes unanswered after the stay", gap: "1", silo: "IT", mot: false }
       ]
     };
   }
@@ -403,7 +403,7 @@
                 <label>Trigger or modulator <input type="text" data-f="trigger" value="${esc(c.trigger)}" placeholder="What shaped the feeling"></label>
                 <label>Deciding factor <input type="text" data-f="factor" value="${esc(c.factor || "")}" placeholder="e.g. price, location, reputation"></label>
                 <label>Basis <select data-f="basis">
-                  <option value=""${!c.basis ? " selected" : ""}>Not stated</option>
+                  <option value=""${!c.basis ? " selected" : ""}>To confirm</option>
                   <option value="data"${c.basis === "data" ? " selected" : ""}>From data</option>
                   <option value="assumption"${c.basis === "assumption" ? " selected" : ""}>Assumption</option>
                 </select></label>

@@ -22,7 +22,7 @@
     { id: "attention", label: "Need attention", color: TK.PALETTE[3], test: (r, f) => r === 3, action: "Send a limited-time, personalised offer before they drift further." },
     { id: "cantlose", label: "Can't lose them", color: TK.PALETTE[7], test: (r, f, m) => r === 1 && f >= 4 && m >= 4, action: "Win them back personally. Find out what changed, since they were among the best." },
     { id: "risk", label: "At risk", color: TK.PALETTE[1], test: (r, f) => r <= 2 && f >= 3, action: "Reconnect with a relevant offer and a reminder of what they valued." },
-    { id: "hibernating", label: "Hibernating", color: "#9a9a9a", test: (r) => r === 2, action: "Low-cost reactivation. Accept that some will not return." },
+    { id: "hibernating", label: "Hibernating", color: "#9a9a9a", test: (r) => r === 2, action: "Low-cost reactivation. Expect only some to return." },
     { id: "lost", label: "Lost", color: "#c9c9c9", test: () => true, action: "Exclude from paid campaigns. Try one low-cost win-back at most." }
   ];
 

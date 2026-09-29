@@ -34,10 +34,10 @@
     answers: {
       product: ["A quiet, well-equipped room for working stays", "Business room with desk and 300 Mbps Wi-Fi, late check-out for members", "Urban boutique brand, calm design, clear signage"],
       price: ["EUR 165 member rate, 8% below the public rate", "Free breakfast on stays of 3 nights or more", "Level with chain competitors once their fees are added"],
-      place: ["Direct website and app, corporate travel desk", "Two corporate booking platforms, no discount sites", "Member rate available until 18:00 on the day"],
+      place: ["Direct website and app, corporate travel desk", "Two corporate booking platforms, discount sites excluded", "Member rate available until 18:00 on the day"],
       promotion: ["Know everything before you book", "LinkedIn, search, email to past guests", "EUR 60,000 over 12 weeks, heavier in the first 4"],
-      people: ["Front desk and guest relations", "Authority to waive fees up to EUR 50 without approval", "Monthly recognition tied to guest comments"],
-      process: ["Search, book, pre-arrival email, mobile check-in, stay, follow-up", "Pre-arrival email not sent when a booking comes through a platform", "Check-in under 4 minutes, replies to messages within 1 hour"],
+      people: ["Front desk and guest relations", "Authority to waive fees up to EUR 50 on the spot", "Monthly recognition tied to guest comments"],
+      process: ["Search, book, pre-arrival email, mobile check-in, stay, follow-up", "Pre-arrival email skipped for bookings made through a platform", "Check-in under 4 minutes, replies to messages within 1 hour"],
       physical: ["Room photos with the desk, booking page, lobby workspace", "Verified review score and Wi-Fi speed test on the booking page", "Brand standards audit each quarter"]
     },
     fit: { product: 5, price: 4, place: 4, promotion: 5, people: 3, process: 3, physical: 4 }
@@ -65,7 +65,7 @@
         <label>Target segment <input type="text" data-k="segment"></label>
       </div>
       <label>Positioning statement <textarea rows="2" data-k="positioning"></textarea></label>
-      <p class="tk-help">Answer the prompts for each P, then rate from 1 to 5 how well that P supports the positioning statement.</p>
+      <p class="tk-help">Answer the questions for each P, then rate from 1 to 5 how well that P supports the positioning statement.</p>
       <div class="tk-cards ps-cards"></div>
       <div class="tk-report">
         <h3 class="tk-report-title">7Ps marketing mix plan</h3>
@@ -125,7 +125,7 @@
       const fits = PS.map((p) => state.fit[p.id]).filter(Boolean);
       const weakest = PS.filter((p) => state.fit[p.id]).sort((a, b) => state.fit[a.id] - state.fit[b.id])[0];
       report.querySelector(".tk-kpis").innerHTML = [
-        [`${answered} of 21`, "Prompts answered"], [fits.length ? TK.fmt(TK.mean(fits), 1) + " / 5" : "n/a", "Mean support for positioning"],
+        [`${answered} of 21`, "Questions answered"], [fits.length ? TK.fmt(TK.mean(fits), 1) + " / 5" : "n/a", "Mean support for positioning"],
         [weakest ? weakest.label : "n/a", "Weakest link"]
       ].map(([v, l]) => `<div class="tk-kpi"><span class="tk-kpi-v">${v}</span><span class="tk-kpi-l">${l}</span></div>`).join("");
       const box = report.querySelector(".ps-chart");
@@ -164,7 +164,7 @@
     kpis: "Direct business bookings, member sign-ups, cost per direct booking, share of bookings through platforms",
     budget: 60000, currency: "EUR", start: "2027-01-04", end: "2027-03-28",
     channels: { "Search": 35, "Social media": 25, "Email": 15, "Partners": 25 },
-    mandatories: "Show all-in prices. Use the brand's calm design language. No discount-led headlines.",
+    mandatories: "Show all-in prices. Use the brand's calm design language. Keep headlines on value, with discounts in the body copy.",
     segment: "Business travellers who book direct",
     positioning: "For business travellers who book direct considering a city hotel for a work trip, this is the option that answers every practical question before they pay, evidenced by all-in prices and Wi-Fi speeds shown at booking.",
     message: "Know everything before you book",

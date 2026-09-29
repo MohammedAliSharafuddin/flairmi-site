@@ -476,12 +476,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="toolkit-app">
   <div id="canon-app"></div>
 </div>
-<p>One page often has many addresses: with and without www, http and https, with tracking parameters, with a trailing slash or without. Search engines may treat each as a separate page and split its ranking signals. A canonical tag names the one preferred address.</p>
+<p>One page often has many addresses: with and without www, http and https, with tracking parameters, and with a trailing slash or a bare ending. Search engines may treat each as a separate page and split its ranking signals. A canonical tag names the one preferred address.</p>
 <p>Everything above runs in your browser and saves to this device only. Paste the URL variants a page is reached by, choose the rules, and the tool shows which of them are the same page.</p>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>Each URL passes through the chosen rules in order: protocol, host case, www, fragment, index file, path case, query string, and trailing slash.</p>
-<div class="tk-formula">Tracking parameters removed: utm_*, gclid, gbraid, wbraid, fbclid, msclkid, dclid, mc_cid, mc_eid, _ga, _gl, ref, igshid, yclid<br>Remaining query parameters are sorted, so their order no longer creates duplicates</div>
+<div class="tk-formula">Tracking parameters removed: utm_*, gclid, gbraid, wbraid, fbclid, msclkid, dclid, mc_cid, mc_eid, _ga, _gl, ref, igshid, yclid<br>Remaining query parameters are sorted, so the same parameters in any order give one URL</div>
 <p>The table shows every change made, and the count of distinct canonical URLs shows how many real pages the list holds.</p>
 </section>
 <section id="frequently-asked-questions" class="level2">
@@ -501,11 +501,11 @@ ul.task-list li input[type="checkbox"] {
   </details>
   <details class="faq-item">
     <summary>Should I strip query parameters from canonical URLs?</summary>
-    <p class="faq-answer">Strip parameters that never change the content, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant.</p>
+    <p class="faq-answer">Strip parameters that leave the content unchanged, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant.</p>
   </details>
   <details class="faq-item">
     <summary>Is this Canonical Tag Generator free?</summary>
-    <p class="faq-answer">Yes. The Canonical Tag Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded.</p>
+    <p class="faq-answer">Yes. The Canonical Tag Generator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device.</p>
   </details>
 </div>
 </section>
@@ -572,7 +572,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "Should I strip query parameters from canonical URLs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Strip parameters that never change the content, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant."
+        "text": "Strip parameters that leave the content unchanged, such as UTM tags and click IDs. Keep parameters that select different content, such as a product variant."
       }
     },
     {
@@ -580,7 +580,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "Is this Canonical Tag Generator free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Canonical Tag Generator is free, needs no account or installation, and runs in any modern browser, including on a phone. Everything is processed in the browser and nothing is uploaded."
+        "text": "Yes. The Canonical Tag Generator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
       }
     }
   ]

@@ -36,7 +36,7 @@
       rows.forEach((x) => (x.cum = cum += x.value));
       const horizon = cum, infinite = m * (1 + d) / (1 + d - r), simple = m / (1 - r);
       const monthly = m / 12, payback = monthly > 0 ? cac / monthly : NaN;
-      el(root, "tiles").innerHTML = tiles([[TK.fmtMoney(horizon), `CLV over ${T} years, discounted`], [TK.fmtMoney(infinite), "CLV with no horizon, discounted"],
+      el(root, "tiles").innerHTML = tiles([[TK.fmtMoney(horizon), `CLV over ${T} years, discounted`], [TK.fmtMoney(infinite), "CLV over an open-ended horizon, discounted"],
         [TK.fmtMoney(simple), "Simple CLV, undiscounted"], [cac > 0 ? TK.fmt(horizon / cac, 1) + " : 1" : "n/a", "CLV to CAC", cac > 0 && horizon / cac >= 3 ? "tk-pos" : "tk-neg"],
         [Number.isFinite(payback) ? TK.fmt(payback, 1) + " months" : "n/a", "Months to recover CAC"], [TK.fmt(1 / (1 - r), 1) + " years", "Expected customer lifetime"]]);
       el(root, "table").innerHTML = `<thead><tr><th>Year</th><th class="tk-num">Still a customer</th><th class="tk-num">Margin that year</th><th class="tk-num">Discounted value</th><th class="tk-num">Cumulative</th></tr></thead><tbody>${rows.map((x) => `<tr><td>${x.t}</td><td class="tk-num">${TK.fmtPct(x.alive, 0)}</td><td class="tk-num">${TK.fmtMoney(m * x.alive)}</td><td class="tk-num">${TK.fmtMoney(x.value)}</td><td class="tk-num">${TK.fmtMoney(x.cum)}</td></tr>`).join("")}</tbody>`;
@@ -84,7 +84,7 @@
         [TK.fmtMoney(p2 * q2 - p1 * q1), "Change in revenue"], [c ? TK.fmtMoney((p2 - c) * q2 - (p1 - c) * q1) : "n/a", "Change in contribution"],
         [b > 0 ? TK.fmt(c ? pProf : pRev, 2) : "n/a", c ? "Profit-maximising price, linear demand" : "Revenue-maximising price, linear demand"]]);
       el(root, "verdict").innerHTML = kind === "Elastic" ? "Buyers are price sensitive here. A price rise loses proportionally more volume than it gains in price, so revenue falls." :
-        kind === "Inelastic" ? "Buyers are not very price sensitive here. A price rise loses proportionally less volume than it gains in price, so revenue rises." : "Revenue barely changes with price in this range.";
+        kind === "Inelastic" ? "Buyers are only mildly price sensitive here. A price rise loses proportionally less volume than it gains in price, so revenue rises." : "Revenue barely changes with price in this range.";
       const lo = Math.max(0.01, Math.min(p1, p2) * 0.6), hi = Math.max(p1, p2) * 1.4, prices = d3.range(lo, hi, (hi - lo) / 80);
       const qAt = (p) => Math.max(0, a - b * p);
       // Demand chart.
