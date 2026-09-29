@@ -664,3 +664,100 @@ svg.jm-chart {
   padding: 0.35rem 0.6rem;
   font-size: 0.9rem;
 }
+
+/* Shared layout for the tools built on toolkit-core.js (SERVQUAL onward).
+   One vocabulary of classes, so every tool reads as part of one hub. */
+.tk-toolbar { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: end; margin-bottom: 1rem; }
+.tk-toolbar label { margin-bottom: 0; }
+.toolkit-app .tk-toolbar input, .toolkit-app .tk-toolbar select { margin-bottom: 0; }
+.tk-grow { flex: 1 1 240px; }
+.tk-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 0.5rem 0; }
+.tk-help { color: var(--toolkit-muted); font-size: 0.85rem; margin: 0 0 0.6rem; }
+.tk-warn { color: #b42318; }
+.tk-neg { color: #b42318; font-weight: 700; }
+.tk-pos { color: #0f7a53; font-weight: 700; }
+.tk-mono, .toolkit-app textarea.tk-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.8rem; }
+.tk-details { border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 0.6rem 0.9rem; margin-bottom: 1rem; }
+.tk-details summary { font-weight: 700; cursor: pointer; }
+.tk-details[open] summary { margin-bottom: 0.6rem; }
+.tk-split { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; margin-bottom: 1rem; }
+.tk-panel { border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 0.9rem 1rem; }
+.tk-panel h3, .tk-report h3 { font-size: 1.05rem; margin: 0 0 0.5rem; }
+.tk-report h4 { font-size: 0.95rem; margin: 0.75rem 0 0.4rem; }
+.tk-report { background: var(--toolkit-bg); padding: 0.25rem; margin-top: 1rem; }
+.tk-inline { display: flex !important; justify-content: space-between; align-items: center; gap: 0.75rem; font-weight: 600; }
+.toolkit-app .tk-inline input { width: 6rem; margin-bottom: 0.35rem; }
+.tk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0 0.9rem; }
+.tk-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
+.tk-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.tk-table th, .tk-table td { border-bottom: 1px solid var(--toolkit-border); padding: 0.3rem 0.4rem; text-align: left; vertical-align: middle; }
+.tk-table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--toolkit-muted); }
+.tk-table td.tk-num, .tk-table th.tk-num { text-align: right; font-variant-numeric: tabular-nums; }
+.toolkit-app .tk-table input, .toolkit-app .tk-table select { margin: 0; padding: 0.2rem 0.35rem; font-size: 0.85rem; }
+.toolkit-app .tk-table input[type="number"] { width: 5.5rem; }
+.tk-table tr.tk-group td { font-weight: 700; background: #f7f7f7; }
+.tk-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 0.5rem 0 1rem; }
+.tk-kpi { border: 1px solid var(--toolkit-border); border-left: 3px solid var(--toolkit-fg); border-radius: var(--toolkit-radius); padding: 0.55rem 0.75rem; }
+.tk-kpi-v { display: block; font-size: 1.35rem; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.tk-kpi-l { display: block; font-size: 0.78rem; color: var(--toolkit-muted); }
+.tk-list { font-size: 0.88rem; padding-left: 1.1rem; margin: 0; }
+.tk-list li { margin-bottom: 0.35rem; }
+svg.tk-chart { width: 100%; height: auto; display: block; }
+.tk-export-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 1rem; }
+.tk-status { color: var(--toolkit-muted); font-size: 0.85rem; }
+.tk-output { background: #f7f7f7; border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 0.75rem; white-space: pre-wrap; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.8rem; margin: 0.4rem 0; }
+.tk-formula { border-left: 3px solid var(--toolkit-fg); padding: 0.35rem 0.75rem; background: #f7f7f7; font-size: 0.88rem; margin: 0.5rem 0; }
+.tk-badge { display: inline-block; border: 1px solid var(--toolkit-fg); border-radius: var(--toolkit-radius); padding: 0 0.4rem; font-size: 0.75rem; font-weight: 700; }
+.tk-badge.pass { border-color: #0f7a53; color: #0f7a53; }
+.tk-badge.fail { border-color: #b42318; color: #b42318; }
+.tk-exporting .tk-table-wrap { overflow: visible; }
+.tk-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.75rem; }
+.tk-card { border: 1px solid var(--toolkit-border); border-top: 3px solid var(--toolkit-fg); border-radius: var(--toolkit-radius); padding: 0.7rem 0.85rem 0.3rem; }
+.tk-card h4 { margin: 0 0 0.4rem; font-size: 0.98rem; }
+.toolkit-app .tk-card label { font-size: 0.8rem; color: var(--toolkit-muted); }
+.toolkit-app .tk-card textarea { font-size: 0.85rem; min-height: 4.2rem; }
+.tk-kpi-v.tk-kpi-text { font-size: 1.05rem; }
+.tk-chart-box { max-width: 820px; }
+.toolkit-app .sq-items td:nth-child(2) input { min-width: 18rem; }
+.rs-q { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.35rem 0.75rem; font-size: 0.86rem; padding: 0.35rem 0; border-bottom: 1px solid var(--toolkit-border); }
+.rs-q > span { flex: 1 1 12rem; }
+.rs-scale { display: flex; gap: 0.2rem; }
+.rs-scale button { width: 1.9rem; height: 1.9rem; border: 1px solid var(--toolkit-border); background: var(--toolkit-bg); color: var(--toolkit-fg); border-radius: var(--toolkit-radius); font-weight: 700; font-size: 0.8rem; cursor: pointer; }
+.rs-scale button[aria-checked="true"] { background: var(--toolkit-fg); color: var(--toolkit-bg); border-color: var(--toolkit-fg); }
+.rs-dim-score { float: right; font-size: 0.85rem; color: var(--toolkit-muted); font-weight: 700; }
+.rs-cards .tk-card label { margin-top: 0.5rem; }
+.bm-factor-row { display: grid; grid-template-columns: 1fr 5.5rem; gap: 0.5rem; }
+.toolkit-app .bm-factor-row input { margin-bottom: 0.35rem; }
+.toolkit-app .bm-input td:first-child input { min-width: 11rem; }
+.tk-kpi-v.tk-kpi-note { font-size: 0.9rem; font-weight: 600; line-height: 1.35; }
+.tk-check-row { display: flex !important; gap: 0.4rem; align-items: baseline; font-weight: 400 !important; font-size: 0.88rem !important; }
+.vpc-edit { margin-top: 1rem; }
+.vpc-add select { width: auto !important; margin-bottom: 0 !important; }
+.vpc-add input { margin-bottom: 0 !important; }
+.bf-head h3 { margin: 0.35rem 0 0.2rem; }
+.bf-message { font-size: 1.15rem; font-weight: 700; }
+.bf-doc { border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 1rem 1.25rem; }
+.mp-serp { font-family: Arial, sans-serif; max-width: 600px; padding: 0.75rem; border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); }
+.mp-site { font-size: 14px; color: #202124; }
+.mp-site span { display: block; font-size: 12px; color: #4d5156; overflow-wrap: anywhere; }
+.mp-title { font-size: 20px; color: #1a0dab; line-height: 1.3; margin: 4px 0; }
+.mp-desc { font-size: 14px; color: #4d5156; line-height: 1.58; }
+.mp-card { max-width: 520px; border: 1px solid #dadde1; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; }
+.mp-img { aspect-ratio: 1.91 / 1; background: #eef0f2 center / cover no-repeat; }
+.mp-noimg { display: flex; align-items: center; justify-content: center; color: #65676b; font-size: 13px; padding: 1rem; text-align: center; }
+.mp-body { padding: 10px 12px; background: #f0f2f5; }
+.mp-host { font-size: 12px; color: #65676b; }
+.mp-otitle { font-size: 16px; font-weight: 700; color: #050505; margin: 2px 0; }
+.mp-odesc { font-size: 14px; color: #65676b; }
+.mp-x { border-radius: 16px; }
+.mp-x .mp-body { background: #fff; }
+.rd-view { font-size: 0.95rem; line-height: 1.7; border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 0.75rem; }
+.rd-long { background: #fbe8e6; }
+.cc-pair { display: flex; gap: 0.4rem; }
+.toolkit-app .cc-pair input[type="color"] { width: 3rem; height: 2.3rem; padding: 0.1rem; border: 1px solid var(--toolkit-border); }
+.cc-preview { border: 1px solid var(--toolkit-border); border-radius: var(--toolkit-radius); padding: 1rem 1.25rem; margin: 0.5rem 0 1rem; }
+.cc-preview p { margin: 0.25rem 0; }
+.cc-normal { font-size: 16px; }
+.cc-large { font-size: 24px; font-weight: 700; }
+.cc-swatch { display: inline-block; width: 1rem; height: 1rem; vertical-align: middle; border: 1px solid var(--toolkit-border); }
+.tk-formula { overflow-wrap: anywhere; }

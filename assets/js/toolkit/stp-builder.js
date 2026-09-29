@@ -403,6 +403,16 @@
 
     if (stage === "positioned") {
       const seg = segments.find((s) => s.id === targetSegmentId);
+      // Saved on this device for the 7Ps Planner and Campaign Brief Generator.
+      try {
+        localStorage.setItem("flairmi-stp-latest", JSON.stringify({
+          segment: seg.name, frame: statement.frame, pointOfDifference: statement.pointOfDifference, evidence: statement.evidence,
+          statement: `For ${seg.name} considering ${statement.frame}, this is the option that ${statement.pointOfDifference}, evidenced by ${statement.evidence}.`,
+          segments: segments.map((s) => ({ name: s.name, size: s.size })), savedAt: new Date().toISOString()
+        }));
+      } catch (e) {
+        /* storage blocked, the brief can still be typed by hand */
+      }
       panel.html(`
         <p>The target segment's dots have collapsed into a single position,
         the claim this campaign will make in the audience's mind.</p>
@@ -434,8 +444,9 @@
           ${escapeHtml(statement.evidence)}.</p>
         </div>
         <p style="margin-top:1rem;">This brief is the input to the
-        <a href="../products/persona-builder.html">Persona Builder</a> and,
-        once built, the 7Ps Marketing Mix Planner.</p>
+        <a href="https://flairmi.com/tools/persona-builder/">Persona Builder</a>, the
+        <a href="7ps-marketing-mix-planner.html">7Ps Marketing Mix Planner</a>, and the
+        <a href="campaign-brief-generator.html">Campaign Brief Generator</a>, which read it from this device.</p>
         <button type="button" class="toolkit-btn secondary" id="stp-restart">Start over</button>
       `);
       document.getElementById("stp-restart").addEventListener("click", resetAll);

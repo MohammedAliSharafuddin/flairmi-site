@@ -203,6 +203,11 @@
       renderPriorities();
     }
 
+    // Optional starting items: [categoryId, text, impact, likelihood].
+    if (Array.isArray(config.sample)) {
+      config.sample.forEach((x) => items.push({ id: nextId++, categoryId: x[0], text: x[1], impact: x[2], likelihood: x[3] }));
+    }
+
     render();
   }
 
