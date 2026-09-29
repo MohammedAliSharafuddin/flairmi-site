@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Persona Builder: Free UX and Marketing Persona Tool</title>
-<meta name="description" content="Build a UX or marketing persona card in the browser, three detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta name="description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
 <link rel="canonical" href="https://flairmi.com/tools/persona-builder/">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Persona Builder: Free UX and Marketing Persona Tool">
-<meta property="og:description" content="Build a UX or marketing persona card in the browser, three detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta property="og:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flairmi.com/tools/persona-builder/">
 <meta property="og:site_name" content="FlairMI">
@@ -18,7 +18,7 @@
 <meta property="og:image:height" content="1150">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Persona Builder: Free UX and Marketing Persona Tool">
-<meta name="twitter:description" content="Build a UX or marketing persona card in the browser, three detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
+<meta name="twitter:description" content="Build a UX or marketing persona card in the browser, four detail levels, exported as a PNG or PDF. No sign-up, no data leaves your device.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/products/persona-builder.png">
 <script type="application/ld+json">
 {
@@ -65,10 +65,18 @@
     },
     {
       "@type": "Question",
-      "name": "What is the difference between the Basic, Standard, and Full levels?",
+      "name": "What is the difference between the Basic, Standard, Full, and Journey levels?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Each level keeps every field from the level before it."
+        "text": "Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Journey adds the persona stage by stage: a goal, feeling, and deciding factor at each stage of the customer journey, each marked as from data or an assumption. Each level keeps every field from the level before it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Persona Builder work with the Customer Journey Mapper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Build a persona at the Journey level, then choose Send to Journey Mapper. The Journey Mapper opens with the persona added to the map, matched stage by stage. Saved personas also appear in the Journey Mapper's Add from Persona Builder list, and Export JSON gives a file either tool can open."
       }
     },
     {
@@ -88,6 +96,7 @@
 <script defer src="../../assets/js/ga4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/assets/js/toolkit/journey-shared.js"></script>
 <style>
   /* FlairMI brand tokens (assets/brand.scss): pure black/white, no accent
      colour, sharp-ish corners, no drop shadows, matching the crescent
@@ -404,6 +413,30 @@
   .faq-item[open] summary::after { transform: rotate(45deg); }
   .faq-item summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
   .faq-item .faq-answer { margin: 0 0 14px; padding-right: 24px; color: var(--ink-muted); font-size: 14px; line-height: 1.6; }
+  /* Journey level: the persona as a goal-state recorded stage by stage,
+     shared with the Customer Journey Mapper via journey-shared.js. */
+  .stage-edit { border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: var(--radius); padding: 10px 12px 2px; margin-bottom: 10px; }
+  .stage-edit h4 { margin: 0 0 8px; font-size: 14px; }
+  .stage-edit .field { margin-bottom: 8px; }
+  .stage-edit input[type="range"] { width: 100%; accent-color: var(--ink); }
+  .emotion-readout { font-weight: 700; margin-left: 4px; }
+  .emotion-note { font-size: 12px; color: var(--ink-muted); margin: 2px 0 6px; line-height: 1.45; }
+  .word-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+  .word-chip { border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: var(--radius); padding: 1px 7px; font-size: 12px; cursor: pointer; font-family: var(--sans); }
+  .word-chip:hover, .word-chip:focus-visible { border-color: var(--ink); }
+  .journey-help { font-size: 12.5px; color: var(--ink-muted); line-height: 1.5; margin: 0 0 12px; }
+  .card-journey-meta { font-size: 13px; line-height: 1.6; margin-bottom: 8px; }
+  .card-spark { display: block; width: 100%; height: auto; margin: 4px 0 10px; }
+  .card-journey { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .card-journey th, .card-journey td { text-align: left; vertical-align: top; padding: 5px 6px; border-bottom: 1px solid var(--rule); }
+  .card-journey th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); }
+  .basis-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--ink); margin-right: 5px; vertical-align: middle; }
+  .basis-dot.data { background: var(--ink); }
+  .basis-dot.none { border-color: var(--rule); }
+  .card-src { display: block; font-size: 11px; color: var(--ink-muted); }
+  .card-badge { display: inline-block; border: 1px solid var(--ink); border-radius: var(--radius); padding: 0 6px; font-size: 11px; font-weight: 700; margin-left: 6px; }
+  .card-legend { font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
   @media (prefers-reduced-motion: reduce) {
     .faq-item summary::after { transition: none; }
   }
@@ -423,7 +456,7 @@
 </div>
 
 <div class="intro">
-  <p class="lead">Build a UX or marketing persona card directly in your browser. Fill in a form at one of three detail levels and watch a formatted card update as you type, then export it as a PNG or a PDF.</p>
+  <p class="lead">Build a UX or marketing persona card directly in your browser. Fill in a form at one of four detail levels and watch a formatted card update as you type, then export it as a PNG or a PDF.</p>
 </div>
 
 <div class="layout">
@@ -435,6 +468,7 @@
       <div class="template-pill active" data-level="basic">Basic</div>
       <div class="template-pill" data-level="standard">Standard</div>
       <div class="template-pill" data-level="full">Full</div>
+      <div class="template-pill" data-level="journey">Journey</div>
     </div>
 
     <!-- 01 Identity (always visible) -->
@@ -550,6 +584,56 @@
       </div>
     </fieldset>
 
+    <fieldset data-tier="journey">
+      <div class="field-eyebrow">06 &middot; Journey</div>
+      <p class="journey-help">Record the persona as it changes across the journey: a goal, a feeling, and a deciding factor at each stage. Mark each stage as from data or an assumption, so readers can see what rests on evidence.</p>
+      <div class="two-col">
+        <div class="field">
+          <label for="j-segment">Segment</label>
+          <input type="text" id="j-segment" placeholder="e.g. Content but cautious">
+        </div>
+        <div class="field">
+          <label for="j-share">Share of customers</label>
+          <input type="text" id="j-share" placeholder="e.g. 25%">
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label for="j-delight">Delight level</label>
+          <select id="j-delight">
+            <option value="">Not set</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="j-evidence">Evidence behind this persona</label>
+          <select id="j-evidence">
+            <option value="">Not stated</option>
+            <option value="Research-based">Research-based</option>
+            <option value="Mixed">Mixed</option>
+            <option value="Assumed">Assumed</option>
+          </select>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label for="j-moveto">Could move to segment</label>
+          <input type="text" id="j-moveto" placeholder="e.g. Delighted advocate">
+        </div>
+        <div class="field">
+          <label for="j-movewhy">What would move them</label>
+          <input type="text" id="j-movewhy" placeholder="e.g. Personalised loyalty offer">
+        </div>
+      </div>
+      <div class="field">
+        <label for="j-template">Journey stages</label>
+        <select id="j-template"></select>
+      </div>
+      <div id="journeyStages"></div>
+    </fieldset>
+
     <div class="form-actions">
       <button class="btn primary" id="saveBtn">Save persona</button>
       <button class="btn" id="newBtn">New</button>
@@ -568,6 +652,8 @@
     <div class="preview-toolbar">
       <button class="btn" id="exportPngBtn">Export PNG</button>
       <button class="btn" id="exportPdfBtn">Export PDF</button>
+      <button class="btn" id="exportJsonBtn">Export JSON</button>
+      <button class="btn primary" id="sendJourneyBtn">Send to Journey Mapper</button>
     </div>
     <div class="card-wrap">
       <div class="persona-card" id="personaCard">
@@ -594,8 +680,12 @@
       <p class="faq-answer">The form, the preview, and saved personas all stay in your browser's local storage.</p>
     </details>
     <details class="faq-item">
-      <summary>What is the difference between the Basic, Standard, and Full levels?</summary>
-      <p class="faq-answer">Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Each level keeps every field from the level before it.</p>
+      <summary>What is the difference between the Basic, Standard, Full, and Journey levels?</summary>
+      <p class="faq-answer">Basic captures identity: a name, role, and one-line summary. Standard adds a snapshot and typical behaviour: age, location, goals, pain points, and preferred channels. Full adds voice and research notes: a representative quote, motivations, personality traits, and technology comfort. Journey adds the persona stage by stage: a goal, feeling, and deciding factor at each stage of the customer journey, each marked as from data or an assumption. Each level keeps every field from the level before it.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How does Persona Builder work with the Customer Journey Mapper?</summary>
+      <p class="faq-answer">Build a persona at the Journey level, then choose Send to Journey Mapper. The Journey Mapper opens with the persona added to the map, matched stage by stage. Saved personas also appear in the Journey Mapper's Add from Persona Builder list, and Export JSON gives a file either tool can open.</p>
     </details>
     <details class="faq-item">
       <summary>Can I export my persona for a slide deck or report?</summary>
@@ -609,11 +699,13 @@
   var state = {
     level: 'basic',
     photoData: null,
-    currentId: null
+    currentId: null,
+    journey: { template: 'resort', stages: [] }
   };
 
   var fieldIds = ['f-name','f-role','f-tagline','f-age','f-location','f-occupation','f-goals','f-pains',
-    'f-behaviours','f-quote','f-motivations','f-traits','f-techcomfort','f-kpis','f-notes'];
+    'f-behaviours','f-quote','f-motivations','f-traits','f-techcomfort','f-kpis','f-notes',
+    'j-segment','j-share','j-delight','j-evidence','j-moveto','j-movewhy'];
 
   var channelState = {};
 
@@ -638,7 +730,7 @@
   });
 
   function applyTierVisibility() {
-    var order = { basic: 1, standard: 2, full: 3 };
+    var order = { basic: 1, standard: 2, full: 3, journey: 4 };
     var current = order[state.level];
     document.querySelectorAll('fieldset[data-tier]').forEach(function (fs) {
       var tier = order[fs.getAttribute('data-tier')];
@@ -750,6 +842,149 @@
 
   renderAvatarPresets();
 
+  // ---- journey level: stage-by-stage goal-states (see journey-shared.js) ----
+  var FJ = window.FlairJourney;
+
+  function stagesFromTemplate(key) {
+    var tpl = FJ && FJ.TEMPLATES[key];
+    return tpl ? tpl.stages.map(function (x) {
+      return { label: x[0], touchpoint: '', goal: '', emotion: null, feeling: '', factor: '', basis: '', source: '' };
+    }) : [];
+  }
+
+  function emotionNoteHtml(v) {
+    var e = FJ ? FJ.emotion(v) : null;
+    if (!e) return '<div class="emotion-note">Move the slider to score how this stage feels.</div>';
+    var chips = e.words.map(function (w) {
+      return '<button type="button" class="word-chip" data-word="' + w + '">' + w + '</button>';
+    }).join('');
+    return '<div class="emotion-note">' + esc(e.text) + '</div>' + (chips ? '<div class="word-chips" aria-label="Suggested feeling words">' + chips + '</div>' : '');
+  }
+
+  function emotionReadout(v) {
+    var e = FJ ? FJ.emotion(v) : null;
+    return e ? FJ.fmt(Number(v)) + ' ' + e.label : 'not set';
+  }
+
+  function renderJourneyEditor() {
+    var sel = el('j-template');
+    if (FJ && !sel.options.length) {
+      sel.innerHTML = Object.keys(FJ.TEMPLATES).map(function (k) {
+        return '<option value="' + k + '">' + esc(FJ.TEMPLATES[k].label) + '</option>';
+      }).join('');
+    }
+    sel.value = state.journey.template;
+    if (!state.journey.stages.length) state.journey.stages = stagesFromTemplate(state.journey.template);
+    el('journeyStages').innerHTML = state.journey.stages.map(function (st, i) {
+      var em = st.emotion == null || st.emotion === '' ? 0 : st.emotion;
+      return '<div class="stage-edit" data-i="' + i + '">' +
+        '<h4>' + esc(st.label) + '</h4>' +
+        '<div class="field"><label>Goal at this stage</label><input type="text" data-s="goal" value="' + esc(st.goal) + '"></div>' +
+        '<div class="field"><label>Touchpoint</label><input type="text" data-s="touchpoint" value="' + esc(st.touchpoint) + '"></div>' +
+        '<div class="field"><label>Emotion <span class="emotion-readout">' + emotionReadout(st.emotion) + '</span></label>' +
+          '<input type="range" min="-3" max="3" step="1" data-s="emotion" value="' + em + '"></div>' +
+        '<div class="emotion-slot">' + emotionNoteHtml(st.emotion) + '</div>' +
+        '<div class="field"><label>Feeling word</label><input type="text" data-s="feeling" value="' + esc(st.feeling) + '" placeholder="e.g. sure"></div>' +
+        '<div class="field"><label>Deciding factor</label><input type="text" data-s="factor" value="' + esc(st.factor) + '" placeholder="e.g. price, location, reputation"></div>' +
+        '<div class="two-col">' +
+          '<div class="field"><label>Basis</label><select data-s="basis">' +
+            '<option value=""' + (!st.basis ? ' selected' : '') + '>Not stated</option>' +
+            '<option value="data"' + (st.basis === 'data' ? ' selected' : '') + '>From data</option>' +
+            '<option value="assumption"' + (st.basis === 'assumption' ? ' selected' : '') + '>Assumption</option>' +
+          '</select></div>' +
+          '<div class="field"><label>Source</label><input type="text" data-s="source" value="' + esc(st.source) + '" placeholder="e.g. guest survey"></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  el('j-template').addEventListener('change', function (e) {
+    var hasData = state.journey.stages.some(function (st) { return st.goal || st.feeling || st.factor || st.emotion != null; });
+    if (hasData && !confirm('Switch stages? Entries for the current stages will be cleared.')) {
+      e.target.value = state.journey.template;
+      return;
+    }
+    state.journey.template = e.target.value;
+    state.journey.stages = stagesFromTemplate(state.journey.template);
+    renderJourneyEditor();
+    renderCard();
+  });
+
+  el('journeyStages').addEventListener('input', function (e) {
+    var box = e.target.closest('.stage-edit');
+    var key = e.target.getAttribute('data-s');
+    if (!box || !key) return;
+    var st = state.journey.stages[Number(box.getAttribute('data-i'))];
+    if (key === 'emotion') {
+      st.emotion = Number(e.target.value);
+      box.querySelector('.emotion-readout').textContent = emotionReadout(st.emotion);
+      box.querySelector('.emotion-slot').innerHTML = emotionNoteHtml(st.emotion);
+    } else {
+      st[key] = e.target.value;
+    }
+    renderCard();
+  });
+
+  el('journeyStages').addEventListener('click', function (e) {
+    var chip = e.target.closest('[data-word]');
+    if (!chip) return;
+    var box = chip.closest('.stage-edit');
+    var st = state.journey.stages[Number(box.getAttribute('data-i'))];
+    st.feeling = chip.getAttribute('data-word');
+    box.querySelector('[data-s="feeling"]').value = st.feeling;
+    renderCard();
+  });
+
+  function journeyCardHtml(d) {
+    var j = d.journey;
+    var meta = [];
+    if (j.segment) meta.push('<strong>Segment:</strong> ' + esc(j.segment) + (j.share ? ' (' + esc(j.share) + ')' : ''));
+    if (j.delight) meta.push('<strong>Delight:</strong> ' + esc(j.delight));
+    if (j.moveTo) meta.push('<strong>Could move to:</strong> ' + esc(j.moveTo) + (j.moveWhy ? ', if ' + esc(j.moveWhy.charAt(0).toLowerCase() + j.moveWhy.slice(1)) : ''));
+    var html = '<div class="card-section"><div class="card-section-title">Journey' + (j.evidence ? '<span class="card-badge">' + esc(j.evidence) + '</span>' : '') + '</div>';
+    if (meta.length) html += '<div class="card-journey-meta">' + meta.join('<br>') + '</div>';
+    html += sparkline(j.stages);
+    html += '<table class="card-journey"><thead><tr><th>Stage</th><th>Goal</th><th>Feeling</th><th>Decides on</th></tr></thead><tbody>';
+    html += j.stages.map(function (st) {
+      var dot = '<span class="basis-dot ' + (st.basis === 'data' ? 'data' : st.basis === 'assumption' ? '' : 'none') + '" title="' + (st.basis === 'data' ? 'From data' : st.basis === 'assumption' ? 'Assumption' : 'Basis not stated') + '"></span>';
+      var e = FJ ? FJ.emotion(st.emotion) : null;
+      var feel = e ? FJ.fmt(Number(st.emotion)) + ' ' + esc(st.feeling || e.label.toLowerCase()) : esc(st.feeling);
+      return '<tr><td>' + dot + esc(st.label) + (st.source ? '<span class="card-src">' + esc(st.source) + '</span>' : '') + '</td>' +
+        '<td>' + esc(st.goal) + '</td><td>' + feel + '</td><td>' + esc(st.factor) + '</td></tr>';
+    }).join('');
+    html += '</tbody></table>';
+    html += '<div class="card-legend"><span class="basis-dot data"></span>from data &nbsp; <span class="basis-dot"></span>assumption</div></div>';
+    return html;
+  }
+
+  // A small emotion line for the card. Plain SVG, no chart library needed.
+  function sparkline(stages) {
+    var pts = stages.map(function (st, i) { return { i: i, v: st.emotion == null || st.emotion === '' ? null : Number(st.emotion), st: st }; });
+    if (!pts.some(function (p) { return p.v != null; })) return '';
+    var W = 420, H = 90, L = 44, R = 34, T = 10, B = 22;
+    var step = stages.length > 1 ? (W - L - R) / (stages.length - 1) : 0;
+    function x(i) { return L + i * step; }
+    function y(v) { return T + (3 - v) / 6 * (H - T - B); }
+    var line = '', started = false;
+    pts.forEach(function (p) {
+      if (p.v == null) { started = false; return; }
+      line += (started ? ' L' : ' M') + x(p.i).toFixed(1) + ' ' + y(p.v).toFixed(1);
+      started = true;
+    });
+    var svg = '<svg class="card-spark" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Emotion score across the journey stages">';
+    svg += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(0) + '" y2="' + y(0) + '" stroke="#6b6b6b" stroke-width="1"/>';
+    svg += '<text x="' + (L - 30) + '" y="' + (y(3) + 4) + '" font-size="9" fill="#6b6b6b">+3</text><text x="' + (L - 30) + '" y="' + (y(-3) + 4) + '" font-size="9" fill="#6b6b6b">-3</text>';
+    svg += '<path d="' + line + '" fill="none" stroke="#111111" stroke-width="2"/>';
+    pts.forEach(function (p) {
+      if (p.v != null) {
+        var assumed = p.st.basis === 'assumption';
+        svg += '<circle cx="' + x(p.i) + '" cy="' + y(p.v) + '" r="4" fill="' + (assumed ? '#ffffff' : '#111111') + '" stroke="#111111" stroke-width="2"/>';
+      }
+      svg += '<text x="' + x(p.i) + '" y="' + (H - 6) + '" font-size="9.5" text-anchor="middle" fill="#111111">' + esc(p.st.label) + '</text>';
+    });
+    return svg + '</svg>';
+  }
+
   // ---- sample data for previewing the full view ----
   var samplePersona = {
     level: 'full',
@@ -795,6 +1030,12 @@
       data[id] = node ? node.value : '';
     });
     for (var k in channelState) if (channelState[k]) data.channels.push(k);
+    data.journey = {
+      segment: data['j-segment'], share: data['j-share'], delight: data['j-delight'],
+      evidence: data['j-evidence'], moveTo: data['j-moveto'], moveWhy: data['j-movewhy'],
+      template: state.journey.template,
+      stages: state.journey.stages.map(function (st) { return Object.assign({}, st); })
+    };
     return data;
   }
 
@@ -809,6 +1050,12 @@
     document.querySelectorAll('#channelChips .chip').forEach(function (chip) {
       chip.classList.toggle('selected', !!channelState[chip.getAttribute('data-value')]);
     });
+    var j = data.journey || {};
+    state.journey = {
+      template: j.template || 'resort',
+      stages: (j.stages || []).map(function (st) { return Object.assign({}, st); })
+    };
+    renderJourneyEditor();
     state.level = data.level || 'basic';
     document.querySelectorAll('.template-pill').forEach(function (p) {
       p.classList.toggle('active', p.getAttribute('data-level') === state.level);
@@ -846,7 +1093,7 @@
       ? '<img src="' + state.photoData + '" alt="">'
       : esc(initials(d['f-name']));
 
-    var levelLabel = { basic: 'Basic', standard: 'Standard', full: 'Full' }[d.level];
+    var levelLabel = { basic: 'Basic', standard: 'Standard', full: 'Full', journey: 'Journey' }[d.level];
 
     var html = '';
     html += '<div class="card-stamp">' + levelLabel + '</div>';
@@ -876,7 +1123,7 @@
       html += '<div class="card-section"><div class="card-section-title">Typical behaviour</div>' + listHtml(linesToArray(d['f-behaviours'])) + '</div>';
     }
 
-    if (d.level === 'full') {
+    if (d.level === 'full' || d.level === 'journey') {
       if (d['f-quote']) {
         html += '<div class="card-section"><div class="card-section-title">In their words</div><div class="card-quote">&ldquo;' + esc(d['f-quote']) + '&rdquo;</div></div>';
       }
@@ -895,6 +1142,7 @@
       }
     }
 
+    if (d.level === 'journey') html += journeyCardHtml(d);
     html += '</div>';
     html += '<div class="card-footer"><span>PERSONA &middot; ' + levelLabel.toUpperCase() + '</span><span>' + new Date().toLocaleDateString() + '</span></div>';
 
@@ -1013,6 +1261,8 @@
     state.currentId = null;
     channelState = {};
     document.querySelectorAll('#channelChips .chip').forEach(function (c) { c.classList.remove('selected'); });
+    state.journey = { template: 'resort', stages: [] };
+    renderJourneyEditor();
     renderCard();
     setStatus('New persona');
   });
@@ -1068,7 +1318,38 @@
     }
   });
 
+  // ---- JSON export and handoff to the Customer Journey Mapper ----
+  function downloadBlob(blob, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  el('exportJsonBtn').addEventListener('click', function () {
+    var d = getFormData();
+    var out = FJ ? Object.assign(FJ.toJourneyPersona(d), { builder: d }) : d;
+    downloadBlob(new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' }), safeFilename(d['f-name']) + '.json');
+    setStatus('JSON downloaded');
+  });
+  el('sendJourneyBtn').addEventListener('click', async function () {
+    var d = getFormData();
+    var filled = d.journey.stages.some(function (st) { return st.goal || st.feeling || st.emotion != null; });
+    if (!FJ || !filled) {
+      setStatus('Fill in at least one stage at the Journey level first');
+      return;
+    }
+    await saveCurrentPersona();
+    if (FJ.sendHandoff(FJ.toJourneyPersona(d))) {
+      window.location.href = '/toolkit/customer-journey-mapper.html';
+    } else {
+      setStatus('Browser storage is blocked, use Export JSON instead');
+    }
+  });
+
   // ---- init ----
+  renderJourneyEditor();
   applyTierVisibility();
   renderCard();
   renderSavedList();

@@ -114,8 +114,14 @@ FlairMI publishes applied statistics tutorials and product notes at
   decisions.
 - **[Persona Builder](https://flairmi.com/tools/persona-builder/)**
   (live, free) — a UX research and marketing persona card builder with
-  three detail levels and PNG/PDF export, data stays in the browser's
-  local storage.
+  four detail levels (the fourth records the persona stage by stage for
+  customer journey mapping) and PNG, PDF, and JSON export, data stays in
+  the browser's local storage.
+- **[Customer Journey Mapper](https://flairmi.com/toolkit/customer-journey-mapper.html)**
+  (in progress, free) — maps each persona's goal, emotion, and segment
+  stage by stage, with a service blueprint, silo ownership, and pain points
+  tagged to the four service-quality gaps. Classroom case adapted from
+  O'Rourke et al. (2026), CC BY 4.0.
 
 ## Software previews
 
