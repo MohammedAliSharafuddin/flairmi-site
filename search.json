@@ -609,6 +609,13 @@
     "text": "Notes\nWeighted value is calculated from deal value and win probability. The workbook is useful when you need a simple pipeline view without opening a full CRM or when you want a teaching-friendly sales dashboard example."
   },
   {
+    "objectID": "templates/sales-pipeline-tracker.html#in-the-browser",
+    "href": "templates/sales-pipeline-tracker.html#in-the-browser",
+    "title": "Sales Pipeline Tracker",
+    "section": "In the browser",
+    "text": "In the browser\nPlan the campaigns that fill the pipeline with the Campaign Brief Generator and the other planning tools in the Marketing Toolkit Hub. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/revenue-forecast-model.html",
     "href": "templates/revenue-forecast-model.html",
     "title": "Revenue Forecast Model",
@@ -630,18 +637,25 @@
     "text": "Notes\nThe model uses scenario multipliers around the base line and compares actuals against the forecast automatically. It is a practical workbook for teaching planning logic or building a simple internal forecast review."
   },
   {
+    "objectID": "templates/revenue-forecast-model.html#in-the-browser",
+    "href": "templates/revenue-forecast-model.html#in-the-browser",
+    "title": "Revenue Forecast Model",
+    "section": "In the browser",
+    "text": "In the browser\nRead where a product sits in its life cycle from the same sales history with the Product Life Cycle Stage Identifier. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/index.html",
     "href": "templates/index.html",
     "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "FlairMI hosts ten downloadable workbooks that now sit under a broader Decision Toolkit frame. The free workbook layer remains public, and the wider FlairMI site is being shaped around clearer business-analytics and marketing- analytics use cases, companion guidance, and training support."
+    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 32 free tools, from SWOT and RFM to marketing mix modelling."
   },
   {
-    "objectID": "templates/index.html#decision-toolkit",
-    "href": "templates/index.html#decision-toolkit",
+    "objectID": "templates/index.html#excel-templates",
+    "href": "templates/index.html#excel-templates",
     "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "FlairMI hosts ten downloadable workbooks that now sit under a broader Decision Toolkit frame. The free workbook layer remains public, and the wider FlairMI site is being shaped around clearer business-analytics and marketing- analytics use cases, companion guidance, and training support."
+    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 32 free tools, from SWOT and RFM to marketing mix modelling."
   },
   {
     "objectID": "templates/index.html#free-workbook-library",
@@ -651,11 +665,11 @@
     "text": "Free Workbook Library\n\n  \n    \n      \n      Campaign ROI Tracker\n      \n        Download\n        Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Sales Pipeline Tracker\n      \n        Download\n        Track deal stages, weighted revenue, and representative-level performance.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Break-Even Analysis\n      \n        Download\n        Model unit volume, break-even thresholds, and profit sensitivity.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      CLV Calculator\n      \n        Download\n        Estimate customer lifetime value and compare segments against acquisition cost.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Competitive Positioning Map\n      \n        Download\n        Plot competitors across two strategic dimensions and identify market gaps.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Marketing Funnel Dashboard\n      \n        Download\n        Analyse funnel conversion, drop-off, and channel contribution.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      CAC Calculator\n      \n        Download\n        Compare customer acquisition cost by channel and estimate payback period.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Revenue Forecast Model\n      \n        Download\n        Build a rolling forecast with scenarios and actual-versus-plan tracking.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      RFM Segmentation\n      \n        Download\n        Segment customers by recency, frequency, and monetary value.\n      \n      \n        Open template page\n      \n    \n  \n  \n    \n      \n      Churn Rate Dashboard\n      \n        Download\n        Monitor customer churn, revenue churn, and retention trends.\n      \n      \n        Open template page"
   },
   {
-    "objectID": "templates/index.html#how-the-toolkit-fits-into-flairmi",
-    "href": "templates/index.html#how-the-toolkit-fits-into-flairmi",
+    "objectID": "templates/index.html#how-the-templates-fit-into-flairmi",
+    "href": "templates/index.html#how-the-templates-fit-into-flairmi",
     "title": "Free Marketing and Business Analytics Excel Templates",
-    "section": "How The Toolkit Fits Into FlairMI",
-    "text": "How The Toolkit Fits Into FlairMI\n\n  \n    \n      Business Analytics\n      \n        Templates such as the Sales Pipeline Tracker, Revenue Forecast Model, and Break-Even Analysis support KPI review, forecasting, and management reporting.\n      \n    \n  \n  \n    \n      Marketing Analytics\n      \n        Campaign ROI, CAC, CLV, funnel, churn, and segmentation workbooks support practical channel review and customer analysis.\n      \n    \n  \n  \n    \n      Teaching And Workshops\n      \n        The same workbook line can be used in teaching, workshops, and internal training when a team wants more structured walkthroughs and examples.\n      \n    \n  \n  \n    \n      Companion Guidance\n      \n        FlairMI is gradually adding stronger narrative framing around the workbook library so visitors can move from standalone files to broader decision-support use."
+    "section": "How The Templates Fit Into FlairMI",
+    "text": "How The Templates Fit Into FlairMI\n\n  \n    \n      Business Analytics\n      \n        Templates such as the Sales Pipeline Tracker, Revenue Forecast Model, and Break-Even Analysis support KPI review, forecasting, and management reporting.\n      \n    \n  \n  \n    \n      Marketing Analytics\n      \n        Campaign ROI, CAC, CLV, funnel, churn, and segmentation workbooks support practical channel review and customer analysis.\n      \n    \n  \n  \n    \n      Teaching And Workshops\n      \n        The same workbook line can be used in teaching, workshops, and internal training when a team wants more structured walkthroughs and examples.\n      \n    \n  \n  \n    \n      Companion Guidance\n      \n        Each workbook page links to the browser tool in the Marketing Toolkit Hub that works the same problem, so a team can move between the spreadsheet and the tool."
   },
   {
     "objectID": "templates/index.html#how-to-use-the-workbooks",
@@ -693,6 +707,13 @@
     "text": "Notes\nThe workbook includes a cohort retention view and a CLV:CAC lens for unit economics. It is useful for teaching relationship value and for quick segment comparisons in planning work."
   },
   {
+    "objectID": "templates/clv-calculator.html#in-the-browser",
+    "href": "templates/clv-calculator.html#in-the-browser",
+    "title": "CLV Calculator",
+    "section": "In the browser",
+    "text": "In the browser\nThe Customer Lifetime Value Calculator runs the same calculation in the browser, with discounting, the CLV to CAC ratio, and a year-by-year chart. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/campaign-roi-tracker.html",
     "href": "templates/campaign-roi-tracker.html",
     "title": "Campaign ROI Tracker",
@@ -714,6 +735,13 @@
     "text": "Notes\nROI is calculated as (Revenue - Spend) / Spend. The workbook also reports CAC and conversion rate, so it works well for campaign review and classroom exercises around performance interpretation."
   },
   {
+    "objectID": "templates/campaign-roi-tracker.html#in-the-browser",
+    "href": "templates/campaign-roi-tracker.html#in-the-browser",
+    "title": "Campaign ROI Tracker",
+    "section": "In the browser",
+    "text": "In the browser\nCompare how five attribution models share credit across channels with the Marketing Attribution Comparison, or estimate each channel’s effect from spend and sales with the MMM Analyser. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/break-even-analysis.html",
     "href": "templates/break-even-analysis.html",
     "title": "Break-Even Analysis",
@@ -733,6 +761,13 @@
     "title": "Break-Even Analysis",
     "section": "Notes",
     "text": "Notes\nAll editable dashboard cells are clearly separated from calculated outputs. The scenario table is useful for teaching contribution logic, price sensitivity, and break-even reasoning."
+  },
+  {
+    "objectID": "templates/break-even-analysis.html#in-the-browser",
+    "href": "templates/break-even-analysis.html#in-the-browser",
+    "title": "Break-Even Analysis",
+    "section": "In the browser",
+    "text": "In the browser\nSee how a price change moves volume and revenue with the Price Elasticity Calculator, which runs in the browser. It is one of 32 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "textbooks/marai.html",
@@ -907,7 +942,7 @@
     "href": "products/surveyframe.html",
     "title": "surveyframe",
     "section": "",
-    "text": "Live on CRAN v0.4.1\n    \n    \n      surveyframe is an R package covering the full survey research pipeline:\n      instrument design, static HTML export, a Shiny module, response quality\n      checking, psychometric diagnostics, and reproducible HTML reporting.\n    \n    \n      View on CRAN\n      GitHub\n      Back to products\n    \n    \n      Instrument to reportDesign, field, and analyse a survey without leaving R\n      Static HTML exportA dependency-free survey respondents can complete in a browser\n      Reproducible reportingDeclared analysis plans and HTML reports from the same package"
+    "text": "Live on CRAN v0.4.2\n    \n    \n      surveyframe is an R package covering the full survey research pipeline:\n      instrument design, static HTML export, a Shiny module, response quality\n      checking, psychometric diagnostics, and reproducible HTML reporting.\n    \n    \n      View on CRAN\n      GitHub\n      Back to products\n    \n    \n      Instrument to reportDesign, field, and analyse a survey without leaving R\n      Static HTML exportA dependency-free survey respondents can complete in a browser\n      Reproducible reportingDeclared analysis plans and HTML reports from the same package"
   },
   {
     "objectID": "products/surveyframe.html#why-it-exists",
@@ -928,7 +963,7 @@
     "href": "products/surveyframe.html#new-in-0.4",
     "title": "surveyframe",
     "section": "New In 0.4",
-    "text": "New In 0.4\nVersion 0.4.0 was a major release, and 0.4.1 followed it on CRAN.\nMulti-criteria decision analysis. 10 methods, AHP, ANP, DEMATEL, VIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS, each carrying a literature citation. 2 new item types collect the judgement data inside the instrument itself, a pairwise comparison on Saaty’s 1-to-9 scale and a constant-sum criteria weighting. AHP judgements are screened for consistency against Saaty’s random-index table, and sensitivity_analysis() reports how far a ranking moves when the weights are perturbed.\nText analysis for open-ended responses. 9 methods, from term and n-gram frequency through keyword-in-context concordance, co-occurrence, sentiment, and LDA or structural topic modelling. They run through the same analysis plan and reporting pipeline as every other method family.\nSmall-sample corrections. The Hodges-Lehmann shift estimator, the paired Wilcoxon pseudomedian interval, the exact odds-ratio interval on Fisher’s test, and Firth’s bias-reduced logistic regression for data prone to separation. An advisory on assumption_report() flags when a study is small enough for these to matter.\nDisclosed amendments and a provenance trail. amend_sframe() appends a timestamped entry to an ordered log, recording why an instrument changed and which fields moved, and never overwrites earlier entries. Changes touching the analysis plan or a model require a deviation report, and the sign-off field records a reviewer’s name or the literal none, so an unreviewed change stays visible. link_git_commit() ties the file’s SHA-256 hash to a specific Git commit. An edit that bypasses amend_sframe() still fails the integrity check exactly as before.\nTeaching and export, added in 0.4.1. A library of 22 demos, each showing one thing, reachable with sframe_demos() and openable as an editable Quarto notebook. sframe_export_labelled() writes SPSS .sav or Stata .dta with the question wording and response options attached, so variables arrive labelled rather than as bare codes."
+    "text": "New In 0.4\nVersion 0.4.0 was a major release. 0.4.1 followed it on CRAN, and 0.4.2, published on 25 September 2026, is a defect-fix release.\nMulti-criteria decision analysis. 10 methods, AHP, ANP, DEMATEL, VIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS, each carrying a literature citation. 2 new item types collect the judgement data inside the instrument itself, a pairwise comparison on Saaty’s 1-to-9 scale and a constant-sum criteria weighting. AHP judgements are screened for consistency against Saaty’s random-index table, and sensitivity_analysis() reports how far a ranking moves when the weights are perturbed.\nText analysis for open-ended responses. 9 methods, from term and n-gram frequency through keyword-in-context concordance, co-occurrence, sentiment, and LDA or structural topic modelling. They run through the same analysis plan and reporting pipeline as every other method family.\nSmall-sample corrections. The Hodges-Lehmann shift estimator, the paired Wilcoxon pseudomedian interval, the exact odds-ratio interval on Fisher’s test, and Firth’s bias-reduced logistic regression for data prone to separation. An advisory on assumption_report() flags when a study is small enough for these to matter.\nDisclosed amendments and a provenance trail. amend_sframe() appends a timestamped entry to an ordered log, recording why an instrument changed and which fields moved, and never overwrites earlier entries. Changes touching the analysis plan or a model require a deviation report, and the sign-off field records a reviewer’s name or the literal none, so an unreviewed change stays visible. link_git_commit() ties the file’s SHA-256 hash to a specific Git commit. An edit that bypasses amend_sframe() still fails the integrity check exactly as before.\nTeaching and export, added in 0.4.1. A library of 22 demos, each showing one thing, reachable with sframe_demos() and openable as an editable Quarto notebook. sframe_export_labelled() writes SPSS .sav or Stata .dta with the question wording and response options attached, so variables arrive labelled rather than as bare codes."
   },
   {
     "objectID": "products/surveyframe.html#access-and-limitations",
@@ -1141,11 +1176,18 @@
     "text": "Export and save\nA finished card exports as a PNG or a PDF with one click, sized for dropping straight into a slide deck or a research report. Personas can also be saved inside the tool itself for later editing, a saved list appears under the form with each entry’s name and last-updated date, and any entry can be reloaded or deleted. Saved data lives in the browser’s local storage on the device you are using, so it does not follow you between devices and it does not pass through a server."
   },
   {
+    "objectID": "blog/posts/10-persona-builder.html#update-29-september-2026",
+    "href": "blog/posts/10-persona-builder.html#update-29-september-2026",
+    "title": "Persona Builder: a free browser tool for personas",
+    "section": "Update, 29 September 2026",
+    "text": "Update, 29 September 2026\nPersona Builder now has a fourth level, Journey, which records the persona stage by stage: a goal, a feeling, and a deciding factor at each stage of the customer journey, each marked as from data or an assumption. A finished journey persona goes straight to the Customer Journey Mapper, and both tools belong to the Marketing Toolkit Hub, 32 free marketing tools with guided demos."
+  },
+  {
     "objectID": "blog/posts/10-persona-builder.html#try-it",
     "href": "blog/posts/10-persona-builder.html#try-it",
     "title": "Persona Builder: a free browser tool for personas",
     "section": "Try it",
-    "text": "Try it\nOpen Persona Builder and click “Load sample” to see a complete example, a marketing manager persona built across all three tiers, before building your own from a blank card."
+    "text": "Try it\nOpen Persona Builder and click “Load sample” to see a complete example, Lukas Hoffmann, an IT project manager who books hotels for work and leisure, shown at the Journey level. Press “Watch the demo” for a guided tour before building your own from a blank card."
   },
   {
     "objectID": "blog/posts/08-analysis-plan-before-data.html",
@@ -1449,6 +1491,13 @@
     "text": "Limitations\nThis analysis does not stratify by device type, traffic source, or time of day. Differences in these factors could influence conversion rates. Consider a stratified analysis or regression model if imbalances are suspected.\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 17). Two-proportion test: Comparing conversion rates between variants. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/02-two-proportion-test.html\n@online{sharafuddin2024-two-prop,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Two-Proportion Test: Comparing Conversion Rates Between Variants},\n  year   = {2024},\n  date   = {2024-06-17},\n  url    = {https://flairmi.com/blog/posts/02-two-proportion-test.html},\n  langid = {en}\n}"
   },
   {
+    "objectID": "blog/posts/02-two-proportion-test.html#try-it-in-the-browser",
+    "href": "blog/posts/02-two-proportion-test.html#try-it-in-the-browser",
+    "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
+    "section": "Try it in the browser",
+    "text": "Try it in the browser\nThe A/B Test Calculator runs this two-proportion z-test and the sample size calculation in the browser, with confidence intervals drawn for both groups. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "blog/posts/02-two-proportion-test.html#comments",
     "href": "blog/posts/02-two-proportion-test.html#comments",
     "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
@@ -1488,7 +1537,7 @@
     "href": "about.html#current-work",
     "title": "About Mohammed Ali Sharafuddin",
     "section": "Current Work",
-    "text": "Current Work\n\nR package: surveyframe v0.4.1, live on CRAN. Survey instrument workflows from design to reproducible reporting, now including multi-criteria decision analysis, text analysis of open-ended responses, and a disclosed-amendment provenance trail.\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
+    "text": "Current Work\n\nR package: surveyframe v0.4.2, live on CRAN. Survey instrument workflows from design to reproducible reporting, now including multi-criteria decision analysis, text analysis of open-ended responses, and a disclosed-amendment provenance trail.\nSoftware projects including Price Memory, Margin Guard, QuartoPad, TrimWrite, and Ethos.\nFour textbook lines: Data-Driven Management: Statistics for Managers, AI-Powered Marketing Analytics, Applied Survey Research and Data Analysis, and Quantitative Analysis with Small Samples.\nHosted Excel templates for campaign analysis, forecasting, segmentation, churn, revenue planning, and marketing dashboards.\nWorkshops and consulting in R programming, RStudio, Quarto, statistical analysis, research design, and marketing analytics."
   },
   {
     "objectID": "about.html#about-flairmi",
@@ -1533,18 +1582,18 @@
     "text": "Textbooks\nTwo books can be read today. Quantitative Analysis with Small Samples is published in full, and The Evidence-Based Digital Marketer publishes weekly with 6 of its 15 weeks live. Both are free under CC BY 4.0. Three further lines are in development and are described on the textbooks page.\n\n  \n    \n      \n    Published v0.1.0\n    Quantitative Analysis with Small Samples\n    A published open textbook on exact tests, resampling, nonparametric methods, penalised and Bayesian regression, and five worked R projects. Free under CC BY 4.0.\n    Read the book   Book details\n      \n    \n  \n  \n    \n      \n    Live Rolling release\n    The Evidence-Based Digital Marketer\n    A 15-week open digital marketing course textbook covering campaign strategy, open marketing analytics, and responsible AI. Six weeks live now, free under CC BY 4.0.\n    Read the book   Book details\n      \n    \n  \n\n\n  All textbook lines, including 3 in development"
   },
   {
-    "objectID": "index.html#decision-toolkit-and-dashboards",
-    "href": "index.html#decision-toolkit-and-dashboards",
+    "objectID": "index.html#marketing-toolkit-and-excel-templates",
+    "href": "index.html#marketing-toolkit-and-excel-templates",
     "title": "Textbooks, Decision Templates, and Workflow Tools",
-    "section": "Decision Toolkit And Dashboards",
-    "text": "Decision Toolkit And Dashboards\nThe template layer spans both business analytics and marketing analytics. The free workbook library remains public, and the surrounding FlairMI site is being shaped around clearer decision-support use cases, companion guidance, and workshop delivery.\n\n  \n    \n      \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n      \n    \n  \n\n\n  Browse all decision templates"
+    "section": "Marketing Toolkit And Excel Templates",
+    "text": "Marketing Toolkit And Excel Templates\nThe Marketing Toolkit Hub holds 32 free browser tools in 5 categories, from SWOT and PESTEL to RFM segmentation, SERVQUAL, and marketing mix modelling. Each runs in the browser with a guided demo. Ten free Excel templates cover the same ground as downloadable workbooks.\n\n  \n    \n      \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC, and conversion performance across channels.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue, and representative-level pipeline performance.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds, and profit sensitivity.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n      \n    \n  \n\n\n  Open the Marketing Toolkit Hub\n  Browse all Excel templates"
   },
   {
     "objectID": "index.html#workflow-products",
     "href": "index.html#workflow-products",
     "title": "Textbooks, Decision Templates, and Workflow Tools",
     "section": "Workflow Products",
-    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN at version 0.4.1. Price Memory, Margin Guard, and Persona Builder are live in the browser. QuartoPad, TrimWrite, and Ethos are previews. None of the 3 can be downloaded or signed up for yet.\n\n  \n    \n      \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research, from instrument design to a reproducible report. Version 0.4 added decision analysis, text analysis, and a provenance trail.\n    install.packages(\"surveyframe\")\n    View on CRAN\n      \n    \n  \n  \n    \n      \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas, with PNG and PDF export.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
+    "text": "Workflow Products\nFlairMI’s workflow products support local-first analysis, revision, and reproducible reporting. surveyframe is live on CRAN at version 0.4.2. Price Memory, Margin Guard, and Persona Builder are live in the browser. QuartoPad, TrimWrite, and Ethos are previews. None of the 3 can be downloaded or signed up for yet.\n\n  \n    \n      \n    Live on CRAN\n    surveyframe\n    An R package for end-to-end survey research, from instrument design to a reproducible report. Version 0.4 added decision analysis, text analysis, and a provenance trail.\n    install.packages(\"surveyframe\")\n    View on CRAN\n      \n    \n  \n  \n    \n      \n    Live\n    Price Memory\n    A local grocery price tracker that builds a personal price history in the browser.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Margin Guard\n    A promotion break-even calculator for pricing and campaign decisions.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Live\n    Persona Builder\n    A browser tool for building UX research and marketing personas, with PNG and PDF export.\n    Open live product\n      \n    \n  \n  \n    \n      \n    Private Beta\n    QuartoPad, TrimWrite, and Ethos\n    Workflow products for Quarto authoring, revision, and defensible survey reporting. These products feed the workflow portfolio rather than acting as isolated apps.\n    Browse workflow product pages"
   },
   {
     "objectID": "index.html#services",
@@ -1622,6 +1671,13 @@
     "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
     "section": "Assumptions",
     "text": "Assumptions\nThe Wald interval assumes:\n\nIndependent observations: Each visitor’s cart action is independent (no clustering by session or user ID)\nRandom sampling: Visitors represent a random sample from the population (not biased toward specific traffic sources or times)\nLarge-sample validity: Both \\(n\\hat{p} \\ge 10\\) and \\(n(1-\\hat{p}) \\ge 10\\) (conditions met: 132 successes and 468 failures both exceed 10)\nStable process: The true conversion rate remains constant during the observation period (no seasonal trends, promotional effects, or A/B tests running concurrently)\n\n\n\nUse the below format to cite this page\n\nCopy APA Copy BibTeX\n\nSharafuddin, M. A. (2024, June 10). Confidence interval for a proportion: Analyzing add-to-cart rate. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/01-margin-of-error.html\n@online{sharafuddin2024-ci-proportion,\n  author = {Sharafuddin, Mohammed Ali},\n  title  = {Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate},\n  year   = {2024},\n  date   = {2024-06-10},\n  url    = {https://flairmi.com/blog/posts/01-margin-of-error.html},\n  langid = {en}\n}"
+  },
+  {
+    "objectID": "blog/posts/01-margin-of-error.html#try-it-in-the-browser",
+    "href": "blog/posts/01-margin-of-error.html#try-it-in-the-browser",
+    "title": "Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate",
+    "section": "Try it in the browser",
+    "text": "Try it in the browser\nMargins of error for proportions are built into two free browser tools: the A/B Test Calculator, which draws a confidence interval for each group, and the Net Promoter Score Tracker, which reports the margin of error for every survey wave. Both belong to the Marketing Toolkit Hub."
   },
   {
     "objectID": "blog/posts/01-margin-of-error.html#comments",
@@ -2027,21 +2083,21 @@
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN at 0.4.1. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
+    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser, alongside the 32 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
   },
   {
     "objectID": "products/index.html#product-portfolio",
     "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser. surveyframe is live on CRAN at 0.4.1. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
+    "text": "FlairMI products span live browser utilities, a published R package, and software previews. Price Memory, Margin Guard, and Persona Builder are already public in the browser, alongside the 32 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad, TrimWrite, and Ethos are preview pages showing screens and product framing, with a beta or pilot enquiry form. None of the 3 is available to use yet."
   },
   {
     "objectID": "products/index.html#live-now",
     "href": "products/index.html#live-now",
     "title": "Products",
     "section": "Live Now",
-    "text": "Live Now\n\n  \n    \n      surveyframe\n      \n        Live on CRAN\n        An R package for end-to-end survey research workflows, from instrument design to a reproducible report. Version 0.4 added 10 decision-analysis methods, 9 text-analysis methods, and a disclosed-amendment provenance trail. Full feature list.\n        Free and open source, MIT licence.\n        install.packages(\"surveyframe\")\n      \n      \n        View on CRAN GitHub\n      \n    \n  \n  \n    \n      Price Memory\n      \n        Live\n        A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Margin Guard\n      \n        Live\n        A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Persona Builder\n      \n        Live\n        A browser tool for building UX research and marketing personas at three levels of detail, with PNG and PDF export.\n      \n      \n        Open live product"
+    "text": "Live Now\n\n  \n    \n      surveyframe\n      \n        Live on CRAN\n        An R package for end-to-end survey research workflows, from instrument design to a reproducible report. Version 0.4 added 10 decision-analysis methods, 9 text-analysis methods, and a disclosed-amendment provenance trail. Full feature list.\n        Free and open source, MIT licence.\n        install.packages(\"surveyframe\")\n      \n      \n        View on CRAN GitHub\n      \n    \n  \n  \n    \n      Price Memory\n      \n        Live\n        A personal grocery price tracker that stores your history locally and helps you judge whether a sale is really a discount.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Margin Guard\n      \n        Live\n        A promotion break-even calculator for pricing, discounting, and campaign planning decisions.\n      \n      \n        Open live product\n      \n    \n  \n  \n    \n      Persona Builder\n      \n        Live\n        A browser tool for building UX research and marketing personas at four levels of detail, including a stage-by-stage Journey level, with PNG, PDF, and JSON export.\n      \n      \n        Open live product"
   },
   {
     "objectID": "products/index.html#coming-soon",
@@ -2303,6 +2359,13 @@
     "text": "Notes\nPayback period is derived from CAC and monthly gross profit. The workbook works well when you need a lightweight way to explain acquisition efficiency and the difference between cheap traffic and sustainable customer economics."
   },
   {
+    "objectID": "templates/cac-calculator.html#in-the-browser",
+    "href": "templates/cac-calculator.html#in-the-browser",
+    "title": "CAC Calculator",
+    "section": "In the browser",
+    "text": "In the browser\nSet acquisition cost against what a customer is worth with the Customer Lifetime Value Calculator, which reports the CLV to CAC ratio in the browser. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/churn-rate-dashboard.html",
     "href": "templates/churn-rate-dashboard.html",
     "title": "Churn Rate Dashboard",
@@ -2322,6 +2385,13 @@
     "title": "Churn Rate Dashboard",
     "section": "Notes",
     "text": "Notes\nThe workbook derives annual churn from monthly churn and highlights whether net revenue retention is above 100 percent. It is useful for teaching retention logic and for practical recurring-revenue review."
+  },
+  {
+    "objectID": "templates/churn-rate-dashboard.html#in-the-browser",
+    "href": "templates/churn-rate-dashboard.html#in-the-browser",
+    "title": "Churn Rate Dashboard",
+    "section": "In the browser",
+    "text": "In the browser\nFind the customers most likely to lapse, by recency, frequency, and spend, with the RFM Segmentation Tool. It is one of 32 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/competitive-positioning-map.html",
@@ -2345,6 +2415,13 @@
     "text": "Notes\nThe workbook is useful when you want a structured positioning exercise for a classroom, strategy workshop, or a quick competitor-mapping discussion without building a slide deck from scratch."
   },
   {
+    "objectID": "templates/competitive-positioning-map.html#in-the-browser",
+    "href": "templates/competitive-positioning-map.html#in-the-browser",
+    "title": "Competitive Positioning Map",
+    "section": "In the browser",
+    "text": "In the browser\nTurn a position on the map into a written positioning statement with STP Builder. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/marketing-funnel-dashboard.html",
     "href": "templates/marketing-funnel-dashboard.html",
     "title": "Marketing Funnel Dashboard",
@@ -2366,6 +2443,13 @@
     "text": "Notes\nConversion rates and cost-per-stage views are calculated automatically. The workbook is useful for marketing review meetings, teaching funnel logic, and quick discussions about where drop-off hurts most."
   },
   {
+    "objectID": "templates/marketing-funnel-dashboard.html#in-the-browser",
+    "href": "templates/marketing-funnel-dashboard.html#in-the-browser",
+    "title": "Marketing Funnel Dashboard",
+    "section": "In the browser",
+    "text": "In the browser\nTest a change at any stage of the funnel with the A/B Test Calculator, which sizes the test and checks the result. It is one of 32 free tools in the Marketing Toolkit Hub."
+  },
+  {
     "objectID": "templates/rfm-segmentation.html",
     "href": "templates/rfm-segmentation.html",
     "title": "RFM Segmentation",
@@ -2385,6 +2469,13 @@
     "title": "RFM Segmentation",
     "section": "Notes",
     "text": "Notes\nSegment assignment is formula-driven and can be adapted if your business uses a different scoring logic. The workbook is useful for classroom segmentation exercises and quick practical customer-priority discussions."
+  },
+  {
+    "objectID": "templates/rfm-segmentation.html#in-the-browser",
+    "href": "templates/rfm-segmentation.html#in-the-browser",
+    "title": "RFM Segmentation",
+    "section": "In the browser",
+    "text": "In the browser\nThe RFM Segmentation Tool runs the same scoring in the browser on pasted transactions, with a segment grid and a scored CSV to download. It is one of 32 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "toolkit/7ps-marketing-mix-planner.html",
