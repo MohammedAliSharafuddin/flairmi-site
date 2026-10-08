@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -78,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -219,6 +220,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -237,11 +240,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:description" content="surveyframe 0.3.3 is on CRAN: a redesigned exported survey, WCAG 2.2 AA accessibility, an opt-in ggplot2 layer, and a diverging bar chart for Likert results.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="surveyframe 0.3.3 is on CRAN – Flair Marketing Intelligence">
 <meta name="twitter:description" content="surveyframe 0.3.3 is on CRAN: a redesigned exported survey, WCAG 2.2 AA accessibility, an opt-in ggplot2 layer, and a diverging bar chart for Likert results.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html">
@@ -255,11 +258,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -282,20 +282,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -370,10 +362,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -561,32 +549,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="what-is-new-in-0.3.3">What is new in 0.3.3</h2>
 <section id="the-exported-survey-looks-like-a-real-instrument" class="level3">
 <h3 class="anchored" data-anchor-id="the-exported-survey-looks-like-a-real-instrument">The exported survey looks like a real instrument</h3>
-<p>The survey you export has been redesigned end to end. Question text now uses larger serif typography, options sit in bordered cards with a selection tick, Likert points are numbered squares, and the matrix, slider, and ranking blocks have all been restyled. A slim progress bar runs along the top. The result reads as a considered survey rather than a plain web form, which matters when you are asking real respondents to give you real attention.</p>
+<p>The survey you export has been redesigned end to end. Question text now uses larger serif typography, options sit in bordered cards with a selection tick, Likert points are numbered squares, and the matrix, slider, and ranking blocks have all been restyled. A slim progress bar runs along the top. The result reads as a considered survey, and that matters when you are asking real respondents to give you real attention.</p>
 </section>
 <section id="it-meets-wcag-2.2-aa" class="level3">
 <h3 class="anchored" data-anchor-id="it-meets-wcag-2.2-aa">It meets WCAG 2.2 AA</h3>
-<p>The exported survey passes an instrumented accessibility audit at WCAG 2.2 AA. In practice that means every input carries an accessible name, keyboard focus is visible as you move across the option cards, and validation errors are announced to assistive technology rather than shown by colour alone. Required questions are marked in more than one way, ranking items can be reordered with the keyboard, and touch targets meet a 44-pixel minimum on phones. Accessibility here is not a claim on a marketing page. It is a property the build checks.</p>
+<p>The exported survey passes an instrumented accessibility audit at WCAG 2.2 AA. In practice that means every input carries an accessible name, keyboard focus is visible as you move across the option cards, and validation errors are announced to assistive technology as well as shown in colour. Required questions are marked in more than one way, ranking items can be reordered with the keyboard, and touch targets meet a 44-pixel minimum on phones. Accessibility here is a property the build checks.</p>
 </section>
 <section id="it-works-on-a-phone" class="level3">
 <h3 class="anchored" data-anchor-id="it-works-on-a-phone">It works on a phone</h3>
-<p>Matrix questions used to force a wide table that needed horizontal scrolling on a small screen. Below 600 pixels they now reflow into stacked, labelled row cards, so a respondent on a phone answers the same question without pinching and dragging.</p>
+<p>Matrix questions used to force a wide table that needed horizontal scrolling on a small screen. Below 600 pixels they now reflow into stacked, labelled row cards, so a respondent on a phone answers the same question with a simple scroll.</p>
 </section>
 <section id="a-plotting-layer-on-request" class="level3">
 <h3 class="anchored" data-anchor-id="a-plotting-layer-on-request">A plotting layer, on request</h3>
-<p>There is a new optional plotting layer built on ggplot2. Turn it on and your analysis blocks gain charts: bar charts for frequency and chi-square blocks, and scatter plots with a regression overlay for correlation and regression blocks. It is opt-in, so nothing changes in your reports unless you ask for it.</p>
+<p>There is a new optional plotting layer built on ggplot2. Turn it on and your analysis blocks gain charts: bar charts for frequency and chi-square blocks, and scatter plots with a regression overlay for correlation and regression blocks. It is opt-in, so your reports change only when you ask for it.</p>
 </section>
 <section id="a-proper-chart-for-likert-scales" class="level3">
 <h3 class="anchored" data-anchor-id="a-proper-chart-for-likert-scales">A proper chart for Likert scales</h3>
-<p>Likert items in a report now get a diverging stacked-bar chart. Agreement and disagreement diverge from the centre, darkest at each pole and lightest next to the neutral point, so you can read the balance of a scale at a glance instead of squinting at a plain frequency bar.</p>
+<p>Likert items in a report now get a diverging stacked-bar chart. Agreement and disagreement diverge from the centre, darkest at each pole and lightest next to the neutral point, so you can read the balance of a scale at a glance.</p>
 </section>
 </section>
 <section id="built-from-a-real-study" class="level2">
 <h2 class="anchored" data-anchor-id="built-from-a-real-study">Built from a real study</h2>
-<p>surveyframe 0.3.3 is not a paper exercise. It was hardened while running an actual live survey study on AI room service. That deployment surfaced a real bug: the submission call to Google Apps Script was triggering a CORS preflight that Apps Script never answers, so some responses were being dropped silently. The submission path has been rewritten to avoid that preflight, and those responses now arrive. Bugs found in production are the ones worth fixing, and this release carries several of them.</p>
+<p>surveyframe 0.3.3 was hardened while running a live survey study on AI room service. That deployment surfaced a real bug: the submission call to Google Apps Script was triggering a CORS preflight that Apps Script leaves unanswered, so some responses were being dropped silently. The submission path has been rewritten to avoid that preflight, and those responses now arrive. Bugs found in production matter most, and this release fixes the ones the study found.</p>
 </section>
 <section id="where-it-is-heading" class="level2">
 <h2 class="anchored" data-anchor-id="where-it-is-heading">Where it is heading</h2>
-<p>The next version, v0.4, leans into small-sample methods, the situation most applied researchers actually face. That work is anchored by the companion textbook, <a href="https://flairmi.com/textbooks/">Quantitative Analysis with Small Samples</a>, which is free and already available. A manuscript describing the package has also been submitted to the Journal of Statistical Software and is under review. More on that if and when it is accepted.</p>
+<p>The next version, v0.4, leans into small-sample methods, the situation most applied researchers face. That work is anchored by the companion textbook, <a href="https://flairmi.com/textbooks/">Quantitative Analysis with Small Samples</a>, which is free and already available. A manuscript describing the package has also been submitted to the Journal of Statistical Software and is under review. More on that if and when it is accepted.</p>
 </section>
 <section id="get-it" class="level2">
 <h2 class="anchored" data-anchor-id="get-it">Get it</h2>

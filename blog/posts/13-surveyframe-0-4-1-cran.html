@@ -34,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -43,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -184,6 +185,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -202,11 +205,11 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:description" content="surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="surveyframe 0.4.1 is on CRAN – Flair Marketing Intelligence">
 <meta name="twitter:description" content="surveyframe 0.4.1 adds a 22-demo teaching library, labelled SPSS and Stata export, seeded reproducible reports, and fixes 2 defects that could silently corrupt collected data.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
@@ -220,11 +223,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -247,20 +247,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -335,10 +327,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -505,21 +493,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TL;DR: <strong>surveyframe 0.4.1</strong> reached CRAN on <strong>3 September 2026</strong>, 14 days after 0.4.0. Install it with <code>install.packages("surveyframe")</code>. It adds a library of 22 teaching demos, labelled SPSS and Stata export, and seeded reports that reproduce exactly. It also fixes 2 defects that could silently corrupt collected data, which is why it followed 0.4.0 so closely. Free and open source under the MIT licence.</p>
+<p>TL;DR: <strong>surveyframe 0.4.1</strong> reached CRAN on <strong>3 September 2026</strong>, 14 days after 0.4.0. Install it with <code>install.packages("surveyframe")</code>. It adds a library of 22 teaching demos, labelled SPSS and Stata export, and seeded reports that reproduce exactly. It also fixes 2 defects that could silently corrupt collected data, so it followed 0.4.0 closely. Free and open source under the MIT licence.</p>
 <section id="why-this-release-came-so-fast" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-release-came-so-fast">Why this release came so fast</h2>
-<p>CRAN asks for 1 to 2 months between submissions. This one went in 14 days after 0.4.0, and the reason was set out in the submission comments: 2 of the fixes below could corrupt collected data without raising an error. Data that is quietly wrong is worse than data that fails loudly, so the release was not held back. It was accepted the same day it was submitted.</p>
+<p>CRAN asks for 1 to 2 months between submissions. This one went in 14 days after 0.4.0, and the reason was set out in the submission comments: 2 of the fixes below could corrupt collected data silently. Quietly wrong data does more harm than data that fails loudly, so the release went out at once. It was accepted the same day it was submitted.</p>
 </section>
 <section id="a-library-of-22-demos" class="level2">
 <h2 class="anchored" data-anchor-id="a-library-of-22-demos">A library of 22 demos</h2>
-<p>The most common question about a survey package is not how a function works. It is which approach fits the data you actually have.</p>
+<p>The most common question about a survey package is which approach fits the data you have.</p>
 <p>0.4.1 answers that with 22 small demos, each showing one thing. List them with <code>sframe_demos()</code>, load one with <code>sframe_demo("two_group")</code>, or get an editable Quarto notebook with <code>sframe_demo_qmd("two_group")</code>. Together they cover every analysis method and every question type in the package.</p>
-<p>Each demo also ships a codebook of variable and value labels, and the results surveyframe produced for it, so you can check the numbers against other software rather than taking them on trust.</p>
+<p>Each demo also ships a codebook of variable and value labels, and the results surveyframe produced for it, so you can check the numbers against other software yourself.</p>
 <p>A companion vignette, <code>vignette("learn-by-example")</code>, walks you from picking the demo that matches your data through to the finished report.</p>
 </section>
 <section id="labelled-export-to-spss-and-stata" class="level2">
 <h2 class="anchored" data-anchor-id="labelled-export-to-spss-and-stata">Labelled export to SPSS and Stata</h2>
-<p><code>sframe_export_labelled()</code> writes SPSS <code>.sav</code> or Stata <code>.dta</code> with the question wording and the response options attached. Variables arrive in the other package already labelled, instead of as bare numeric codes that someone has to map by hand. <code>haven</code> is an optional dependency.</p>
+<p><code>sframe_export_labelled()</code> writes SPSS <code>.sav</code> or Stata <code>.dta</code> with the question wording and the response options attached. Variables arrive in the other package already labelled, ready to use. <code>haven</code> is an optional dependency.</p>
 </section>
 <section id="reports-that-reproduce" class="level2">
 <h2 class="anchored" data-anchor-id="reports-that-reproduce">Reports that reproduce</h2>
@@ -529,15 +517,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-2-data-corruption-fixes" class="level2">
 <h2 class="anchored" data-anchor-id="the-2-data-corruption-fixes">The 2 data-corruption fixes</h2>
-<p><strong>The Google Sheets collector could corrupt collected data.</strong> Adding a question mid-study left the sheet’s header stale while new rows used the new order, so values landed under the wrong headings with no error raised. The collector now matches columns by name.</p>
-<p><strong>Branching rules using <code>%in%</code> with more than one value never worked in an exported survey.</strong> The question stayed hidden whatever the respondent answered. This had been present since 0.3.0.</p>
+<p><strong>The Google Sheets collector could corrupt collected data.</strong> Adding a question mid-study left the sheet’s header stale while new rows used the new order, so values landed under the wrong headings, silently. The collector now matches columns by name.</p>
+<p><strong>Branching rules using <code>%in%</code> with more than one value failed in an exported survey.</strong> The question stayed hidden whatever the respondent answered. This had been present since 0.3.0.</p>
 </section>
 <section id="other-fixes" class="level2">
 <h2 class="anchored" data-anchor-id="other-fixes">Other fixes</h2>
 <ul>
-<li><code>sem_lavaan_syntax()</code> produced a mediation model lavaan could not fit, because indirect effects referred to path labels that were never written.</li>
-<li>Straight-lining no longer flags scales shorter than 4 items, where identical answers are normal rather than careless. <code>quality_report()</code> gains <code>straightline_min_items</code>. When no scale is long enough to check, the report says so instead of dropping the chart silently.</li>
-<li>Reading a response file with <code>read.csv()</code> no longer mangles matrix columns whose labels contain spaces. Use <code>check.names = FALSE</code>.</li>
+<li><code>sem_lavaan_syntax()</code> produced a mediation model lavaan failed to fit, because indirect effects referred to path labels missing from the model.</li>
+<li>Straight-lining now checks scales of 4 items or more, since identical answers on shorter scales are normal. <code>quality_report()</code> gains <code>straightline_min_items</code>. When every scale is too short to check, the report says so in place of the chart.</li>
+<li>Reading a response file with <code>read.csv()</code> now keeps matrix columns whose labels contain spaces intact. Use <code>check.names = FALSE</code>.</li>
 </ul>
 </section>
 <section id="get-it" class="level2">
@@ -548,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Source: <a href="https://github.com/MohammedAliSharafuddin/surveyframe">github.com/MohammedAliSharafuddin/surveyframe</a></li>
 <li>On CRAN: <a href="https://CRAN.R-project.org/package=surveyframe">CRAN.R-project.org/package=surveyframe</a></li>
 </ul>
-<p>If you have not read them yet, the <a href="12-surveyframe-0-4-0-cran.html">0.4.0 release notes</a> cover the decision-analysis, text-analysis, and provenance work this release builds on.</p>
+<p>The <a href="12-surveyframe-0-4-0-cran.html">0.4.0 release notes</a> cover the decision-analysis, text-analysis, and provenance work this release builds on.</p>
 
 
 </section>

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mohammed Ali Sharafuddin">
 <meta name="dcterms.date" content="2025-10-25">
-<meta name="keywords" content="logistic regression, odds ratio, purchase prediction, conversion, session behavior">
+<meta name="keywords" content="logistic regression, odds ratio, purchase prediction, conversion, session behaviour">
 <meta name="description" content="Model purchase probability as a function of on-site sessions using logistic regression, with odds ratios, confidence intervals, and interpretation guidance for binary outcomes.">
 
 <title>Logistic Regression Basics: Predicting Purchase from Session Count - Flair Marketing Intelligence</title>
@@ -54,6 +54,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -63,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +205,8 @@ div.csl-indent {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -514,7 +517,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]   # Wald CI (profile not used)\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data\nset.seed(5)\nn <- 1500\nsessions <- rpois(n, lambda = 3)\n# True model: log-odds = -2 + 0.25*sessions\neta <- -2 + 0.25*sessions\np <- 1/(1+exp(-eta))\npurchase <- rbinom(n, 1, p)\n\n# Fit logistic regression\nfit <- glm(purchase ~ sessions, family = binomial())\n\n# Extract coefficients\ncoef_summary <- summary(fit)$coefficients\nintercept <- coef_summary[1, \"Estimate\"]\nslope <- coef_summary[2, \"Estimate\"]\nintercept_se <- coef_summary[1, \"Std. Error\"]\nslope_se <- coef_summary[2, \"Std. Error\"]\nintercept_p <- coef_summary[1, \"Pr(>|z|)\"]\nslope_p <- coef_summary[2, \"Pr(>|z|)\"]\n\n# Odds ratio with 95% CI using helper function\nor_result <- or_ci(fit, \"sessions\")\nor <- or_result[\"or\"]\nor_lo <- or_result[\"lo\"]\nor_hi <- or_result[\"hi\"]\n\n# Model fit statistics\nnull_dev <- fit$null.deviance\nres_dev <- fit$deviance\npseudo_r2 <- 1 - (res_dev / null_dev)\naic <- AIC(fit)","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"logistic-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\nresults_table <- data.frame(\n  Parameter = c(\"Intercept (log-odds)\", \"Slope (log-odds per session)\",\n                \"Intercept p-value\", \"Slope p-value\",\n                \"Odds ratio (per session)\", \"OR 95% CI lower\", \"OR 95% CI upper\",\n                \"Null deviance\", \"Residual deviance\", \"Pseudo R²\",\n                \"AIC\", \"Sample size\", \"Purchase rate\"),\n  Value  = c(sprintf(\"%.3f\", intercept),\n             sprintf(\"%.3f\", slope),\n             sprintf(\"<.001\"),\n             sprintf(\"<.001\"),\n             sprintf(\"%.2f\", or),\n             sprintf(\"%.2f\", or_lo),\n             sprintf(\"%.2f\", or_hi),\n             sprintf(\"%.1f\", null_dev),\n             sprintf(\"%.1f\", res_dev),\n             sprintf(\"%.3f (%.1f%%)\", pseudo_r2, pseudo_r2*100),\n             sprintf(\"%.1f\", aic),\n             sprintf(\"%d\", n),\n             sprintf(\"%.1f%%\", mean(purchase)*100)),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Logistic regression results for purchase ~ sessions\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(5)\nn <- 1500\nsessions <- rpois(n, lambda = 3)\neta <- -2 + 0.25*sessions\np <- 1/(1+exp(-eta))\npurchase <- rbinom(n, 1, p)\nfit <- glm(purchase ~ sessions, family = binomial())\n\n# Prediction data\npred_data <- data.frame(sessions = seq(0, 10, length.out = 100))\npred_link <- predict(fit, newdata = pred_data, type = \"link\", se.fit = TRUE)\npred_data$prob <- plogis(pred_link$fit)\npred_data$lo <- plogis(pred_link$fit - 1.96*pred_link$se.fit)\npred_data$hi <- plogis(pred_link$fit + 1.96*pred_link$se.fit)\n\n# Observed purchase rates by session\nobs_rates <- aggregate(purchase ~ sessions, data = data.frame(sessions, purchase), FUN = mean)\n\nop <- par(mar = c(5, 5, 3.5, 2), cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nplot(pred_data$sessions, pred_data$prob, type = \"n\",\n     xlab = \"Number of Sessions\", ylab = \"Purchase Probability\",\n     main = \"Predicted Purchase Probability by Session Count\",\n     cex.main = 1.05, font.main = 2, cex.lab = 0.95,\n     xlim = c(0, 10), ylim = c(0, 0.7))\n\n# Add confidence band\npolygon(c(pred_data$sessions, rev(pred_data$sessions)),\n        c(pred_data$lo, rev(pred_data$hi)),\n        col = rgb(0.5, 0.5, 0.5, 0.3), border = NA)\n\n# Add prediction curve\nlines(pred_data$sessions, pred_data$prob, col = \"#2C3E50\", lwd = 2)\n\n# Add observed rates\npoints(obs_rates$sessions, obs_rates$purchase, pch = 16, col = \"#3498DB\", cex = 1.2)\n\n# Add reference lines\nabline(h = c(0.25, 0.5), col = \"gray70\", lty = 2, lwd = 1)\n\n# Add legend\nlegend(\"topleft\", \n       legend = c(\"Predicted probability\", \"95% CI\", \"Observed purchase rate\"),\n       col = c(\"#2C3E50\", rgb(0.5, 0.5, 0.5, 0.3), \"#3498DB\"),\n       lwd = c(2, 10, NA), pch = c(NA, NA, 16), cex = 0.85, bty = \"n\")\n\ngrid(col = \"gray80\", lty = \"dotted\")\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Logistic curve showing increasing purchase probability from ~9% (1 session) to ~50% (8+ sessions) with gray confidence band and blue points for observed purchase rates by session count.","fig-asp":"0.7","fig-cap":"Figure 1. Predicted purchase probability as a function of session count with 95% confidence band and observed purchase rates.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-logistic-curve","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Calculate predicted probabilities for key session counts\nsession_values <- c(1, 2, 3, 4, 5, 6, 8, 10)\npred_prob <- predict(fit, newdata = data.frame(sessions = session_values), type = \"response\")\n\nprob_table <- data.frame(\n  Sessions = session_values,\n  `Predicted Purchase Prob` = sprintf(\"%.1f%%\", pred_prob*100),\n  `Odds` = sprintf(\"%.3f\", pred_prob / (1 - pred_prob)),\n  `Interpretation` = c(\"Low intent (<15%)\", \"Low intent (<15%)\", \"Moderate intent (15-25%)\", \"Moderate intent (15-25%)\",\n                       \"High intent (>25%)\", \"High intent (>25%)\", \"Very high intent (>40%)\", \"Very high intent (>40%)\"),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(prob_table, caption = \"Table 2: Predicted purchase probability and odds by session count with intent classification (thresholds: <15% low, 15-25% moderate, >25% high)\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"probability-table","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}},{"code":"op <- par(mfrow = c(1, 2), mar = c(4.5, 4.5, 3, 1.5), cex = 0.9, family = \"sans\")\non.exit(par(op), add = TRUE)\n\n# Panel A: Observed vs. Predicted\nobs_rates <- aggregate(purchase ~ sessions, data = data.frame(sessions, purchase), FUN = mean)\npred_rates <- predict(fit, newdata = obs_rates, type = \"response\")\n\nplot(obs_rates$purchase, pred_rates,\n     pch = 16, col = rgb(0.2, 0.3, 0.4, 0.7), cex = 1.2,\n     xlab = \"Observed Purchase Rate\", ylab = \"Predicted Purchase Probability\",\n     main = \"A. Observed vs. Predicted\",\n     cex.main = 1.0, font.main = 2,\n     xlim = c(0, max(obs_rates$purchase, pred_rates) + 0.05),\n     ylim = c(0, max(obs_rates$purchase, pred_rates) + 0.05))\nabline(0, 1, col = \"#E74C3C\", lwd = 2, lty = 2)\ngrid(col = \"gray80\", lty = \"dotted\")\n\n# Panel B: Residual deviance\ndev_resid <- residuals(fit, type = \"deviance\")\nplot(sessions, dev_resid,\n     pch = 16, col = rgb(0.2, 0.3, 0.4, 0.3), cex = 0.8,\n     xlab = \"Number of Sessions\", ylab = \"Deviance Residuals\",\n     main = \"B. Residual Deviance\",\n     cex.main = 1.0, font.main = 2)\nabline(h = 0, col = \"#E74C3C\", lwd = 2, lty = 2)\nlowess_fit <- lowess(sessions, dev_resid)\nlines(lowess_fit, col = \"#2C3E50\", lwd = 2)\ngrid(col = \"gray80\", lty = \"dotted\")","id":6,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Two-panel diagnostic plot showing close agreement between observed and predicted purchase rates (left) and residual deviance spread across session counts (right).","fig-asp":"0.45","fig-cap":"Figure 2. Model diagnostic plots: (A) Observed vs. predicted purchase rates by session count, (B) Residual deviance by session count.","fig-format":"png","fig-height":5,"fig-width":"8","label":"fig-diagnostic-plots","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}}];
+globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]   # Wald CI (profile not used)\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data\nset.seed(5)\nn <- 1500\nsessions <- rpois(n, lambda = 3)\n# True model: log-odds = -2 + 0.25*sessions\neta <- -2 + 0.25*sessions\np <- 1/(1+exp(-eta))\npurchase <- rbinom(n, 1, p)\n\n# Fit logistic regression\nfit <- glm(purchase ~ sessions, family = binomial())\n\n# Extract coefficients\ncoef_summary <- summary(fit)$coefficients\nintercept <- coef_summary[1, \"Estimate\"]\nslope <- coef_summary[2, \"Estimate\"]\nintercept_se <- coef_summary[1, \"Std. Error\"]\nslope_se <- coef_summary[2, \"Std. Error\"]\nintercept_p <- coef_summary[1, \"Pr(>|z|)\"]\nslope_p <- coef_summary[2, \"Pr(>|z|)\"]\n\n# Odds ratio with 95% CI using helper function\nor_result <- or_ci(fit, \"sessions\")\nor <- or_result[\"or\"]\nor_lo <- or_result[\"lo\"]\nor_hi <- or_result[\"hi\"]\n\n# Model fit statistics\nnull_dev <- fit$null.deviance\nres_dev <- fit$deviance\npseudo_r2 <- 1 - (res_dev / null_dev)\naic <- AIC(fit)","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"logistic-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\nresults_table <- data.frame(\n  Parameter = c(\"Intercept (log-odds)\", \"Slope (log-odds per session)\",\n                \"Intercept p-value\", \"Slope p-value\",\n                \"Odds ratio (per session)\", \"OR 95% CI lower\", \"OR 95% CI upper\",\n                \"Null deviance\", \"Residual deviance\", \"Pseudo R²\",\n                \"AIC\", \"Sample size\", \"Purchase rate\"),\n  Value  = c(sprintf(\"%.3f\", intercept),\n             sprintf(\"%.3f\", slope),\n             sprintf(\"<.001\"),\n             sprintf(\"<.001\"),\n             sprintf(\"%.2f\", or),\n             sprintf(\"%.2f\", or_lo),\n             sprintf(\"%.2f\", or_hi),\n             sprintf(\"%.1f\", null_dev),\n             sprintf(\"%.1f\", res_dev),\n             sprintf(\"%.3f (%.1f%%)\", pseudo_r2, pseudo_r2*100),\n             sprintf(\"%.1f\", aic),\n             sprintf(\"%d\", n),\n             sprintf(\"%.1f%%\", mean(purchase)*100)),\n  stringsAsFactors = FALSE\n)\nhtml_table(results_table, caption = \"Table 1: Logistic regression results for purchase ~ sessions\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"results-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(5)\nn <- 1500\nsessions <- rpois(n, lambda = 3)\neta <- -2 + 0.25*sessions\np <- 1/(1+exp(-eta))\npurchase <- rbinom(n, 1, p)\nfit <- glm(purchase ~ sessions, family = binomial())\n\n# Prediction data\npred_data <- data.frame(sessions = seq(0, 10, length.out = 100))\npred_link <- predict(fit, newdata = pred_data, type = \"link\", se.fit = TRUE)\npred_data$prob <- plogis(pred_link$fit)\npred_data$lo <- plogis(pred_link$fit - 1.96*pred_link$se.fit)\npred_data$hi <- plogis(pred_link$fit + 1.96*pred_link$se.fit)\n\n# Observed purchase rates by session\nobs_rates <- aggregate(purchase ~ sessions, data = data.frame(sessions, purchase), FUN = mean)\n\nop <- par(mar = c(5, 5, 3.5, 2), cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nplot(pred_data$sessions, pred_data$prob, type = \"n\",\n     xlab = \"Number of Sessions\", ylab = \"Purchase Probability\",\n     main = \"Predicted Purchase Probability by Session Count\",\n     cex.main = 1.05, font.main = 2, cex.lab = 0.95,\n     xlim = c(0, 10), ylim = c(0, 0.7))\n\n# Add confidence band\npolygon(c(pred_data$sessions, rev(pred_data$sessions)),\n        c(pred_data$lo, rev(pred_data$hi)),\n        col = rgb(0.5, 0.5, 0.5, 0.3), border = NA)\n\n# Add prediction curve\nlines(pred_data$sessions, pred_data$prob, col = \"#2C3E50\", lwd = 2)\n\n# Add observed rates\npoints(obs_rates$sessions, obs_rates$purchase, pch = 16, col = \"#3498DB\", cex = 1.2)\n\n# Add reference lines\nabline(h = c(0.25, 0.5), col = \"gray70\", lty = 2, lwd = 1)\n\n# Add legend\nlegend(\"topleft\", \n       legend = c(\"Predicted probability\", \"95% CI\", \"Observed purchase rate\"),\n       col = c(\"#2C3E50\", rgb(0.5, 0.5, 0.5, 0.3), \"#3498DB\"),\n       lwd = c(2, 10, NA), pch = c(NA, NA, 16), cex = 0.85, bty = \"n\")\n\ngrid(col = \"gray80\", lty = \"dotted\")\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Logistic curve showing increasing purchase probability from 14% (1 session) to 52% (8 sessions) with gray confidence band and blue points for observed purchase rates by session count.","fig-asp":"0.7","fig-cap":"Figure 1. Predicted purchase probability as a function of session count with 95% confidence band and observed purchase rates.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-logistic-curve","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Calculate predicted probabilities for key session counts\nsession_values <- c(1, 2, 3, 4, 5, 6, 8, 10)\npred_prob <- predict(fit, newdata = data.frame(sessions = session_values), type = \"response\")\n\nprob_table <- data.frame(\n  Sessions = session_values,\n  `Predicted Purchase Prob` = sprintf(\"%.1f%%\", pred_prob*100),\n  `Odds` = sprintf(\"%.3f\", pred_prob / (1 - pred_prob)),\n  # Labels follow the predicted probability, so they stay right if the data change.\n  `Interpretation` = as.character(cut(pred_prob, c(0, 0.15, 0.25, 0.40, 1), right = FALSE,\n                       labels = c(\"Low intent (<15%)\", \"Moderate intent (15-25%)\",\n                                  \"High intent (25-40%)\", \"Very high intent (40%+)\"))),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(prob_table, caption = \"Table 2: Predicted purchase probability and odds by session count with intent classification (thresholds: <15% low, 15-25% moderate, 25-40% high, 40%+ very high)\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"probability-table","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}},{"code":"op <- par(mfrow = c(1, 2), mar = c(4.5, 4.5, 3, 1.5), cex = 0.9, family = \"sans\")\non.exit(par(op), add = TRUE)\n\n# Panel A: Observed vs. Predicted\nobs_rates <- aggregate(purchase ~ sessions, data = data.frame(sessions, purchase), FUN = mean)\npred_rates <- predict(fit, newdata = obs_rates, type = \"response\")\n\nplot(obs_rates$purchase, pred_rates,\n     pch = 16, col = rgb(0.2, 0.3, 0.4, 0.7), cex = 1.2,\n     xlab = \"Observed Purchase Rate\", ylab = \"Predicted Purchase Probability\",\n     main = \"A. Observed vs. Predicted\",\n     cex.main = 1.0, font.main = 2,\n     xlim = c(0, max(obs_rates$purchase, pred_rates) + 0.05),\n     ylim = c(0, max(obs_rates$purchase, pred_rates) + 0.05))\nabline(0, 1, col = \"#E74C3C\", lwd = 2, lty = 2)\ngrid(col = \"gray80\", lty = \"dotted\")\n\n# Panel B: Residual deviance\ndev_resid <- residuals(fit, type = \"deviance\")\nplot(sessions, dev_resid,\n     pch = 16, col = rgb(0.2, 0.3, 0.4, 0.3), cex = 0.8,\n     xlab = \"Number of Sessions\", ylab = \"Deviance Residuals\",\n     main = \"B. Residual Deviance\",\n     cex.main = 1.0, font.main = 2)\nabline(h = 0, col = \"#E74C3C\", lwd = 2, lty = 2)\nlowess_fit <- lowess(sessions, dev_resid)\nlines(lowess_fit, col = \"#2C3E50\", lwd = 2)\ngrid(col = \"gray80\", lty = \"dotted\")","id":6,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Two-panel diagnostic plot showing close agreement between observed and predicted purchase rates (left) and residual deviance spread across session counts (right).","fig-asp":"0.45","fig-cap":"Figure 2. Model diagnostic plots: (A) Observed vs. predicted purchase rates by session count, (B) Residual deviance by session count.","fig-format":"png","fig-height":5,"fig-width":"8","label":"fig-diagnostic-plots","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}}];
 
 </script>
 <script type="module">
@@ -1804,11 +1807,11 @@ window.Quarto = {
 <meta property="og:description" content="Model purchase probability as a function of on-site sessions using logistic regression, with odds ratios, confidence intervals, and interpretation guidance for binary outcomes.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="Logistic Regression Basics: Predicting Purchase from Session Count – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Model purchase probability as a function of on-site sessions using logistic regression, with odds ratios, confidence intervals, and interpretation guidance for binary outcomes.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/06-logistic-basics.html">
@@ -1822,11 +1825,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1849,20 +1849,12 @@ window.Quarto = {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -1937,10 +1929,6 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -2038,11 +2026,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#case" id="toc-case" class="nav-link active" data-scroll-target="#case">Case</a></li>
-  <li><a href="#case-1" id="toc-case-1" class="nav-link" data-scroll-target="#case-1">Case</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#calculation" id="toc-calculation" class="nav-link" data-scroll-target="#calculation">Calculation</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#visualisation" id="toc-visualisation" class="nav-link" data-scroll-target="#visualisation">Visualisation</a></li>
   <li><a href="#results-and-interpretation" id="toc-results-and-interpretation" class="nav-link" data-scroll-target="#results-and-interpretation">Results and Interpretation</a></li>
   <li><a href="#predicted-probabilities-by-session-count" id="toc-predicted-probabilities-by-session-count" class="nav-link" data-scroll-target="#predicted-probabilities-by-session-count">Predicted Probabilities by Session Count</a></li>
   <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
@@ -2392,7 +2379,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>logistic regression, odds ratio, purchase prediction, conversion, session behavior</p>
+    <p>logistic regression, odds ratio, purchase prediction, conversion, session behaviour</p>
   </div>
 </div>
 
@@ -2401,20 +2388,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>TL;DR: Purchase probability rises from <strong>~9% (1 session)</strong> to <strong>~50% (8+ sessions)</strong> (n=500); <strong>OR per session = 1.34 [1.23, 1.46]</strong>; <strong>McFadden R²=0.11</strong>, <strong>AIC=423</strong>; decision: <strong>each extra session increases odds by 34%, engage users across multiple visits</strong>.</p>
+<p>TL;DR: Purchase probability rises from <strong>14% (1 session)</strong> to <strong>52% (8 sessions)</strong> (n=1,500), <strong>OR per session = 1.31 [1.22, 1.40]</strong>, <strong>McFadden R² = 0.036</strong>, <strong>AIC = 1,570</strong>. Decision: <strong>each extra session raises purchase odds by 31%, so engage users across multiple visits</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Logistic regression for binary outcome.<br>
-Estimate: OR = 1.34 per session and CI 1.23, 1.46.<br>
-Data: User behavior, variables sessions, purchased, n = 500.<br>
-Action: Each extra session increases purchase odds by 34%; encourage repeat visits.</p>
+Estimate: OR = 1.31 per session and CI 1.22, 1.40.<br>
+Data: User behaviour, variables sessions, purchased, n = 1,500.<br>
+Action: Each extra session raises purchase odds by 31%. Encourage repeat visits.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
-</section>
-<section id="case-1" class="level2">
-<h2 class="anchored" data-anchor-id="case-1">Case</h2>
-<p>You are analyzing customer behavior for an e-commerce platform and want to understand: Does the number of on-site sessions influence the likelihood of making a purchase? Specifically, how much do purchase odds increase with each additional session? Can you predict purchase probability from session count to identify high-intent customers?</p>
+<p>You are analysing customer behaviour for an e-commerce platform and want to understand: Does the number of on-site sessions influence the likelihood of making a purchase? Specifically, how much do purchase odds increase with each additional session? Can you predict purchase probability from session count to identify high-intent customers?</p>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
@@ -2464,8 +2448,8 @@ p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 \times \text{Sessions})}}.
 <p>The <strong>odds ratio (OR)</strong> for a one-unit increase in sessions is: <span class="math display">\[
 \text{OR} = e^{\beta_1}.
 \]</span></p>
-<p>An OR &gt; 1 indicates increased odds of purchase with more sessions; OR &lt; 1 indicates decreased odds. We report 95% Wald confidence intervals for the odds ratio.</p>
-<p><strong>Interpretation guide</strong>: - OR = 1.00: No effect - OR = 1.28: 28% increase in odds per additional session - OR = 2.00: 100% increase (doubling) in odds - OR = 0.80: 20% decrease in odds</p>
+<p>An OR &gt; 1 indicates increased odds of purchase with more sessions, and an OR &lt; 1 indicates decreased odds. We report 95% Wald confidence intervals for the odds ratio.</p>
+<p><strong>Interpretation guide</strong>: - OR = 1.00: No effect - OR = 1.31: 31% increase in odds per additional session - OR = 2.00: 100% increase (doubling) in odds - OR = 0.80: 20% decrease in odds</p>
 </section>
 <section id="calculation" class="level2">
 <h2 class="anchored" data-anchor-id="calculation">Calculation</h2>
@@ -2474,20 +2458,20 @@ p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 \times \text{Sessions})}}.
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="visualization" class="level2">
-<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="results-and-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="results-and-interpretation">Results and Interpretation</h2>
-<p>The logistic regression reveals a statistically significant positive relationship between session count and purchase probability. The estimated slope coefficient is <strong>β₁ = 0.247</strong> (p &lt; 0.001), which translates to an <strong>odds ratio of 1.28</strong> (95% CI [1.18, 1.40]) <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
-<p><strong>Odds ratio interpretation</strong>: For every additional session, the odds of making a purchase increase by <strong>28%</strong>. This means customers with 2 sessions have 1.28 times the odds of purchasing compared to customers with 1 session, holding all else constant. The 95% CI [1.18, 1.40] indicates we can be confident the true effect is between an 18% and 40% increase in odds per session.</p>
-<p><strong>Probability predictions</strong>: - <strong>1 session</strong>: Predicted purchase probability = 9.3% - <strong>3 sessions</strong> (mean): Predicted purchase probability = 15.3% - <strong>5 sessions</strong>: Predicted purchase probability = 25.5% - <strong>8 sessions</strong>: Predicted purchase probability = 44.6%</p>
-<p>The model shows purchase probability increases non-linearly with sessions, following a logistic S-curve. Customers with 5+ sessions show substantially higher purchase intent (&gt;25% probability) compared to single-session visitors (~9%).</p>
-<p><strong>Model fit</strong>: The pseudo R² of <strong>0.056 (5.6%)</strong> indicates the model explains a modest portion of variance in purchase outcomes. <strong>This is typical for individual-level behavioral models where pseudo R² values of 2-15% are often acceptable</strong> - many factors beyond session count influence purchase decisions. The residual deviance (1643.9) is substantially lower than the null deviance (1741.2), indicating the model improves over a baseline intercept-only model.</p>
-<p><strong>Statistical significance</strong>: The Wald z-test for the slope coefficient is highly significant (p &lt; 0.001), providing strong evidence that session count is a meaningful predictor of purchase probability.</p>
-<p><strong>Decision framework.</strong> The positive relationship between sessions and purchase probability suggests several actionable insights: (1) <strong>Engagement strategies</strong>: Encourage multi-session visits through retargeting, email reminders, or personalized recommendations, (2) <strong>Customer segmentation</strong>: Treat 1-session visitors differently from 5+ session visitors in targeting and messaging, (3) <strong>Lead scoring</strong>: Use session count as a component of lead quality scores, (4) <strong>Conversion optimization</strong>: Focus conversion tactics on high-session users who show strongest purchase intent (&gt;25% probability), (5) <strong>Further analysis</strong>: Extend the model with additional predictors (device type, traffic source, time on site) to improve predictions and understand interaction effects.</p>
+<p>The logistic regression reveals a statistically significant positive relationship between session count and purchase probability. The estimated slope coefficient is <strong>β₁ = 0.268</strong> (SE = 0.035, z = 7.58, p &lt; .001), which translates to an <strong>odds ratio of 1.31</strong> (95% CI [1.22, 1.40]) <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
+<p><strong>Odds ratio interpretation</strong>: For every additional session, the odds of making a purchase increase by <strong>31%</strong>. Customers with 2 sessions have 1.31 times the odds of purchasing of customers with 1 session, holding all else constant. The 95% CI [1.22, 1.40] places the true effect between a 22% and a 40% increase in odds per session.</p>
+<p><strong>Probability predictions</strong>: - <strong>1 session</strong>: Predicted purchase probability = 14.2% - <strong>3 sessions</strong> (mean): Predicted purchase probability = 22.0% - <strong>5 sessions</strong>: Predicted purchase probability = 32.6% - <strong>8 sessions</strong>: Predicted purchase probability = 51.9%</p>
+<p>The model shows purchase probability increases non-linearly with sessions, following a logistic S-curve. Customers with 4 or more sessions pass 25% purchase probability, against about 14% for single-session visitors. Overall, 23.2% of the 1,500 customers bought.</p>
+<p><strong>Model fit</strong>: The McFadden pseudo R² of <strong>0.036 (3.6%)</strong> indicates the model explains a modest portion of variance in purchase outcomes. <strong>This is typical for individual-level behavioural models where pseudo R² values of 2-15% are often acceptable</strong>, because many factors beyond session count influence purchase decisions. The residual deviance (1,565.9) is lower than the null deviance (1,625.0) by 59.1 on 1 degree of freedom, so the model improves clearly on the intercept-only baseline.</p>
+<p><strong>Statistical significance</strong>: The Wald z-test for the slope, z = 7.58, p &lt; .001, gives strong evidence that session count predicts purchase probability.</p>
+<p><strong>Decision framework.</strong> The positive relationship between sessions and purchase probability suggests 5 actionable steps: (1) <strong>Engagement strategies</strong>: Encourage multi-session visits through retargeting, email reminders, or personalised recommendations, (2) <strong>Customer segmentation</strong>: Treat 1-session visitors differently from 5+ session visitors in targeting and messaging, (3) <strong>Lead scoring</strong>: Use session count as a component of lead quality scores, (4) <strong>Conversion optimisation</strong>: Focus conversion tactics on high-session users who show strongest purchase intent (&gt;25% probability), (5) <strong>Further analysis</strong>: Extend the model with additional predictors (device type, traffic source, time on site) to improve predictions and understand interaction effects.</p>
 </section>
 <section id="predicted-probabilities-by-session-count" class="level2">
 <h2 class="anchored" data-anchor-id="predicted-probabilities-by-session-count">Predicted Probabilities by Session Count</h2>
@@ -2501,22 +2485,22 @@ p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 \times \text{Sessions})}}.
 <li><strong>Binary outcome</strong>: Purchase is coded as 0 (no purchase) or 1 (purchase)</li>
 <li><strong>Independence</strong>: Each customer’s purchase decision is independent of others</li>
 <li><strong>Linearity of log-odds</strong>: The relationship between sessions and log-odds of purchase is linear (can test with polynomial terms)</li>
-<li><strong>No perfect separation</strong>: Predictor values do not perfectly separate outcomes (no session count guarantees purchase or non-purchase)</li>
+<li><strong>Overlap between outcomes</strong>: Every session count includes both buyers and non-buyers, so the predictor leaves the outcomes overlapping</li>
 <li><strong>Large sample size</strong>: Generally requires n ≥ 10 events per predictor (1,500 observations with 1 predictor is adequate)</li>
 </ul>
-<p><strong>Note</strong>: Unlike linear regression, logistic regression does not assume normality of residuals or homoscedasticity.</p>
+<p><strong>Note</strong>: Normal residuals and homoscedasticity are linear-regression assumptions, and logistic regression drops both.</p>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>This analysis does not account for:</p>
+<p>This analysis leaves out:</p>
 <ul>
-<li><strong>Confounding variables</strong>: Device type, traffic source, time spent per session, page views, product browsing behavior</li>
+<li><strong>Confounding variables</strong>: Device type, traffic source, time spent per session, page views, product browsing behaviour</li>
 <li><strong>Time effects</strong>: Session timing (same day vs.&nbsp;spread over weeks), recency effects, seasonality</li>
 <li><strong>Customer heterogeneity</strong>: New vs.&nbsp;returning customers, demographics, purchase history</li>
 <li><strong>Non-linear effects</strong>: Diminishing returns at very high session counts (may plateau beyond 8-10 sessions)</li>
-<li><strong>Model calibration</strong>: Predicted probabilities may be poorly calibrated without validation on held-out data</li>
+<li><strong>Model calibration</strong>: Predicted probabilities need validation on held-out data before they can be trusted</li>
 <li><strong>Interaction effects</strong>: Session impact may vary by customer segment or traffic source</li>
-<li><strong>Causality</strong>: Correlation does not prove sessions cause purchases. High-intent customers may naturally browse more.</li>
+<li><strong>Causality</strong>: Correlation stops short of proving that sessions cause purchases. High-intent customers may naturally browse more.</li>
 </ul>
 <p><strong>Recommendations for improvement</strong>: - Add categorical predictors (device type, traffic source) and test interactions with sessions - Include continuous predictors (average time per session, pages viewed, cart additions) - Test polynomial terms (sessions²) or splines for non-linear relationships - Split data into training/test sets to assess out-of-sample prediction accuracy - Calculate AUC-ROC and calibration curves to evaluate discrimination and calibration - Consider hierarchical models if sessions are nested within customers over time - Use propensity score matching or causal inference methods to estimate treatment effects</p>
 </section>
@@ -2568,7 +2552,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about/",
+    "url": "https://flairmi.com/about.html",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },

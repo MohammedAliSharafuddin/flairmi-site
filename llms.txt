@@ -28,30 +28,25 @@ and Early-Career Researchers** (published, free)
   nonparametric methods, penalised and Bayesian regression, missing data,
   uncertainty reporting, and small-sample study design.
 
-**Data-Driven Management: Statistics for Managers** (live)
+**Decision Making for Management: A Student Textbook for Data-Informed
+Managerial Judgement** (live, rolling release)
 
-- A multi-output teaching line with a textbook, lecture decks, a companion
-  site, worked examples, and instructor resources.
-- [FlairMI page](https://flairmi.com/textbooks/ddmm.html)
+- A Villa College course textbook teaching descriptive and inferential
+  statistics through management decisions, with every analysis run in JASP or
+  PocketStat. The first 2 chapters are live.
+- [Web edition](https://mohammedalisharafuddin.github.io/dmm-textbook/)
 
-**AI-Powered Marketing Analytics: Applied Methods for Managers** (in
-proofreading)
+**The Evidence-Based Digital Marketer** (live, rolling release)
 
-- A five-part, twelve-chapter marketing analytics teaching line with worked
-  examples, public datasets, and AI-assisted analytical workflows.
-- [FlairMI page](https://flairmi.com/textbooks/marai.html)
-
-**Applied Survey Research and Data Analysis: From Constructs to
-Conclusions Using R** (in proofreading)
-
-- A large-format survey research text with forty-one chapters covering the
-  path from constructs and measurement to modelling, reporting, and
-  reproducible publishing in R.
-- [FlairMI page](https://flairmi.com/textbooks/asrda.html)
+- A 15-week open digital marketing course textbook (MKTG3001): campaign
+  strategy, open marketing analytics, and responsible AI. 6 of its 15 weeks
+  are live, free under CC BY 4.0.
+- [Web edition](https://mohammedalisharafuddin.github.io/digital-marketing-2026/)
+- [FlairMI page](https://flairmi.com/textbooks/dmarketing.html)
 
 ## Open-source software
 
-**surveyframe** (v0.4.1, live on CRAN since 3 September 2026) is an R
+**surveyframe** (v0.4.2, live on CRAN since 25 September 2026) is an R
 package for survey instrument objects and end-to-end survey workflows:
 instrument design, static HTML export, a Shiny module, response quality
 checks, scale scoring, psychometric diagnostics, analysis planning, and
@@ -174,7 +169,6 @@ The classroom case in the Customer Journey Mapper, and its feeling words, are ad
 
 - **[QuartoPad](https://flairmi.com/products/quartopad.html)** (private beta)
 - **[TrimWrite](https://flairmi.com/products/trimwrite.html)** (testing)
-- **[Ethos](https://flairmi.com/products/ethos.html)** (alpha)
 
 These are teaser pages with product framing and enquiry forms. Pricing is
 not published for any of them yet.

@@ -1,0 +1,111 @@
+/* file: assets/css/walkthrough.css
+   Shared by the product pages built as 2 one-screen sections (products/
+   ethos.qmd, products/surveyframe.qmd): a hero with the click-through
+   walkthrough, then a second section (the request form, or install and
+   links). --wt-screen is set by assets/js/walkthrough.js from the real
+   navbar height, with a CSS fallback. The brand.scss :root custom
+   properties do not reach the compiled bundle (PurgeCSS strips them), so
+   the same values are set here. */
+
+:root {
+  --wt-ink: #111111;
+  --wt-paper: #ffffff;
+  --wt-line: #e5e5e5;
+  --wt-muted: #6b6b6b; /* 5.3:1 on white */
+  --wt-screen: calc(100svh - 72px);
+}
+
+/* Pandoc's own title block prints the site-wide author when Quarto's is off. */
+#title-block-header { display: none; }
+main.content { margin-top: 0; padding-top: 0; }
+
+.wt-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+/* Section 1: the hero fills the screen. A grid row of 1fr gives the
+   screenshot a definite height, so it shrinks to fit at its own ratio. */
+.wt-hero {
+  height: var(--wt-screen);
+  min-height: 26rem;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: 1rem 0 0.9rem;
+  box-sizing: border-box;
+}
+.wt-intro { margin-bottom: 0.9rem; }
+.wt-h1 { font-size: clamp(1.6rem, 3.2vw, 2.6rem); line-height: 1.12; font-weight: 700; margin: 0.5rem 0 0.35rem; }
+.wt-lead { margin: 0; font-size: clamp(1rem, 1.4vw, 1.2rem); }
+
+.wt-hero > figure.wt-demo { margin: 0; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto auto; }
+.wt-frame { min-height: 0; height: 100%; display: flex; align-items: center; justify-content: center; }
+.wt-frame img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid var(--wt-ink);
+  background: #f4f5f7;
+}
+.wt-progress { height: 4px; background: var(--wt-line); margin-top: 0.5rem; }
+.wt-progress span { display: block; height: 100%; width: 0; background: var(--wt-ink); transition: width 0.2s; }
+.wt-demo-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 0.6rem; }
+.wt-demo-text { margin: 0; display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+.wt-demo-count { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--wt-muted); }
+.wt-demo-title { font-size: 1.05rem; font-weight: 700; }
+.wt-demo-nav { display: flex; gap: 0.5rem; flex: none; }
+.wt-demo-nav .btn { min-width: 6rem; }
+.wt-demo-nav .btn-outline-dark { color: var(--wt-ink); border-color: var(--wt-ink); }
+.wt-demo-nav .btn-outline-dark:hover { color: var(--wt-paper); background: var(--wt-ink); }
+
+/* Section 2: the request form, centred in its own screen. */
+.wt-request {
+  scroll-margin-top: var(--wt-nav, 72px);
+  min-height: var(--wt-screen);
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+.wt-request-box { width: 100%; border: 2px solid var(--wt-ink); padding: 1.5rem; }
+.wt-request h2 { font-weight: 700; margin: 0 0 0.3rem; border: 0; padding: 0; }
+.wt-request-lead { color: var(--wt-muted); margin-bottom: 1rem; }
+.wt-request .form-label { margin-bottom: 0.2rem; }
+
+/* Install box (surveyframe) */
+.wt-code { background: #f4f5f7; border: 1px solid var(--wt-line); padding: 0.9rem 1rem; margin: 0 0 1rem; font-size: 0.95rem; line-height: 1.6; overflow-x: auto; }
+.wt-code code { color: var(--wt-ink); background: none; padding: 0; }
+.wt-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.wt-links .btn-outline-dark { color: var(--wt-ink); border-color: var(--wt-ink); }
+.wt-links .btn-outline-dark:hover { color: var(--wt-paper); background: var(--wt-ink); }
+
+/* In portrait (tablets held upright) the screenshot is width-bound, so
+   keep headline, screenshot and controls together and centre the block. */
+@media (orientation: portrait) {
+  .wt-hero { grid-template-rows: auto auto; align-content: center; }
+  .wt-hero > figure.wt-demo { grid-template-rows: auto auto auto; }
+  .wt-frame { height: auto; }
+  .wt-frame img { width: 100%; max-height: none; }
+}
+
+@media (max-width: 767.98px) {
+  /* On a phone the screenshot is width-bound, so let it sit full width
+     straight under the text, with no gap above it. */
+  .wt-hero { height: auto; min-height: var(--wt-screen); grid-template-rows: auto auto; align-content: start; }
+  .wt-hero > figure.wt-demo { grid-template-rows: auto auto auto; }
+  .wt-frame { height: auto; }
+  .wt-frame img { width: 100%; max-height: none; }
+  .wt-demo-bar { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+  .wt-demo-nav .btn { flex: 1; }
+  .wt-request-box { padding: 0.9rem; }
+  .wt-request h2 { font-size: 1.4rem; }
+  .wt-request-lead { font-size: 0.95rem; margin-bottom: 0.6rem; }
+  .wt-request .grid { row-gap: 0.5rem; }
+  .wt-request .form-control { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+  .wt-request .btn-lg { padding: 0.45rem 1rem; font-size: 1.05rem; }
+  .wt-code { font-size: 0.78rem; padding: 0.7rem 0.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wt-progress span { transition: none; }
+}

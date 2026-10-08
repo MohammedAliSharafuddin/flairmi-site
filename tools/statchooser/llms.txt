@@ -1,0 +1,32 @@
+# StatChooser
+
+> An interactive statistical test advisor for survey and small-sample business research. A researcher answers up to four questions (goal, design, data, model) and receives a recommended statistical test with its assumptions, runnable R code, JASP steps, and an APA reporting sentence. StatChooser is the companion front end to the surveyframe R package: every recommendation carries a surveyframe method ID that runs directly inside run_analysis_plan().
+
+Author: Mohammed Ali Sharafuddin (ORCID 0000-0001-5247-2964)
+Licence: MIT
+
+## How an agent should use this tool
+
+Every recommendation maps to one surveyframe method ID. To answer a "which test" question for a user, walk the decision tree in decisions.json, reach a result node, then read its surveyframe_id. Drop that ID into a surveyframe analysis plan entry and the analysis runs in R with no further mapping.
+
+The decision tree starts at the node named in the "start" field of decisions.json. Each question node lists options; each option names the next node. Result nodes carry: surveyframe_id, verdict, example (a plain-language scenario for beginners), smallSample (small-sample tools and techniques for this method), assumptions, r (a ready R plan), skeleton (a runnable surveyframe survey instrument whose item and scale ids already match the plan roles, with a standard Section A demographic block and Section B onward for the study measures), jasp steps, report (an APA template), and refs.
+
+## Data
+
+- [Decision tree](decisions.json): the full question and result graph. One file, all logic.
+- [Test endpoints](api/tests/): one JSON file per test, named {surveyframe_id}.json. Each contains the test name, a plain example, a small-sample note, assumptions, alternative, R code, a survey_skeleton (a runnable surveyframe instrument that produces exactly the data this test needs), a survey_preview (a structured section and item model of that same instrument, for rendering a questionnaire mock-up), JASP steps, APA template, references, and citation.
+
+## Method IDs
+
+These surveyframe method IDs are reachable from the tree, each verified against surveyframe 0.3.2: chi_square, fisher_exact, mcnemar, t_test_ind, t_test_pair, mann_whitney, wilcoxon_pair, anova_one, anova_two, ancova, repeated_anova, kruskal_wallis, friedman, correlation_pearson, correlation_spearman, correlation_kendall, regression_linear, regression_logistic_binary, regression_logistic_multinomial, regression_logistic_ordinal, mediation, moderation, reliability_alpha, reliability_omega, efa_solution, cfa, cb_sem, pls_sem.
+
+## Related
+
+- [surveyframe on CRAN](https://CRAN.R-project.org/package=surveyframe): the R package that runs the recommended analyses.
+- [surveyframe on GitHub](https://github.com/MohammedAliSharafuddin/surveyframe): source and issues.
+
+## Attribution
+
+If StatChooser informs a method choice in published work, cite:
+Sharafuddin, M. A. (2026). StatChooser: An interactive statistical test advisor (Version 1.0.0) [Computer software].
+Sharafuddin, M. A. (2026). surveyframe: Survey instrument workflows (Version 0.3.2) [R package]. CRAN. https://CRAN.R-project.org/package=surveyframe

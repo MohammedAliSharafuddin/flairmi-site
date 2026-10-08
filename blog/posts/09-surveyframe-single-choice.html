@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -78,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -219,6 +220,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -237,11 +240,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:description" content="Declare a single_choice question in surveyframe and see the real codebook, exported survey, and analysis output it produces. Copy-pasteable R throughout.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="surveyframe Field Types: Single Choice – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Declare a single_choice question in surveyframe and see the real codebook, exported survey, and analysis output it produces. Copy-pasteable R throughout.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/09-surveyframe-single-choice.html">
@@ -255,11 +258,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -282,20 +282,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -370,10 +362,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -647,11 +635,11 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </div>
 <section id="the-case" class="level2">
 <h2 class="anchored" data-anchor-id="the-case">The case</h2>
-<p>You run a small store and want to know one thing about each visitor before you ask anything else: have they been here before? That single fact changes how you should read every other answer they give you. It is a single_choice question, because a visitor is either a first-time visitor or a repeat visitor, never both, never neither.</p>
+<p>You run a small store and want to know one thing about each visitor before you ask anything else: have they been here before? That single fact changes how you should read every other answer they give you. It is a single_choice question, because every visitor is exactly one of 2 things: a first-time visitor or a repeat visitor.</p>
 </section>
 <section id="declare-the-item" class="level2">
 <h2 class="anchored" data-anchor-id="declare-the-item">Declare the item</h2>
-<p>A <code>single_choice</code> item needs an <code>id</code>, a <code>label</code>, a <code>choice_set</code>, and whether it is <code>required</code>. The choice set is declared separately with <code>sf_choices()</code> and referenced by its id, not passed in directly.</p>
+<p>A <code>single_choice</code> item needs an <code>id</code>, a <code>label</code>, a <code>choice_set</code>, and whether it is <code>required</code>. The choice set is declared separately with <code>sf_choices()</code> and referenced by its id.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>choices <span class="ot">&lt;-</span> <span class="fu">sf_choices</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"visit_freq"</span>,</span>
@@ -673,11 +661,11 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">components =</span> <span class="fu">list</span>(choices, item)</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>That is the whole instrument for now: one choice set, one item. Everything below reads from this <code>instrument</code> object. Nothing is retyped.</p>
+<p>That is the whole instrument for now: one choice set, one item. Everything below reads from this <code>instrument</code> object, typed once.</p>
 </section>
 <section id="see-it-as-a-codebook" class="level2">
 <h2 class="anchored" data-anchor-id="see-it-as-a-codebook">See it as a codebook</h2>
-<p><code>codebook_report()</code> turns the instrument into two tables: the items and their choice sets. This is real output from the <code>instrument</code> declared above, not a mock-up.</p>
+<p><code>codebook_report()</code> turns the instrument into two tables: the items and their choice sets. This is real output from the <code>instrument</code> declared above.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>cb <span class="ot">&lt;-</span> <span class="fu">codebook_report</span>(instrument, <span class="at">format =</span> <span class="st">"md"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -745,7 +733,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </table>
 </div>
 </div>
-<p>If a column looks wrong here, for instance a <code>label</code> that reads badly or a <code>choice_set</code> id that does not match, this is the earliest and cheapest point to catch it. Nobody has answered anything yet.</p>
+<p>If a column needs a fix here, for instance a <code>label</code> that reads badly or a <code>choice_set</code> id that points elsewhere, this is the earliest and cheapest point to catch it, before anyone has answered.</p>
 </section>
 <section id="export-it-and-see-what-a-respondent-sees" class="level2">
 <h2 class="anchored" data-anchor-id="export-it-and-see-what-a-respondent-sees">Export it and see what a respondent sees</h2>
@@ -757,7 +745,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">open =</span> <span class="cn">TRUE</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>This is the one piece of this page that is a screenshot rather than live output, because the export is a separate HTML document, not something that renders inline in this page. What follows is that file, unedited, at phone width.</p>
+<p>This is the one screenshot on the page, because the export is a separate HTML document that opens on its own. What follows is that file, unedited, at phone width.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../assets/images/blog/09-single-choice-export.png" class="img-fluid figure-img" alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'How would you describe your visit today?' with two lettered option cards and a Submit button." width="320"></p>
@@ -767,7 +755,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </section>
 <section id="write-the-analysis-plan-before-you-collect-anything" class="level2">
 <h2 class="anchored" data-anchor-id="write-the-analysis-plan-before-you-collect-anything">Write the analysis plan before you collect anything</h2>
-<p>This is the part worth doing deliberately. The plan below is declared now, attached to the instrument, before a single response exists. <code>method = "frequency"</code> with <code>roles = list(variable = "visitor_type")</code> is what tells surveyframe which table and chart to produce later. <a href="08-analysis-plan-before-data.html">Why this order matters</a> is its own post if you want the fuller argument.</p>
+<p>Do this part deliberately. The plan below is declared now, attached to the instrument, before a single response exists. <code>method = "frequency"</code> with <code>roles = list(variable = "visitor_type")</code> tells surveyframe which table and chart to produce later. <a href="08-analysis-plan-before-data.html">Why this order matters</a> is its own post if you want the fuller argument.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>instrument <span class="ot">&lt;-</span> <span class="fu">sf_instrument</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Store Visit Survey"</span>,</span>
@@ -795,7 +783,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">visitor_type =</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"first"</span>, <span class="st">"repeat"</span>), n, <span class="at">replace =</span> <span class="cn">TRUE</span>, <span class="at">prob =</span> <span class="fu">c</span>(<span class="fl">0.62</span>, <span class="fl">0.38</span>))</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><code>run_analysis_plan()</code> reads the plan attached to <code>instrument</code> and executes exactly that, nothing more. <code>plots = TRUE</code> turns on the optional ggplot2 layer new in 0.3.3.</p>
+<p><code>run_analysis_plan()</code> reads the plan attached to <code>instrument</code> and executes exactly that plan. <code>plots = TRUE</code> turns on the optional ggplot2 layer new in 0.3.3.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">run_analysis_plan</span>(responses, instrument, <span class="at">plots =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>rq1 <span class="ot">&lt;-</span> results[[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -838,7 +826,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <blockquote class="blockquote">
 <p>Frequency distribution for visitor_type (N = 140).</p>
 </blockquote>
-<p>Nothing in that table, chart, or sentence was chosen after looking at the numbers. <code>method = "frequency"</code> was decided in the plan section above, before <code>responses</code> existed.</p>
+<p>Every part of that table, chart, and sentence was chosen before the numbers existed. <code>method = "frequency"</code> was decided in the plan section above, before <code>responses</code> existed.</p>
 </section>
 <section id="adapt-this-to-your-own-survey" class="level2">
 <h2 class="anchored" data-anchor-id="adapt-this-to-your-own-survey">Adapt this to your own survey</h2>
@@ -848,7 +836,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <li>The <code>values</code> and <code>labels</code> in <code>sf_choices()</code></li>
 <li>The <code>variable</code> in the plan’s <code>roles</code>, to match your new <code>id</code></li>
 </ol>
-<p>Everything else, the codebook, the export, the plan structure, and <code>run_analysis_plan()</code>, works the same way regardless of what the question actually asks.</p>
+<p>Everything else, the codebook, the export, the plan structure, and <code>run_analysis_plan()</code>, works the same way whatever the question asks.</p>
 <div class="flair-cta">
 <p><strong>Get surveyframe</strong></p>
 <p><code>install.packages("surveyframe")</code></p>
@@ -1460,11 +1448,11 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## The case</span></span>
 <span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a>You run a small store and want to know one thing about each visitor before you ask anything else: have they been here before? That single fact changes how you should read every other answer they give you. It is a single_choice question, because a visitor is either a first-time visitor or a repeat visitor, never both, never neither.</span>
+<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a>You run a small store and want to know one thing about each visitor before you ask anything else: have they been here before? That single fact changes how you should read every other answer they give you. It is a single_choice question, because every visitor is exactly one of 2 things: a first-time visitor or a repeat visitor.</span>
 <span id="cb7-142"><a href="#cb7-142" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-143"><a href="#cb7-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Declare the item</span></span>
 <span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a>A <span class="in">`single_choice`</span> item needs an <span class="in">`id`</span>, a <span class="in">`label`</span>, a <span class="in">`choice_set`</span>, and whether it is <span class="in">`required`</span>. The choice set is declared separately with <span class="in">`sf_choices()`</span> and referenced by its id, not passed in directly.</span>
+<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a>A <span class="in">`single_choice`</span> item needs an <span class="in">`id`</span>, a <span class="in">`label`</span>, a <span class="in">`choice_set`</span>, and whether it is <span class="in">`required`</span>. The choice set is declared separately with <span class="in">`sf_choices()`</span> and referenced by its id.</span>
 <span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-149"><a href="#cb7-149" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb7-150"><a href="#cb7-150" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: declare-item</span></span>
@@ -1489,11 +1477,11 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-169"><a href="#cb7-169" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb7-170"><a href="#cb7-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-171"><a href="#cb7-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>That is the whole instrument for now: one choice set, one item. Everything below reads from this <span class="in">`instrument`</span> object. Nothing is retyped.</span>
+<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>That is the whole instrument for now: one choice set, one item. Everything below reads from this <span class="in">`instrument`</span> object, typed once.</span>
 <span id="cb7-173"><a href="#cb7-173" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-174"><a href="#cb7-174" aria-hidden="true" tabindex="-1"></a><span class="fu">## See it as a codebook</span></span>
 <span id="cb7-175"><a href="#cb7-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="in">`codebook_report()`</span> turns the instrument into two tables: the items and their choice sets. This is real output from the <span class="in">`instrument`</span> declared above, not a mock-up.</span>
+<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="in">`codebook_report()`</span> turns the instrument into two tables: the items and their choice sets. This is real output from the <span class="in">`instrument`</span> declared above.</span>
 <span id="cb7-177"><a href="#cb7-177" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-180"><a href="#cb7-180" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb7-181"><a href="#cb7-181" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: codebook</span></span>
@@ -1520,7 +1508,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-206"><a href="#cb7-206" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb7-207"><a href="#cb7-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-208"><a href="#cb7-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-209"><a href="#cb7-209" aria-hidden="true" tabindex="-1"></a>If a column looks wrong here, for instance a <span class="in">`label`</span> that reads badly or a <span class="in">`choice_set`</span> id that does not match, this is the earliest and cheapest point to catch it. Nobody has answered anything yet.</span>
+<span id="cb7-209"><a href="#cb7-209" aria-hidden="true" tabindex="-1"></a>If a column needs a fix here, for instance a <span class="in">`label`</span> that reads badly or a <span class="in">`choice_set`</span> id that points elsewhere, this is the earliest and cheapest point to catch it, before anyone has answered.</span>
 <span id="cb7-210"><a href="#cb7-210" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-211"><a href="#cb7-211" aria-hidden="true" tabindex="-1"></a><span class="fu">## Export it and see what a respondent sees</span></span>
 <span id="cb7-212"><a href="#cb7-212" aria-hidden="true" tabindex="-1"></a></span>
@@ -1536,13 +1524,13 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-224"><a href="#cb7-224" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb7-225"><a href="#cb7-225" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-226"><a href="#cb7-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a>This is the one piece of this page that is a screenshot rather than live output, because the export is a separate HTML document, not something that renders inline in this page. What follows is that file, unedited, at phone width.</span>
+<span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a>This is the one screenshot on the page, because the export is a separate HTML document that opens on its own. What follows is that file, unedited, at phone width.</span>
 <span id="cb7-228"><a href="#cb7-228" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a><span class="al">![Real output of `export_static_survey()` for the `visitor_type` item: a progress indicator reading "0 of 1 answered", the question marked required, two bordered option cards lettered A and B for "First-time visitor" and "Repeat visitor", and a Submit button.](/assets/images/blog/09-single-choice-export.png)</span>{fig-alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'How would you describe your visit today?' with two lettered option cards and a Submit button." width="320px"}</span>
 <span id="cb7-230"><a href="#cb7-230" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## Write the analysis plan before you collect anything</span></span>
 <span id="cb7-232"><a href="#cb7-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a>This is the part worth doing deliberately. The plan below is declared now, attached to the instrument, before a single response exists. <span class="in">`method = "frequency"`</span> with <span class="in">`roles = list(variable = "visitor_type")`</span> is what tells surveyframe which table and chart to produce later. <span class="co">[</span><span class="ot">Why this order matters</span><span class="co">](08-analysis-plan-before-data.html)</span> is its own post if you want the fuller argument.</span>
+<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a>Do this part deliberately. The plan below is declared now, attached to the instrument, before a single response exists. <span class="in">`method = "frequency"`</span> with <span class="in">`roles = list(variable = "visitor_type")`</span> tells surveyframe which table and chart to produce later. <span class="co">[</span><span class="ot">Why this order matters</span><span class="co">](08-analysis-plan-before-data.html)</span> is its own post if you want the fuller argument.</span>
 <span id="cb7-234"><a href="#cb7-234" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-237"><a href="#cb7-237" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb7-238"><a href="#cb7-238" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: plan</span></span>
@@ -1575,7 +1563,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-267"><a href="#cb7-267" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb7-268"><a href="#cb7-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-269"><a href="#cb7-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-270"><a href="#cb7-270" aria-hidden="true" tabindex="-1"></a><span class="in">`run_analysis_plan()`</span> reads the plan attached to <span class="in">`instrument`</span> and executes exactly that, nothing more. <span class="in">`plots = TRUE`</span> turns on the optional ggplot2 layer new in 0.3.3.</span>
+<span id="cb7-270"><a href="#cb7-270" aria-hidden="true" tabindex="-1"></a><span class="in">`run_analysis_plan()`</span> reads the plan attached to <span class="in">`instrument`</span> and executes exactly that plan. <span class="in">`plots = TRUE`</span> turns on the optional ggplot2 layer new in 0.3.3.</span>
 <span id="cb7-271"><a href="#cb7-271" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-274"><a href="#cb7-274" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb7-275"><a href="#cb7-275" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: run-plan</span></span>
@@ -1603,7 +1591,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-301"><a href="#cb7-301" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-302"><a href="#cb7-302" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`r rq1$apa`</span></span>
 <span id="cb7-303"><a href="#cb7-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-304"><a href="#cb7-304" aria-hidden="true" tabindex="-1"></a>Nothing in that table, chart, or sentence was chosen after looking at the numbers. <span class="in">`method = "frequency"`</span> was decided in the plan section above, before <span class="in">`responses`</span> existed.</span>
+<span id="cb7-304"><a href="#cb7-304" aria-hidden="true" tabindex="-1"></a>Every part of that table, chart, and sentence was chosen before the numbers existed. <span class="in">`method = "frequency"`</span> was decided in the plan section above, before <span class="in">`responses`</span> existed.</span>
 <span id="cb7-305"><a href="#cb7-305" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-306"><a href="#cb7-306" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapt this to your own survey</span></span>
 <span id="cb7-307"><a href="#cb7-307" aria-hidden="true" tabindex="-1"></a></span>
@@ -1613,7 +1601,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb7-311"><a href="#cb7-311" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The <span class="in">`values`</span> and <span class="in">`labels`</span> in <span class="in">`sf_choices()`</span></span>
 <span id="cb7-312"><a href="#cb7-312" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The <span class="in">`variable`</span> in the plan's <span class="in">`roles`</span>, to match your new <span class="in">`id`</span></span>
 <span id="cb7-313"><a href="#cb7-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-314"><a href="#cb7-314" aria-hidden="true" tabindex="-1"></a>Everything else, the codebook, the export, the plan structure, and <span class="in">`run_analysis_plan()`</span>, works the same way regardless of what the question actually asks.</span>
+<span id="cb7-314"><a href="#cb7-314" aria-hidden="true" tabindex="-1"></a>Everything else, the codebook, the export, the plan structure, and <span class="in">`run_analysis_plan()`</span>, works the same way whatever the question asks.</span>
 <span id="cb7-315"><a href="#cb7-315" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-316"><a href="#cb7-316" aria-hidden="true" tabindex="-1"></a>::: {.flair-cta}</span>
 <span id="cb7-317"><a href="#cb7-317" aria-hidden="true" tabindex="-1"></a>**Get surveyframe**</span>

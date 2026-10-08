@@ -11,7 +11,7 @@
 <meta name="keywords" content="confidence interval, margin of error, binomial proportion, ecommerce, A/B testing">
 <meta name="description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
 
-<title>Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate - Flair Marketing Intelligence</title>
+<title>Confidence Interval for a Proportion: Analysing Add-to-Cart Rate - Flair Marketing Intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,6 +54,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -63,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +205,8 @@ div.csl-indent {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -1800,15 +1803,15 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../assets/css/consent.css">
 <link rel="stylesheet" href="../../assets/css/blog-tables.css">
-<meta property="og:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate – Flair Marketing Intelligence">
+<meta property="og:title" content="Confidence Interval for a Proportion: Analysing Add-to-Cart Rate – Flair Marketing Intelligence">
 <meta property="og:description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
-<meta property="og:image" content="https://flairmi.com/blog/posts/assets/images/01-margin-of-error-hero.png">
+<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
-<meta name="twitter:title" content="Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate – Flair Marketing Intelligence">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
+<meta name="twitter:title" content="Confidence Interval for a Proportion: Analysing Add-to-Cart Rate – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Estimate the add to cart rate with a 95% confidence interval, read the margin of error, and decide if KPIs are acceptable. Runnable R/WebR code.">
-<meta name="twitter:image" content="https://flairmi.com/blog/posts/assets/images/01-margin-of-error-hero.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/01-margin-of-error.html">
@@ -1822,11 +1825,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1849,20 +1849,12 @@ window.Quarto = {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -1937,10 +1929,6 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -2041,7 +2029,7 @@ window.Quarto = {
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#calculation" id="toc-calculation" class="nav-link" data-scroll-target="#calculation">Calculation</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#visualisation" id="toc-visualisation" class="nav-link" data-scroll-target="#visualisation">Visualisation</a></li>
   <li><a href="#results-and-interpretation" id="toc-results-and-interpretation" class="nav-link" data-scroll-target="#results-and-interpretation">Results and Interpretation</a></li>
   <li><a href="#sample-size-planning" id="toc-sample-size-planning" class="nav-link" data-scroll-target="#sample-size-planning">Sample Size Planning</a></li>
   <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a>
@@ -2342,7 +2330,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate</h1>
+<h1 class="title">Confidence Interval for a Proportion: Analysing Add-to-Cart Rate</h1>
   <div class="quarto-categories">
     <div class="quarto-category">statistics</div>
     <div class="quarto-category">A/B testing</div>
@@ -2397,13 +2385,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<p>TL;DR: Add-to-cart is <strong>22%</strong> (n=600); <strong>95% CI [18.8%, 25.2%]</strong> - <strong>baseline KPI 19% is acceptable</strong>, <strong>stretch 26% isn’t</strong>; for ±2 pp precision, target <strong>~1,472-2,401 visitors</strong>.</p>
+<p>TL;DR: Add-to-cart is <strong>22%</strong> (n=600), <strong>95% CI [18.7%, 25.3%]</strong>. The <strong>baseline KPI of 19% is met</strong> and the <strong>stretch goal of 26% is out of reach</strong>. For ±2 pp precision, plan for <strong>1,648 to 2,401 visitors</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Wald confidence interval for a proportion.<br>
-Estimate: 22% and CI 18.8%, 25.2%.<br>
+Estimate: 22% and CI 18.7%, 25.3%.<br>
 Data: E-commerce traffic, variables add_to_cart, n = 600.<br>
-Action: Baseline KPI (19%) is met; stretch goal (26%) is not.</p>
+Action: Baseline KPI (19%) is met. The stretch goal (26%) is out of reach.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
@@ -2453,16 +2441,16 @@ Action: Baseline KPI (19%) is met; stretch goal (26%) is not.</p>
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="visualization" class="level2">
-<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="results-and-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="results-and-interpretation">Results and Interpretation</h2>
-<p>The estimated add-to-cart proportion was <strong>0.22 (22.0%)</strong> with a 95% confidence interval of <strong>[0.188, 0.252]</strong> (or <strong>[18.8%, 25.2%]</strong>), a margin of error of ±<strong>3.2 percentage points</strong>. The large-sample rule holds (132 successes, 468 failures) <span class="citation" data-cites="Agresti2019 R-base">(<a href="#ref-Agresti2019" role="doc-biblioref">Agresti 2019</a>; <a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
-<p><strong>KPI assessment.</strong> Baseline KPI (19%) lies within the CI; stretch KPI (26%) lies above the CI.</p>
-<p><strong>Business decision.</strong> The baseline KPI (19%) is acceptable given the data, suggesting acceptable performance. The stretch KPI (26%) is not supported by this sample - more visitors or performance improvements are needed to claim that goal.</p>
+<p>The estimated add-to-cart proportion was <strong>0.22 (22.0%)</strong> with a 95% confidence interval of <strong>[0.187, 0.253]</strong> (or <strong>[18.7%, 25.3%]</strong>), a margin of error of ±<strong>3.3 percentage points</strong>. The large-sample rule holds (132 successes, 468 failures) <span class="citation" data-cites="Agresti2019 R-base">(<a href="#ref-Agresti2019" role="doc-biblioref">Agresti 2019</a>; <a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
+<p><strong>KPI assessment.</strong> Baseline KPI (19%) lies within the CI, and stretch KPI (26%) lies above it.</p>
+<p><strong>Business decision.</strong> The data support the baseline KPI (19%). Claiming the stretch KPI (26%) needs more visitors or better performance.</p>
 </section>
 <section id="sample-size-planning" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size-planning">Sample Size Planning</h2>
@@ -2477,7 +2465,7 @@ n = \hat{p}(1-\hat{p})\left(\frac{Z^*}{\text{MOE}_{\text{target}}}\right)^2.
 <p>The Wald interval assumes:</p>
 <ul>
 <li><strong>Independent observations</strong>: Each visitor’s cart action is independent (no clustering by session or user ID)</li>
-<li><strong>Random sampling</strong>: Visitors represent a random sample from the population (not biased toward specific traffic sources or times)</li>
+<li><strong>Random sampling</strong>: Visitors represent a random sample from the population, spread evenly across traffic sources and times</li>
 <li><strong>Large-sample validity</strong>: Both <span class="math inline">\(n\hat{p} \ge 10\)</span> and <span class="math inline">\(n(1-\hat{p}) \ge 10\)</span> (conditions met: 132 successes and 468 failures both exceed 10)</li>
 <li><strong>Stable process</strong>: The true conversion rate remains constant during the observation period (no seasonal trends, promotional effects, or A/B tests running concurrently)</li>
 </ul>
@@ -2487,10 +2475,10 @@ n = \hat{p}(1-\hat{p})\left(\frac{Z^*}{\text{MOE}_{\text{target}}}\right)^2.
 <div class="copy-row">
 <p><button class="copy-btn" data-target="#apa-cite">Copy APA</button> <button class="copy-btn" data-target="#bibtex-cite">Copy BibTeX</button></p>
 </div>
-<pre id="apa-cite">Sharafuddin, M. A. (2024, June 10). Confidence interval for a proportion: Analyzing add-to-cart rate. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/01-margin-of-error.html</pre>
+<pre id="apa-cite">Sharafuddin, M. A. (2024, June 10). Confidence interval for a proportion: Analysing add-to-cart rate. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/01-margin-of-error.html</pre>
 <pre id="bibtex-cite">@online{sharafuddin2024-ci-proportion,
   author = {Sharafuddin, Mohammed Ali},
-  title  = {Confidence Interval for a Proportion: Analyzing Add-to-Cart Rate},
+  title  = {Confidence Interval for a Proportion: Analysing Add-to-Cart Rate},
   year   = {2024},
   date   = {2024-06-10},
   url    = {https://flairmi.com/blog/posts/01-margin-of-error.html},
@@ -2528,7 +2516,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about/",
+    "url": "https://flairmi.com/about.html",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },
@@ -2555,7 +2543,7 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ali_sharafuddin2024,
   author = {Ali Sharafuddin, Mohammed},
-  title = {Confidence {Interval} for a {Proportion:} {Analyzing}
+  title = {Confidence {Interval} for a {Proportion:} {Analysing}
     {Add-to-Cart} {Rate}},
   date = {2024-06-10},
   url = {https://flairmi.com/blog/posts/01-margin-of-error.html},
@@ -2563,7 +2551,7 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ali_sharafuddin2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Ali Sharafuddin, Mohammed. 2024. <span>“Confidence Interval for a
-Proportion: Analyzing Add-to-Cart Rate.”</span> June 10, 2024. <a href="https://flairmi.com/blog/posts/01-margin-of-error.html">https://flairmi.com/blog/posts/01-margin-of-error.html</a>.
+Proportion: Analysing Add-to-Cart Rate.”</span> June 10, 2024. <a href="https://flairmi.com/blog/posts/01-margin-of-error.html">https://flairmi.com/blog/posts/01-margin-of-error.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

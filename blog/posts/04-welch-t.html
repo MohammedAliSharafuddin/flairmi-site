@@ -54,6 +54,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -63,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +205,8 @@ div.csl-indent {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -514,7 +517,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]   # Wald CI (profile not used)\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data with unequal variances\nset.seed(3)\naov_a <- rnorm(120, mean = 1200, sd = 180)\naov_b <- rnorm(150, mean = 1270, sd = 260)\n\n# Descriptive statistics\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nsd_a <- sd(aov_a)\nsd_b <- sd(aov_b)\nvar_a <- var(aov_a)\nvar_b <- var(aov_b)\ndiff <- mean_b - mean_a\n\n# Variance ratio (smaller / larger)\nvar_ratio <- min(var_a, var_b) / max(var_a, var_b)\n\n# Welch t-test (unequal variances)\nwelch <- t.test(aov_b, aov_a, var.equal = FALSE)\n\n# Equal-variance t-test (pooled)\npooled <- t.test(aov_b, aov_a, var.equal = TRUE)\n\n# Extract test statistics\nwelch_t <- unname(welch$statistic)\nwelch_df <- unname(welch$parameter)\nwelch_p <- welch$p.value\nwelch_ci <- welch$conf.int\n\npooled_t <- unname(pooled$statistic)\npooled_df <- unname(pooled$parameter)\npooled_p <- pooled$p.value\npooled_ci <- pooled$conf.int","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"welch-comparison-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\ncomparison_table <- data.frame(\n  Metric = c(\"Group A mean\", \"Group B mean\", \"Mean difference (B - A)\",\n             \"Group A SD\", \"Group B SD\",\n             \"Group A variance\", \"Group B variance\", \"Variance ratio\",\n             \"Welch t-statistic\", \"Welch df\", \"Welch p-value\",\n             \"Welch 95% CI lower\", \"Welch 95% CI upper\",\n             \"Pooled t-statistic\", \"Pooled df\", \"Pooled p-value\",\n             \"Pooled 95% CI lower\", \"Pooled 95% CI upper\"),\n  Value  = c(sprintf(\"₹%.1f\", mean_a),\n             sprintf(\"₹%.1f\", mean_b),\n             sprintf(\"₹%.1f\", diff),\n             sprintf(\"₹%.1f\", sd_a),\n             sprintf(\"₹%.1f\", sd_b),\n             sprintf(\"₹%.0f\", var_a),\n             sprintf(\"₹%.0f\", var_b),\n             sprintf(\"%.2f\", var_ratio),\n             sprintf(\"%.2f\", welch_t),\n             sprintf(\"%.1f\", welch_df),\n             sprintf(\"%.3f\", welch_p),\n             sprintf(\"₹%.1f\", welch_ci[1]),\n             sprintf(\"₹%.1f\", welch_ci[2]),\n             sprintf(\"%.2f\", pooled_t),\n             sprintf(\"%.0f\", pooled_df),\n             sprintf(\"%.3f\", pooled_p),\n             sprintf(\"₹%.1f\", pooled_ci[1]),\n             sprintf(\"₹%.1f\", pooled_ci[2])),\n  stringsAsFactors = FALSE\n)\nhtml_table(comparison_table, caption = \"Table 1: Comparison of Welch and equal-variance t-tests with variance diagnostics\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"comparison-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(3)\naov_a <- rnorm(120, mean = 1200, sd = 180)\naov_b <- rnorm(150, mean = 1270, sd = 260)\n\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nse_a <- sd(aov_a) / sqrt(120)\nse_b <- sd(aov_b) / sqrt(150)\n\nci_a_lower <- mean_a - 1.96 * se_a\nci_a_upper <- mean_a + 1.96 * se_a\nci_b_lower <- mean_b - 1.96 * se_b\nci_b_upper <- mean_b + 1.96 * se_b\n\nop <- par(mar = c(5, 5, 3.5, 2), xaxs = \"r\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nbp <- barplot(c(mean_a, mean_b), \n              names.arg = c(\"Group A (n=120)\", \"Group B (n=150)\"),\n              ylim = c(0, max(ci_a_upper, ci_b_upper) + 150),\n              ylab = \"Average Order Value (₹)\",\n              main = \"AOV Comparison Showing Unequal Variances\",\n              col = c(\"#95A5A6\", \"#2C3E50\"),\n              border = \"white\",\n              cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\narrows(bp[1], ci_a_lower, bp[1], ci_a_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#95A5A6\")\narrows(bp[2], ci_b_lower, bp[2], ci_b_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#2C3E50\")\n\ntext(bp[1], mean_a + 100, sprintf(\"₹%.0f\\n(SD ₹%.0f)\", mean_a, sd(aov_a)), cex = 0.95, font = 2, col = \"#95A5A6\")\ntext(bp[2], mean_b + 120, sprintf(\"₹%.0f\\n(SD ₹%.0f)\", mean_b, sd(aov_b)), cex = 0.95, font = 2, col = \"#2C3E50\")\n\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Bar plots comparing AOV for groups A (₹1,201, SD ₹180) and B (₹1,269, SD ₹260) with error bars representing 95% confidence intervals demonstrating unequal variance.","fig-asp":"0.6","fig-cap":"Figure 1. Average order value comparison between groups showing unequal variances with 95% confidence intervals.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-variance-comparison","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Sample size calculation for Welch t-test\n# Use larger SD as conservative estimate\nlarger_sd <- 260\nmean_diff_target <- 70\n\nz_alpha <- qnorm(1 - 0.05/2)\nz_beta  <- qnorm(0.80)\n\n# Cohen's d for target effect\nd_target <- mean_diff_target / larger_sd\n\n# Conservative sample size per group (assumes equal n)\nn_per_group <- ceiling(2 * (z_alpha + z_beta)^2 / d_target^2)\n\n# Approximate power for current unequal sample (harmonic mean approach)\nn_harmonic <- 2 / (1/120 + 1/150)\nd_current <- 68 / 260\nncp_current <- d_current * sqrt(n_harmonic / 2)\npower_current <- round(1 - pt(qt(0.975, 228), 228, ncp_current) + \n                       pt(qt(0.025, 228), 228, ncp_current), 2)\n\nplanning_table <- data.frame(\n  Scenario = c(\"Current test (unequal n)\", \"Recommended (80% power)\", \"High power (90%)\"),\n  `n per group` = c(\"120/150 (unequal)\", \n                    sprintf(\"%d\", n_per_group), \n                    sprintf(\"%d\", ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Total n` = c(\"270\", \n                sprintf(\"%d\", 2*n_per_group), \n                sprintf(\"%d\", 2*ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Power (approx)` = c(sprintf(\"%.0f%%\", power_current*100), \"80%\", \"90%\"),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(planning_table, caption = \"Table 2: Sample size recommendations assuming larger variance (SD ≈ ₹260) for conservative planning\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"# APA helpers (base R; webR-safe)\n\napa_p <- function(p) ifelse(p < .001, \"< .001\", sprintf(\"= %.3f\", p))\n\ncohen_d <- function(x, y){\n  n1 <- length(x); n2 <- length(y)\n  s1 <- var(x); s2 <- var(y)\n  s_pooled <- sqrt(((n1-1)*s1 + (n2-1)*s2)/(n1+n2-2))\n  d <- (mean(x)-mean(y))/s_pooled\n  # Hedges g small-sample correction\n  J <- 1 - 3/(4*(n1+n2)-9)\n  g <- J*d\n  c(d=d, g=g)\n}\n\ncohen_h <- function(p1, p2){\n  2*(asin(sqrt(p1)) - asin(sqrt(p2)))\n}\n\napa_t_line <- function(tt){\n  df <- unname(tt$parameter)\n  t  <- unname(tt$statistic)\n  p  <- tt$p.value\n  ci <- tt$conf.int\n  sprintf(\"t(%d) = %.2f, p %s, 95%% CI [%.2f, %.2f]\",\n          round(df), t, apa_p(p), ci[1], ci[2])\n}\n\napa_lm_line <- function(fit){\n  s <- summary(fit)\n  b1 <- coef(s)[2,1]; se <- coef(s)[2,2]\n  t  <- coef(s)[2,3]; p <- coef(s)[2,4]\n  ci <- confint.default(fit)[2,]   # Wald CI (profile not used)\n  r2 <- s$r.squared\n  sprintf(\"b = %.3f (SE = %.3f), t = %.2f, p %s, 95%% CI [%.3f, %.3f], R² = %.3f\",\n          b1, se, t, apa_p(p), ci[1], ci[2], r2)\n}\n\nor_ci <- function(fit, term){\n  s <- summary(fit)$coefficients\n  b <- s[term,1]; se <- s[term,2]\n  lo <- b - 1.96*se; hi <- b + 1.96*se\n  c(or = exp(b), lo = exp(lo), hi = exp(hi), b=b, se=se)\n}","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Generate synthetic data with unequal variances\nset.seed(3)\naov_a <- rnorm(120, mean = 1200, sd = 180)\naov_b <- rnorm(150, mean = 1270, sd = 260)\n\n# Descriptive statistics\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nsd_a <- sd(aov_a)\nsd_b <- sd(aov_b)\nvar_a <- var(aov_a)\nvar_b <- var(aov_b)\ndiff <- mean_b - mean_a\n\n# Variance ratio (smaller / larger)\nvar_ratio <- min(var_a, var_b) / max(var_a, var_b)\n\n# Welch t-test (unequal variances)\nwelch <- t.test(aov_b, aov_a, var.equal = FALSE)\n\n# Equal-variance t-test (pooled)\npooled <- t.test(aov_b, aov_a, var.equal = TRUE)\n\n# Extract test statistics\nwelch_t <- unname(welch$statistic)\nwelch_df <- unname(welch$parameter)\nwelch_p <- welch$p.value\nwelch_ci <- welch$conf.int\n\npooled_t <- unname(pooled$statistic)\npooled_df <- unname(pooled$parameter)\npooled_p <- pooled$p.value\npooled_ci <- pooled$conf.int","id":2,"options":{"autorun":"false","classes":"","code-summary":"Click to expand calculation code","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"welch-comparison-calculation","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Minimal HTML table (WebR-friendly)\nhtml_table <- function(df, caption = NULL, class = \"flair-table\"){\n  if (!is.null(caption)) cat(sprintf('<div class=\"flair-caption\">%s</div>', caption))\n  head <- paste0(\"<tr>\", paste(sprintf(\"<th>%s</th>\", names(df)), collapse=\"\"), \"</tr>\")\n  rows <- apply(df, 1, function(r) paste0(\"<tr>\", paste(sprintf(\"<td>%s</td>\", r), collapse=\"\"), \"</tr>\"))\n  wrap <- sprintf('<div class=\"%s-wrap\"><table class=\"%s\">%s%s</table></div>',\n                  class, class, head, paste(rows, collapse=\"\"))\n  cat(wrap)\n}\n\ncomparison_table <- data.frame(\n  Metric = c(\"Group A mean\", \"Group B mean\", \"Mean difference (B - A)\",\n             \"Group A SD\", \"Group B SD\",\n             \"Group A variance\", \"Group B variance\", \"Variance ratio\",\n             \"Welch t-statistic\", \"Welch df\", \"Welch p-value\",\n             \"Welch 95% CI lower\", \"Welch 95% CI upper\",\n             \"Pooled t-statistic\", \"Pooled df\", \"Pooled p-value\",\n             \"Pooled 95% CI lower\", \"Pooled 95% CI upper\"),\n  Value  = c(sprintf(\"₹%.1f\", mean_a),\n             sprintf(\"₹%.1f\", mean_b),\n             sprintf(\"₹%.1f\", diff),\n             sprintf(\"₹%.1f\", sd_a),\n             sprintf(\"₹%.1f\", sd_b),\n             sprintf(\"₹%.0f\", var_a),\n             sprintf(\"₹%.0f\", var_b),\n             sprintf(\"%.2f\", var_ratio),\n             sprintf(\"%.2f\", welch_t),\n             sprintf(\"%.1f\", welch_df),\n             sprintf(\"%.3f\", welch_p),\n             sprintf(\"₹%.1f\", welch_ci[1]),\n             sprintf(\"₹%.1f\", welch_ci[2]),\n             sprintf(\"%.2f\", pooled_t),\n             sprintf(\"%.0f\", pooled_df),\n             sprintf(\"%.3f\", pooled_p),\n             sprintf(\"₹%.1f\", pooled_ci[1]),\n             sprintf(\"₹%.1f\", pooled_ci[2])),\n  stringsAsFactors = FALSE\n)\nhtml_table(comparison_table, caption = \"Table 1: Comparison of Welch and equal-variance t-tests with variance diagnostics\")","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"comparison-table","message":"false","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"false"}},{"code":"# Recalculate for plotting\nset.seed(3)\naov_a <- rnorm(120, mean = 1200, sd = 180)\naov_b <- rnorm(150, mean = 1270, sd = 260)\n\nmean_a <- mean(aov_a)\nmean_b <- mean(aov_b)\nse_a <- sd(aov_a) / sqrt(120)\nse_b <- sd(aov_b) / sqrt(150)\n\nci_a_lower <- mean_a - 1.96 * se_a\nci_a_upper <- mean_a + 1.96 * se_a\nci_b_lower <- mean_b - 1.96 * se_b\nci_b_upper <- mean_b + 1.96 * se_b\n\nop <- par(mar = c(5, 5, 3.5, 2), xaxs = \"r\", yaxs = \"i\", cex = 0.95, family = \"sans\")\non.exit(par(op), add = TRUE)\n\nbp <- barplot(c(mean_a, mean_b), \n              names.arg = c(\"Group A (n=120)\", \"Group B (n=150)\"),\n              ylim = c(0, max(ci_a_upper, ci_b_upper) + 150),\n              ylab = \"Average Order Value (₹)\",\n              main = \"AOV Comparison Showing Unequal Variances\",\n              col = c(\"#95A5A6\", \"#2C3E50\"),\n              border = \"white\",\n              cex.main = 1.05, font.main = 2, cex.lab = 0.95)\n\narrows(bp[1], ci_a_lower, bp[1], ci_a_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#95A5A6\")\narrows(bp[2], ci_b_lower, bp[2], ci_b_upper, angle = 90, code = 3, length = 0.1, lwd = 2, col = \"#2C3E50\")\n\ntext(bp[1], mean_a + 100, sprintf(\"₹%.0f\\n(SD ₹%.0f)\", mean_a, sd(aov_a)), cex = 0.95, font = 2, col = \"#95A5A6\")\ntext(bp[2], mean_b + 120, sprintf(\"₹%.0f\\n(SD ₹%.0f)\", mean_b, sd(aov_b)), cex = 0.95, font = 2, col = \"#2C3E50\")\n\nbox(col = \"#95A5A6\", lwd = 1.2)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":"150","echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-align":"center","fig-alt":"Bar plots comparing AOV for groups A (₹1,204, SD ₹151) and B (₹1,282, SD ₹291) with error bars representing 95% confidence intervals demonstrating unequal variance.","fig-asp":"0.6","fig-cap":"Figure 1. Average order value comparison between groups showing unequal variances with 95% confidence intervals.","fig-format":"png","fig-height":5,"fig-width":"7","label":"fig-variance-comparison","message":"false","out-height":"","out-width":"100%","output":"true","read-only":"false","results":"markup","warning":"false"}},{"code":"# Sample size calculation for Welch t-test\n# Use larger SD as conservative estimate\nlarger_sd <- 260\nmean_diff_target <- 70\n\nz_alpha <- qnorm(1 - 0.05/2)\nz_beta  <- qnorm(0.80)\n\n# Cohen's d for target effect\nd_target <- mean_diff_target / larger_sd\n\n# Conservative sample size per group (assumes equal n)\nn_per_group <- ceiling(2 * (z_alpha + z_beta)^2 / d_target^2)\n\n# Approximate power for current unequal sample (harmonic mean approach)\nn_harmonic <- 2 / (1/120 + 1/150)\nd_current <- 68 / 260\nncp_current <- d_current * sqrt(n_harmonic / 2)\npower_current <- round(1 - pt(qt(0.975, 228), 228, ncp_current) + \n                       pt(qt(0.025, 228), 228, ncp_current), 2)\n\nplanning_table <- data.frame(\n  Scenario = c(\"Current test (unequal n)\", \"Recommended (80% power)\", \"High power (90%)\"),\n  `n per group` = c(\"120/150 (unequal)\", \n                    sprintf(\"%d\", n_per_group), \n                    sprintf(\"%d\", ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Total n` = c(\"270\", \n                sprintf(\"%d\", 2*n_per_group), \n                sprintf(\"%d\", 2*ceiling(2 * (z_alpha + qnorm(0.90))^2 / d_target^2))),\n  `Power (approx)` = c(sprintf(\"%.0f%%\", power_current*100), \"80%\", \"90%\"),\n  check.names = FALSE,\n  stringsAsFactors = FALSE\n)\n\nhtml_table(planning_table, caption = \"Table 2: Sample size recommendations assuming larger variance (SD ≈ ₹260) for conservative planning\")","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"echo":"false","editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"sample-size-planning","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"asis","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -1804,11 +1807,11 @@ window.Quarto = {
 <meta property="og:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="Welch t-Test vs Equal-Variance t-Test: Comparing Methods – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/04-welch-t.html">
@@ -1822,11 +1825,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1849,20 +1849,12 @@ window.Quarto = {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -1937,10 +1929,6 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -2038,11 +2026,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#case" id="toc-case" class="nav-link active" data-scroll-target="#case">Case</a></li>
-  <li><a href="#case-1" id="toc-case-1" class="nav-link" data-scroll-target="#case-1">Case</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#calculation" id="toc-calculation" class="nav-link" data-scroll-target="#calculation">Calculation</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#visualisation" id="toc-visualisation" class="nav-link" data-scroll-target="#visualisation">Visualisation</a></li>
   <li><a href="#results-and-interpretation" id="toc-results-and-interpretation" class="nav-link" data-scroll-target="#results-and-interpretation">Results and Interpretation</a></li>
   <li><a href="#sample-size-planning" id="toc-sample-size-planning" class="nav-link" data-scroll-target="#sample-size-planning">Sample Size Planning</a></li>
   <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
@@ -2400,20 +2387,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>TL;DR: Group A <strong>₹1,201</strong> (SD ₹180) vs B <strong>₹1,269</strong> (SD ₹260), n=50 each; <strong>variance ratio 2.08</strong> suggests unequal variance; <strong>Welch p=0.18 (ns)</strong>, <strong>Equal-variance p=0.13 (ns)</strong>, <strong>difference ₹68 [−32, +168]</strong>; decision: <strong>use Welch for safety, no evidence of AOV difference</strong>.</p>
+<p>TL;DR: Group A <strong>₹1,204</strong> (SD ₹151, n=120) vs B <strong>₹1,282</strong> (SD ₹291, n=150). <strong>Variance ratio 0.27</strong>, so the variances differ. <strong>Welch t(234) = 2.85, p = .005</strong>, <strong>equal-variance t(268) = 2.67, p = .008</strong>, <strong>difference ₹78 [₹24, ₹132]</strong>. Decision: <strong>report Welch, and B’s higher AOV is statistically significant</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Welch t-test vs equal-variance t-test comparison.<br>
-Estimate: ₹1,201 vs ₹1,269 and CI −₹32, +₹168.<br>
-Data: A/B test, variables group, order_value, n = 100.<br>
-Action: Use Welch when variance ratio &gt;2; no significant AOV difference found.</p>
+Estimate: ₹1,204 vs ₹1,282, difference ₹78, Welch CI ₹24, ₹132.<br>
+Data: 2 store locations, variables group, order_value, n = 270 (120 and 150).<br>
+Action: Use Welch when one variance is more than twice the other. Group B’s AOV is significantly higher.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
-</section>
-<section id="case-1" class="level2">
-<h2 class="anchored" data-anchor-id="case-1">Case</h2>
-<p>You are analyzing average order value (AOV) from two store locations with different sample sizes (120 vs.&nbsp;150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? How does the variance ratio influence this decision?</p>
+<p>You are analysing average order value (AOV) from two store locations with different sample sizes (120 vs.&nbsp;150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? How does the variance ratio influence this decision?</p>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
@@ -2449,12 +2433,12 @@ Action: Use Welch when variance ratio &gt;2; no significant AOV difference found
 </tr>
 <tr class="odd">
 <td><code>sd_a</code></td>
-<td>Group A SD (approx)</td>
+<td>Group A SD used to simulate</td>
 <td>₹180</td>
 </tr>
 <tr class="even">
 <td><code>sd_b</code></td>
-<td>Group B SD (approx)</td>
+<td>Group B SD used to simulate</td>
 <td>₹260</td>
 </tr>
 </tbody>
@@ -2465,9 +2449,9 @@ Action: Use Welch when variance ratio &gt;2; no significant AOV difference found
 <p>We compare two approaches to testing differences in means:</p>
 <ol type="1">
 <li><strong>Equal-variance t-test (Student’s t-test)</strong>: Assumes both groups have equal population variances and pools sample variances to estimate standard error</li>
-<li><strong>Welch t-test</strong>: Does not assume equal variances and adjusts degrees of freedom based on the variance ratio <span class="citation" data-cites="Welch1947">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>)</span></li>
+<li><strong>Welch t-test</strong>: Allows the variances to differ and adjusts degrees of freedom to the variance ratio <span class="citation" data-cites="Welch1947">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>)</span></li>
 </ol>
-<p>The Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. <strong>A ratio below 0.5 or above 2.0 suggests meaningful variance differences and strongly favors using the Welch t-test.</strong></p>
+<p>The Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. <strong>A ratio below 0.5, meaning one variance is more than twice the other, suggests meaningful variance differences and strongly favours the Welch t-test.</strong></p>
 <p>Test statistic for equal-variance t-test: <span class="math display">\[
 t = \frac{\bar{x}_A - \bar{x}_B}{s_p\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}, \quad s_p^2 = \frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A + n_B - 2}.
 \]</span></p>
@@ -2482,25 +2466,25 @@ t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}}, 
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="visualization" class="level2">
-<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="results-and-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="results-and-interpretation">Results and Interpretation</h2>
-<p>Group A had a mean AOV of <strong>₹1,201</strong> (SD = ₹180, n=120), while group B had a mean AOV of <strong>₹1,269</strong> (SD = ₹260, n=150). The <strong>variance ratio of 0.48</strong> (calculated as 32,400 / 67,600) indicates substantial heterogeneity in variances between groups, strongly favoring the Welch t-test.</p>
-<p><strong>Welch t-test results</strong>: The Welch t-test found a statistically significant difference, t(229) = -2.30, p = 0.022, with a 95% CI of [₹11.4, ₹124.6] for the mean difference <span class="citation" data-cites="Welch1947 R-base">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>; <a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>. The adjusted degrees of freedom (229 vs.&nbsp;the pooled 268) reflect the variance inequality.</p>
-<p><strong>Equal-variance t-test results</strong>: The equal-variance t-test yielded t(268) = -2.39, p = 0.018, with a 95% CI of [₹12.2, ₹123.8]. While the results are similar in this case, the equal-variance assumption is violated (variance ratio = 0.48 &lt; 0.5).</p>
-<p><strong>Method comparison</strong>: When variances differ substantially (ratio &lt; 0.5 or &gt; 2.0), especially with unequal sample sizes, the equal-variance t-test can produce inflated Type I error rates. The Welch t-test is more conservative and robust. In this case, both tests reach the same conclusion (p &lt; 0.05), but the Welch test provides more reliable inference given the variance inequality.</p>
-<p><strong>Decision framework.</strong> With a variance ratio of 0.48 and unequal sample sizes, use the <strong>Welch t-test</strong> as your primary result. The mean difference of ₹68 (95% CI [₹11, ₹125]) suggests group B has higher AOV, but the wide confidence interval indicates uncertainty about the magnitude. Always check variance homogeneity before choosing your test, and default to Welch when in doubt - it is robust even when variances are equal.</p>
+<p>Group A had a mean AOV of <strong>₹1,203.5</strong> (SD = ₹151.4, n=120), while group B had a mean AOV of <strong>₹1,281.7</strong> (SD = ₹290.5, n=150). The <strong>variance ratio of 0.27</strong> (22,919 / 84,416) shows group B’s variance is nearly 4 times group A’s, which strongly favours the Welch t-test.</p>
+<p><strong>Welch t-test results</strong>: The Welch t-test found a statistically significant difference, t(233.6) = 2.85, p = .005, with a 95% CI of [₹24.0, ₹132.2] for the mean difference (B − A) <span class="citation" data-cites="Welch1947 R-base">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>; <a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>. The adjusted degrees of freedom (233.6 against the pooled 268) reflect the variance inequality.</p>
+<p><strong>Equal-variance t-test results</strong>: The equal-variance t-test gave t(268) = 2.67, p = .008, with a 95% CI of [₹20.5, ₹135.7]. The 2 tests agree here, but the equal-variance assumption is violated (variance ratio 0.27, below 0.5).</p>
+<p><strong>Method comparison</strong>: When variances differ substantially and sample sizes are unequal, the equal-variance t-test gives the wrong error rate. It is too liberal when the smaller group has the larger variance, and too conservative when, as here, the larger group has it. The Welch t-test keeps the error rate close to 5% either way. Both tests reach the same conclusion here (p &lt; .05), and Welch is the result to report.</p>
+<p><strong>Decision framework.</strong> With a variance ratio of 0.27 and unequal sample sizes, use the <strong>Welch t-test</strong> as your primary result. The mean difference of ₹78 (95% CI [₹24, ₹132]) shows group B has the higher AOV, and the wide interval leaves the size of that gap uncertain. Check variance homogeneity before choosing your test, and default to Welch when in doubt, since it holds up even when the variances are equal.</p>
 </section>
 <section id="sample-size-planning" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size-planning">Sample Size Planning</h2>
-<p>For future tests with similar variance structure, plan for adequate power using the more conservative Welch approach. To detect a ₹70 difference with 80% power at α = 0.05 (assuming larger SD ≈ ₹260), you need approximately <strong>175 per group</strong> (350 total). Your current test achieved approximately <strong>55% power</strong> with the unequal sample sizes.</p>
+<p>For future tests with similar variance structure, plan for adequate power using the more conservative Welch approach. To detect a ₹70 difference with 80% power at α = 0.05 (assuming the larger SD, about ₹260), you need about <strong>217 per group</strong> (434 total), or 290 per group for 90% power. Planned this way, the current test, with 120 and 150 customers, had about <strong>57% power</strong> for a difference of ₹68.</p>
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p><strong>Note</strong>: When planning with unequal variances, use the larger standard deviation for conservative sample size estimates. Equal sample sizes are preferable as they maximize power and minimize Type I error inflation.</p>
+<p><strong>Note</strong>: When planning with unequal variances, use the larger standard deviation for conservative sample size estimates. Equal sample sizes are preferable as they maximise power and minimise Type I error inflation.</p>
 </section>
 <section id="assumptions" class="level2">
 <h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
@@ -2510,16 +2494,16 @@ t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}}, 
 <li><strong>Random sampling</strong>: Customers were randomly sampled from their respective populations</li>
 <li><strong>Approximate normality</strong>: AOV distributions are approximately normal, or sample sizes are large enough (n ≥ 30 per group) for the Central Limit Theorem to apply</li>
 </ul>
-<p><strong>Additional assumption for equal-variance t-test</strong>: - <strong>Homogeneity of variance</strong>: Population variances are equal (violated in this case with ratio = 0.48)</p>
-<p><strong>Welch t-test advantage</strong>: Does not require equal variances; adjusts degrees of freedom automatically based on observed variance ratio.</p>
+<p><strong>Additional assumption for equal-variance t-test</strong>: - <strong>Homogeneity of variance</strong>: Population variances are equal (violated here, with a ratio of 0.27)</p>
+<p><strong>Welch t-test advantage</strong>: Works with unequal variances, adjusting degrees of freedom automatically to the observed variance ratio.</p>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>This analysis does not account for:</p>
+<p>This analysis leaves out:</p>
 <ul>
 <li><strong>Levene’s test or F-test</strong>: We used variance ratio as a rule of thumb (&lt; 0.5 or &gt; 2.0). Formal tests like Levene’s test can assess homogeneity statistically</li>
 <li><strong>Non-normality</strong>: With smaller samples or extreme skewness, consider non-parametric alternatives (Mann-Whitney U test)</li>
-<li><strong>Paired data</strong>: If measurements are paired, use paired t-test instead</li>
+<li><strong>Paired data</strong>: For paired measurements, use the paired t-test</li>
 <li><strong>Multiple groups</strong>: For more than two groups, use ANOVA with appropriate variance adjustments (Welch ANOVA)</li>
 </ul>
 <p>When variance ratio is between 0.5 and 2.0 with equal sample sizes, both tests typically give similar results. Always report which test you used and justify the choice based on variance diagnostics.</p>
@@ -2566,7 +2550,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about/",
+    "url": "https://flairmi.com/about.html",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },

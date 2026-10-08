@@ -11,7 +11,7 @@
 <meta name="keywords" content="linear regression, OLS, ad spend, revenue, R-squared, slope interpretation">
 <meta name="description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
 
-<title>Simple Linear Regression: Modeling Revenue from Ad Spend - Flair Marketing Intelligence</title>
+<title>Simple Linear Regression: Modelling Revenue from Ad Spend - Flair Marketing Intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,6 +54,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -63,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +205,8 @@ div.csl-indent {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -1800,15 +1803,15 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../assets/css/consent.css">
 <link rel="stylesheet" href="../../assets/css/blog-tables.css">
-<meta property="og:title" content="Simple Linear Regression: Modeling Revenue from Ad Spend – Flair Marketing Intelligence">
+<meta property="og:title" content="Simple Linear Regression: Modelling Revenue from Ad Spend – Flair Marketing Intelligence">
 <meta property="og:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
-<meta name="twitter:title" content="Simple Linear Regression: Modeling Revenue from Ad Spend – Flair Marketing Intelligence">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
+<meta name="twitter:title" content="Simple Linear Regression: Modelling Revenue from Ad Spend – Flair Marketing Intelligence">
 <meta name="twitter:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/05-simple-regression.html">
@@ -1822,11 +1825,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1849,20 +1849,12 @@ window.Quarto = {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../textbooks/dmarketing.html">
@@ -1937,10 +1929,6 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -2038,11 +2026,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#case" id="toc-case" class="nav-link active" data-scroll-target="#case">Case</a></li>
-  <li><a href="#case-1" id="toc-case-1" class="nav-link" data-scroll-target="#case-1">Case</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#calculation" id="toc-calculation" class="nav-link" data-scroll-target="#calculation">Calculation</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#visualisation" id="toc-visualisation" class="nav-link" data-scroll-target="#visualisation">Visualisation</a></li>
   <li><a href="#results-and-interpretation" id="toc-results-and-interpretation" class="nav-link" data-scroll-target="#results-and-interpretation">Results and Interpretation</a></li>
   <li><a href="#residual-diagnostics" id="toc-residual-diagnostics" class="nav-link" data-scroll-target="#residual-diagnostics">Residual Diagnostics</a></li>
   <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
@@ -2343,7 +2330,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Simple Linear Regression: Modeling Revenue from Ad Spend</h1>
+<h1 class="title">Simple Linear Regression: Modelling Revenue from Ad Spend</h1>
   <div class="quarto-categories">
     <div class="quarto-category">statistics</div>
     <div class="quarto-category">regression</div>
@@ -2400,19 +2387,16 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>TL;DR: Revenue = <strong>₹10k + ₹0.50 per ₹1 ad spend</strong> (n=200); <strong>slope CI [₹0.44, ₹0.56]</strong>, <strong>R²=0.80 (strong fit)</strong>, <strong>residuals look normal</strong>; decision: <strong>each ₹1k ad spend yields ~₹500 revenue, but check for nonlinearity at higher budgets</strong>.</p>
+<p>TL;DR: Revenue = <strong>₹47.9k + ₹0.31 per ₹1 ad spend</strong> (n=200 weeks), <strong>slope CI [₹0.16, ₹0.45]</strong>, <strong>R² = 0.08 (weak fit)</strong>, <strong>residuals look normal</strong>. Decision: <strong>the link is real but small. Each ₹1k of ad spend brings back about ₹306 of revenue, less than it costs</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Simple linear regression (OLS).<br>
-Estimate: ₹0.50 per ₹1 and CI ₹0.44, ₹0.56.<br>
+Estimate: ₹0.31 per ₹1 and CI ₹0.16, ₹0.45.<br>
 Data: Marketing campaign, variables ad_spend, revenue, n = 200.<br>
-Action: Each ₹1k ad spend yields ~₹500 revenue; monitor for nonlinearity.</p>
+Action: Each ₹1k of ad spend yields about ₹306 of revenue. Review the budget before adding spend.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
-</section>
-<section id="case-1" class="level2">
-<h2 class="anchored" data-anchor-id="case-1">Case</h2>
 <p>You manage digital advertising for an e-commerce platform and want to quantify the relationship between weekly ad spend and revenue. Specifically: For every additional rupee spent on ads, how much revenue can you expect? Is the relationship strong enough to justify continued investment? What portion of revenue variation is explained by ad spend alone?</p>
 </section>
 <section id="dataset" class="level2">
@@ -2445,7 +2429,7 @@ Action: Each ₹1k ad spend yields ~₹500 revenue; monitor for nonlinearity.</p
 <tr class="even">
 <td>Range</td>
 <td>Spend range</td>
-<td>₹0 - ₹100,000</td>
+<td>₹0 to ₹100,000</td>
 </tr>
 </tbody>
 </table>
@@ -2472,19 +2456,19 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="visualization" class="level2">
-<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="results-and-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="results-and-interpretation">Results and Interpretation</h2>
-<p>The regression analysis reveals a statistically significant positive relationship between ad spend and revenue. The estimated slope is <strong>₹0.300</strong> (95% CI [₹0.240, ₹0.360]), meaning that <strong>for every additional rupee spent on advertising, revenue increases by approximately ₹0.30 on average</strong> <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
-<p>The intercept of <strong>₹49,991</strong> represents the estimated baseline revenue when ad spend is zero. While statistically significant (p &lt; 0.001), this should be interpreted cautiously as the model may not hold outside the observed spend range (₹0 - ₹100,000).</p>
-<p><strong>Model fit</strong>: The R² value of <strong>0.419 (42%)</strong> indicates that ad spend explains about 42% of the variation in weekly revenue. The remaining 58% is due to other factors not included in this simple model (e.g., seasonality, competitor actions, organic traffic, product mix).</p>
-<p><strong>Statistical significance</strong>: The F-statistic (F(1, 198) = 142.7, p &lt; 0.001) confirms the overall model is highly significant. The slope’s p-value &lt; 0.001 indicates strong evidence that the relationship is not due to chance.</p>
-<p><strong>Practical significance</strong>: A ₹0.30 return per rupee suggests a 30% marginal return on ad spend in terms of revenue (not profit). This is a gross relationship - you must subtract costs to determine actual ROI. The 95% CI [₹0.24, ₹0.36] suggests the true marginal return could range from 24% to 36%.</p>
-<p><strong>Decision framework.</strong> The positive and significant relationship supports continued ad investment, but <strong>association does not imply causation</strong>. Before making budget decisions: (1) Check residual diagnostics for violations of regression assumptions, (2) Consider confounding variables (e.g., seasonality, external events), (3) Calculate net profit impact after subtracting ad costs and other variable costs, (4) Test whether the relationship holds at different spend levels (non-linearity), (5) Consider building a multiple regression model with additional predictors for better prediction accuracy.</p>
+<p>The regression analysis reveals a statistically significant positive relationship between ad spend and revenue. The estimated slope is <strong>₹0.306</strong> (95% CI [₹0.164, ₹0.447]), meaning that <strong>for every additional rupee spent on advertising, revenue increases by about ₹0.31 on average</strong>, b = 0.306, SE = 0.072, t(198) = 4.26, p &lt; .001 <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
+<p>The intercept of <strong>₹47,899</strong> (95% CI [₹39,517, ₹56,281]) is the estimated baseline revenue when ad spend is zero. Read it with care, since the model describes the observed spend range of ₹0 to ₹100,000 and nothing beyond it.</p>
+<p><strong>Model fit</strong>: The R² value of <strong>0.084 (8%)</strong> indicates that ad spend explains about 8% of the variation in weekly revenue (adjusted R² = 0.079). The other 92% comes from factors outside this simple model, such as seasonality, competitor actions, organic traffic, and product mix. The residual standard error of ₹29,674 shows how widely weekly revenue scatters around the line.</p>
+<p><strong>Statistical significance</strong>: The F-statistic, F(1, 198) = 18.12, p &lt; .001, confirms the model is significant. The relationship is real but small.</p>
+<p><strong>Practical significance</strong>: Each extra rupee of spend brings back about ₹0.31 of revenue, and the 95% CI [₹0.16, ₹0.45] stays below ₹1. On these numbers, extra ad spend returns less revenue than it costs, before any other costs are subtracted.</p>
+<p><strong>Decision framework.</strong> The relationship is significant, yet the marginal return falls short of the spend, and <strong>association alone is weak evidence of cause</strong>. Before making budget decisions: (1) Check residual diagnostics for violations of regression assumptions, (2) Consider confounding variables (e.g., seasonality, external events), (3) Calculate net profit impact after subtracting ad costs and other variable costs, (4) Test whether the relationship holds at different spend levels (non-linearity), (5) Consider building a multiple regression model with additional predictors for better prediction accuracy.</p>
 </section>
 <section id="residual-diagnostics" class="level2">
 <h2 class="anchored" data-anchor-id="residual-diagnostics">Residual Diagnostics</h2>
@@ -2499,16 +2483,16 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <li><strong>Linearity</strong>: The relationship between spend and revenue is linear (check with scatterplot and residual plot)</li>
 <li><strong>Independence</strong>: Weekly observations are independent (no autocorrelation across time)</li>
 <li><strong>Homoscedasticity</strong>: Constant variance of residuals across all levels of spend (check residuals vs.&nbsp;fitted plot)</li>
-<li><strong>Normality of residuals</strong>: Residuals are approximately normally distributed (check Q-Q plot; less critical with n = 200)</li>
-<li><strong>No measurement error in predictor</strong>: Ad spend is measured accurately</li>
-<li><strong>No omitted variable bias</strong>: Other important predictors are not correlated with spend</li>
+<li><strong>Normality of residuals</strong>: Residuals are approximately normally distributed (check the Q-Q plot, less critical with n = 200)</li>
+<li><strong>Accurate predictor</strong>: Ad spend is measured accurately</li>
+<li><strong>Unconfounded predictor</strong>: Other important predictors are uncorrelated with spend</li>
 </ul>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>This analysis does not account for:</p>
+<p>This analysis leaves out:</p>
 <ul>
-<li><strong>Causality</strong>: Correlation does not prove ad spend causes revenue. Reverse causality is possible (higher revenue allows more ad spend)</li>
+<li><strong>Causality</strong>: Correlation stops short of proving that ad spend causes revenue. Reverse causality is possible (higher revenue allows more ad spend)</li>
 <li><strong>Confounding variables</strong>: Seasonality, promotions, competitor actions, product launches, organic trends</li>
 <li><strong>Non-linear relationships</strong>: Diminishing returns at high spend levels, or threshold effects at low spend</li>
 <li><strong>Time series structure</strong>: Temporal autocorrelation, lagged effects (ads may influence future weeks)</li>
@@ -2522,10 +2506,10 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <div class="copy-row">
 <p><button class="copy-btn" data-target="#apa-cite">Copy APA</button> <button class="copy-btn" data-target="#bibtex-cite">Copy BibTeX</button></p>
 </div>
-<pre id="apa-cite">Sharafuddin, M. A. (2025, October 25). Simple linear regression: Modeling revenue from ad spend. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/05-simple-regression.html</pre>
+<pre id="apa-cite">Sharafuddin, M. A. (2025, October 25). Simple linear regression: Modelling revenue from ad spend. Flair Marketing Intelligence (FlairMI). https://flairmi.com/blog/posts/05-simple-regression.html</pre>
 <pre id="bibtex-cite">@online{sharafuddin2025-regression,
   author = {Sharafuddin, Mohammed Ali},
-  title  = {Simple Linear Regression: Modeling Revenue from Ad Spend},
+  title  = {Simple Linear Regression: Modelling Revenue from Ad Spend},
   year   = {2025},
   date   = {2025-10-25},
   url    = {https://flairmi.com/blog/posts/05-simple-regression.html},
@@ -2559,7 +2543,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "author": {
     "@type": "Person",
     "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about/",
+    "url": "https://flairmi.com/about.html",
     "affiliation": {"@type": "Organization", "name": "FlairMI", "url": "https://flairmi.com"},
     "identifier": "https://orcid.org/0000-0001-5247-2964"
   },
@@ -2583,7 +2567,7 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ali_sharafuddin2025,
   author = {Ali Sharafuddin, Mohammed},
-  title = {Simple {Linear} {Regression:} {Modeling} {Revenue} from {Ad}
+  title = {Simple {Linear} {Regression:} {Modelling} {Revenue} from {Ad}
     {Spend}},
   date = {2025-10-25},
   url = {https://flairmi.com/blog/posts/05-simple-regression.html},
@@ -2591,7 +2575,7 @@ R Core Team. 2024. <em>R: A Language and Environment for Statistical Computing</
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ali_sharafuddin2025" class="csl-entry quarto-appendix-citeas" role="listitem">
 Ali Sharafuddin, Mohammed. 2025. <span>“Simple Linear Regression:
-Modeling Revenue from Ad Spend.”</span> October 25, 2025. <a href="https://flairmi.com/blog/posts/05-simple-regression.html">https://flairmi.com/blog/posts/05-simple-regression.html</a>.
+Modelling Revenue from Ad Spend.”</span> October 25, 2025. <a href="https://flairmi.com/blog/posts/05-simple-regression.html">https://flairmi.com/blog/posts/05-simple-regression.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

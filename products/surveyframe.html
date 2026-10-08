@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -41,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-5a3a4a915ef92ed7a9248716e90e93bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5fb671ab4a18d7a498ea5d05098ac797.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -182,6 +183,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -195,21 +198,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/css/consent.css">
+<link rel="stylesheet" href="../assets/css/walkthrough.css?v=20261008m">
 <meta property="og:title" content="surveyframe – Flair Marketing Intelligence">
 <meta property="og:description" content="surveyframe is an R package on CRAN for end-to-end survey research: instrument design, static HTML export, response quality checking, psychometric diagnostics, and reproducible reporting.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="surveyframe – Flair Marketing Intelligence">
 <meta name="twitter:description" content="surveyframe is an R package on CRAN for end-to-end survey research: instrument design, static HTML export, response quality checking, psychometric diagnostics, and reproducible reporting.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="FlairMI — textbooks, templates, and analytics tools by Mohammed Ali Sharafuddin">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/products/surveyframe.html">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -217,11 +221,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo light-content" width="48" height="48">
-    <img src="../assets/images/flairmi-mark-white.svg" alt="FlairMI" class="navbar-logo dark-content" width="48" height="48">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Flair Marketing Intelligence</span>
+    <img src="../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -244,20 +245,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/ddmm.html">
- <span class="dropdown-text">Statistics for Managers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../textbooks/marai.html">
- <span class="dropdown-text">Marketing Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../textbooks/asrda.html">
- <span class="dropdown-text">Survey Research in R</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://mohammedalisharafuddin.github.io/dmm-textbook/">
+ <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../textbooks/dmarketing.html">
@@ -332,10 +325,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../products/ethos.html">
- <span class="dropdown-text">Ethos</span></a>
   </li>  
     </ul>
   </li>
@@ -424,107 +413,76 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">surveyframe</h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">surveyframe</h1>
-</div>
+<header id="title-block-header">
 
-<div>
-  <div class="description">
-    surveyframe is an R package on CRAN for end-to-end survey research: instrument design, static HTML export, response quality checking, psychometric diagnostics, and reproducible reporting.
-  </div>
-</div>
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://flairmi.com/about.html">Mohammed Ali Sharafuddin</a> <a href="https://orcid.org/0000-0001-5247-2964" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://flairmi.com">
-            FlairMI
-            </a>
-          </p>
-      </div>
-  </div>
-
-<div class="quarto-title-meta">
-
-      
-  
-    
-  </div>
-  
-
+<p class="author">Mohammed Ali Sharafuddin</p>
 
 </header>
 
 
-<div class="grid align-items-center mb-4">
-  <div class="g-col-12 g-col-lg-7">
-    <span class="badge badge-live">Live on CRAN</span> <span class="text-muted small">v0.4.2</span>
-    <h1>surveyframe</h1>
-    <p class="lead" style="max-width: 60ch;">
-      surveyframe is an R package covering the full survey research pipeline:
-      instrument design, static HTML export, a Shiny module, response quality
-      checking, psychometric diagnostics, and reproducible HTML reporting.
-    </p>
-    <div class="d-flex flex-wrap gap-2 mt-3">
-      <a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">View on CRAN</a>
-      <a class="btn btn-outline-primary" href="https://github.com/MohammedAliSharafuddin/surveyframe" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-outline-primary" href="../products/index.html">Back to products</a>
+<!-- file: products/surveyframe.qmd
+     2 one-screen sections, the same design as products/ethos.qmd: a hero
+     with a click-through of surveyframe 0.4.2's own builder, as it ships in
+     the CRAN package (builder/survey_builder.html, no theme added), then
+     install and links. The study is "Supervision and wellbeing in
+     postgraduate study", opened through the builder's Open button, with its
+     4 research questions declared through the interface. The last 2 steps
+     are surveyframe's rendered report for the same study (render_report(),
+     run in the local Ethos on 8 October 2026). Images are in
+     assets/images/products/surveyframe/walkthrough/, behaviour in
+     assets/js/walkthrough.js. -->
+<div class="wt-wrap">
+<section class="wt-hero" aria-labelledby="wt-title">
+  <div class="wt-intro">
+    <span class="badge badge-live">Live on CRAN, version 0.4.2</span>
+    <h1 id="wt-title" class="wt-h1">surveyframe: from questionnaire to report, in R.</h1>
+    <p class="lead wt-lead">Build the questionnaire, declare the analysis plan, and render the report.</p>
+  </div>
+
+  <figure class="wt-demo figure" data-demo="" data-dir="/assets/images/products/surveyframe/walkthrough/" data-alt="surveyframe screen: " aria-labelledby="wt-demo-cap">
+    <script type="application/json" data-steps="">["Start a questionnaire, or open one", "The questionnaire, item by item", "An item with reverse coding", "Choose from the question types", "Preview it as respondents will", "Analyse: your variables and scales", "A research question, with a method suggested", "The method list", "Roles and the decision rule", "4 research questions, declared before data", "Run preview", "Report outline", "The report: codebook and checks", "The report: a result with its chart"]</script>
+    <figcaption id="wt-demo-cap" class="visually-hidden">Walkthrough of building a questionnaire and its analysis plan in surveyframe's builder, then the rendered report, in 14 screens.</figcaption>
+    <div class="wt-frame">
+      <img data-el="img" src="../assets/images/products/surveyframe/walkthrough/step-1.webp" width="1600" height="1000" alt="surveyframe screen: start a questionnaire, or open one." class="figure-img">
     </div>
-    <div class="grid mt-3">
-      <div class="g-col-12 g-col-sm-4"><div class="border rounded-3 p-3 h-100"><strong class="d-block">Instrument to report</strong><span class="text-muted small">Design, field, and analyse a survey without leaving R</span></div></div>
-      <div class="g-col-12 g-col-sm-4"><div class="border rounded-3 p-3 h-100"><strong class="d-block">Static HTML export</strong><span class="text-muted small">A dependency-free survey respondents can complete in a browser</span></div></div>
-      <div class="g-col-12 g-col-sm-4"><div class="border rounded-3 p-3 h-100"><strong class="d-block">Reproducible reporting</strong><span class="text-muted small">Declared analysis plans and HTML reports from the same package</span></div></div>
+    <div class="wt-progress" aria-hidden="true"><span data-el="bar"></span></div>
+    <div class="wt-demo-bar">
+      <p class="wt-demo-text" aria-live="polite">
+        <span class="wt-demo-count"><span data-el="n">1</span> of <span data-el="total">14</span></span>
+        <span class="wt-demo-title" data-el="title">Start a questionnaire, or open one</span>
+      </p>
+      <div class="wt-demo-nav">
+        <button type="button" class="btn btn-outline-dark" data-prev="" disabled="">Back</button>
+        <button type="button" class="btn btn-primary" data-next="">Next</button>
+      </div>
+    </div>
+  </figure>
+</section>
+
+<section id="get" class="wt-request" aria-labelledby="wt-get-h">
+  <div class="wt-request-box">
+    <h2 id="wt-get-h" class="anchored">Get surveyframe</h2>
+    <p class="wt-request-lead">Free and open source. Install it in R, then open the builder.</p>
+    <pre class="wt-code"><code>install.packages("surveyframe")
+surveyframe::launch_builder()</code></pre>
+    <div class="wt-links">
+      <a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe">View on CRAN</a>
+      <a class="btn btn-outline-dark" href="https://mohammedalisharafuddin.github.io/surveyframe/">Documentation</a>
+      <a class="btn btn-outline-dark" href="https://github.com/MohammedAliSharafuddin/surveyframe">GitHub</a>
+      <a class="btn btn-outline-dark" href="https://doi.org/10.32614/CRAN.package.surveyframe">Cite</a>
     </div>
   </div>
-</div>
-<section id="why-it-exists" class="level2">
-<h2 class="anchored" data-anchor-id="why-it-exists">Why It Exists</h2>
-<p>Survey research workflows are usually stitched together from 4 disconnected tools: one for the instrument, another for hosting responses, another for cleaning, another for analysis. surveyframe keeps the whole sequence, instrument design through reproducible reporting, in one R package, which is documented on the <a href="../blog/index.html">blog</a> and this site’s field-type series.</p>
 </section>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
-<ul>
-<li>Design survey instruments with <code>sf_item()</code> and export a static, dependency-free HTML survey respondents can complete in a browser</li>
-<li>Run response quality checks and psychometric diagnostics (reliability, item diagnostics) on collected data</li>
-<li>Declare an analysis plan before data collection and run it with <code>run_analysis_plan()</code> for a reproducible HTML report</li>
-<li>Use the optional ggplot2 layer, including a diverging bar chart for Likert-type results</li>
-</ul>
-</section>
-<section id="new-in-0.4" class="level2">
-<h2 class="anchored" data-anchor-id="new-in-0.4">New In 0.4</h2>
-<p>Version 0.4.0 was a major release. 0.4.1 followed it on CRAN, and 0.4.2, published on 25 September 2026, is a defect-fix release.</p>
-<p><strong>Multi-criteria decision analysis.</strong> 10 methods, AHP, ANP, DEMATEL, VIKOR, MOORA, SMART, WASPAS, PROMETHEE, ELECTRE, and TOPSIS, each carrying a literature citation. 2 new item types collect the judgement data inside the instrument itself, a pairwise comparison on Saaty’s 1-to-9 scale and a constant-sum criteria weighting. AHP judgements are screened for consistency against Saaty’s random-index table, and <code>sensitivity_analysis()</code> reports how far a ranking moves when the weights are perturbed.</p>
-<p><strong>Text analysis for open-ended responses.</strong> 9 methods, from term and n-gram frequency through keyword-in-context concordance, co-occurrence, sentiment, and LDA or structural topic modelling. They run through the same analysis plan and reporting pipeline as every other method family.</p>
-<p><strong>Small-sample corrections.</strong> The Hodges-Lehmann shift estimator, the paired Wilcoxon pseudomedian interval, the exact odds-ratio interval on Fisher’s test, and Firth’s bias-reduced logistic regression for data prone to separation. An advisory on <code>assumption_report()</code> flags when a study is small enough for these to matter.</p>
-<p><strong>Disclosed amendments and a provenance trail.</strong> <code>amend_sframe()</code> appends a timestamped entry to an ordered log, recording why an instrument changed and which fields moved, and never overwrites earlier entries. Changes touching the analysis plan or a model require a deviation report, and the sign-off field records a reviewer’s name or the literal <code>none</code>, so an unreviewed change stays visible. <code>link_git_commit()</code> ties the file’s SHA-256 hash to a specific Git commit. An edit that bypasses <code>amend_sframe()</code> still fails the integrity check exactly as before.</p>
-<p><strong>Teaching and export, added in 0.4.1.</strong> A library of 22 demos, each showing one thing, reachable with <code>sframe_demos()</code> and openable as an editable Quarto notebook. <code>sframe_export_labelled()</code> writes SPSS <code>.sav</code> or Stata <code>.dta</code> with the question wording and response options attached, so variables arrive labelled rather than as bare codes.</p>
-</section>
-<section id="access-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="access-and-limitations">Access And Limitations</h2>
-<p>surveyframe is free and open source, installed with <code>install.packages("surveyframe")</code>. It is an R package, not a browser tool, so it requires a local R installation to use.</p>
-</section>
-<section id="install" class="level2">
-<h2 class="anchored" data-anchor-id="install">Install</h2>
-<div class="d-flex flex-wrap gap-2 mt-3">
-  <a class="btn btn-primary" href="https://CRAN.R-project.org/package=surveyframe" target="_blank" rel="noopener">install.packages("surveyframe")</a>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -946,6 +904,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script src="../assets/js/walkthrough.js?v=20261008m" defer=""></script>
 
 
 
