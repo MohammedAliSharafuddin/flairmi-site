@@ -9,7 +9,7 @@
 <meta name="author" content="Mohammed Ali Sharafuddin">
 <meta name="dcterms.date" content="2025-10-25">
 <meta name="keywords" content="linear regression, OLS, ad spend, revenue, R-squared, slope interpretation">
-<meta name="description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
+<meta name="description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared and diagnostic insights.">
 
 <title>Simple Linear Regression: Modelling Revenue from Ad Spend - Flair Marketing Intelligence</title>
 <style>
@@ -1804,12 +1804,12 @@ window.Quarto = {
 <link rel="stylesheet" href="../../assets/css/consent.css">
 <link rel="stylesheet" href="../../assets/css/blog-tables.css">
 <meta property="og:title" content="Simple Linear Regression: Modelling Revenue from Ad Spend – Flair Marketing Intelligence">
-<meta property="og:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
+<meta property="og:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared and diagnostic insights.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
 <meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="Simple Linear Regression: Modelling Revenue from Ad Spend – Flair Marketing Intelligence">
-<meta name="twitter:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.">
+<meta name="twitter:description" content="Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared and diagnostic insights.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
@@ -2341,7 +2341,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div>
   <div class="description">
-    Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.
+    Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared and diagnostic insights.
   </div>
 </div>
 
@@ -2465,7 +2465,7 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <h2 class="anchored" data-anchor-id="results-and-interpretation">Results and Interpretation</h2>
 <p>The regression analysis reveals a statistically significant positive relationship between ad spend and revenue. The estimated slope is <strong>₹0.306</strong> (95% CI [₹0.164, ₹0.447]), meaning that <strong>for every additional rupee spent on advertising, revenue increases by about ₹0.31 on average</strong>, b = 0.306, SE = 0.072, t(198) = 4.26, p &lt; .001 <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>.</p>
 <p>The intercept of <strong>₹47,899</strong> (95% CI [₹39,517, ₹56,281]) is the estimated baseline revenue when ad spend is zero. Read it with care, since the model describes the observed spend range of ₹0 to ₹100,000 and nothing beyond it.</p>
-<p><strong>Model fit</strong>: The R² value of <strong>0.084 (8%)</strong> indicates that ad spend explains about 8% of the variation in weekly revenue (adjusted R² = 0.079). The other 92% comes from factors outside this simple model, such as seasonality, competitor actions, organic traffic, and product mix. The residual standard error of ₹29,674 shows how widely weekly revenue scatters around the line.</p>
+<p><strong>Model fit</strong>: The R² value of <strong>0.084 (8%)</strong> indicates that ad spend explains about 8% of the variation in weekly revenue (adjusted R² = 0.079). The other 92% comes from factors outside this simple model, such as seasonality, competitor actions, organic traffic and product mix. The residual standard error of ₹29,674 shows how widely weekly revenue scatters around the line.</p>
 <p><strong>Statistical significance</strong>: The F-statistic, F(1, 198) = 18.12, p &lt; .001, confirms the model is significant. The relationship is real but small.</p>
 <p><strong>Practical significance</strong>: Each extra rupee of spend brings back about ₹0.31 of revenue, and the 95% CI [₹0.16, ₹0.45] stays below ₹1. On these numbers, extra ad spend returns less revenue than it costs, before any other costs are subtracted.</p>
 <p><strong>Decision framework.</strong> The relationship is significant, yet the marginal return falls short of the spend, and <strong>association alone is weak evidence of cause</strong>. Before making budget decisions: (1) Check residual diagnostics for violations of regression assumptions, (2) Consider confounding variables (e.g., seasonality, external events), (3) Calculate net profit impact after subtracting ad costs and other variable costs, (4) Test whether the relationship holds at different spend levels (non-linearity), (5) Consider building a multiple regression model with additional predictors for better prediction accuracy.</p>
@@ -2474,7 +2474,7 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <h2 class="anchored" data-anchor-id="residual-diagnostics">Residual Diagnostics</h2>
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p><strong>Diagnostic interpretation</strong>: The residuals vs.&nbsp;fitted plot should show random scatter around zero (no pattern). The Q-Q plot should show points following the diagonal line. Deviations suggest violations of assumptions (heteroscedasticity, non-normality, or non-linearity).</p>
+<p><strong>Diagnostic interpretation</strong>: The residuals vs.&nbsp;fitted plot should show random scatter around zero (no pattern). The Q-Q plot should show points following the diagonal line. Deviations suggest violations of assumptions (heteroscedasticity, non-normality or non-linearity).</p>
 </section>
 <section id="assumptions" class="level2">
 <h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
@@ -2496,7 +2496,7 @@ R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{\sum(y_i - \hat{y}
 <li><strong>Confounding variables</strong>: Seasonality, promotions, competitor actions, product launches, organic trends</li>
 <li><strong>Non-linear relationships</strong>: Diminishing returns at high spend levels, or threshold effects at low spend</li>
 <li><strong>Time series structure</strong>: Temporal autocorrelation, lagged effects (ads may influence future weeks)</li>
-<li><strong>Interaction effects</strong>: Ad effectiveness may vary by channel, audience segment, or time period</li>
+<li><strong>Interaction effects</strong>: Ad effectiveness may vary by channel, audience segment or time period</li>
 <li><strong>Costs</strong>: This models revenue, not profit. Must subtract ad costs and variable costs to assess true ROI</li>
 </ul>
 <p><strong>Recommendations for improvement</strong>: - Add time trends and seasonal dummies to control for temporal patterns - Use multiple regression with additional predictors (organic traffic, email campaigns, competitor spend) - Test for non-linearity with polynomial terms or segmented regression - Consider time series models (ARIMA, VAR) if temporal dependencies exist - Conduct controlled experiments (randomized ad spend levels) to establish causality - Calculate contribution margin and customer lifetime value for profit-focused analysis</p>
@@ -2538,7 +2538,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "Simple Linear Regression: Modeling Revenue from Ad Spend",
-  "description": "Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared, and diagnostic insights.",
+  "description": "Estimate the relationship between advertising spend and revenue using ordinary least squares regression, with slope, confidence intervals, R-squared and diagnostic insights.",
   "datePublished": "2025-10-25",
   "author": {
     "@type": "Person",

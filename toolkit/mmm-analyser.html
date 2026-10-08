@@ -202,11 +202,11 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:description" content="MMM Analyser is a free browser tool for marketing mix modelling with carryover and diminishing returns, fitted to spend and sales history.">
 <meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/mmm-analyser.jpg">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI, and response curves per channel.">
+<meta property="og:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.">
 <meta name="twitter:title" content="MMM Analyser – Flair Marketing Intelligence">
 <meta name="twitter:description" content="MMM Analyser is a free browser tool for marketing mix modelling with carryover and diminishing returns, fitted to spend and sales history.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/mmm-analyser.jpg">
-<meta name="twitter:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI, and response curves per channel.">
+<meta name="twitter:image:alt" content="MMM Analyser: A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/toolkit/mmm-analyser.html">
@@ -471,7 +471,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <p>For each channel, spend is carried forward by an adstock rate, then passed through a saturation curve. Sales are modelled as a base, plus trend, seasonality, and price, plus the channel effects.</p>
 <div class="tk-formula">Adstock A<sub>t</sub> = spend<sub>t</sub> + θ × A<sub>t−1</sub>, with θ from 0 to 0.8<br>Saturation h(A) = A ÷ (A + K), with K a multiple of the channel's mean adstock<br>Sales<sub>t</sub> = b<sub>0</sub> + trend + seasonality + γ × price<sub>t</sub> + Σ β<sub>c</sub> × h<sub>c</sub>(A<sub>c,t</sub>)<br>ROI = contribution ÷ spend. Marginal ROI = extra sales from one more unit of spend at the current level</div>
-<p>For fixed θ and K the model is linear and is fitted by ordinary least squares. θ and K are chosen per channel by a search that maximises R². The tool warns when the data are too short for the number of coefficients, when a channel’s effect is negative, and when two channels’ spend moves together so closely that their effects cannot be separated. Treat results as a starting point for testing budget shifts.</p>
+<p>For fixed θ and K the model is linear and is fitted by ordinary least squares. θ and K are chosen per channel by a search that maximises R². The tool warns when the data are too short for the number of coefficients, when a channel’s effect is negative and when two channels’ spend moves together so closely that their effects cannot be separated. Treat results as a starting point for testing budget shifts.</p>
 </section>
 <section id="frequently-asked-questions" class="level2">
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
@@ -490,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
   </details>
   <details class="faq-item">
     <summary>How much data does marketing mix modelling need?</summary>
-    <p class="faq-answer">Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality, and price, that is about 90 periods, or roughly 2 years of weekly data.</p>
+    <p class="faq-answer">Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality and price, that is about 90 periods or roughly 2 years of weekly data.</p>
   </details>
   <details class="faq-item">
     <summary>Is this MMM Analyser free?</summary>
@@ -509,7 +509,7 @@ ul.task-list li input[type="checkbox"] {
   "url": "https://flairmi.com/toolkit/mmm-analyser.html",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any (runs in browser)",
-  "description": "A free browser marketing mix model. It fits sales to channel spend with geometric adstock and saturation, plus price, trend, and seasonality, and reports each channel's contribution, ROI, marginal ROI, and response curve.",
+  "description": "A free browser marketing mix model. It fits sales to channel spend with geometric adstock and saturation, plus price, trend and seasonality and reports each channel's contribution, ROI, marginal ROI and response curve.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -561,7 +561,7 @@ ul.task-list li input[type="checkbox"] {
       "name": "How much data does marketing mix modelling need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality, and price, that is about 90 periods, or roughly 2 years of weekly data."
+        "text": "Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality and price, that is about 90 periods or roughly 2 years of weekly data."
       }
     },
     {

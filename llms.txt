@@ -8,8 +8,8 @@ School of Business, Villa College, Maldives. ORCID:
 [0000-0001-5247-2964](https://orcid.org/0000-0001-5247-2964).
 
 The site publishes open textbooks, free Excel templates, browser-based
-tools, an R package, and consulting services for business analytics,
-marketing analytics, small-sample research methods, and reproducible
+tools, an R package and consulting services for business analytics,
+marketing analytics, small-sample research methods and reproducible
 workflows.
 
 ## Textbooks
@@ -39,7 +39,7 @@ Managerial Judgement** (live, rolling release)
 **The Evidence-Based Digital Marketer** (live, rolling release)
 
 - A 15-week open digital marketing course textbook (MKTG3001): campaign
-  strategy, open marketing analytics, and responsible AI. 6 of its 15 weeks
+  strategy, open marketing analytics and responsible AI. 6 of its 15 weeks
   are live, free under CC BY 4.0.
 - [Web edition](https://mohammedalisharafuddin.github.io/digital-marketing-2026/)
 - [FlairMI page](https://flairmi.com/textbooks/dmarketing.html)
@@ -53,7 +53,7 @@ checks, scale scoring, psychometric diagnostics, analysis planning, and
 reproducible HTML reporting. The instrument's analysis plan is declared
 before data collection and executed as declared. Version 0.4.0 added
 multi-criteria decision analysis (10 methods), text analysis of open-ended
-responses (9 methods), small-sample corrections, and a disclosed-amendment
+responses (9 methods), small-sample corrections and a disclosed-amendment
 and Git-linked provenance trail. Version 0.4.1 added a 22-demo teaching
 library and labelled SPSS and Stata export. MIT licence, free.
 
@@ -75,7 +75,7 @@ FlairMI publishes applied statistics tutorials and product notes at
 
 - ["surveyframe 0.4.1 is on CRAN"](https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html)
   is the 0.4.1 release notes: a 22-demo teaching library, labelled SPSS and
-  Stata export, seeded reproducible reports, and 2 fixes for defects that
+  Stata export, seeded reproducible reports and 2 fixes for defects that
   could silently corrupt collected data.
 - ["surveyframe 0.4.0 is on CRAN"](https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html)
   is the 0.4.0 release notes: 10 multi-criteria decision analysis methods,
@@ -83,7 +83,7 @@ FlairMI publishes applied statistics tutorials and product notes at
   and a disclosed-amendment and Git-linked provenance trail.
 - ["surveyframe 0.3.3 is on CRAN"](https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html)
   — the 0.3.3 release notes: redesigned exported survey, WCAG 2.2 AA
-  accessibility, an opt-in ggplot2 plotting layer, and a diverging bar
+  accessibility, an opt-in ggplot2 plotting layer and a diverging bar
   chart for Likert results.
 - ["Why the analysis plan comes first"](https://flairmi.com/blog/posts/08-analysis-plan-before-data.html)
   — why surveyframe requires the analysis plan to be declared before data
@@ -110,58 +110,58 @@ FlairMI publishes applied statistics tutorials and product notes at
 - **[Persona Builder](https://flairmi.com/tools/persona-builder/)**
   (live, free) — a UX research and marketing persona card builder with
   four detail levels (the fourth records the persona stage by stage for
-  customer journey mapping) and PNG, PDF, and JSON export, data stays in
+  customer journey mapping) and PNG, PDF and JSON export, data stays in
   the browser's local storage.
 ## Marketing Toolkit Hub
 
-[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 32 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device, and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
+[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 32 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
 
 ### [Strategic Analysis](https://flairmi.com/toolkit/strategic-analysis.html)
 
-- **[SWOT Analysis Builder](https://flairmi.com/toolkit/swot-analysis.html)** (in progress): Strengths, weaknesses, opportunities, and threats, each item scored by impact and likelihood and ranked on a scatter plot.
-- **[PESTEL Analysis Builder](https://flairmi.com/toolkit/pestel-analysis.html)** (in progress): Political, economic, social, technological, environmental, and legal factors, each scored and ranked on a scatter plot.
-- **[Porter's Five Forces Analyser](https://flairmi.com/toolkit/porters-five-forces.html)** (in progress): Score the five competitive forces, see them on a radar chart, and rate the industry's attractiveness.
+- **[SWOT Analysis Builder](https://flairmi.com/toolkit/swot-analysis.html)** (in progress): Strengths, weaknesses, opportunities and threats, each item scored by impact and likelihood and ranked on a scatter plot.
+- **[PESTEL Analysis Builder](https://flairmi.com/toolkit/pestel-analysis.html)** (in progress): Political, economic, social, technological, environmental and legal factors, each scored and ranked on a scatter plot.
+- **[Porter's Five Forces Analyser](https://flairmi.com/toolkit/porters-five-forces.html)** (in progress): Score the five competitive forces, see them on a radar chart and rate the industry's attractiveness.
 - **[Ansoff Matrix Tool](https://flairmi.com/toolkit/ansoff-matrix.html)** (in progress): Plot growth initiatives by product and market newness, sized by investment, with a risk score for each.
 
 ### [Customer Understanding](https://flairmi.com/toolkit/customer-understanding.html)
 
-- **[Persona Builder](https://flairmi.com/tools/persona-builder/)** (live): Persona cards at four detail levels, including a stage-by-stage Journey level, exported as PNG, PDF, or JSON.
-- **[STP Builder](https://flairmi.com/toolkit/stp-builder.html)** (in progress): Segmentation, targeting, and positioning as an interactive dot-cluster diagram, ending in a draft campaign brief.
-- **[Customer Journey Mapper](https://flairmi.com/toolkit/customer-journey-mapper.html)** (live): Each persona's goal, emotion, and segment stage by stage, with a service blueprint and pain points tagged to the four service gaps.
-- **[Importance-Performance Analysis Matrix](https://flairmi.com/toolkit/ipa-matrix.html)** (in progress): Attributes plotted by importance and performance, sorted into concentrate here, keep up the good work, low priority, and possible overkill.
-- **[RFM Segmentation Tool](https://flairmi.com/toolkit/rfm-segmentation.html)** (in progress): Paste transactions, score customers on recency, frequency, and monetary value, and get segments with an action for each.
-- **[Value Proposition Canvas](https://flairmi.com/toolkit/value-proposition-canvas.html)** (in progress): An interactive canvas: drag notes onto the value map and customer profile, match them, and see how well they fit.
+- **[Persona Builder](https://flairmi.com/tools/persona-builder/)** (live): Persona cards at four detail levels, including a stage-by-stage Journey level, exported as PNG, PDF or JSON.
+- **[STP Builder](https://flairmi.com/toolkit/stp-builder.html)** (in progress): Segmentation, targeting and positioning as an interactive dot-cluster diagram, ending in a draft campaign brief.
+- **[Customer Journey Mapper](https://flairmi.com/toolkit/customer-journey-mapper.html)** (live): Each persona's goal, emotion and segment stage by stage, with a service blueprint and pain points tagged to the four service gaps.
+- **[Importance-Performance Analysis Matrix](https://flairmi.com/toolkit/ipa-matrix.html)** (in progress): Attributes plotted by importance and performance, sorted into concentrate here, keep up the good work, low priority and possible overkill.
+- **[RFM Segmentation Tool](https://flairmi.com/toolkit/rfm-segmentation.html)** (in progress): Paste transactions, score customers on recency, frequency and monetary value and get segments with an action for each.
+- **[Value Proposition Canvas](https://flairmi.com/toolkit/value-proposition-canvas.html)** (in progress): An interactive canvas: drag notes onto the value map and customer profile, match them and see how well they fit.
 
 ### [Portfolio and Growth](https://flairmi.com/toolkit/portfolio-and-growth.html)
 
-- **[BCG Growth-Share Matrix](https://flairmi.com/toolkit/bcg-matrix.html)** (in progress): Products by market growth and relative share, sized by revenue, classed as stars, cash cows, question marks, or dogs.
+- **[BCG Growth-Share Matrix](https://flairmi.com/toolkit/bcg-matrix.html)** (in progress): Products by market growth and relative share, sized by revenue, classed as stars, cash cows, question marks or dogs.
 - **[GE-McKinsey Matrix](https://flairmi.com/toolkit/ge-mckinsey-matrix.html)** (in progress): Weighted industry attractiveness and competitive strength factors, scored per business unit on a nine-box grid.
-- **[Product Life Cycle Stage Identifier](https://flairmi.com/toolkit/product-life-cycle.html)** (in progress): Fit an S-curve to sales history, estimate the current life cycle stage, and see mix priorities for it.
+- **[Product Life Cycle Stage Identifier](https://flairmi.com/toolkit/product-life-cycle.html)** (in progress): Fit an S-curve to sales history, estimate the current life cycle stage and see mix priorities for it.
 - **[Diffusion of Innovation Adopter Calculator](https://flairmi.com/toolkit/diffusion-of-innovation.html)** (in progress): Place adoption on Rogers' curve, see which adopter group you are reaching, and fit the Bass model for a forecast.
 
 ### [Planning and Execution](https://flairmi.com/toolkit/planning-and-execution.html)
 
 - **[7Ps Marketing Mix Planner](https://flairmi.com/toolkit/7ps-marketing-mix-planner.html)** (in progress): Plan all seven Ps against one segment and positioning statement, and rate how well each P supports it.
-- **[Campaign Brief Generator](https://flairmi.com/toolkit/campaign-brief-generator.html)** (in progress): Pull persona, positioning, and mix plan into one brief with objective, KPIs, budget split, and timeline.
+- **[Campaign Brief Generator](https://flairmi.com/toolkit/campaign-brief-generator.html)** (in progress): Pull persona, positioning and mix plan into one brief with objective, KPIs, budget split and timeline.
 - **[UTM Campaign URL Builder](https://flairmi.com/toolkit/utm-builder.html)** (in progress): Tag campaign links with consistent UTM parameters, singly or in bulk, with warnings for common naming mistakes.
-- **[Meta Tag and Open Graph Preview](https://flairmi.com/toolkit/meta-tag-preview.html)** (in progress): Preview a page in search and social cards, check title and description length, and copy the tags.
+- **[Meta Tag and Open Graph Preview](https://flairmi.com/toolkit/meta-tag-preview.html)** (in progress): Preview a page in search and social cards, check title and description length and copy the tags.
 - **[Schema Markup Generator](https://flairmi.com/toolkit/schema-markup-generator.html)** (in progress): Write JSON-LD structured data for eight common schema types, with required fields flagged.
-- **[Canonical Tag Generator](https://flairmi.com/toolkit/canonical-tag-generator.html)** (in progress): Normalise URL variants, strip tracking parameters, and see which duplicates collapse into one canonical tag.
-- **[Readability and Headline Analyser](https://flairmi.com/toolkit/readability-analyser.html)** (in progress): Flesch scores, sentence-length chart, long sentences marked, and a headline check for length and keyword position.
+- **[Canonical Tag Generator](https://flairmi.com/toolkit/canonical-tag-generator.html)** (in progress): Normalise URL variants, strip tracking parameters and see which duplicates collapse into one canonical tag.
+- **[Readability and Headline Analyser](https://flairmi.com/toolkit/readability-analyser.html)** (in progress): Flesch scores, sentence-length chart, long sentences marked and a headline check for length and keyword position.
 - **[Robots.txt and Sitemap Generator](https://flairmi.com/toolkit/robots-sitemap-generator.html)** (in progress): Write robots.txt rules, including choices for AI crawlers, and a valid sitemap.xml from a URL list.
-- **[Colour Contrast Checker](https://flairmi.com/toolkit/colour-contrast-checker.html)** (in progress): WCAG contrast ratios with AA and AAA results, a suggested passing colour, and a whole-palette check.
-- **[Hashtag and Character Counter](https://flairmi.com/toolkit/hashtag-character-counter.html)** (in progress): Count characters, hashtags, mentions, and links against nine social platforms' limits, with X's link rule applied.
+- **[Colour Contrast Checker](https://flairmi.com/toolkit/colour-contrast-checker.html)** (in progress): WCAG contrast ratios with AA and AAA results, a suggested passing colour and a whole-palette check.
+- **[Hashtag and Character Counter](https://flairmi.com/toolkit/hashtag-character-counter.html)** (in progress): Count characters, hashtags, mentions and links against nine social platforms' limits, with X's link rule applied.
 - **[A/B Test Sample Size and Significance Calculator](https://flairmi.com/toolkit/ab-test-calculator.html)** (in progress): Size an A/B test before it runs, then test the result with a z-test and confidence intervals.
 
 ### [Performance and Analytics](https://flairmi.com/toolkit/performance-and-analytics.html)
 
 - **[SERVQUAL Gap Analysis](https://flairmi.com/toolkit/servqual-gap-analysis.html)** (live): Expectations against perceptions on 22 items across five dimensions, weighted, with the largest gaps ranked.
 - **[Brand Equity Assessor](https://flairmi.com/toolkit/brand-equity-assessor.html)** (in progress): Keller's six brand building blocks scored and drawn as the brand resonance pyramid, with the weakest block flagged.
-- **[Customer Lifetime Value Calculator](https://flairmi.com/toolkit/clv-calculator.html)** (in progress): Discounted customer lifetime value with retention, the CLV to CAC ratio, and months to recover acquisition cost.
+- **[Customer Lifetime Value Calculator](https://flairmi.com/toolkit/clv-calculator.html)** (in progress): Discounted customer lifetime value with retention, the CLV to CAC ratio and months to recover acquisition cost.
 - **[Price Elasticity Calculator](https://flairmi.com/toolkit/price-elasticity-calculator.html)** (in progress): Arc and point elasticity from two price points, elastic or inelastic, with revenue and profit curves.
 - **[Net Promoter Score Tracker](https://flairmi.com/toolkit/nps-tracker.html)** (in progress): Calculate NPS with its margin of error and track it across survey waves, with a test of whether a change is real.
 - **[Marketing Attribution Comparison](https://flairmi.com/toolkit/attribution-comparison.html)** (in progress): Apply five attribution models to the same conversion paths and see how each channel's credit changes.
-- **[MMM Analyser](https://flairmi.com/toolkit/mmm-analyser.html)** (in progress): A small marketing mix model with carryover and diminishing returns, showing contribution, ROI, and response curves per channel.
+- **[MMM Analyser](https://flairmi.com/toolkit/mmm-analyser.html)** (in progress): A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.
 
 The classroom case in the Customer Journey Mapper, and its feeling words, are adapted from O'Rourke et al. (2026), Consumer Behavior in Tourism and Hospitality, 21(3), 382-401, CC BY 4.0.
 
@@ -185,7 +185,7 @@ Break-Even Analysis, Competitive Positioning Map.
 ## Consulting and workshops
 
 FlairMI offers consulting and workshops in business analytics, marketing
-analytics, small-sample methods, and reproducible workflows, by enquiry.
+analytics, small-sample methods and reproducible workflows, by enquiry.
 No published pricing or checkout exists yet.
 
 - [Services](https://flairmi.com/services/)

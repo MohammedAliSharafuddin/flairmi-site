@@ -9,7 +9,7 @@
 <meta name="author" content="Mohammed Ali Sharafuddin">
 <meta name="dcterms.date" content="2026-07-23">
 <meta name="keywords" content="surveyframe, multiple_choice, R package, survey design, analysis plan, cochran’s Q, sf_item">
-<meta name="description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran’s Q test it produces. Copy-pasteable R throughout.">
+<meta name="description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table and Cochran’s Q test it produces. Copy-pasteable R throughout.">
 
 <title>surveyframe Field Types: Multiple Choice - Flair Marketing Intelligence</title>
 <style>
@@ -237,12 +237,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../assets/css/consent.css">
 <link rel="stylesheet" href="../../assets/css/blog-tables.css">
 <meta property="og:title" content="surveyframe Field Types: Multiple Choice – Flair Marketing Intelligence">
-<meta property="og:description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran’s Q test it produces. Copy-pasteable R throughout.">
+<meta property="og:description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table and Cochran’s Q test it produces. Copy-pasteable R throughout.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
 <meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:title" content="surveyframe Field Types: Multiple Choice – Flair Marketing Intelligence">
-<meta name="twitter:description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran’s Q test it produces. Copy-pasteable R throughout.">
+<meta name="twitter:description" content="Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table and Cochran’s Q test it produces. Copy-pasteable R throughout.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
@@ -485,7 +485,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran’s Q test it produces. Copy-pasteable R throughout.
+    Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table and Cochran’s Q test it produces. Copy-pasteable R throughout.
   </div>
 </div>
 
@@ -635,7 +635,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 </div>
 <section id="the-case" class="level2">
 <h2 class="anchored" data-anchor-id="the-case">The case</h2>
-<p>You run a small store and just finished a promotion across 5 channels: Instagram, Facebook, TikTok, an email newsletter, and in-store signage. You want to know which of those channels people noticed, and a visitor may have noticed more than one. That calls for more than <code>single_choice</code>, since forcing one answer would throw away real information. It is a <code>multiple_choice</code> question: select all that apply.</p>
+<p>You run a small store and just finished a promotion across 5 channels: Instagram, Facebook, TikTok, an email newsletter and in-store signage. You want to know which of those channels people noticed, and a visitor may have noticed more than one. That calls for more than <code>single_choice</code>, since forcing one answer would throw away real information. It is a <code>multiple_choice</code> question: select all that apply.</p>
 </section>
 <section id="declare-the-item" class="level2">
 <h2 class="anchored" data-anchor-id="declare-the-item">Declare the item</h2>
@@ -761,7 +761,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <p>This is the one screenshot on the page. What follows is that file, unedited, at phone width, with Instagram and TikTok both ticked.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../assets/images/blog/11-multiple-choice-export.png" class="img-fluid figure-img" alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'Which of these did you notice our store's promotion on? Select all that apply.' with five lettered checkbox cards, two ticked, and a Submit button." width="320"></p>
+<p><img src="../../assets/images/blog/11-multiple-choice-export.png" class="img-fluid figure-img" alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'Which of these did you notice our store's promotion on? Select all that apply.' with five lettered checkbox cards, two ticked and a Submit button." width="320"></p>
 <figcaption>Real output of <code>export_static_survey()</code> for the <code>channels_used</code> item: five bordered checkbox cards lettered A to E, two of them ticked (Instagram and TikTok), and a Submit button.</figcaption>
 </figure>
 </div>
@@ -811,7 +811,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <blockquote class="blockquote">
 <p>Cochran’s Q(4, N = 140) = 43.56, p &lt; .001</p>
 </blockquote>
-<p>That result answers one question: are the 5 rates different at all. Which channel leads, and by how much, is the next question, and the one a reader wants answered first.</p>
+<p>That result answers one question: are the 5 rates different at all. Which channel leads, and by how much, is the next question and the one a reader wants answered first.</p>
 </section>
 <section id="the-multi-response-summary-table" class="level2">
 <h2 class="anchored" data-anchor-id="the-multi-response-summary-table">The multi-response summary table</h2>
@@ -887,7 +887,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <li>The column names in the plan’s <code>roles$measures</code>, and in <code>responses</code>, to match your new <code>id</code> (surveyframe names each binary column <code>&lt;id&gt;_&lt;value&gt;</code>)</li>
 <li>The probabilities in the synthetic <code>responses</code>, or point <code>read_responses()</code> at your real data</li>
 </ol>
-<p>The codebook, the export, and the multi-response summary table work the same way regardless of how many options the question offers.</p>
+<p>The codebook, the export and the multi-response summary table work the same way regardless of how many options the question offers.</p>
 <div class="flair-cta">
 <p><strong>Get surveyframe</strong></p>
 <p><code>install.packages("surveyframe")</code></p>
@@ -1363,7 +1363,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "surveyframe Field Types: Multiple Choice"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table, and Cochran's Q test it produces. Copy-pasteable R throughout."</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Declare a multiple_choice question in surveyframe and see the real codebook, exported survey, multi-response summary table and Cochran's Q test it produces. Copy-pasteable R throughout."</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-07-23</span></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> en</span></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [surveyframe, R packages, survey research, how-to]</span></span>
@@ -1498,7 +1498,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb8-137"><a href="#cb8-137" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a><span class="fu">## The case</span></span>
 <span id="cb8-139"><a href="#cb8-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a>You run a small store and just finished a promotion across 5 channels: Instagram, Facebook, TikTok, an email newsletter, and in-store signage. You want to know which of those channels people noticed, and a visitor may have noticed more than one. That calls for more than <span class="in">`single_choice`</span>, since forcing one answer would throw away real information. It is a <span class="in">`multiple_choice`</span> question: select all that apply.</span>
+<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a>You run a small store and just finished a promotion across 5 channels: Instagram, Facebook, TikTok, an email newsletter and in-store signage. You want to know which of those channels people noticed, and a visitor may have noticed more than one. That calls for more than <span class="in">`single_choice`</span>, since forcing one answer would throw away real information. It is a <span class="in">`multiple_choice`</span> question: select all that apply.</span>
 <span id="cb8-141"><a href="#cb8-141" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-142"><a href="#cb8-142" aria-hidden="true" tabindex="-1"></a><span class="fu">## Declare the item</span></span>
 <span id="cb8-143"><a href="#cb8-143" aria-hidden="true" tabindex="-1"></a></span>
@@ -1572,7 +1572,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb8-221"><a href="#cb8-221" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-222"><a href="#cb8-222" aria-hidden="true" tabindex="-1"></a>This is the one screenshot on the page. What follows is that file, unedited, at phone width, with Instagram and TikTok both ticked.</span>
 <span id="cb8-223"><a href="#cb8-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-224"><a href="#cb8-224" aria-hidden="true" tabindex="-1"></a><span class="al">![Real output of `export_static_survey()` for the `channels_used` item: five bordered checkbox cards lettered A to E, two of them ticked (Instagram and TikTok), and a Submit button.](/assets/images/blog/11-multiple-choice-export.png)</span>{fig-alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'Which of these did you notice our store's promotion on? Select all that apply.' with five lettered checkbox cards, two ticked, and a Submit button." width="320px"}</span>
+<span id="cb8-224"><a href="#cb8-224" aria-hidden="true" tabindex="-1"></a><span class="al">![Real output of `export_static_survey()` for the `channels_used` item: five bordered checkbox cards lettered A to E, two of them ticked (Instagram and TikTok), and a Submit button.](/assets/images/blog/11-multiple-choice-export.png)</span>{fig-alt="Screenshot of a real surveyframe exported survey at phone width, showing the question 'Which of these did you notice our store's promotion on? Select all that apply.' with five lettered checkbox cards, two ticked and a Submit button." width="320px"}</span>
 <span id="cb8-225"><a href="#cb8-225" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-226"><a href="#cb8-226" aria-hidden="true" tabindex="-1"></a><span class="fu">## Write the analysis plan before you collect anything</span></span>
 <span id="cb8-227"><a href="#cb8-227" aria-hidden="true" tabindex="-1"></a></span>
@@ -1626,7 +1626,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb8-281"><a href="#cb8-281" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-282"><a href="#cb8-282" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`r rq1$apa`</span></span>
 <span id="cb8-283"><a href="#cb8-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-284"><a href="#cb8-284" aria-hidden="true" tabindex="-1"></a>That result answers one question: are the 5 rates different at all. Which channel leads, and by how much, is the next question, and the one a reader wants answered first.</span>
+<span id="cb8-284"><a href="#cb8-284" aria-hidden="true" tabindex="-1"></a>That result answers one question: are the 5 rates different at all. Which channel leads, and by how much, is the next question and the one a reader wants answered first.</span>
 <span id="cb8-285"><a href="#cb8-285" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-286"><a href="#cb8-286" aria-hidden="true" tabindex="-1"></a><span class="fu">## The multi-response summary table</span></span>
 <span id="cb8-287"><a href="#cb8-287" aria-hidden="true" tabindex="-1"></a></span>
@@ -1678,7 +1678,7 @@ pre,code,pre code{white-space:pre-wrap;word-break:break-word;}
 <span id="cb8-339"><a href="#cb8-339" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The column names in the plan's <span class="in">`roles$measures`</span>, and in <span class="in">`responses`</span>, to match your new <span class="in">`id`</span> (surveyframe names each binary column <span class="in">`&lt;id&gt;_&lt;value&gt;`</span>)</span>
 <span id="cb8-340"><a href="#cb8-340" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The probabilities in the synthetic <span class="in">`responses`</span>, or point <span class="in">`read_responses()`</span> at your real data</span>
 <span id="cb8-341"><a href="#cb8-341" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-342"><a href="#cb8-342" aria-hidden="true" tabindex="-1"></a>The codebook, the export, and the multi-response summary table work the same way regardless of how many options the question offers.</span>
+<span id="cb8-342"><a href="#cb8-342" aria-hidden="true" tabindex="-1"></a>The codebook, the export and the multi-response summary table work the same way regardless of how many options the question offers.</span>
 <span id="cb8-343"><a href="#cb8-343" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-344"><a href="#cb8-344" aria-hidden="true" tabindex="-1"></a>::: {.flair-cta}</span>
 <span id="cb8-345"><a href="#cb8-345" aria-hidden="true" tabindex="-1"></a>**Get surveyframe**</span>
