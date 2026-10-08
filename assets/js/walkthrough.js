@@ -22,6 +22,36 @@
   fit();
   window.addEventListener("resize", fit);
 
+  // Cite panel: the button shows the citation, and each Copy button copies
+  // the text of the block it names.
+  document.querySelectorAll("[data-cite-toggle]").forEach(function (btn) {
+    var panel = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!panel) return;
+    btn.addEventListener("click", function () {
+      var open = panel.hidden;
+      panel.hidden = !open;
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var src = document.querySelector(btn.getAttribute("data-copy"));
+      if (!src) return;
+      var done = function () {
+        var label = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = label; }, 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(src.innerText.trim()).then(done, function () {});
+      } else {
+        var r = document.createRange(); r.selectNodeContents(src);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        document.execCommand("copy"); sel.removeAllRanges(); done();
+      }
+    });
+  });
+
   document.querySelectorAll("[data-demo]").forEach(function (demo) {
     var q = function (name) { return demo.querySelector('[data-el="' + name + '"]'); };
     var data = demo.querySelector("script[data-steps]");
