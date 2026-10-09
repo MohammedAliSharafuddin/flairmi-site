@@ -7,9 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammed Ali Sharafuddin">
-<meta name="description" content="SERVQUAL Gap Analysis is a free browser tool that scores expectations against perceptions across the five service quality dimensions.">
+<meta name="dcterms.date" content="2026-09-25">
+<meta name="keywords" content="surveyframe, CRAN, R package, bug fixes, data collection, Google Sheets, scale scoring, reproducibility">
+<meta name="description" content="surveyframe 0.4.2 is a defect-fix release: 31 blocker defects from an external review, chiefly in data collection, scoring and statistics, are corrected.">
 
-<title>SERVQUAL Gap Analysis - Flair Marketing Intelligence</title>
+<title>surveyframe 0.4.2 is on CRAN - Flair Marketing Intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +27,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-c74ede80dc9667c491e728a860359ffa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/images/flairmi-icon-light.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-c74ede80dc9667c491e728a860359ffa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -183,8 +185,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="google-site-verification" content="_2ahl4nvQntZ-aiNNnPWhBOwMpwNMqfaMfxE07kUQiY">
 <meta name="googlebot" content="index,follow">
 <meta name="bingbot" content="index,follow">
-<link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="../assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- ga4.js is deliberately NOT loaded here. consent.js decides whether to
@@ -192,27 +194,28 @@ ul.task-list li input[type="checkbox"] {
      accept. Putting ga4.js back on this line would load the tag on every
      page for everyone again, which is what the 2026-09-09 audit found and
      what downloads/PrivacyPolicy.md now says does not happen. -->
-<script defer="" src="../assets/js/consent.js"></script>
-<script defer="" src="../assets/js/nav-overview.js"></script>
-<script defer="" src="../assets/js/contact-form.js"></script>
+<script defer="" src="../../assets/js/consent.js"></script>
+<script defer="" src="../../assets/js/nav-overview.js"></script>
+<script defer="" src="../../assets/js/contact-form.js"></script>
 
 
-<link rel="stylesheet" href="../assets/css/consent.css">
-<meta property="og:title" content="SERVQUAL Gap Analysis – Flair Marketing Intelligence">
-<meta property="og:description" content="SERVQUAL Gap Analysis is a free browser tool that scores expectations against perceptions across the five service quality dimensions.">
-<meta property="og:image" content="https://flairmi.com/assets/images/og-toolkit/servqual-gap-analysis.jpg">
+<link rel="stylesheet" href="../../assets/css/consent.css">
+<link rel="stylesheet" href="../../assets/css/blog-tables.css">
+<meta property="og:title" content="surveyframe 0.4.2 is on CRAN – Flair Marketing Intelligence">
+<meta property="og:description" content="surveyframe 0.4.2 is a defect-fix release: 31 blocker defects from an external review, chiefly in data collection, scoring and statistics, are corrected.">
+<meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="SERVQUAL Gap Analysis: Expectations against perceptions on 22 items across five dimensions, weighted, with the largest gaps ranked.">
-<meta name="twitter:title" content="SERVQUAL Gap Analysis – Flair Marketing Intelligence">
-<meta name="twitter:description" content="SERVQUAL Gap Analysis is a free browser tool that scores expectations against perceptions across the five service quality dimensions.">
-<meta name="twitter:image" content="https://flairmi.com/assets/images/og-toolkit/servqual-gap-analysis.jpg">
-<meta name="twitter:image:alt" content="SERVQUAL Gap Analysis: Expectations against perceptions on 22 items across five dimensions, weighted, with the largest gaps ranked.">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates and analytics tools.">
+<meta name="twitter:title" content="surveyframe 0.4.2 is on CRAN – Flair Marketing Intelligence">
+<meta name="twitter:description" content="surveyframe 0.4.2 is a defect-fix release: 31 blocker defects from an external review, chiefly in data collection, scoring and statistics, are corrected.">
+<meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://flairmi.com/toolkit/servqual-gap-analysis.html">
+<link rel="canonical" href="https://flairmi.com/blog/posts/14-surveyframe-0-4-2-cran.html">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 <a class="skip-link" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
@@ -220,9 +223,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
-    <img src="../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo light-content" width="210" height="44">
+    <img src="../../assets/images/flairmi-logo-dark.svg" alt="FlairMI home" class="navbar-logo dark-content" width="210" height="44">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -232,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -241,11 +244,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-textbooks">    
         <li>
-    <a class="dropdown-item" href="../textbooks/index.html">
+    <a class="dropdown-item" href="../../textbooks/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/smallsamplelab.html">
+    <a class="dropdown-item" href="../../textbooks/smallsamplelab.html">
  <span class="dropdown-text">Small Sample Methods</span></a>
   </li>  
         <li>
@@ -253,13 +256,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Decision Making for Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../textbooks/dmarketing.html">
+    <a class="dropdown-item" href="../../textbooks/dmarketing.html">
  <span class="dropdown-text">Digital Marketing</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -268,27 +271,27 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-toolkit">    
         <li>
-    <a class="dropdown-item" href="../toolkit/index.html">
+    <a class="dropdown-item" href="../../toolkit/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/strategic-analysis.html">
+    <a class="dropdown-item" href="../../toolkit/strategic-analysis.html">
  <span class="dropdown-text">Strategic Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/customer-understanding.html">
+    <a class="dropdown-item" href="../../toolkit/customer-understanding.html">
  <span class="dropdown-text">Customer Understanding</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/portfolio-and-growth.html">
+    <a class="dropdown-item" href="../../toolkit/portfolio-and-growth.html">
  <span class="dropdown-text">Portfolio and Growth</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/planning-and-execution.html">
+    <a class="dropdown-item" href="../../toolkit/planning-and-execution.html">
  <span class="dropdown-text">Planning and Execution</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../toolkit/performance-and-analytics.html">
+    <a class="dropdown-item" href="../../toolkit/performance-and-analytics.html">
  <span class="dropdown-text">Performance and Analytics</span></a>
   </li>  
     </ul>
@@ -299,37 +302,37 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-products">    
         <li>
-    <a class="dropdown-item" href="../products/index.html">
+    <a class="dropdown-item" href="../../products/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/surveyframe.html">
+    <a class="dropdown-item" href="../../products/surveyframe.html">
  <span class="dropdown-text">surveyframe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/statchooser.html">
+    <a class="dropdown-item" href="../../products/statchooser.html">
  <span class="dropdown-text">StatChooser</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/price-memory.html">
+    <a class="dropdown-item" href="../../products/price-memory.html">
  <span class="dropdown-text">Price Memory</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/margin-guard.html">
+    <a class="dropdown-item" href="../../products/margin-guard.html">
  <span class="dropdown-text">Margin Guard</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/quartopad.html">
+    <a class="dropdown-item" href="../../products/quartopad.html">
  <span class="dropdown-text">QuartoPad</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../products/trimwrite.html">
+    <a class="dropdown-item" href="../../products/trimwrite.html">
  <span class="dropdown-text">TrimWrite</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../services/index.html"> 
+    <a class="nav-link" href="../../services/index.html"> 
 <span class="menu-text">Services</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -338,39 +341,39 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-blog">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">All posts</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Statistics Tutorials</li>
         <li>
-    <a class="dropdown-item" href="../blog/posts/01-margin-of-error.html">
+    <a class="dropdown-item" href="../../blog/posts/01-margin-of-error.html">
  <span class="dropdown-text">Confidence Interval for a Proportion</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/02-two-proportion-test.html">
+    <a class="dropdown-item" href="../../blog/posts/02-two-proportion-test.html">
  <span class="dropdown-text">Two-Proportion Test</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/03-t-test.html">
+    <a class="dropdown-item" href="../../blog/posts/03-t-test.html">
  <span class="dropdown-text">t-Test: Average Order Value</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/04-welch-t.html">
+    <a class="dropdown-item" href="../../blog/posts/04-welch-t.html">
  <span class="dropdown-text">Welch vs Equal-Variance t-Test</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/05-simple-regression.html">
+    <a class="dropdown-item" href="../../blog/posts/05-simple-regression.html">
  <span class="dropdown-text">Simple Linear Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/06-logistic-basics.html">
+    <a class="dropdown-item" href="../../blog/posts/06-logistic-basics.html">
  <span class="dropdown-text">Logistic Regression Basics</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
         <li>
-    <a class="dropdown-item" href="../blog/posts/14-surveyframe-0-4-2-cran.html">
+    <a class="dropdown-item" href="../../blog/posts/14-surveyframe-0-4-2-cran.html">
  <span class="dropdown-text">surveyframe 0.4.2 on CRAN</span></a>
   </li>  
         <li>
@@ -382,31 +385,31 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">surveyframe 0.4.0 on CRAN</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/07-surveyframe-0-3-3-cran.html">
+    <a class="dropdown-item" href="../../blog/posts/07-surveyframe-0-3-3-cran.html">
  <span class="dropdown-text">surveyframe 0.3.3 on CRAN</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/08-analysis-plan-before-data.html">
+    <a class="dropdown-item" href="../../blog/posts/08-analysis-plan-before-data.html">
  <span class="dropdown-text">Why the Analysis Plan Comes First</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/09-surveyframe-single-choice.html">
+    <a class="dropdown-item" href="../../blog/posts/09-surveyframe-single-choice.html">
  <span class="dropdown-text">surveyframe Field Types: Single Choice</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog/posts/11-surveyframe-multiple-choice.html">
+    <a class="dropdown-item" href="../../blog/posts/11-surveyframe-multiple-choice.html">
  <span class="dropdown-text">surveyframe Field Types: Multiple Choice</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Tools &amp; Announcements</li>
         <li>
-    <a class="dropdown-item" href="../blog/posts/10-persona-builder.html">
+    <a class="dropdown-item" href="../../blog/posts/10-persona-builder.html">
  <span class="dropdown-text">Persona Builder Announcement</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -420,18 +423,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-this-release-is-for" id="toc-what-this-release-is-for" class="nav-link active" data-scroll-target="#what-this-release-is-for">What this release is for</a></li>
+  <li><a href="#collection-fixes" id="toc-collection-fixes" class="nav-link" data-scroll-target="#collection-fixes">Collection fixes</a></li>
+  <li><a href="#scoring-and-statistics-fixes" id="toc-scoring-and-statistics-fixes" class="nav-link" data-scroll-target="#scoring-and-statistics-fixes">Scoring and statistics fixes</a></li>
+  <li><a href="#what-you-need-to-change" id="toc-what-you-need-to-change" class="nav-link" data-scroll-target="#what-you-need-to-change">What you need to change</a></li>
+  <li><a href="#get-it" id="toc-get-it" class="nav-link" data-scroll-target="#get-it">Get it</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SERVQUAL Gap Analysis</h1>
-</div>
+<h1 class="title">surveyframe 0.4.2 is on CRAN</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">surveyframe</div>
+    <div class="quarto-category">R packages</div>
+    <div class="quarto-category">survey research</div>
+    <div class="quarto-category">release notes</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    SERVQUAL Gap Analysis is a free browser tool that scores expectations against perceptions across the five service quality dimensions.
+    surveyframe 0.4.2 is a defect-fix release: 31 blocker defects from an external review, chiefly in data collection, scoring and statistics, are corrected.
   </div>
 </div>
 
@@ -454,150 +475,69 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
       
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 25, 2026</p>
+    </div>
+  </div>
   
     
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>surveyframe, CRAN, R package, bug fixes, data collection, Google Sheets, scale scoring, reproducibility</p>
+  </div>
+</div>
 
 </header>
 
 
-<span class="badge badge-live">Live</span>
-<link rel="stylesheet" href="../assets/css/toolkit-shared.css">
-<link rel="stylesheet" href="../assets/css/toolkit-tour.css">
-<style>
-/* Layout-shift fix 2026-10-09: reserve the space servqual.js and the tour
-   bar from toolkit-tour.js fill after load. Desktop CLS was 0.407. */
-#servqual-app:empty { min-height: 2500px; }
-.toolkit-app:not(.tk-tour-launch + .toolkit-app) { margin-top: 67px; }
-@media (max-width: 575.98px) { .toolkit-app:not(.tk-tour-launch + .toolkit-app) { margin-top: 118px; } }
-</style>
-<div class="toolkit-app">
-  <div id="servqual-app"></div>
-</div>
-<p>SERVQUAL measures service quality as the gap between what customers expect and what they perceive they received. A negative gap means the service fell short of expectations. The five dimensions show where: the physical evidence (tangibles), dependable delivery (reliability), willingness to help (responsiveness), competence and courtesy (assurance) and individual care (empathy).</p>
-<p>Everything above runs in your browser and saves to this device only. The tool opens on sample hotel figures. Type your own averages, or paste survey responses and let the tool average them.</p>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
-<p>Each item carries an expectation score E and a perception score P, both on a 1 to 7 scale. The gap for an item is its perception minus its expectation.</p>
-<div class="tk-formula">Item gap = P − E<br>Dimension gap = mean of its item gaps<br>Unweighted SERVQUAL score = mean of the five dimension gaps<br>Weighted SERVQUAL score = Σ (dimension weight ÷ 100) × dimension gap</div>
-<p>The weights share 100 points across the five dimensions, so the weighted score reflects what matters most to your customers. The priority dimension is the one with the largest weighted shortfall. The measured gap is the customer gap in the gaps model of service quality. The provider gaps you tag in the <a href="../toolkit/customer-journey-mapper.html">Customer Journey Mapper</a> are the causes, and they appear next to the scores when both tools are used on the same device. The dimensions follow Parasuraman, Zeithaml and Berry (1988), and the item wording is FlairMI’s own.</p>
+<p>TL;DR: <strong>surveyframe 0.4.2</strong> reached CRAN on <strong>25 September 2026</strong>. Install it with <code>install.packages("surveyframe")</code>. It is a defect-fix release. An external review of 0.4.1 raised 171 findings, 31 of them blockers, and this release corrects them. The fixes that matter most are in data collection, because an answer recorded wrongly is lost for good. Free and open source under the MIT licence.</p>
+<section id="what-this-release-is-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-release-is-for">What this release is for</h2>
+<p>0.4.2 is about correctness. It makes the existing methods record, score and report exactly what they claim to. Every fix is listed in the package’s NEWS file, grouped by where it applies: collection, the researcher interface, scoring, statistics and decision analysis. The release passes 3,603 tests.</p>
+<p>It was submitted on 25 September, failed CRAN’s automatic pre-test on 2 points (usage sections on help pages and the Windows check time), was fixed and resubmitted, and was accepted.</p>
 </section>
-<section id="frequently-asked-questions" class="level2">
-<h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
-<div class="faq-list">
-  <details class="faq-item">
-    <summary>What is SERVQUAL?</summary>
-    <p class="faq-answer">SERVQUAL is a method for measuring service quality, developed by Parasuraman, Zeithaml and Berry (1988). Customers rate what they expect and what they experienced on 22 items across five dimensions, and the gap between the two measures quality.</p>
-  </details>
-  <details class="faq-item">
-    <summary>What are the five SERVQUAL dimensions?</summary>
-    <p class="faq-answer">The five SERVQUAL dimensions are tangibles (facilities and materials), reliability (delivering as promised), responsiveness (quick help), assurance (competence and courtesy that build trust) and empathy (individual attention).</p>
-  </details>
-  <details class="faq-item">
-    <summary>How is the SERVQUAL score calculated?</summary>
-    <p class="faq-answer">Each item's gap is perception minus expectation. A dimension's gap is the mean of its items, and the weighted SERVQUAL score multiplies each dimension gap by its importance weight out of 100.</p>
-  </details>
-  <details class="faq-item">
-    <summary>What is the gaps model of service quality?</summary>
-    <p class="faq-answer">The gaps model traces the customer gap, between expected and perceived service, to four provider gaps: listening, service design and standards, service performance and communication. SERVQUAL measures the customer gap.</p>
-  </details>
-  <details class="faq-item">
-    <summary>Is this SERVQUAL Gap Analysis tool free?</summary>
-    <p class="faq-answer">Yes. The SERVQUAL Gap Analysis tool is free and opens straight away in any modern browser, including on a phone. Scores and pasted responses are processed in your browser and stay on your device.</p>
-  </details>
-</div>
+<section id="collection-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="collection-fixes">Collection fixes</h2>
+<p><strong>The Shiny survey erased every answer.</strong> In <code>render_survey()</code>, each answer re-drew the page and the re-drawn questions reported themselves empty, so an answer was wiped about a second after it was given. Every standard-mode survey run with <code>render_survey()</code> in 0.4.1 and earlier was affected. Answers now stay put.</p>
+<p><strong>The Google Sheets collector could turn an answer into a formula.</strong> An answer beginning with <code>=</code> was evaluated by the spreadsheet, so <code>=1+1</code> was stored as <code>2</code>, and a code such as <code>007</code> lost its leading zeros. Answers are now written through the Sheets API’s <code>RAW</code> option, which stores them as submitted.</p>
+<p><strong>The exported survey claimed more than it knew.</strong> The page posts with <code>no-cors</code>, so the browser can confirm only that a request left. The thank-you screen now says the answers were sent and that receipt is unconfirmed, keeps the CSV download available and leaves any redirect for the participant to choose. A failed send says so and offers a retry.</p>
+<p><strong>Exported surveys now keep exactly what the respondent entered.</strong> A typed number is kept as typed, an option coded 0 is recorded as 0, a ranking submits the order shown, and an untouched slider, ranking or date counts as unanswered.</p>
+<p><strong>Long rating scales stack on a phone.</strong> An 11-point scale needed 550 pixels across, so a participant on a 390-pixel screen saw part of it with both ends off screen. Each option now becomes a labelled row.</p>
 </section>
-<section id="related" class="level2">
-<h2 class="anchored" data-anchor-id="related">Related</h2>
-<p>This tool is part of FlairMI’s <a href="../toolkit/index.html">Marketing Toolkit Hub</a>, in the <a href="../toolkit/performance-and-analytics.html">Performance and Analytics</a> category. Map where the gaps arise with the <a href="../toolkit/customer-journey-mapper.html">Customer Journey Mapper</a>, and compare attribute importance with performance in the <a href="../toolkit/ipa-matrix.html">IPA Matrix</a>.</p>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "SERVQUAL Gap Analysis",
-  "url": "https://flairmi.com/toolkit/servqual-gap-analysis.html",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Any (runs in browser)",
-  "description": "A free browser tool for SERVQUAL. Score expectations and perceptions on 22 items across tangibles, reliability, responsiveness, assurance and empathy, weight the dimensions and rank the largest gaps.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Mohammed Ali Sharafuddin",
-    "url": "https://flairmi.com/about.html"
-  },
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "FlairMI",
-    "url": "https://flairmi.com"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is SERVQUAL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SERVQUAL is a method for measuring service quality, developed by Parasuraman, Zeithaml and Berry (1988). Customers rate what they expect and what they experienced on 22 items across five dimensions, and the gap between the two measures quality."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the five SERVQUAL dimensions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The five SERVQUAL dimensions are tangibles (facilities and materials), reliability (delivering as promised), responsiveness (quick help), assurance (competence and courtesy that build trust) and empathy (individual attention)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is the SERVQUAL score calculated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Each item's gap is perception minus expectation. A dimension's gap is the mean of its items, and the weighted SERVQUAL score multiplies each dimension gap by its importance weight out of 100."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the gaps model of service quality?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The gaps model traces the customer gap, between expected and perceived service, to four provider gaps: listening, service design and standards, service performance and communication. SERVQUAL measures the customer gap."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this SERVQUAL Gap Analysis tool free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The SERVQUAL Gap Analysis tool is free and opens straight away in any modern browser, including on a phone. Scores and pasted responses are processed in your browser and stay on your device."
-      }
-    }
-  ]
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="../assets/js/toolkit/toolkit-core.js"></script>
-<script src="../assets/js/toolkit/servqual.js"></script>
-<script src="../assets/js/toolkit/tours.js"></script>
-<script src="../assets/js/toolkit/toolkit-tour.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.Servqual) window.Servqual.mount({ rootId: "servqual-app" });
-  });
-</script>
+<section id="scoring-and-statistics-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="scoring-and-statistics-fixes">Scoring and statistics fixes</h2>
+<ul>
+<li>Reverse coding now applies within the scale that declares it, a missing item column counts as unanswered and reports show the scores <code>score_scales()</code> computes.</li>
+<li>Cochran’s Q now removes a respondent with a missing answer. ANCOVA now reports adjusted tests, partial correlation uses the correct degrees of freedom and the Firth likelihood-ratio statistic is reported at its full value.</li>
+<li><code>sample_size_plan()</code> now calculates power for t tests, ANOVA and regression from the effect size you give it.</li>
+<li>Results tables report p values to 3 decimals, so .004 shows as .004.</li>
+<li>Decision-analysis weights, criterion types and judgement matrices are matched by criterion name, so a ranking depends only on the values given.</li>
+</ul>
+</section>
+<section id="what-you-need-to-change" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-need-to-change">What you need to change</h2>
+<ul>
+<li><strong>Google Sheets collection needs the Sheets advanced service.</strong> Regenerate the collector with <code>export_google_sheet()</code>, redeploy it and add Services &gt; Google Sheets API with the identifier <code>Sheets</code> in the Apps Script editor.</li>
+<li><strong>Re-run scale scores and some statistics.</strong> Analyses of reverse-coded or shared scale items, and those using the tests listed above, can give different results.</li>
+<li><strong>Some instruments that validated before are now refused.</strong> One example: an item controlled by 2 branching rules, since a rule is identified by the item it controls. <code>validate_sframe()</code> names each problem.</li>
+<li><strong>Shiny-collected responses now carry a <code>respondent_id</code>.</strong> Collect into a new CSV file so every response gets one.</li>
+</ul>
+</section>
+<section id="get-it" class="level2">
+<h2 class="anchored" data-anchor-id="get-it">Get it</h2>
+<ul>
+<li>Install: <code>install.packages("surveyframe")</code></li>
+<li>Documentation: <a href="https://mohammedalisharafuddin.github.io/surveyframe/">mohammedalisharafuddin.github.io/surveyframe</a></li>
+<li>Source: <a href="https://github.com/MohammedAliSharafuddin/surveyframe">github.com/MohammedAliSharafuddin/surveyframe</a></li>
+<li>On CRAN: <a href="https://CRAN.R-project.org/package=surveyframe">CRAN.R-project.org/package=surveyframe</a></li>
+</ul>
+<p>The <a href="13-surveyframe-0-4-1-cran.html">0.4.1 release notes</a> cover the teaching demos and labelled export this release builds on.</p>
 
 
 </section>
@@ -1012,13 +952,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools and workshops for business analytics, marketing analytics, small-sample methods and research workflows.<br> <a href="../textbooks/index.html">Textbooks</a> · <a href="../templates/index.html">Templates</a> · <a href="../products/index.html">Products</a> · <a href="../services/index.html">Services</a></p>
+<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools and workshops for business analytics, marketing analytics, small-sample methods and research workflows.<br> <a href="../../textbooks/index.html">Textbooks</a> · <a href="../../templates/index.html">Templates</a> · <a href="../../products/index.html">Products</a> · <a href="../../services/index.html">Services</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../downloads/TermsOfUse.html">Terms</a> · <a href="../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
+<p><a href="https://orcid.org/0000-0001-5247-2964">ORCID</a> · <a href="https://github.com/MohammedAliSharafuddin">GitHub</a> · <a href="https://scholar.google.com/citations?user=DgaDtq4AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a><br> <a href="../../downloads/PrivacyPolicy.html">Privacy</a> · <a href="#" onclick="flairmiChangeCookieChoice();return false;">Cookie choice</a> · <a href="../../downloads/TermsOfUse.html">Terms</a> · <a href="../../downloads/Refund_Cancellation_Policy.html">Refunds</a> · <a href="../../downloads/Affiliate_Sponsorship_Disclosure.html">Disclosure</a><span class="soft-launch-hidden"> · <a href="../../partner-with-flairmi.html">Partner with FlairMI</a></span></p>
 </div>
   </div>
 </footer>

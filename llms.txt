@@ -26,7 +26,7 @@ and Early-Career Researchers** (published, free)
 - [FlairMI page](https://flairmi.com/textbooks/smallsamplelab.html)
 - Coverage: 18 chapters and 5 worked R projects on exact tests, resampling,
   nonparametric methods, penalised and Bayesian regression, missing data,
-  uncertainty reporting, and small-sample study design.
+  uncertainty reporting and small-sample study design.
 
 **Decision Making for Management: A Student Textbook for Data-Informed
 Managerial Judgement** (live, rolling release)
@@ -49,13 +49,15 @@ Managerial Judgement** (live, rolling release)
 **surveyframe** (v0.4.2, live on CRAN since 25 September 2026) is an R
 package for survey instrument objects and end-to-end survey workflows:
 instrument design, static HTML export, a Shiny module, response quality
-checks, scale scoring, psychometric diagnostics, analysis planning, and
+checks, scale scoring, psychometric diagnostics, analysis planning and
 reproducible HTML reporting. The instrument's analysis plan is declared
 before data collection and executed as declared. Version 0.4.0 added
 multi-criteria decision analysis (10 methods), text analysis of open-ended
 responses (9 methods), small-sample corrections and a disclosed-amendment
 and Git-linked provenance trail. Version 0.4.1 added a 22-demo teaching
-library and labelled SPSS and Stata export. MIT licence, free.
+library and labelled SPSS and Stata export. Version 0.4.2, the current CRAN
+release, corrects 31 blocker defects in collection, scoring and statistics.
+MIT licence, free.
 
 - Install: `install.packages("surveyframe")`
 - [CRAN](https://CRAN.R-project.org/package=surveyframe)
@@ -73,13 +75,17 @@ library and labelled SPSS and Stata export. MIT licence, free.
 FlairMI publishes applied statistics tutorials and product notes at
 [flairmi.com/blog](https://flairmi.com/blog/). Recent posts:
 
+- ["surveyframe 0.4.2 is on CRAN"](https://flairmi.com/blog/posts/14-surveyframe-0-4-2-cran.html)
+  is the 0.4.2 release notes: a defect-fix release correcting 31 blocker
+  defects from an external review, chiefly in data collection, scoring and
+  statistics.
 - ["surveyframe 0.4.1 is on CRAN"](https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html)
   is the 0.4.1 release notes: a 22-demo teaching library, labelled SPSS and
   Stata export, seeded reproducible reports and 2 fixes for defects that
   could silently corrupt collected data.
 - ["surveyframe 0.4.0 is on CRAN"](https://flairmi.com/blog/posts/12-surveyframe-0-4-0-cran.html)
   is the 0.4.0 release notes: 10 multi-criteria decision analysis methods,
-  9 text-analysis methods for open-ended responses, small-sample corrections,
+  9 text-analysis methods for open-ended responses, small-sample corrections
   and a disclosed-amendment and Git-linked provenance trail.
 - ["surveyframe 0.3.3 is on CRAN"](https://flairmi.com/blog/posts/07-surveyframe-0-3-3-cran.html)
   — the 0.3.3 release notes: redesigned exported survey, WCAG 2.2 AA
@@ -90,7 +96,7 @@ FlairMI publishes applied statistics tutorials and product notes at
   collection, and why that matters beyond academic research.
 - ["surveyframe Field Types: Single Choice"](https://flairmi.com/blog/posts/09-surveyframe-single-choice.html)
   — a worked, runnable example declaring a single_choice question, its
-  codebook, its exported survey, and its analysis output.
+  codebook, its exported survey and its analysis output.
 - ["Persona Builder: a free browser tool for personas"](https://flairmi.com/blog/posts/10-persona-builder.html)
   — building a UX or marketing persona card at one of three detail levels,
   then exporting it as a PNG or PDF.
@@ -137,7 +143,7 @@ FlairMI publishes applied statistics tutorials and product notes at
 - **[BCG Growth-Share Matrix](https://flairmi.com/toolkit/bcg-matrix.html)** (in progress): Products by market growth and relative share, sized by revenue, classed as stars, cash cows, question marks or dogs.
 - **[GE-McKinsey Matrix](https://flairmi.com/toolkit/ge-mckinsey-matrix.html)** (in progress): Weighted industry attractiveness and competitive strength factors, scored per business unit on a nine-box grid.
 - **[Product Life Cycle Stage Identifier](https://flairmi.com/toolkit/product-life-cycle.html)** (in progress): Fit an S-curve to sales history, estimate the current life cycle stage and see mix priorities for it.
-- **[Diffusion of Innovation Adopter Calculator](https://flairmi.com/toolkit/diffusion-of-innovation.html)** (in progress): Place adoption on Rogers' curve, see which adopter group you are reaching, and fit the Bass model for a forecast.
+- **[Diffusion of Innovation Adopter Calculator](https://flairmi.com/toolkit/diffusion-of-innovation.html)** (in progress): Place adoption on Rogers' curve, see which adopter group you are reaching and fit the Bass model for a forecast.
 
 ### [Planning and Execution](https://flairmi.com/toolkit/planning-and-execution.html)
 

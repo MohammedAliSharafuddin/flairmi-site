@@ -9,7 +9,7 @@
 <meta name="author" content="Mohammed Ali Sharafuddin">
 <meta name="dcterms.date" content="2025-10-25">
 <meta name="keywords" content="Welch t-test, equal-variance t-test, variance ratio, robustness, AOV">
-<meta name="description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.">
+<meta name="description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and why Welch is the sound default for comparing 2 independent group means.">
 
 <title>Welch t-Test vs Equal-Variance t-Test: Comparing Methods - Flair Marketing Intelligence</title>
 <style>
@@ -64,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-da8110cd03967e690ec0d2f9866d5c8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c74ede80dc9667c491e728a860359ffa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -1804,20 +1804,21 @@ window.Quarto = {
 <link rel="stylesheet" href="../../assets/css/consent.css">
 <link rel="stylesheet" href="../../assets/css/blog-tables.css">
 <meta property="og:title" content="Welch t-Test vs Equal-Variance t-Test: Comparing Methods – Flair Marketing Intelligence">
-<meta property="og:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.">
+<meta property="og:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and why Welch is the sound default for comparing 2 independent group means.">
 <meta property="og:image" content="https://flairmi.com/assets/images/flairmi-og.png">
 <meta property="og:site_name" content="FlairMI">
-<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
+<meta property="og:image:alt" content="The FlairMI logo above the line: Textbooks, templates and analytics tools.">
 <meta name="twitter:title" content="Welch t-Test vs Equal-Variance t-Test: Comparing Methods – Flair Marketing Intelligence">
-<meta name="twitter:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.">
+<meta name="twitter:description" content="Understand when to use Welch t-test over equal-variance t-test when comparing group means, and why Welch is the sound default for comparing 2 independent group means.">
 <meta name="twitter:image" content="https://flairmi.com/assets/images/flairmi-og.png">
-<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates, and analytics tools.">
+<meta name="twitter:image:alt" content="The FlairMI logo above the line: Textbooks, templates and analytics tools.">
 <meta name="twitter:site" content="@flairmi">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://flairmi.com/blog/posts/04-welch-t.html">
 </head>
 
 <body class="nav-fixed quarto-light">
+<a class="skip-link" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -1973,6 +1974,10 @@ window.Quarto = {
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">surveyframe &amp; Research Methods</li>
+        <li>
+    <a class="dropdown-item" href="../../blog/posts/14-surveyframe-0-4-2-cran.html">
+ <span class="dropdown-text">surveyframe 0.4.2 on CRAN</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="https://flairmi.com/blog/posts/13-surveyframe-0-4-1-cran.html">
  <span class="dropdown-text">surveyframe 0.4.1 on CRAN</span></a>
@@ -2341,7 +2346,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div>
   <div class="description">
-    Understand when to use Welch t-test over equal-variance t-test when comparing group means, and learn how variance ratios affect your choice of statistical method.
+    Understand when to use Welch t-test over equal-variance t-test when comparing group means, and why Welch is the sound default for comparing 2 independent group means.
   </div>
 </div>
 
@@ -2350,7 +2355,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://flairmi.com/about.html">Mohammed Ali Sharafuddin</a> <a href="https://orcid.org/0000-0001-5247-2964" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author"><a href="https://flairmi.com/about.html">Mohammed Ali Sharafuddin</a> <a href="https://orcid.org/0000-0001-5247-2964" class="quarto-title-author-orcid" aria-label="ORCID profile"> <img alt="ORCID" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -2387,17 +2392,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>TL;DR: Group A <strong>₹1,204</strong> (SD ₹151, n=120) vs B <strong>₹1,282</strong> (SD ₹291, n=150). <strong>Variance ratio 0.27</strong>, so the variances differ. <strong>Welch t(234) = 2.85, p = .005</strong>, <strong>equal-variance t(268) = 2.67, p = .008</strong>, <strong>difference ₹78 [₹24, ₹132]</strong>. Decision: <strong>report Welch, and B’s higher AOV is statistically significant</strong>.</p>
+<p>TL;DR: Group A <strong>₹1,204</strong> (SD ₹151, n=120) vs B <strong>₹1,282</strong> (SD ₹291, n=150). <strong>Variance ratio 0.27</strong>. <strong>Welch t(234) = 2.85, p = .005</strong>, <strong>equal-variance t(268) = 2.67, p = .008</strong>, <strong>difference ₹78 [₹24, ₹132]</strong>. Decision: <strong>report Welch, and B’s higher AOV is statistically significant</strong>.</p>
 <blockquote class="blockquote">
 <p>Answer<br>
 Method: Welch t-test vs equal-variance t-test comparison.<br>
 Estimate: ₹1,204 vs ₹1,282, difference ₹78, Welch CI ₹24, ₹132.<br>
 Data: 2 store locations, variables group, order_value, n = 270 (120 and 150).<br>
-Action: Use Welch when one variance is more than twice the other. Group B’s AOV is significantly higher.</p>
+Action: Use Welch for the independent-group comparison. Group B’s AOV is significantly higher.</p>
 </blockquote>
 <section id="case" class="level2">
 <h2 class="anchored" data-anchor-id="case">Case</h2>
-<p>You are analysing average order value (AOV) from two store locations with different sample sizes (120 vs.&nbsp;150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? How does the variance ratio influence this decision?</p>
+<p>You are analysing average order value (AOV) from two store locations with different sample sizes (120 vs.&nbsp;150 customers) and different variability in spending patterns. You need to decide: Should you use the standard equal-variance t-test (Student’s t-test) or the Welch t-test? What does the variance ratio tell you about the choice?</p>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
@@ -2451,7 +2456,7 @@ Action: Use Welch when one variance is more than twice the other. Group B’s AO
 <li><strong>Equal-variance t-test (Student’s t-test)</strong>: Assumes both groups have equal population variances and pools sample variances to estimate standard error</li>
 <li><strong>Welch t-test</strong>: Allows the variances to differ and adjusts degrees of freedom to the variance ratio <span class="citation" data-cites="Welch1947">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>)</span></li>
 </ol>
-<p>The Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. <strong>A ratio below 0.5, meaning one variance is more than twice the other, suggests meaningful variance differences and strongly favours the Welch t-test.</strong></p>
+<p>The Welch t-test is generally more robust when variances differ, especially with unequal sample sizes. We calculate the variance ratio (smaller variance / larger variance) to assess heterogeneity. <strong>Use the Welch t-test for the independent-group comparison. It remains valid with unequal variances and avoids choosing a test from a preliminary variance rule.</strong> The ratio is reported here to describe the data. Picking the test from it would let the data choose the method, which itself distorts the error rate.</p>
 <p>Test statistic for equal-variance t-test: <span class="math display">\[
 t = \frac{\bar{x}_A - \bar{x}_B}{s_p\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}, \quad s_p^2 = \frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A + n_B - 2}.
 \]</span></p>
@@ -2476,7 +2481,7 @@ t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}}, 
 <p>Group A had a mean AOV of <strong>₹1,203.5</strong> (SD = ₹151.4, n=120), while group B had a mean AOV of <strong>₹1,281.7</strong> (SD = ₹290.5, n=150). The <strong>variance ratio of 0.27</strong> (22,919 / 84,416) shows group B’s variance is nearly 4 times group A’s, which strongly favours the Welch t-test.</p>
 <p><strong>Welch t-test results</strong>: The Welch t-test found a statistically significant difference, t(233.6) = 2.85, p = .005, with a 95% CI of [₹24.0, ₹132.2] for the mean difference (B − A) <span class="citation" data-cites="Welch1947 R-base">(<a href="#ref-Welch1947" role="doc-biblioref">Welch 1947</a>; <a href="#ref-R-base" role="doc-biblioref">R Core Team 2024</a>)</span>. The adjusted degrees of freedom (233.6 against the pooled 268) reflect the variance inequality.</p>
 <p><strong>Equal-variance t-test results</strong>: The equal-variance t-test gave t(268) = 2.67, p = .008, with a 95% CI of [₹20.5, ₹135.7]. The 2 tests agree here, but the equal-variance assumption is violated (variance ratio 0.27, below 0.5).</p>
-<p><strong>Method comparison</strong>: When variances differ substantially and sample sizes are unequal, the equal-variance t-test gives the wrong error rate. It is too liberal when the smaller group has the larger variance, and too conservative when, as here, the larger group has it. The Welch t-test keeps the error rate close to 5% either way. Both tests reach the same conclusion here (p &lt; .05), and Welch is the result to report.</p>
+<p><strong>Method comparison</strong>: When variances differ substantially and sample sizes are unequal, the equal-variance t-test can give a misleading error rate, with the size and direction set by which group carries the larger variance. It is too liberal when the smaller group has the larger variance, and too conservative when, as here, the larger group has it. The Welch t-test keeps the error rate close to 5% either way. Both tests reach the same conclusion here (p &lt; .05), and Welch is the result to report.</p>
 <p><strong>Decision framework.</strong> With a variance ratio of 0.27 and unequal sample sizes, use the <strong>Welch t-test</strong> as your primary result. The mean difference of ₹78 (95% CI [₹24, ₹132]) shows group B has the higher AOV, and the wide interval leaves the size of that gap uncertain. Check variance homogeneity before choosing your test, and default to Welch when in doubt, since it holds up even when the variances are equal.</p>
 </section>
 <section id="sample-size-planning" class="level2">
@@ -2996,7 +3001,7 @@ t-Test: Comparing Methods.”</span> October 25, 2025. <a href="https://flairmi.
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools, and workshops for business analytics, marketing analytics, small-sample methods, and research workflows.<br> <a href="../../textbooks/index.html">Textbooks</a> · <a href="../../templates/index.html">Templates</a> · <a href="../../products/index.html">Products</a> · <a href="../../services/index.html">Services</a></p>
+<p><strong>FlairMI</strong> publishes textbooks, templates, browser-based tools and workshops for business analytics, marketing analytics, small-sample methods and research workflows.<br> <a href="../../textbooks/index.html">Textbooks</a> · <a href="../../templates/index.html">Templates</a> · <a href="../../products/index.html">Products</a> · <a href="../../services/index.html">Services</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
