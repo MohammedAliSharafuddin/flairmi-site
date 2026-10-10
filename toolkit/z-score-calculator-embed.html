@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- file: toolkit/z-score-calculator-embed.html
+     The Z-Score Calculator on its own, for framing inside another page. No
+     site header, footer or article text: the full page is
+     toolkit/z-score-calculator.qmd. Inputs can be preset from the address,
+     for example ?x=77&mean=45.455&sd=11.905. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://flairmi.com/toolkit/z-score-calculator.html">
+<title>Z-Score Calculator</title>
+<link rel="stylesheet" href="/assets/css/toolkit-shared.css">
+<style>
+  html, body { margin: 0; background: #ffffff; color: #111111; font-family: Lato, "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 1.45; }
+  .toolkit-app { padding: 12px 14px 4px; box-sizing: border-box; }
+  .zs-credit { font-size: 0.8rem; color: #6b6b6b; margin: 0.4rem 0 0.6rem; }
+  .zs-credit a { color: #111111; }
+  button, input, select, textarea { font: inherit; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<div class="toolkit-app">
+  <div id="z-app"></div>
+  <p class="zs-credit">Z-Score Calculator by <a href="https://flairmi.com/toolkit/z-score-calculator.html" target="_blank" rel="noopener">FlairMI</a>. Open the full page for the formulas and worked examples.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="/assets/js/toolkit/toolkit-core.js"></script>
+<script src="/assets/js/toolkit/z-score.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.ZScore) window.ZScore.mount("z-app", { embed: true });
+  });
+</script>
+</body>
+</html>

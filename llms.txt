@@ -120,7 +120,7 @@ FlairMI publishes applied statistics tutorials and product notes at
   the browser's local storage.
 ## Marketing Toolkit Hub
 
-[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 42 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
+[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 43 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
 
 ### [Strategic Analysis](https://flairmi.com/toolkit/strategic-analysis.html)
 
@@ -178,6 +178,7 @@ FlairMI publishes applied statistics tutorials and product notes at
 - **[MMM Analyser](https://flairmi.com/toolkit/mmm-analyser.html)** (in progress): A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.
 - **[Confidence Interval and Sample Size Calculator](https://flairmi.com/toolkit/confidence-interval-calculator.html)** (in progress): Intervals for a mean or a proportion, sample size for a target margin and a Central Limit Theorem simulator.
 - **[Measurement Model Checker](https://flairmi.com/toolkit/measurement-model-checker.html)** (in progress): AVE, composite reliability and HTMT from pasted loadings, with CFI, TLI, RMSEA and SRMR read against published cutoffs.
+- **[Z-Score Calculator](https://flairmi.com/toolkit/z-score-calculator.html)** (in progress): Z-scores for data points, a sample mean or a data sample, with the working, the areas below and above and a shaded normal curve.
 
 The classroom case in the Customer Journey Mapper, and its feeling words, are adapted from O'Rourke et al. (2026), Consumer Behavior in Tourism and Hospitality, 21(3), 382-401, CC BY 4.0.
 

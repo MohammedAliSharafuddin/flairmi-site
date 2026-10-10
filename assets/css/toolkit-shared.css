@@ -803,3 +803,8 @@ svg.tk-chart { width: 100%; height: auto; display: block; }
 .tk-tool-list { list-style: none; padding: 0; margin: 0 0 0.75rem; }
 .tk-tool-list li { padding: 0.3rem 0; border-bottom: 1px solid var(--toolkit-border, #e5e5e5); line-height: 1.35; }
 .tk-tool-list li:last-child { border-bottom: 0; }
+
+/* Standalone tool pages have no Bootstrap, so the hidden attribute needs its
+   own rule to beat display: grid on .tk-grid. */
+.toolkit-app [hidden] { display: none !important; }
+.zs-kpis.tk-kpis { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }

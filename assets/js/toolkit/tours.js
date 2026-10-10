@@ -360,6 +360,15 @@
       { sel: "#prob-app .pe-table", title: "From a table of counts", text: "100 registrations from the sample file, ticket type by attendance.", do: [["click", '#prob-app [data-tab="1"]']] },
       { sel: "#prob-app .pe-kpis", title: "Marginal, joint and conditional", text: "Pick VIP and Attended to read all 6 probabilities for that pair.", do: [["pick", '#prob-app [data-k="ei"]', 1], ["pick", '#prob-app [data-k="ej"]', 0]] },
       { sel: "#prob-app .pe-formula", title: "Independent or related?", text: "The working shows each rule and compares the joint probability with the product of the marginals." }
+    ] },
+
+    "z-app": { steps: [
+      { sel: '#z-app [data-k="x"]', title: "A value, a mean, a standard deviation", text: "A score of 82 where the mean is 70 and the standard deviation is 8.", do: [["select", '#z-app [data-k="mode"]', "point"], ["set", '#z-app [data-k="mean"]', 70], ["set", '#z-app [data-k="sd"]', 8], ["type", '#z-app [data-k="x"]', "82"]] },
+      { sel: "#z-app .zs-steps", title: "The working", text: "Subtract the mean, divide by the standard deviation. 82 is 1.5 standard deviations above the mean." },
+      { sel: "#z-app .zs-chart", title: "Where it sits on the curve", text: "93.32% of a normal distribution lies below this score and 6.68% above it." },
+      { sel: "#z-app .zs-table", title: "More than one value", text: "Enter a list and each value gets its z-score, its areas and a band.", do: [["type", '#z-app [data-k="x"]', "82, 58, 70, 95"]] },
+      { sel: "#z-app .zs-steps", title: "A sample mean", text: "A mean of 73 from 25 values divides by the standard error, so the same gap counts for more.", do: [["select", '#z-app [data-k="mode"]', "mean"]] },
+      { sel: "#z-app .zs-kpis", title: "Back to a value", text: "Give a z-score and get the value and its percentile.", do: [["select", '#z-app [data-k="mode"]', "value"]] }
     ] }
   };
 })();
