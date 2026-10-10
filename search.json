@@ -126,6 +126,34 @@
     "text": "Enquiries\n\n  Send A Service Enquiry\n  Use this form for workshops, consulting, course support or a project-specific discussion.\n  \n    \n      Name\n      Email\n      Area\n          Business analytics\n          Marketing analytics\n          Small Sample Lab\n          Workflow onboarding\n          Teaching support\n          Workshop\n        \n      \n      Message\n    \n    \n      Send enquiry\n      Use the form below to describe your workshop, sprint or consulting need."
   },
   {
+    "objectID": "toolkit/vrio-classifier.html",
+    "href": "toolkit/vrio-classifier.html",
+    "title": "VRIO Classifier",
+    "section": "",
+    "text": "In progress\nThe VRIO framework asks 4 questions of a firm’s resource in turn. Is it valuable? Is it rare? Is it costly to imitate? Is the firm organised to capture its value? The first No ends the walk and names the resource’s competitive implication. A resource that passes all 4 is a source of sustained competitive advantage.\nThe tool opens on vrio-resource-data.csv: 5 companies with 8 resources each, coded Yes or No on the 4 questions. Pick a resource, answer each question and get feedback at every step, including where your judgement differs from the file’s coding. Below the walk, the whole file is classified and cross-tabulated for a chi-square test. You can also name and walk a resource of your own."
+  },
+  {
+    "objectID": "toolkit/vrio-classifier.html#how-it-works",
+    "href": "toolkit/vrio-classifier.html#how-it-works",
+    "title": "VRIO Classifier",
+    "section": "How it works",
+    "text": "How it works\nThe tool applies the VRIO rule with the outcome names used in the sample file.\nNot valuable → Competitive_DisadvantageValuable, not rare → Competitive_ParityValuable, rare, easy to imitate → Temporary_AdvantageValuable, rare, costly to imitate, not organised → Unexploited_AdvantageAll 4 → Sustained_Competitive_Advantage\nThe rule gives the file’s Competitive_Implication on all 40 rows. For example, Company_A’s Customer_Database is valuable and costly to imitate. Rival firms hold one too, so the walk stops at rarity with Competitive_Parity.\nThe framework comes from the resource-based view. Barney (1991), “Firm resources and sustained competitive advantage”, Journal of Management, 17(1), 99 to 120, set out value, rareness, imitability and substitutability. Barney (1995), “Looking inside for competitive advantage”, Academy of Management Executive, 9(4), 49 to 61, added the question of organisation that completes VRIO.\nThe cross-tab shows each count with the count expected if company and outcome were unrelated. When many expected counts fall below 5, as they do with 40 rows over 25 cells, the chi-square approximation is weak, which is itself worth discussing."
+  },
+  {
+    "objectID": "toolkit/vrio-classifier.html#frequently-asked-questions",
+    "href": "toolkit/vrio-classifier.html#frequently-asked-questions",
+    "title": "VRIO Classifier",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What does VRIO stand for?\n    VRIO stands for valuable, rare, costly to imitate and organised. Each letter is a question asked of a firm's resource or capability. Answering them in order tells you whether the resource gives a competitive disadvantage, parity, a temporary advantage, an unexploited advantage or a sustained competitive advantage.\n  \n  \n    What is the difference between temporary and sustained competitive advantage?\n    A temporary advantage comes from a resource that is valuable and rare and that rivals can copy at modest cost, so the lead lasts until they do. A sustained advantage needs a resource that is also costly to imitate and a firm organised to use it.\n  \n  \n    What is an unexploited competitive advantage?\n    An unexploited advantage arises when a resource is valuable, rare and costly to imitate and the firm lacks the structure, systems or incentives to use it. The potential is there and the firm leaves it unused.\n  \n  \n    How does the resource file link to chi-square?\n    The tool cross-tabulates company, or resource, against VRIO outcome. Open the same file in PocketStat and run a chi-square test of association on Company and Competitive_Implication. With 40 rows, many expected counts fall below 5, so read the result with care.\n  \n  \n    Is the VRIO Classifier free?\n    Yes. It is free, runs in your browser and keeps your work on this device. Export the result as PNG or PDF, or the cross-tab as CSV."
+  },
+  {
+    "objectID": "toolkit/vrio-classifier.html#related",
+    "href": "toolkit/vrio-classifier.html#related",
+    "title": "VRIO Classifier",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Pair the inside view with the outside view in Porter’s Five Forces Analyser and the Strategic Options Matrix. Run the chi-square in PocketStat."
+  },
+  {
     "objectID": "toolkit/utm-builder.html",
     "href": "toolkit/utm-builder.html",
     "title": "UTM Campaign URL Builder",
@@ -154,11 +182,53 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Check the landing page’s metadata with the Meta Tag and Open Graph Preview, and plan the campaign with the Campaign Brief Generator."
   },
   {
-    "objectID": "toolkit/strategic-analysis.html",
-    "href": "toolkit/strategic-analysis.html",
-    "title": "Strategic Analysis",
+    "objectID": "toolkit/strategic-options-matrix.html",
+    "href": "toolkit/strategic-options-matrix.html",
+    "title": "Strategic Options Matrix",
     "section": "",
-    "text": "Strategic analysis comes before any decision about a specific customer. These tools score the organisation, its market and its growth options, so a planning session ends with ranked priorities in place of a list.\n\n\n  \n    \n      SWOT Analysis Builder\n      \n        In progress\n        Strengths, weaknesses, opportunities and threats, each item scored by impact and likelihood and ranked on a scatter plot.\n      \n      \n        Open SWOT Analysis Builder\n      \n    \n  \n  \n    \n      PESTEL Analysis Builder\n      \n        In progress\n        Political, economic, social, technological, environmental and legal factors, each scored and ranked on a scatter plot.\n      \n      \n        Open PESTEL Analysis Builder\n      \n    \n  \n  \n    \n      Porter's Five Forces Analyser\n      \n        In progress\n        Score the five competitive forces, see them on a radar chart and rate the industry's attractiveness.\n      \n      \n        Open Porter's Five Forces Analyser\n      \n    \n  \n  \n    \n      Ansoff Matrix Tool\n      \n        In progress\n        Plot growth initiatives by product and market newness, sized by investment, with a risk score for each.\n      \n      \n        Open Ansoff Matrix Tool\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
+    "text": "In progress\nA strategic options matrix places each option a firm is weighing by how attractive it is and how feasible it is for this firm. Attractive and feasible options are the ones to pursue. Attractive options out of reach call for building capability first, and feasible options of little value are quick wins at best.\nThe tool opens on 5 growth options for a regional event company. Above the matrix, load porter-scenario-data.csv, pick one of its 40 scenarios and add it as an option: its Industry_Attractiveness becomes the option’s attractiveness and you judge its feasibility. The panel checks the scenario’s mean force score and attractiveness, and shows its recommended strategy exactly as the file gives it."
+  },
+  {
+    "objectID": "toolkit/strategic-options-matrix.html#how-it-works",
+    "href": "toolkit/strategic-options-matrix.html#how-it-works",
+    "title": "Strategic Options Matrix",
+    "section": "How it works",
+    "text": "How it works\nFeasibility runs across and attractiveness up, both from 0 to 10, with the lines at 5. Bubble area shows the investment.\nPursue: attractive and feasibleBuild capability first: attractive, low feasibilityQuick win, limited upside: feasible, low attractivenessSet aside: low on both\nIn the sample file each force is scored 0 to 10. Mean_Force_Score is the mean of the 5 and Industry_Attractiveness is 10 minus that mean, rounded to a whole number, so strong forces mean a less attractive industry. The tool checks both columns on every scenario. Recommended_Strategy follows no fixed rule in the file, since scenarios with the same attractiveness carry different strategies, so the tool shows it as given and leaves the judgement to you.\nFlairMI’s Porter’s Five Forces Analyser scores forces from 1 to 5 and reports attractiveness as 6 minus the mean force. The idea is the same on a different scale."
+  },
+  {
+    "objectID": "toolkit/strategic-options-matrix.html#frequently-asked-questions",
+    "href": "toolkit/strategic-options-matrix.html#frequently-asked-questions",
+    "title": "Strategic Options Matrix",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is a strategic options matrix?\n    A strategic options matrix is a 2 by 2 grid that plots each strategic option by attractiveness and feasibility. It turns a long list of ideas into a short list to pursue, with a reason for every option set aside.\n  \n  \n    How does Porter's Five Forces feed the matrix?\n    The five forces describe how attractive an industry is. In the sample file, attractiveness is 10 minus the mean force score, rounded. Load a scenario and the tool adds it to the matrix at that attractiveness, ready for you to judge feasibility.\n  \n  \n    Why does the tool leave the recommended strategy as it is?\n    In the sample file the recommended strategy follows no single rule: scenarios with the same attractiveness carry different strategies. The tool reports it as one group's call and leaves the judgement to you.\n  \n  \n    Are force scores ordinal?\n    Yes. A force scored 8 is stronger than one scored 4, and the gap between scores is a judgement. The median and the mode suit ordinal data best, and a mean of ordinal scores, as in Mean_Force_Score, is a convention to state openly.\n  \n  \n    Is the Strategic Options Matrix free?\n    Yes. It is free, runs in your browser and keeps your work on this device. Export it as PNG, PDF or CSV."
+  },
+  {
+    "objectID": "toolkit/strategic-options-matrix.html#related",
+    "href": "toolkit/strategic-options-matrix.html#related",
+    "title": "Strategic Options Matrix",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Score an industry in Porter’s Five Forces Analyser, test the firm’s resources in the VRIO Classifier and compare growth paths in the Ansoff Matrix."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html",
+    "href": "toolkit/stp-builder.html",
+    "title": "STP Builder",
+    "section": "",
+    "text": "In progress\nSTP stands for segmentation, targeting and positioning, the three moves that take a marketer from a whole market to one clear claim. Segmentation divides the market into groups with similar needs, targeting chooses the group to serve, and positioning writes the statement that group will hear. The tool draws on the STP framework taught in Week 2 of The Evidence-Based Digital Marketer, FlairMI’s open digital marketing textbook, where the dot-cluster diagram first appeared as a static figure.\nEverything above runs in your browser and stays there."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#frequently-asked-questions",
+    "href": "toolkit/stp-builder.html#frequently-asked-questions",
+    "title": "STP Builder",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n\n\n  \n    What is STP marketing?\n    STP marketing stands for segmentation, targeting and positioning. Segmentation divides a market into groups with similar needs, targeting chooses which group to serve and positioning designs the claim that group will hear.\n  \n  \n    What makes a good market segment?\n    A good market segment is measurable, large enough to be worth serving, reachable through channels you can use and different enough in its needs to justify its own offer.\n  \n  \n    How do you write a positioning statement?\n    A positioning statement names the target segment, the frame of reference, the point of difference and the evidence: for [segment] considering [frame], this is the option that [point of difference], evidenced by [proof].\n  \n  \n    What comes after STP?\n    The marketing mix comes after STP. This tool saves the positioning on your device, and the 7Ps Marketing Mix Planner and the Campaign Brief Generator read it from there.\n  \n  \n    Is this STP Builder free?\n    Yes. The STP Builder is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+  },
+  {
+    "objectID": "toolkit/stp-builder.html#related",
+    "href": "toolkit/stp-builder.html#related",
+    "title": "STP Builder",
+    "section": "Related",
+    "text": "Related\nThis tool is the first entry in FlairMI’s Marketing Toolkit Hub, a growing set of client-side marketing frameworks. See also Persona Builder for building out the people behind a segment once you have named one."
   },
   {
     "objectID": "toolkit/servqual-gap-analysis.html",
@@ -245,165 +315,130 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Preview the headline as a search result with the Meta Tag and Open Graph Preview, and count characters for social posts with the Hashtag and Character Counter."
   },
   {
-    "objectID": "toolkit/price-elasticity-calculator.html",
-    "href": "toolkit/price-elasticity-calculator.html",
-    "title": "Price Elasticity Calculator",
+    "objectID": "toolkit/probability-explorer.html",
+    "href": "toolkit/probability-explorer.html",
+    "title": "Probability Explorer",
     "section": "",
-    "text": "In progress\nPrice elasticity measures how much demand changes when price changes. It decides whether a price rise increases revenue or loses more in volume than it gains in price.\nEverything above runs in your browser and saves to this device only. Enter two prices and the units sold at each. The sample is a hotel member rate raised from 165 to 179."
+    "text": "In progress\nProbability measures how likely an event is, on a scale from 0 to 1. One way to read it is as a long-run relative frequency: the share of times the event happens when the same trial is repeated again and again. A second skill is reading probabilities from a table of counts, where joint, marginal and conditional probabilities answer 3 different questions about the same data.\nThe tool opens on a coin. Toss it once to watch it turn, or 10, 100, 1,000 or 10,000 times to see the share of heads wander and then settle. Set the chance of heads away from 0.5 to try a biased coin. The Sample data tab loads probability-basics-data.csv, 100 event registrations with attendance, ticket type and payment method, and turns any 2 of those columns into a probability table."
   },
   {
-    "objectID": "toolkit/price-elasticity-calculator.html#how-it-works",
-    "href": "toolkit/price-elasticity-calculator.html#how-it-works",
-    "title": "Price Elasticity Calculator",
+    "objectID": "toolkit/probability-explorer.html#how-it-works",
+    "href": "toolkit/probability-explorer.html#how-it-works",
+    "title": "Probability Explorer",
     "section": "How it works",
-    "text": "How it works\nThe arc formula uses the midpoint of the two observations, so the answer is the same whichever price you call the first.\nArc elasticity = [(Q2 − Q1) ÷ ((Q1 + Q2) ÷ 2)] ÷ [(P2 − P1) ÷ ((P1 + P2) ÷ 2)]Elastic when the absolute value is above 1, inelastic below 1Linear demand Q = a − bP through both points: revenue peaks at a ÷ 2b, contribution peaks at (a + b × cost) ÷ 2b\nThe straight demand line is an assumption that holds best near the two observed prices. Treat the optimal prices as a direction to test."
+    "text": "How it works\nRelative frequency = times the event happened / number of trialsMarginal: P(A) = row total / nJoint: P(A and B) = cell count / nAddition rule: P(A or B) = P(A) + P(B) − P(A and B)Conditional: P(B | A) = P(A and B) / P(A)Independent when P(A and B) = P(A) × P(B)\nA worked example from the sample file. Of 100 registrations, 20 hold VIP tickets and 83 attended, and 16 are VIP holders who attended. So P(VIP) = 0.20, P(Attended) = 0.83 and the joint probability P(VIP and Attended) = 0.16. The addition rule gives P(VIP or Attended) = 0.20 + 0.83 − 0.16 = 0.87. The conditional probability P(Attended | VIP) = 0.16 / 0.20 = 0.80, a little below the 0.83 for everyone.\nFor independent events the joint probability would be 0.20 × 0.83 = 0.166, or 16.6 cases, and the file has 16. The 2 figures are close, so ticket type and attendance look nearly independent in this file. The coin makes the same point from the other side: each toss is independent of the last, so the chance of heads stays the same after any run of tails.\nThe coin experiment follows John Kerrich, who tossed a coin 10,000 times by hand while interned in Denmark during the Second World War. He counted 502 heads after 1,000 tosses, 2,533 after 5,000 and 5,067 after 10,000, a share of 0.507. Source: Kerrich, J. E. (1946), An Experimental Introduction to the Theory of Probability, Copenhagen: Einar Munksgaard. Press Toss 10,000 to repeat his experiment in a second."
   },
   {
-    "objectID": "toolkit/price-elasticity-calculator.html#frequently-asked-questions",
-    "href": "toolkit/price-elasticity-calculator.html#frequently-asked-questions",
-    "title": "Price Elasticity Calculator",
+    "objectID": "toolkit/probability-explorer.html#frequently-asked-questions",
+    "href": "toolkit/probability-explorer.html#frequently-asked-questions",
+    "title": "Probability Explorer",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What is price elasticity of demand?\n    Price elasticity of demand is the percentage change in quantity demanded divided by the percentage change in price. An elasticity of -1.5 means a 1% price rise cuts sales by about 1.5%.\n  \n  \n    How do you calculate price elasticity with two price points?\n    Use the arc formula: the change in quantity over the average quantity, divided by the change in price over the average price. Using the midpoint gives the same answer in either direction.\n  \n  \n    What is the difference between elastic and inelastic demand?\n    Demand is elastic when the absolute elasticity is above 1, so a price rise loses more in volume than it gains in price and revenue falls. Demand is inelastic below 1, so a price rise increases revenue.\n  \n  \n    How do you find the profit-maximising price?\n    With a straight-line demand curve Q = a minus bP through two observed points, contribution peaks at (a + b times unit cost) divided by 2b. Treat it as a direction to test, since real demand curves bend.\n  \n  \n    Is this Price Elasticity Calculator free?\n    Yes. The Price Elasticity Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+    "text": "Frequently Asked Questions\n\n  \n    What is probability as relative frequency?\n    The probability of an event is the share of times it happens over a long run of trials. Toss a fair coin 10 times and the share of heads may be 0.3 or 0.7. Toss it 1,000 times and the share sits close to 0.5.\n  \n  \n    What is the difference between joint, marginal and conditional probability?\n    A joint probability is the chance that 2 events happen together, such as a VIP ticket holder who attended. A marginal probability is the chance of one event on its own. A conditional probability is the chance of one event given that the other has happened, P(B | A) = P(A and B) / P(A).\n  \n  \n    How do I check whether 2 events are independent?\n    Events A and B are independent when P(A and B) equals P(A) times P(B), which is the same as P(B | A) equalling P(B). In real data the 2 sides rarely match exactly, so a chi-square test judges whether the gap is larger than chance would give.\n  \n  \n    What is the addition rule?\n    P(A or B) = P(A) + P(B) minus P(A and B). The joint probability is subtracted because cases where both events happen are counted once in P(A) and again in P(B).\n  \n  \n    After 5 tails in a row, is heads more likely?\n    No. Each toss is independent, so the chance of heads on the next toss is unchanged. Expecting heads to be due is the gambler's fallacy. The long-run share settles because later tosses outnumber the early run."
   },
   {
-    "objectID": "toolkit/price-elasticity-calculator.html#related",
-    "href": "toolkit/price-elasticity-calculator.html#related",
-    "title": "Price Elasticity Calculator",
+    "objectID": "toolkit/probability-explorer.html#related",
+    "href": "toolkit/probability-explorer.html#related",
+    "title": "Probability Explorer",
     "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. See what a customer is worth at the new price with the Customer Lifetime Value Calculator, and model price alongside spend in the MMM Analyser."
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Use probabilities in a decision with the Decision Tree and Expected Value Calculator, and see sampling variation at work in the Confidence Interval and Sample Size Calculator. Run the chi-square test in PocketStat."
   },
   {
-    "objectID": "toolkit/porters-five-forces.html",
-    "href": "toolkit/porters-five-forces.html",
-    "title": "Porter’s Five Forces Analyser",
+    "objectID": "toolkit/portfolio-and-growth.html",
+    "href": "toolkit/portfolio-and-growth.html",
+    "title": "Portfolio and Growth",
     "section": "",
-    "text": "In progress\nPorter’s Five Forces explains why some industries earn more than others. The stronger the forces, the more of the value created in the industry is taken by buyers, suppliers, rivals, new entrants or substitutes and the less is left as profit.\nEverything above runs in your browser and saves to this device only. It opens on a sample for boutique hotels in Lisbon. Name your own industry and score each statement by how far you agree."
+    "text": "Portfolio tools decide where to put resources across products or business units. The BCG and GE-McKinsey matrices share one bubble-chart engine, and the life cycle and diffusion tools read the same question from sales and adoption data.\n\n\n  \n    \n      BCG Growth-Share Matrix\n      \n        In progress\n        Products by market growth and relative share, sized by revenue, classed as stars, cash cows, question marks or dogs.\n      \n      \n        Open BCG Growth-Share Matrix\n      \n    \n  \n  \n    \n      GE-McKinsey Matrix\n      \n        In progress\n        Weighted industry attractiveness and competitive strength factors, scored per business unit on a nine-box grid.\n      \n      \n        Open GE-McKinsey Matrix\n      \n    \n  \n  \n    \n      Product Life Cycle Stage Identifier\n      \n        In progress\n        Fit an S-curve to sales history, estimate the current life cycle stage and see mix priorities for it.\n      \n      \n        Open Product Life Cycle Stage Identifier\n      \n    \n  \n  \n    \n      Diffusion of Innovation Adopter Calculator\n      \n        In progress\n        Place adoption on Rogers' curve, see which adopter group you are reaching and fit the Bass model for a forecast.\n      \n      \n        Open Diffusion of Innovation Adopter Calculator\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
   },
   {
-    "objectID": "toolkit/porters-five-forces.html#how-it-works",
-    "href": "toolkit/porters-five-forces.html#how-it-works",
-    "title": "Porter’s Five Forces Analyser",
-    "section": "How it works",
-    "text": "How it works\nEvery statement is written so that agreement means a stronger force. Each force’s score is the mean of its statements on a 1 to 5 scale.\nForce score = mean of its statement scoresIndustry attractiveness = 6 − mean of the five force scoresHigh at 3.67 or above, moderate from 2.33, low below 2.33\nThe radar chart shows the shape of the pressure: a large, even shape means a tough industry, and one long spike points to the force to manage first. Forces scoring 3.5 or more are listed as the main pressures on profit."
-  },
-  {
-    "objectID": "toolkit/porters-five-forces.html#frequently-asked-questions",
-    "href": "toolkit/porters-five-forces.html#frequently-asked-questions",
-    "title": "Porter’s Five Forces Analyser",
-    "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What are Porter's Five Forces?\n    Porter's Five Forces is a framework for judging how attractive an industry is. The five forces are the threat of new entrants, the bargaining power of suppliers, the bargaining power of buyers, the threat of substitutes and rivalry among existing competitors. Strong forces leave less profit for the firms in the industry.\n  \n  \n    How do you measure the strength of each force?\n    Score statements about each force, such as how easily buyers switch provider, from 1 to 5. A force's score is the mean of its statements. This tool rates industry attractiveness as 6 minus the mean of the five force scores.\n  \n  \n    What makes an industry attractive in Porter's Five Forces?\n    Weak forces make an industry attractive: high barriers to entry, many small suppliers, buyers who cannot easily switch, few substitutes and calm rivalry. In this tool an attractiveness score of 3.67 or more counts as high.\n  \n  \n    What is an example of Porter's Five Forces for hotels?\n    For boutique hotels in Lisbon, buyer power is strong because booking platforms show every rate side by side, and substitutes are strong because short-term rentals compete for the same guests. Supplier power is weak. The tool opens on this example.\n  \n  \n    Is this Five Forces Analyser free?\n    Yes. The Five Forces Analyser is free and opens straight away in any modern browser, including on a phone. Scores save on this device only and export as PNG or PDF."
-  },
-  {
-    "objectID": "toolkit/porters-five-forces.html#related",
-    "href": "toolkit/porters-five-forces.html#related",
-    "title": "Porter’s Five Forces Analyser",
-    "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Scan the wider environment first with the PESTEL Analysis Builder, then plan growth options with the Ansoff Matrix."
-  },
-  {
-    "objectID": "toolkit/pestel-analysis.html",
-    "href": "toolkit/pestel-analysis.html",
-    "title": "PESTEL Analysis Builder",
+    "objectID": "toolkit/planning-and-execution.html",
+    "href": "toolkit/planning-and-execution.html",
+    "title": "Planning and Execution",
     "section": "",
-    "text": "In progress\nPESTEL scans the macro environment, the forces outside any one firm’s control. It sits alongside SWOT: PESTEL supplies many of the opportunities and threats a SWOT then weighs against the organisation’s own strengths and weaknesses.\nEverything above runs in your browser and saves to this device only. It opens on sample factors for a European hotel group. Add the factors in the wider environment that could affect your organisation, score each one, and the tool ranks them across all six categories."
+    "text": "Planning tools turn a strategy into a campaign. The 7Ps Planner and Campaign Brief Generator carry the segment and positioning forward, and nine execution tools handle the assets a campaign needs: tracked links, page metadata, structured data, readable copy, accessible colours and test sizes.\n\n\n  \n    \n      7Ps Marketing Mix Planner\n      \n        In progress\n        Plan all seven Ps against one segment and positioning statement, and rate how well each P supports it.\n      \n      \n        Open 7Ps Marketing Mix Planner\n      \n    \n  \n  \n    \n      Campaign Brief Generator\n      \n        In progress\n        Pull persona, positioning and mix plan into one brief with objective, KPIs, budget split and timeline.\n      \n      \n        Open Campaign Brief Generator\n      \n    \n  \n  \n    \n      UTM Campaign URL Builder\n      \n        In progress\n        Tag campaign links with consistent UTM parameters, singly or in bulk, with warnings for common naming mistakes.\n      \n      \n        Open UTM Campaign URL Builder\n      \n    \n  \n  \n    \n      Meta Tag and Open Graph Preview\n      \n        In progress\n        Preview a page in search and social cards, check title and description length and copy the tags.\n      \n      \n        Open Meta Tag and Open Graph Preview\n      \n    \n  \n  \n    \n      Schema Markup Generator\n      \n        In progress\n        Write JSON-LD structured data for eight common schema types, with required fields flagged.\n      \n      \n        Open Schema Markup Generator\n      \n    \n  \n  \n    \n      Canonical Tag Generator\n      \n        In progress\n        Normalise URL variants, strip tracking parameters and see which duplicates collapse into one canonical tag.\n      \n      \n        Open Canonical Tag Generator\n      \n    \n  \n  \n    \n      Readability and Headline Analyser\n      \n        In progress\n        Flesch scores, sentence-length chart, long sentences marked and a headline check for length and keyword position.\n      \n      \n        Open Readability and Headline Analyser\n      \n    \n  \n  \n    \n      Robots.txt and Sitemap Generator\n      \n        In progress\n        Write robots.txt rules, including choices for AI crawlers, and a valid sitemap.xml from a URL list.\n      \n      \n        Open Robots.txt and Sitemap Generator\n      \n    \n  \n  \n    \n      Colour Contrast Checker\n      \n        In progress\n        WCAG contrast ratios with AA and AAA results, a suggested passing colour and a whole-palette check.\n      \n      \n        Open Colour Contrast Checker\n      \n    \n  \n  \n    \n      Hashtag and Character Counter\n      \n        In progress\n        Count characters, hashtags, mentions and links against nine social platforms' limits, with X's link rule applied.\n      \n      \n        Open Hashtag and Character Counter\n      \n    \n  \n  \n    \n      A/B Test Sample Size and Significance Calculator\n      \n        In progress\n        Size an A/B test before it runs, then test the result with a z-test and confidence intervals.\n      \n      \n        Open A/B Test Sample Size and Significance Calculator\n      \n    \n  \n  \n    \n      Decision Tree and Expected Value Calculator\n      \n        In progress\n        Draw a decision tree, compute each option's expected value and pick the best choice.\n      \n      \n        Open Decision Tree and Expected Value Calculator\n      \n    \n  \n  \n    \n      CPM/PERT and Gantt Planner\n      \n        In progress\n        PERT expected times, slack and the critical path, drawn as a network and a Gantt chart.\n      \n      \n        Open CPM/PERT and Gantt Planner\n      \n    \n  \n  \n    \n      Weighted Decision Matrix\n      \n        In progress\n        Score options against weighted criteria and rank them, with each criterion's share of the score.\n      \n      \n        Open Weighted Decision Matrix\n      \n    \n  \n  \n    \n      Probability Explorer\n      \n        In progress\n        An animated coin toss for relative frequency, and joint, marginal and conditional probability from a table.\n      \n      \n        Open Probability Explorer\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
   },
   {
-    "objectID": "toolkit/pestel-analysis.html#how-it-works",
-    "href": "toolkit/pestel-analysis.html#how-it-works",
-    "title": "PESTEL Analysis Builder",
-    "section": "How it works",
-    "text": "How it works\nEach factor is scored twice on a 1 to 5 scale: impact, meaning how much it would affect the organisation, and likelihood, meaning how probable it is within the planning period.\nPriority = impact × likelihood (1 to 25)\nThe scatter plot places every factor by its two scores, and the priority list ranks them across all six categories. Factors in the top right of the plot need a plan. Factors in the bottom left can be monitored."
-  },
-  {
-    "objectID": "toolkit/pestel-analysis.html#frequently-asked-questions",
-    "href": "toolkit/pestel-analysis.html#frequently-asked-questions",
-    "title": "PESTEL Analysis Builder",
-    "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What is a PESTEL analysis?\n    A PESTEL analysis is a scan of the six external forces that shape a market: political, economic, social, technological, environmental and legal. It picks out changes outside any one firm's control, so a business can plan for them before they arrive.\n  \n  \n    How do you score PESTEL factors?\n    Rate each factor's impact on the organisation and its likelihood within the planning period, each from 1 to 5. Multiplying the two gives a priority from 1 to 25 that ranks factors across all six categories.\n  \n  \n    What is the difference between PEST and PESTEL?\n    PEST covers political, economic, social and technological factors. PESTEL adds environmental and legal factors, which matter more now that climate rules, sustainability reporting and consumer law shape most markets.\n  \n  \n    What is a PESTEL example for the hotel industry?\n    For a European hotel group, tourist tax rises are political, energy costs are economic, demand for wellness breaks is social, AI trip planners are technological, heatwaves are environmental and EU rules on short-term rentals are legal. The tool opens on this example.\n  \n  \n    Is this PESTEL Analysis Builder free?\n    Yes. The PESTEL Analysis Builder is free and opens straight away in any modern browser, including on a phone. Factors stay in your browser tab, on your device."
-  },
-  {
-    "objectID": "toolkit/pestel-analysis.html#related",
-    "href": "toolkit/pestel-analysis.html#related",
-    "title": "PESTEL Analysis Builder",
-    "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Carry the top factors into the SWOT Analysis Builder, and test the industry itself with Porter’s Five Forces."
-  },
-  {
-    "objectID": "toolkit/nps-tracker.html",
-    "href": "toolkit/nps-tracker.html",
-    "title": "Net Promoter Score Tracker",
+    "objectID": "toolkit/performance-and-analytics.html",
+    "href": "toolkit/performance-and-analytics.html",
+    "title": "Performance and Analytics",
     "section": "",
-    "text": "In progress\nThe Net Promoter Score asks one question: how likely is it that you would recommend us to a friend or colleague, from 0 to 10? It is simple to collect and to track. The margin of error is often left out, and a small change between waves can then look like progress when it is noise.\nEverything above runs in your browser and saves to this device only. Waves are saved on this device. Enter counts of promoters, passives and detractors or paste raw scores and add each new wave."
+    "text": "Performance tools measure what happened after a campaign ran. Each one that rests on a formula shows the formula on the page, so the number can be checked and explained to a finance team.\n\n\n  \n    \n      SERVQUAL Gap Analysis\n      \n        Live\n        Expectations against perceptions on 22 items across five dimensions, weighted, with the largest gaps ranked.\n      \n      \n        Open SERVQUAL Gap Analysis\n      \n    \n  \n  \n    \n      Brand Equity Assessor\n      \n        In progress\n        Keller's six brand building blocks scored and drawn as the brand resonance pyramid, with the weakest block flagged.\n      \n      \n        Open Brand Equity Assessor\n      \n    \n  \n  \n    \n      Customer Lifetime Value Calculator\n      \n        In progress\n        Discounted customer lifetime value with retention, the CLV to CAC ratio and months to recover acquisition cost.\n      \n      \n        Open Customer Lifetime Value Calculator\n      \n    \n  \n  \n    \n      Price Elasticity Calculator\n      \n        In progress\n        Arc and point elasticity from two price points, elastic or inelastic, with revenue and profit curves.\n      \n      \n        Open Price Elasticity Calculator\n      \n    \n  \n  \n    \n      Net Promoter Score Tracker\n      \n        In progress\n        Calculate NPS with its margin of error and track it across survey waves, with a test of whether a change is real.\n      \n      \n        Open Net Promoter Score Tracker\n      \n    \n  \n  \n    \n      Marketing Attribution Comparison\n      \n        In progress\n        Apply five attribution models to the same conversion paths and see how each channel's credit changes.\n      \n      \n        Open Marketing Attribution Comparison\n      \n    \n  \n  \n    \n      MMM Analyser\n      \n        In progress\n        A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.\n      \n      \n        Open MMM Analyser\n      \n    \n  \n  \n    \n      Confidence Interval and Sample Size Calculator\n      \n        In progress\n        Intervals for a mean or a proportion, sample size for a target margin and a Central Limit Theorem simulator.\n      \n      \n        Open Confidence Interval and Sample Size Calculator\n      \n    \n  \n  \n    \n      Measurement Model Checker\n      \n        In progress\n        AVE, composite reliability and HTMT from pasted loadings, with CFI, TLI, RMSEA and SRMR read against published cutoffs.\n      \n      \n        Open Measurement Model Checker\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
   },
   {
-    "objectID": "toolkit/nps-tracker.html#how-it-works",
-    "href": "toolkit/nps-tracker.html#how-it-works",
-    "title": "Net Promoter Score Tracker",
-    "section": "How it works",
-    "text": "How it works\nPromoters score 9 or 10, passives 7 or 8 and detractors 0 to 6.\nNPS = % promoters − % detractors, from −100 to +100Standard error = √((pP + pD − (pP − pD)²) ÷ n) × 10095% interval = NPS ± 1.96 × standard error\nA change between two waves is flagged as larger than chance when it exceeds the combined margin of error of both waves, a conservative check."
-  },
-  {
-    "objectID": "toolkit/nps-tracker.html#frequently-asked-questions",
-    "href": "toolkit/nps-tracker.html#frequently-asked-questions",
-    "title": "Net Promoter Score Tracker",
-    "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What is Net Promoter Score?\n    Net Promoter Score (NPS) is a customer loyalty measure based on one question: how likely are you to recommend us to a friend or colleague, from 0 to 10? It runs from -100 to +100.\n  \n  \n    How is NPS calculated?\n    Subtract the percentage of detractors, who score 0 to 6, from the percentage of promoters, who score 9 or 10. Passives, who score 7 or 8, count in the total only.\n  \n  \n    What is the margin of error for NPS?\n    The margin of error for NPS depends on the sample size and the mix of answers. With 400 responses it is often about 7 to 9 points at 95% confidence. This tool calculates it for every survey wave.\n  \n  \n    What is a good NPS score?\n    A good NPS varies by industry. Compare with your own previous waves and with competitors measured the same way, since a general benchmark says little about your own market.\n  \n  \n    Is this Net Promoter Score Tracker free?\n    Yes. The Net Promoter Score Tracker is free and opens straight away in any modern browser, including on a phone. Survey waves are saved in your browser and stay on your device."
-  },
-  {
-    "objectID": "toolkit/nps-tracker.html#related",
-    "href": "toolkit/nps-tracker.html#related",
-    "title": "Net Promoter Score Tracker",
-    "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Diagnose what drives the score with SERVQUAL Gap Analysis and the Brand Equity Assessor."
-  },
-  {
-    "objectID": "toolkit/meta-tag-preview.html",
-    "href": "toolkit/meta-tag-preview.html",
-    "title": "Meta Tag and Open Graph Preview",
+    "objectID": "toolkit/mmm-analyser.html",
+    "href": "toolkit/mmm-analyser.html",
+    "title": "MMM Analyser",
     "section": "",
-    "text": "In progress\nThe title tag and meta description are the first thing a searcher reads. Open Graph and Twitter card tags control how a link looks when it is shared, so the page chooses its own title, text and image. Platforms left to guess often show a cut-off title and a blank image.\nEverything above runs in your browser and saves to this device only. Type a title, description, URL and share image and the previews update as you type. The HTML for the page head is ready to copy."
+    "text": "In progress\nMarketing mix modelling estimates how much each channel’s spend adds to sales, using the history of both. It captures two effects a simple regression misses: advertising keeps working after the week it runs, and each extra unit of spend adds less than the one before.\nThe model covers promotion spend and price. Product, place, people, process and physical evidence are outside it, and are planned in the 7Ps Marketing Mix Planner.\nEverything above runs in your browser and saves to this device only. Spend and sales data never leave the browser. It opens on 2 years of weekly hotel booking revenue, generated from known settings, so you can see how closely the model recovers them."
   },
   {
-    "objectID": "toolkit/meta-tag-preview.html#how-it-works",
-    "href": "toolkit/meta-tag-preview.html#how-it-works",
-    "title": "Meta Tag and Open Graph Preview",
+    "objectID": "toolkit/mmm-analyser.html#how-it-works",
+    "href": "toolkit/mmm-analyser.html#how-it-works",
+    "title": "MMM Analyser",
     "section": "How it works",
-    "text": "How it works\nSearch engines truncate by pixel width, so the tool measures width as well as characters.\nTitle: about 600 pixels at 20 px Arial, roughly 50 to 60 charactersDescription: about 920 pixels at 14 px Arial, roughly 150 to 160 charactersShare image: 1200 by 630 pixels, a 1.91 to 1 ratio\nThese limits are approximations. Search engines sometimes rewrite titles and descriptions, so the preview shows the most likely result."
+    "text": "How it works\nFor each channel, spend is carried forward by an adstock rate, then passed through a saturation curve. Sales are modelled as a base, plus trend, seasonality and price, plus the channel effects.\nAdstock At = spendt + θ × At−1, with θ from 0 to 0.8Saturation h(A) = A ÷ (A + K), with K a multiple of the channel's mean adstockSalest = b0 + trend + seasonality + γ × pricet + Σ βc × hc(Ac,t)ROI = contribution ÷ spend. Marginal ROI = extra sales from one more unit of spend at the current level\nFor fixed θ and K the model is linear and is fitted by ordinary least squares. θ and K are chosen per channel by a search that maximises R². The tool warns when the data are too short for the number of coefficients, when a channel’s effect is negative and when two channels’ spend moves together so closely that their effects cannot be separated. Treat results as a starting point for testing budget shifts."
   },
   {
-    "objectID": "toolkit/meta-tag-preview.html#frequently-asked-questions",
-    "href": "toolkit/meta-tag-preview.html#frequently-asked-questions",
-    "title": "Meta Tag and Open Graph Preview",
+    "objectID": "toolkit/mmm-analyser.html#frequently-asked-questions",
+    "href": "toolkit/mmm-analyser.html#frequently-asked-questions",
+    "title": "MMM Analyser",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What are meta tags and Open Graph tags?\n    Meta tags describe a page to search engines, chiefly the title tag and the meta description. Open Graph tags tell Facebook, LinkedIn and other platforms which title, description and image to show when the page is shared. Twitter card tags do the same for X.\n  \n  \n    How long should a title tag be?\n    A title tag should fit about 600 pixels in search results, roughly 50 to 60 characters. Put the most important words first, since longer titles are cut off.\n  \n  \n    How long should a meta description be?\n    A meta description should fit about 920 pixels, roughly 150 to 160 characters. Search engines may rewrite it, but a clear summary that matches the page is usually kept.\n  \n  \n    What size should an Open Graph image be?\n    An Open Graph image should be 1200 by 630 pixels, a 1.91 to 1 ratio. With one, a shared link shows a large preview card. Most platforms fall back to a small or empty preview when the image is missing.\n  \n  \n    Is this Meta Tag and Open Graph Preview free?\n    Yes. The Meta Tag and Open Graph Preview is free and opens straight away in any modern browser, including on a phone. A share image loads from the address you enter, as it would on any web page."
+    "text": "Frequently Asked Questions\n\n  \n    What is marketing mix modelling?\n    Marketing mix modelling (MMM) is a statistical method that estimates how much each marketing channel's spend adds to sales, using the history of both. It captures carryover, where advertising keeps working after it runs, and diminishing returns.\n  \n  \n    What is adstock in marketing mix modelling?\n    Adstock is the carried-over effect of past advertising. With a carryover rate of 0.6, 60% of last week's effect carries into this week, then 60% of that into the next week.\n  \n  \n    What is marginal ROI in marketing mix modelling?\n    Marginal ROI is the extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI near saturation, which is the point to move budget elsewhere.\n  \n  \n    How much data does marketing mix modelling need?\n    Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality and price, that is about 90 periods or roughly 2 years of weekly data.\n  \n  \n    Is this MMM Analyser free?\n    Yes. The MMM Analyser is free and opens straight away in any modern browser, including on a phone. Spend and sales data are processed in your browser and stay on your device."
   },
   {
-    "objectID": "toolkit/meta-tag-preview.html#related",
-    "href": "toolkit/meta-tag-preview.html#related",
-    "title": "Meta Tag and Open Graph Preview",
+    "objectID": "toolkit/mmm-analyser.html#related",
+    "href": "toolkit/mmm-analyser.html#related",
+    "title": "MMM Analyser",
     "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Add structured data with the Schema Markup Generator, and settle the preferred URL with the Canonical Tag Generator."
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Compare with path-based credit in the Marketing Attribution Comparison, and plan the other five Ps in the 7Ps Marketing Mix Planner."
+  },
+  {
+    "objectID": "toolkit/measurement-model-checker.html",
+    "href": "toolkit/measurement-model-checker.html",
+    "title": "Measurement Model Checker",
+    "section": "",
+    "text": "In progress\nA measurement model links each construct, such as perceived value, to the questionnaire items that measure it. Before testing relationships between constructs, check that each construct’s items hang together (convergent validity and reliability) and that different constructs measure different things (discriminant validity). This tool computes the standard checks from the output JASP gives you.\nThe tool opens on a confirmatory factor analysis of the 3 scales in event-survey-data.csv: Content, Value and Network, 4 items each. The loadings and fit indices come from that CFA, and HTMT is computed from the item correlations in the same file. Paste your own loadings from JASP’s CFA output, and a correlation matrix or a data file, to check your model."
+  },
+  {
+    "objectID": "toolkit/measurement-model-checker.html#how-it-works",
+    "href": "toolkit/measurement-model-checker.html#how-it-works",
+    "title": "Measurement Model Checker",
+    "section": "How it works",
+    "text": "How it works\nAVE = Σ λ² / kCR = (Σ λ)² / ((Σ λ)² + Σ (1 − λ²))HTMTij = mean heterotrait correlation / √(mean monotrait correlationi × mean monotrait correlationj)\nHere λ is a standardised loading and k the number of items. The thresholds and their sources:\n\nAVE of 0.50 or more. Fornell, C. and Larcker, D. F. (1981), “Evaluating structural equation models with unobservable variables and measurement error”, Journal of Marketing Research, 18(1), 39 to 50.\nComposite reliability of 0.70 or more, and loadings of 0.70 or more, with 0.50 as the floor. Hair, J. F., Black, W. C., Babin, B. J. and Anderson, R. E. (2019), Multivariate Data Analysis, 8th edition, Cengage.\nHTMT below 0.85, or below 0.90 as the more lenient threshold. Henseler, J., Ringle, C. M. and Sarstedt, M. (2015), “A new criterion for assessing discriminant validity in variance-based structural equation modeling”, Journal of the Academy of Marketing Science, 43(1), 115 to 135.\nCFI and TLI close to 0.95 or above, RMSEA close to 0.06 or below, SRMR close to 0.08 or below. Hu, L. and Bentler, P. M. (1999), “Cutoff criteria for fit indexes in covariance structure analysis”, Structural Equation Modeling, 6(1), 1 to 55.\n\nIn the sample, Content has loadings of 0.767, 0.838, 0.828 and 0.762, so AVE = 0.639 and CR = 0.876. The 3 constructs are almost uncorrelated in this file, so every HTMT value sits close to 0. These cutoffs come from simulation studies and published practice, and Hu and Bentler themselves recommend reading 2 indices together."
+  },
+  {
+    "objectID": "toolkit/measurement-model-checker.html#frequently-asked-questions",
+    "href": "toolkit/measurement-model-checker.html#frequently-asked-questions",
+    "title": "Measurement Model Checker",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is average variance extracted?\n    Average variance extracted (AVE) is the mean of the squared standardised loadings of a construct's items. It is the share of the items' variance that the construct explains. Fornell and Larcker (1981) set 0.50 as the minimum, meaning the construct explains more variance than measurement error does.\n  \n  \n    How is composite reliability calculated?\n    Composite reliability is the squared sum of the standardised loadings divided by that same squared sum plus the sum of the error variances, 1 minus each squared loading. Values of 0.70 or more indicate good reliability (Hair et al., 2019).\n  \n  \n    What is HTMT and what threshold should I use?\n    The heterotrait-monotrait ratio compares correlations between items of different constructs with correlations between items of the same construct. Henseler, Ringle and Sarstedt (2015) discuss 0.85 as the stricter threshold and 0.90 as the more lenient one.\n  \n  \n    What are good CFI, TLI, RMSEA and SRMR values?\n    Hu and Bentler (1999) suggest CFI and TLI close to 0.95 or above, RMSEA close to 0.06 or below and SRMR close to 0.08 or below. Treat these as guidelines and report the values themselves.\n  \n  \n    Can I paste output from JASP?\n    Yes. Copy the factor loadings table from JASP's confirmatory factor analysis and paste it in. The tool reads the factor, indicator and standardised estimate columns. Plain lines of construct, item and loading work too."
+  },
+  {
+    "objectID": "toolkit/measurement-model-checker.html#related",
+    "href": "toolkit/measurement-model-checker.html#related",
+    "title": "Measurement Model Checker",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Check reliability and run an exploratory factor analysis in PocketStat, and choose the right analysis with StatChooser."
   },
   {
     "objectID": "toolkit/index.html",
     "href": "toolkit/index.html",
     "title": "Marketing Toolkit Hub",
     "section": "",
-    "text": "32 free marketing tools across five categories, in the order a marketer works through them: strategic analysis, customer understanding, portfolio and growth, planning and execution and performance and analytics. Every tool runs in the browser, opens straight away and keeps your data on your device."
+    "text": "42 free marketing tools across five categories, in the order a marketer works through them: strategic analysis, customer understanding, portfolio and growth, planning and execution and performance and analytics. Every tool runs in the browser, opens straight away and keeps your data on your device."
   },
   {
     "objectID": "toolkit/index.html#categories",
     "href": "toolkit/index.html#categories",
     "title": "Marketing Toolkit Hub",
     "section": "Categories",
-    "text": "Categories\n\n  \n    \n      1. Strategic Analysis\n      \n        Frameworks that come before any customer-specific decision.\n        SWOT Analysis Builder · PESTEL Analysis Builder · Porter's Five Forces Analyser · Ansoff Matrix Tool\n        4 tools\n      \n      \n        Open Strategic Analysis\n      \n    \n  \n  \n    \n      2. Customer Understanding\n      \n        Tools that build the picture of who the customer is.\n        Persona Builder · STP Builder · Customer Journey Mapper · Importance-Performance Analysis Matrix · RFM Segmentation Tool · Value Proposition Canvas\n        6 tools\n      \n      \n        Open Customer Understanding\n      \n    \n  \n  \n    \n      3. Portfolio and Growth\n      \n        Deciding where to focus resources across products or business units.\n        BCG Growth-Share Matrix · GE-McKinsey Matrix · Product Life Cycle Stage Identifier · Diffusion of Innovation Adopter Calculator\n        4 tools\n      \n      \n        Open Portfolio and Growth\n      \n    \n  \n  \n    \n      4. Planning and Execution\n      \n        Turning strategy into a campaign, plus the execution assets a campaign needs.\n        7Ps Marketing Mix Planner · Campaign Brief Generator · UTM Campaign URL Builder · Meta Tag and Open Graph Preview · Schema Markup Generator · Canonical Tag Generator · Readability and Headline Analyser · Robots.txt and Sitemap Generator · Colour Contrast Checker · Hashtag and Character Counter · A/B Test Sample Size and Significance Calculator\n        11 tools\n      \n      \n        Open Planning and Execution\n      \n    \n  \n  \n    \n      5. Performance and Analytics\n      \n        Measuring what happened after a campaign runs.\n        SERVQUAL Gap Analysis · Brand Equity Assessor · Customer Lifetime Value Calculator · Price Elasticity Calculator · Net Promoter Score Tracker · Marketing Attribution Comparison · MMM Analyser\n        7 tools\n      \n      \n        Open Performance and Analytics"
+    "text": "Categories\n\n  \n    \n      1. Strategic Analysis\n      \n        Frameworks that come before any customer-specific decision.\n        \n          SWOT Analysis Builder\n          PESTEL Analysis Builder\n          Porter's Five Forces Analyser\n          Ansoff Matrix Tool\n          VRIO Classifier\n          Strategic Options Matrix\n          Stakeholder Power and Interest Grid\n          Ethical Decision Matrix\n        \n        8 tools\n      \n      \n        Open Strategic Analysis\n      \n    \n  \n  \n    \n      2. Customer Understanding\n      \n        Tools that build the picture of who the customer is.\n        \n          Persona Builder\n          STP Builder\n          Customer Journey Mapper\n          Importance-Performance Analysis Matrix\n          RFM Segmentation Tool\n          Value Proposition Canvas\n        \n        6 tools\n      \n      \n        Open Customer Understanding\n      \n    \n  \n  \n    \n      3. Portfolio and Growth\n      \n        Deciding where to focus resources across products or business units.\n        \n          BCG Growth-Share Matrix\n          GE-McKinsey Matrix\n          Product Life Cycle Stage Identifier\n          Diffusion of Innovation Adopter Calculator\n        \n        4 tools\n      \n      \n        Open Portfolio and Growth\n      \n    \n  \n  \n    \n      4. Planning and Execution\n      \n        Turning strategy into a campaign, plus the execution assets a campaign needs.\n        \n          7Ps Marketing Mix Planner\n          Campaign Brief Generator\n          UTM Campaign URL Builder\n          Meta Tag and Open Graph Preview\n          Schema Markup Generator\n          Canonical Tag Generator\n          Readability and Headline Analyser\n          Robots.txt and Sitemap Generator\n          Colour Contrast Checker\n          Hashtag and Character Counter\n          A/B Test Sample Size and Significance Calculator\n          Decision Tree and Expected Value Calculator\n          CPM/PERT and Gantt Planner\n          Weighted Decision Matrix\n          Probability Explorer\n        \n        15 tools\n      \n      \n        Open Planning and Execution\n      \n    \n  \n  \n    \n      5. Performance and Analytics\n      \n        Measuring what happened after a campaign runs.\n        \n          SERVQUAL Gap Analysis\n          Brand Equity Assessor\n          Customer Lifetime Value Calculator\n          Price Elasticity Calculator\n          Net Promoter Score Tracker\n          Marketing Attribution Comparison\n          MMM Analyser\n          Confidence Interval and Sample Size Calculator\n          Measurement Model Checker\n        \n        9 tools\n      \n      \n        Open Performance and Analytics"
   },
   {
     "objectID": "toolkit/index.html#frequently-asked-questions",
     "href": "toolkit/index.html#frequently-asked-questions",
     "title": "Marketing Toolkit Hub",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    Is the Marketing Toolkit Hub free?\n    Yes, every tool in the hub is free to use as often as you like.\n  \n  \n    What do I need to use the tools?\n    A modern web browser, on a laptop or a phone. Every tool runs in your browser, and anything you save stays on your device.\n  \n  \n    Which tools are available?\n    All 32 tools across the five categories are available. Persona Builder, Customer Journey Mapper and SERVQUAL Gap Analysis are marked Live. The others are marked In progress while they are tested with real use.\n  \n  \n    Do the tools share data with each other?\n    Yes, on the same device. Persona Builder sends personas to the Customer Journey Mapper, the journey map feeds SERVQUAL, and STP Builder, 7Ps Planner and Persona Builder feed the Campaign Brief Generator.\n  \n  \n    Can I suggest a new tool?\n    Yes, use the Request a Tool link below and say which framework you would use."
+    "text": "Frequently Asked Questions\n\n  \n    Is the Marketing Toolkit Hub free?\n    Yes, every tool in the hub is free to use as often as you like.\n  \n  \n    What do I need to use the tools?\n    A modern web browser, on a laptop or a phone. Every tool runs in your browser, and anything you save stays on your device.\n  \n  \n    Which tools are available?\n    All 42 tools across the five categories are available. Persona Builder, Customer Journey Mapper and SERVQUAL Gap Analysis are marked Live. The others are marked In progress while they are tested with real use.\n  \n  \n    Do the tools share data with each other?\n    Yes, on the same device. Persona Builder sends personas to the Customer Journey Mapper, the journey map feeds SERVQUAL, and STP Builder, 7Ps Planner and Persona Builder feed the Campaign Brief Generator.\n  \n  \n    Can I suggest a new tool?\n    Yes, use the Request a Tool link below and say which framework you would use."
   },
   {
     "objectID": "toolkit/index.html#request-a-tool",
@@ -441,11 +476,67 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Portfolio and Growth category. Start from the simpler BCG Growth-Share Matrix, and plan growth moves with the Ansoff Matrix."
   },
   {
+    "objectID": "toolkit/diffusion-of-innovation.html",
+    "href": "toolkit/diffusion-of-innovation.html",
+    "title": "Diffusion of Innovation Adopter Calculator",
+    "section": "",
+    "text": "In progress\nRogers’ diffusion of innovations divides a market into five adopter groups by when they take up something new: innovators, early adopters, the early majority, the late majority and laggards. Each group responds to different arguments, so knowing which group you are reaching now tells you what the next campaign has to do.\nEverything above runs in your browser and saves to this device only. It opens on quarterly mobile check-in users across a hotel group. Enter adopters and market potential, or paste new adopters per period and fit the Bass model."
+  },
+  {
+    "objectID": "toolkit/diffusion-of-innovation.html#how-it-works",
+    "href": "toolkit/diffusion-of-innovation.html#how-it-works",
+    "title": "Diffusion of Innovation Adopter Calculator",
+    "section": "How it works",
+    "text": "How it works\nCumulative adoption is the share of the market potential that has adopted. Rogers’ groups are bands of a normal curve: innovators are the first 2.5%, early adopters the next 13.5%, the early majority and late majority 34% each, and laggards the final 16%.\nThe Bass model splits adoption into two forces: innovation, people who adopt on their own, and imitation, people who adopt because others have.\nn(t) = p · m + (q − p) · N(t−1) − (q ÷ m) · N(t−1)²p = innovation coefficient, q = imitation coefficient, m = market potentialPeak adoption at t* = ln(q ÷ p) ÷ (p + q)\nThe coefficients are estimated by ordinary least squares on new adopters against cumulative adopters, the method in Bass (1969)."
+  },
+  {
+    "objectID": "toolkit/diffusion-of-innovation.html#frequently-asked-questions",
+    "href": "toolkit/diffusion-of-innovation.html#frequently-asked-questions",
+    "title": "Diffusion of Innovation Adopter Calculator",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is the diffusion of innovations theory?\n    Diffusion of innovations, from Everett Rogers (1962), explains how new products spread through a market. Adopters fall into five groups by when they adopt: innovators, early adopters, the early majority, the late majority and laggards.\n  \n  \n    What percentage is each adopter category?\n    Innovators are 2.5% of eventual adopters, early adopters 13.5%, the early majority 34%, the late majority 34% and laggards 16%. The bands come from a normal curve cut at one and two standard deviations from the mean.\n  \n  \n    What is the Bass diffusion model?\n    The Bass model (1969) forecasts adoption from two forces: innovation (p), adoption driven by outside influence such as advertising, and imitation (q), adoption driven by existing users. With market potential m, it predicts the size and timing of peak adoption.\n  \n  \n    How do you use adopter categories in marketing?\n    Match the argument to the group you are reaching. Early adopters respond to a clear advantage, the early majority needs proof and references, and the late majority needs low risk, a low price and evidence that most people already use it.\n  \n  \n    Is this Diffusion of Innovation Calculator free?\n    Yes. The Diffusion of Innovation Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+  },
+  {
+    "objectID": "toolkit/diffusion-of-innovation.html#related",
+    "href": "toolkit/diffusion-of-innovation.html#related",
+    "title": "Diffusion of Innovation Adopter Calculator",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Portfolio and Growth category. Read the product’s stage from sales with the Product Life Cycle Stage Identifier."
+  },
+  {
     "objectID": "toolkit/customer-understanding.html",
     "href": "toolkit/customer-understanding.html",
     "title": "Customer Understanding",
     "section": "",
     "text": "These tools build the picture of who the customer is, what they value and how they move through a purchase. Five of them share data on the same device: Persona Builder feeds the Customer Journey Mapper, and STP Builder feeds the Campaign Brief Generator.\n\n\n  \n    \n      Persona Builder\n      \n        Live\n        Persona cards at four detail levels, including a stage-by-stage Journey level, exported as PNG, PDF or JSON.\n      \n      \n        Open Persona Builder\n      \n    \n  \n  \n    \n      STP Builder\n      \n        In progress\n        Segmentation, targeting and positioning as an interactive dot-cluster diagram, ending in a draft campaign brief.\n      \n      \n        Open STP Builder\n      \n    \n  \n  \n    \n      Customer Journey Mapper\n      \n        Live\n        Each persona's goal, emotion and segment stage by stage, with a service blueprint and pain points tagged to the four service gaps.\n      \n      \n        Open Customer Journey Mapper\n      \n    \n  \n  \n    \n      Importance-Performance Analysis Matrix\n      \n        In progress\n        Attributes plotted by importance and performance, sorted into concentrate here, keep up the good work, low priority and possible overkill.\n      \n      \n        Open Importance-Performance Analysis Matrix\n      \n    \n  \n  \n    \n      RFM Segmentation Tool\n      \n        In progress\n        Paste transactions, score customers on recency, frequency and monetary value and get segments with an action for each.\n      \n      \n        Open RFM Segmentation Tool\n      \n    \n  \n  \n    \n      Value Proposition Canvas\n      \n        In progress\n        An interactive canvas: drag notes onto the value map and customer profile, match them and see how well they fit.\n      \n      \n        Open Value Proposition Canvas\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
+  },
+  {
+    "objectID": "toolkit/cpm-pert-gantt-planner.html",
+    "href": "toolkit/cpm-pert-gantt-planner.html",
+    "title": "CPM/PERT and Gantt Planner",
+    "section": "",
+    "text": "In progress\nThe critical path method (CPM) schedules a project from its tasks, their durations and the order they must follow. A forward pass gives each task its earliest start and finish, a backward pass gives its latest start and finish, and the difference is its slack. Tasks with zero slack form the critical path: delay any of them and the whole project finishes late. PERT adds uncertainty by asking for 3 duration estimates per task.\nThe tool opens on cpm-task-data.csv, the 8 tasks of a conference plan, and loads gantt-data.csv to check the published Gantt chart against the schedule it computes. Switch between most likely durations and PERT expected times, set a deadline to see the chance of meeting it, or open Edit tasks to change the plan or build your own."
+  },
+  {
+    "objectID": "toolkit/cpm-pert-gantt-planner.html#how-it-works",
+    "href": "toolkit/cpm-pert-gantt-planner.html#how-it-works",
+    "title": "CPM/PERT and Gantt Planner",
+    "section": "How it works",
+    "text": "How it works\nPredecessors are given by task name. In the sample file, Staff_Briefing waits for 4 tasks, listed together inside quotes.\nPERT expected time te = (a + 4m + b) / 6Variance = ((b − a) / 6)²ES = largest EF among the predecessors, 0 for a task with none. EF = ES + durationLF = smallest LS among the successors, the project end for a task with none. LS = LF − durationSlack = LS − ES. Critical when slack = 0\nHere a, m and b are the optimistic, most likely and pessimistic durations. On the sample file the critical path runs Venue_Booking, Catering_Arrangement, AV_and_Equipment_Setup, Staff_Briefing, Final_Rehearsal, for 16 days on most likely durations and 16.0 days on te.\nThe passes count days from 0. The Gantt file counts from day 1, so its Start_Day is ES + 1 and its End_Day is EF: Catering_Arrangement has ES 5 and EF 9, and the file shows it on days 6 to 9. The chance of finishing by a deadline T uses the normal approximation z = (T − sum of te) / √(sum of variances) along the critical path. With tied critical paths the tool uses the one with the larger variance."
+  },
+  {
+    "objectID": "toolkit/cpm-pert-gantt-planner.html#frequently-asked-questions",
+    "href": "toolkit/cpm-pert-gantt-planner.html#frequently-asked-questions",
+    "title": "CPM/PERT and Gantt Planner",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is the critical path?\n    The critical path is the longest chain of dependent tasks through a project. Its length is the shortest time the project can take, and every task on it has zero slack, so any delay to one of them delays the finish.\n  \n  \n    How do you calculate PERT expected time?\n    PERT expected time is (a + 4m + b) / 6, where a is the optimistic, m the most likely and b the pessimistic duration. Its variance is ((b − a) / 6) squared. Adding the variances along the critical path gives the variance of the project's duration.\n  \n  \n    What is slack or float?\n    Slack, also called float, is how long a task can slip before it delays the project. It equals the latest start minus the earliest start. Tasks on the critical path have zero slack.\n  \n  \n    How does a Gantt chart relate to CPM?\n    A Gantt chart draws each task as a bar from its start to its finish on a timeline. CPM supplies those start and finish days. This tool draws the bars from the CPM schedule, colours the critical tasks and shows slack as a line after each bar.\n  \n  \n    Is the CPM/PERT planner free?\n    Yes. It is free, runs in your browser and keeps your plan on this device. Export the schedule as CSV, PNG or PDF."
+  },
+  {
+    "objectID": "toolkit/cpm-pert-gantt-planner.html#related",
+    "href": "toolkit/cpm-pert-gantt-planner.html#related",
+    "title": "CPM/PERT and Gantt Planner",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Decide which project to run first with the Decision Tree and Expected Value Calculator or the Weighted Decision Matrix, then turn the schedule into a launch plan with the Campaign Brief Generator."
   },
   {
     "objectID": "toolkit/colour-contrast-checker.html",
@@ -613,7 +704,7 @@
     "href": "templates/sales-pipeline-tracker.html#in-the-browser",
     "title": "Sales Pipeline Tracker",
     "section": "In the browser",
-    "text": "In the browser\nPlan the campaigns that fill the pipeline with the Campaign Brief Generator and the other planning tools in the Marketing Toolkit Hub. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nPlan the campaigns that fill the pipeline with the Campaign Brief Generator and the other planning tools in the Marketing Toolkit Hub. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/revenue-forecast-model.html",
@@ -641,21 +732,21 @@
     "href": "templates/revenue-forecast-model.html#in-the-browser",
     "title": "Revenue Forecast Model",
     "section": "In the browser",
-    "text": "In the browser\nRead where a product sits in its life cycle from the same sales history with the Product Life Cycle Stage Identifier. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nRead where a product sits in its life cycle from the same sales history with the Product Life Cycle Stage Identifier. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/index.html",
     "href": "templates/index.html",
     "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 32 free tools, from SWOT and RFM to marketing mix modelling."
+    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 42 free tools, from SWOT and RFM to marketing mix modelling."
   },
   {
     "objectID": "templates/index.html#excel-templates",
     "href": "templates/index.html#excel-templates",
     "title": "Free Marketing and Business Analytics Excel Templates",
     "section": "",
-    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 32 free tools, from SWOT and RFM to marketing mix modelling."
+    "text": "Ten free Excel workbooks for business and marketing analytics, each with its own page and a sample data sheet to replace with your own figures. For the same frameworks in the browser, with charts and guided demos, see the Marketing Toolkit Hub: 42 free tools, from SWOT and RFM to marketing mix modelling."
   },
   {
     "objectID": "templates/index.html#free-workbook-library",
@@ -711,7 +802,7 @@
     "href": "templates/clv-calculator.html#in-the-browser",
     "title": "CLV Calculator",
     "section": "In the browser",
-    "text": "In the browser\nThe Customer Lifetime Value Calculator runs the same calculation in the browser, with discounting, the CLV to CAC ratio and a year-by-year chart. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nThe Customer Lifetime Value Calculator runs the same calculation in the browser, with discounting, the CLV to CAC ratio and a year-by-year chart. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/campaign-roi-tracker.html",
@@ -739,7 +830,7 @@
     "href": "templates/campaign-roi-tracker.html#in-the-browser",
     "title": "Campaign ROI Tracker",
     "section": "In the browser",
-    "text": "In the browser\nCompare how five attribution models share credit across channels with the Marketing Attribution Comparison, or estimate each channel’s effect from spend and sales with the MMM Analyser. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nCompare how five attribution models share credit across channels with the Marketing Attribution Comparison, or estimate each channel’s effect from spend and sales with the MMM Analyser. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/break-even-analysis.html",
@@ -767,7 +858,7 @@
     "href": "templates/break-even-analysis.html#in-the-browser",
     "title": "Break-Even Analysis",
     "section": "In the browser",
-    "text": "In the browser\nSee how a price change moves volume and revenue with the Price Elasticity Calculator, which runs in the browser. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nSee how a price change moves volume and revenue with the Price Elasticity Calculator, which runs in the browser. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "textbooks/dmarketing.html",
@@ -1362,7 +1453,7 @@
     "href": "index.html#marketing-toolkit-and-excel-templates",
     "title": "Business analytics, marketing analytics and small-sample methods for teaching, research and practical decision-making.",
     "section": "Marketing Toolkit And Excel Templates",
-    "text": "Marketing Toolkit And Excel Templates\nThe Marketing Toolkit Hub holds 32 free browser tools in 5 categories, from SWOT and PESTEL to RFM segmentation, SERVQUAL and marketing mix modelling. Each runs in the browser with a guided demo. Ten free Excel templates cover the same ground as downloadable workbooks.\n\n  \n    \n      \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC and conversion performance across channels.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue and representative-level pipeline performance.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds and profit sensitivity.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n      \n    \n  \n\n\n  Open the Marketing Toolkit Hub\n  Browse all Excel templates"
+    "text": "Marketing Toolkit And Excel Templates\nThe Marketing Toolkit Hub holds 42 free browser tools in 5 categories, from SWOT and PESTEL to RFM segmentation, SERVQUAL and marketing mix modelling. Each runs in the browser with a guided demo. Ten free Excel templates cover the same ground as downloadable workbooks.\n\n  \n    \n      \n    Campaign ROI Tracker\n    Compare spend, revenue, ROI, CAC and conversion performance across channels.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Sales Pipeline Tracker\n    Monitor deal stages, weighted revenue and representative-level pipeline performance.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Break-Even Analysis\n    Model contribution margin, break-even thresholds and profit sensitivity.\n    Open template page\n      \n    \n  \n  \n    \n      \n    Revenue Forecast Model\n    Build a rolling forecast with scenarios and actual-versus-plan tracking.\n    Open template page\n      \n    \n  \n\n\n  Open the Marketing Toolkit Hub\n  Browse all Excel templates"
   },
   {
     "objectID": "index.html#workflow-products",
@@ -1516,7 +1607,7 @@
     "href": "blog/posts/02-two-proportion-test.html#try-it-in-the-browser",
     "title": "Two-Proportion Test: Comparing Conversion Rates Between Variants",
     "section": "Try it in the browser",
-    "text": "Try it in the browser\nThe A/B Test Calculator runs this two-proportion z-test and the sample size calculation in the browser, with confidence intervals drawn for both groups. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "Try it in the browser\nThe A/B Test Calculator runs this two-proportion z-test and the sample size calculation in the browser, with confidence intervals drawn for both groups. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "blog/posts/02-two-proportion-test.html#comments",
@@ -1880,14 +1971,14 @@
     "href": "products/index.html",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package and software previews. Price Memory, Margin Guard and Persona Builder are already public in the browser, alongside the 32 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad and TrimWrite are preview pages showing screens and product framing, with a beta enquiry form. Neither is available to use yet."
+    "text": "FlairMI products span live browser utilities, a published R package and software previews. Price Memory, Margin Guard and Persona Builder are already public in the browser, alongside the 42 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad and TrimWrite are preview pages showing screens and product framing, with a beta enquiry form. Neither is available to use yet."
   },
   {
     "objectID": "products/index.html#product-portfolio",
     "href": "products/index.html#product-portfolio",
     "title": "Products",
     "section": "",
-    "text": "FlairMI products span live browser utilities, a published R package and software previews. Price Memory, Margin Guard and Persona Builder are already public in the browser, alongside the 32 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad and TrimWrite are preview pages showing screens and product framing, with a beta enquiry form. Neither is available to use yet."
+    "text": "FlairMI products span live browser utilities, a published R package and software previews. Price Memory, Margin Guard and Persona Builder are already public in the browser, alongside the 42 tools of the Marketing Toolkit Hub. surveyframe is live on CRAN at 0.4.2. QuartoPad and TrimWrite are preview pages showing screens and product framing, with a beta enquiry form. Neither is available to use yet."
   },
   {
     "objectID": "products/index.html#live-now",
@@ -2097,7 +2188,7 @@
     "href": "templates/cac-calculator.html#in-the-browser",
     "title": "CAC Calculator",
     "section": "In the browser",
-    "text": "In the browser\nSet acquisition cost against what a customer is worth with the Customer Lifetime Value Calculator, which reports the CLV to CAC ratio in the browser. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nSet acquisition cost against what a customer is worth with the Customer Lifetime Value Calculator, which reports the CLV to CAC ratio in the browser. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/churn-rate-dashboard.html",
@@ -2125,7 +2216,7 @@
     "href": "templates/churn-rate-dashboard.html#in-the-browser",
     "title": "Churn Rate Dashboard",
     "section": "In the browser",
-    "text": "In the browser\nFind the customers most likely to lapse, by recency, frequency and spend, with the RFM Segmentation Tool. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nFind the customers most likely to lapse, by recency, frequency and spend, with the RFM Segmentation Tool. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/competitive-positioning-map.html",
@@ -2153,7 +2244,7 @@
     "href": "templates/competitive-positioning-map.html#in-the-browser",
     "title": "Competitive Positioning Map",
     "section": "In the browser",
-    "text": "In the browser\nTurn a position on the map into a written positioning statement with STP Builder. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nTurn a position on the map into a written positioning statement with STP Builder. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/marketing-funnel-dashboard.html",
@@ -2181,7 +2272,7 @@
     "href": "templates/marketing-funnel-dashboard.html#in-the-browser",
     "title": "Marketing Funnel Dashboard",
     "section": "In the browser",
-    "text": "In the browser\nTest a change at any stage of the funnel with the A/B Test Calculator, which sizes the test and checks the result. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nTest a change at any stage of the funnel with the A/B Test Calculator, which sizes the test and checks the result. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "templates/rfm-segmentation.html",
@@ -2209,7 +2300,7 @@
     "href": "templates/rfm-segmentation.html#in-the-browser",
     "title": "RFM Segmentation",
     "section": "In the browser",
-    "text": "In the browser\nThe RFM Segmentation Tool runs the same scoring in the browser on pasted transactions, with a segment grid and a scored CSV to download. It is one of 32 free tools in the Marketing Toolkit Hub."
+    "text": "In the browser\nThe RFM Segmentation Tool runs the same scoring in the browser on pasted transactions, with a segment grid and a scored CSV to download. It is one of 42 free tools in the Marketing Toolkit Hub."
   },
   {
     "objectID": "toolkit/7ps-marketing-mix-planner.html",
@@ -2352,6 +2443,34 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Find the customers who drive value with the RFM Segmentation Tool, and test the price side with the Price Elasticity Calculator."
   },
   {
+    "objectID": "toolkit/confidence-interval-calculator.html",
+    "href": "toolkit/confidence-interval-calculator.html",
+    "title": "Confidence Interval and Sample Size Calculator",
+    "section": "",
+    "text": "In progress\nA confidence interval gives a range of plausible values for a population figure, such as a mean or a proportion, from a single sample. Its width depends on the spread of the data, the sample size and the confidence level. The same arithmetic run backwards tells you how large a sample you need for a given margin of error.\nThe tool opens on event-survey-data.csv, a sample survey of 200 event respondents. The Mean tab gives a t interval for Satisfaction, Spending or Waiting_Time_Mins. The Proportion tab gives Wald and Wilson intervals for the share who attended. Sample size works out n for a target margin of error. The CLT simulator draws repeated samples from the file and shows the sampling distribution of the mean take shape."
+  },
+  {
+    "objectID": "toolkit/confidence-interval-calculator.html#how-it-works",
+    "href": "toolkit/confidence-interval-calculator.html#how-it-works",
+    "title": "Confidence Interval and Sample Size Calculator",
+    "section": "How it works",
+    "text": "How it works\nMean: x̄ ± tn−1 × s / √nProportion, Wald: p̂ ± z √(p̂(1 − p̂) / n)Proportion, Wilson: (p̂ + z²/2n ± z √(p̂(1 − p̂)/n + z²/4n²)) / (1 + z²/n)Sample size, mean: n = (z σ / E)². Proportion: n = z² p(1 − p) / E², both rounded up\nA worked example from the sample survey file: Satisfaction has n = 200, mean 3.814 and standard deviation 0.740. With t = 1.972 on 199 degrees of freedom, the 95% interval runs from 3.71 to 3.92. To estimate a proportion within 5 points at 95% confidence with no prior guess, n = 1.96² × 0.25 / 0.05² = 385.\nThe Wilson interval stays inside 0 to 1 and holds its coverage better than the Wald interval when the proportion is near 0 or 1 or the sample is small. The simulator treats the 200 rows as the population and draws samples with replacement, so the spread of the sample means can be checked against σ / √n. The tool’s t quantiles agree with R’s qt() to 6 decimal places. The margin of error post works through a proportion interval step by step."
+  },
+  {
+    "objectID": "toolkit/confidence-interval-calculator.html#frequently-asked-questions",
+    "href": "toolkit/confidence-interval-calculator.html#frequently-asked-questions",
+    "title": "Confidence Interval and Sample Size Calculator",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What does a 95% confidence interval mean?\n    If you took many samples and built a 95% interval from each, about 95% of those intervals would contain the true population value. Any single interval either contains it or misses it. The simulator shows this coverage directly.\n  \n  \n    When should I use t and when z?\n    Use t for a mean when the population standard deviation is estimated from the sample, which is almost always. The t distribution has heavier tails than the normal, and it approaches the normal as the sample grows. Proportion intervals use z.\n  \n  \n    What is the Wilson interval?\n    The Wilson score interval is a confidence interval for a proportion that stays inside 0 to 1 and keeps closer to its stated coverage than the Wald interval for small samples or proportions near 0 or 1. It matches R's prop.test with the continuity correction turned off.\n  \n  \n    How large a sample do I need?\n    For a proportion with no prior guess, 385 respondents give a margin of error of 5 points at 95% confidence. Halving the margin roughly quadruples the sample. For a mean, the answer depends on the standard deviation, which a pilot study can estimate.\n  \n  \n    What does the Central Limit Theorem say?\n    For a large enough sample, the sample mean is close to normally distributed around the population mean with standard error σ / √n, whatever the shape of the population. Skewed variables such as spending need a larger n before the shape settles."
+  },
+  {
+    "objectID": "toolkit/confidence-interval-calculator.html#related",
+    "href": "toolkit/confidence-interval-calculator.html#related",
+    "title": "Confidence Interval and Sample Size Calculator",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Plan and test experiments with the A/B Test Sample Size and Significance Calculator, or pick the right test with StatChooser."
+  },
+  {
     "objectID": "toolkit/customer-journey-mapper.html",
     "href": "toolkit/customer-journey-mapper.html",
     "title": "Customer Journey Mapper",
@@ -2380,32 +2499,60 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub. Build the starting profile for each guest in Persona Builder, and use STP Builder to choose which segment to design the journey around."
   },
   {
-    "objectID": "toolkit/diffusion-of-innovation.html",
-    "href": "toolkit/diffusion-of-innovation.html",
-    "title": "Diffusion of Innovation Adopter Calculator",
+    "objectID": "toolkit/decision-tree-calculator.html",
+    "href": "toolkit/decision-tree-calculator.html",
+    "title": "Decision Tree and Expected Value Calculator",
     "section": "",
-    "text": "In progress\nRogers’ diffusion of innovations divides a market into five adopter groups by when they take up something new: innovators, early adopters, the early majority, the late majority and laggards. Each group responds to different arguments, so knowing which group you are reaching now tells you what the next campaign has to do.\nEverything above runs in your browser and saves to this device only. It opens on quarterly mobile check-in users across a hotel group. Enter adopters and market potential, or paste new adopters per period and fit the Bass model."
+    "text": "In progress\nA decision tree lays out a choice, the uncertain events that follow it and what each path pays. A square marks the decision, a circle marks a chance event and each branch from a circle carries a probability. Folding the tree back from the right gives every option an expected value, and the option with the highest expected value is the best choice for a decision maker who is neutral about risk.\nThe tool opens on the sample file, decision-tree-vendor-data.csv: 50 groups, each choosing between a local and an international vendor with a chance of success or failure. Pick a group to draw its tree. The summary below the tree gives the mean expected value of each vendor across all 50 groups. Switch to Your own tree to build one from scratch, with as many options and outcomes as the decision needs."
   },
   {
-    "objectID": "toolkit/diffusion-of-innovation.html#how-it-works",
-    "href": "toolkit/diffusion-of-innovation.html#how-it-works",
-    "title": "Diffusion of Innovation Adopter Calculator",
+    "objectID": "toolkit/decision-tree-calculator.html#how-it-works",
+    "href": "toolkit/decision-tree-calculator.html#how-it-works",
+    "title": "Decision Tree and Expected Value Calculator",
     "section": "How it works",
-    "text": "How it works\nCumulative adoption is the share of the market potential that has adopted. Rogers’ groups are bands of a normal curve: innovators are the first 2.5%, early adopters the next 13.5%, the early majority and late majority 34% each, and laggards the final 16%.\nThe Bass model splits adoption into two forces: innovation, people who adopt on their own, and imitation, people who adopt because others have.\nn(t) = p · m + (q − p) · N(t−1) − (q ÷ m) · N(t−1)²p = innovation coefficient, q = imitation coefficient, m = market potentialPeak adoption at t* = ln(q ÷ p) ÷ (p + q)\nThe coefficients are estimated by ordinary least squares on new adopters against cumulative adopters, the method in Bass (1969)."
+    "text": "How it works\nEach option ends in a chance node. Its expected value is the sum, over its branches, of probability times payoff. The branches leaving a chance node must have probabilities that add up to 1, and the tool flags any that add up to another total.\nEV(option) = Σ pi × payoffiFor the sample file: EV = p × Payoff_Success + (1 − p) × Payoff_FailureBest choice = the option with the highest EV\nA worked example from the file. Group 1’s local vendor succeeds with probability 0.740 and pays 6,943.62, and fails with probability 0.260 and pays −1,818.47. Its expected value is 0.740 × 6,943.62 + 0.260 × (−1,818.47) = 4,663.15, using the file’s unrounded probabilities. The best option’s branch is drawn bold, and the rejected option’s branch carries the 2 short strokes used to mark a pruned branch.\nAcross the file the mean expected value is 8,317.9 for the international vendor and 3,711.8 for the local vendor, and the international vendor has the higher expected value in all 50 groups. Expected value ignores how spread out the payoffs are, so a cautious decision maker may still prefer the option with the smaller possible loss."
   },
   {
-    "objectID": "toolkit/diffusion-of-innovation.html#frequently-asked-questions",
-    "href": "toolkit/diffusion-of-innovation.html#frequently-asked-questions",
-    "title": "Diffusion of Innovation Adopter Calculator",
+    "objectID": "toolkit/decision-tree-calculator.html#frequently-asked-questions",
+    "href": "toolkit/decision-tree-calculator.html#frequently-asked-questions",
+    "title": "Decision Tree and Expected Value Calculator",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What is the diffusion of innovations theory?\n    Diffusion of innovations, from Everett Rogers (1962), explains how new products spread through a market. Adopters fall into five groups by when they adopt: innovators, early adopters, the early majority, the late majority and laggards.\n  \n  \n    What percentage is each adopter category?\n    Innovators are 2.5% of eventual adopters, early adopters 13.5%, the early majority 34%, the late majority 34% and laggards 16%. The bands come from a normal curve cut at one and two standard deviations from the mean.\n  \n  \n    What is the Bass diffusion model?\n    The Bass model (1969) forecasts adoption from two forces: innovation (p), adoption driven by outside influence such as advertising, and imitation (q), adoption driven by existing users. With market potential m, it predicts the size and timing of peak adoption.\n  \n  \n    How do you use adopter categories in marketing?\n    Match the argument to the group you are reaching. Early adopters respond to a clear advantage, the early majority needs proof and references, and the late majority needs low risk, a low price and evidence that most people already use it.\n  \n  \n    Is this Diffusion of Innovation Calculator free?\n    Yes. The Diffusion of Innovation Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+    "text": "Frequently Asked Questions\n\n  \n    What is expected value in a decision tree?\n    Expected value is the probability-weighted average payoff of an option. Multiply each outcome's payoff by its probability and add the results. In a decision tree the option with the highest expected value is the best choice for a decision maker who is neutral about risk.\n  \n  \n    How do you solve a decision tree?\n    Work from right to left. At each chance node, compute the expected value of its branches. At each decision node, keep the branch with the highest expected value and mark the others as pruned. The value that reaches the first decision node is the value of the whole decision.\n  \n  \n    Do the probabilities on a chance node have to add up to 1?\n    Yes. The branches leaving a chance node cover every outcome of that event, so their probabilities add up to 1. In the sample file Probability_Success plus Probability_Failure equals 1 on all 100 rows, and the tool warns you if your own tree breaks this rule.\n  \n  \n    Where does the sample data come from?\n    The tool loads decision-tree-vendor-data.csv, a sample file of 50 vendor decisions. You can also open your own copy of the file from your device.\n  \n  \n    Is the decision tree calculator free?\n    Yes. It is free, runs in your browser and keeps your work on this device. Export the tree as PNG or PDF."
   },
   {
-    "objectID": "toolkit/diffusion-of-innovation.html#related",
-    "href": "toolkit/diffusion-of-innovation.html#related",
-    "title": "Diffusion of Innovation Adopter Calculator",
+    "objectID": "toolkit/decision-tree-calculator.html#related",
+    "href": "toolkit/decision-tree-calculator.html#related",
+    "title": "Decision Tree and Expected Value Calculator",
     "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Portfolio and Growth category. Read the product’s stage from sales with the Product Life Cycle Stage Identifier."
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Plan the chosen project with the CPM/PERT and Gantt Planner, or compare options on more than one criterion at once with the Weighted Decision Matrix."
+  },
+  {
+    "objectID": "toolkit/ethical-decision-matrix.html",
+    "href": "toolkit/ethical-decision-matrix.html",
+    "title": "Ethical Decision Matrix",
+    "section": "",
+    "text": "In progress\nAn ethical decision matrix scores each option against ethical criteria as well as against the evidence. Here the criteria are the statistical evidence for the option and 4 lenses from moral philosophy: utility, rights, justice and care. Weighting them makes the trade-off visible, and the matrix shows whether the option the data favour survives once people’s rights and fair treatment carry weight.\nThe tool opens on a dilemma built on the sample survey data. A chi-square test of ticket type against attendance in event-survey-data.csv finds that VIP ticket holders miss events more often (χ²(2) = 6.09, p = 0.048). The option with the strongest statistical case, overbooking VIP sessions, ranks last once the ethical criteria count. Change the weights and scores, or start blank with a dilemma of your own."
+  },
+  {
+    "objectID": "toolkit/ethical-decision-matrix.html#how-it-works",
+    "href": "toolkit/ethical-decision-matrix.html#how-it-works",
+    "title": "Ethical Decision Matrix",
+    "section": "How it works",
+    "text": "How it works\nEach option is scored from 1 (poor) to 5 (strong) on each criterion, and each criterion carries a weight.\nWeighted score = Σ (weight × score) / Σ weightUtility: net benefit across everyone affectedRights: respects what each person is owedJustice: treats groups alike unless a relevant reason justifies a differenceCare: attends to people in their actual circumstances\nThe lenses follow the Markkula Center for Applied Ethics’ Framework for Ethical Decision Making (Santa Clara University), which also offers the common good and virtue lenses. Add either as a criterion if your case calls for it.\nIn the sample, 7 of 30 VIP ticket holders (23.3%) registered and stayed away, against 21 of 124 Standard (16.9%) and 2 of 46 Student (4.3%). The result is significant at the 5% level and rests on a small group, with 1 expected count below 5. Overbooking VIP sessions scores 5 for evidence and 2.45 overall. Reminders and free transfers for all scores 2 for evidence and 4.00 overall. The matrix records a judgement, so the scores are a starting point for argument."
+  },
+  {
+    "objectID": "toolkit/ethical-decision-matrix.html#frequently-asked-questions",
+    "href": "toolkit/ethical-decision-matrix.html#frequently-asked-questions",
+    "title": "Ethical Decision Matrix",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is an ethical decision matrix?\n    An ethical decision matrix lists the options for a decision in columns and ethical criteria in rows. Each option is scored on each criterion, the criteria are weighted and the weighted totals rank the options. It makes the reasons for a choice visible and open to challenge.\n  \n  \n    Which ethical lenses does the tool use?\n    The sample uses utility, rights, justice and care, from the Markkula Center for Applied Ethics' framework, plus a criterion for the strength of the statistical evidence. You can rename, add or remove criteria.\n  \n  \n    Why would the statistically strongest option be the ethically weakest?\n    A significant result describes a pattern in a group. Acting on it can treat every member of that group as if the pattern applied to them, which raises questions of rights and justice even when the statistics are sound.\n  \n  \n    How do weights change the result?\n    Weights set how much each criterion counts. Set every weight except Statistical evidence to 0 and the data-led option wins. Give rights and justice their share and the ranking changes. The tool shows the evidence-only winner and its overall rank side by side.\n  \n  \n    Is the Ethical Decision Matrix free?\n    Yes. It is free, runs in your browser and keeps your matrix on this device. Export it as PNG, PDF or CSV."
+  },
+  {
+    "objectID": "toolkit/ethical-decision-matrix.html#related",
+    "href": "toolkit/ethical-decision-matrix.html#related",
+    "title": "Ethical Decision Matrix",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Map who is affected first with the Stakeholder Power and Interest Grid. The same engine runs the Weighted Decision Matrix."
   },
   {
     "objectID": "toolkit/hashtag-character-counter.html",
@@ -2464,53 +2611,144 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Customer Understanding category. Measure service gaps in more depth with SERVQUAL Gap Analysis, and see where each attribute arises in the Customer Journey Mapper."
   },
   {
-    "objectID": "toolkit/mmm-analyser.html",
-    "href": "toolkit/mmm-analyser.html",
-    "title": "MMM Analyser",
+    "objectID": "toolkit/meta-tag-preview.html",
+    "href": "toolkit/meta-tag-preview.html",
+    "title": "Meta Tag and Open Graph Preview",
     "section": "",
-    "text": "In progress\nMarketing mix modelling estimates how much each channel’s spend adds to sales, using the history of both. It captures two effects a simple regression misses: advertising keeps working after the week it runs, and each extra unit of spend adds less than the one before.\nThe model covers promotion spend and price. Product, place, people, process and physical evidence are outside it, and are planned in the 7Ps Marketing Mix Planner.\nEverything above runs in your browser and saves to this device only. Spend and sales data never leave the browser. It opens on 2 years of weekly hotel booking revenue, generated from known settings, so you can see how closely the model recovers them."
+    "text": "In progress\nThe title tag and meta description are the first thing a searcher reads. Open Graph and Twitter card tags control how a link looks when it is shared, so the page chooses its own title, text and image. Platforms left to guess often show a cut-off title and a blank image.\nEverything above runs in your browser and saves to this device only. Type a title, description, URL and share image and the previews update as you type. The HTML for the page head is ready to copy."
   },
   {
-    "objectID": "toolkit/mmm-analyser.html#how-it-works",
-    "href": "toolkit/mmm-analyser.html#how-it-works",
-    "title": "MMM Analyser",
+    "objectID": "toolkit/meta-tag-preview.html#how-it-works",
+    "href": "toolkit/meta-tag-preview.html#how-it-works",
+    "title": "Meta Tag and Open Graph Preview",
     "section": "How it works",
-    "text": "How it works\nFor each channel, spend is carried forward by an adstock rate, then passed through a saturation curve. Sales are modelled as a base, plus trend, seasonality and price, plus the channel effects.\nAdstock At = spendt + θ × At−1, with θ from 0 to 0.8Saturation h(A) = A ÷ (A + K), with K a multiple of the channel's mean adstockSalest = b0 + trend + seasonality + γ × pricet + Σ βc × hc(Ac,t)ROI = contribution ÷ spend. Marginal ROI = extra sales from one more unit of spend at the current level\nFor fixed θ and K the model is linear and is fitted by ordinary least squares. θ and K are chosen per channel by a search that maximises R². The tool warns when the data are too short for the number of coefficients, when a channel’s effect is negative and when two channels’ spend moves together so closely that their effects cannot be separated. Treat results as a starting point for testing budget shifts."
+    "text": "How it works\nSearch engines truncate by pixel width, so the tool measures width as well as characters.\nTitle: about 600 pixels at 20 px Arial, roughly 50 to 60 charactersDescription: about 920 pixels at 14 px Arial, roughly 150 to 160 charactersShare image: 1200 by 630 pixels, a 1.91 to 1 ratio\nThese limits are approximations. Search engines sometimes rewrite titles and descriptions, so the preview shows the most likely result."
   },
   {
-    "objectID": "toolkit/mmm-analyser.html#frequently-asked-questions",
-    "href": "toolkit/mmm-analyser.html#frequently-asked-questions",
-    "title": "MMM Analyser",
+    "objectID": "toolkit/meta-tag-preview.html#frequently-asked-questions",
+    "href": "toolkit/meta-tag-preview.html#frequently-asked-questions",
+    "title": "Meta Tag and Open Graph Preview",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n  \n    What is marketing mix modelling?\n    Marketing mix modelling (MMM) is a statistical method that estimates how much each marketing channel's spend adds to sales, using the history of both. It captures carryover, where advertising keeps working after it runs, and diminishing returns.\n  \n  \n    What is adstock in marketing mix modelling?\n    Adstock is the carried-over effect of past advertising. With a carryover rate of 0.6, 60% of last week's effect carries into this week, then 60% of that into the next week.\n  \n  \n    What is marginal ROI in marketing mix modelling?\n    Marginal ROI is the extra sales from one more unit of spend at the current level. A channel with a high average ROI can have a low marginal ROI near saturation, which is the point to move budget elsewhere.\n  \n  \n    How much data does marketing mix modelling need?\n    Marketing mix modelling needs at least 10 periods for every coefficient. With four channels, trend, seasonality and price, that is about 90 periods or roughly 2 years of weekly data.\n  \n  \n    Is this MMM Analyser free?\n    Yes. The MMM Analyser is free and opens straight away in any modern browser, including on a phone. Spend and sales data are processed in your browser and stay on your device."
+    "text": "Frequently Asked Questions\n\n  \n    What are meta tags and Open Graph tags?\n    Meta tags describe a page to search engines, chiefly the title tag and the meta description. Open Graph tags tell Facebook, LinkedIn and other platforms which title, description and image to show when the page is shared. Twitter card tags do the same for X.\n  \n  \n    How long should a title tag be?\n    A title tag should fit about 600 pixels in search results, roughly 50 to 60 characters. Put the most important words first, since longer titles are cut off.\n  \n  \n    How long should a meta description be?\n    A meta description should fit about 920 pixels, roughly 150 to 160 characters. Search engines may rewrite it, but a clear summary that matches the page is usually kept.\n  \n  \n    What size should an Open Graph image be?\n    An Open Graph image should be 1200 by 630 pixels, a 1.91 to 1 ratio. With one, a shared link shows a large preview card. Most platforms fall back to a small or empty preview when the image is missing.\n  \n  \n    Is this Meta Tag and Open Graph Preview free?\n    Yes. The Meta Tag and Open Graph Preview is free and opens straight away in any modern browser, including on a phone. A share image loads from the address you enter, as it would on any web page."
   },
   {
-    "objectID": "toolkit/mmm-analyser.html#related",
-    "href": "toolkit/mmm-analyser.html#related",
-    "title": "MMM Analyser",
+    "objectID": "toolkit/meta-tag-preview.html#related",
+    "href": "toolkit/meta-tag-preview.html#related",
+    "title": "Meta Tag and Open Graph Preview",
     "section": "Related",
-    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Compare with path-based credit in the Marketing Attribution Comparison, and plan the other five Ps in the 7Ps Marketing Mix Planner."
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Add structured data with the Schema Markup Generator, and settle the preferred URL with the Canonical Tag Generator."
   },
   {
-    "objectID": "toolkit/performance-and-analytics.html",
-    "href": "toolkit/performance-and-analytics.html",
-    "title": "Performance and Analytics",
+    "objectID": "toolkit/nps-tracker.html",
+    "href": "toolkit/nps-tracker.html",
+    "title": "Net Promoter Score Tracker",
     "section": "",
-    "text": "Performance tools measure what happened after a campaign ran. Each one that rests on a formula shows the formula on the page, so the number can be checked and explained to a finance team.\n\n\n  \n    \n      SERVQUAL Gap Analysis\n      \n        Live\n        Expectations against perceptions on 22 items across five dimensions, weighted, with the largest gaps ranked.\n      \n      \n        Open SERVQUAL Gap Analysis\n      \n    \n  \n  \n    \n      Brand Equity Assessor\n      \n        In progress\n        Keller's six brand building blocks scored and drawn as the brand resonance pyramid, with the weakest block flagged.\n      \n      \n        Open Brand Equity Assessor\n      \n    \n  \n  \n    \n      Customer Lifetime Value Calculator\n      \n        In progress\n        Discounted customer lifetime value with retention, the CLV to CAC ratio and months to recover acquisition cost.\n      \n      \n        Open Customer Lifetime Value Calculator\n      \n    \n  \n  \n    \n      Price Elasticity Calculator\n      \n        In progress\n        Arc and point elasticity from two price points, elastic or inelastic, with revenue and profit curves.\n      \n      \n        Open Price Elasticity Calculator\n      \n    \n  \n  \n    \n      Net Promoter Score Tracker\n      \n        In progress\n        Calculate NPS with its margin of error and track it across survey waves, with a test of whether a change is real.\n      \n      \n        Open Net Promoter Score Tracker\n      \n    \n  \n  \n    \n      Marketing Attribution Comparison\n      \n        In progress\n        Apply five attribution models to the same conversion paths and see how each channel's credit changes.\n      \n      \n        Open Marketing Attribution Comparison\n      \n    \n  \n  \n    \n      MMM Analyser\n      \n        In progress\n        A small marketing mix model with carryover and diminishing returns, showing contribution, ROI and response curves per channel.\n      \n      \n        Open MMM Analyser\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
+    "text": "In progress\nThe Net Promoter Score asks one question: how likely is it that you would recommend us to a friend or colleague, from 0 to 10? It is simple to collect and to track. The margin of error is often left out, and a small change between waves can then look like progress when it is noise.\nEverything above runs in your browser and saves to this device only. Waves are saved on this device. Enter counts of promoters, passives and detractors or paste raw scores and add each new wave."
   },
   {
-    "objectID": "toolkit/planning-and-execution.html",
-    "href": "toolkit/planning-and-execution.html",
-    "title": "Planning and Execution",
-    "section": "",
-    "text": "Planning tools turn a strategy into a campaign. The 7Ps Planner and Campaign Brief Generator carry the segment and positioning forward, and nine execution tools handle the assets a campaign needs: tracked links, page metadata, structured data, readable copy, accessible colours and test sizes.\n\n\n  \n    \n      7Ps Marketing Mix Planner\n      \n        In progress\n        Plan all seven Ps against one segment and positioning statement, and rate how well each P supports it.\n      \n      \n        Open 7Ps Marketing Mix Planner\n      \n    \n  \n  \n    \n      Campaign Brief Generator\n      \n        In progress\n        Pull persona, positioning and mix plan into one brief with objective, KPIs, budget split and timeline.\n      \n      \n        Open Campaign Brief Generator\n      \n    \n  \n  \n    \n      UTM Campaign URL Builder\n      \n        In progress\n        Tag campaign links with consistent UTM parameters, singly or in bulk, with warnings for common naming mistakes.\n      \n      \n        Open UTM Campaign URL Builder\n      \n    \n  \n  \n    \n      Meta Tag and Open Graph Preview\n      \n        In progress\n        Preview a page in search and social cards, check title and description length and copy the tags.\n      \n      \n        Open Meta Tag and Open Graph Preview\n      \n    \n  \n  \n    \n      Schema Markup Generator\n      \n        In progress\n        Write JSON-LD structured data for eight common schema types, with required fields flagged.\n      \n      \n        Open Schema Markup Generator\n      \n    \n  \n  \n    \n      Canonical Tag Generator\n      \n        In progress\n        Normalise URL variants, strip tracking parameters and see which duplicates collapse into one canonical tag.\n      \n      \n        Open Canonical Tag Generator\n      \n    \n  \n  \n    \n      Readability and Headline Analyser\n      \n        In progress\n        Flesch scores, sentence-length chart, long sentences marked and a headline check for length and keyword position.\n      \n      \n        Open Readability and Headline Analyser\n      \n    \n  \n  \n    \n      Robots.txt and Sitemap Generator\n      \n        In progress\n        Write robots.txt rules, including choices for AI crawlers, and a valid sitemap.xml from a URL list.\n      \n      \n        Open Robots.txt and Sitemap Generator\n      \n    \n  \n  \n    \n      Colour Contrast Checker\n      \n        In progress\n        WCAG contrast ratios with AA and AAA results, a suggested passing colour and a whole-palette check.\n      \n      \n        Open Colour Contrast Checker\n      \n    \n  \n  \n    \n      Hashtag and Character Counter\n      \n        In progress\n        Count characters, hashtags, mentions and links against nine social platforms' limits, with X's link rule applied.\n      \n      \n        Open Hashtag and Character Counter\n      \n    \n  \n  \n    \n      A/B Test Sample Size and Significance Calculator\n      \n        In progress\n        Size an A/B test before it runs, then test the result with a z-test and confidence intervals.\n      \n      \n        Open A/B Test Sample Size and Significance Calculator\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
+    "objectID": "toolkit/nps-tracker.html#how-it-works",
+    "href": "toolkit/nps-tracker.html#how-it-works",
+    "title": "Net Promoter Score Tracker",
+    "section": "How it works",
+    "text": "How it works\nPromoters score 9 or 10, passives 7 or 8 and detractors 0 to 6.\nNPS = % promoters − % detractors, from −100 to +100Standard error = √((pP + pD − (pP − pD)²) ÷ n) × 10095% interval = NPS ± 1.96 × standard error\nA change between two waves is flagged as larger than chance when it exceeds the combined margin of error of both waves, a conservative check."
   },
   {
-    "objectID": "toolkit/portfolio-and-growth.html",
-    "href": "toolkit/portfolio-and-growth.html",
-    "title": "Portfolio and Growth",
+    "objectID": "toolkit/nps-tracker.html#frequently-asked-questions",
+    "href": "toolkit/nps-tracker.html#frequently-asked-questions",
+    "title": "Net Promoter Score Tracker",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is Net Promoter Score?\n    Net Promoter Score (NPS) is a customer loyalty measure based on one question: how likely are you to recommend us to a friend or colleague, from 0 to 10? It runs from -100 to +100.\n  \n  \n    How is NPS calculated?\n    Subtract the percentage of detractors, who score 0 to 6, from the percentage of promoters, who score 9 or 10. Passives, who score 7 or 8, count in the total only.\n  \n  \n    What is the margin of error for NPS?\n    The margin of error for NPS depends on the sample size and the mix of answers. With 400 responses it is often about 7 to 9 points at 95% confidence. This tool calculates it for every survey wave.\n  \n  \n    What is a good NPS score?\n    A good NPS varies by industry. Compare with your own previous waves and with competitors measured the same way, since a general benchmark says little about your own market.\n  \n  \n    Is this Net Promoter Score Tracker free?\n    Yes. The Net Promoter Score Tracker is free and opens straight away in any modern browser, including on a phone. Survey waves are saved in your browser and stay on your device."
+  },
+  {
+    "objectID": "toolkit/nps-tracker.html#related",
+    "href": "toolkit/nps-tracker.html#related",
+    "title": "Net Promoter Score Tracker",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. Diagnose what drives the score with SERVQUAL Gap Analysis and the Brand Equity Assessor."
+  },
+  {
+    "objectID": "toolkit/pestel-analysis.html",
+    "href": "toolkit/pestel-analysis.html",
+    "title": "PESTEL Analysis Builder",
     "section": "",
-    "text": "Portfolio tools decide where to put resources across products or business units. The BCG and GE-McKinsey matrices share one bubble-chart engine, and the life cycle and diffusion tools read the same question from sales and adoption data.\n\n\n  \n    \n      BCG Growth-Share Matrix\n      \n        In progress\n        Products by market growth and relative share, sized by revenue, classed as stars, cash cows, question marks or dogs.\n      \n      \n        Open BCG Growth-Share Matrix\n      \n    \n  \n  \n    \n      GE-McKinsey Matrix\n      \n        In progress\n        Weighted industry attractiveness and competitive strength factors, scored per business unit on a nine-box grid.\n      \n      \n        Open GE-McKinsey Matrix\n      \n    \n  \n  \n    \n      Product Life Cycle Stage Identifier\n      \n        In progress\n        Fit an S-curve to sales history, estimate the current life cycle stage and see mix priorities for it.\n      \n      \n        Open Product Life Cycle Stage Identifier\n      \n    \n  \n  \n    \n      Diffusion of Innovation Adopter Calculator\n      \n        In progress\n        Place adoption on Rogers' curve, see which adopter group you are reaching and fit the Bass model for a forecast.\n      \n      \n        Open Diffusion of Innovation Adopter Calculator\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
+    "text": "In progress\nPESTEL scans the macro environment, the forces outside any one firm’s control. It sits alongside SWOT: PESTEL supplies many of the opportunities and threats a SWOT then weighs against the organisation’s own strengths and weaknesses.\nEverything above runs in your browser and saves to this device only. It opens on sample factors for a European hotel group. Add the factors in the wider environment that could affect your organisation, score each one, and the tool ranks them across all six categories."
+  },
+  {
+    "objectID": "toolkit/pestel-analysis.html#how-it-works",
+    "href": "toolkit/pestel-analysis.html#how-it-works",
+    "title": "PESTEL Analysis Builder",
+    "section": "How it works",
+    "text": "How it works\nEach factor is scored twice on a 1 to 5 scale: impact, meaning how much it would affect the organisation, and likelihood, meaning how probable it is within the planning period.\nPriority = impact × likelihood (1 to 25)\nThe scatter plot places every factor by its two scores, and the priority list ranks them across all six categories. Factors in the top right of the plot need a plan. Factors in the bottom left can be monitored."
+  },
+  {
+    "objectID": "toolkit/pestel-analysis.html#frequently-asked-questions",
+    "href": "toolkit/pestel-analysis.html#frequently-asked-questions",
+    "title": "PESTEL Analysis Builder",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is a PESTEL analysis?\n    A PESTEL analysis is a scan of the six external forces that shape a market: political, economic, social, technological, environmental and legal. It picks out changes outside any one firm's control, so a business can plan for them before they arrive.\n  \n  \n    How do you score PESTEL factors?\n    Rate each factor's impact on the organisation and its likelihood within the planning period, each from 1 to 5. Multiplying the two gives a priority from 1 to 25 that ranks factors across all six categories.\n  \n  \n    What is the difference between PEST and PESTEL?\n    PEST covers political, economic, social and technological factors. PESTEL adds environmental and legal factors, which matter more now that climate rules, sustainability reporting and consumer law shape most markets.\n  \n  \n    What is a PESTEL example for the hotel industry?\n    For a European hotel group, tourist tax rises are political, energy costs are economic, demand for wellness breaks is social, AI trip planners are technological, heatwaves are environmental and EU rules on short-term rentals are legal. The tool opens on this example.\n  \n  \n    Is this PESTEL Analysis Builder free?\n    Yes. The PESTEL Analysis Builder is free and opens straight away in any modern browser, including on a phone. Factors stay in your browser tab, on your device."
+  },
+  {
+    "objectID": "toolkit/pestel-analysis.html#related",
+    "href": "toolkit/pestel-analysis.html#related",
+    "title": "PESTEL Analysis Builder",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Carry the top factors into the SWOT Analysis Builder, and test the industry itself with Porter’s Five Forces."
+  },
+  {
+    "objectID": "toolkit/porters-five-forces.html",
+    "href": "toolkit/porters-five-forces.html",
+    "title": "Porter’s Five Forces Analyser",
+    "section": "",
+    "text": "In progress\nPorter’s Five Forces explains why some industries earn more than others. The stronger the forces, the more of the value created in the industry is taken by buyers, suppliers, rivals, new entrants or substitutes and the less is left as profit.\nEverything above runs in your browser and saves to this device only. It opens on a sample for boutique hotels in Lisbon. Name your own industry and score each statement by how far you agree."
+  },
+  {
+    "objectID": "toolkit/porters-five-forces.html#how-it-works",
+    "href": "toolkit/porters-five-forces.html#how-it-works",
+    "title": "Porter’s Five Forces Analyser",
+    "section": "How it works",
+    "text": "How it works\nEvery statement is written so that agreement means a stronger force. Each force’s score is the mean of its statements on a 1 to 5 scale.\nForce score = mean of its statement scoresIndustry attractiveness = 6 − mean of the five force scoresHigh at 3.67 or above, moderate from 2.33, low below 2.33\nThe radar chart shows the shape of the pressure: a large, even shape means a tough industry, and one long spike points to the force to manage first. Forces scoring 3.5 or more are listed as the main pressures on profit."
+  },
+  {
+    "objectID": "toolkit/porters-five-forces.html#frequently-asked-questions",
+    "href": "toolkit/porters-five-forces.html#frequently-asked-questions",
+    "title": "Porter’s Five Forces Analyser",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What are Porter's Five Forces?\n    Porter's Five Forces is a framework for judging how attractive an industry is. The five forces are the threat of new entrants, the bargaining power of suppliers, the bargaining power of buyers, the threat of substitutes and rivalry among existing competitors. Strong forces leave less profit for the firms in the industry.\n  \n  \n    How do you measure the strength of each force?\n    Score statements about each force, such as how easily buyers switch provider, from 1 to 5. A force's score is the mean of its statements. This tool rates industry attractiveness as 6 minus the mean of the five force scores.\n  \n  \n    What makes an industry attractive in Porter's Five Forces?\n    Weak forces make an industry attractive: high barriers to entry, many small suppliers, buyers who cannot easily switch, few substitutes and calm rivalry. In this tool an attractiveness score of 3.67 or more counts as high.\n  \n  \n    What is an example of Porter's Five Forces for hotels?\n    For boutique hotels in Lisbon, buyer power is strong because booking platforms show every rate side by side, and substitutes are strong because short-term rentals compete for the same guests. Supplier power is weak. The tool opens on this example.\n  \n  \n    Is this Five Forces Analyser free?\n    Yes. The Five Forces Analyser is free and opens straight away in any modern browser, including on a phone. Scores save on this device only and export as PNG or PDF."
+  },
+  {
+    "objectID": "toolkit/porters-five-forces.html#related",
+    "href": "toolkit/porters-five-forces.html#related",
+    "title": "Porter’s Five Forces Analyser",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Scan the wider environment first with the PESTEL Analysis Builder, then plan growth options with the Ansoff Matrix."
+  },
+  {
+    "objectID": "toolkit/price-elasticity-calculator.html",
+    "href": "toolkit/price-elasticity-calculator.html",
+    "title": "Price Elasticity Calculator",
+    "section": "",
+    "text": "In progress\nPrice elasticity measures how much demand changes when price changes. It decides whether a price rise increases revenue or loses more in volume than it gains in price.\nEverything above runs in your browser and saves to this device only. Enter two prices and the units sold at each. The sample is a hotel member rate raised from 165 to 179."
+  },
+  {
+    "objectID": "toolkit/price-elasticity-calculator.html#how-it-works",
+    "href": "toolkit/price-elasticity-calculator.html#how-it-works",
+    "title": "Price Elasticity Calculator",
+    "section": "How it works",
+    "text": "How it works\nThe arc formula uses the midpoint of the two observations, so the answer is the same whichever price you call the first.\nArc elasticity = [(Q2 − Q1) ÷ ((Q1 + Q2) ÷ 2)] ÷ [(P2 − P1) ÷ ((P1 + P2) ÷ 2)]Elastic when the absolute value is above 1, inelastic below 1Linear demand Q = a − bP through both points: revenue peaks at a ÷ 2b, contribution peaks at (a + b × cost) ÷ 2b\nThe straight demand line is an assumption that holds best near the two observed prices. Treat the optimal prices as a direction to test."
+  },
+  {
+    "objectID": "toolkit/price-elasticity-calculator.html#frequently-asked-questions",
+    "href": "toolkit/price-elasticity-calculator.html#frequently-asked-questions",
+    "title": "Price Elasticity Calculator",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is price elasticity of demand?\n    Price elasticity of demand is the percentage change in quantity demanded divided by the percentage change in price. An elasticity of -1.5 means a 1% price rise cuts sales by about 1.5%.\n  \n  \n    How do you calculate price elasticity with two price points?\n    Use the arc formula: the change in quantity over the average quantity, divided by the change in price over the average price. Using the midpoint gives the same answer in either direction.\n  \n  \n    What is the difference between elastic and inelastic demand?\n    Demand is elastic when the absolute elasticity is above 1, so a price rise loses more in volume than it gains in price and revenue falls. Demand is inelastic below 1, so a price rise increases revenue.\n  \n  \n    How do you find the profit-maximising price?\n    With a straight-line demand curve Q = a minus bP through two observed points, contribution peaks at (a + b times unit cost) divided by 2b. Treat it as a direction to test, since real demand curves bend.\n  \n  \n    Is this Price Elasticity Calculator free?\n    Yes. The Price Elasticity Calculator is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+  },
+  {
+    "objectID": "toolkit/price-elasticity-calculator.html#related",
+    "href": "toolkit/price-elasticity-calculator.html#related",
+    "title": "Price Elasticity Calculator",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Performance and Analytics category. See what a customer is worth at the new price with the Customer Lifetime Value Calculator, and model price alongside spend in the MMM Analyser."
   },
   {
     "objectID": "toolkit/product-life-cycle.html",
@@ -2597,25 +2835,39 @@
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Preview the page’s search appearance with the Meta Tag and Open Graph Preview, and list the page in a sitemap with the Robots.txt and Sitemap Generator."
   },
   {
-    "objectID": "toolkit/stp-builder.html",
-    "href": "toolkit/stp-builder.html",
-    "title": "STP Builder",
+    "objectID": "toolkit/stakeholder-power-interest-grid.html",
+    "href": "toolkit/stakeholder-power-interest-grid.html",
+    "title": "Stakeholder Power and Interest Grid",
     "section": "",
-    "text": "In progress\nSTP stands for segmentation, targeting and positioning, the three moves that take a marketer from a whole market to one clear claim. Segmentation divides the market into groups with similar needs, targeting chooses the group to serve, and positioning writes the statement that group will hear. The tool draws on the STP framework taught in Week 2 of The Evidence-Based Digital Marketer, FlairMI’s open digital marketing textbook, where the dot-cluster diagram first appeared as a static figure.\nEverything above runs in your browser and stays there."
+    "text": "In progress\nA power and interest grid sorts the groups affected by a decision by how much they can influence it and how much it matters to them. Groups with high power and high interest need close management. Groups with high interest and little power are the ones most easily left out, and they are often the people who bear the cost of a decision.\nThe tool opens on a sample case: an event company deciding how to act on a finding that VIP ticket holders miss events more often. Score each group’s power and interest from 0 to 10, set the bubble size to the number of people it speaks for and read the suggested approach. Start blank to map your own decision."
   },
   {
-    "objectID": "toolkit/stp-builder.html#frequently-asked-questions",
-    "href": "toolkit/stp-builder.html#frequently-asked-questions",
-    "title": "STP Builder",
+    "objectID": "toolkit/stakeholder-power-interest-grid.html#how-it-works",
+    "href": "toolkit/stakeholder-power-interest-grid.html#how-it-works",
+    "title": "Stakeholder Power and Interest Grid",
+    "section": "How it works",
+    "text": "How it works\nEach stakeholder is plotted with interest across and power up. The lines sit at the midpoint, 5, of each scale.\nHigh power, high interest: manage closelyHigh power, low interest: keep satisfiedLow power, high interest: keep informedLow power, low interest: monitor\nThe grid follows Mendelow’s power and interest matrix, from a 1981 paper on environmental scanning at the 2nd International Conference on Information Systems (many textbooks give the date as 1991). The 4 approaches are the labels most strategy and project texts attach to its quadrants. A position on the grid is a judgement, so record the reason for each one and expect it to change as a decision unfolds."
+  },
+  {
+    "objectID": "toolkit/stakeholder-power-interest-grid.html#frequently-asked-questions",
+    "href": "toolkit/stakeholder-power-interest-grid.html#frequently-asked-questions",
+    "title": "Stakeholder Power and Interest Grid",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n\n\n  \n    What is STP marketing?\n    STP marketing stands for segmentation, targeting and positioning. Segmentation divides a market into groups with similar needs, targeting chooses which group to serve and positioning designs the claim that group will hear.\n  \n  \n    What makes a good market segment?\n    A good market segment is measurable, large enough to be worth serving, reachable through channels you can use and different enough in its needs to justify its own offer.\n  \n  \n    How do you write a positioning statement?\n    A positioning statement names the target segment, the frame of reference, the point of difference and the evidence: for [segment] considering [frame], this is the option that [point of difference], evidenced by [proof].\n  \n  \n    What comes after STP?\n    The marketing mix comes after STP. This tool saves the positioning on your device, and the 7Ps Marketing Mix Planner and the Campaign Brief Generator read it from there.\n  \n  \n    Is this STP Builder free?\n    Yes. The STP Builder is free and opens straight away in any modern browser, including on a phone. Everything you enter is processed in your browser and stays on your device."
+    "text": "Frequently Asked Questions\n\n  \n    What is a power and interest grid?\n    A power and interest grid is a 2 by 2 stakeholder map. One axis shows how much power a group has over a decision and the other how much interest it takes in it. Each quadrant suggests an approach: manage closely, keep satisfied, keep informed or monitor.\n  \n  \n    Who created the power and interest grid?\n    The grid is credited to Aubrey Mendelow, who related stakeholders' power to how an organisation scans its environment in a paper at the 2nd International Conference on Information Systems in 1981. Textbooks often cite it as 1991.\n  \n  \n    Why do low-power, high-interest stakeholders matter?\n    They feel the effects of a decision and have little say in it. In an ethical review they are often the group whose rights or welfare are at stake, so a fair decision process gives them a route to be heard.\n  \n  \n    Can a stakeholder move on the grid?\n    Yes. A regulator with little interest today can become highly interested once a decision touches its rules, and a small group can gain power by organising. Revisit the map at each stage of the decision.\n  \n  \n    Is the stakeholder grid tool free?\n    Yes. It is free, runs in your browser and keeps your map on this device. Export it as PNG, PDF or CSV."
   },
   {
-    "objectID": "toolkit/stp-builder.html#related",
-    "href": "toolkit/stp-builder.html#related",
-    "title": "STP Builder",
+    "objectID": "toolkit/stakeholder-power-interest-grid.html#related",
+    "href": "toolkit/stakeholder-power-interest-grid.html#related",
+    "title": "Stakeholder Power and Interest Grid",
     "section": "Related",
-    "text": "Related\nThis tool is the first entry in FlairMI’s Marketing Toolkit Hub, a growing set of client-side marketing frameworks. See also Persona Builder for building out the people behind a segment once you have named one."
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Strategic Analysis category. Weigh the options for the same case in the Ethical Decision Matrix."
+  },
+  {
+    "objectID": "toolkit/strategic-analysis.html",
+    "href": "toolkit/strategic-analysis.html",
+    "title": "Strategic Analysis",
+    "section": "",
+    "text": "Strategic analysis comes before any decision about a specific customer. These tools score the organisation, its market and its growth options, so a planning session ends with ranked priorities in place of a list.\n\n\n  \n    \n      SWOT Analysis Builder\n      \n        In progress\n        Strengths, weaknesses, opportunities and threats, each item scored by impact and likelihood and ranked on a scatter plot.\n      \n      \n        Open SWOT Analysis Builder\n      \n    \n  \n  \n    \n      PESTEL Analysis Builder\n      \n        In progress\n        Political, economic, social, technological, environmental and legal factors, each scored and ranked on a scatter plot.\n      \n      \n        Open PESTEL Analysis Builder\n      \n    \n  \n  \n    \n      Porter's Five Forces Analyser\n      \n        In progress\n        Score the five competitive forces, see them on a radar chart and rate the industry's attractiveness.\n      \n      \n        Open Porter's Five Forces Analyser\n      \n    \n  \n  \n    \n      Ansoff Matrix Tool\n      \n        In progress\n        Plot growth initiatives by product and market newness, sized by investment, with a risk score for each.\n      \n      \n        Open Ansoff Matrix Tool\n      \n    \n  \n  \n    \n      VRIO Classifier\n      \n        In progress\n        Walk each resource through value, rarity, imitability and organisation, with feedback and a company by outcome cross-tab.\n      \n      \n        Open VRIO Classifier\n      \n    \n  \n  \n    \n      Strategic Options Matrix\n      \n        In progress\n        Plot strategic options by attractiveness and feasibility, seeded from a Porter's Five Forces scenario.\n      \n      \n        Open Strategic Options Matrix\n      \n    \n  \n  \n    \n      Stakeholder Power and Interest Grid\n      \n        In progress\n        Place stakeholder groups by power and interest and get an approach for each, from monitor to manage closely.\n      \n      \n        Open Stakeholder Power and Interest Grid\n      \n    \n  \n  \n    \n      Ethical Decision Matrix\n      \n        In progress\n        Score options on evidence, utility, rights, justice and care, and see where the data-led option lands.\n      \n      \n        Open Ethical Decision Matrix\n      \n    \n  \n\nBack to the Marketing Toolkit Hub."
   },
   {
     "objectID": "toolkit/swot-analysis.html",
@@ -2665,6 +2917,34 @@
     "title": "Value Proposition Canvas",
     "section": "Related",
     "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Customer Understanding category. Build the customer profile first in Persona Builder, and plan the offer in detail with the 7Ps Marketing Mix Planner."
+  },
+  {
+    "objectID": "toolkit/weighted-decision-matrix.html",
+    "href": "toolkit/weighted-decision-matrix.html",
+    "title": "Weighted Decision Matrix",
+    "section": "",
+    "text": "In progress\nA weighted decision matrix compares options on more than one criterion at once. Each criterion gets a weight for how much it matters, each option gets a score on each criterion and the weighted total ranks the options. It suits decisions where no single number, such as cost or expected value, captures everything that matters.\nThe tool opens on choosing a venue for a conference, scored on cost, capacity, location, AV quality and catering. Change any weight or score and the ranking updates. Start blank to build your own matrix with any number of options and criteria."
+  },
+  {
+    "objectID": "toolkit/weighted-decision-matrix.html#how-it-works",
+    "href": "toolkit/weighted-decision-matrix.html#how-it-works",
+    "title": "Weighted Decision Matrix",
+    "section": "How it works",
+    "text": "How it works\nScores run from 1 (poor) to 5 (strong). Weights are relative, so 30, 20 and 50 work the same as 0.3, 0.2 and 0.5.\nWeighted score = Σ (weight × score) / Σ weight\nIn the sample, the city hotel ballroom scores 2, 4, 5, 4 and 5 against weights of 30, 20, 25, 15 and 10, for a weighted score of (60 + 80 + 125 + 60 + 50) / 100 = 3.75. The chart splits each total by criterion, so you can see whether a winner leads on what matters most or gathers small amounts everywhere. If a small change to one weight reorders the top 2 options, the decision rests on that judgement, so agree that weight first."
+  },
+  {
+    "objectID": "toolkit/weighted-decision-matrix.html#frequently-asked-questions",
+    "href": "toolkit/weighted-decision-matrix.html#frequently-asked-questions",
+    "title": "Weighted Decision Matrix",
+    "section": "Frequently Asked Questions",
+    "text": "Frequently Asked Questions\n\n  \n    What is a weighted decision matrix?\n    A weighted decision matrix scores each option against a set of criteria, multiplies each score by the criterion's weight and adds the results. The option with the highest weighted total ranks first. It is also called a weighted scoring model or a Pugh matrix.\n  \n  \n    How do you choose the weights?\n    Agree the weights before scoring, so they reflect what matters before anyone has a favourite option. A common approach shares 100 points across the criteria.\n  \n  \n    Do the weights have to add up to 100?\n    No. The tool divides by the sum of the weights, so the result is the same whether the weights add up to 100, to 1 or to any other total.\n  \n  \n    When should I use a decision tree instead?\n    Use a decision tree when the main difficulty is uncertainty about outcomes and the options can be compared in one measure, such as profit. Use a weighted matrix when the outcomes are fairly clear and the options differ on more than one measure.\n  \n  \n    Is the Weighted Decision Matrix free?\n    Yes. It is free, runs in your browser and keeps your matrix on this device. Export it as PNG, PDF or CSV."
+  },
+  {
+    "objectID": "toolkit/weighted-decision-matrix.html#related",
+    "href": "toolkit/weighted-decision-matrix.html#related",
+    "title": "Weighted Decision Matrix",
+    "section": "Related",
+    "text": "Related\nThis tool is part of FlairMI’s Marketing Toolkit Hub, in the Planning and Execution category. Handle uncertain outcomes with the Decision Tree and Expected Value Calculator. The same engine runs the Ethical Decision Matrix."
   },
   {
     "objectID": "downloads/index.html",

@@ -762,3 +762,44 @@ svg.tk-chart { width: 100%; height: auto; display: block; }
 .cc-swatch { display: inline-block; width: 1rem; height: 1rem; vertical-align: middle; border: 1px solid var(--toolkit-border); }
 .tk-formula { overflow-wrap: anywhere; }
 
+
+/* Decision and research tools (decision tree, CPM/PERT, VRIO, weighted matrix,
+   confidence interval, measurement model), added 2026-10-10. */
+.toolkit-app label.tk-file-btn { display: inline-block; margin-bottom: 0; font-size: 1rem; }
+.toolkit-app .tk-data-loader { align-items: center; margin-bottom: 0.75rem; }
+.toolkit-app .tk-data-loader .tk-help { margin: 0; }
+.tk-scroll-x { overflow-x: auto; }
+.tk-scroll-x svg.tk-chart { min-width: 520px; }
+.tk-table tr.tk-crit td { background: #fbe8e6; }
+.vr-q { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.vr-feedback li { margin-bottom: 0.5rem; }
+.so-porter { margin-bottom: 1rem; }
+.toolkit-app .wm-input th input[type="text"] { display: inline-block; width: calc(100% - 1.8rem); min-width: 7rem; margin-bottom: 0; font-weight: 600; }
+.toolkit-app .wm-input td input[type="text"] { min-width: 9rem; margin-bottom: 0; }
+.toolkit-app .wm-input td .tk-help { display: block; font-size: 0.75rem; margin: 0.15rem 0 0; }
+.toolkit-app .tk-card .tk-table input[type="number"] { width: 5rem; }
+.toolkit-app .tk-check-row input[type="radio"] { width: auto; margin: 0; }
+.tk-scroll-hint { display: none; }
+@media (max-width: 640px) { .tk-scroll-hint { display: block; } }
+
+/* Probability Explorer: the coin. Two faces back to back, turned by rotateY. */
+.pe-coin-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 0.75rem; perspective: 700px; }
+.pe-coin { position: relative; width: 96px; height: 96px; flex: none; transform-style: preserve-3d; }
+.pe-face { position: absolute; inset: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; font-weight: 900; backface-visibility: hidden; box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.45); }
+/* Heads is gold and tails is silver, so the 2 faces differ by colour as well as letter. */
+.pe-heads { background: radial-gradient(circle at 32% 28%, #f6df8e 0%, #d4af37 55%, #b08d1e 100%); color: #3d2f00; border: 4px solid #8f7214; }
+.pe-tails { background: radial-gradient(circle at 32% 28%, #f4f4f4 0%, #c4c7cc 55%, #9a9ea6 100%); color: #1f2328; border: 4px solid #70747c; transform: rotateY(180deg); }
+.pe-coin.pe-show-t { transform: rotateY(180deg); }
+.pe-coin.pe-spin-h { animation: pe-spin-h 0.9s ease-out forwards; }
+.pe-coin.pe-spin-t { animation: pe-spin-t 0.9s ease-out forwards; }
+@keyframes pe-spin-h { 0% { transform: translateY(0) rotateY(0); } 50% { transform: translateY(-34px) rotateY(900deg); } 100% { transform: translateY(0) rotateY(1800deg); } }
+@keyframes pe-spin-t { 0% { transform: translateY(0) rotateY(0); } 50% { transform: translateY(-34px) rotateY(990deg); } 100% { transform: translateY(0) rotateY(1980deg); } }
+@media (prefers-reduced-motion: reduce) { .pe-coin.pe-spin-h, .pe-coin.pe-spin-t { animation: none; } .pe-coin.pe-spin-t { transform: rotateY(180deg); } }
+.pe-last { flex: 1 1 180px; margin: 0; font-weight: 600; }
+.tk-table td.pe-pick { outline: 2px solid var(--toolkit-fg); outline-offset: -2px; font-weight: 700; }
+.pe-kpis.tk-kpis { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+
+/* Hub category cards: one tool per line. */
+.tk-tool-list { list-style: none; padding: 0; margin: 0 0 0.75rem; }
+.tk-tool-list li { padding: 0.3rem 0; border-bottom: 1px solid var(--toolkit-border, #e5e5e5); line-height: 1.35; }
+.tk-tool-list li:last-child { border-bottom: 0; }

@@ -1,0 +1,9 @@
+Task_ID,Task_Name,Predecessors,Duration_Optimistic,Duration_Most_Likely,Duration_Pessimistic
+1,Venue_Booking,None,2,5,6
+2,Speaker_Confirmation,None,2,3,4
+3,Marketing_Launch,Venue_Booking,2,5,7
+4,Registration_System_Setup,Speaker_Confirmation,3,5,6
+5,Catering_Arrangement,Venue_Booking,2,4,6
+6,AV_and_Equipment_Setup,Catering_Arrangement,3,5,7
+7,Staff_Briefing,"Marketing_Launch, Registration_System_Setup, Catering_Arrangement, AV_and_Equipment_Setup",1,1,2
+8,Final_Rehearsal,Staff_Briefing,1,1,2

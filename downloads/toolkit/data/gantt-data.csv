@@ -1,0 +1,9 @@
+Task_ID,Task_Name,Start_Day,Duration_Days,End_Day,Responsible,Predecessor,On_Critical_Path
+1,Venue_Booking,1,5,5,Operations,None,Yes
+2,Speaker_Confirmation,1,3,3,Events_Team,None,No
+3,Marketing_Launch,6,5,10,Marketing,Venue_Booking,No
+4,Registration_System_Setup,4,5,8,IT_Department,Speaker_Confirmation,No
+5,Catering_Arrangement,6,4,9,Operations,Venue_Booking,Yes
+6,AV_and_Equipment_Setup,10,5,14,AV_Contractor,Catering_Arrangement,Yes
+7,Staff_Briefing,15,1,15,Management,"Marketing_Launch, Registration_System_Setup, Catering_Arrangement, AV_and_Equipment_Setup",Yes
+8,Final_Rehearsal,16,1,16,Management,Staff_Briefing,Yes
