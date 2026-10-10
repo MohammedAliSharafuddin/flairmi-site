@@ -14,7 +14,8 @@
  * The normal CDF here is a series accurate to about 1e-15 over the range a
  * z-table covers, so areas agree with R's pnorm(). Inputs can be preset from
  * the address, for example ?x=77&mean=45.455&sd=11.905, which is how a page
- * that frames the calculator opens it on its own example.
+ * that frames the calculator opens it on its own example. ?modes=point,value
+ * limits the choices offered.
  *
  * Usage: window.ZScore.mount("z-app", { embed: false }). The pure functions
  * in window.ZScore.compute are also run by R/test_toolkit_data_tools.R.
@@ -99,16 +100,17 @@
           <option value="mean">z from a sample mean and size</option>
           <option value="sample">z from a data sample</option>
           <option value="value">A value from a z-score</option></select></label>
-        <label>Mean, &mu; <input type="number" data-k="mean" step="any"></label>
-        <label>Standard deviation, &sigma; <input type="number" data-k="sd" min="0" step="any"></label>
+        <label>Population mean, &mu; <input type="number" data-k="mean" step="any"></label>
+        <label>Population standard deviation, &sigma; <input type="number" data-k="sd" min="0" step="any"></label>
       </div>
       <div class="zs-in" data-in="point"><label>Data point(s), x <textarea data-k="x" rows="2" class="tk-mono" aria-label="Data points"></textarea></label>
         <p class="tk-help">One value, or more separated by commas, spaces or new lines.</p></div>
       <div class="zs-in tk-grid" data-in="mean" hidden>
         <label>Sample mean, x&#772; <input type="number" data-k="xbar" step="any"></label>
-        <label>Sample size, n <input type="number" data-k="n" min="1" step="1"></label></div>
+        <label>Sample size, n <input type="number" data-k="n" min="1" step="1"></label>
+        <p class="tk-help" style="grid-column:1/-1">The sample mean is compared with the population mean &mu; above.</p></div>
       <div class="zs-in" data-in="sample" hidden><label>Data sample <textarea data-k="values" rows="3" class="tk-mono" aria-label="Data sample"></textarea></label>
-        <p class="tk-help">Paste the sample. The calculator finds its mean and size, then the z-score of that mean.</p></div>
+        <p class="tk-help">Paste the sample. The calculator finds its mean and size, then the z-score of that mean against the population mean &mu; above. &mu; and &sigma; describe the population the sample is compared with, so they stay as you set them.</p></div>
       <div class="zs-in tk-grid" data-in="value" hidden><label>z-score <input type="number" data-k="z" step="any"></label></div>
       <div class="tk-report">
         <h3 class="tk-report-title">Answer</h3>
@@ -119,14 +121,23 @@
       </div>`;
     const report = root.querySelector(".tk-report");
     if (!embed) root.appendChild(TK.exportRow(report, "z-score"));
-    q("mode").value = ["point", "mean", "sample", "value"].includes(pre("mode", "")) ? pre("mode", "") : "point";
+    // ?modes=point,value limits the choices, for a page that teaches only those.
+    const ALL = ["point", "mean", "sample", "value"];
+    const allowed = pre("modes", "").split(",").map((m) => m.trim()).filter((m) => ALL.includes(m));
+    if (allowed.length) [...q("mode").options].forEach((o) => { if (!allowed.includes(o.value)) o.remove(); });
+    const modes = allowed.length ? allowed : ALL;
+    q("mode").value = modes.includes(pre("mode", "")) ? pre("mode", "") : modes[0];
+    // The built-in example is a score of 82 with mean 70 and SD 8. When a page
+    // presets its own mean or SD, the other example values would belong to a
+    // different dataset, so they start empty unless that page presets them too.
+    const own = qs.has("mean") || qs.has("sd");
     q("mean").value = pre("mean", "70");
     q("sd").value = pre("sd", "8");
-    q("x").value = pre("x", "82");
-    q("xbar").value = pre("xbar", "73");
-    q("n").value = pre("n", "25");
-    q("values").value = pre("values", "72, 81, 69, 77, 74, 68, 79, 75");
-    q("z").value = pre("z", "1.5");
+    q("x").value = pre("x", own ? "" : "82");
+    q("xbar").value = pre("xbar", own ? "" : "73");
+    q("n").value = pre("n", own ? "" : "25");
+    q("values").value = pre("values", own ? "" : "72, 81, 69, 77, 74, 68, 79, 75");
+    q("z").value = pre("z", own ? "" : "1.5");
 
     const f = (v, d) => TK.fmt(v, d === undefined ? 3 : d);
     const g = (v) => d3.format("~g")(+v.toPrecision(8));
