@@ -120,7 +120,7 @@ FlairMI publishes applied statistics tutorials and product notes at
   the browser's local storage.
 ## Marketing Toolkit Hub
 
-[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 43 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
+[flairmi.com/toolkit/](https://flairmi.com/toolkit/) holds 44 free marketing tools in five categories. Every tool runs in the browser with no account, keeps data on the user's device and shows its formula or method on the page in plain HTML. Each page carries WebApplication and FAQPage structured data. Tools marked live are ready for use. The others are marked in progress while they are tested with real use.
 
 ### [Strategic Analysis](https://flairmi.com/toolkit/strategic-analysis.html)
 
@@ -141,6 +141,7 @@ FlairMI publishes applied statistics tutorials and product notes at
 - **[Importance-Performance Analysis Matrix](https://flairmi.com/toolkit/ipa-matrix.html)** (in progress): Attributes plotted by importance and performance, sorted into concentrate here, keep up the good work, low priority and possible overkill.
 - **[RFM Segmentation Tool](https://flairmi.com/toolkit/rfm-segmentation.html)** (in progress): Paste transactions, score customers on recency, frequency and monetary value and get segments with an action for each.
 - **[Value Proposition Canvas](https://flairmi.com/toolkit/value-proposition-canvas.html)** (in progress): An interactive canvas: drag notes onto the value map and customer profile, match them and see how well they fit.
+- **[Word Cloud Maker](https://flairmi.com/toolkit/word-cloud-maker.html)** (in progress): A word cloud and frequency table from open-ended answers or a pasted Zoom chat, counted by whole answer or by single word, with PNG, PDF and CSV export.
 
 ### [Portfolio and Growth](https://flairmi.com/toolkit/portfolio-and-growth.html)
 
